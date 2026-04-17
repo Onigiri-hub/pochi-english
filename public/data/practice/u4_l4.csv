@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,ja_show_first,position_first,position_second,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second
+u4_l4_p1,u4_l4,06.svg,user,1,left,right,1,1,Where are you?,__　___　at Disney !,Where are you?,We are at Disney!,あなたたち、どこにいるの？,私たち、ディズニーにいるのよ！,We are,We|are,4-4-1-a.mp3,4-4-1-b.mp3,We are,4-4-1,4-4-1
+u4_l4_p2,u4_l4,06.svg,user,1,left,right,1,1,Who is over there?,____　___　my friend.,Who is over there?,They are my friend.,あそこにいるのは誰？,彼らは私の友達よ。,They are,They|are,4-4-2-a.mp3,4-4-2-b.mp3,They are,4-4-2,4-4-2
+u4_l4_p3,u4_l4,user,,1,left,none,,1,____　___　awesome!,,You are awesome!,,お前たち、最高だぜ！,-,You are,You|are,4-4-3-a.mp3,,You are,4-4-3,
+u4_l4_p4,u4_l4,06.svg,user,1,left,right,1,1,__　__　_____ .,Me too.,He is kind.,Me too.,彼は優しいよ。,わたしもよ。,He is kind,He|is|kind,4-4-4-a.mp3,4-4-4-b.mp3,He is kind,4-4-4,4-4-4
+u4_l4_p6,u4_l4,user,,1,left,none,,1,__　___　so happy.,,We are so happy.,,私たちはとてもうれしいです。,-,We are,We|are,4-4-6-a.mp3,,We are,4-4-6,
+u4_l4_p7,u4_l4,user,,1,left,none,,1,"____　joking, right?",,"You are joking, right?",,おまえ、冗談をいっているんだよな？,-,You're,You're,4-4-7-a.mp3,,You're,4-4-7,
+u4_l4_p8,u4_l4,user,06.svg,1,left,right,1,1,Why are you there?,____　___　______ .,Why are you there?,We're the police.,君たち、なんでそんなところにいるんだ。,私たちは警察ですよ。,We're the police,We're|the|police,4-4-8-a.mp3,4-4-8-b.mp3,We're the police,4-4-8,4-4-8

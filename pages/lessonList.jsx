@@ -1,0 +1,82 @@
+import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
+import Papa from "papaparse"
+import { getProgress } from "../utils/progressManager"
+import Navigation from "../components/Navigation";
+
+export default function LessonList() {
+  const [lessons, setLessons] = useState([])
+  const [progress, setProgress] = useState(1)
+  const router = useRouter()
+  const { unit } = router.query
+
+  useEffect(() => {
+    if (!unit) return;
+
+    async function load() {
+      const res = await fetch("/data/all_unit_list.csv")
+      const text = await res.text()
+      const data = Papa.parse(text, { header: true, skipEmptyLines: true }).data
+
+      setLessons(data.filter(l => l.unit_NO === unit))
+      setProgress(await getProgress(unit) || 1)
+    }
+
+    load()
+  }, [unit])
+
+  function goLesson(l) {
+    const path = l.lesson_type === "lecture" ? "/testLecture" : "/testPractice"
+    router.push(`${path}?lesson=${l.lesson_id}`)
+  }
+
+  if (lessons.length === 0) return <div>loading...</div>
+
+  const unitColor = lessons[0]?.unit_color || "#e53935";
+
+  return (
+    <div className="lessonList" style={{ paddingBottom: "80px" }}>
+
+      <div
+        className="lessonHeader"
+        style={{ backgroundColor: unitColor, cursor: "pointer" }}
+        onClick={() => router.push("/unitList")}
+      >
+        <div className="headerInner">
+          <h1>Unit {unit}</h1>
+          <p>{lessons[0]?.unit_name}</p>
+        </div>
+      </div>
+
+      {lessons.map((l) => {
+        const order = Number(l.lesson_order);
+        const isCleared = order < progress;
+        const isCurrent = order === progress;
+        const isLocked = order > progress;
+
+        return (
+          <div className="lessonRow" key={l.lesson_id}>
+            <div
+              className={`lessonIcon ${isLocked ? "locked" : isCurrent ? "current" : "cleared"}`}
+              style={{ backgroundColor: isLocked ? "#9e9e9e" : l.unit_color }}
+              onClick={() => { if (!isLocked) goLesson(l) }}
+            >
+              <img
+                src={l.lesson_type === "lecture"
+                  ? "/images/icons/lecture_icon.png"
+                  : "/images/icons/practice_icon.png"
+                }
+                className="iconImage"
+              />
+            </div>
+            <div className="lessonInfo">
+              <div className="lessonName">{l.lesson_name}</div>
+            </div>
+          </div>
+        );
+      })}
+
+      <Navigation />
+    </div>
+  )
+}

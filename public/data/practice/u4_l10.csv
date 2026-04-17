@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,ja_show_first,position_first,position_second,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second
+u4_l10_p1,u4_l10,06.svg,,1,left,none,,1,＿　＿＿　＿＿　＿＿＿　.,,I am not tired.,,私は疲れてないよ,,I am not tired,I|am|not|tired,4-10-1-a.mp3,,I am not tired,4-10-1,
+u4_l10_p2,u4_l10,06.svg,,1,left,none,,1,＿＿　＿＿　＿＿　＿＿＿　.,,You are not busy.,,あなたは忙しくない,,You are not busy,You|are|not|busy,4-10-2-a.mp3,,You are not busy,4-10-2,
+u4_l10_p3,u4_l10,06.svg,,1,left,none,,1,＿＿　＿　＿＿　＿＿＿　.,,He is not happy.,,彼は幸せじゃない,,He is not happy,He|is|not|happy,4-10-3-a.mp3,,He is not happy,4-10-3,
+u4_l10_p4,u4_l10,06.svg,,1,left,none,,1,＿＿　＿　＿＿　＿　＿＿＿＿　.,,She is not a teacher.,,彼女は先生ではない,,She is not a teacher,She|is|not|a|teacher,4-10-4-a.mp3,,She is not a teacher,4-10-4,
+u4_l10_p5,u4_l10,06.svg,,1,left,none,,1,＿＿　＿　＿＿　＿＿　.,,It is not hot.,,暑くはない,,It is not hot,It|is|not|hot,4-10-5-a.mp3,,It is not hot,4-10-5,
+u4_l10_p6,u4_l10,06.svg,,1,left,none,,1,＿＿　＿＿　＿＿　＿＿＿　.,,We are not ready.,,私たちは準備できてない,,We are not ready,We|are|not|ready,4-10-6-a.mp3,,We are not ready,4-10-6,
+u4_l10_p7,u4_l10,06.svg,,1,left,none,,1,＿＿　＿＿　＿＿　＿＿＿　.,,They are not friends.,,彼らは友達ではない,,They are not friends,They|are|not|friends,4-10-7-a.mp3,,They are not friends,4-10-7,
+u4_l10_p8,u4_l10,06.svg,,1,left,none,,1,＿＿　＿　＿＿　＿　＿＿＿　.,,This is not my bag.,,これは私のかばんではない,,This is not my bag,This|is|not|my|bag,4-10-8-a.mp3,,This is not my bag,4-10-8,
+u4_l10_p9,u4_l10,06.svg,,1,left,none,,1,＿＿＿　＿＿　＿＿　＿＿＿　.,,These aren't new books.,,これらは新しい本ではない,,These aren't new books,These|aren't|new|books,4-10-9-a.mp3,,These aren't new books,4-10-9,
+u4_l10_p10,u4_l10,06.svg,,1,left,none,,1,＿＿＿　＿＿　＿＿　＿＿＿　.,,Those aren't big dogs.,,あれらは大きいイヌではない,,Those aren't big dogs,Those|aren't|big|dogs,4-10-10-a.mp3,,Those aren't big dogs,4-10-10,

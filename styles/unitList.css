@@ -1,0 +1,73 @@
+body{
+background:#ebebeb;
+}
+
+.unitList{
+max-width:400px;
+margin:auto;
+padding:20px;
+}
+
+.unitCard{
+border-radius:20px;
+padding:25px;
+margin-bottom:20px;
+color:white;
+cursor:pointer;
+}
+
+
+.unitTitle{
+font-size:20px;
+font-weight:bold;
+text-align:center;
+}
+
+.unitName{
+text-align:center;
+margin-top:8px;
+}
+
+.unitBar{
+height:4px;
+background:white;
+opacity:0.7;
+margin-top:15px;
+border-radius:2px;
+}
+
+.unitBarRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 18px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.unitBarContainer {
+  flex-grow: 1;
+  max-width: 250px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.unitBarFill {
+  height: 100%;
+  /* アニメーションの設定もこちらへ */
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1), 
+              background-color 0.4s ease, 
+              box-shadow 0.4s ease;
+}
+
+.progressText {
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  min-width: 50px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,ja_show_first,position_first,position_second,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second
+u3_l2_q1,u3_l2,06.svg,user,1,left,right,1,1,When do you leave home?,__　______  !,At noon!,At noon!,いつ（家を）出発する？,正午！,At noon,At|noon,3-2-1-a.mp3,3-2-1-b.mp3,At noon,3-2-1,3-2-1
+u3_l2_q2,u3_l2,06.svg,user,1,left,right,1,1,Where did you eat the banana?,__　____　______ .,In the park.,In the park.,どこでバナナたべたの？,公園で。,In the park,In|the|park,3-2-2-a.mp3,3-2-2-b.mp3,In the park,3-2-2,3-2-2
+u3_l2_q3,u3_l2,06.svg,user,1,left,right,1,1,Where did you hear that?,__　_______ .,At school.,At school.,どこでそれを聞いたの？,学校でだよ。,At school,At|school,3-2-3-a.mp3,3-2-3-b.mp3,At school,3-2-3,3-2-3
+u3_l2_q4,u3_l2,06.svg,user,1,left,right,1,1,Where did I put my hat?,__　____　______ .,On the table.,On the table.,私の帽子、どこに置いたっけ？,テーブルの上。,On the table,On|the|table,3-2-4-a.mp3,3-2-4-b.mp3,On the table,3-2-4,3-2-4
+u3_l2_q5,u3_l2,06.svg,user,1,left,right,1,1,Where is my smartphone?,__　____　_____ .,On the bed.,On the bed.,私のスマホどこ？,ベッドの上だよ,On the bed,On|the|bed,3-2-5-a.mp3,3-2-5-b.mp3,On the bed,3-2-5,3-2-5
+u3_l2_q6,u3_l2,06.svg,user,1,left,right,1,1,When do we hang out?,__　________ !,On Saturday!,On Saturday!,いつ遊ぶ？,土曜日！,On Saturday,On|Saturday,3-2-6-a.mp3,3-2-6-b.mp3,On Saturday,3-2-6,3-2-6
+u3_l2_q7,u3_l2,06.svg,user,1,left,right,1,1,Did you go to the sea?,__　____　_______ .,In the summer.,In the summer.,いつ海にいったの？,夏にね。,In the summer,In|the|summer,3-2-7-a.mp3,3-2-7-b.mp3,In the summer,3-2-7,3-2-7
+u3_l2_q8,u3_l2,06.svg,user,1,left,right,1,1,When are you coming?,_　______　o'clock !,At three O'clock.,At three O'clock.,いつ来るー？,3時！,At three,At|three,3-2-8-a.mp3,3-2-8-b.mp3,At three,3-2-8,3-2-8
