@@ -1,53 +1,33 @@
 body{
-
 background:#ebebeb;
-
 }
 
 .chat{
-
 display:flex;
-
 align-items:flex-start;
-
 margin:30px 0cm;
-
 }
 
 .chat.right{
-
 flex-direction:row-reverse;
-
 }
 
 .bubble{
-
 position:relative;
-
 background:#ffffff;
-
 padding:17px 17px;
-
 border-radius:20px;
-
 max-width:70%;
-
 white-space:pre-line;
-
 line-height:1.4;
-
 }
 
 .chat.left img{
-
 margin:0px 15px 0px 0px;
-
 }
 
 .chat.right img{
-
 margin:0px 0px 0px 15px;
-
 }
 
 .characterIcon {
@@ -58,59 +38,38 @@ margin:0px 0px 0px 15px;
 }
 
 .chat.left .bubble::before{
-
 content:"";
-
 position:absolute;
-
 left:-10px;
-
 top:12px;
-
 width:0;
 height:0;
-
 border-top:0px solid transparent;
 border-bottom:10px solid transparent;
 border-right:15px solid #ffffff;
-
 }
 
 .chat.right .bubble::before{
-
 content:"";
-
 position:absolute;
-
 right:-10px;
-
 top:12px;
-
 width:0;
 height:0;
-
 border-top:0px solid transparent;
 border-bottom:10px solid transparent;
 border-left:15px solid #ffffff;
-
 }
 
 .en{
-
 color:#000;
-
 font-weight:1000;
-
 }
 
 .ja{
-
 color:#888;
-
 font-size:14px;
-
 margin-top:4px;
-
 }
 
 .audioBtn {
@@ -131,71 +90,37 @@ margin-top:4px;
 }
 
 .chipBox{
-
   min-height:70px;
-
   border:3px dotted #a0a0a0;
   background:#f0f0f0;
-
   border-radius:12px;
-
   padding:10px;
-
-  margin:50px 0;
-
+  margin:25px 0;
 }
 
 .chip{
-
 padding:10px 14px;
-
 margin:6px;
-
 border-radius:20px;
-
 border:none;
-
 background:#969696;
-
 font-size:16px;
-
 cursor:pointer;
-
 transition:transform 0.1s;
-
 }
 
 /* 押した瞬間 */
 
 .chip:active{
-
 transform:translateY(-6px) scale(1.05);
-
 }
 
 .chip:hover{
-
   background:#cfcce4;
-
 }
 
-/*
-.answerChip{
-
-  background:#e6f4ff;
-
-  border:2px solid #5aa7ff;
-
-  border-radius:20px;
-  padding:10px 14px;
-  margin:5px;
-  font-size:16px;
-  cursor:pointer;
-}
-*/
 
 .correctBar{
-
 position:fixed;
 bottom:0;
 left:0;
@@ -209,86 +134,56 @@ font-weight:bold;
 }
 
 .correctBar{
-
 position:fixed;
 bottom:0;
 left:0;
-
 width:100%;
-
 background:#58cc02;
-
 color:white;
-
 padding:20px;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 font-size:20px;
 font-weight:bold;
-
 }
 
 .correctBar button{
-
 background:white;
 color:#58cc02;
-
 border:none;
-
 padding:10px 18px;
-
 border-radius:10px;
-
 font-size:16px;
-
 cursor:pointer;
-
 }
 
 .app{
-
 max-width:400px;
 margin:auto;
 padding:20px;
-
 }
 
 @media (max-width:600px){
 
 .app{
-
 max-width:100%;
-
 }
 
 }
 
 
 .wrongBar{
-
 position:fixed;
-
 bottom:0;
-
 left:0;
-
 width:100%;
-
 background:#ff9600;
-
 color:white;
-
 padding:20px;
-
 text-align:center;
-
 font-size:20px;
-
 font-weight:bold;
-
 }
 
 .bottomArea {
@@ -310,78 +205,54 @@ font-weight:bold;
 /* 正解 */
 
 .bottomArea.correct{
-
-background:#58cc02;
-
+background:#02ccbb;
 color:white;
-
 }
 
 /* 不正解 */
 
 .bottomArea.wrong{
-
 background:#ff9600;
-
 color:white;
-
 }
 
 .resultText{
-
 font-size:20px;
 font-weight:bold;
-
 margin-bottom:10px;
-
 }
 
 /* ボタン */
 
 .mainButton{
-
 width:300px;
-
 padding:16px;
-
 border-radius:40px;
-
 border:none;
-
 font-size:18px;
-
 font-weight:bold;
-
 cursor:pointer;
-
 }
 
 /* 通常ボタン */
 
 .bottomArea .mainButton{
-
 background:#555;
-
 color:white;
-
 }
 
 /* 正解ボタン */
 
 .bottomArea.correct .mainButton{
-
 background:white;
-color:#58cc02;
-
+color:#02ccbb;
 }
 
 /* 不正解ボタン */
 
 .bottomArea.wrong .mainButton{
-
 background:white;
 color:#ff9600;
-
 }
 
 .viewport{
@@ -403,28 +274,19 @@ flex-shrink:0;
 }
 
 .progressDots{
-
 display:flex;
 justify-content:center;
 gap:8px;
-
-padding:15px 0;
-
+padding:5px 0;
 }
 
 .dot{
-
 width:8px;
 height:8px;
-
 border-radius:50%;
-
 background:#ddd;
-
 }
 
 .dot.active{
-
-background:#58cc02;
-
+background:#02ccbb;
 }
