@@ -86,13 +86,46 @@
 }
 
 /* ボタン類 */
-.actionButtons { display: flex; flex-direction: column; gap: 10px; margin-top: 40px; }
-.saveBtn { background: #6f70a7; color: white; border: none; padding: 15px; border-radius: 12px; font-weight: bold; }
-.logoutBtn { background: #eee; color: #666; border: none; padding: 12px; border-radius: 12px; }
+.actionButtons { 
+  display: flex; 
+  flex-direction: 
+  column; gap: 10px; 
+  margin-top: 40px; 
+}
+
+.saveBtn { 
+  background: #6f70a7; 
+  color: white; 
+  border: none; 
+  padding: 15px; 
+  border-radius: 12px; 
+  font-weight: bold; 
+}
+
+.logoutBtn { 
+  background: #eee; 
+  color: #666; 
+  border: none; 
+  padding: 12px; 
+  border-radius: 12px; 
+}
 
 /* リンク集 */
-.links { margin-top: 30px; margin-bottom: 100px; list-style: none; padding: 0; text-align: left; }
-.links li { padding: 15px 0; border-bottom: 1px solid #eee; color: #555; cursor: pointer; font-size: 14px; }
+.links { 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  list-style: none; 
+  padding: 0; 
+  text-align: left; 
+}
+
+.links li { 
+  padding: 15px 0; 
+  border-bottom: 1px solid #eee; 
+  color: #555; 
+  cursor: pointer; 
+  font-size: 14px; 
+}
 
 
 
@@ -123,8 +156,17 @@
   color: #333;
 }
 
-.settingsBtn { background: none; border: none; font-size: 24px; cursor: pointer; }
-.profileSection { text-align: center; margin-bottom: 30px; }
+.settingsBtn { 
+  background: none; 
+  border: none; 
+  font-size: 24px; 
+  cursor: pointer; 
+}
+
+.profileSection { 
+  text-align: center; 
+  margin-bottom: 30px; 
+}
 
 .avatarCircle { 
   margin: 0 auto 10px; /* 中央寄せ */
@@ -145,3 +187,10 @@
 .statLabel { display: block; font-size: 12px; color: #666; }
 .statValue { font-size: 20px; font-weight: bold; }
 .graphContainer { background: #f8f8f8; height: 200px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #999; }
+
+.profileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+}

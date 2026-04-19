@@ -80,7 +80,7 @@ export default function Progress() {
   return (
     <div className="container">
       <div className="mainContent">
-        <div className="header">
+        <div className="header" style={{ justifyContent: "flex-end" }}>
           <button className="settingsBtn" onClick={() => router.push("/settings")}>⚙️</button>
         </div>
 
@@ -148,6 +148,25 @@ export default function Progress() {
           />
 
         </div>
+        <div className="profileLinks">
+
+          <ul className="links">
+            <li onClick={() => router.push("/help")} style={{ cursor: "pointer" }}>ヘルプ</li>
+            <li onClick={() => router.push("/terms")} style={{ cursor: "pointer" }}>利用規約とプライバシーポリシー</li>
+          </ul>
+          <button 
+            className="logoutBtn"
+            onClick={async () => {
+              await auth.signOut();
+              router.push("/");
+            }}
+          >
+            ログアウト
+          </button>
+        </div>
+
+
+
       </div>
 
       <Navigation />

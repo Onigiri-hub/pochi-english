@@ -12,8 +12,8 @@ export default function Settings() {
   const router = useRouter();
 
   const avatars = [
-    "01.png", "02.svg", "03.svg",
-    "04.svg"
+    "01.png", "02.png", "03.png",
+    "04.png"
   ];
 
   const handleReset = async () => {
@@ -163,30 +163,14 @@ export default function Settings() {
         <div className="actionButtons">
           <button className="saveBtn" onClick={handleSave}>設定を保存する</button>
 
-          <button className="logoutBtn" onClick={async () => {
-            await auth.signOut();
-            router.push("/"); // ログアウトしたらログイン画面へ飛ばす
-          }}>
-            ログアウト
-          </button>
-
-          <button className="deleteBtn" style={{background: "#333", color: "white"}} onClick={() => router.push("/delete-account")}>アカウントの削除</button>
-          {/* ★ 追加 */}
-          <button
-            className="deleteBtn"
-            style={{ background: "#b71c1c", color: "white" }}
-            onClick={handleReset}
-          >
-            データリセット
-          </button>
-                  
+          <ul className="links">
+            <li onClick={() => router.push("/delete-account")} style={{ cursor: "pointer", color: "#878787" }}>アカウントの削除</li>
+            <li onClick={handleReset} style={{ cursor: "pointer", color: "#878787" }}>データリセット</li>
+          </ul>
         
         </div>
 
-        <ul className="links">
-          <li onClick={() => router.push("/help")} style={{ cursor: "pointer" }}>ヘルプ</li>
-          <li onClick={() => router.push("/terms")} style={{ cursor: "pointer" }}>利用規約とプライバシーポリシー</li>
-        </ul>
+
       </div>
       <Navigation />
     </div>
