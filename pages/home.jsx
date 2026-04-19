@@ -8,17 +8,19 @@ export default function Home() {
   return (
     <div className="homeContainer">
       <div className="homeContent">
+        <img src="/images/illustrations/pochi.png" className="homePochi" />   
 
-        <h1 className="homeTitle">Pochi</h1>
+        <h1 className="homeTitle"></h1>
 
         <div className="homeButtons">
 
+          {/*
           <button
             className="homeBtn"
             onClick={() => router.push("/unitList")}
           >
             <img src="/images/illustrations/pochi_grammar.png" alt="英文法学習" />
-            英文法学習
+            
           </button>
 
           <button
@@ -26,8 +28,25 @@ export default function Home() {
             onClick={() => {}}
           >
             <img src="/images/illustrations/pochi_vocabulary.png" alt="英単語学習" />
-            英単語学習
+            
           </button>
+          */}
+
+
+          <img
+            src="/images/illustrations/pochi_grammar.png"
+            alt="英文法学習"
+            className="homeBtnImg"
+            onClick={() => router.push("/unitList")}
+          />
+
+          <img
+            src="/images/illustrations/pochi_vocabulary.png"
+            alt="英単語学習"
+            className="homeBtnImg disabled"
+          />
+
+
 
         </div>
       </div>

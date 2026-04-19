@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../firebase";
-import Lottie from "lottie-react";
-import startupAnimation from "../public/animations/startup.json";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 export default function Home() {
@@ -34,6 +32,8 @@ export default function Home() {
   };
 
   // ログイン済み：アニメーション画面
+  
+
   if (phase === "animation") {
     return (
       <div style={{
@@ -41,18 +41,19 @@ export default function Home() {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        backgroundColor: "#fff"
+        backgroundColor: "#ebebeb"
       }}>
-        <div style={{ width: "300px", height: "200px", overflow: "hidden", position: "relative" }}>
-          <Lottie
-            animationData={startupAnimation}
-            style={{ width: "300px", position: "absolute", top: "0px", left: "0px" }}
-            loop={false}
-          />
-        </div>
+        <video
+          src="/animations/startup.mp4"
+          autoPlay
+          muted
+          playsInline
+          style={{ width: "300px" }}
+        />
       </div>
     );
-  }
+  }  
+
 
   // 未ログイン：ウェルカム画面
   if (phase === "welcome") {
@@ -74,9 +75,9 @@ export default function Home() {
 
         {/* 画像（お好みの画像パスに変えてね） */}
         <img
-          src="/images/icons/pochi_top.png"
+          src="/images/illustrations/pochi.png"
           alt="Pochi"
-          style={{ width: "200px", margin: "24px 0" }}
+          style={{ width: "120px", margin: "24px 0" }}
         />
 
         {/* Googleログインボタン */}
@@ -112,8 +113,18 @@ export default function Home() {
           <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#444", margin: 0 }}>
             ぽちぽちするだけで英語の感覚を身につけるアプリです。<br />
             英語初学者の負荷を下げて、英語を「わかる！」「つかってみたい！」にすることを目指して作りました。<br /><br />
-            今のところベータ版公開中。全部無料でお楽しみいただけます！
+            今のところベータ版で一部公開中。全部無料でお楽しみいただけます！
           </p>
+          <img
+            src="/images/illustrations/index-introduction.png"
+            alt="アプリ紹介"
+            style={{
+              width: "100%",
+              borderRadius: "12px",
+              marginTop: "16px"
+            }}
+          />
+
         </div>
         
         {/* リンク */}
