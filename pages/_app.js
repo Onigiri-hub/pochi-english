@@ -19,12 +19,26 @@ export default function MyApp({ Component, pageProps }) {
   const [dictionary, setDictionary] = useState([])
 
   useEffect(() => {
+    // 辞書の読み込み
     async function load() {
       const data = await loadCSV("/data/word_dic.csv")
       setDictionary(data)
     }
     load()
+
+    // カチ音
+    const sound = new Audio("/sound/kachi.mp3")
+    
+    function handleClick(e) {
+      if (e.target.closest("[data-no-sound]")) return
+      sound.currentTime = 0
+      sound.play().catch(() => {})
+    }
+    
+    document.addEventListener("click", handleClick)
+    return () => document.removeEventListener("click", handleClick)
   }, [])
+
 
   return (
     <DictionaryContext.Provider value={dictionary}>

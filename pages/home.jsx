@@ -26,8 +26,9 @@ export default function Home() {
           className="homePochi"
           onClick={playWan}
           style={{ cursor: "pointer" }}
+          data-no-sound  
         />
-
+        
         {/*
         <img src="/images/illustrations/pochi.png" className="homePochi" />   
         */}
