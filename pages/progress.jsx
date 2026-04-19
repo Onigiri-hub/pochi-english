@@ -19,7 +19,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 export default function Progress() {
   const [user, setUser] = useState(null);
-  const [profile, setProfile] = useState({ nickname: "user", avatar: "01.svg" });
+  const [profile, setProfile] = useState(null);
   const [historyData, setHistoryData] = useState([]); // 履歴データ用
   const [totalDays, setTotalDays] = useState(0);      // 学習日数用
   const router = useRouter();
@@ -86,9 +86,11 @@ export default function Progress() {
 
         <div className="profileSection">
           <div className="avatarCircle">
-            <img src={`/images/avatars/${profile.avatar}`} alt="Avatar" />
+            {profile ? (
+              <img src={`/images/avatars/${profile.avatar}`} alt="Avatar" />
+            ) : null}
           </div>
-          <h2 className="nickname">{profile.nickname}</h2>
+          <h2 className="nickname">{profile ? profile.nickname : ""}</h2>          
         </div>
 
         <div className="statsGrid">
@@ -96,13 +98,7 @@ export default function Progress() {
             <span className="statLabel">学習した日数</span>
             <span className="statValue">{totalDays}日</span>
           </div>
-          {/*
-          <div className="statItem">
-            <span className="statLabel">今週のレッスン数</span>
-            <span className="statValue">{historyData.length}回</span>
-          </div>
-          */}
-          <div className="statItem">
+         <div className="statItem">
             <span className="statLabel">今週のレッスン数</span>
             <span className="statValue">
               {historyData.filter(h => {
