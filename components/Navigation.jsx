@@ -39,15 +39,15 @@ export default function Navigation() {
     <div className="navOuter">
       <div className="navInner">
         <button onClick={handleHomeClick} className="navItem">
-          <img src="/images/icons/home.png" alt="ホーム" />
+          <img src="/images/icons/home.svg" alt="ホーム" />
         </button>
 
         <button onClick={() => router.push("/unitList")} className="navItem">
-          <img src="/images/icons/list.png" alt="リスト" />
+          <img src="/images/icons/list.svg" alt="リスト" />
         </button>
 
         <button onClick={() => router.push("/progress")} className="navItem">
-          <img src="/images/icons/person.png" alt="プロフ" />
+          <img src="/images/icons/person.svg" alt="プロフ" />
         </button>
       </div>
 
