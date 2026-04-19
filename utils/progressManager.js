@@ -34,14 +34,16 @@ export async function saveProgress(unit, clearedOrder) {
       const newValue = clearedOrder + 1;
       await setDoc(progressRef, { value: newValue });
       localStorage.setItem(`progress_u${unit}`, newValue);
-
-      await addDoc(collection(db, "users", user.uid, "history"), {
-        unit_NO: String(unit),
-        lesson_NO: String(newValue),
-        clearedAt: serverTimestamp(),
-        dateString: new Date().toLocaleDateString("sv-SE"),
-      });
     }
+
+    // 新しいレッスンでも復習でも毎回記録する
+    await addDoc(collection(db, "users", user.uid, "history"), {
+      unit_NO: String(unit),
+      lesson_NO: String(clearedOrder),
+      clearedAt: serverTimestamp(),
+      dateString: new Date().toLocaleDateString("sv-SE"),
+    });
+
 
   } catch (e) {
     console.error("進捗の保存に失敗:", e);
