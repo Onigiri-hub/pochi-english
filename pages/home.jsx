@@ -1,14 +1,36 @@
 import { useRouter } from "next/router";
 import Navigation from "../components/Navigation";
-
+import { useState, useRef } from "react";
 
 export default function Home() {
   const router = useRouter();
+  const videoRef = useRef(null)
+
+
+  function playWan() {
+    const audio = new Audio("/sound/wan.mp3")
+    audio.play()
+    videoRef.current.currentTime = 0
+    videoRef.current.play()
+  }
 
   return (
     <div className="homeContainer">
       <div className="homeContent">
+
+        <video
+          ref={videoRef}
+          src="/animations/wan.mp4"
+          muted
+          playsInline
+          className="homePochi"
+          onClick={playWan}
+          style={{ cursor: "pointer" }}
+        />
+
+        {/*
         <img src="/images/illustrations/pochi.png" className="homePochi" />   
+        */}
 
         <h1 className="homeTitle"></h1>
 
