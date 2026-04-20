@@ -76,7 +76,6 @@ export default function UnitList(){
           return (
             <div
               className="unitCard"
-              style={{ background: unit.color }}
               key={no}
               ref={(el) => (scrollRefs.current[no] = el)}
               onClick={() => {
@@ -84,22 +83,25 @@ export default function UnitList(){
                 openUnit(no);
               }}
             >
-              <div className="unitTitle">Unit {no}</div>
-              <div className="unitName">{unit.name}</div>
-
-              <div className="unitBarRow">
-                <div className="unitBarContainer">
-                  <div 
-                    className="unitBarFill" 
-                    style={{ 
-                      width: `${progressPercent}%`,
-                      backgroundColor: progressPercent === 100 ? "#FFD700" : "white", 
-                      boxShadow: progressPercent === 100 ? "0 0 10px #FFD700" : "none"
-                    }} 
-                  />
-                </div>
-                <div className="progressText">
-                  {clearedCount}/{total}
+              <img 
+                src="/images/illustrations/unitlist_button.png" 
+                className="unitCardBg"
+              />
+              <div className="unitCardContent">
+                <div className="unitTitle">Unit {no}</div>
+                <div className="unitName">{unit.name}</div>
+                <div className="unitBarRow">
+                  <div className="unitBarContainer">
+                    <div 
+                      className="unitBarFill" 
+                      style={{ 
+                        width: `${progressPercent}%`,
+                        backgroundColor: progressPercent === 100 ? "#FFD700" : "#555",
+                        boxShadow: progressPercent === 100 ? "0 0 10px #FFD700" : "none"
+                      }} 
+                    />
+                  </div>
+                  <div className="progressText">{clearedCount}/{total}</div>
                 </div>
               </div>
             </div>

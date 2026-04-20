@@ -39,10 +39,13 @@ export default function LessonList() {
 
       <div
         className="lessonHeader"
-        style={{ backgroundColor: unitColor, cursor: "pointer" }}
         onClick={() => router.push("/unitList")}
       >
-        <div className="headerInner">
+        <img 
+          src="/images/illustrations/unitlist_button.png" 
+          className="unitCardBg"
+        />
+        <div className="lessonHeaderContent">
           <h1>Unit {unit}</h1>
           <p>{lessons[0]?.unit_name}</p>
         </div>
