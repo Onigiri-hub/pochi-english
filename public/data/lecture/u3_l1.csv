@@ -1,33 +1,37 @@
 page_id,lesson_id,page_NO,text,deco_words,style,image_NO,layout
-u3_l1_p1,u3_l1,1,"ものの名前の前に、
+u3_l1_p1,u3_l1,1,"ものの名前の前に
 「前置詞」をつけると",,,3-1-1,image_top
 u3_l1_p2,u3_l1,2,"ちょっと意味を
 足すことができるよ。
 例えば…",前置詞,bold,3-1-1,image_top
 u3_l1_p3,u3_l1,3,"「on」をくっつけて
-机の「上に」とか",前置詞,bold,3-1-2,image_top
+テーブルの「上に」とか",前置詞,bold,3-1-2,image_top
 u3_l1_p4,u3_l1,4,"「in」をくっつけて、
 部屋の「中に」とかね。",,,3-1-3,image_top
 u3_l1_p5,u3_l1,5,"実は、よく使う前置詞は、
 たったの20個ほど。",,,3-1-4,image_top
 u3_l1_p6,u3_l1,6,"全部覚えたら、
 英語のイメージが
-めっちゃ入ってくるようになるよ。
-（きっとね）",,,3-1-4,image_top
+めっちゃ入ってくるように
+なるよ。（きっとね）",,,3-1-4,image_top
 u3_l1_p7,u3_l1,7,"でも初めから20個はきついので
 まずは3個、紹介するね。",,,3-1-4,image_top
 u3_l1_p8,u3_l1,8,"「on」は、何かの上とか、
 何かにペタッと
 くっついているイメージ。",,,3-1-5,image_top
-u3_l1_p9,u3_l1,9,on the desk は「机の上に」,,,3-1-5,image_top
-u3_l1_p10,u3_l1,10,on the wall は「壁に（くっついて）」,,,3-1-5,image_top
+u3_l1_p9,u3_l1,9,"on the table は
+「テーブルの上に」",,,3-1-5,image_top
+u3_l1_p10,u3_l1,10,"on the wall は
+「壁に（くっついて）」",,,3-1-5,image_top
 u3_l1_p11,u3_l1,11,"on Sunday は
-「日曜日にぺたっと乗っかってる」
+日曜日にぺたっと乗っかってる
 そんなイメージ。",on,bold,3-1-6,image_top
-u3_l1_p12,u3_l1,12,「at」は、とある一か所を指すイメージ。,on,bold,3-1-7,image_top
+u3_l1_p12,u3_l1,12,"「at」は
+とある一か所を指すイメージ。",on,bold,3-1-7,image_top
 u3_l1_p13,u3_l1,13,at school は「学校で」,,,3-1-7,image_top
 u3_l1_p14,u3_l1,14,at noon は「正午に」,at,bold,3-1-7,image_top
-u3_l1_p15,u3_l1,15,「in」は、ある範囲内にいるイメージ。,at,bold,3-1-8,image_top
+u3_l1_p15,u3_l1,15,"「in」は
+ある範囲内にいるイメージ。",at,bold,3-1-8,image_top
 u3_l1_p16,u3_l1,16,in a bottle は「ボトルの中に」,,,3-1-8,image_top
 u3_l1_p17,u3_l1,17,in the room は「部屋の中に」,in,bold,3-1-8,image_top
 u3_l1_p18,u3_l1,18,"いきなりたくさん覚えるのは
