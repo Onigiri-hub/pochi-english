@@ -2,13 +2,21 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../firebase";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "firebase/auth";
 
 export default function Home() {
   const router = useRouter();
   const [phase, setPhase] = useState("loading"); // "loading" | "animation" | "welcome"
 
   useEffect(() => {
+
+    // ★追加：リダイレクト後の処理
+    getRedirectResult(auth).then((result) => {
+      if (result?.user) {
+        router.push("/home");
+      }
+    });
+
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
         // ログイン済み → アニメーションを流してからUnitListへ
@@ -25,10 +33,15 @@ export default function Home() {
     return () => unsubscribe();
   }, []);
 
+  //const handleGoogleLogin = async () => {
+  //  const provider = new GoogleAuthProvider();
+  //  await signInWithPopup(auth, provider);
+  //  // ログイン成功 → onAuthStateChangedが発火してアニメーション→UnitListへ
+  //};
+
   const handleGoogleLogin = async () => {
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider);
-    // ログイン成功 → onAuthStateChangedが発火してアニメーション→UnitListへ
+    await signInWithRedirect(auth, provider);
   };
 
   // ログイン済み：アニメーション画面
