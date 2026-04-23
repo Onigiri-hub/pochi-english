@@ -9,30 +9,28 @@ export default function Home() {
   const [phase, setPhase] = useState("loading"); // "loading" | "animation" | "welcome"
 
   useEffect(() => {
-
-    // ★追加：リダイレクト後の処理
     getRedirectResult(auth).then((result) => {
       if (result?.user) {
         router.push("/home");
+        return;
       }
-    });
 
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) {
-        // ログイン済み → アニメーションを流してからUnitListへ
-        setPhase("animation");
-        setTimeout(() => {
-          router.push("/home");
-        }, 3000);
-      } else {
-        // 未ログイン → ウェルカム画面を表示
-        setPhase("welcome");
-      }
-    });
+      // リダイレクト結果がない場合だけonAuthStateChangedを動かす
+      const unsubscribe = auth.onAuthStateChanged((user) => {
+        if (user) {
+          setPhase("animation");
+          setTimeout(() => {
+            router.push("/home");
+          }, 3000);
+        } else {
+          setPhase("welcome");
+        }
+      });
 
-    return () => unsubscribe();
+      return () => unsubscribe();
+    });
   }, []);
-
+  
   //const handleGoogleLogin = async () => {
   //  const provider = new GoogleAuthProvider();
   //  await signInWithPopup(auth, provider);
