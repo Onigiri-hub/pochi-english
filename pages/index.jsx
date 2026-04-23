@@ -2,35 +2,27 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { auth } from "../firebase";
-import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 export default function Home() {
   const router = useRouter();
   const [phase, setPhase] = useState("loading"); // "loading" | "animation" | "welcome"
 
   useEffect(() => {
-    getRedirectResult(auth).then((result) => {
-      if (result?.user) {
-        router.push("/home");
-        return;
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setPhase("animation");
+        setTimeout(() => {
+          router.push("/home");
+        }, 3000);
+      } else {
+        setPhase("welcome");
       }
-
-      // リダイレクト結果がない場合だけonAuthStateChangedを動かす
-      const unsubscribe = auth.onAuthStateChanged((user) => {
-        if (user) {
-          setPhase("animation");
-          setTimeout(() => {
-            router.push("/home");
-          }, 3000);
-        } else {
-          setPhase("welcome");
-        }
-      });
-
-      return () => unsubscribe();
     });
+
+    return () => unsubscribe();
   }, []);
-  
+
   //const handleGoogleLogin = async () => {
   //  const provider = new GoogleAuthProvider();
   //  await signInWithPopup(auth, provider);
@@ -39,9 +31,12 @@ export default function Home() {
 
   const handleGoogleLogin = async () => {
     const provider = new GoogleAuthProvider();
-    await signInWithRedirect(auth, provider);
+    try {
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      console.error("ログイン失敗:", error);
+    }
   };
-
   // ログイン済み：アニメーション画面
   
 
