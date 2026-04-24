@@ -19,7 +19,7 @@ export default function DeleteSuccess() {
         <h2>ご利用ありがとうございました！</h2>
         <p>アカウントの削除が完了しました。</p>
         <button 
-            onClick={() => router.push("/login")}
+            onClick={() => router.push("/")}
             style={{ marginTop: "30px", padding: "10px 20px", borderRadius: "20px", border: "none", backgroundColor: "#333333" }}
         >
         ログイン画面へ戻る

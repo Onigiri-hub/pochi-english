@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
+u5_l2_p1,u5_l2,user,,left,none,1,,1,＿　＿＿＿　＿＿＿＿　.,,I play soccer.,,私はサッカーするよ。,,I play soccer,I|play|soccer,5-2-1-a.mp3,,I play soccer,5-2-1,,
+u5_l2_p2,u5_l2,user,,left,none,1,,1,＿＿　＿＿＿　＿＿＿＿　.,,You like music.,,あなたは音楽がすき。,,You like music,You|like|music,5-2-2-a.mp3,,You like music,5-2-2,,
+u5_l2_p3,u5_l2,user,,left,none,1,,1,＿＿　＿＿＿　＿＿　.,,We watch TV.,,私たちはテレビをみるよ。,,We watch TV,We|watch|TV,5-2-3-a.mp3,,We watch TV,5-2-3,,
+u5_l2_p4,u5_l2,user,,left,none,1,,1,＿＿＿　＿＿　＿　＿＿＿＿　.,,They use a computer.,,彼らはコンピュータを使うよ。,,They use a computer,They|use|a|computer,5-2-4-a.mp3,,They use a computer,5-2-4,,
+u5_l2_p5,u5_l2,user,,left,none,1,,1,＿　＿＿＿　＿　＿＿　.,,I have a pen.,,私はペンを持ってるよ。,,I have a pen,I|have|a|pen,5-2-5-a.mp3,,I have a pen,5-2-5,,
+u5_l2_p6,u5_l2,user,,left,none,1,,1,＿＿　＿＿＿　＿＿＿　.,,You read books.,,あなたは本を読みます。,,You read books,You|read|books,5-2-6-a.mp3,,You read books,5-2-6,,
+u5_l2_p7,u5_l2,user,,left,none,1,,1,＿　＿＿　＿＿　＿＿＿　.,,I go to school.,,私は学校に行きます。,,I go to school,I|go|to|school,5-2-7-a.mp3,,I go to school,5-2-7,,
+u5_l2_p8,u5_l2,user,,left,none,1,,1,＿＿　＿＿＿　＿＿＿　＿＿＿　.,,You play video games.,,あなたはゲームをします。,,You play video games,You|play|video|games,5-2-8-a.mp3,,You play video games,5-2-8,,
+u5_l2_p9,u5_l2,user,,left,none,1,,1,＿＿　＿＿＿　＿＿＿　＿＿＿＿　.,,We eat lunch together.,,私たちは一緒にランチを食べます。,,We eat lunch together,We|eat|lunch|together,5-2-9-a.mp3,,We eat lunch together,5-2-9,,
+u5_l2_p10,u5_l2,user,,left,none,1,,1,＿＿　＿＿＿　＿＿＿　＿＿　＿＿＿　.,,They watch movies at home.,,彼らは家で映画を見ます。,,They watch movies at home,They|watch|movies|at|home,5-2-10-a.mp3,,They watch movies at home,5-2-10,,
+u5_l2_p11,u5_l2,user,,left,none,1,,1,＿　＿＿　＿＿　＿＿＿＿　.,,I like cute animals.,,私はかわいい動物が好きです。,,I like cute animals,I|like|cute|animals,5-2-11-a.mp3,,I like cute animals,5-2-11,,

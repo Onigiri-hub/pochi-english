@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Navigation from "../components/Navigation";
 import { auth, db } from "../firebase";
-import { doc, getDoc, collection, query, getDocs, orderBy } from "firebase/firestore"; // collection, queryなどを追加
+import { doc, getDoc, setDoc, collection, query, getDocs, orderBy } from "firebase/firestore"; // collection, queryなどを追加
 import { Bar } from "react-chartjs-2"; // グラフ用
 import {
   Chart as ChartJS,
@@ -31,10 +31,19 @@ export default function Progress() {
         // 1. プロフィール読み込み（既存）
         const userRef = doc(db, "users", u.uid);
         const snap = await getDoc(userRef);
+        //if (snap.exists()) {
+        //  setProfile(snap.data());
+        //}
         if (snap.exists()) {
           setProfile(snap.data());
+        } else {
+          const defaultProfile = {
+            nickname: u.displayName || "ゲスト",
+            avatar: "01.png"
+          };
+          await setDoc(userRef, defaultProfile);
+          setProfile(defaultProfile);
         }
-
         // 2. 学習履歴(history)の読み込みを追加
         const historyRef = collection(db, "users", u.uid, "history");
         const q = query(historyRef, orderBy("clearedAt", "desc"));
