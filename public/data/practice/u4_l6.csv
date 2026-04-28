@@ -1,9 +1,9 @@
-question_id,lesson_id,icon_first,icon_second,ja_show_first,position_first,position_second,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second
-u4_l6_p1,u4_l6,user,,1,left,none,,1,＿＿＿　＿＿　＿　＿＿＿ .,,That is a dog.,,あれは犬です。,,That is a dog,That|is|a|dog,4-6-1-a.mp3,,That is a dog,4-6-1,
-u4_l6_p2,u4_l6,user,,1,left,none,,1,＿＿＿　＿＿　＿＿＿＿　.,,These are books.,,これらは本です。,,These are books,These|are|books,4-6-2-a.mp3,,These are books,4-6-2,
-u4_l6_p3,u4_l6,user,,1,left,none,,1,＿＿＿　＿＿　＿＿＿＿　.,,Those are chairs.,,あれらは椅子です。,,Those are chairs,Those|are|chairs,4-6-3-a.mp3,,Those are chairs,4-6-3,
-u4_l6_p4,u4_l6,05.png,user,1,left,right,1,1,What is this?,＿＿＿　＿＿　＿＿　＿＿＿＿　.,What is this?,This is an apple.,これは何？,これはリンゴだよ。,This is an apple,This|is|an|apple,4-6-4-a.mp3,4-6-4-b.mp3,This is an apple,4-6-4,4-6-4
-u4_l6_p5,u4_l6,05.png,user,1,left,right,1,1,What are those?,＿＿＿　＿＿　＿＿　＿＿＿　.,What are those?,Those are my shoes.,あれらは何？,あれらは私の靴だよ,Those are my shoes,Those|are|my|shoes,4-6-5-a.mp3,4-6-5-b.mp3,Those are my shoes,4-6-5,4-6-5
-u4_l6_p6,u4_l6,05.png,user,1,left,right,1,1,What is this?,＿＿＿　＿＿　＿＿＿　＿＿＿　＿＿　.,What is this?,This is a very cute cat.,これは何？,これはとてもかわいい猫だよ。,This is a very cute cat,This|is|a|very|cute|cat,4-6-6-a.mp3,4-6-6-b.mp3,This is a very cute cat,4-6-6,4-6-6
-u4_l6_p7,u4_l6,05.png,user,1,left,right,1,1,What are those?,＿＿＿＿　＿＿　＿＿＿　.,What are those?,Those are birds.,あれらは何？,あれらは鳥だよ。,Those are birds,Those|are|birds,4-6-7-a.mp3,4-6-7-b.mp3,Those are birds,4-6-7,4-6-7
-u4_l6_p8,u4_l6,05.png,user,1,left,right,1,1,Is this your bag?,Yes. 　＿＿　＿＿　＿＿＿　.,Is this your bag?,Yes. It is new.,これはあなたのかばん？,そうだよ。それはあたらしいんだよ。,It is new,It|is|new,4-6-8-a.mp3,4-6-8-b.mp3,It is new,4-6-8,4-6-8
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
+u4_l6_p1,u4_l6,user,,left,none,1,,1,___　__　_　___ .,,That is a dog.,,あれは犬です。,,That is a dog,That|is|a|dog,4-6-1-a.mp3,,That is a dog,4-6-1,,y
+u4_l6_p2,u4_l6,user,,left,none,1,,1,____　___　_____ .,,These are books.,,これらは本です。,,These are books,These|are|books,4-6-2-a.mp3,,These are books,4-6-2,,y
+u4_l6_p3,u4_l6,user,,left,none,1,,1,____ 　___ 　_____ .,,Those are chairs.,,あれらは椅子です。,,Those are chairs,Those|are|chairs,4-6-3-a.mp3,,Those are chairs,4-6-3,,y
+u4_l6_p4,u4_l6,05.png,user,left,right,1,1,1,What is this?,____ 　__ 　__ 　_____ .,What is this?,This is an apple.,これは何？,これはリンゴだよ。,This is an apple,This|is|an|apple,4-6-4-a.mp3,4-6-4-b.mp3,This is an apple,4-6-4,4-6-4,y
+u4_l6_p5,u4_l6,05.png,user,left,right,1,1,1,What are those?,_____ 　___　 __ 　______ .,What are those?,Those are my shoes.,あれらは何？,あれらは私の靴だよ,Those are my shoes,Those|are|my|shoes,4-6-5-a.mp3,4-6-5-b.mp3,Those are my shoes,4-6-5,4-6-5,y
+u4_l6_p6,u4_l6,05.png,user,left,right,1,1,1,What is this?,____　 __ 　_ 　____ 　____ 　___ .,What is this?,This is a very cute cat.,これは何？,これはとてもかわいい猫だよ。,This is a very cute cat,This|is|a|very|cute|cat,4-6-6-a.mp3,4-6-6-b.mp3,This is a very cute cat,4-6-6,4-6-6,y
+u4_l6_p7,u4_l6,05.png,user,left,right,1,1,1,What are those?,_____ 　___　 ____ .,What are those?,Those are birds.,あれらは何？,あれらは鳥だよ。,Those are birds,Those|are|birds,4-6-7-a.mp3,4-6-7-b.mp3,Those are birds,4-6-7,4-6-7,y
+u4_l6_p8,u4_l6,05.png,user,left,right,1,1,1,Is this your bag?,Yes. 　__ 　__ 　____ .,Is this your bag?,Yes. It is new.,これはあなたのかばん？,そうだよ。それはあたらしいんだよ。,It is new,It|is|new,4-6-8-a.mp3,4-6-8-b.mp3,It is new,4-6-8,4-6-8,y
