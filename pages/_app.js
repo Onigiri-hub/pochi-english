@@ -28,13 +28,14 @@ export default function MyApp({ Component, pageProps }) {
 
     // カチ音
     const sound = new Audio("/sound/kachi.mp3")
-    
+
     function handleClick(e) {
-      if (e.target.closest("[data-no-sound]")) return
-      sound.currentTime = 0
-      sound.play().catch(() => {})
+      if (e.target.closest("[data-sound]")) {
+        sound.currentTime = 0
+        sound.play().catch(() => {})
+      }
     }
-    
+   
     document.addEventListener("click", handleClick)
     return () => document.removeEventListener("click", handleClick)
   }, [])

@@ -62,6 +62,7 @@ export default function LessonComplete() {
             <button
               className="finishButton"
               onClick={() => router.push(`/lessonList?unit=${unit}`)}
+              data-sound
             >
               次へ
             </button>

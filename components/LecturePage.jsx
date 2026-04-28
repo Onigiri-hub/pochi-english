@@ -82,6 +82,7 @@ export default function LecturePage({ pages }) {
           className="navButton"
           onClick={() => { if (index > 0) setIndex(index - 1) }}
           style={{ visibility: index === 0 ? "hidden" : "visible" }}  // ★ disabledじゃなくvisibilityで
+          data-sound
         >
           ←
         </button>
@@ -90,6 +91,7 @@ export default function LecturePage({ pages }) {
           <button
             className="finishButton"
             onClick={()=>router.push(`/lessonComplete?unit=${unit}&order=${order}`)}
+            data-sound
           >
             Finish
           </button>
@@ -97,6 +99,7 @@ export default function LecturePage({ pages }) {
           <button
             className="navButton"
             onClick={next}
+            data-sound
           >
             →
           </button>

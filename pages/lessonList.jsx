@@ -40,6 +40,7 @@ export default function LessonList() {
       <div
         className="lessonHeader"
         onClick={() => router.push("/unitList")}
+        data-sound
       >
         <img 
           src="/images/illustrations/unitlist_button.png" 
@@ -63,6 +64,7 @@ export default function LessonList() {
               className={`lessonIcon ${isLocked ? "locked" : isCurrent ? "current" : "cleared"}`}
               style={{ backgroundColor: isLocked ? "#9e9e9e" : l.unit_color }}
               onClick={() => { if (!isLocked) goLesson(l) }}
+              data-sound
             >
               <img
                 src={l.lesson_type === "lecture"

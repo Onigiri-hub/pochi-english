@@ -82,6 +82,7 @@ export default function UnitList(){
                 localStorage.setItem("lastPlayedUnit", no);
                 openUnit(no);
               }}
+              data-sound
             >
               <img 
                 src="/images/illustrations/unitlist_button.png" 

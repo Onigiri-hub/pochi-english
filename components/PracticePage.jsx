@@ -13,7 +13,7 @@ export default function PracticePage({ questions }) {
   const [selected,setSelected] = useState([])
   const [chips,setChips] = useState([])
   const [result,setResult] = useState(null)
-  const pa = useRef(new Audio("/sound/ti.mp3"))
+  const pa = useRef(new Audio("/sound/pi.mp3"))
   const seikaiRef = useRef(null) // 新しく追加（名前をseikaiRefにして区別する
   const q = questions[index]
   const [showJaFirst, setShowJaFirst] = useState(false)
