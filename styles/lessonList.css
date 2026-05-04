@@ -34,6 +34,14 @@ background:#ebebeb;
   align-items: center;
   color: #333;
 }
+.lessonHeaderContent h1 {
+  margin: 0 0 4px 0;
+  font-size: 24px;
+}
+
+.lessonHeaderContent p {
+  margin: 0;
+}
 
 .headerInner {
   max-width: 400px;
