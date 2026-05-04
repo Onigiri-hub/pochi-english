@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
+u7_l2_p1,u7_l2,user,,left,none,1,,1,________________ .,,The small black dog is cute.,,その小さくて黒い犬はかわいいね。,,The small black dog is cute,The|small|black|dog|is|cute,7-2-1-a.mp3,,The small black dog is cute,7-2-1,,
+u7_l2_p2,u7_l2,user,,left,none,1,,1,________________ .,,He has a small bag.,,彼は小さい鞄をもってる。,,He has a small bag,He|has|a|small|bag,7-2-2-a.mp3,,He has a small bag,7-2-2,,
+u7_l2_p3,u7_l2,user,,left,none,1,,1,________________ .,,My new English teacher is nice.,,私の新しい英語の先生は良いよ,,My new English teacher is nice,My|new|English|teacher|is|nice,7-2-3-a.mp3,,My new English teacher is nice,7-2-3,,
+u7_l2_p4,u7_l2,user,,left,none,1,,1,________________ .,,She reads a history book.,,彼女は歴史の本を読むよ。,,She reads a history book,She|reads|a|history|book,7-2-4-a.mp3,,She reads a history book,7-2-4,,
+u7_l2_p5,u7_l2,user,,left,none,1,,1,________________ .,,That is a beautiful flower.,,あれはきれいな花だね,,That is a beautiful flower,That|is|a|beautiful|flower,7-2-5-a.mp3,,That is a beautiful flower,7-2-5,,
+u7_l2_p6,u7_l2,user,,left,none,1,,1,________________ .,,I have a new smartphone.,,新しいスマホ持ってるんだ。,,I have a new smartphone,I|have|a|new|smartphone,7-2-6-a.mp3,,I have a new smartphone,7-2-6,,
+u7_l2_p7,u7_l2,user,,left,none,1,,1,________________ .,,That big red car is cool.,,あのおっきくて赤い車、かっこいいね,,That big red car is cool,That|big|red|car|is|cool,7-2-7-a.mp3,,That big red car is cool,7-2-7,,
+u7_l2_p8,u7_l2,user,,left,none,1,,1,________________ .,,I need a car key.,,車のカギが必要なの。,,I need a car key,I|need|a|car|key,7-2-8-a.mp3,,I need a car key,7-2-8,,
+u7_l2_p9,u7_l2,user,,left,none,1,,1,________________ .,,He drinks apple juice.,,彼はリンゴジュースを飲みます。,,He drinks apple juice,He|drinks|apple|juice,7-2-9-a.mp3,,He drinks apple juice,7-2-9,,
+u7_l2_p10,u7_l2,user,,left,none,1,,1,________________ .,,I like hot tea.,,ホット紅茶が好き。,,I like hot tea,I|like|hot|tea,7-2-10-a.mp3,,I like hot tea,7-2-10,,
+u7_l2_p11,u7_l2,user,,left,none,1,,1,________________ .,,He has a blue shirt.,,彼は青いシャツを持ってるよ。,,He has a blue shirt,He|has|a|blue|shirt,7-2-11-a.mp3,,He has a blue shirt,7-2-11,,
