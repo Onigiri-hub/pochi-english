@@ -1,0 +1,6 @@
+stage_id,stage_no,stage_name,mode_category,description
+st1,1,Stage1,1to1,英検4級レベル
+st2,2,Stage2,1to1,英検3級レベル
+st3,3,Stage3,1to1,英検準2級レベル
+st4,4,Stage4,1to1,英検2級レベル
+st5,5,Stage5,1to1,英検準1級レベル

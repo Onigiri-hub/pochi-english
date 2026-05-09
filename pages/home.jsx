@@ -66,9 +66,9 @@ export default function Home() {
           <img
             src="/images/illustrations/pochi_vocabulary.png"
             alt="英単語学習"
-            className="homeBtnImg disabled"
+            className="homeBtnImg"
+            onClick={() => router.push("/stageList")}
           />
-
 
 
         </div>

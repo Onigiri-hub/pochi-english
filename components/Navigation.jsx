@@ -43,7 +43,11 @@ export default function Navigation() {
         </button>
 
         <button onClick={() => router.push("/unitList")} className="navItem" data-sound>
-          <img src="/images/icons/list.svg" alt="リスト" />
+          <img src="/images/icons/dog.svg" alt="リスト" />
+        </button>
+
+        <button onClick={() => router.push("/stageList")} className="navItem">
+          <img src="/images/icons/honekko.svg" alt="英単語" />
         </button>
 
         <button onClick={() => router.push("/progress")} className="navItem" data-sound>

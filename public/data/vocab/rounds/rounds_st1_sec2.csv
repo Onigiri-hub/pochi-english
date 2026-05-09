@@ -1,0 +1,7 @@
+section_id,round_id,round_no,mode_type,word_from,word_to,is_review
+st1_sec2,r001,1,fourChoices_en2ja,v0041,v0060,0
+st1_sec2,r002,2,fourChoices_en2ja,v0061,v0080,0
+st1_sec2,r003,3,review_en2ja,v0001,v0080,1
+st1_sec2,r004,4,fourChoices_ja2en,v0041,v0060,0
+st1_sec2,r005,5,fourChoices_ja2en,v0061,v0080,0
+st1_sec2,r006,6,review_ja2en,v0001,v0080,1
