@@ -18,6 +18,8 @@ export default function FourChoices() {
   const [roundInfo, setRoundInfo] = useState(null)
   const timerRef = useRef(null)
   const doneWordsRef = useRef(new Set())
+  const [masteryMap, setMasteryMap] = useState({}) // word_idごとの習熟度
+  const masteryMapRef = useRef({}) // タイマー用
 
   useEffect(() => {
     if (!router.isReady) return
@@ -62,6 +64,12 @@ export default function FourChoices() {
       const key = `vocab_round_${round}`
       const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
       setDoneWords(new Set(existing.doneWords))
+
+      // localStorageから習熟度を読み込む
+      const masteryKey = `vocab_mastery_${section}`
+      const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+      masteryMapRef.current = existingMastery
+      setMasteryMap(existingMastery)
     }
     load()
   }, [router.isReady])
@@ -80,7 +88,9 @@ export default function FourChoices() {
         if (t <= 1) {
           clearInterval(timerRef.current)
           saveRoundProgress(roundInfo?.is_review === "1")
+          saveMastery() // ← 追加
           router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
+
           return 0
         }
         return t - 1
@@ -117,24 +127,63 @@ export default function FourChoices() {
     }))
   }
 
+  function updateMastery(wordId, isCorrect) {
+    const current = masteryMapRef.current[wordId] || {
+      correct: 0, wrong: 0, streak: 0, ease: 0, lastResult: null, mastery: "①未学習"
+    }
+
+    let updated
+    if (isCorrect) {
+      updated = {
+        ...current,
+        correct: current.correct + 1,
+        streak: current.streak + 1,
+        ease: Math.min(10, current.ease + 1),
+        lastResult: true,
+      }
+    } else {
+      updated = {
+        ...current,
+        wrong: current.wrong + 1,
+        streak: 0,
+        ease: Math.max(0, current.ease - 2),
+        lastResult: false,
+      }
+    }
+
+    // mastery判定
+    if (updated.ease >= 3 && updated.streak >= 2) {
+      updated.mastery = "③定着済"
+    } else if (updated.correct > 0 || updated.wrong > 0) {
+      updated.mastery = "②学習中"
+    } else {
+      updated.mastery = "①未学習"
+    }
+
+    const newMap = { ...masteryMapRef.current, [wordId]: updated }
+    masteryMapRef.current = newMap
+    setMasteryMap(newMap)
+  }
+
   function handleSelect(choice) {
     const isCorrect = choice.word_id === currentWord.word_id
 
     if (isCorrect) {
-      // 一撃正解（eliminatedが空）なら「できた」に追加
       if (eliminated.length === 0) {
         const newDone = new Set([...doneWordsRef.current, currentWord.word_id])
         doneWordsRef.current = newDone
         setDoneWords(newDone)
       }
+      updateMastery(currentWord.word_id, true) // ← 追加
       setCorrect(true)
-      // 以下は今まで通り
       setTimeout(() => {
         setSlideState("out")
         setTimeout(() => {
           if (current < words.length - 1) {
             setCurrent(c => c + 1)
           } else {
+            saveRoundProgress(roundInfo?.is_review === "1")
+            saveMastery() // ← 追加
             setWords(prev => shuffle([...prev]))
             setCurrent(0)
           }
@@ -145,8 +194,14 @@ export default function FourChoices() {
         }, 100)
       }, 200)
     } else {
+      updateMastery(currentWord.word_id, false) // ← 追加
       setEliminated(prev => [...prev, choice.word_id])
     }
+  }
+
+  function saveMastery() {
+    const masteryKey = `vocab_mastery_${section}`
+    localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
   }
 
   const slideStyle = {
@@ -229,7 +284,10 @@ export default function FourChoices() {
 
           {/* デバッグ用（確認したら消す） */}
           <div style={{ fontSize: "12px", color: "#999", textAlign: "center" }}>
-            できた: {[...doneWords].join(", ") || "なし"}
+            できた: {[...doneWords].join(", ") || "なし"}<br/>
+            ease: {masteryMap[currentWord?.word_id]?.ease ?? 0} / 
+            streak: {masteryMap[currentWord?.word_id]?.streak ?? 0} / 
+            mastery: {masteryMap[currentWord?.word_id]?.mastery ?? "①未学習"}
           </div>
 
           {/* 4択ボタン */}
