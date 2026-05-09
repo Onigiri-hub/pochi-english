@@ -214,14 +214,17 @@ export default function FourChoices() {
       <div style={{ overflow: "hidden" }}>
         <div style={slideStyle}>
 
-          {/* 英単語 */}
+          {/* 英単語 or 日本語（mode_typeで切り替え） */}
           <div style={{
             textAlign: "center",
             fontSize: "36px",
             fontWeight: "bold",
             margin: "30px 0"
           }}>
-            {currentWord.word}
+            {roundInfo?.mode_type === "fourChoices_ja2en"
+              ? currentWord.ja      // 日本語を表示
+              : currentWord.word    // 英語を表示
+            }
           </div>
 
           {/* デバッグ用（確認したら消す） */}
@@ -263,7 +266,13 @@ export default function FourChoices() {
                     transition: "background 0.2s"
                   }}
                 >
-                  {choice.ja}
+
+                  {roundInfo?.mode_type === "fourChoices_ja2en"
+                    ? choice.word   // 英語を選択肢に
+                    : choice.ja     // 日本語を選択肢に
+                  }
+
+
                 </button>
               )
             })}
