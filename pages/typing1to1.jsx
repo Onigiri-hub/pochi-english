@@ -42,6 +42,7 @@ export default function Typing() {
   const masteryMapRef = useRef({})
   const [masteryMap, setMasteryMap] = useState({})
   const inputRef = useRef(null)
+  const seikaiRef = useRef(null)
 
   useEffect(() => {
     if (!router.isReady) return
@@ -80,7 +81,7 @@ export default function Typing() {
       //const shuffled = shuffle(filtered).slice(0, 20)
       //setWords(shuffled)
 
-const from = currentRound.word_from
+      const from = currentRound.word_from
       const to = currentRound.word_to
       const filtered = wData.filter(w =>
         w.word_id >= from && w.word_id <= to
@@ -119,6 +120,13 @@ const from = currentRound.word_from
       const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
+
+      // 効果音の準備
+      if (!seikaiRef.current) {
+        seikaiRef.current = new Audio("/sound/seikai.mp3")
+        seikaiRef.current.playbackRate = 1.5
+      }
+
     }
     load()
   }, [router.isReady])
@@ -202,13 +210,22 @@ const from = currentRound.word_from
       doneWordsRef.current = newDone
       setDoneWords(newDone)
       updateMastery(currentWord.word_id, true)
+      // 効果音再生
+      if (seikaiRef.current) {
+        seikaiRef.current.currentTime = 0
+        seikaiRef.current.play()
+      }
       setResult("correct")
     } else if (distance === 1) {
-      // スペルミス（1文字以内）→ 正答判定
+      // スペルミス→正答判定
       const newDone = new Set([...doneWordsRef.current, currentWord.word_id])
       doneWordsRef.current = newDone
       setDoneWords(newDone)
-      updateMastery(currentWord.word_id, true)
+      // 効果音再生
+      if (seikaiRef.current) {
+        seikaiRef.current.currentTime = 0
+        seikaiRef.current.play()
+      }
       setCorrectAnswer(currentWord.word)
       setResult("typo")
     } else {

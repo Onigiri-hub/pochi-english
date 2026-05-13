@@ -18,6 +18,7 @@ export default function FourChoices() {
   const [roundInfo, setRoundInfo] = useState(null)
   const timerRef = useRef(null)
   const doneWordsRef = useRef(new Set())
+  const seikaiRef = useRef(null)
   const [masteryMap, setMasteryMap] = useState({}) // word_idごとの習熟度
   const masteryMapRef = useRef({}) // タイマー用
 
@@ -106,6 +107,12 @@ export default function FourChoices() {
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
 
+      // 効果音の準備
+      if (!seikaiRef.current) {
+        seikaiRef.current = new Audio("/sound/seikai.mp3")
+        seikaiRef.current.playbackRate = 1.5
+      }
+
     }
     load()
   }, [router.isReady])
@@ -134,6 +141,15 @@ export default function FourChoices() {
     }, 1000)
     return () => clearInterval(timerRef.current)
   }, [words])
+
+  // 自動再生（fourChoices_en2jaのときだけ）
+  useEffect(() => {
+    if (!roundInfo || !words[current]?.audio) return
+    if (roundInfo.mode_type !== "fourChoices_en2ja") return
+
+    const audio = new Audio(`/audio/words/${words[current].audio}`)
+    audio.play().catch(e => console.log("再生失敗:", e))
+  }, [current, roundInfo])
 
   function getModeKey(modeType) {
     if (modeType?.includes("en2ja")) return "mode1"
@@ -234,7 +250,12 @@ export default function FourChoices() {
         doneWordsRef.current = newDone
         setDoneWords(newDone)
       }
-      updateMastery(currentWord.word_id, true) // ← 追加
+      updateMastery(currentWord.word_id, true)
+      // 効果音再生
+      if (seikaiRef.current) {
+        seikaiRef.current.currentTime = 0
+        seikaiRef.current.play()
+      }      
       setCorrect(true)
       setTimeout(() => {
         setSlideState("out")
