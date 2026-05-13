@@ -130,7 +130,15 @@ export default function SectionList() {
                   return (
                     <div
                       key={round.round_id}
-                      onClick={() => router.push(`/fourChoices?section=${section.section_id}&round=${round.round_id}`)}
+                      //onClick={() => router.push(`/fourChoices?section=${section.section_id}&round=${round.round_id}`)}
+                      
+                      onClick={() => {
+                        const path = round.mode_type?.includes("typing")
+                          ? `/typing1to1?section=${section.section_id}&round=${round.round_id}`
+                          : `/fourChoices?section=${section.section_id}&round=${round.round_id}`
+                        router.push(path)
+                      }}
+                      
                       style={{
                         width: "50px",
                         height: "50px",
