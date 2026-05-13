@@ -51,15 +51,45 @@ export default function FourChoices() {
       }).data
       setAllWords(wData)
 
+              //const from = currentRound.word_from
+              //const to = currentRound.word_to
+              //const filtered = wData.filter(w =>
+              //  w.word_id >= from && w.word_id <= to
+              //)
+
+              //const shuffled = shuffle(filtered).slice(0, 20)
+              //setWords(shuffled)
+     
       const from = currentRound.word_from
       const to = currentRound.word_to
       const filtered = wData.filter(w =>
         w.word_id >= from && w.word_id <= to
       )
 
-      const shuffled = shuffle(filtered).slice(0, 20)
-      setWords(shuffled)
-     
+      let selectedWords
+      if (currentRound.is_review === "1") {
+        // reviewRound：習熟度が低い順にピックアップ
+        const masteryKey = `vocab_mastery_${section}`
+        const masteryData = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+
+        const sorted = filtered.sort((a, b) => {
+          const easeA = masteryData[a.word_id]?.ease ?? 0
+          const easeB = masteryData[b.word_id]?.ease ?? 0
+          if (easeA !== easeB) return easeA - easeB // ease低い順
+
+          // 同率なら最終学習日が古い順（なければ一番古い扱い）
+          const dateA = masteryData[a.word_id]?.lastStudied ?? "0"
+          const dateB = masteryData[b.word_id]?.lastStudied ?? "0"
+          return dateA.localeCompare(dateB)
+        })
+        selectedWords = sorted.slice(0, 20)
+      } else {
+        // 通常Round：シャッフルして20単語
+        selectedWords = shuffle(filtered).slice(0, 20)
+      }
+
+      setWords(selectedWords)
+
       // localStorageから前回の「できた」を読み込む
       const key = `vocab_round_${round}`
       const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
@@ -132,24 +162,41 @@ export default function FourChoices() {
       correct: 0, wrong: 0, streak: 0, ease: 0, lastResult: null, mastery: "①未学習"
     }
 
-    let updated
-    if (isCorrect) {
-      updated = {
-        ...current,
-        correct: current.correct + 1,
-        streak: current.streak + 1,
-        ease: Math.min(10, current.ease + 1),
-        lastResult: true,
-      }
-    } else {
-      updated = {
-        ...current,
-        wrong: current.wrong + 1,
-        streak: 0,
-        ease: Math.max(0, current.ease - 2),
-        lastResult: false,
-      }
+            //let updated
+            //if (isCorrect) {
+            //  updated = {
+            //    ...current,
+            //    correct: current.correct + 1,
+            //    streak: current.streak + 1,
+            //    ease: Math.min(10, current.ease + 1),
+            //    lastResult: true,
+            //  }
+            //} else {
+            //  updated = {
+            //    ...current,
+            //    wrong: current.wrong + 1,
+            //    streak: 0,
+            //    ease: Math.max(0, current.ease - 2),
+            //    lastResult: false,
+            //  }
+            //}
+
+    const updated = isCorrect ? {
+      ...current,
+      correct: current.correct + 1,
+      streak: current.streak + 1,
+      ease: Math.min(10, current.ease + 1),
+      lastResult: true,
+      lastStudied: new Date().toISOString(),
+    } : {
+      ...current,
+      wrong: current.wrong + 1,
+      streak: 0,
+      ease: Math.max(0, current.ease - 2),
+      lastResult: false,
+      lastStudied: new Date().toISOString(),
     }
+
 
     // mastery判定
     if (updated.ease >= 3 && updated.streak >= 2) {
