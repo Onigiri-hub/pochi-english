@@ -67,24 +67,22 @@ export default function FourChoices() {
       )
 
       let selectedWords
+
       if (currentRound.is_review === "1") {
-        // reviewRound：習熟度が低い順にピックアップ
-        const masteryKey = `vocab_mastery_${section}`
+        const modeKey = getModeKey(currentRound.mode_type)
+        const masteryKey = `vocab_mastery_${section}_${modeKey}`
         const masteryData = JSON.parse(localStorage.getItem(masteryKey) || '{}')
 
         const sorted = filtered.sort((a, b) => {
           const easeA = masteryData[a.word_id]?.ease ?? 0
           const easeB = masteryData[b.word_id]?.ease ?? 0
-          if (easeA !== easeB) return easeA - easeB // ease低い順
-
-          // 同率なら最終学習日が古い順（なければ一番古い扱い）
+          if (easeA !== easeB) return easeA - easeB
           const dateA = masteryData[a.word_id]?.lastStudied ?? "0"
           const dateB = masteryData[b.word_id]?.lastStudied ?? "0"
           return dateA.localeCompare(dateB)
         })
         selectedWords = sorted.slice(0, 20)
       } else {
-        // 通常Round：シャッフルして20単語
         selectedWords = shuffle(filtered).slice(0, 20)
       }
 
@@ -96,10 +94,18 @@ export default function FourChoices() {
       setDoneWords(new Set(existing.doneWords))
 
       // localStorageから習熟度を読み込む
-      const masteryKey = `vocab_mastery_${section}`
+      //const masteryKey = `vocab_mastery_${section}`
+      //const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+      //masteryMapRef.current = existingMastery
+      //setMasteryMap(existingMastery)
+
+      // localStorageから習熟度を読み込む
+      const modeKey = getModeKey(currentRound.mode_type)
+      const masteryKey = `vocab_mastery_${section}_${modeKey}`
       const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
+
     }
     load()
   }, [router.isReady])
@@ -128,6 +134,13 @@ export default function FourChoices() {
     }, 1000)
     return () => clearInterval(timerRef.current)
   }, [words])
+
+  function getModeKey(modeType) {
+    if (modeType?.includes("en2ja")) return "mode1"
+    if (modeType?.includes("ja2en")) return "mode2"
+    if (modeType?.includes("typing")) return "mode3"
+    return "mode1"
+  }
 
   function shuffle(array) {
     const copy = [...array]
@@ -192,14 +205,14 @@ export default function FourChoices() {
       ...current,
       wrong: current.wrong + 1,
       streak: 0,
-      ease: Math.max(0, current.ease - 2),
+      ease: Math.max(0, current.ease - 1),
       lastResult: false,
       lastStudied: new Date().toISOString(),
     }
 
 
     // mastery判定
-    if (updated.ease >= 3 && updated.streak >= 2) {
+    if (updated.ease >= 2 && updated.streak >= 2) {
       updated.mastery = "③定着済"
     } else if (updated.correct > 0 || updated.wrong > 0) {
       updated.mastery = "②学習中"
@@ -246,8 +259,14 @@ export default function FourChoices() {
     }
   }
 
+  //function saveMastery() {
+  //  const masteryKey = `vocab_mastery_${section}`
+  //  localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
+  //}
+
   function saveMastery() {
-    const masteryKey = `vocab_mastery_${section}`
+    const modeKey = getModeKey(roundInfo?.mode_type)
+    const masteryKey = `vocab_mastery_${section}_${modeKey}`
     localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
   }
 
@@ -323,9 +342,9 @@ export default function FourChoices() {
             fontWeight: "bold",
             margin: "30px 0"
           }}>
-            {roundInfo?.mode_type === "fourChoices_ja2en"
-              ? currentWord.ja      // 日本語を表示
-              : currentWord.word    // 英語を表示
+            {roundInfo?.mode_type?.includes("ja2en")
+              ? currentWord.ja
+              : currentWord.word
             }
           </div>
 
@@ -372,11 +391,10 @@ export default function FourChoices() {
                   }}
                 >
 
-                  {roundInfo?.mode_type === "fourChoices_ja2en"
-                    ? choice.word   // 英語を選択肢に
-                    : choice.ja     // 日本語を選択肢に
+                  {roundInfo?.mode_type?.includes("ja2en")
+                    ? choice.word
+                    : choice.ja
                   }
-
 
                 </button>
               )

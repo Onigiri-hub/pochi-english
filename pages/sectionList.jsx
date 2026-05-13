@@ -67,13 +67,15 @@ export default function SectionList() {
         {/* デバッグ用リセットボタン（確認したら消す） */}
         <button
           onClick={() => {
-            // vocab_round_で始まるlocalStorageを全部消す
             Object.keys(localStorage)
-              .filter(key => key.startsWith("vocab_round_"))
+              .filter(key => 
+                key.startsWith("vocab_round_") || 
+                key.startsWith("vocab_mastery_")
+              )
               .forEach(key => localStorage.removeItem(key))
             alert("リセットしました！")
             router.reload()
-          }}
+          }}          
           style={{
             background: "#ff4444",
             color: "white",
@@ -104,95 +106,73 @@ export default function SectionList() {
                 <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>
                   {section.section_name}
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                  <div style={{
-                    flexGrow: 1,
-                    height: "8px",
-                    background: "#eee",
-                    borderRadius: "4px",
-                    overflow: "hidden"
-                  }}>
-                    <div style={{
-                      width: "0%",
-                      height: "100%",
-                      background: "#555",
-                      borderRadius: "4px"
-                    }} />
-                  </div>
-                  <div style={{ fontSize: "14px", color: "#666" }}>
-                    0/{section.total_words}
-                  </div>
-                </div>
+
               </div>
 
               {/* Roundボタン */}
               <div style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "10px",
-                paddingLeft: "10px"
+                display: "grid",
+                gridTemplateColumns: "repeat(4, 60px)",
+                gap: "16px",
+                justifyContent: "center",
+                padding: "0 30px"
               }}>
 
-              {rounds.map((round) => {
-                // localStorageから進捗を取得
-                const key = `vocab_round_${round.round_id}`
-                const progress = JSON.parse(localStorage.getItem(key) || '{"doneWords":[],"totalWords":0}')
-                const doneCount = progress.doneWords.length
-                const totalCount = progress.totalWords || 20
-                const isCompleted = totalCount > 0 && doneCount >= totalCount
-                const inProgress = doneCount > 0 && !isCompleted
-                const percent = totalCount > 0 ? (doneCount / totalCount) * 100 : 0
+                {rounds.map((round) => {
+                  const key = `vocab_round_${round.round_id}`
+                  const progress = JSON.parse(localStorage.getItem(key) || '{"doneWords":[],"totalWords":0}')
+                  const doneCount = progress.doneWords.length
+                  const totalCount = progress.totalWords || 20
+                  const isCompleted = totalCount > 0 && doneCount >= totalCount
+                  const inProgress = doneCount > 0 && !isCompleted
+                  const percent = totalCount > 0 ? (doneCount / totalCount) * 100 : 0
 
-                return (
-                  <div
-                    key={round.round_id}
-                    onClick={() => router.push(`/fourChoices?section=${section.section_id}&round=${round.round_id}`)}
-                    style={{
-                      width: "50px",
-                      height: "50px",
-                      borderRadius: "50%",
-                      background: isCompleted ? "#02ccbb" : "#ccc",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "white",
-                      fontWeight: "bold",
-                      cursor: "pointer",
-                      position: "relative"
-                    }}
-                  >
-                    {isCompleted ? (
-                      // 完了：✓
-                      <span style={{ fontSize: "20px" }}>✓</span>
-                    ) : inProgress ? (
-                      // 進行中：円グラフ＋数字
-                      <>
-                        <svg
-                          width="50" height="50"
-                          style={{ position: "absolute", top: 0, left: 0 }}
-                        >
-                          <circle
-                            cx="25" cy="25" r="20"
-                            fill="none"
-                            stroke="#02ccbb"
-                            strokeWidth="4"
-                            strokeDasharray={`${2 * Math.PI * 20 * percent / 100} ${2 * Math.PI * 20}`}
-                            strokeLinecap="round"
-                            transform="rotate(-90 25 25)"
-                          />
-                        </svg>
-                        <span style={{ fontSize: "14px", color: "#555" }}>
-                          {round.round_no}
-                        </span>
-                      </>
-                    ) : (
-                      // 未着手：数字
-                      <span>{round.round_no}</span>
-                    )}
-                  </div>
-                )
-              })}
-
+                  return (
+                    <div
+                      key={round.round_id}
+                      onClick={() => router.push(`/fourChoices?section=${section.section_id}&round=${round.round_id}`)}
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        borderRadius: "50%",
+                        background: isCompleted ? "#02ccbb" : "#ddd",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "white",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                        position: "relative"
+                      }}
+                    >
+                      {isCompleted ? (
+                        <span style={{ fontSize: "20px" }}>✓</span>
+                      ) : inProgress ? (
+                        <>
+                          <svg
+                            width="50" height="50"
+                            style={{ position: "absolute", top: 0, left: 0 }}
+                          >
+                            <circle
+                              cx="25" cy="25" r="20"
+                              fill="none"
+                              stroke="#02ccbb"
+                              strokeWidth="4"
+                              strokeDasharray={`${2 * Math.PI * 20 * percent / 100} ${2 * Math.PI * 20}`}
+                              strokeLinecap="round"
+                              transform="rotate(-90 25 25)"
+                            />
+                          </svg>
+                          <span style={{ fontSize: "14px", color: "#555" }}>
+                            {round.round_no}
+                          </span>
+                        </>
+                      ) : (
+                        <span>{round.round_no}</span>
+                      )}
+                    </div>
+                  )
+                })}
 
               </div>
 
