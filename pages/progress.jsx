@@ -21,7 +21,7 @@ export default function Progress() {
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
   const [historyData, setHistoryData] = useState([]); // 履歴データ用
-  const [totalDays, setTotalDays] = useState(0);      // 学習日数用
+  const [vocabHistoryData, setVocabHistoryData] = useState([])
   const router = useRouter();
 
   useEffect(() => {
@@ -51,40 +51,85 @@ export default function Progress() {
         const docs = hSnap.docs.map(doc => doc.data());
         setHistoryData(docs);
 
+        // 英単語の学習履歴を読み込む
+        const vocabHistoryRef = collection(db, "users", u.uid, "vocab_history")
+        const vocabQ = query(vocabHistoryRef, orderBy("clearedAt", "desc"))
+        const vocabSnap = await getDocs(vocabQ)
+        const vocabDocs = vocabSnap.docs.map(doc => doc.data())
+        setVocabHistoryData(vocabDocs)
+
         // 学習日数の集計（重複を除いた日付の数）
         const uniqueDays = new Set(docs.map(d => d.dateString));
-        setTotalDays(uniqueDays.size);
+
       }
     });
     return () => unsubscribe();
   }, []);
 
-  // グラフ用のデータ作成
+
   const getGraphData = () => {
-    const days = [];
-    const counts = [];
+    const days = []
+    const grammarCounts = []
+    const vocabCounts = []
+
     for (let i = 6; i >= 0; i--) {
-      const d = new Date();
-      d.setDate(d.getDate() - i);
-      const s = d.toLocaleDateString('sv-SE'); // "YYYY-MM-DD"
-      days.push(d.toLocaleDateString('ja-JP', { weekday: 'short' })); // "月", "火"...
-      
-      const count = historyData.filter(h => h.dateString === s).length;
-      counts.push(count);
+      const d = new Date()
+      d.setDate(d.getDate() - i)
+      const s = d.toLocaleDateString('sv-SE')
+      days.push(d.toLocaleDateString('ja-JP', { weekday: 'short' }))
+
+      const grammarCount = historyData.filter(h => h.dateString === s).length
+      const vocabCount = vocabHistoryData.filter(h => h.dateString === s).length
+      grammarCounts.push(grammarCount)
+      vocabCounts.push(vocabCount)
     }
 
     return {
       labels: days,
       datasets: [
         {
-          label: "レッスン数",
-          data: counts,
+          label: "英文法",
+          data: grammarCounts,
           backgroundColor: "#FF9F43",
           borderRadius: 5,
         },
+        {
+          label: "英単語",
+          data: vocabCounts,
+          backgroundColor: "#02ccbb",
+          borderRadius: 5,
+        },
       ],
-    };
-  };
+    }
+  }
+
+  // 学習開始日
+  const allHistory = [...historyData, ...vocabHistoryData]
+  const startDate = allHistory.length > 0
+    ? allHistory.reduce((oldest, h) =>
+        h.dateString < oldest ? h.dateString : oldest
+      , allHistory[0].dateString)
+    : null
+
+
+  // 連続記録
+  const calcStreak = () => {
+    const allDays = new Set(allHistory.map(h => h.dateString))
+    let streak = 0
+    const today = new Date()
+    for (let i = 0; i < 365; i++) {
+      const d = new Date(today)
+      d.setDate(d.getDate() - i)
+      const s = d.toLocaleDateString("sv-SE")
+      if (allDays.has(s)) {
+        streak++
+      } else {
+        break
+      }
+    }
+    return streak
+  }
+  const streak = calcStreak()
 
   return (
     <div className="container">
@@ -104,18 +149,17 @@ export default function Progress() {
 
         <div className="statsGrid">
           <div className="statItem">
-            <span className="statLabel">学習した日数</span>
-            <span className="statValue">{totalDays}日</span>
-          </div>
-         <div className="statItem">
-            <span className="statLabel">今週のレッスン数</span>
-            <span className="statValue">
-              {historyData.filter(h => {
-                const d = new Date();
-                d.setDate(d.getDate() - 6);
-                return h.dateString >= d.toLocaleDateString("sv-SE");
-              }).length}回
+            <span className="statLabel">学習開始</span>
+            <span style={{ fontSize: "16px", fontWeight: "bold", color: "#333" }}>
+              {startDate
+                ? `${startDate.slice(0, 4)}年${Number(startDate.slice(5, 7))}月`
+                : "-"
+              }
             </span>
+          </div>
+          <div className="statItem">
+            <span className="statLabel">連続記録</span>
+            <span className="statValue">{streak}日</span>
           </div>
         </div>
 
@@ -126,29 +170,32 @@ export default function Progress() {
             padding: "10px", 
             borderRadius: "10px", 
             marginTop: "20px", 
-            marginBottom: "100px"  
+            marginBottom: "100px",
+            height: "200px"  
           }}>
 
           <Bar 
             data={getGraphData()} 
             options={{ 
               responsive: true,
+              maintainAspectRatio: false,
               plugins: { 
-                legend: { display: false } // 凡例を非表示
+                legend: { display: true, position: "bottom" } // 凡例を表示
               },
               scales: { 
                 x: { 
-                  grid: { display: false }, // ★横軸の縦線を消す
-                  border: { display: true } // 軸の線自体も消すとよりスッキリするお
+                  stacked: true, // ← 追加
+                  grid: { display: false },
                 },
                 y: { 
-                  display: true, // ★左側の数字と横線をまるごと消す場合
-                  grid: { display: false }, // 線だけ消したい場合はこちら
+                  stacked: true, // ← 追加
+                  display: true,
+                  grid: { display: false },
                   beginAtZero: true,
                   ticks: {
-                    stepSize: 1, // メモリを1刻みにする
+                    stepSize: 1,
                     callback: (value) => {
-                      if (Math.floor(value) === value) return value; // 整数のみ表示
+                      if (Math.floor(value) === value) return value
                     }
                   }
                 }
