@@ -279,7 +279,7 @@ export default function Typing() {
       {/* ポチアニメーション（仮） */}
       <div style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}>
         <video
-          src="/animations/wan.mp4"
+          src="/animations/pochi-tokotoko.mp4"
           autoPlay
           muted
           loop

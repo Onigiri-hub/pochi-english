@@ -95,8 +95,8 @@ export default function SectionList() {
           return (
             <div key={section.section_id} style={{ marginBottom: "30px" }}>
 
-              {/* セクション名と進捗バー */}
-              <div style={{
+              {/* セクション名*/}
+              {/*<div style={{
                 background: "white",
                 borderRadius: "16px",
                 padding: "16px 20px",
@@ -107,13 +107,28 @@ export default function SectionList() {
                   {section.section_name}
                 </div>
 
+              </div>*/}
+
+              {/* セクション名*/}
+              <div style={{
+                marginBottom: "25px",
+                marginTop: "60px",
+                textAlign: "center"
+              }}>
+                <div style={{ fontWeight: "bold", fontSize: "18px", marginBottom: "0px" }}>
+                  {section.section_name}
+                </div>
+                <img
+                  src="/images/illustrations/section_underbar.png"
+                  style={{ width: "90%", height: "auto" }}
+                />
               </div>
 
               {/* Roundボタン */}
               <div style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(4, 60px)",
-                gap: "16px",
+                gap: "25px",
                 justifyContent: "center",
                 padding: "0 30px"
               }}>
@@ -140,8 +155,8 @@ export default function SectionList() {
                       }}
                       
                       style={{
-                        width: "50px",
-                        height: "50px",
+                        width: "60px",
+                        height: "60px",
                         borderRadius: "50%",
                         background: isCompleted ? "#02ccbb" : "#ddd",
                         display: "flex",
@@ -154,24 +169,24 @@ export default function SectionList() {
                       }}
                     >
                       {isCompleted ? (
-                        <span style={{ fontSize: "20px" }}>✓</span>
+                        <span style={{ fontSize: "25px" }}>✓</span>
                       ) : inProgress ? (
                         <>
                           <svg
-                            width="50" height="50"
+                            width="60" height="60"
                             style={{ position: "absolute", top: 0, left: 0 }}
                           >
                             <circle
-                              cx="25" cy="25" r="20"
+                              cx="30" cy="30" r="26"
                               fill="none"
                               stroke="#02ccbb"
                               strokeWidth="4"
-                              strokeDasharray={`${2 * Math.PI * 20 * percent / 100} ${2 * Math.PI * 20}`}
+                              strokeDasharray={`${2 * Math.PI * 26 * percent / 100} ${2 * Math.PI * 26}`}
                               strokeLinecap="round"
-                              transform="rotate(-90 25 25)"
+                              transform="rotate(-90 30 30)"
                             />
                           </svg>
-                          <span style={{ fontSize: "14px", color: "#555" }}>
+                          <span style={{ fontSize: "18px", color: "#555" }}>
                             {round.round_no}
                           </span>
                         </>
