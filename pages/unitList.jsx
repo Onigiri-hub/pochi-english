@@ -66,6 +66,12 @@ export default function UnitList(){
   return(
     <div className="unitListContainer" style={{ paddingBottom: "100px" }}>
       <div className="unitList">
+        {/* タイトル追加 */}
+        <div style={{ textAlign: "center", margin: "25px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
+          <img src="/images/icons/dog_333.svg" style={{ width: "30px", marginRight: "8px", verticalAlign: "middle" }} />
+          キホンの英文法
+        </div>
+
         {Object.entries(units).map(([no, unit]) => {
           const unitLessons = allData.filter(l => l.unit_NO === no);
           const total = unitLessons.length;

@@ -55,15 +55,15 @@ export default function SectionList() {
             style={{
               background: "none",
               border: "none",
-              fontSize: "20px",
+              fontSize: "15px",
+              fontWeight: "bold",
+              color: "#333333",
               cursor: "pointer"
             }}
           >
-            ←
+            ◀ 
           </button>
-
-        </div>
-        
+        </div>        
         {/* デバッグ用リセットボタン（確認したら消す） */}
         <button
           onClick={() => {
@@ -100,10 +100,10 @@ export default function SectionList() {
                 background: "white",
                 borderRadius: "16px",
                 padding: "16px 20px",
-                marginBottom: "12px",
+                margin: "50px 0 25px 0",
                 boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
               }}>
-                <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>
+                <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px", textAlign: "center" }}>
                   {section.section_name}
                 </div>
 

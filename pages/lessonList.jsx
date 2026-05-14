@@ -37,6 +37,22 @@ export default function LessonList() {
   return (
     <div className="lessonList" style={{ paddingBottom: "80px" }}>
 
+      <div style={{ padding: "10px 20px" }}>
+        <button
+          onClick={() => router.push("/unitList")}
+          style={{
+            background: "none",
+            border: "none",
+            fontSize: "15px",
+            fontWeight: "bold",
+            color: "#333333",
+            cursor: "pointer"
+          }}
+        >
+          ◀
+        </button>
+      </div>
+      
       <div
         className="lessonHeader"
         onClick={() => router.push("/unitList")}
