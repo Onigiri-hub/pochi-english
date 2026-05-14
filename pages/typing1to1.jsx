@@ -1,3 +1,4 @@
+import { saveVocabRoundProgress, saveVocabMastery, getVocabRoundProgress, getVocabMastery, addVocabHistory } from "../utils/vocabProgressManager"
 import { useEffect, useState, useRef } from "react"
 import { useRouter } from "next/router"
 import Papa from "papaparse"
@@ -73,13 +74,6 @@ export default function Typing() {
         skipEmptyLines: true
       }).data
 
-      //const from = currentRound.word_from
-      //const to = currentRound.word_to
-      //const filtered = wData.filter(w =>
-      //  w.word_id >= from && w.word_id <= to
-      //)
-      //const shuffled = shuffle(filtered).slice(0, 20)
-      //setWords(shuffled)
 
       const from = currentRound.word_from
       const to = currentRound.word_to
@@ -108,16 +102,13 @@ export default function Typing() {
 
       setWords(selectedWords)
 
+      // 「できた」を読み込む
+      const roundProgress = await getVocabRoundProgress(round)
+      doneWordsRef.current = new Set(roundProgress.doneWords)
+      setDoneWords(new Set(roundProgress.doneWords))
 
-      // localStorageから「できた」を読み込む
-      const key = `vocab_round_${round}`
-      const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
-      doneWordsRef.current = new Set(existing.doneWords)
-      setDoneWords(new Set(existing.doneWords))
-
-      // localStorageから習熟度を読み込む
-      const masteryKey = `vocab_mastery_${section}_mode3`
-      const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+      // 習熟度を読み込む
+      const existingMastery = await getVocabMastery(section, "mode3")
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
 
@@ -183,19 +174,10 @@ export default function Typing() {
     setMasteryMap(newMap)
   }
 
-  function saveProgress() {
-    // できたを保存
-    const key = `vocab_round_${round}`
-    const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
-    const merged = new Set([...existing.doneWords, ...doneWordsRef.current])
-    localStorage.setItem(key, JSON.stringify({
-      doneWords: [...merged],
-      totalWords: 20
-    }))
-
-    // 習熟度を保存
-    const masteryKey = `vocab_mastery_${section}_mode3`
-    localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
+  async function saveProgress() {
+    await saveVocabRoundProgress(round, [...doneWordsRef.current], 20)
+    await saveVocabMastery(section, "mode3", masteryMapRef.current)
+    await addVocabHistory(round, section)
   }
 
   function check() {
@@ -236,7 +218,7 @@ export default function Typing() {
     }
   }
 
-  function next() {
+  async function next() {
     if (current < words.length - 1) {
       setSlideState("out")
       setTimeout(() => {
@@ -251,11 +233,11 @@ export default function Typing() {
         }, 50)
       }, 400)
     } else {
-      saveProgress()
+      await saveProgress()
       router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
     }
   }
-
+  
   if (words.length === 0) return <div>loading...</div>
 
   const currentWord = words[current]

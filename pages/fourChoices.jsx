@@ -1,3 +1,4 @@
+import { saveVocabRoundProgress, saveVocabMastery, getVocabRoundProgress, getVocabMastery, addVocabHistory } from "../utils/vocabProgressManager"
 import { useEffect, useState, useRef } from "react"
 import { useRouter } from "next/router"
 import Papa from "papaparse"
@@ -52,14 +53,6 @@ export default function FourChoices() {
       }).data
       setAllWords(wData)
 
-              //const from = currentRound.word_from
-              //const to = currentRound.word_to
-              //const filtered = wData.filter(w =>
-              //  w.word_id >= from && w.word_id <= to
-              //)
-
-              //const shuffled = shuffle(filtered).slice(0, 20)
-              //setWords(shuffled)
      
       const from = currentRound.word_from
       const to = currentRound.word_to
@@ -89,23 +82,29 @@ export default function FourChoices() {
 
       setWords(selectedWords)
 
-      // localStorageから前回の「できた」を読み込む
-      const key = `vocab_round_${round}`
-      const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
-      setDoneWords(new Set(existing.doneWords))
+                // localStorageから前回の「できた」を読み込む
+                //const key = `vocab_round_${round}`
+                //const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
+                //setDoneWords(new Set(existing.doneWords))
 
-      // localStorageから習熟度を読み込む
-      //const masteryKey = `vocab_mastery_${section}`
-      //const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
-      //masteryMapRef.current = existingMastery
-      //setMasteryMap(existingMastery)
+                // localStorageから習熟度を読み込む
+                //const modeKey = getModeKey(currentRound.mode_type)
+                //const masteryKey = `vocab_mastery_${section}_${modeKey}`
+                //const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+                //masteryMapRef.current = existingMastery
+                //setMasteryMap(existingMastery)
 
-      // localStorageから習熟度を読み込む
+      // 「できた」を読み込む
+      const roundProgress = await getVocabRoundProgress(round)
+      doneWordsRef.current = new Set(roundProgress.doneWords)
+      setDoneWords(new Set(roundProgress.doneWords))
+
+      // 習熟度を読み込む
       const modeKey = getModeKey(currentRound.mode_type)
-      const masteryKey = `vocab_mastery_${section}_${modeKey}`
-      const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+      const existingMastery = await getVocabMastery(section, modeKey)
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
+
 
       // 効果音の準備
       if (!seikaiRef.current) {
@@ -130,10 +129,10 @@ export default function FourChoices() {
       setTimeLeft(t => {
         if (t <= 1) {
           clearInterval(timerRef.current)
+          // awaitなしで呼び出す（バックグラウンドで保存）
           saveRoundProgress(roundInfo?.is_review === "1")
-          saveMastery() // ← 追加
+          saveMastery()
           router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
-
           return 0
         }
         return t - 1
@@ -175,40 +174,27 @@ export default function FourChoices() {
     return shuffle([correctWord, ...dummies])
   }
 
-  function saveRoundProgress(isReview) {
-    const key = `vocab_round_${round}`
-    const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
-    const merged = new Set([...existing.doneWords, ...doneWordsRef.current])
+  //function saveRoundProgress(isReview) {
+  //  const key = `vocab_round_${round}`
+  //  const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
+  //  const merged = new Set([...existing.doneWords, ...doneWordsRef.current])
     
-    localStorage.setItem(key, JSON.stringify({
-      doneWords: [...merged],
-      totalWords: isReview ? words.length : 20
-    }))
+  //  localStorage.setItem(key, JSON.stringify({
+  //    doneWords: [...merged],
+  //    totalWords: isReview ? words.length : 20
+  //  }))
+  //}
+
+  async function saveRoundProgress(isReview) {
+    const totalWords = isReview ? words.length : 20
+    await saveVocabRoundProgress(round, [...doneWordsRef.current], totalWords)
+    await addVocabHistory(round, section)
   }
 
   function updateMastery(wordId, isCorrect) {
     const current = masteryMapRef.current[wordId] || {
       correct: 0, wrong: 0, streak: 0, ease: 0, lastResult: null, mastery: "①未学習"
     }
-
-            //let updated
-            //if (isCorrect) {
-            //  updated = {
-            //    ...current,
-            //    correct: current.correct + 1,
-            //    streak: current.streak + 1,
-            //    ease: Math.min(10, current.ease + 1),
-            //    lastResult: true,
-            //  }
-            //} else {
-            //  updated = {
-            //    ...current,
-            //    wrong: current.wrong + 1,
-            //    streak: 0,
-            //    ease: Math.max(0, current.ease - 2),
-            //    lastResult: false,
-            //  }
-            //}
 
     const updated = isCorrect ? {
       ...current,
@@ -281,14 +267,14 @@ export default function FourChoices() {
   }
 
   //function saveMastery() {
-  //  const masteryKey = `vocab_mastery_${section}`
+  //  const modeKey = getModeKey(roundInfo?.mode_type)
+  //  const masteryKey = `vocab_mastery_${section}_${modeKey}`
   //  localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
   //}
 
-  function saveMastery() {
+  async function saveMastery() {
     const modeKey = getModeKey(roundInfo?.mode_type)
-    const masteryKey = `vocab_mastery_${section}_${modeKey}`
-    localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
+    await saveVocabMastery(section, modeKey, masteryMapRef.current)
   }
 
   const slideStyle = {
