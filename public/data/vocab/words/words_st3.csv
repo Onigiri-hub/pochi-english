@@ -1,0 +1,439 @@
+word_id,word,ja,audio,stage,section_id
+v0605,air cleaner,空気清浄機,air cleaner.mp3,3,st3_sec1
+v0606,trend,トレンド,trend.mp3,3,st3_sec1
+v0607,tank,タンク,tank.mp3,3,st3_sec1
+v0608,supper,夕食,supper.mp3,3,st3_sec1
+v0609,triathlon,トライアスロン,triathlon.mp3,3,st3_sec1
+v0610,sign language,手話,sign language.mp3,3,st3_sec1
+v0611,branch,枝・支店,branch.mp3,3,st3_sec1
+v0612,retirement,退職・引退,retirement.mp3,3,st3_sec1
+v0613,equipment,機器・設備,equipment.mp3,3,st3_sec1
+v0614,editor,編集者,editor.mp3,3,st3_sec1
+v0615,instruction,指示・説明書,instruction.mp3,3,st3_sec1
+v0616,atom,原子,atom.mp3,3,st3_sec1
+v0617,sailboat,ヨット,sailboat.mp3,3,st3_sec1
+v0618,heel,かかと,heel.mp3,3,st3_sec1
+v0619,nation,国家,nation.mp3,3,st3_sec1
+v0620,myth,神話,myth.mp3,3,st3_sec1
+v0621,drawer,引き出し,drawer.mp3,3,st3_sec1
+v0622,witness,目撃者,witness.mp3,3,st3_sec1
+v0623,highway,高速道路,highway.mp3,3,st3_sec1
+v0624,lifestyle,ライフスタイル,lifestyle.mp3,3,st3_sec1
+v0625,brick,レンガ,brick.mp3,3,st3_sec1
+v0626,employer,雇用主,employer.mp3,3,st3_sec1
+v0627,operation,手術・操作,operation.mp3,3,st3_sec1
+v0628,globe,地球儀,globe.mp3,3,st3_sec1
+v0629,geography,地理,geography.mp3,3,st3_sec1
+v0630,interview,インタビュー・面接,interview.mp3,3,st3_sec1
+v0631,midday,正午,midday.mp3,3,st3_sec1
+v0632,dandelion,タンポポ,dandelion.mp3,3,st3_sec1
+v0633,knit cap,ニット帽,knit cap.mp3,3,st3_sec1
+v0634,oatmeal,オートミール,oatmeal.mp3,3,st3_sec1
+v0635,soil,土壌,soil.mp3,3,st3_sec1
+v0636,humor,ユーモア,humor.mp3,3,st3_sec1
+v0637,transportation,交通機関,transportation.mp3,3,st3_sec1
+v0638,genius,天才,genius.mp3,3,st3_sec1
+v0639,painter,画家,painter.mp3,3,st3_sec1
+v0640,soy sauce,醤油,soy sauce.mp3,3,st3_sec1
+v0641,downtown,繁華街・ダウンタウン,downtown.mp3,3,st3_sec1
+v0642,folk,民俗,folk.mp3,3,st3_sec1
+v0643,sleeping bag,寝袋,sleeping bag.mp3,3,st3_sec1
+v0644,experiment,実験,experiment.mp3,3,st3_sec1
+v0645,researcher,研究者,researcher.mp3,3,st3_sec2
+v0646,trumpet,トランペット,trumpet.mp3,3,st3_sec2
+v0647,goose,ガチョウ,goose.mp3,3,st3_sec2
+v0648,software,ソフトウェア,software.mp3,3,st3_sec2
+v0649,explorer,探検家,explorer.mp3,3,st3_sec2
+v0650,starfish,ヒトデ,starfish.mp3,3,st3_sec2
+v0651,pronunciation,発音,pronunciation.mp3,3,st3_sec2
+v0652,milkshake,ミルクシェイク,milkshake.mp3,3,st3_sec2
+v0653,highlighter,蛍光ペン,highlighter.mp3,3,st3_sec2
+v0654,signal,信号,signal.mp3,3,st3_sec2
+v0655,teaspoon,小さじ,teaspoon.mp3,3,st3_sec2
+v0656,crane,ツル（鳥）,crane.mp3,3,st3_sec2
+v0657,lottery,宝くじ,lottery.mp3,3,st3_sec2
+v0658,industry,産業,industry.mp3,3,st3_sec2
+v0659,eel,ウナギ,eel.mp3,3,st3_sec2
+v0660,desk lamp,デスクランプ,desk lamp.mp3,3,st3_sec2
+v0661,multiplication,掛け算,multiplication.mp3,3,st3_sec2
+v0662,balance,バランス・残高,balance.mp3,3,st3_sec2
+v0663,injury,けが,injury.mp3,3,st3_sec2
+v0664,penny,1セント硬貨,penny.mp3,3,st3_sec2
+v0665,essay,エッセイ,essay.mp3,3,st3_sec2
+v0666,landmark,ランドマーク,landmark.mp3,3,st3_sec2
+v0667,manager,マネージャー,manager.mp3,3,st3_sec2
+v0668,composer,作曲家,composer.mp3,3,st3_sec2
+v0669,gesture,ジェスチャー,gesture.mp3,3,st3_sec2
+v0670,electric guitar,エレキギター,electric guitar.mp3,3,st3_sec2
+v0671,translation,翻訳,translation.mp3,3,st3_sec2
+v0672,privacy,プライバシー,privacy.mp3,3,st3_sec2
+v0673,rhinoceros,サイ（動物）,rhinoceros.mp3,3,st3_sec2
+v0674,century,世紀,century.mp3,3,st3_sec2
+v0675,musical,ミュージカル,musical.mp3,3,st3_sec2
+v0676,foreign currency,外貨,foreign currency.mp3,3,st3_sec2
+v0677,aroma,アロマ・香り,aroma.mp3,3,st3_sec2
+v0678,protein,タンパク質,protein.mp3,3,st3_sec2
+v0679,Fahrenheit,華氏,Fahrenheit.mp3,3,st3_sec2
+v0680,cotton,綿・コットン,cotton.mp3,3,st3_sec2
+v0681,trailer,トレーラー,trailer.mp3,3,st3_sec2
+v0682,underpants,パンツ（下着）,underpants.mp3,3,st3_sec2
+v0683,celebrity,有名人,celebrity.mp3,3,st3_sec2
+v0684,fuel,燃料,fuel.mp3,3,st3_sec2
+v0685,carnation,カーネーション,carnation.mp3,3,st3_sec3
+v0686,resort,リゾート,resort.mp3,3,st3_sec3
+v0687,tractor,トラクター,tractor.mp3,3,st3_sec3
+v0688,sword,剣,sword.mp3,3,st3_sec3
+v0689,stew,シチュー,stew.mp3,3,st3_sec3
+v0690,pea,エンドウ豆,pea.mp3,3,st3_sec3
+v0691,sea turtle,ウミガメ,sea turtle.mp3,3,st3_sec3
+v0692,oyster,カキ（牡蠣）,oyster.mp3,3,st3_sec3
+v0693,environment,環境,environment.mp3,3,st3_sec3
+v0694,caterpillar,毛虫,caterpillar.mp3,3,st3_sec3
+v0695,grain,穀物,grain.mp3,3,st3_sec3
+v0696,victim,被害者,victim.mp3,3,st3_sec3
+v0697,waist,腰,waist.mp3,3,st3_sec3
+v0698,yacht,ヨット,yacht.mp3,3,st3_sec3
+v0699,dawn,夜明け,dawn.mp3,3,st3_sec3
+v0700,co-worker,同僚,co-worker.mp3,3,st3_sec3
+v0701,spaceship,宇宙船,spaceship.mp3,3,st3_sec3
+v0702,aisle,通路,aisle.mp3,3,st3_sec3
+v0703,ferry terminal,フェリー乗り場,ferry terminal.mp3,3,st3_sec3
+v0704,soybean,大豆,soybean.mp3,3,st3_sec3
+v0705,continent,大陸,continent.mp3,3,st3_sec3
+v0706,runny nose,鼻水,runny nose.mp3,3,st3_sec3
+v0707,trunks,水泳パンツ,trunks.mp3,3,st3_sec3
+v0708,tap,蛇口・タップ,tap.mp3,3,st3_sec3
+v0709,thunderstorm,雷雨,thunderstorm.mp3,3,st3_sec3
+v0710,host mother,ホストマザー,host mother.mp3,3,st3_sec3
+v0711,ostrich,ダチョウ,ostrich.mp3,3,st3_sec3
+v0712,politics,政治,politics.mp3,3,st3_sec3
+v0713,blender,ミキサー,blender.mp3,3,st3_sec3
+v0714,blouse,ブラウス,blouse.mp3,3,st3_sec3
+v0715,cyberbullying,ネットいじめ,cyberbullying.mp3,3,st3_sec3
+v0716,nap,昼寝,nap.mp3,3,st3_sec3
+v0717,algebra,代数,algebra.mp3,3,st3_sec3
+v0718,wrestling,レスリング,wrestling.mp3,3,st3_sec3
+v0719,recycling center,リサイクルセンター,recycling center.mp3,3,st3_sec3
+v0720,undershirt,肌着,undershirt.mp3,3,st3_sec3
+v0721,toothache,歯痛,toothache.mp3,3,st3_sec3
+v0722,Celsius,摂氏,Celsius.mp3,3,st3_sec3
+v0723,patient,患者,patient.mp3,3,st3_sec3
+v0724,economy,経済,economy.mp3,3,st3_sec3
+v0725,photographer,カメラマン,photographer.mp3,3,st3_sec4
+v0726,contact lenses,コンタクトレンズ,contact lenses.mp3,3,st3_sec4
+v0727,dishwasher,食洗機,dishwasher.mp3,3,st3_sec4
+v0728,thread,糸・スレッド,thread.mp3,3,st3_sec4
+v0729,survivor,生存者,survivor.mp3,3,st3_sec4
+v0730,planetarium,プラネタリウム,planetarium.mp3,3,st3_sec4
+v0731,social studies,社会科,social studies.mp3,3,st3_sec4
+v0732,landscape,風景,landscape.mp3,3,st3_sec4
+v0733,fabric,布,fabric.mp3,3,st3_sec4
+v0734,dresser,タンス,dresser.mp3,3,st3_sec4
+v0735,rug,ラグ（敷物）,rug.mp3,3,st3_sec4
+v0736,dormitory,寮,dormitory.mp3,3,st3_sec4
+v0737,hangover,二日酔い,hangover.mp3,3,st3_sec4
+v0738,legend,伝説,legend.mp3,3,st3_sec4
+v0739,jet aircraft,ジェット機,jet aircraft.mp3,3,st3_sec4
+v0740,speech,スピーチ,speech.mp3,3,st3_sec4
+v0741,gadget,ガジェット,gadget.mp3,3,st3_sec4
+v0742,presentation,プレゼンテーション,presentation.mp3,3,st3_sec4
+v0743,lime,ライム,lime.mp3,3,st3_sec4
+v0744,gallery,ギャラリー,gallery.mp3,3,st3_sec4
+v0745,forehead,額（ひたい）,forehead.mp3,3,st3_sec4
+v0746,hay fever,花粉症,hay fever.mp3,3,st3_sec4
+v0747,clip,クリップ,clip.mp3,3,st3_sec4
+v0748,backache,腰痛・背中の痛み,backache.mp3,3,st3_sec4
+v0749,property,財産・性質,property.mp3,3,st3_sec4
+v0750,binder,ファイル・バインダー,binder.mp3,3,st3_sec4
+v0751,league,リーグ,league.mp3,3,st3_sec4
+v0752,armchair,肘掛け椅子,armchair.mp3,3,st3_sec4
+v0753,toothpick,つまようじ,toothpick.mp3,3,st3_sec4
+v0754,bride,花嫁,bride.mp3,3,st3_sec4
+v0755,daytrip,日帰り旅行,daytrip.mp3,3,st3_sec4
+v0756,movement,動き・運動,movement.mp3,3,st3_sec4
+v0757,souvenir,お土産,souvenir.mp3,3,st3_sec4
+v0758,mathematics,数学,mathematics.mp3,3,st3_sec4
+v0759,container,容器,container.mp3,3,st3_sec4
+v0760,squirrel,リス,squirrel.mp3,3,st3_sec4
+v0761,satellite,衛星,satellite.mp3,3,st3_sec4
+v0762,oxygen,酸素,oxygen.mp3,3,st3_sec4
+v0763,volcano,火山,volcano.mp3,3,st3_sec4
+v0764,lightning,稲妻・雷,lightning.mp3,3,st3_sec4
+v0765,transport,輸送,transport.mp3,3,st3_sec5
+v0766,coast,海岸,coast.mp3,3,st3_sec5
+v0767,flood,洪水,flood.mp3,3,st3_sec5
+v0768,monorail,モノレール,monorail.mp3,3,st3_sec5
+v0769,graduation,卒業,graduation.mp3,3,st3_sec5
+v0770,crocodile,クロコダイル（ワニ）,crocodile.mp3,3,st3_sec5
+v0771,pitcher,ピッチャー・水差し,pitcher.mp3,3,st3_sec5
+v0772,handout,配布物・プリント,handout.mp3,3,st3_sec5
+v0773,proof,証拠,proof.mp3,3,st3_sec5
+v0774,research,研究,research.mp3,3,st3_sec5
+v0775,arts and crafts,工芸,arts and crafts.mp3,3,st3_sec5
+v0776,fantasy,ファンタジー,fantasy.mp3,3,st3_sec5
+v0777,blond-haired,金髪の,blond-haired.mp3,3,st3_sec5
+v0778,red bean,小豆,red bean.mp3,3,st3_sec5
+v0779,medical center,医療センター,medical center.mp3,3,st3_sec5
+v0780,vest,ベスト,vest.mp3,3,st3_sec5
+v0781,waitress,ウェイトレス,waitress.mp3,3,st3_sec5
+v0782,bucket list,やりたいことリスト,bucket list.mp3,3,st3_sec5
+v0783,gas stove,ガスコンロ,gas stove.mp3,3,st3_sec5
+v0784,debt,借金,debt.mp3,3,st3_sec5
+v0785,bridegroom,花婿,bridegroom.mp3,3,st3_sec5
+v0786,hairbrush,ヘアブラシ,hairbrush.mp3,3,st3_sec5
+v0787,lid,ふた,lid.mp3,3,st3_sec5
+v0788,skateboarding,スケートボード,skateboarding.mp3,3,st3_sec5
+v0789,goose bumps,鳥肌,goose bumps.mp3,3,st3_sec5
+v0790,cabinet,キャビネット,cabinet.mp3,3,st3_sec5
+v0791,baggage claim,手荷物受取所,baggage claim.mp3,3,st3_sec5
+v0792,mayor,市長,mayor.mp3,3,st3_sec5
+v0793,self-confidence,自信,self-confidence.mp3,3,st3_sec5
+v0794,canoe,カヌー,canoe.mp3,3,st3_sec5
+v0795,bean sprout,もやし,bean sprout.mp3,3,st3_sec5
+v0796,empire,帝国,empire.mp3,3,st3_sec5
+v0797,archery,アーチェリー,archery.mp3,3,st3_sec5
+v0798,tax-free,免税,tax-free.mp3,3,st3_sec5
+v0799,instrument,楽器・器具,instrument.mp3,3,st3_sec5
+v0800,leather shoes,革靴,leather shoes.mp3,3,st3_sec5
+v0801,crew,乗組員・クルー,crew.mp3,3,st3_sec5
+v0802,buffet,ビュッフェ,buffet.mp3,3,st3_sec5
+v0803,court,裁判所・コート,court.mp3,3,st3_sec5
+v0804,prisoner,囚人,prisoner.mp3,3,st3_sec5
+v0805,ginger,ショウガ,ginger.mp3,3,st3_sec6
+v0806,tour guide,ガイド,tour guide.mp3,3,st3_sec6
+v0807,championship,選手権,championship.mp3,3,st3_sec6
+v0808,ladybug,てんとう虫,ladybug.mp3,3,st3_sec6
+v0809,seasoning,調味料,seasoning.mp3,3,st3_sec6
+v0810,bulldozer,ブルドーザー,bulldozer.mp3,3,st3_sec6
+v0811,horizon,地平線,horizon.mp3,3,st3_sec6
+v0812,rhythm,リズム,rhythm.mp3,3,st3_sec6
+v0813,prime minister,首相,prime minister.mp3,3,st3_sec6
+v0814,media,メディア,media.mp3,3,st3_sec6
+v0815,prawn,エビ（大型）,prawn.mp3,3,st3_sec6
+v0816,volunteer,ボランティア,volunteer.mp3,3,st3_sec6
+v0817,employee,従業員,employee.mp3,3,st3_sec6
+v0818,tournament,トーナメント,tournament.mp3,3,st3_sec6
+v0819,lavender,ラベンダー,lavender.mp3,3,st3_sec6
+v0820,prison,刑務所,prison.mp3,3,st3_sec6
+v0821,risk,リスク,risk.mp3,3,st3_sec6
+v0822,worm,ミミズ・虫,worm.mp3,3,st3_sec6
+v0823,bomb,爆弾,bomb.mp3,3,st3_sec6
+v0824,parachute,パラシュート,parachute.mp3,3,st3_sec6
+v0825,flowerpot,植木鉢,flowerpot.mp3,3,st3_sec6
+v0826,home economics,家庭科,home economics.mp3,3,st3_sec6
+v0827,Japanese pear,梨,Japanese pear.mp3,3,st3_sec6
+v0828,beetle,甲虫,beetle.mp3,3,st3_sec6
+v0829,needle,針,needle.mp3,3,st3_sec6
+v0830,literature,文学,literature.mp3,3,st3_sec6
+v0831,slave,奴隷,slave.mp3,3,st3_sec6
+v0832,badminton,バドミントン,badminton.mp3,3,st3_sec6
+v0833,leftover,残り物,leftover.mp3,3,st3_sec6
+v0834,lawyer,弁護士,lawyer.mp3,3,st3_sec6
+v0835,poetry,詩,poetry.mp3,3,st3_sec6
+v0836,hockey,ホッケー,hockey.mp3,3,st3_sec6
+v0837,scenery,景色,scenery.mp3,3,st3_sec6
+v0838,theme,テーマ,theme.mp3,3,st3_sec6
+v0839,headline,見出し,headline.mp3,3,st3_sec6
+v0840,fund,基金,fund.mp3,3,st3_sec6
+v0841,snowboarding,スノーボード,snowboarding.mp3,3,st3_sec6
+v0842,prayer,祈り,prayer.mp3,3,st3_sec6
+v0843,navy,海軍,navy.mp3,3,st3_sec6
+v0844,entertainment,エンターテインメント,entertainment.mp3,3,st3_sec6
+v0845,weapon,武器,weapon.mp3,3,st3_sec7
+v0846,bandage,包帯,bandage.mp3,3,st3_sec7
+v0847,breeze,そよ風,breeze.mp3,3,st3_sec7
+v0848,record-holder,記録保持者,record-holder.mp3,3,st3_sec7
+v0849,soul,魂,soul.mp3,3,st3_sec7
+v0850,lung,肺,lung.mp3,3,st3_sec7
+v0851,stockings,ストッキング,stockings.mp3,3,st3_sec7
+v0852,job seeker,求職者,job seeker.mp3,3,st3_sec7
+v0853,wrist,手首,wrist.mp3,3,st3_sec7
+v0854,lacrosse,ラクロス,lacrosse.mp3,3,st3_sec7
+v0855,vehicle,乗り物,vehicle.mp3,3,st3_sec7
+v0856,instructor,インストラクター,instructor.mp3,3,st3_sec7
+v0857,handball,ハンドボール,handball.mp3,3,st3_sec7
+v0858,marshmallow,マシュマロ,marshmallow.mp3,3,st3_sec7
+v0859,invention,発明,invention.mp3,3,st3_sec7
+v0860,fossil,化石,fossil.mp3,3,st3_sec7
+v0861,examination,試験・検査,examination.mp3,3,st3_sec7
+v0862,drug,薬・麻薬,drug.mp3,3,st3_sec7
+v0863,Pacific,太平洋,Pacific.mp3,3,st3_sec7
+v0864,religion,宗教,religion.mp3,3,st3_sec7
+v0865,captain,船長・キャプテン,captain.mp3,3,st3_sec7
+v0866,first aid,応急処置,first aid.mp3,3,st3_sec7
+v0867,day care,保育,day care.mp3,3,st3_sec7
+v0868,biology,生物学,biology.mp3,3,st3_sec7
+v0869,nightmare,悪夢,nightmare.mp3,3,st3_sec7
+v0870,rugby,ラグビー,rugby.mp3,3,st3_sec7
+v0871,fiction,フィクション・小説,fiction.mp3,3,st3_sec7
+v0872,virus,ウイルス,virus.mp3,3,st3_sec7
+v0873,cafeteria,カフェテリア,cafeteria.mp3,3,st3_sec7
+v0874,firefly,ホタル,firefly.mp3,3,st3_sec7
+v0875,professor,教授,professor.mp3,3,st3_sec7
+v0876,thief,泥棒,thief.mp3,3,st3_sec7
+v0877,grasshopper,バッタ,grasshopper.mp3,3,st3_sec7
+v0878,workplace,職場,workplace.mp3,3,st3_sec7
+v0879,balcony,バルコニー,balcony.mp3,3,st3_sec7
+v0880,basement,地下室,basement.mp3,3,st3_sec7
+v0881,patrol car,パトカー,patrol car.mp3,3,st3_sec7
+v0882,couch,ソファ,couch.mp3,3,st3_sec7
+v0883,amusement,娯楽施設,amusement.mp3,3,st3_sec7
+v0884,palace,宮殿・城,palace.mp3,3,st3_sec7
+v0885,walnut,クルミ,walnut.mp3,3,st3_sec8
+v0886,cricket,クリケット,cricket.mp3,3,st3_sec8
+v0887,lobster,ロブスター,lobster.mp3,3,st3_sec8
+v0888,coal,石炭,coal.mp3,3,st3_sec8
+v0889,bullet train,新幹線,bullet train.mp3,3,st3_sec8
+v0890,almond,アーモンド,almond.mp3,3,st3_sec8
+v0891,mustard,マスタード,mustard.mp3,3,st3_sec8
+v0892,lecture,講義,lecture.mp3,3,st3_sec8
+v0893,press conference,記者会見,press conference.mp3,3,st3_sec8
+v0894,minister,大臣・牧師,minister.mp3,3,st3_sec8
+v0895,rumor,うわさ,rumor.mp3,3,st3_sec8
+v0896,dryer,乾燥機,dryer.mp3,3,st3_sec8
+v0897,reservation,予約,reservation.mp3,3,st3_sec8
+v0898,snail,カタツムリ,snail.mp3,3,st3_sec8
+v0899,mosquito,蚊,mosquito.mp3,3,st3_sec8
+v0900,elder,年長者,elder.mp3,3,st3_sec8
+v0901,cycling,サイクリング,cycling.mp3,3,st3_sec8
+v0902,art gallery,美術館,art gallery.mp3,3,st3_sec8
+v0903,drill,ドリル,drill.mp3,3,st3_sec8
+v0904,kettle,やかん,kettle.mp3,3,st3_sec8
+v0905,translator,翻訳者,translator.mp3,3,st3_sec8
+v0906,seaside,海辺,seaside.mp3,3,st3_sec8
+v0907,bargain,お買い得品,bargain.mp3,3,st3_sec8
+v0908,tray,トレー,tray.mp3,3,st3_sec8
+v0909,zipper,チャック・ジッパー,zipper.mp3,3,st3_sec8
+v0910,license,免許,license.mp3,3,st3_sec8
+v0911,secretary,秘書,secretary.mp3,3,st3_sec8
+v0912,script,台本・スクリプト,script.mp3,3,st3_sec8
+v0913,cockroach,ゴキブリ,cockroach.mp3,3,st3_sec8
+v0914,cop,警官,cop.mp3,3,st3_sec8
+v0915,sunscreen,日焼け止め,sunscreen.mp3,3,st3_sec8
+v0916,host family,ホストファミリー,host family.mp3,3,st3_sec8
+v0917,poet,詩人,poet.mp3,3,st3_sec8
+v0918,air force,空軍,air force.mp3,3,st3_sec8
+v0919,craft,工芸・手工芸,craft.mp3,3,st3_sec8
+v0920,seal,アザラシ,seal.mp3,3,st3_sec8
+v0921,broom,ほうき,broom.mp3,3,st3_sec8
+v0922,rank,ランク,rank.mp3,3,st3_sec8
+v0923,semester,学期,semester.mp3,3,st3_sec8
+v0924,chef,シェフ,chef.mp3,3,st3_sec8
+v0925,ankle,足首,ankle.mp3,3,st3_sec9
+v0926,photography,写真撮影,photography.mp3,3,st3_sec9
+v0927,emotion,感情,emotion.mp3,3,st3_sec9
+v0928,limousine,リムジン,limousine.mp3,3,st3_sec9
+v0929,hippopotamus,カバ,hippopotamus.mp3,3,st3_sec9
+v0930,remote working,リモートワーク,remote working.mp3,3,st3_sec9
+v0931,cancer,がん,cancer.mp3,3,st3_sec9
+v0932,grocery,食料雑貨,grocery.mp3,3,st3_sec9
+v0933,eyelash,まつ毛,eyelash.mp3,3,st3_sec9
+v0934,hooded sweatshirt,パーカー,hooded sweatshirt.mp3,3,st3_sec9
+v0935,illustration,イラスト,illustration.mp3,3,st3_sec9
+v0936,automobile,自動車,automobile.mp3,3,st3_sec9
+v0937,imagination,想像力,imagination.mp3,3,st3_sec9
+v0938,handmade,手作りの,handmade.mp3,3,st3_sec9
+v0939,justice,正義,justice.mp3,3,st3_sec9
+v0940,documentary,ドキュメンタリー,documentary.mp3,3,st3_sec9
+v0941,magnet,磁石,magnet.mp3,3,st3_sec9
+v0942,dairy,乳製品,dairy.mp3,3,st3_sec9
+v0943,polar bear,ホッキョクグマ,polar bear.mp3,3,st3_sec9
+v0944,election,選挙,election.mp3,3,st3_sec9
+v0945,wheelchair,車椅子,wheelchair.mp3,3,st3_sec9
+v0946,statue,像・彫像,statue.mp3,3,st3_sec9
+v0947,owner,オーナー・持ち主,owner.mp3,3,st3_sec9
+v0948,alligator,アリゲーター（ワニ）,alligator.mp3,3,st3_sec9
+v0949,notepad,メモ帳,notepad.mp3,3,st3_sec9
+v0950,government,政府,government.mp3,3,st3_sec9
+v0951,tourism,観光,tourism.mp3,3,st3_sec9
+v0952,curling,カーリング,curling.mp3,3,st3_sec9
+v0953,dragonfly,トンボ,dragonfly.mp3,3,st3_sec9
+v0954,arithmetic,算数,arithmetic.mp3,3,st3_sec9
+v0955,fountain pen,万年筆,fountain pen.mp3,3,st3_sec9
+v0956,income,収入,income.mp3,3,st3_sec9
+v0957,suspense,サスペンス,suspense.mp3,3,st3_sec9
+v0958,okra,オクラ,okra.mp3,3,st3_sec9
+v0959,peacock,クジャク,peacock.mp3,3,st3_sec9
+v0960,chestnut,栗,chestnut.mp3,3,st3_sec9
+v0961,countryside,田舎,countryside.mp3,3,st3_sec9
+v0962,gardening,ガーデニング,gardening.mp3,3,st3_sec9
+v0963,reunion,再会・同窓会,reunion.mp3,3,st3_sec9
+v0964,cab,タクシー,cab.mp3,3,st3_sec9
+v0965,coral reef,サンゴ礁,coral reef.mp3,3,st3_sec10
+v0966,charity,慈善活動,charity.mp3,3,st3_sec10
+v0967,job opening,求人,job opening.mp3,3,st3_sec10
+v0968,kingdom,王国,kingdom.mp3,3,st3_sec10
+v0969,trap,罠,trap.mp3,3,st3_sec10
+v0970,granddaughter,孫娘,granddaughter.mp3,3,st3_sec10
+v0971,bean paste,味噌,bean paste.mp3,3,st3_sec10
+v0972,stomachache,腹痛,stomachache.mp3,3,st3_sec10
+v0973,gymnastics,体操,gymnastics.mp3,3,st3_sec10
+v0974,Japanese radish,大根,Japanese radish.mp3,3,st3_sec10
+v0975,heatstroke,熱中症,heatstroke.mp3,3,st3_sec10
+v0976,red meat,赤身肉,red meat.mp3,3,st3_sec10
+v0977,scanner,スキャナー,scanner.mp3,3,st3_sec10
+v0978,vinegar,酢,vinegar.mp3,3,st3_sec10
+v0979,ferry,フェリー,ferry.mp3,3,st3_sec10
+v0980,homestay,ホームステイ,homestay.mp3,3,st3_sec10
+v0981,Chinese cabbage,白菜,Chinese cabbage.mp3,3,st3_sec10
+v0982,chimney,煙突,chimney.mp3,3,st3_sec10
+v0983,ingredient,材料・成分,ingredient.mp3,3,st3_sec10
+v0984,technique,技術・テクニック,technique.mp3,3,st3_sec10
+v0985,influenza,インフルエンザ,influenza.mp3,3,st3_sec10
+v0986,engineering,工学,engineering.mp3,3,st3_sec10
+v0987,cutting board,まな板,cutting board.mp3,3,st3_sec10
+v0988,prize,賞・賞品,prize.mp3,3,st3_sec10
+v0989,pin,ピン,pin.mp3,3,st3_sec10
+v0990,punishment,罰,punishment.mp3,3,st3_sec10
+v0991,reminder,リマインダー,reminder.mp3,3,st3_sec10
+v0992,blood pressure,血圧,blood pressure.mp3,3,st3_sec10
+v0993,van,バン,van.mp3,3,st3_sec10
+v0994,stapler,ホッチキス,stapler.mp3,3,st3_sec10
+v0995,jellyfish,クラゲ,jellyfish.mp3,3,st3_sec10
+v0996,fog,霧,fog.mp3,3,st3_sec10
+v0997,emoticon,絵文字,emoticon.mp3,3,st3_sec10
+v0998,classical music,クラシック音楽,classical music.mp3,3,st3_sec10
+v0999,security guard,警備員,security guard.mp3,3,st3_sec10
+v1000,savings,貯金,savings.mp3,3,st3_sec10
+v1001,squid,イカ,squid.mp3,3,st3_sec10
+v1002,track and field,陸上競技,track and field.mp3,3,st3_sec10
+v1003,commuter,通勤者,commuter.mp3,3,st3_sec10
+v1004,lily,ユリ,lily.mp3,3,st3_sec10
+v1005,shoulder bag,ショルダーバッグ,shoulder bag.mp3,3,st3_sec11
+v1006,cavity,虫歯,cavity.mp3,3,st3_sec11
+v1007,wool,ウール,wool.mp3,3,st3_sec11
+v1008,box cutter,カッターナイフ,box cutter.mp3,3,st3_sec11
+v1009,raspberry,ラズベリー,raspberry.mp3,3,st3_sec11
+v1010,futsal,フットサル,futsal.mp3,3,st3_sec11
+v1011,cone,円すい,cone.mp3,3,st3_sec11
+v1012,scar,傷跡,scar.mp3,3,st3_sec11
+v1013,cauliflower,カリフラワー,cauliflower.mp3,3,st3_sec11
+v1014,timetable,時刻表,timetable.mp3,3,st3_sec11
+v1015,emergency,緊急事態,emergency.mp3,3,st3_sec11
+v1016,shade,影・日陰,shade.mp3,3,st3_sec11
+v1017,canal,運河,canal.mp3,3,st3_sec11
+v1018,racket,ラケット,racket.mp3,3,st3_sec11
+v1019,surgery,手術,surgery.mp3,3,st3_sec11
+v1020,detective,探偵,detective.mp3,3,st3_sec11
+v1021,runway,滑走路,runway.mp3,3,st3_sec11
+v1022,scholarship,奨学金,scholarship.mp3,3,st3_sec11
+v1023,stir-fry,炒め物,stir-fry.mp3,3,st3_sec11
+v1024,chopping board,まな板,chopping board.mp3,3,st3_sec11
+v1025,campfire,キャンプファイヤー,campfire.mp3,3,st3_sec11
+v1026,asparagus,アスパラガス,asparagus.mp3,3,st3_sec11
+v1027,walking shoes,ウォーキングシューズ,walking shoes.mp3,3,st3_sec11
+v1028,chimpanzee,チンパンジー,chimpanzee.mp3,3,st3_sec11
+v1029,funeral,葬式,funeral.mp3,3,st3_sec11
+v1030,resident,住民,resident.mp3,3,st3_sec11
+v1031,eyesight,視力,eyesight.mp3,3,st3_sec11
+v1032,poison,毒,poison.mp3,3,st3_sec11
+v1033,immigrant,移民,immigrant.mp3,3,st3_sec11
+v1034,brown rice,玄米,brown rice.mp3,3,st3_sec11
+v1035,clerk,店員・事務員,clerk.mp3,3,st3_sec11
+v1036,journey,旅,journey.mp3,3,st3_sec11
+v1037,district,地区,district.mp3,3,st3_sec11
+v1038,chemistry,化学,chemistry.mp3,3,st3_sec11
+v1039,reporter,記者・レポーター,reporter.mp3,3,st3_sec11
+v1040,cupboard,食器棚,cupboard.mp3,3,st3_sec11
+v1041,homesick,ホームシック,homesick.mp3,3,st3_sec11
+v1042,half-price,半額,half-price.mp3,3,st3_sec11
