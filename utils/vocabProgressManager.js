@@ -1,8 +1,22 @@
 import { db, auth } from "../firebase"
 import {
   doc, getDoc, setDoc, collection, addDoc, serverTimestamp,
-  getDocs, query, where  // ★追加
+  getDocs, query, where
 } from "firebase/firestore"
+
+// ログインが確定するまで待つ関数
+function waitForUser() {
+  return new Promise((resolve) => {
+    if (auth.currentUser) {
+      resolve(auth.currentUser)
+      return
+    }
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      unsubscribe()
+      resolve(user)
+    })
+  })
+}
 
 // ラウンドの「できた」進捗をFirestoreに保存
 export async function saveVocabRoundProgress(roundId, doneWords, totalWords) {
@@ -14,7 +28,7 @@ export async function saveVocabRoundProgress(roundId, doneWords, totalWords) {
     const snap = await getDoc(roundRef)
     const existing = snap.exists() ? (snap.data().doneWords || []) : []
 
-    // 既存のできたとマージ（案A：一度できたらずっとできた）
+    // 既存のできたとマージ（一度できたらずっとできた）
     const merged = [...new Set([...existing, ...doneWords])]
 
     await setDoc(roundRef, {
@@ -68,7 +82,7 @@ export async function saveVocabMastery(section, modeKey, masteryMap) {
 
 // ラウンドの「できた」進捗をFirestoreから取得
 export async function getVocabRoundProgress(roundId) {
-  const user = auth.currentUser
+  const user = await waitForUser()  // ログイン待ち
 
   // 未ログインはlocalStorageにフォールバック
   if (!user) {
@@ -95,10 +109,11 @@ export async function getVocabRoundProgress(roundId) {
   }
 }
 
-// ★ 習熟度をFirestoreから取得（getDocs で1回にまとめる）
+// 習熟度をFirestoreから取得（getDocs で1回にまとめる）
 export async function getVocabMastery(section, modeKey) {
-  const user = auth.currentUser
-  console.log("getVocabMastery呼ばれた:", section, modeKey, "user:", user?.uid)
+  const user = await waitForUser()  // ログイン待ち
+
+  // console.log("getVocabMastery呼ばれた:", section, modeKey, "user:", user?.uid)
 
   // 未ログインはlocalStorageにフォールバック
   if (!user) {
@@ -109,17 +124,17 @@ export async function getVocabMastery(section, modeKey) {
   try {
     // localStorageにキャッシュがあればそれを使う
     const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
-    console.log("localStorageの中身:", local)
+    // console.log("localStorageの中身:", local)
     if (local) return JSON.parse(local)
 
-    // ★ localStorageになければFirestoreから一括取得
-    console.log("Firestoreから取得します")
+    // localStorageになければFirestoreから一括取得
+    // console.log("Firestoreから取得します")
     const q = query(
       collection(db, "users", user.uid, "vocab_progress"),
       where("section_id", "==", section)
     )
     const snap = await getDocs(q)
-    console.log("Firestoreから取得できたドキュメント数:", snap.size)
+    // console.log("Firestoreから取得できたドキュメント数:", snap.size)
 
     // {word_id: {mode1: {...}, mode2: {...}, ...}} の形に整形
     const masteryMap = {}
@@ -129,7 +144,8 @@ export async function getVocabMastery(section, modeKey) {
         masteryMap[docSnap.id] = data[modeKey]
       }
     })
-    console.log("整形後のmasteryMap:", masteryMap)
+    // console.log("整形後のmasteryMap:", masteryMap)
+
     // localStorageにキャッシュとして保存
     localStorage.setItem(
       `vocab_mastery_${section}_${modeKey}`,

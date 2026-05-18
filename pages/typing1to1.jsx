@@ -35,7 +35,7 @@ export default function Typing() {
   const [words, setWords] = useState([])
   const [current, setCurrent] = useState(0)
   const [input, setInput] = useState("")
-  const [result, setResult] = useState(null) // null | "correct" | "typo" | "wrong"
+  const [result, setResult] = useState(null)
   const [correctAnswer, setCorrectAnswer] = useState("")
   const [doneWords, setDoneWords] = useState(new Set())
   const [roundInfo, setRoundInfo] = useState(null)
@@ -74,7 +74,6 @@ export default function Typing() {
         skipEmptyLines: true
       }).data
 
-
       const from = currentRound.word_from
       const to = currentRound.word_to
       const filtered = wData.filter(w =>
@@ -83,7 +82,6 @@ export default function Typing() {
 
       let selectedWords
       if (currentRound.is_review === "1") {
-        // reviewRound：mode3の習熟度が低い順にピックアップ
         const masteryKey = `vocab_mastery_${section}_mode3`
         const masteryData = JSON.parse(localStorage.getItem(masteryKey) || '{}')
 
@@ -117,7 +115,6 @@ export default function Typing() {
         seikaiRef.current = new Audio("/sound/seikai.mp3")
         seikaiRef.current.playbackRate = 1.5
       }
-
     }
     load()
   }, [router.isReady])
@@ -187,23 +184,19 @@ export default function Typing() {
     const distance = levenshtein(userInput, correct)
 
     if (distance === 0) {
-      // 完全正解
       const newDone = new Set([...doneWordsRef.current, currentWord.word_id])
       doneWordsRef.current = newDone
       setDoneWords(newDone)
       updateMastery(currentWord.word_id, true)
-      // 効果音再生
       if (seikaiRef.current) {
         seikaiRef.current.currentTime = 0
         seikaiRef.current.play()
       }
       setResult("correct")
     } else if (distance === 1) {
-      // スペルミス→正答判定
       const newDone = new Set([...doneWordsRef.current, currentWord.word_id])
       doneWordsRef.current = newDone
       setDoneWords(newDone)
-      // 効果音再生
       if (seikaiRef.current) {
         seikaiRef.current.currentTime = 0
         seikaiRef.current.play()
@@ -211,7 +204,6 @@ export default function Typing() {
       setCorrectAnswer(currentWord.word)
       setResult("typo")
     } else {
-      // 誤答
       updateMastery(currentWord.word_id, false)
       setCorrectAnswer(currentWord.word)
       setResult("wrong")
@@ -237,13 +229,13 @@ export default function Typing() {
       router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
     }
   }
-  
+
   if (words.length === 0) return <div>loading...</div>
 
   const currentWord = words[current]
 
   const slideStyle = {
-    transition: slideState === "idle" ? "transform 0.4s ease, opacity 0.4s ease" : 
+    transition: slideState === "idle" ? "transform 0.4s ease, opacity 0.4s ease" :
                 slideState === "out" ? "transform 0.4s ease, opacity 0.4s ease" : "none",
     transform: slideState === "out" ? "translateX(-120%)" :
                slideState === "in" ? "translateX(120%)" : "translateX(0)",
@@ -276,7 +268,7 @@ export default function Typing() {
         ))}
       </div>
 
-      {/* ポチアニメーション（仮） */}
+      {/* ポチアニメーション */}
       <div style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}>
         <video
           src="/animations/pochi-tokotoko.mp4"
@@ -301,14 +293,15 @@ export default function Typing() {
           }}>
             {currentWord.ja}
           </div>
-
-          {/* デバッグ用（確認したら消す） */}
+          
+          {/* デバッグ用（確認したら消す） 
           <div style={{ fontSize: "12px", color: "#999", textAlign: "center" }}>
             ease: {masteryMap[currentWord?.word_id]?.ease ?? 0} /
             streak: {masteryMap[currentWord?.word_id]?.streak ?? 0} /
             mastery: {masteryMap[currentWord?.word_id]?.mastery ?? "①未学習"}
           </div>
-
+          */}
+          
           {/* 入力欄 */}
           <div style={{ margin: "20px 0" }}>
             <input
@@ -316,7 +309,7 @@ export default function Typing() {
               type="text"
               value={input}
               onChange={e => {
-                if (result !== null) return // 判定後は入力を受け付けない
+                if (result !== null) return
                 setInput(e.target.value)
               }}
               onKeyDown={e => {
@@ -339,7 +332,6 @@ export default function Typing() {
                 textAlign: "center"
               }}
             />
-
           </div>
 
           {/* 結果表示 */}

@@ -6,8 +6,8 @@ import { getVocabRoundProgress } from "../utils/vocabProgressManager"
 
 export default function SectionList() {
   const [sections, setSections] = useState([])
-  const [roundsMap, setRoundsMap] = useState({}) // section_idごとのRound一覧
-  const [roundProgressMap, setRoundProgressMap] = useState({})  // 
+  const [roundsMap, setRoundsMap] = useState({})
+  const [roundProgressMap, setRoundProgressMap] = useState({})
   const router = useRouter()
   const { stage } = router.query
 
@@ -15,7 +15,6 @@ export default function SectionList() {
     if (!stage) return
 
     async function load() {
-      // sectionList.csvを読み込む
       const res = await fetch("/data/vocab/sectionList.csv")
       const text = await res.text()
       const data = Papa.parse(text, {
@@ -26,7 +25,6 @@ export default function SectionList() {
       const filtered = data.filter(s => s.stage_id === stage)
       setSections(filtered)
 
-      // 各セクションのroundsファイルを読み込む
       const map = {}
       await Promise.all(
         filtered.map(async (section) => {
@@ -40,8 +38,8 @@ export default function SectionList() {
         })
       )
       setRoundsMap(map)
-      
-      // ★追加：全RoundのFirestore進捗を取得してstateに入れる
+
+      // 全RoundのFirestore進捗を取得
       const allRounds = Object.values(map).flat()
       const progressEntries = await Promise.all(
         allRounds.map(async (r) => {
@@ -73,10 +71,10 @@ export default function SectionList() {
               cursor: "pointer"
             }}
           >
-            ◀ 
+            ◀
           </button>
-        </div>        
-        {/* デバッグ用リセットボタン（確認したら消す） */}
+        </div>
+        {/* デバッグ用リセットボタン（確認したら消す） 
         <button
           onClick={() => {
             Object.keys(localStorage)
@@ -100,6 +98,7 @@ export default function SectionList() {
         >
           🗑️ 進捗リセット（デバッグ用）
         </button>
+        */}
 
         {sections.map((section) => {
           const rounds = roundsMap[section.section_id] || []
@@ -107,21 +106,7 @@ export default function SectionList() {
           return (
             <div key={section.section_id} style={{ marginBottom: "30px" }}>
 
-              {/* セクション名*/}
-              {/*<div style={{
-                background: "white",
-                borderRadius: "16px",
-                padding: "16px 20px",
-                margin: "50px 0 25px 0",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
-              }}>
-                <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px", textAlign: "center" }}>
-                  {section.section_name}
-                </div>
-
-              </div>*/}
-
-              {/* セクション名*/}
+              {/* セクション名 */}
               <div style={{
                 marginBottom: "25px",
                 marginTop: "60px",
@@ -144,10 +129,7 @@ export default function SectionList() {
                 justifyContent: "center",
                 padding: "0 30px"
               }}>
-
                 {rounds.map((round) => {
-                  const key = `vocab_round_${round.round_id}`
-                  // ★変更：localStorageではなくroundProgressMapから取得
                   const progress = roundProgressMap[round.round_id] || { doneWords: [], totalWords: 0 }
                   const doneCount = progress.doneWords.length
                   const totalCount = progress.totalWords || 20
@@ -158,15 +140,12 @@ export default function SectionList() {
                   return (
                     <div
                       key={round.round_id}
-                      //onClick={() => router.push(`/fourChoices?section=${section.section_id}&round=${round.round_id}`)}
-                      
                       onClick={() => {
                         const path = round.mode_type?.includes("typing")
                           ? `/typing1to1?section=${section.section_id}&round=${round.round_id}`
                           : `/fourChoices?section=${section.section_id}&round=${round.round_id}`
                         router.push(path)
                       }}
-                      
                       style={{
                         width: "60px",
                         height: "60px",
@@ -209,7 +188,6 @@ export default function SectionList() {
                     </div>
                   )
                 })}
-
               </div>
 
             </div>

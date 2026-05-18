@@ -11,17 +11,17 @@ export default function FourChoices() {
   const [allWords, setAllWords] = useState([])
   const [current, setCurrent] = useState(0)
   const [choices, setChoices] = useState([])
-  const [eliminated, setEliminated] = useState([]) // グレーアウトした不正解リスト
-  const [correct, setCorrect] = useState(false)     // 正解したかどうか
-  const [slideState, setSlideState] = useState("idle") // "idle" | "out" | "in"
+  const [eliminated, setEliminated] = useState([])
+  const [correct, setCorrect] = useState(false)
+  const [slideState, setSlideState] = useState("idle")
   const [timeLeft, setTimeLeft] = useState(45)
-  const [doneWords, setDoneWords] = useState(new Set()) // 一撃正解した単語ID
+  const [doneWords, setDoneWords] = useState(new Set())
   const [roundInfo, setRoundInfo] = useState(null)
   const timerRef = useRef(null)
   const doneWordsRef = useRef(new Set())
   const seikaiRef = useRef(null)
-  const [masteryMap, setMasteryMap] = useState({}) // word_idごとの習熟度
-  const masteryMapRef = useRef({}) // タイマー用
+  const [masteryMap, setMasteryMap] = useState({})
+  const masteryMapRef = useRef({})
 
   useEffect(() => {
     if (!router.isReady) return
@@ -53,7 +53,6 @@ export default function FourChoices() {
       }).data
       setAllWords(wData)
 
-     
       const from = currentRound.word_from
       const to = currentRound.word_to
       const filtered = wData.filter(w =>
@@ -82,18 +81,6 @@ export default function FourChoices() {
 
       setWords(selectedWords)
 
-                // localStorageから前回の「できた」を読み込む
-                //const key = `vocab_round_${round}`
-                //const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
-                //setDoneWords(new Set(existing.doneWords))
-
-                // localStorageから習熟度を読み込む
-                //const modeKey = getModeKey(currentRound.mode_type)
-                //const masteryKey = `vocab_mastery_${section}_${modeKey}`
-                //const existingMastery = JSON.parse(localStorage.getItem(masteryKey) || '{}')
-                //masteryMapRef.current = existingMastery
-                //setMasteryMap(existingMastery)
-
       // 「できた」を読み込む
       const roundProgress = await getVocabRoundProgress(round)
       doneWordsRef.current = new Set(roundProgress.doneWords)
@@ -101,9 +88,7 @@ export default function FourChoices() {
 
       // 習熟度を読み込む
       const modeKey = getModeKey(currentRound.mode_type)
-      console.log("modeKey:", modeKey, "section:", section)  // ★追加
       const existingMastery = await getVocabMastery(section, modeKey)
-      console.log("取得した習熟度:", existingMastery)  // ★追加
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
 
@@ -112,7 +97,6 @@ export default function FourChoices() {
         seikaiRef.current = new Audio("/sound/seikai.mp3")
         seikaiRef.current.playbackRate = 1.5
       }
-
     }
     load()
   }, [router.isReady])
@@ -130,7 +114,6 @@ export default function FourChoices() {
       setTimeLeft(t => {
         if (t <= 1) {
           clearInterval(timerRef.current)
-          // awaitなしで呼び出す（バックグラウンドで保存）
           saveRoundProgress(roundInfo?.is_review === "1")
           saveMastery()
           router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
@@ -142,7 +125,7 @@ export default function FourChoices() {
     return () => clearInterval(timerRef.current)
   }, [words])
 
-  // 自動再生（fourChoices_en2jaのときだけ）
+  // 自動再生（en2jaのときだけ）
   useEffect(() => {
     if (!roundInfo || !words[current]?.audio) return
     if (!roundInfo.mode_type.includes("en2ja")) return
@@ -175,17 +158,6 @@ export default function FourChoices() {
     return shuffle([correctWord, ...dummies])
   }
 
-  //function saveRoundProgress(isReview) {
-  //  const key = `vocab_round_${round}`
-  //  const existing = JSON.parse(localStorage.getItem(key) || '{"doneWords":[]}')
-  //  const merged = new Set([...existing.doneWords, ...doneWordsRef.current])
-    
-  //  localStorage.setItem(key, JSON.stringify({
-  //    doneWords: [...merged],
-  //    totalWords: isReview ? words.length : 20
-  //  }))
-  //}
-
   async function saveRoundProgress(isReview) {
     const totalWords = isReview ? words.length : 20
     await saveVocabRoundProgress(round, [...doneWordsRef.current], totalWords)
@@ -213,8 +185,6 @@ export default function FourChoices() {
       lastStudied: new Date().toISOString(),
     }
 
-
-    // mastery判定
     if (updated.ease >= 2 && updated.streak >= 2) {
       updated.mastery = "③定着済"
     } else if (updated.correct > 0 || updated.wrong > 0) {
@@ -238,11 +208,10 @@ export default function FourChoices() {
         setDoneWords(newDone)
       }
       updateMastery(currentWord.word_id, true)
-      // 効果音再生
       if (seikaiRef.current) {
         seikaiRef.current.currentTime = 0
         seikaiRef.current.play()
-      }      
+      }
       setCorrect(true)
       setTimeout(() => {
         setSlideState("out")
@@ -251,7 +220,7 @@ export default function FourChoices() {
             setCurrent(c => c + 1)
           } else {
             saveRoundProgress(roundInfo?.is_review === "1")
-            saveMastery() // ← 追加
+            saveMastery()
             setWords(prev => shuffle([...prev]))
             setCurrent(0)
           }
@@ -262,16 +231,10 @@ export default function FourChoices() {
         }, 100)
       }, 200)
     } else {
-      updateMastery(currentWord.word_id, false) // ← 追加
+      updateMastery(currentWord.word_id, false)
       setEliminated(prev => [...prev, choice.word_id])
     }
   }
-
-  //function saveMastery() {
-  //  const modeKey = getModeKey(roundInfo?.mode_type)
-  //  const masteryKey = `vocab_mastery_${section}_${modeKey}`
-  //  localStorage.setItem(masteryKey, JSON.stringify(masteryMapRef.current))
-  //}
 
   async function saveMastery() {
     const modeKey = getModeKey(roundInfo?.mode_type)
@@ -279,7 +242,7 @@ export default function FourChoices() {
   }
 
   const slideStyle = {
-    transition: slideState === "idle" ? "transform 0.4s ease, opacity 0.4s ease" : 
+    transition: slideState === "idle" ? "transform 0.4s ease, opacity 0.4s ease" :
                 slideState === "out" ? "transform 0.4s ease, opacity 0.4s ease" : "none",
     transform: slideState === "out" ? "translateX(-120%)" :
                slideState === "in" ? "translateX(120%)" : "translateX(0)",
@@ -327,7 +290,7 @@ export default function FourChoices() {
         </div>
       </div>
 
-      {/* ポチアニメーション（仮）← スライドの外に出す */}
+      {/* ポチアニメーション */}
       <div style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}>
         <video
           src="/animations/pochi-tokotoko.mp4"
@@ -355,14 +318,15 @@ export default function FourChoices() {
               : currentWord.word
             }
           </div>
-
-          {/* デバッグ用（確認したら消す） */}
+          
+          {/* デバッグ用（確認したら消す） 
           <div style={{ fontSize: "12px", color: "#999", textAlign: "center" }}>
             できた: {[...doneWords].join(", ") || "なし"}<br/>
             ease: {masteryMap[currentWord?.word_id]?.ease ?? 0} / 
             streak: {masteryMap[currentWord?.word_id]?.streak ?? 0} / 
             mastery: {masteryMap[currentWord?.word_id]?.mastery ?? "①未学習"}
           </div>
+          */}
 
           {/* 4択ボタン */}
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -398,12 +362,10 @@ export default function FourChoices() {
                     transition: "background 0.2s"
                   }}
                 >
-
                   {roundInfo?.mode_type?.includes("ja2en")
                     ? choice.word
                     : choice.ja
                   }
-
                 </button>
               )
             })}
