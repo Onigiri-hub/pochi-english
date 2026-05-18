@@ -6,8 +6,10 @@ import "../styles/lecture.css";
 import "../styles/lessonList.css";
 import "../styles/practice.css";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";  // ★追加
 import { DictionaryContext } from "../utils/DictionaryContext";
 import { loadCSV } from "../utils/csvLoader";
+import { auth } from "../firebase";  // ★追加
 
 const noto = Noto_Sans_JP({
   weight: ["400", "700"],
@@ -15,8 +17,22 @@ const noto = Noto_Sans_JP({
   display: "swap",
 })
 
+// ログインしてなくても見せるページ
+const PUBLIC_PAGES = ["/", "/terms"]
+
 export default function MyApp({ Component, pageProps }) {
   const [dictionary, setDictionary] = useState([])
+  const router = useRouter()  // ★追加
+
+  // ★追加：未ログイン検知→トップへリダイレクト
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (!user && !PUBLIC_PAGES.includes(router.pathname)) {
+        router.push("/")
+      }
+    })
+    return () => unsubscribe()
+  }, [router.pathname])
 
   useEffect(() => {
     // 辞書の読み込み
@@ -28,14 +44,13 @@ export default function MyApp({ Component, pageProps }) {
 
     // カチ音
     const sound = new Audio("/sound/kachi.mp3")
-
+    
     function handleClick(e) {
-      if (e.target.closest("[data-sound]")) {
-        sound.currentTime = 0
-        sound.play().catch(() => {})
-      }
+      if (e.target.closest("[data-no-sound]")) return
+      sound.currentTime = 0
+      sound.play().catch(() => {})
     }
-   
+    
     document.addEventListener("click", handleClick)
     return () => document.removeEventListener("click", handleClick)
   }, [])

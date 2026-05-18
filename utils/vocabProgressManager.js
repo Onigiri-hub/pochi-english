@@ -1,6 +1,7 @@
 import { db, auth } from "../firebase"
 import {
-  doc, getDoc, setDoc, collection, addDoc, serverTimestamp
+  doc, getDoc, setDoc, collection, addDoc, serverTimestamp,
+  getDocs, query, where  // ★追加
 } from "firebase/firestore"
 
 // ラウンドの「できた」進捗をFirestoreに保存
@@ -94,26 +95,53 @@ export async function getVocabRoundProgress(roundId) {
   }
 }
 
-// 習熟度をFirestoreから取得
+// ★ 習熟度をFirestoreから取得（getDocs で1回にまとめる）
 export async function getVocabMastery(section, modeKey) {
   const user = auth.currentUser
+  console.log("getVocabMastery呼ばれた:", section, modeKey, "user:", user?.uid)
 
+  // 未ログインはlocalStorageにフォールバック
   if (!user) {
     const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
     return local ? JSON.parse(local) : {}
   }
 
   try {
-    // vocab_progressから該当セクション・モードのデータを取得
-    // ※単語数が多いと読み取り回数が増えるため、localStorageをキャッシュとして使う
+    // localStorageにキャッシュがあればそれを使う
     const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
+    console.log("localStorageの中身:", local)
     if (local) return JSON.parse(local)
 
-    return {}
+    // ★ localStorageになければFirestoreから一括取得
+    console.log("Firestoreから取得します")
+    const q = query(
+      collection(db, "users", user.uid, "vocab_progress"),
+      where("section_id", "==", section)
+    )
+    const snap = await getDocs(q)
+    console.log("Firestoreから取得できたドキュメント数:", snap.size)
+
+    // {word_id: {mode1: {...}, mode2: {...}, ...}} の形に整形
+    const masteryMap = {}
+    snap.forEach(docSnap => {
+      const data = docSnap.data()
+      if (data[modeKey]) {
+        masteryMap[docSnap.id] = data[modeKey]
+      }
+    })
+    console.log("整形後のmasteryMap:", masteryMap)
+    // localStorageにキャッシュとして保存
+    localStorage.setItem(
+      `vocab_mastery_${section}_${modeKey}`,
+      JSON.stringify(masteryMap)
+    )
+
+    return masteryMap
 
   } catch (e) {
     console.error("vocab_mastery取得失敗:", e)
-    return {}
+    const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
+    return local ? JSON.parse(local) : {}
   }
 }
 

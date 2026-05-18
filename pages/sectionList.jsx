@@ -2,10 +2,12 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import Papa from "papaparse"
 import Navigation from "../components/Navigation"
+import { getVocabRoundProgress } from "../utils/vocabProgressManager"
 
 export default function SectionList() {
   const [sections, setSections] = useState([])
   const [roundsMap, setRoundsMap] = useState({}) // section_idごとのRound一覧
+  const [roundProgressMap, setRoundProgressMap] = useState({})  // 
   const router = useRouter()
   const { stage } = router.query
 
@@ -38,6 +40,16 @@ export default function SectionList() {
         })
       )
       setRoundsMap(map)
+      
+      // ★追加：全RoundのFirestore進捗を取得してstateに入れる
+      const allRounds = Object.values(map).flat()
+      const progressEntries = await Promise.all(
+        allRounds.map(async (r) => {
+          const p = await getVocabRoundProgress(r.round_id)
+          return [r.round_id, p]
+        })
+      )
+      setRoundProgressMap(Object.fromEntries(progressEntries))
     }
     load()
   }, [stage])
@@ -135,7 +147,8 @@ export default function SectionList() {
 
                 {rounds.map((round) => {
                   const key = `vocab_round_${round.round_id}`
-                  const progress = JSON.parse(localStorage.getItem(key) || '{"doneWords":[],"totalWords":0}')
+                  // ★変更：localStorageではなくroundProgressMapから取得
+                  const progress = roundProgressMap[round.round_id] || { doneWords: [], totalWords: 0 }
                   const doneCount = progress.doneWords.length
                   const totalCount = progress.totalWords || 20
                   const isCompleted = totalCount > 0 && doneCount >= totalCount

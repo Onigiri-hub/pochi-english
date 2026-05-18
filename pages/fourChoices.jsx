@@ -101,10 +101,11 @@ export default function FourChoices() {
 
       // 習熟度を読み込む
       const modeKey = getModeKey(currentRound.mode_type)
+      console.log("modeKey:", modeKey, "section:", section)  // ★追加
       const existingMastery = await getVocabMastery(section, modeKey)
+      console.log("取得した習熟度:", existingMastery)  // ★追加
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
-
 
       // 効果音の準備
       if (!seikaiRef.current) {
@@ -144,7 +145,7 @@ export default function FourChoices() {
   // 自動再生（fourChoices_en2jaのときだけ）
   useEffect(() => {
     if (!roundInfo || !words[current]?.audio) return
-    if (roundInfo.mode_type !== "fourChoices_en2ja") return
+    if (!roundInfo.mode_type.includes("en2ja")) return
 
     const audio = new Audio(`/audio/words/${words[current].audio}`)
     audio.play().catch(e => console.log("再生失敗:", e))
