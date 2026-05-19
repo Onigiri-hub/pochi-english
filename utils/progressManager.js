@@ -11,7 +11,7 @@ export async function getProgress(unit) {
   try {
     const snap = await getDoc(doc(db, "users", user.uid, "progress", `u${unit}`));
     const value = snap.exists() ? (snap.data().value || 0) : 0;
-    localStorage.setItem(key, value); // localStorageも同期しておく
+    localStorage.setItem(key, value);
     return value;
   } catch (e) {
     console.error("進捗の取得に失敗:", e);
@@ -20,17 +20,20 @@ export async function getProgress(unit) {
 }
 
 // Firestoreの現在値を取得して+1して保存（競合しない）
+// ★ 戻り値：{ isFirstClear: boolean }
 export async function saveProgress(unit, clearedOrder) {
   const user = auth.currentUser;
-  if (!user) return;
+  if (!user) return { isFirstClear: false };
 
   try {
     const progressRef = doc(db, "users", user.uid, "progress", `u${unit}`);
     const snap = await getDoc(progressRef);
     const current = snap.exists() ? (snap.data().value || 0) : 0;
 
-    // ★ クリアしたorderが現在のprogress以上の時だけ+1
-    if (clearedOrder >= current) {
+    // ★ クリアしたorderが現在のprogress以上 = 初クリア
+    const isFirstClear = clearedOrder >= current;
+
+    if (isFirstClear) {
       const newValue = clearedOrder + 1;
       await setDoc(progressRef, { value: newValue });
       localStorage.setItem(`progress_u${unit}`, newValue);
@@ -44,8 +47,10 @@ export async function saveProgress(unit, clearedOrder) {
       dateString: new Date().toLocaleDateString("sv-SE"),
     });
 
+    return { isFirstClear };
 
   } catch (e) {
     console.error("進捗の保存に失敗:", e);
+    return { isFirstClear: false };
   }
 }

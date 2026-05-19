@@ -226,7 +226,7 @@ export default function Typing() {
       }, 400)
     } else {
       await saveProgress()
-      router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
+      router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}`)
     }
   }
 

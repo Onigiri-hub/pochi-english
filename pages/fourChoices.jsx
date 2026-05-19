@@ -116,7 +116,7 @@ export default function FourChoices() {
           clearInterval(timerRef.current)
           saveRoundProgress(roundInfo?.is_review === "1")
           saveMastery()
-          router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}`)
+          router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}`)
           return 0
         }
         return t - 1
