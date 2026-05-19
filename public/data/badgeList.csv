@@ -1,0 +1,8 @@
+badge_id,name,icon,image_locked,image_earned,description
+first_clear,はじめの一歩,🌟,badge_locked.png,badge_first_clear.png,初めてレッスンをクリア！
+lesson_5,レッスン5クリア,📚,badge_locked.png,badge_lesson5.png,累計5レッスンクリア！
+lesson_10,レッスン10クリア,📚,badge_locked.png,badge_lesson10.png,累計10レッスンクリア！
+unit1_complete,Unit1コンプリート,🏆,badge_locked.png,badge_unit1.png,Unit1の全レッスンを完了！
+streak_3,3日連続,🔥,badge_locked.png,badge_streak3.png,3日連続で学習！
+streak_7,7日連続,🔥,badge_locked.png,badge_streak7.png,7日連続で学習！
+perfect,パーフェクト,⭐,badge_locked.png,badge_perfect.png,1レッスン全問正解！

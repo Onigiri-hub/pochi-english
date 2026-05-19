@@ -1,53 +1,18 @@
 import { db, auth } from "../firebase";
 import { doc, getDoc, setDoc, collection, getDocs } from "firebase/firestore";
+import Papa from "papaparse";
 
 // ===================================
-// バッジ定義一覧
+// csvからバッジ一覧を読み込む
 // ===================================
-export const BADGE_LIST = [
-  {
-    id: "first_clear",
-    name: "はじめの一歩",
-    icon: "🌟",
-    description: "初めてレッスンをクリア！",
-  },
-  {
-    id: "lesson_5",
-    name: "レッスン5クリア",
-    icon: "📚",
-    description: "累計5レッスンクリア！",
-  },
-  {
-    id: "lesson_10",
-    name: "レッスン10クリア",
-    icon: "📚",
-    description: "累計10レッスンクリア！",
-  },
-  {
-    id: "unit1_complete",
-    name: "Unit1コンプリート",
-    icon: "🏆",
-    description: "Unit1の全レッスンを完了！",
-  },
-  {
-    id: "streak_3",
-    name: "3日連続",
-    icon: "🔥",
-    description: "3日連続で学習！",
-  },
-  {
-    id: "streak_7",
-    name: "7日連続",
-    icon: "🔥",
-    description: "7日連続で学習！",
-  },
-  {
-    id: "perfect",
-    name: "パーフェクト",
-    icon: "⭐",
-    description: "1レッスン全問正解！",
-  },
-];
+export async function loadBadgeList() {
+  const res = await fetch("/data/badgeList.csv")
+  const text = await res.text()
+  return Papa.parse(text, {
+    header: true,
+    skipEmptyLines: true,
+  }).data
+}
 
 // ===================================
 // 獲得済みバッジをFirestoreから取得
@@ -88,12 +53,7 @@ async function earnBadge(badgeId) {
 
 // ===================================
 // バッジ条件チェック（クリア画面で呼ぶ）
-// 引数：
-//   - streak: 連続日数
-//   - totalLessons: 累計レッスンクリア数
-//   - isUnit1Complete: Unit1全クリアかどうか
-//   - isPerfect: 全問正解かどうか（practiceのみ）
-// 戻り値：新しく獲得したバッジIDの配列
+// 戻り値：新しく獲得したbadge_idの配列
 // ===================================
 export async function checkAndEarnBadges({
   streak = 0,
@@ -119,12 +79,11 @@ export async function checkAndEarnBadges({
   await check("streak_7", streak >= 7);
   await check("perfect", isPerfect);
 
-  return newBadges; // 新しく取ったバッジIDの配列を返す
+  return newBadges;
 }
 
 // ===================================
 // 累計レッスンクリア数をFirestoreから取得
-// （historyコレクションのドキュメント数で計算）
 // ===================================
 export async function getTotalLessons() {
   const user = auth.currentUser;

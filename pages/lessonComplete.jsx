@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { saveProgress } from "../utils/progressManager"
 import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
-import { checkAndEarnBadges, getTotalLessons, BADGE_LIST } from "../utils/badgeManager"
+import { checkAndEarnBadges, getTotalLessons, loadBadgeList } from "../utils/badgeManager"
 import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation";
 
@@ -9,7 +9,7 @@ export default function LessonComplete() {
   const router = useRouter()
   const { unit, order, isPerfect } = router.query
 
-  const [newBadges, setNewBadges] = useState([])
+  const [newBadges, setNewBadges] = useState([])   // 新しく取ったバッジオブジェクトの配列
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
 
@@ -25,7 +25,7 @@ export default function LessonComplete() {
     async function updateProgress() {
       if (cancelled) return;
 
-      // 1. 進捗保存 → 初クリアかどうかが返ってくる ★修正
+      // 1. 進捗保存 → 初クリアかどうかが返ってくる
       const { isFirstClear } = await saveProgress(unit, Number(order));
 
       // 2. 連続日数を更新して取得
@@ -42,18 +42,24 @@ export default function LessonComplete() {
       // 5. Unit1全クリア判定
       const isUnit1Complete = String(unit) === "1" && isFirstClear;
 
-      // 6. バッジチェック
-      const badges = await checkAndEarnBadges({
+      // 6. バッジチェック → 新しく取ったbadge_idの配列が返る
+      const newBadgeIds = await checkAndEarnBadges({
         streak,
         totalLessons,
         isUnit1Complete,
         isPerfect: isPerfect === "true",
       });
 
-      setNewBadges(badges);
-
-      if (badges.length > 0 || mofu > 0) {
-        setShowPopup(true);
+      // 7. csvからバッジ一覧を読み込んで、IDからオブジェクトに変換
+      if (newBadgeIds.length > 0) {
+        const badgeList = await loadBadgeList()
+        const badgeObjects = newBadgeIds
+          .map(id => badgeList.find(b => b.badge_id === id))
+          .filter(Boolean)
+        setNewBadges(badgeObjects)
+        setShowPopup(true)
+      } else if (mofu > 0) {
+        setShowPopup(true)
       }
     }
 
@@ -136,23 +142,19 @@ export default function LessonComplete() {
               <div style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px" }}>
                 バッジ獲得！
               </div>
-              {newBadges.map(id => {
-                const badge = BADGE_LIST.find(b => b.id === id);
-                if (!badge) return null;
-                return (
-                  <div key={id} style={{
-                    background: "#fffbe6",
-                    border: "2px solid #FFD700",
-                    borderRadius: "12px",
-                    padding: "12px 16px",
-                    marginBottom: "10px",
-                  }}>
-                    <div style={{ fontSize: "32px" }}>{badge.icon}</div>
-                    <div style={{ fontSize: "16px", fontWeight: "bold" }}>{badge.name}</div>
-                    <div style={{ fontSize: "13px", color: "#888", marginTop: "4px" }}>{badge.description}</div>
-                  </div>
-                );
-              })}
+              {newBadges.map(badge => (
+                <div key={badge.badge_id} style={{
+                  background: "#fffbe6",
+                  border: "2px solid #FFD700",
+                  borderRadius: "12px",
+                  padding: "12px 16px",
+                  marginBottom: "10px",
+                }}>
+                  <div style={{ fontSize: "32px" }}>{badge.icon}</div>
+                  <div style={{ fontSize: "16px", fontWeight: "bold" }}>{badge.name}</div>
+                  <div style={{ fontSize: "13px", color: "#888", marginTop: "4px" }}>{badge.description}</div>
+                </div>
+              ))}
               <button
                 onClick={() => setShowPopup(false)}
                 style={{
