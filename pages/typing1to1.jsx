@@ -44,6 +44,7 @@ export default function Typing() {
   const [masteryMap, setMasteryMap] = useState({})
   const inputRef = useRef(null)
   const seikaiRef = useRef(null)
+  const isFirstClearRef = useRef(false) // ★追加：初クリア判定用
 
   useEffect(() => {
     if (!router.isReady) return
@@ -104,6 +105,11 @@ export default function Typing() {
       const roundProgress = await getVocabRoundProgress(round)
       doneWordsRef.current = new Set(roundProgress.doneWords)
       setDoneWords(new Set(roundProgress.doneWords))
+
+      // ★ ロード時点で✓がついてないなら初クリア扱い
+      const totalWords = 20
+      const alreadyCleared = (roundProgress.doneWords?.length || 0) >= totalWords
+      isFirstClearRef.current = !alreadyCleared
 
       // 習熟度を読み込む
       const existingMastery = await getVocabMastery(section, "mode3")
@@ -226,7 +232,8 @@ export default function Typing() {
       }, 400)
     } else {
       await saveProgress()
-      router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}`)
+      // ★ isFirstClearをURLに追加
+      router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}`)
     }
   }
 
@@ -293,7 +300,7 @@ export default function Typing() {
           }}>
             {currentWord.ja}
           </div>
-          
+                    
           {/* デバッグ用（確認したら消す） 
           <div style={{ fontSize: "12px", color: "#999", textAlign: "center" }}>
             ease: {masteryMap[currentWord?.word_id]?.ease ?? 0} /
@@ -301,7 +308,8 @@ export default function Typing() {
             mastery: {masteryMap[currentWord?.word_id]?.mastery ?? "①未学習"}
           </div>
           */}
-          
+
+
           {/* 入力欄 */}
           <div style={{ margin: "20px 0" }}>
             <input

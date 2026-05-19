@@ -1,20 +1,19 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
-import { getVocabRoundProgress } from "../utils/vocabProgressManager"
 import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
 import { checkAndEarnBadges, getTotalLessons, BADGE_LIST } from "../utils/badgeManager"
 
 export default function VocabComplete() {
   const router = useRouter()
-  const { stage, section, round } = router.query
+  const { stage, section, round, isFirstClear } = router.query
 
   const [newBadges, setNewBadges] = useState([])
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
 
   useEffect(() => {
-    if (!router.isReady || !round) return
+    if (!router.isReady) return
 
     const audio = new Audio("/sound/kirakira.mp3")
     audio.volume = 0.3
@@ -22,26 +21,21 @@ export default function VocabComplete() {
 
     async function handleComplete() {
 
-      // 1. このRoundが初クリアかどうか判定
-      // doneWordsがtotalWordsに達しているかで判断
-      // ※fourChoicesから来るときはすでにsaveVocabRoundProgressが呼ばれている
-      const progress = await getVocabRoundProgress(round)
-      const totalWords = progress.totalWords || 20
-      const doneCount = progress.doneWords?.length || 0
-      const isFirstClear = doneCount >= totalWords
+      // 1. URLから初クリア判定を受け取る ★修正
+      const firstClear = isFirstClear === "true"
 
       // 2. 連続日数を更新して取得
       const streak = await updateStreak()
 
       // 3. モフを計算して加算
-      const mofu = calcMofu(streak, isFirstClear)
+      const mofu = calcMofu(streak, firstClear)
       await addMofu(mofu)
       setMofuEarned(mofu)
 
-      // 4. 累計レッスン数を取得（英文法と英単語合算）
+      // 4. 累計レッスン数を取得
       const totalLessons = await getTotalLessons()
 
-      // 5. バッジチェック（英単語側はUnit1判定なし、パーフェクト判定なし）
+      // 5. バッジチェック
       const badges = await checkAndEarnBadges({
         streak,
         totalLessons,
@@ -58,7 +52,7 @@ export default function VocabComplete() {
 
     handleComplete()
 
-  }, [router.isReady, round])
+  }, [router.isReady])
 
   return (
     <div className="completePage" style={{ paddingBottom: "80px" }}>

@@ -22,6 +22,7 @@ export default function FourChoices() {
   const seikaiRef = useRef(null)
   const [masteryMap, setMasteryMap] = useState({})
   const masteryMapRef = useRef({})
+  const isFirstClearRef = useRef(false) // ★追加：初クリア判定用
 
   useEffect(() => {
     if (!router.isReady) return
@@ -86,6 +87,11 @@ export default function FourChoices() {
       doneWordsRef.current = new Set(roundProgress.doneWords)
       setDoneWords(new Set(roundProgress.doneWords))
 
+      // ★ ロード時点で✓がついてないなら初クリア扱い
+      const totalWords = currentRound.is_review === "1" ? selectedWords.length : 20
+      const alreadyCleared = roundProgress.doneWords?.length >= totalWords
+      isFirstClearRef.current = !alreadyCleared
+
       // 習熟度を読み込む
       const modeKey = getModeKey(currentRound.mode_type)
       const existingMastery = await getVocabMastery(section, modeKey)
@@ -116,7 +122,8 @@ export default function FourChoices() {
           clearInterval(timerRef.current)
           saveRoundProgress(roundInfo?.is_review === "1")
           saveMastery()
-          router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}`)
+          // ★ isFirstClearをURLに追加
+          router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}`)
           return 0
         }
         return t - 1
@@ -318,7 +325,7 @@ export default function FourChoices() {
               : currentWord.word
             }
           </div>
-          
+                    
           {/* デバッグ用（確認したら消す） 
           <div style={{ fontSize: "12px", color: "#999", textAlign: "center" }}>
             できた: {[...doneWords].join(", ") || "なし"}<br/>
@@ -327,6 +334,7 @@ export default function FourChoices() {
             mastery: {masteryMap[currentWord?.word_id]?.mastery ?? "①未学習"}
           </div>
           */}
+
 
           {/* 4択ボタン */}
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
