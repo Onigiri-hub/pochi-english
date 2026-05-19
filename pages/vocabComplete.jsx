@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
 import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
-import { checkAndEarnBadges, getTotalLessons, BADGE_LIST } from "../utils/badgeManager"
+import { checkAndEarnBadges, getTotalLessons, loadBadgeList } from "../utils/badgeManager"
 
 export default function VocabComplete() {
   const router = useRouter()
