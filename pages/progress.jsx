@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Navigation from "../components/Navigation";
 import { auth, db } from "../firebase";
-import { doc, getDoc, setDoc, collection, query, getDocs, orderBy } from "firebase/firestore"; // collection, queryなどを追加
-import { Bar } from "react-chartjs-2"; // グラフ用
+import { doc, getDoc, setDoc, collection, query, getDocs, orderBy } from "firebase/firestore";
+import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -14,26 +14,26 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { getBadges, loadBadgeList } from "../utils/badgeManager"; // ★追加
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function Progress() {
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
-  const [historyData, setHistoryData] = useState([]); // 履歴データ用
+  const [historyData, setHistoryData] = useState([]);
   const [vocabHistoryData, setVocabHistoryData] = useState([])
+  const [earnedBadges, setEarnedBadges] = useState([])  // ★追加
+  const [badgeList, setBadgeList] = useState([])         // ★追加
   const router = useRouter();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (u) => {
       setUser(u);
       if (u) {
-        // 1. プロフィール読み込み（既存）
+        // 1. プロフィール読み込み
         const userRef = doc(db, "users", u.uid);
         const snap = await getDoc(userRef);
-        //if (snap.exists()) {
-        //  setProfile(snap.data());
-        //}
         if (snap.exists()) {
           setProfile(snap.data());
         } else {
@@ -44,28 +44,30 @@ export default function Progress() {
           await setDoc(userRef, defaultProfile);
           setProfile(defaultProfile);
         }
-        // 2. 学習履歴(history)の読み込みを追加
+
+        // 2. 英文法の学習履歴
         const historyRef = collection(db, "users", u.uid, "history");
         const q = query(historyRef, orderBy("clearedAt", "desc"));
         const hSnap = await getDocs(q);
         const docs = hSnap.docs.map(doc => doc.data());
         setHistoryData(docs);
 
-        // 英単語の学習履歴を読み込む
+        // 3. 英単語の学習履歴
         const vocabHistoryRef = collection(db, "users", u.uid, "vocab_history")
         const vocabQ = query(vocabHistoryRef, orderBy("clearedAt", "desc"))
         const vocabSnap = await getDocs(vocabQ)
         const vocabDocs = vocabSnap.docs.map(doc => doc.data())
         setVocabHistoryData(vocabDocs)
 
-        // 学習日数の集計（重複を除いた日付の数）
-        const uniqueDays = new Set(docs.map(d => d.dateString));
-
+        // 4. バッジ読み込み ★追加
+        const earned = await getBadges()
+        setEarnedBadges(earned)
+        const list = await loadBadgeList()
+        setBadgeList(list)
       }
     });
     return () => unsubscribe();
   }, []);
-
 
   const getGraphData = () => {
     const days = []
@@ -111,7 +113,6 @@ export default function Progress() {
       , allHistory[0].dateString)
     : null
 
-
   // 連続記録
   const calcStreak = () => {
     const allDays = new Set(allHistory.map(h => h.dateString))
@@ -144,7 +145,7 @@ export default function Progress() {
               <img src={`/images/avatars/${profile.avatar}`} alt="Avatar" />
             ) : null}
           </div>
-          <h2 className="nickname">{profile ? profile.nickname : ""}</h2>          
+          <h2 className="nickname">{profile ? profile.nickname : ""}</h2>
         </div>
 
         <div className="statsGrid">
@@ -164,31 +165,29 @@ export default function Progress() {
         </div>
 
         {/* グラフエリア */}
-        <div className="graphContainer" 
-          style={{ 
-            background: "#f8f8f8", 
-            padding: "10px", 
-            borderRadius: "10px", 
-            marginTop: "20px", 
-            marginBottom: "100px",
-            height: "200px"  
+        <div className="graphContainer"
+          style={{
+            background: "#f8f8f8",
+            padding: "10px",
+            borderRadius: "10px",
+            marginTop: "20px",
+            height: "200px"
           }}>
-
-          <Bar 
-            data={getGraphData()} 
-            options={{ 
+          <Bar
+            data={getGraphData()}
+            options={{
               responsive: true,
               maintainAspectRatio: false,
-              plugins: { 
-                legend: { display: true, position: "bottom" } // 凡例を表示
+              plugins: {
+                legend: { display: true, position: "bottom" }
               },
-              scales: { 
-                x: { 
-                  stacked: true, // ← 追加
+              scales: {
+                x: {
+                  stacked: true,
                   grid: { display: false },
                 },
-                y: { 
-                  stacked: true, // ← 追加
+                y: {
+                  stacked: true,
                   display: true,
                   grid: { display: false },
                   beginAtZero: true,
@@ -200,17 +199,64 @@ export default function Progress() {
                   }
                 }
               }
-            }} 
+            }}
           />
-
         </div>
-        <div className="profileLinks">
 
+        {/* バッジ一覧 ★追加 */}
+        <div style={{ marginTop: "50px" }}>
+          <h3 style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>
+            実績バッジ
+          </h3>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gap: "8px",
+          }}>
+            {badgeList.map(badge => {
+              const earned = earnedBadges.includes(badge.badge_id)
+              return (
+                <div
+                  key={badge.badge_id}
+                  style={{
+                    textAlign: "center",
+                    opacity: earned ? 1 : 0.35,
+                  }}
+                  title={badge.description}
+                >
+                  <img
+                    src={earned
+                      ? `/images/badges/${badge.image_earned}`
+                      : `/images/badges/${badge.image_locked}`
+                    }
+                    alt={badge.name}
+                    style={{
+                      width: "70%",
+                      aspectRatio: "1",
+                      objectFit: "contain",
+                      borderRadius: "12px",
+                    }}
+                  />
+                  <div style={{
+                    fontSize: "10px",
+                    color: "#555",
+                    marginTop: "4px",
+                    lineHeight: 1.2,
+                  }}>
+                    {badge.name}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="profileLinks" style={{ marginTop: "30px" }}>
           <ul className="links">
             <li onClick={() => router.push("/help")} style={{ cursor: "pointer" }}>ヘルプ</li>
             <li onClick={() => router.push("/terms")} style={{ cursor: "pointer" }}>利用規約とプライバシーポリシー</li>
           </ul>
-          <button 
+          <button
             className="logoutBtn"
             onClick={async () => {
               await auth.signOut();
@@ -221,10 +267,7 @@ export default function Progress() {
           </button>
         </div>
 
-
-
       </div>
-
       <Navigation />
     </div>
   );
