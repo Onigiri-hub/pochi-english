@@ -31,22 +31,24 @@ export default function Navigation() {
           <img src="/images/icons/honekko.svg" alt="英単語" />
         </button>
 
+
+        <button onClick={() => router.push("/progress")} className="navItem" data-sound>
+          <img src="/images/icons/person.svg" alt="プロフ" />
+        </button>
+
         {/* モフボタン */}
         <button onClick={() => router.push("/mofu")} className="navItem">
-          <img src="/images/icons/mofu.svg" alt="モフ" />
+          <img src="/images/icons/mofu.svg" alt="モフ" style={{ width: "20px", height: "20px" }}/>
           <span style={{
             fontSize: "11px",
             fontWeight: "bold",
-            color: "#FFD700",
+            color: "#ebebeb",
             marginTop: "1px",
           }}>
             {mofu === null ? "..." : mofu}
           </span>
         </button>
 
-        <button onClick={() => router.push("/progress")} className="navItem" data-sound>
-          <img src="/images/icons/person.svg" alt="プロフ" />
-        </button>
       </div>
 
       <style jsx>{`
