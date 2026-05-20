@@ -20,20 +20,40 @@ export default function Settings() {
     const user = auth.currentUser;
     if (!user) return;
 
-    const confirmed = window.confirm("進捗データをリセットしますか？この操作は元に戻せません。");
+    const confirmed = window.confirm("進捗データをリセットしますか？\nモフ・バッジ・連続日数もすべてリセットされます。この操作は元に戻せません。");
     if (!confirmed) return;
 
     try {
-      // Firestoreのprogressを全削除
-      //const { collection, getDocs, deleteDoc } = await import("firebase/firestore");
-      const progressRef = collection(db, "users", user.uid, "progress");
-      const snap = await getDocs(progressRef);
-      await Promise.all(snap.docs.map(d => deleteDoc(d.ref)));
+      const uid = user.uid;
 
-      // localStorageもクリア
+      // 削除するサブコレクション一覧
+      const subCollections = [
+        "progress",
+        "history",
+        "vocab_rounds",
+        "vocab_progress",
+        "vocab_history",
+        "streak",
+        "badges",
+      ];
+
+      // 全サブコレクションのドキュメントを一括削除
+      await Promise.all(
+        subCollections.map(async (colName) => {
+          const ref = collection(db, "users", uid, colName);
+          const snap = await getDocs(ref);
+          await Promise.all(snap.docs.map((d) => deleteDoc(d.ref)));
+        })
+      );
+
+      // mofu（ポイント数）をリセット（users/{uid}のフィールド）
+      const userRef = doc(db, "users", uid);
+      await setDoc(userRef, { mofu: 0 }, { merge: true });
+
+      // localStorageをクリア
       localStorage.clear();
 
-      alert("進捗をリセットしました！");
+      alert("すべてのデータをリセットしました！");
       router.reload?.();
     } catch (e) {
       console.error(e);
