@@ -43,7 +43,18 @@ export default function VocabComplete() {
         isPerfect: false,
       })
 
-      setNewBadges(badges)
+      // ★ここを追加：badge_idからオブジェクトに変換
+      if (badges.length > 0) {
+        const badgeList = await loadBadgeList()
+        const badgeObjects = badges
+          .map(id => badgeList.find(b => b.badge_id === id))
+          .filter(Boolean)
+        setNewBadges(badgeObjects)
+      } else {
+        setNewBadges([])
+      }
+
+      //setNewBadges(badges)
 
       if (badges.length > 0 || mofu > 0) {
         setShowPopup(true)
@@ -128,23 +139,19 @@ export default function VocabComplete() {
               <div style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px" }}>
                 バッジ獲得！
               </div>
-              {newBadges.map(id => {
-                const badge = BADGE_LIST.find(b => b.id === id)
-                if (!badge) return null
-                return (
-                  <div key={id} style={{
-                    background: "#fffbe6",
-                    border: "2px solid #FFD700",
-                    borderRadius: "12px",
-                    padding: "12px 16px",
-                    marginBottom: "10px",
-                  }}>
-                    <div style={{ fontSize: "32px" }}>{badge.icon}</div>
-                    <div style={{ fontSize: "16px", fontWeight: "bold" }}>{badge.name}</div>
-                    <div style={{ fontSize: "13px", color: "#888", marginTop: "4px" }}>{badge.description}</div>
-                  </div>
-                )
-              })}
+              {newBadges.map(badge => (
+                <div key={badge.badge_id} style={{
+                  background: "#fffbe6",
+                  border: "2px solid #FFD700",
+                  borderRadius: "12px",
+                  padding: "12px 16px",
+                  marginBottom: "10px",
+                }}>
+                  <div style={{ fontSize: "32px" }}>{badge.icon}</div>
+                  <div style={{ fontSize: "16px", fontWeight: "bold" }}>{badge.name}</div>
+                  <div style={{ fontSize: "13px", color: "#888", marginTop: "4px" }}>{badge.description}</div>
+                </div>
+              ))}
               <button
                 onClick={() => setShowPopup(false)}
                 style={{

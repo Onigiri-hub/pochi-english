@@ -22,6 +22,7 @@ export default function Progress() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true); // ★追加
   const [profile, setProfile] = useState(null);
+  const [streakCount, setStreakCount] = useState(0) // ★追加
   const [historyData, setHistoryData] = useState([]);
   const [vocabHistoryData, setVocabHistoryData] = useState([])
   const [earnedBadges, setEarnedBadges] = useState([])  // ★追加
@@ -47,6 +48,8 @@ export default function Progress() {
         }
         setLoading(false); // ★ここに追加 
 
+
+
         // 2. 英文法の学習履歴
         const historyRef = collection(db, "users", u.uid, "history");
         const q = query(historyRef, orderBy("clearedAt", "desc"));
@@ -61,7 +64,12 @@ export default function Progress() {
         const vocabDocs = vocabSnap.docs.map(doc => doc.data())
         setVocabHistoryData(vocabDocs)
 
-        // 4. バッジ読み込み ★追加
+        // 4. streak取得 ★追加
+        const { getStreak } = await import("../utils/mofuManager")
+        const currentStreak = await getStreak()
+        setStreakCount(currentStreak)
+
+        // 5. バッジ読み込み ★追加
         const earned = await getBadges()
         setEarnedBadges(earned)
         const list = await loadBadgeList()
@@ -116,23 +124,24 @@ export default function Progress() {
     : null
 
   // 連続記録
-  const calcStreak = () => {
-    const allDays = new Set(allHistory.map(h => h.dateString))
-    let streak = 0
-    const today = new Date()
-    for (let i = 0; i < 365; i++) {
-      const d = new Date(today)
-      d.setDate(d.getDate() - i)
-      const s = d.toLocaleDateString("sv-SE")
-      if (allDays.has(s)) {
-        streak++
-      } else {
-        break
-      }
-    }
-    return streak
-  }
-  const streak = calcStreak()
+  //const calcStreak = () => {
+  //  const allDays = new Set(allHistory.map(h => h.dateString))
+  //  let streak = 0
+  //  const today = new Date()
+  //  for (let i = 0; i < 365; i++) {
+  //    const d = new Date(today)
+  //    d.setDate(d.getDate() - i)
+  //    const s = d.toLocaleDateString("sv-SE")
+  //    if (allDays.has(s)) {
+  //      streak++
+  //    } else {
+  //      break
+  //    }
+  //  }
+  //  return streak
+  //}
+  
+  //const streak = calcStreak()
   
   if (loading) return null; // ★追加（何も表示しない）
 
@@ -165,7 +174,7 @@ export default function Progress() {
           </div>
           <div className="statItem">
             <span className="statLabel">連続記録</span>
-            <span className="statValue">{streak}日</span>
+            <span className="statValue">{streakCount}日</span>
           </div>
         </div>
 
