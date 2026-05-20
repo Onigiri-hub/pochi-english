@@ -34,7 +34,8 @@ export default function PracticePage({ questions }) {
         const userRef = doc(db, "users", u.uid);
         const snap = await getDoc(userRef);
         if (snap.exists()) {
-          setProfile(snap.data());
+          const data = snap.data();
+          setProfile({ avatar: data.avatar || "01.png", ...data });
         }
       }
     });

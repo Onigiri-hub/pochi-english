@@ -20,6 +20,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 export default function Progress() {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true); // ★追加
   const [profile, setProfile] = useState(null);
   const [historyData, setHistoryData] = useState([]);
   const [vocabHistoryData, setVocabHistoryData] = useState([])
@@ -44,6 +45,7 @@ export default function Progress() {
           await setDoc(userRef, defaultProfile);
           setProfile(defaultProfile);
         }
+        setLoading(false); // ★ここに追加 
 
         // 2. 英文法の学習履歴
         const historyRef = collection(db, "users", u.uid, "history");
@@ -131,6 +133,8 @@ export default function Progress() {
     return streak
   }
   const streak = calcStreak()
+  
+  if (loading) return null; // ★追加（何も表示しない）
 
   return (
     <div className="container">
@@ -141,9 +145,10 @@ export default function Progress() {
 
         <div className="profileSection">
           <div className="avatarCircle">
-            {profile ? (
-              <img src={`/images/avatars/${profile.avatar}`} alt="Avatar" />
-            ) : null}
+            <img
+              src={`/images/avatars/${profile?.avatar || "01.png"}`}
+              alt="Avatar"
+            />
           </div>
           <h2 className="nickname">{profile ? profile.nickname : ""}</h2>
         </div>
