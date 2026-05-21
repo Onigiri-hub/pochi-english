@@ -153,12 +153,40 @@ export default function Progress() {
         </div>
 
         <div className="profileSection">
-          <div className="avatarCircle">
+
+          <div className="avatarCircle" style={{ position: "relative" }}>
+            {/* レイヤー1: アバター（ベース） */}
             <img
               src={`/images/avatars/${profile?.avatar || "01.png"}`}
               alt="Avatar"
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />
+            {/* レイヤー2: 目元アクセサリ */}
+            {profile?.acc_eye && (
+              <img
+                src={`/images/avatars/${profile.acc_eye}`}
+                alt="eye"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              />
+            )}
+            {/* レイヤー3: 口元アクセサリ */}
+            {profile?.acc_mouth && (
+              <img
+                src={`/images/avatars/${profile.acc_mouth}`}
+                alt="mouth"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              />
+            )}
+            {/* レイヤー4: 頭アクセサリ（最前面） */}
+            {profile?.acc_head && (
+              <img
+                src={`/images/avatars/${profile.acc_head}`}
+                alt="head"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              />
+            )}
           </div>
+
           <h2 className="nickname">{profile ? profile.nickname : ""}</h2>
         </div>
 
