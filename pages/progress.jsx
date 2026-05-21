@@ -32,52 +32,52 @@ export default function Progress() {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (u) => {
       setUser(u);
-      if (u) {
-        // 1. プロフィール読み込み
-        const userRef = doc(db, "users", u.uid);
-        const snap = await getDoc(userRef);
-        if (snap.exists()) {
-          setProfile(snap.data());
-        } else {
-          const defaultProfile = {
-            nickname: u.displayName || "ゲスト",
-            avatar: "01.png"
-          };
-          await setDoc(userRef, defaultProfile);
-          setProfile(defaultProfile);
-        }
-        setLoading(false); // ★ここに追加 
+      if (!u) return;
 
+      const userRef = doc(db, "users", u.uid);
 
+      const [
+        profileSnap,
+        hSnap,
+        vocabSnap,
+        streakSnap,
+        earnedBadgesData,
+        badgeListData,
+      ] = await Promise.all([
+        getDoc(userRef),
+        getDocs(query(collection(db, "users", u.uid, "history"), orderBy("clearedAt", "desc"))),
+        getDocs(query(collection(db, "users", u.uid, "vocab_history"), orderBy("clearedAt", "desc"))),
+        getDoc(doc(db, "users", u.uid, "streak", "current")),
+        getBadges(),
+        loadBadgeList(),
+      ])
 
-        // 2. 英文法の学習履歴
-        const historyRef = collection(db, "users", u.uid, "history");
-        const q = query(historyRef, orderBy("clearedAt", "desc"));
-        const hSnap = await getDocs(q);
-        const docs = hSnap.docs.map(doc => doc.data());
-        setHistoryData(docs);
-
-        // 3. 英単語の学習履歴
-        const vocabHistoryRef = collection(db, "users", u.uid, "vocab_history")
-        const vocabQ = query(vocabHistoryRef, orderBy("clearedAt", "desc"))
-        const vocabSnap = await getDocs(vocabQ)
-        const vocabDocs = vocabSnap.docs.map(doc => doc.data())
-        setVocabHistoryData(vocabDocs)
-
-        // 4. streak取得 ★追加
-        const { getStreak } = await import("../utils/mofuManager")
-        const currentStreak = await getStreak()
-        setStreakCount(currentStreak)
-
-        // 5. バッジ読み込み ★追加
-        const earned = await getBadges()
-        setEarnedBadges(earned)
-        const list = await loadBadgeList()
-        setBadgeList(list)
+      // プロフィール
+      if (profileSnap.exists()) {
+        setProfile(profileSnap.data());
+      } else {
+        const defaultProfile = { nickname: u.displayName || "ゲスト", avatar: "01.png" };
+        await setDoc(userRef, defaultProfile);
+        setProfile(defaultProfile);
       }
+
+      // 履歴
+      setHistoryData(hSnap.docs.map(d => d.data()));
+      setVocabHistoryData(vocabSnap.docs.map(d => d.data()));
+
+      // streak
+      setStreakCount(streakSnap.exists() ? streakSnap.data().count || 0 : 0);
+
+      // バッジ
+      setEarnedBadges(earnedBadgesData);
+      setBadgeList(badgeListData);
+
+      setLoading(false);
     });
     return () => unsubscribe();
   }, []);
+
+
 
   const getGraphData = () => {
     const days = []
