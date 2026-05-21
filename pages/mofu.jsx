@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation"
 import { getMofu, spendMofu } from "../utils/mofuManager"
 import { loadCSV } from "../utils/csvLoader"
@@ -17,6 +18,7 @@ const CATEGORIES = ["avatar", "head", "eye", "mouth"]
 
 export default function Mofu() {
   const router = useRouter()
+  const { profile } = useProfileContext()
   const [mofu, setMofu] = useState(null)
   const [items, setItems] = useState([])
   const [purchasedIds, setPurchasedIds] = useState(new Set())
