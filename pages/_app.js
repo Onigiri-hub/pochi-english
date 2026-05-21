@@ -23,9 +23,10 @@ const PUBLIC_PAGES = ["/", "/terms"]
 export default function MyApp({ Component, pageProps }) {
   const [dictionary, setDictionary] = useState([])
   const [profile, setProfile] = useState(null)
+  const [mofu, setMofu] = useState(0)
+  const [streak, setStreak] = useState(0)
   const router = useRouter()
 
-  // 未ログイン検知＋プロフィール取得＋dailyCheck
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (!user && !PUBLIC_PAGES.includes(router.pathname)) {
@@ -37,11 +38,17 @@ export default function MyApp({ Component, pageProps }) {
         const { doc, getDoc, setDoc, collection, getDocs, query, orderBy } = await import("firebase/firestore")
         const { db } = await import("../firebase")
 
-        // プロフィール取得（1回だけ）
+        // プロフィール・mofu・streakを一括取得
         const userRef = doc(db, "users", user.uid)
-        const snap = await getDoc(userRef)
-        if (snap.exists()) {
-          setProfile(snap.data())
+        const [profileSnap, streakSnap] = await Promise.all([
+          getDoc(userRef),
+          getDoc(doc(db, "users", user.uid, "streak", "current")),
+        ])
+
+        if (profileSnap.exists()) {
+          const data = profileSnap.data()
+          setProfile(data)
+          setMofu(data.mofu || 0)
         } else {
           const defaultProfile = {
             nickname: user.displayName || "ゲスト",
@@ -49,9 +56,23 @@ export default function MyApp({ Component, pageProps }) {
             acc_head: null,
             acc_eye: null,
             acc_mouth: null,
+            mofu: 0,
           }
           await setDoc(userRef, defaultProfile)
           setProfile(defaultProfile)
+          setMofu(0)
+        }
+
+        // streak取得
+        if (streakSnap.exists()) {
+          const data = streakSnap.data()
+          const today = new Date().toLocaleDateString("sv-SE")
+          const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("sv-SE")
+          if (data.lastDate === today || data.lastDate === yesterday) {
+            setStreak(data.count || 0)
+          } else {
+            setStreak(0)
+          }
         }
 
         // dailyCheck（1日1回だけ）
@@ -68,14 +89,14 @@ export default function MyApp({ Component, pageProps }) {
           ]
 
           const allDays = new Set(allHistory.map(h => h.dateString))
-          let streak = 0
+          let streakCount = 0
           const todayDate = new Date()
           for (let i = 0; i < 365; i++) {
             const d = new Date(todayDate)
             d.setDate(d.getDate() - i)
             const s = d.toLocaleDateString("sv-SE")
             if (allDays.has(s)) {
-              streak++
+              streakCount++
             } else {
               break
             }
@@ -91,7 +112,7 @@ export default function MyApp({ Component, pageProps }) {
           const isUnit1Complete = (progressMap["u1"] || 0) >= unit1Lessons.length
 
           await checkAndEarnBadges({
-            streak,
+            streak: streakCount,
             totalLessons: hSnap.size,
             isUnit1Complete,
             isPerfect: false,
@@ -107,7 +128,7 @@ export default function MyApp({ Component, pageProps }) {
     return () => unsubscribe()
   }, [router.pathname])
 
-  // 辞書読み込み＋カチ音
+  // 辞書読み込み＋効果音プリロード
   useEffect(() => {
     async function load() {
       const data = await loadCSV("/data/word_dic.csv")
@@ -115,11 +136,11 @@ export default function MyApp({ Component, pageProps }) {
     }
     load()
 
-    // ★kirakira事前読み込み追加
+    // kirakira事前読み込み
     const kirakira = new Audio("/sound/kirakira.mp3")
     kirakira.volume = 0.3
     kirakira.load()
-    window._kirakira = kirakira  // どこからでも使えるように
+    window._kirakira = kirakira
 
     const sound = new Audio("/sound/kachi.mp3")
     function handleClick(e) {
@@ -133,7 +154,7 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <DictionaryContext.Provider value={dictionary}>
-      <ProfileContext.Provider value={{ profile, setProfile }}>
+      <ProfileContext.Provider value={{ profile, setProfile, mofu, setMofu, streak, setStreak }}>
         <main className={noto.className}>
           <Component {...pageProps} />
         </main>

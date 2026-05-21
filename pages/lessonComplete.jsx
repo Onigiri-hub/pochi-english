@@ -3,12 +3,13 @@ import { saveProgress } from "../utils/progressManager"
 import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
 import { checkAndEarnBadges, getTotalLessons, loadBadgeList } from "../utils/badgeManager"
 import { useEffect, useState } from "react"
+import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
 
 export default function LessonComplete() {
   const router = useRouter()
   const { unit, order, isPerfect } = router.query
-
+  const { setMofu, setStreak } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])   // 新しく取ったバッジオブジェクトの配列
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
@@ -31,11 +32,13 @@ export default function LessonComplete() {
 
       // 2. 連続日数を更新して取得
       const streak = await updateStreak();
+      setStreak(streak)  // ★追加
 
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, isFirstClear);
       await addMofu(mofu);
       setMofuEarned(mofu);
+      setMofu(prev => prev + mofu)  // ★追加
 
       // 4. 累計レッスン数を取得
       const totalLessons = await getTotalLessons();

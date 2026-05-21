@@ -3,11 +3,12 @@ import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
 import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
 import { checkAndEarnBadges, getTotalLessons, loadBadgeList } from "../utils/badgeManager"
+import { useProfileContext } from "../utils/ProfileContext"
 
 export default function VocabComplete() {
   const router = useRouter()
   const { stage, section, round, isFirstClear } = router.query
-
+  const { setMofu, setStreak } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
@@ -27,11 +28,13 @@ export default function VocabComplete() {
 
       // 2. 連続日数を更新して取得
       const streak = await updateStreak()
+      setStreak(streak)  // ★追加
 
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, firstClear)
       await addMofu(mofu)
       setMofuEarned(mofu)
+      setMofu(prev => prev + mofu)  // ★追加
 
       // 4. 累計レッスン数を取得
       const totalLessons = await getTotalLessons()

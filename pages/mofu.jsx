@@ -18,25 +18,14 @@ const CATEGORIES = ["avatar", "head", "eye", "mouth"]
 
 export default function Mofu() {
   const router = useRouter()
-  const { profile } = useProfileContext()
-  const [mofu, setMofu] = useState(null)
+  const { mofu, setMofu, profile, streak } = useProfileContext()
   const [items, setItems] = useState([])
   const [purchasedIds, setPurchasedIds] = useState(new Set())
-  const [streak, setStreak] = useState(0)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (!user) return
-
-      // 1. モフ残高取得
-      const m = await getMofu()
-      setMofu(m)
-
-      // 2. streak取得
-      const streakSnap = await getDoc(doc(db, "users", user.uid, "streak", "current"))
-      const currentStreak = streakSnap.exists() ? streakSnap.data().count || 0 : 0
-      setStreak(currentStreak)
 
       // 3. 購入済みアイテム取得
       const itemsSnap = await getDocs(collection(db, "users", user.uid, "items"))
