@@ -2,8 +2,8 @@
 import { useState, useEffect, useRef } from "react"
 import { checkAnswer } from "../engines/PracticeEngine"
 import { useRouter } from "next/router"
+import { useProfileContext } from "../utils/ProfileContext"
 import { auth, db } from "../firebase";
-import { doc, getDoc } from "firebase/firestore";
 import { useDictionary } from "../utils/useDictionary"
 import WordPopup from "./WordPopup"
 
@@ -22,26 +22,10 @@ export default function PracticePage({ questions }) {
   const router = useRouter()
   const { lesson } = router.query
   const unit = lesson?.split("_")[0].replace("u","")
-  const [profile, setProfile] = useState({ avatar: "01.png" });
   const order = Number(lesson?.split("_")[1]?.replace("l",""))
   const { tokenize } = useDictionary()
   const [popupEntry, setPopupEntry] = useState(null)
-
-  useEffect(() => {
-    // ★追加：ログインしているユーザーのアバターを取得
-    const unsubscribe = auth.onAuthStateChanged(async (u) => {
-      if (u) {
-        const userRef = doc(db, "users", u.uid);
-        const snap = await getDoc(userRef);
-        if (snap.exists()) {
-          const data = snap.data();
-          setProfile({ avatar: data.avatar || "01.png", ...data });
-        }
-      }
-    });
-    return () => unsubscribe();
-  }, []);
-
+  const { profile } = useProfileContext()
 
 
   function handleWordTap(entry) {

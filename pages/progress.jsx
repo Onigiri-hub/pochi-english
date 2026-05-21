@@ -1,6 +1,7 @@
 // pages/progress.jsx
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
 import { auth, db } from "../firebase";
 import { doc, getDoc, setDoc, collection, query, getDocs, orderBy } from "firebase/firestore";
@@ -21,30 +22,26 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 export default function Progress() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true); // ★追加
-  const [profile, setProfile] = useState(null);
   const [streakCount, setStreakCount] = useState(0) // ★追加
   const [historyData, setHistoryData] = useState([]);
   const [vocabHistoryData, setVocabHistoryData] = useState([])
   const [earnedBadges, setEarnedBadges] = useState([])  // ★追加
   const [badgeList, setBadgeList] = useState([])         // ★追加
   const router = useRouter();
+  const { profile, setProfile } = useProfileContext()
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (u) => {
       setUser(u);
       if (!u) return;
 
-      const userRef = doc(db, "users", u.uid);
-
       const [
-        profileSnap,
         hSnap,
         vocabSnap,
         streakSnap,
         earnedBadgesData,
         badgeListData,
       ] = await Promise.all([
-        getDoc(userRef),
         getDocs(query(collection(db, "users", u.uid, "history"), orderBy("clearedAt", "desc"))),
         getDocs(query(collection(db, "users", u.uid, "vocab_history"), orderBy("clearedAt", "desc"))),
         getDoc(doc(db, "users", u.uid, "streak", "current")),

@@ -6,10 +6,11 @@ import "../styles/lecture.css";
 import "../styles/lessonList.css";
 import "../styles/practice.css";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";  // ★追加
+import { useRouter } from "next/router";
 import { DictionaryContext } from "../utils/DictionaryContext";
+import { ProfileContext } from "../utils/ProfileContext";
 import { loadCSV } from "../utils/csvLoader";
-import { auth } from "../firebase";  // ★追加
+import { auth } from "../firebase";
 
 const noto = Noto_Sans_JP({
   weight: ["400", "700"],
@@ -17,33 +18,48 @@ const noto = Noto_Sans_JP({
   display: "swap",
 })
 
-// ログインしてなくても見せるページ
 const PUBLIC_PAGES = ["/", "/terms"]
 
 export default function MyApp({ Component, pageProps }) {
   const [dictionary, setDictionary] = useState([])
-  const router = useRouter()  // ★追加
+  const [profile, setProfile] = useState(null)
+  const router = useRouter()
 
-  // ★追加：未ログイン検知→トップへリダイレクト
+  // 未ログイン検知＋プロフィール取得＋dailyCheck
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
-      // 未ログインはトップへ
       if (!user && !PUBLIC_PAGES.includes(router.pathname)) {
         router.push("/")
         return
       }
 
-      // ログイン済みの場合、1日1回チェック処理
       if (user) {
+        const { doc, getDoc, setDoc, collection, getDocs, query, orderBy } = await import("firebase/firestore")
+        const { db } = await import("../firebase")
+
+        // プロフィール取得（1回だけ）
+        const userRef = doc(db, "users", user.uid)
+        const snap = await getDoc(userRef)
+        if (snap.exists()) {
+          setProfile(snap.data())
+        } else {
+          const defaultProfile = {
+            nickname: user.displayName || "ゲスト",
+            avatar: "01.png",
+            acc_head: null,
+            acc_eye: null,
+            acc_mouth: null,
+          }
+          await setDoc(userRef, defaultProfile)
+          setProfile(defaultProfile)
+        }
+
+        // dailyCheck（1日1回だけ）
         const today = new Date().toLocaleDateString("sv-SE")
         const lastCheck = localStorage.getItem("dailyCheck")
-        if (lastCheck === today) return // 今日すでにチェック済み
+        if (lastCheck === today) return
 
         try {
-          const { collection, getDocs, query, orderBy, doc, getDoc, setDoc } = await import("firebase/firestore")
-          const { db } = await import("../firebase")
-
-          // history取得（英文法＋英単語）
           const hSnap = await getDocs(query(collection(db, "users", user.uid, "history"), orderBy("clearedAt")))
           const vSnap = await getDocs(query(collection(db, "users", user.uid, "vocab_history"), orderBy("clearedAt")))
           const allHistory = [
@@ -51,7 +67,6 @@ export default function MyApp({ Component, pageProps }) {
             ...vSnap.docs.map(d => d.data()),
           ]
 
-          // streak再計算
           const allDays = new Set(allHistory.map(h => h.dateString))
           let streak = 0
           const todayDate = new Date()
@@ -66,22 +81,11 @@ export default function MyApp({ Component, pageProps }) {
             }
           }
 
-          // streakをFirestoreに保存
-          //await setDoc(
-          //  doc(db, "users", user.uid, "streak", "current"),
-          //  { count: streak, lastDate: today }
-          //)
-
-          // バッジ再チェック
           const { checkAndEarnBadges } = await import("../utils/badgeManager")
-
-          // progress取得（Unit1完了チェック用）
           const pSnap = await getDocs(collection(db, "users", user.uid, "progress"))
           const progressMap = {}
           pSnap.docs.forEach(d => { progressMap[d.id] = d.data().value })
 
-          // Unit1の全レッスン数を確認（all_unit_listから）
-          const { loadCSV } = await import("../utils/csvLoader")
           const unitList = await loadCSV("/data/all_unit_list.csv")
           const unit1Lessons = unitList.filter(r => r.unit_NO === "1")
           const isUnit1Complete = (progressMap["u1"] || 0) >= unit1Lessons.length
@@ -93,7 +97,6 @@ export default function MyApp({ Component, pageProps }) {
             isPerfect: false,
           })
 
-          // 今日チェック済みを記録
           localStorage.setItem("dailyCheck", today)
 
         } catch (e) {
@@ -101,37 +104,34 @@ export default function MyApp({ Component, pageProps }) {
         }
       }
     })
-  return () => unsubscribe()
-}, [router.pathname])
+    return () => unsubscribe()
+  }, [router.pathname])
 
-
+  // 辞書読み込み＋カチ音
   useEffect(() => {
-    // 辞書の読み込み
     async function load() {
       const data = await loadCSV("/data/word_dic.csv")
       setDictionary(data)
     }
     load()
 
-    // カチ音
     const sound = new Audio("/sound/kachi.mp3")
-    
     function handleClick(e) {
       if (e.target.closest("[data-no-sound]")) return
       sound.currentTime = 0
       sound.play().catch(() => {})
     }
-    
     document.addEventListener("click", handleClick)
     return () => document.removeEventListener("click", handleClick)
   }, [])
 
-
   return (
     <DictionaryContext.Provider value={dictionary}>
-      <main className={noto.className}>
-        <Component {...pageProps} />
-      </main>
+      <ProfileContext.Provider value={{ profile, setProfile }}>
+        <main className={noto.className}>
+          <Component {...pageProps} />
+        </main>
+      </ProfileContext.Provider>
     </DictionaryContext.Provider>
   )
 }

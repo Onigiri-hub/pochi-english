@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
+import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
-import { doc, setDoc, getDoc, collection, getDocs, deleteDoc } from "firebase/firestore";
+import { doc, setDoc, collection, getDocs, deleteDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
 import { loadCSV } from "../utils/csvLoader";
 
@@ -24,6 +25,7 @@ export default function Settings() {
   const mouthCarouselRef = useRef(null);
 
   const router = useRouter();
+  const { profile, setProfile } = useProfileContext()
 
   // カルーセルのIntersectionObserverをセットアップする関数
   const setupCarousel = (ref, setter) => {
@@ -48,18 +50,12 @@ export default function Settings() {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (!user) return;
 
-      // 1. Firestoreからプロフィール取得
-      const userRef = doc(db, "users", user.uid);
-      const snap = await getDoc(userRef);
-      if (snap.exists()) {
-        const data = snap.data();
-        setNickname(data.nickname || user.displayName || "user");
-        setSelectedAvatar(data.avatar || "01.png");
-        setSelectedHead(data.acc_head || null);
-        setSelectedEye(data.acc_eye || null);
-        setSelectedMouth(data.acc_mouth || null);
-      } else {
-        setNickname(user.displayName || "user");
+      if (profile) {
+        setNickname(profile.nickname || "user");
+        setSelectedAvatar(profile.avatar || "01.png");
+        setSelectedHead(profile.acc_head || null);
+        setSelectedEye(profile.acc_eye || null);
+        setSelectedMouth(profile.acc_mouth || null);
       }
 
       // 2. 購入済みアイテム取得
@@ -130,6 +126,15 @@ export default function Settings() {
         acc_mouth: selectedMouth,
         updatedAt: new Date(),
       }, { merge: true });
+      // Contextのprofileも更新
+      setProfile({
+        ...profile,
+        nickname,
+        avatar: selectedAvatar,
+        acc_head: selectedHead,
+        acc_eye: selectedEye,
+        acc_mouth: selectedMouth,
+      })
       alert("設定を保存しました！");
       router.push("/progress");
     } catch (error) {
