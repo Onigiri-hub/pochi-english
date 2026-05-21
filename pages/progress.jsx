@@ -49,14 +49,6 @@ export default function Progress() {
         loadBadgeList(),
       ])
 
-      // プロフィール
-      if (profileSnap.exists()) {
-        setProfile(profileSnap.data());
-      } else {
-        const defaultProfile = { nickname: u.displayName || "ゲスト", avatar: "01.png" };
-        await setDoc(userRef, defaultProfile);
-        setProfile(defaultProfile);
-      }
 
       // 履歴
       setHistoryData(hSnap.docs.map(d => d.data()));
