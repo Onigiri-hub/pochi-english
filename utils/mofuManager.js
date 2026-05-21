@@ -120,3 +120,19 @@ export async function getMofu() {
     return 0;
   }
 }
+
+// ===================================
+// モフを消費する
+// ===================================
+export async function spendMofu(amount) {
+  const user = auth.currentUser
+  if (!user) return
+
+  const userRef = doc(db, "users", user.uid)
+  const snap = await getDoc(userRef)
+  const current = snap.exists() ? snap.data().mofu || 0 : 0
+  const newMofu = Math.max(0, current - amount)
+
+  await setDoc(userRef, { mofu: newMofu }, { merge: true })
+  return newMofu
+}

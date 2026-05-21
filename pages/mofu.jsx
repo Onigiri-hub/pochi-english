@@ -1,16 +1,106 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
-import { getMofu } from "../utils/mofuManager"
+import { getMofu, spendMofu } from "../utils/mofuManager"
+import { loadCSV } from "../utils/csvLoader"
+import { auth, db } from "../firebase"
+import { doc, getDoc, setDoc, collection, getDocs } from "firebase/firestore"
+
+const CATEGORY_LABELS = {
+  avatar: "アバター",
+  head: "頭のアクセサリ",
+  eye: "目元のアクセサリ",
+  mouth: "口元のアクセサリ",
+}
+
+const CATEGORIES = ["avatar", "head", "eye", "mouth"]
 
 export default function Mofu() {
   const router = useRouter()
   const [mofu, setMofu] = useState(null)
+  const [items, setItems] = useState([])
+  const [purchasedIds, setPurchasedIds] = useState(new Set())
+  const [streak, setStreak] = useState(0)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    getMofu().then(m => setMofu(m))
+    const unsubscribe = auth.onAuthStateChanged(async (user) => {
+      if (!user) return
+
+      // 1. モフ残高取得
+      const m = await getMofu()
+      setMofu(m)
+
+      // 2. streak取得
+      const streakSnap = await getDoc(doc(db, "users", user.uid, "streak", "current"))
+      const currentStreak = streakSnap.exists() ? streakSnap.data().count || 0 : 0
+      setStreak(currentStreak)
+
+      // 3. 購入済みアイテム取得
+      const itemsSnap = await getDocs(collection(db, "users", user.uid, "items"))
+      const ids = new Set(itemsSnap.docs.map((d) => d.id))
+      setPurchasedIds(ids)
+
+      // 4. itemList.csv読み込み
+      const allItems = await loadCSV("/data/itemList.csv")
+      setItems(allItems)
+
+      setLoading(false)
+    })
+    return () => unsubscribe()
   }, [])
 
+  // 解放条件を満たしているか判定
+  const isUnlocked = (item) => {
+    if (item.unlock_condition === "none") return true
+    if (item.unlock_condition.startsWith("streak_")) {
+      const required = parseInt(item.unlock_condition.replace("streak_", ""))
+      return streak >= required
+    }
+    // unit系などは今は未対応→未解放扱い
+    return false
+  }
+
+  const handlePurchase = async (item) => {
+    const user = auth.currentUser
+    if (!user) return
+
+    const cost = parseInt(item.mofu_cost)
+
+    if (mofu < cost) {
+      alert("モフが足りないよ！")
+      return
+    }
+
+    const confirmed = window.confirm(`「${item.item_id}」を${cost}モフで購入しますか？`)
+    if (!confirmed) return
+
+    try {
+      // モフを消費
+      await spendMofu(cost)
+      setMofu((prev) => prev - cost)
+
+      // Firestoreのitemsに追加
+      await setDoc(doc(db, "users", user.uid, "items", item.item_id), {
+        purchased: true,
+        purchasedAt: new Date(),
+      })
+
+      setPurchasedIds((prev) => new Set([...prev, item.item_id]))
+      alert("購入完了！設定画面から着せ替えできるよ🎉")
+    } catch (e) {
+      console.error(e)
+      alert("購入に失敗しました。")
+    }
+  }
+
+  if (loading) return (
+    <div className="container">
+      <div className="mainContent" />
+      <Navigation />
+    </div>
+  )
+  
   return (
     <div className="container">
       <div className="mainContent">
@@ -21,11 +111,11 @@ export default function Mofu() {
           <h2>モフ</h2>
         </div>
 
-        {/* モフ数表示 */}
+        {/* モフ残高 */}
         <div style={{
           textAlign: "center",
-          margin: "30px 0",
-          padding: "24px",
+          margin: "20px 0",
+          padding: "20px",
           background: "#fffbe6",
           borderRadius: "20px",
           border: "2px solid #FFD700",
@@ -33,33 +123,125 @@ export default function Mofu() {
           <img
             src="/images/icons/mofu.svg"
             alt="モフ"
-            style={{ width: "60px", height: "60px", marginBottom: "10px" }}
+            style={{ width: "50px", height: "50px", marginBottom: "8px" }}
           />
-          <div style={{ fontSize: "14px", color: "#888", marginBottom: "4px" }}>
-            現在のモフ
-          </div>
-          <div style={{ fontSize: "48px", fontWeight: "bold", color: "#FF9F43" }}>
-            {mofu === null ? "..." : mofu}
+          <div style={{ fontSize: "13px", color: "#888", marginBottom: "4px" }}>現在のモフ</div>
+          <div style={{ fontSize: "44px", fontWeight: "bold", color: "#FF9F43" }}>
+            {mofu}
           </div>
         </div>
 
-        {/* アイテムショップ（準備中） */}
-        <div style={{ marginBottom: "100px" }}>
-          <h3 style={{ fontSize: "16px", color: "#666", marginBottom: "12px" }}>
-            アイテムショップ
-          </h3>
-          <div style={{
-            padding: "24px",
-            background: "#f8f8f8",
-            borderRadius: "16px",
-            textAlign: "center",
-            color: "#aaa",
-            fontSize: "14px",
-          }}>
-            🛒 準備中…
-          </div>
-        </div>
+        {/* アイテムショップ */}
+        <h3 style={{ fontSize: "16px", color: "#666", marginBottom: "16px" }}>アイテムショップ</h3>
 
+        {CATEGORIES.map((category) => {
+          const categoryItems = items.filter((i) => i.category === category)
+          if (categoryItems.length === 0) return null
+
+          return (
+            <div key={category} style={{ marginBottom: "32px" }}>
+              <h4 style={{
+                fontSize: "14px",
+                color: "#444",
+                marginBottom: "12px",
+                paddingBottom: "6px",
+                borderBottom: "2px solid #eee",
+              }}>
+                {CATEGORY_LABELS[category]}
+              </h4>
+
+              <div style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: "12px",
+              }}>
+                {categoryItems.map((item) => {
+                  const unlocked = isUnlocked(item)
+                  const purchased = purchasedIds.has(item.item_id)
+                  const isFree = parseInt(item.mofu_cost) === 0
+                  const canBuy = unlocked && !purchased && !isFree
+
+                  return (
+                    <div
+                      key={item.item_id}
+                      style={{
+                        borderRadius: "16px",
+                        background: "#f8f8f8",
+                        padding: "10px",
+                        textAlign: "center",
+                        border: purchased ? "2px solid #a9b8e7" : "2px solid transparent",
+                        opacity: unlocked ? 1 : 0.6,
+                      }}
+                    >
+                      {/* アイテム画像 */}
+                      <div style={{ position: "relative", marginBottom: "8px" }}>
+                        <img
+                          src={`/images/avatars/${item.file_name}`}
+                          alt={item.item_id}
+                          style={{
+                            width: "100%",
+                            borderRadius: "10px",
+                            filter: unlocked ? "none" : "grayscale(100%)",
+                          }}
+                        />
+                        {/* 購入済みバッジ */}
+                        {purchased && (
+                          <img
+                            src="/images/avatars/purchased.png"
+                            alt="購入済"
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              borderRadius: "10px",
+                            }}
+                          />
+                        )}
+                      </div>
+
+                      {/* 解放条件 or モフ数 or 購入済み */}
+                      {!unlocked ? (
+                        <div style={{ fontSize: "11px", color: "#aaa", lineHeight: "1.4" }}>
+                          🔒 {item.unlock_label}
+                        </div>
+                      ) : purchased ? (
+                        <div style={{ fontSize: "12px", color: "#a9b8e7", fontWeight: "bold" }}>
+                          購入済み
+                        </div>
+                      ) : isFree ? (
+                        <div style={{ fontSize: "12px", color: "#888" }}>
+                          無料
+                        </div>
+                      ) : (
+                        <button
+                          onClick={() => handlePurchase(item)}
+                          style={{
+                            background: mofu >= parseInt(item.mofu_cost) ? "#FF9F43" : "#ddd",
+                            color: mofu >= parseInt(item.mofu_cost) ? "white" : "#aaa",
+                            border: "none",
+                            borderRadius: "10px",
+                            padding: "6px 10px",
+                            fontSize: "12px",
+                            fontWeight: "bold",
+                            cursor: mofu >= parseInt(item.mofu_cost) ? "pointer" : "not-allowed",
+                            width: "100%",
+                          }}
+                          disabled={mofu < parseInt(item.mofu_cost)}
+                        >
+                          {item.mofu_cost} モフ
+                        </button>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )
+        })}
+
+        <div style={{ height: "80px" }} />
       </div>
       <Navigation />
     </div>
