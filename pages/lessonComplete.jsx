@@ -16,8 +16,9 @@ export default function LessonComplete() {
   useEffect(() => {
     if (!unit) return;
 
-    const audio = new Audio("/sound/kirakira.mp3");
+    const audio = window._kirakira || new Audio("/sound/kirakira.mp3");
     audio.volume = 0.3;
+    audio.currentTime = 0;
     audio.play().catch(e => console.log("音の再生に失敗:", e));
 
     let cancelled = false;

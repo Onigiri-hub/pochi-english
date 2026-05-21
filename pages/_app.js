@@ -115,6 +115,12 @@ export default function MyApp({ Component, pageProps }) {
     }
     load()
 
+    // ★kirakira事前読み込み追加
+    const kirakira = new Audio("/sound/kirakira.mp3")
+    kirakira.volume = 0.3
+    kirakira.load()
+    window._kirakira = kirakira  // どこからでも使えるように
+
     const sound = new Audio("/sound/kachi.mp3")
     function handleClick(e) {
       if (e.target.closest("[data-no-sound]")) return

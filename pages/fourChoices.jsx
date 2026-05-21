@@ -27,6 +27,14 @@ export default function FourChoices() {
   useEffect(() => {
     if (!router.isReady) return
 
+      // ★効果音を最初に準備（load()より先に）
+      if (!seikaiRef.current) {
+        seikaiRef.current = new Audio("/sound/seikai.mp3")
+        seikaiRef.current.load()
+        seikaiRef.current.addEventListener("canplaythrough", () => {
+          seikaiRef.current.playbackRate = 1.5
+        })
+      }
     async function load() {
       const secRes = await fetch("/data/vocab/sectionList.csv")
       const secText = await secRes.text()
@@ -98,11 +106,6 @@ export default function FourChoices() {
       masteryMapRef.current = existingMastery
       setMasteryMap(existingMastery)
 
-      // 効果音の準備
-      if (!seikaiRef.current) {
-        seikaiRef.current = new Audio("/sound/seikai.mp3")
-        seikaiRef.current.playbackRate = 1.5
-      }
     }
     load()
   }, [router.isReady])

@@ -15,9 +15,10 @@ export default function VocabComplete() {
   useEffect(() => {
     if (!router.isReady) return
 
-    const audio = new Audio("/sound/kirakira.mp3")
-    audio.volume = 0.3
-    audio.play().catch(e => console.log("音の再生に失敗:", e))
+    const audio = window._kirakira || new Audio("/sound/kirakira.mp3");
+    audio.volume = 0.3;
+    audio.currentTime = 0;
+    audio.play().catch(e => console.log("音の再生に失敗:", e));
 
     async function handleComplete() {
 

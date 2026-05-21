@@ -1,15 +1,23 @@
 import { useRouter } from "next/router";
+import { useState, useRef, useEffect } from "react";
 import Navigation from "../components/Navigation";
-import { useState, useRef } from "react";
 
 export default function Home() {
   const router = useRouter();
   const videoRef = useRef(null)
 
+  const wanRef = useRef(null)
+
+  useEffect(() => {
+    wanRef.current = new Audio("/sound/wan.mp3")
+    wanRef.current.load()
+  }, [])
 
   function playWan() {
-    const audio = new Audio("/sound/wan.mp3")
-    audio.play()
+    if (wanRef.current) {
+      wanRef.current.currentTime = 0
+      wanRef.current.play()
+    }
     videoRef.current.currentTime = 0
     videoRef.current.play()
   }
