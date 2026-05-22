@@ -25,6 +25,9 @@ export default function MyApp({ Component, pageProps }) {
   const [profile, setProfile] = useState(null)
   const [mofu, setMofu] = useState(0)
   const [streak, setStreak] = useState(0)
+  const [totalLessons, setTotalLessons] = useState(0)
+  const [totalRounds, setTotalRounds] = useState(0)
+  const [totalDays, setTotalDays] = useState(0)
   const router = useRouter()
 
   useEffect(() => {
@@ -49,6 +52,9 @@ export default function MyApp({ Component, pageProps }) {
           const data = profileSnap.data()
           setProfile(data)
           setMofu(data.mofu || 0)
+          setTotalLessons(data.totalLessons || 0)  // ★追加
+          setTotalRounds(data.totalRounds || 0)    // ★追加
+          setTotalDays(data.totalDays || 0)        // ★追加
         } else {
           const defaultProfile = {
             nickname: user.displayName || "ゲスト",
@@ -154,7 +160,14 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <DictionaryContext.Provider value={dictionary}>
-      <ProfileContext.Provider value={{ profile, setProfile, mofu, setMofu, streak, setStreak }}>
+      <ProfileContext.Provider value={{ 
+        profile, setProfile, 
+        mofu, setMofu, 
+        streak, setStreak, 
+        totalLessons, setTotalLessons,    // ★追加
+        totalRounds, setTotalRounds,      // ★追加
+        totalDays, setTotalDays,          // ★追加
+      }}>
         <main className={noto.className}>
           <Component {...pageProps} />
         </main>

@@ -7,6 +7,12 @@ export const ProfileContext = createContext({
   setMofu: () => {},
   streak: 0,
   setStreak: () => {},
+  totalLessons: 0,
+  setTotalLessons: () => {},
+  totalRounds: 0,
+  setTotalRounds: () => {},
+  totalDays: 0,
+  setTotalDays: () => {},
 })
 
 export function useProfileContext() {

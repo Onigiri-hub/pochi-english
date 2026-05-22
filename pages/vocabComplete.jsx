@@ -12,7 +12,7 @@ import { loadCSV } from "../utils/csvLoader"
 export default function VocabComplete() {
   const router = useRouter()
   const { stage, section, round, isFirstClear } = router.query
-  const { setMofu, setStreak } = useProfileContext()
+  const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
@@ -37,7 +37,10 @@ export default function VocabComplete() {
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, firstClear)
       await addMofu(mofu)
-      if (firstClear) await addTotalRounds()  // ★初クリアだけ
+      if (firstClear) {
+        await addTotalRounds() // ★初クリアだけ
+        setTotalLessons(prev => prev + 1)  // ★追加
+      } 
       setMofuEarned(mofu)
       setMofu(prev => prev + mofu)  // ★追加
 
@@ -79,13 +82,12 @@ export default function VocabComplete() {
       const badges = await checkAndEarnBadges({
         streak,
         totalLessons,
-        totalRounds,
+        totalRounds: totalRounds + (firstClear ? 1 : 0),  // ★初クリアなら+1
         totalDays,
-        completedStages,  // ★追加
+        completedStages,
         isUnit1Complete: false,
         isPerfect: false,
       })
-
       if (badges.length > 0) {
         const badgeList = await loadBadgeList()
         const badgeObjects = badges

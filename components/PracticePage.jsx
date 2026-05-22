@@ -142,35 +142,22 @@ export default function PracticePage({ questions }) {
           />
         ))}
       </div>
-    
-
 
       <div className={`chat ${q.position_first || "left"}`}>
         <div className="iconContainer">
-          <img
-            src={q?.icon_first === "user"
-              ? `/images/avatars/${profile.avatar}`
-              : `/images/avatars/${q?.icon_first}`}
-            alt="Character Icon"
-            className="characterIcon"
-          />
+          {q?.icon_first === "user" ? (
+            <div style={{ position: "relative", width: "60px", height: "60px" }}>
+              <img src={`/images/avatars/${profile?.avatar || "01.png"}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} className="characterIcon" />
+              {profile?.acc_eye && <img src={`/images/avatars/${profile.acc_eye}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />}
+              {profile?.acc_mouth && <img src={`/images/avatars/${profile.acc_mouth}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />}
+              {profile?.acc_head && <img src={`/images/avatars/${profile.acc_head}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />}
+            </div>
+          ) : (
+            <img src={`/images/avatars/${q?.icon_first}`} alt="Character Icon" className="characterIcon" />
+          )}
+
         </div>
         <div className="bubble">
-
-          {/*
-          <div className="en">
-            {q.audio_first && (
-              <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
-            )}
-            {q.sentence_first_en}
-            {q.ja_show_first !== "1" && (
-              <span className="jaToggleBtn" onClick={() => setShowJaFirst(v => !v)}>
-                {showJaFirst ? "🔼" : "🔽"}
-              </span>
-            )}
-          </div>
-          */}
-
           <div className="en">
             {q.audio_first && (
               <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
@@ -204,30 +191,20 @@ export default function PracticePage({ questions }) {
       {q.position_second !== "none" && (
         <div className={`chat ${q.position_second || "right"}`}>
           <div className="iconContainer">
-            <img
-              src={q?.icon_second === "user"
-                ? `/images/avatars/${profile.avatar}`
-                : `/images/avatars/${q?.icon_second}`}
-              alt="Character Icon"
-              className="characterIcon"
-            />
+           {console.log("second:", JSON.stringify(q?.icon_second), "profile:", profile)} 
+            {q?.icon_second === "user" ? (
+              <div style={{ position: "relative", width: "60px", height: "60px" }}>
+                <img src={`/images/avatars/${profile?.avatar || "01.png"}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} className="characterIcon" />
+                {profile?.acc_eye && <img src={`/images/avatars/${profile.acc_eye}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />}
+                {profile?.acc_mouth && <img src={`/images/avatars/${profile.acc_mouth}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />}
+                {profile?.acc_head && <img src={`/images/avatars/${profile.acc_head}`} alt="" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />}
+              </div>
+            ) : (
+              <img src={`/images/avatars/${q?.icon_second}`} alt="Character Icon" className="characterIcon" />
+            )}
+
           </div>
           <div className="bubble">
-
-            {/*
-            <div className="en">
-              {q.audio_second && (
-                <span className="audioBtn" onClick={() => playAudio(q.audio_second)}>🔊</span>
-              )}
-              {q.sentence_second_en}
-              {q.ja_show_second !== "1" && (
-                <span className="jaToggleBtn" onClick={() => setShowJaSecond(v => !v)}>
-                  {showJaSecond ? "🔼" : "🔽"}
-                </span>
-              )}
-            </div>
-            */}
-
             <div className="en">
               {q.audio_second && (
                 <span className="audioBtn" onClick={() => playAudio(q.audio_second)}>🔊</span>

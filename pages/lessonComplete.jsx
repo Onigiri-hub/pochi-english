@@ -12,7 +12,7 @@ import { auth } from "../firebase"
 export default function LessonComplete() {
   const router = useRouter()
   const { unit, order, isPerfect } = router.query
-  const { setMofu, setStreak } = useProfileContext()
+  const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])   // 新しく取ったバッジオブジェクトの配列
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
@@ -40,7 +40,10 @@ export default function LessonComplete() {
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, isFirstClear);
       await addMofu(mofu);
-      if (isFirstClear) await addTotalLessons()  // ★初クリアだけ
+      if (isFirstClear) {
+        await addTotalLessons()
+        setTotalLessons(prev => prev + 1)  // ★追加
+      }      
       setMofuEarned(mofu);
       setMofu(prev => prev + mofu)  // ★追加
 
@@ -61,12 +64,12 @@ export default function LessonComplete() {
       // 6. バッジチェック
       const newBadgeIds = await checkAndEarnBadges({
         streak,
-        totalLessons,
-        totalRounds,   // ★追加
-        totalDays,     // ★追加
+        totalLessons: totalLessons + (isFirstClear ? 1 : 0),  // 最新値
+        totalRounds,
+        totalDays,
         isUnit1Complete,
         isPerfect: isPerfect === "true",
-      });
+      })
 
       // 7. csvからバッジ一覧を読み込んで、IDからオブジェクトに変換
       if (newBadgeIds.length > 0) {
