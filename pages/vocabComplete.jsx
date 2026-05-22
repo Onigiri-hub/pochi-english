@@ -1,9 +1,13 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
-import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
-import { checkAndEarnBadges, getTotalLessons, loadBadgeList } from "../utils/badgeManager"
+import { checkAndEarnBadges, loadBadgeList } from "../utils/badgeManager"
 import { useProfileContext } from "../utils/ProfileContext"
+import { updateStreak, calcMofu, addMofu, addTotalRounds } from "../utils/mofuManager"
+import { db } from "../firebase"
+import { doc, getDoc } from "firebase/firestore"
+import { auth } from "../firebase"
+import { loadCSV } from "../utils/csvLoader"
 
 export default function VocabComplete() {
   const router = useRouter()
@@ -33,21 +37,55 @@ export default function VocabComplete() {
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, firstClear)
       await addMofu(mofu)
+      if (firstClear) await addTotalRounds()  // ★初クリアだけ
       setMofuEarned(mofu)
       setMofu(prev => prev + mofu)  // ★追加
 
       // 4. 累計レッスン数を取得
-      const totalLessons = await getTotalLessons()
+      //const totalLessons = await getTotalLessons()
 
-      // 5. バッジチェック
+      // 4. カウンター取得
+      const user = auth.currentUser
+      const userSnap = await getDoc(doc(db, "users", user.uid))
+      const userData = userSnap.exists() ? userSnap.data() : {}
+      const totalLessons = userData.totalLessons || 0
+      const totalRounds = userData.totalRounds || 0
+      const totalDays = userData.totalDays || 0
+
+      // Stageクリア判定
+      const stageId = stage
+      const completedStages = []
+
+      // そのStageの全sectionを取得
+      const allSections = await loadCSV("/data/vocab/sectionList.csv")
+      const stageSections = allSections.filter(s => s.stage_id === stageId)
+
+      // 全sectionの全round_idを収集
+      const allRoundIds = []
+      await Promise.all(stageSections.map(async (sec) => {
+        const rounds = await loadCSV(`/data/vocab/rounds/${sec.rounds_csv}`)
+        rounds.forEach(r => allRoundIds.push(r.round_id))
+      }))
+
+      // vocab_roundsに全round_idが存在するか確認
+      const { getDocs, collection } = await import("firebase/firestore")
+      const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
+      const clearedRoundIds = new Set(roundsSnap.docs.map(d => d.id))
+
+      const isStageComplete = allRoundIds.every(id => clearedRoundIds.has(id))
+      if (isStageComplete) completedStages.push(stageId)
+
+      // バッジチェック
       const badges = await checkAndEarnBadges({
         streak,
         totalLessons,
+        totalRounds,
+        totalDays,
+        completedStages,  // ★追加
         isUnit1Complete: false,
         isPerfect: false,
       })
 
-      // ★ここを追加：badge_idからオブジェクトに変換
       if (badges.length > 0) {
         const badgeList = await loadBadgeList()
         const badgeObjects = badges
@@ -57,8 +95,6 @@ export default function VocabComplete() {
       } else {
         setNewBadges([])
       }
-
-      //setNewBadges(badges)
 
       if (badges.length > 0 || mofu > 0) {
         setShowPopup(true)

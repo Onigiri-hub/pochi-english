@@ -36,8 +36,9 @@ export async function updateStreak() {
   if (!user) return 0;
 
   try {
-    const ref = doc(db, "users", user.uid, "streak", "current");
-    const snap = await getDoc(ref);
+    const ref = doc(db, "users", user.uid);
+    const streakRef = doc(db, "users", user.uid, "streak", "current");
+    const snap = await getDoc(streakRef);
     const today = new Date().toLocaleDateString("sv-SE");
     const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("sv-SE");
 
@@ -46,18 +47,20 @@ export async function updateStreak() {
     if (snap.exists()) {
       const data = snap.data();
       if (data.lastDate === today) {
-        // 今日すでに更新済み→カウントそのまま
-        return data.count;
+        return data.count;  // 今日すでに更新済み
       } else if (data.lastDate === yesterday) {
-        // 昨日学習してた→連続継続
         newCount = (data.count || 0) + 1;
       } else {
-        // それ以外→リセット
         newCount = 1;
       }
     }
 
-    await setDoc(ref, { count: newCount, lastDate: today });
+    // streak更新
+    await setDoc(streakRef, { count: newCount, lastDate: today });
+
+    // totalDays+1（今日初めて学習）
+    await setDoc(ref, { totalDays: increment(1) }, { merge: true });
+
     return newCount;
   } catch (e) {
     console.error("ストリーク更新失敗:", e);
@@ -119,6 +122,20 @@ export async function getMofu() {
     console.error("モフ取得失敗:", e);
     return 0;
   }
+}
+
+export async function addTotalLessons() {
+  const user = auth.currentUser
+  if (!user) return
+  const ref = doc(db, "users", user.uid)
+  await setDoc(ref, { totalLessons: increment(1) }, { merge: true })
+}
+
+export async function addTotalRounds() {
+  const user = auth.currentUser
+  if (!user) return
+  const ref = doc(db, "users", user.uid)
+  await setDoc(ref, { totalRounds: increment(1) }, { merge: true })
 }
 
 // ===================================

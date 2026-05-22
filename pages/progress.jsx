@@ -244,8 +244,13 @@ export default function Progress() {
             gridTemplateColumns: "repeat(4, 1fr)",
             gap: "8px",
           }}>
+ 
             {badgeList.map(badge => {
               const earned = earnedBadges.includes(badge.badge_id)
+              if (badge.badge_id.includes("stage")) {
+              }
+             
+             
               return (
                 <div
                   key={badge.badge_id}

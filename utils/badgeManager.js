@@ -34,6 +34,7 @@ export async function getBadges() {
 // ===================================
 // バッジを獲得済みに追加
 // ===================================
+
 async function earnBadge(badgeId) {
   const user = auth.currentUser;
   if (!user) return;
@@ -43,7 +44,7 @@ async function earnBadge(badgeId) {
     const snap = await getDoc(ref);
     const current = snap.exists() ? (snap.data().list || []) : [];
 
-    if (current.includes(badgeId)) return; // すでに持ってる
+    if (current.includes(badgeId)) return;
 
     await setDoc(ref, { list: [...current, badgeId] });
   } catch (e) {
@@ -58,6 +59,9 @@ async function earnBadge(badgeId) {
 export async function checkAndEarnBadges({
   streak = 0,
   totalLessons = 0,
+  totalRounds = 0,    // ★追加
+  totalDays = 0,      // ★追加
+  completedStages = [], // ★追加（例：["stage1", "stage2"]）
   isUnit1Complete = false,
   isPerfect = false,
 }) {
@@ -70,30 +74,33 @@ export async function checkAndEarnBadges({
       newBadges.push(id);
     }
   };
-
+  // 既存
   await check("first_clear", totalLessons >= 1);
   await check("lesson_5", totalLessons >= 5);
   await check("lesson_10", totalLessons >= 10);
   await check("unit1_complete", isUnit1Complete);
   await check("streak_3", streak >= 3);
   await check("streak_7", streak >= 7);
-  await check("perfect", isPerfect);
+
+
+  // ★Stage系（forEachをfor...ofに変更）
+  for (const stageId of completedStages) {
+    await check(`${stageId}_clear`, true);
+  }
+
+  // ★Round系（badge_idから数字を自動判定）
+  await check("round_10", totalRounds >= 10);
+  await check("round_20", totalRounds >= 20);
+  await check("round_30", totalRounds >= 30);
+  await check("round_50", totalRounds >= 50);
+
+  // ★累計日数系（badge_idから数字を自動判定）
+  await check("days_7", totalDays >= 7);
+  await check("days_30", totalDays >= 30);
+  await check("days_100", totalDays >= 100);
+
+
 
   return newBadges;
 }
 
-// ===================================
-// 累計レッスンクリア数をFirestoreから取得
-// ===================================
-export async function getTotalLessons() {
-  const user = auth.currentUser;
-  if (!user) return 0;
-
-  try {
-    const snap = await getDocs(collection(db, "users", user.uid, "history"));
-    return snap.size;
-  } catch (e) {
-    console.error("累計レッスン数取得失敗:", e);
-    return 0;
-  }
-}

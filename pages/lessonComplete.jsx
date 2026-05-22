@@ -1,10 +1,13 @@
 import { useRouter } from "next/router"
 import { saveProgress } from "../utils/progressManager"
-import { updateStreak, calcMofu, addMofu } from "../utils/mofuManager"
-import { checkAndEarnBadges, getTotalLessons, loadBadgeList } from "../utils/badgeManager"
+import { checkAndEarnBadges, loadBadgeList } from "../utils/badgeManager"
 import { useEffect, useState } from "react"
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
+import { updateStreak, calcMofu, addMofu, addTotalLessons } from "../utils/mofuManager"
+import { db } from "../firebase"
+import { doc, getDoc } from "firebase/firestore"
+import { auth } from "../firebase"
 
 export default function LessonComplete() {
   const router = useRouter()
@@ -37,19 +40,30 @@ export default function LessonComplete() {
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, isFirstClear);
       await addMofu(mofu);
+      if (isFirstClear) await addTotalLessons()  // ★初クリアだけ
       setMofuEarned(mofu);
       setMofu(prev => prev + mofu)  // ★追加
 
       // 4. 累計レッスン数を取得
-      const totalLessons = await getTotalLessons();
+      //const totalLessons = await getTotalLessons();
+
+      // 4. カウンター取得
+      const user = auth.currentUser
+      const userSnap = await getDoc(doc(db, "users", user.uid))
+      const userData = userSnap.exists() ? userSnap.data() : {}
+      const totalLessons = userData.totalLessons || 0
+      const totalRounds = userData.totalRounds || 0
+      const totalDays = userData.totalDays || 0
 
       // 5. Unit1全クリア判定
       const isUnit1Complete = String(unit) === "1" && isFirstClear;
 
-      // 6. バッジチェック → 新しく取ったbadge_idの配列が返る
+      // 6. バッジチェック
       const newBadgeIds = await checkAndEarnBadges({
         streak,
         totalLessons,
+        totalRounds,   // ★追加
+        totalDays,     // ★追加
         isUnit1Complete,
         isPerfect: isPerfect === "true",
       });

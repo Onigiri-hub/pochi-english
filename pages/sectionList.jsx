@@ -131,7 +131,8 @@ export default function SectionList() {
               }}>
                 {rounds.map((round) => {
                   const progress = roundProgressMap[round.round_id] || { doneWords: [], totalWords: 0 }
-                  const doneCount = progress.doneWords.length
+                  //const doneCount = progress.doneWords.length
+                  const doneCount = (progress.doneWords || []).length
                   const totalCount = progress.totalWords || 20
                   const isCompleted = totalCount > 0 && doneCount >= totalCount
                   const inProgress = doneCount > 0 && !isCompleted

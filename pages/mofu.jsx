@@ -22,6 +22,7 @@ export default function Mofu() {
   const [items, setItems] = useState([])
   const [purchasedIds, setPurchasedIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
+  const [unlockedIds, setUnlockedIds] = useState(new Set())
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
@@ -36,20 +37,41 @@ export default function Mofu() {
       const allItems = await loadCSV("/data/itemList.csv")
       setItems(allItems)
 
+      // 解放済みアイテム取得
+      const unlockedSnap = await getDocs(collection(db, "users", user.uid, "unlocked"))
+      const unlockedIds = new Set(unlockedSnap.docs.map((d) => d.id))
+
+      // 条件達成したアイテムを新たに解放
+      const toUnlock = allItems.filter((item) => {
+        if (unlockedIds.has(item.item_id)) return false  // すでに解放済み
+        if (item.unlock_condition === "none") return false  // 最初から解放
+        if (item.unlock_condition.startsWith("streak_")) {
+          const required = parseInt(item.unlock_condition.replace("streak_", ""))
+          return streak >= required
+        }
+        return false
+      })
+      
+      // 新たに解放されたものをFirestoreに保存
+      await Promise.all(toUnlock.map((item) =>
+        setDoc(doc(db, "users", user.uid, "unlocked", item.item_id), {
+          unlockedAt: new Date()
+        })
+      ))
+
+      // unlockedIdsを更新
+      toUnlock.forEach((item) => unlockedIds.add(item.item_id))
+
+      setUnlockedIds(unlockedIds)  // ←最後に追加
+
       setLoading(false)
     })
     return () => unsubscribe()
   }, [])
 
-  // 解放条件を満たしているか判定
   const isUnlocked = (item) => {
     if (item.unlock_condition === "none") return true
-    if (item.unlock_condition.startsWith("streak_")) {
-      const required = parseInt(item.unlock_condition.replace("streak_", ""))
-      return streak >= required
-    }
-    // unit系などは今は未対応→未解放扱い
-    return false
+    return unlockedIds.has(item.item_id)  // Firestoreの解放済みリストを参照
   }
 
   const handlePurchase = async (item) => {
