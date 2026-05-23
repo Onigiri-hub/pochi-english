@@ -84,9 +84,20 @@ export default function FourChoices() {
           return dateA.localeCompare(dateB)
         })
         selectedWords = sorted.slice(0, 20)
-      } else {
-        selectedWords = shuffle(filtered).slice(0, 20)
-      }
+        } else {
+          // 正答回数(correct)が低い順に並べて、同率はshuffleで混ぜる
+          const modeKey = getModeKey(currentRound.mode_type)
+          const masteryKey = `vocab_mastery_${section}_${modeKey}`
+          const masteryData = JSON.parse(localStorage.getItem(masteryKey) || '{}')
+
+          const sorted = filtered
+            .map(w => ({ ...w, _correct: masteryData[w.word_id]?.correct ?? 0 }))
+            .sort((a, b) => {
+              if (a._correct !== b._correct) return a._correct - b._correct
+              return Math.random() - 0.5  // 同率はランダム
+            })
+          selectedWords = sorted.slice(0, 20)
+        }
 
       setWords(selectedWords)
 
@@ -231,7 +242,14 @@ export default function FourChoices() {
           } else {
             saveRoundProgress(roundInfo?.is_review === "1")
             saveMastery()
-            setWords(prev => shuffle([...prev]))
+            setWords(prev => {
+              return [...prev]
+                .map(w => ({ ...w, _correct: masteryMapRef.current[w.word_id]?.correct ?? 0 }))
+                .sort((a, b) => {
+                  if (a._correct !== b._correct) return a._correct - b._correct
+                  return Math.random() - 0.5
+                })
+            })
             setCurrent(0)
           }
           setSlideState("in")

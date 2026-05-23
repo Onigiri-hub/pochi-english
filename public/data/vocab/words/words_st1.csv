@@ -19,10 +19,10 @@ v0017,shirt,シャツ,shirt.mp3,1,st1_sec1
 v0018,May,5月,May.mp3,1,st1_sec1
 v0019,onion,タマネギ,onion.mp3,1,st1_sec1
 v0020,fish,魚,fish.mp3,1,st1_sec1
-v0021,moon,月,moon.mp3,1,st1_sec1
+v0021,moon,月（地球の周りをまわるやつ）,moon.mp3,1,st1_sec1
 v0022,mouse,ネズミ・マウス,mouse.mp3,1,st1_sec1
 v0023,chocolate,チョコレート,chocolate.mp3,1,st1_sec1
-v0024,hat,帽子,hat.mp3,1,st1_sec1
+v0024,hat,帽子（ぐるっと一周つばがあるやつ）,hat.mp3,1,st1_sec1
 v0025,boy,男の子,boy.mp3,1,st1_sec1
 v0026,T-shirt,Tシャツ,T-shirt.mp3,1,st1_sec1
 v0027,woman,女性,woman.mp3,1,st1_sec1
@@ -91,7 +91,7 @@ v0089,country,国,country.mp3,1,st1_sec3
 v0090,map,地図,map.mp3,1,st1_sec3
 v0091,sister,姉妹,sister.mp3,1,st1_sec3
 v0092,minute,分,minute.mp3,1,st1_sec3
-v0093,month,月,month.mp3,1,st1_sec3
+v0093,month,月（〇か月）,month.mp3,1,st1_sec3
 v0094,homework,宿題,homework.mp3,1,st1_sec3
 v0095,Monday,月曜日,Monday.mp3,1,st1_sec3
 v0096,weekend,週末,weekend.mp3,1,st1_sec3
@@ -106,7 +106,7 @@ v0104,university,大学,university.mp3,1,st1_sec3
 v0105,tea,お茶,tea.mp3,1,st1_sec3
 v0106,June,6月,June.mp3,1,st1_sec3
 v0107,shoes,靴,shoes.mp3,1,st1_sec3
-v0108,bathroom,浴室,bathroom.mp3,1,st1_sec3
+v0108,bathroom,お手洗い・浴室,bathroom.mp3,1,st1_sec3
 v0109,bedroom,寝室,bedroom.mp3,1,st1_sec3
 v0110,daughter,娘,daughter.mp3,1,st1_sec3
 v0111,bed,ベッド,bed.mp3,1,st1_sec3
