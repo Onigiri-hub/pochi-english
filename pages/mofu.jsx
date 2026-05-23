@@ -186,32 +186,35 @@ export default function Mofu() {
                         opacity: unlocked ? 1 : 0.6,
                       }}
                     >
+
                       {/* アイテム画像 */}
                       <div style={{ position: "relative", marginBottom: "8px" }}>
-                        <img
-                          src={`/images/avatars/${item.file_name}`}
-                          alt={item.item_id}
-                          style={{
-                            width: "100%",
-                            borderRadius: "10px",
-                            filter: unlocked ? "none" : "grayscale(100%)",
-                          }}
-                        />
-                        {/* 購入済みバッジ */}
-                        {purchased && (
+                        {/* シルエット（アバターカテゴリのときは表示しない） */}
+                        {category !== "avatar" && (
                           <img
-                            src="/images/avatars/purchased.png"
-                            alt="購入済"
+                            src="/images/avatars/silhouette.png"
+                            alt=""
                             style={{
                               position: "absolute",
                               top: 0,
                               left: 0,
                               width: "100%",
-                              height: "100%",
                               borderRadius: "10px",
+                              filter: unlocked ? "none" : "grayscale(100%)",
                             }}
                           />
                         )}
+                        {/* アイテム本体（シルエットの上に重ねる） */}
+                        <img
+                          src={`/images/avatars/${item.file_name}`}
+                          alt={item.item_id}
+                          style={{
+                            position: "relative",
+                            width: "100%",
+                            borderRadius: "10px",
+                            filter: unlocked ? "none" : "grayscale(100%)",
+                          }}
+                        />
                       </div>
 
                       {/* 解放条件 or モフ数 or 購入済み */}
