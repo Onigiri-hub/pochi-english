@@ -47,7 +47,7 @@ export default function PracticePage({ questions }) {
     // ★A案：処理直後はロック（200ms）
     if (chipLockRef.current) return
     chipLockRef.current = true
-    setTimeout(() => { chipLockRef.current = false }, 200)
+    setTimeout(() => { chipLockRef.current = false }, 100)
 
     // 長押し成立済みなら何もしない（タップ動作キャンセル）
     if (longPressTimer.current === null) {
