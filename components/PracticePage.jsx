@@ -23,10 +23,46 @@ export default function PracticePage({ questions }) {
   const { lesson } = router.query
   const unit = lesson?.split("_")[0].replace("u","")
   const order = Number(lesson?.split("_")[1]?.replace("l",""))
-  const { tokenize } = useDictionary()
+  const { tokenize, findEntry } = useDictionary()
   const [popupEntry, setPopupEntry] = useState(null)
   const { profile } = useProfileContext()
 
+  //const [longPressEntry, setLongPressEntry] = useState(null)
+  const longPressTimer = useRef(null)
+
+  function handleChipPressStart(word) {
+    // 400ms長押しで意味表示
+    longPressTimer.current = setTimeout(() => {
+      const entry = findEntry(word)
+      if (entry) setPopupEntry(entry)
+      longPressTimer.current = null  // 長押し成立フラグ
+    }, 400)
+  }
+
+  function handleChipPressEnd(word, action) {
+    // 長押し成立済みなら何もしない（タップ動作キャンセル）
+    if (longPressTimer.current === null) {
+      setPopupEntry(null)
+      return
+    }
+    // 長押し前に離した = タップ扱い
+    clearTimeout(longPressTimer.current)
+    longPressTimer.current = null
+    
+    // チップの音声を再生
+    const chipSoundOn = localStorage.getItem("chipSoundOn") !== "false"
+    if (chipSoundOn) {
+      const entry = findEntry(word)
+      if (entry?.audio) {
+        const audio = new Audio(`/audio/words/${entry.audio}`)
+        audio.play().catch(e => console.log("再生失敗:", e))
+      }
+    }
+
+    // 元の動作（addChip / removeChip）
+    action()
+  }  
+    
 
   function handleWordTap(entry) {
     if (entry.audio) {
@@ -42,19 +78,30 @@ export default function PracticePage({ questions }) {
     setShowJaSecond(q.ja_show_second === "1")
   }, [index])
 
-  // 自動再生
+  // 自動再生（1文目→2文目の連続再生）
   useEffect(() => {
-    if (q.audio_auto !== "1" || !q.audio_first) return
+    const autoPlayOn = localStorage.getItem("autoPlayOn") !== "false"
+    if (!autoPlayOn || q.audio_auto !== "1" || !q.audio_first) return
 
+    let audio2 = null
     const timer = setTimeout(() => {
-      const audio = new Audio(`/audio/practice/${q.audio_first}`)
-      audio.play().catch(e => console.log("自動再生失敗:", e))
-    }, 500) // ★ 500ms秒後
+      const audio1 = new Audio(`/audio/practice/${q.audio_first}`)
+      audio1.play().catch(e => console.log("自動再生1失敗:", e))
 
-    return () => clearTimeout(timer) // クリーンアップ
+      // 1文目が終わったら2文目を500ms後に再生
+      if (q.audio_second) {
+        audio1.addEventListener("ended", () => {
+          setTimeout(() => {
+            audio2 = new Audio(`/audio/practice/${q.audio_second}`)
+            audio2.play().catch(e => console.log("自動再生2失敗:", e))
+          }, 100)
+        })
+      }
+    }, 500)
 
+    return () => clearTimeout(timer)
   }, [index])
-
+  
   // 手動再生
   function playAudio(filename) {
     if (!filename) return
@@ -243,7 +290,16 @@ export default function PracticePage({ questions }) {
         {selected.map((w,i)=>(
           <button className="chip"
             key={i}
-            onClick={()=>removeChip(w,i)}
+            onMouseDown={() => handleChipPressStart(w)}
+            onMouseUp={() => handleChipPressEnd(w, () => removeChip(w, i))}
+            onMouseLeave={() => {
+              if (longPressTimer.current) {
+                clearTimeout(longPressTimer.current)
+                longPressTimer.current = null
+              }
+            }}
+            onTouchStart={() => handleChipPressStart(w)}
+            onTouchEnd={() => handleChipPressEnd(w, () => removeChip(w, i))}
           >
             {w}
           </button>
@@ -256,12 +312,22 @@ export default function PracticePage({ questions }) {
         {chips.map((c,i)=>(
           <button className="chip"
             key={i}
-            onClick={()=>addChip(c,i)}
+            onMouseDown={() => handleChipPressStart(c)}
+            onMouseUp={() => handleChipPressEnd(c, () => addChip(c, i))}
+            onMouseLeave={() => {
+              if (longPressTimer.current) {
+                clearTimeout(longPressTimer.current)
+                longPressTimer.current = null
+              }
+            }}
+            onTouchStart={() => handleChipPressStart(c)}
+            onTouchEnd={() => handleChipPressEnd(c, () => addChip(c, i))}
           >
             {c}
           </button>
         ))}
       </div>
+
       <div className={`bottomArea ${result}`}>
         {result==="correct" && (
           <div className="resultText">Perfect！</div>
@@ -285,8 +351,26 @@ export default function PracticePage({ questions }) {
             ? "Try again"
             : "Check"}
         </button>
-      </div>     
-      
+      </div>
+      {/*     
+      {longPressEntry && (
+        <div style={{
+          position: "fixed",
+          bottom: "30%",
+          left: "50%",
+          transform: "translateX(-50%)",
+          background: "rgba(0,0,0,0.85)",
+          color: "white",
+          padding: "12px 20px",
+          borderRadius: "12px",
+          fontSize: "18px",
+          fontWeight: "bold",
+          zIndex: 1000,
+          pointerEvents: "none"
+        }}>
+          {longPressEntry.ja}
+        </div>
+      )}*/}
       <WordPopup entry={popupEntry} onClose={() => setPopupEntry(null)} />
 
     </div>

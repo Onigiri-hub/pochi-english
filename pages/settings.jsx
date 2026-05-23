@@ -18,6 +18,8 @@ export default function Settings() {
   const [headItems, setHeadItems] = useState([]);
   const [eyeItems, setEyeItems] = useState([]);
   const [mouthItems, setMouthItems] = useState([]);
+  const [chipSoundOn, setChipSoundOn] = useState(true);
+  const [autoPlayOn, setAutoPlayOn] = useState(true);
 
   const avatarCarouselRef = useRef(null);
   const headCarouselRef = useRef(null);
@@ -56,7 +58,11 @@ export default function Settings() {
         setSelectedHead(profile.acc_head || null);
         setSelectedEye(profile.acc_eye || null);
         setSelectedMouth(profile.acc_mouth || null);
+        // 音声設定をlocalStorageから読み込み（デフォルトはON）
+        setChipSoundOn(localStorage.getItem("chipSoundOn") !== "false");
+        setAutoPlayOn(localStorage.getItem("autoPlayOn") !== "false");
       }
+
 
       // 2. 購入済みアイテム取得
       const itemsSnap = await getDocs(collection(db, "users", user.uid, "items"));
@@ -126,6 +132,9 @@ export default function Settings() {
         acc_mouth: selectedMouth,
         updatedAt: new Date(),
       }, { merge: true });
+      // 音声設定をlocalStorageに保存
+      localStorage.setItem("chipSoundOn", chipSoundOn);
+      localStorage.setItem("autoPlayOn", autoPlayOn);
       // Contextのprofileも更新
       setProfile({
         ...profile,
@@ -258,6 +267,29 @@ export default function Settings() {
             onChange={(e) => setNickname(e.target.value)}
           />
         </section>
+
+        {/* 音声設定 */}
+        <section className="settingSection">
+          <h3>音声</h3>
+          <div className="audioToggle">
+            <label>チップをタップしたときの音声</label>
+            <button
+              className={`toggleBtn ${chipSoundOn ? "on" : "off"}`}
+              onClick={() => setChipSoundOn(!chipSoundOn)}
+            >
+              {chipSoundOn ? "ON" : "OFF"}
+            </button>
+          </div>
+          <div className="audioToggle">
+            <label>英文の自動再生</label>
+            <button
+              className={`toggleBtn ${autoPlayOn ? "on" : "off"}`}
+              onClick={() => setAutoPlayOn(!autoPlayOn)}
+            >
+              {autoPlayOn ? "ON" : "OFF"}
+            </button>
+          </div>
+        </section>        
 
         <div className="actionButtons">
           <button className="saveBtn" onClick={handleSave}>設定を保存する</button>

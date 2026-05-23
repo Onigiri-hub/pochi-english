@@ -32,8 +32,21 @@ export function useDictionary() {
         })
       }
     }
+    
     return tokens
   }
 
-  return { tokenize }
+  function findEntry(word) {
+    if (!dictionary.length || !word) return null
+    const lower = word.toLowerCase()
+    return dictionary.find(entry => {
+      const targets = [
+        entry.word,
+        ...(entry.variants?.split("|") || [])
+      ].filter(Boolean).map(t => t.toLowerCase())
+      return targets.includes(lower)
+    }) || null
+  }
+
+  return { tokenize, findEntry }
 }
