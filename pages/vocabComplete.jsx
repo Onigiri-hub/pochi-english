@@ -16,6 +16,7 @@ export default function VocabComplete() {
   const [newBadges, setNewBadges] = useState([])
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
+  const [showRest, setShowRest] = useState(false)
 
   useEffect(() => {
     if (!router.isReady) return
@@ -107,6 +108,11 @@ export default function VocabComplete() {
 
   }, [router.isReady])
 
+  useEffect(() => {
+    const timer = setTimeout(() => setShowRest(true), 2000)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <div className="completePage" style={{ paddingBottom: "80px" }}>
       <div className="app">
@@ -135,20 +141,22 @@ export default function VocabComplete() {
           )}
 
           {/* 広告エリア */}
-          <div style={{
-            width: "100%",
-            minHeight: "100px",
-            background: "#f0f0f0",
-            borderRadius: "12px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#aaa",
-            fontSize: "14px",
-            margin: "20px 0"
-          }}>
-            広告エリア
-          </div>
+          {showRest && (
+            <div style={{
+              width: "100%",
+              minHeight: "100px",
+              background: "#f0f0f0",
+              borderRadius: "12px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "#aaa",
+              fontSize: "14px",
+              margin: "20px 0"
+            }}>
+              広告エリア
+            </div>
+          )}
 
         </div>
 
@@ -213,18 +221,19 @@ export default function VocabComplete() {
             </div>
           </>
         )}
-
-        <div className="bottomArea">
-          <div className="completeBottom">
-            <button
-              className="finishButton"
-              onClick={() => router.push(`/sectionList?stage=${stage}`)}
-              data-sound
-            >
-              次へ
-            </button>
+        {showRest && (
+          <div className="bottomArea">
+            <div className="completeBottom">
+              <button
+                className="finishButton"
+                onClick={() => router.push(`/sectionList?stage=${stage}`)}
+                data-sound
+              >
+                次へ
+              </button>
+            </div>
           </div>
-        </div>
+        )}   
       </div>
       <Navigation />
     </div>

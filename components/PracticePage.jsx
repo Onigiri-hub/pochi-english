@@ -50,7 +50,7 @@ export default function PracticePage({ questions }) {
     longPressTimer.current = null
     
     // チップの音声を再生
-    const chipSoundOn = localStorage.getItem("chipSoundOn") !== "false"
+    const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
     if (chipSoundOn) {
       const entry = findEntry(word)
       if (entry?.audio) {

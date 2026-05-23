@@ -58,8 +58,8 @@ export default function Settings() {
         setSelectedHead(profile.acc_head || null);
         setSelectedEye(profile.acc_eye || null);
         setSelectedMouth(profile.acc_mouth || null);
-        // 音声設定をlocalStorageから読み込み（デフォルトはON）
-        setChipSoundOn(localStorage.getItem("chipSoundOn") !== "false");
+        // 音声設定をlocalStorageから読み込み（チップ音はデフォルトOFF、自動再生はデフォルトON）
+        setChipSoundOn(localStorage.getItem("chipSoundOn") === "true");
         setAutoPlayOn(localStorage.getItem("autoPlayOn") !== "false");
       }
 
