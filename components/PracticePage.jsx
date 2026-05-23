@@ -29,6 +29,7 @@ export default function PracticePage({ questions }) {
 
   //const [longPressEntry, setLongPressEntry] = useState(null)
   const longPressTimer = useRef(null)
+  const chipLockRef = useRef(false)
 
   function handleChipPressStart(word) {
     // 400ms長押しで意味表示
@@ -39,7 +40,15 @@ export default function PracticePage({ questions }) {
     }, 400)
   }
 
-  function handleChipPressEnd(word, action) {
+  function handleChipPressEnd(word, action, e) {
+    // ★B案：マウスイベントの二重発火を防ぐ
+    if (e) e.preventDefault()
+
+    // ★A案：処理直後はロック（200ms）
+    if (chipLockRef.current) return
+    chipLockRef.current = true
+    setTimeout(() => { chipLockRef.current = false }, 200)
+
     // 長押し成立済みなら何もしない（タップ動作キャンセル）
     if (longPressTimer.current === null) {
       setPopupEntry(null)
@@ -48,7 +57,7 @@ export default function PracticePage({ questions }) {
     // 長押し前に離した = タップ扱い
     clearTimeout(longPressTimer.current)
     longPressTimer.current = null
-    
+
     // チップの音声を再生
     const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
     if (chipSoundOn) {
@@ -58,11 +67,9 @@ export default function PracticePage({ questions }) {
         audio.play().catch(e => console.log("再生失敗:", e))
       }
     }
-
     // 元の動作（addChip / removeChip）
     action()
-  }  
-    
+  }    
 
   function handleWordTap(entry) {
     if (entry.audio) {
@@ -291,7 +298,8 @@ export default function PracticePage({ questions }) {
           <button className="chip"
             key={i}
             onMouseDown={() => handleChipPressStart(w)}
-            onMouseUp={() => handleChipPressEnd(w, () => removeChip(w, i))}
+            onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
+            onTouchEnd={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
             onMouseLeave={() => {
               if (longPressTimer.current) {
                 clearTimeout(longPressTimer.current)
@@ -299,7 +307,6 @@ export default function PracticePage({ questions }) {
               }
             }}
             onTouchStart={() => handleChipPressStart(w)}
-            onTouchEnd={() => handleChipPressEnd(w, () => removeChip(w, i))}
           >
             {w}
           </button>
@@ -313,7 +320,8 @@ export default function PracticePage({ questions }) {
           <button className="chip"
             key={i}
             onMouseDown={() => handleChipPressStart(c)}
-            onMouseUp={() => handleChipPressEnd(c, () => addChip(c, i))}
+            onMouseUp={(e) => handleChipPressEnd(c, () => addChip(c, i), e)}
+            onTouchEnd={(e) => handleChipPressEnd(c, () => addChip(c, i), e)}
             onMouseLeave={() => {
               if (longPressTimer.current) {
                 clearTimeout(longPressTimer.current)
@@ -321,7 +329,6 @@ export default function PracticePage({ questions }) {
               }
             }}
             onTouchStart={() => handleChipPressStart(c)}
-            onTouchEnd={() => handleChipPressEnd(c, () => addChip(c, i))}
           >
             {c}
           </button>
