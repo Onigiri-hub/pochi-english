@@ -121,25 +121,25 @@ export default function Mofu() {
         {/* ヘッダー */}
         <div className="header">
           <button className="backBtn" onClick={() => router.back()}>←</button>
-          <h2>モフ</h2>
+          <h2></h2>
         </div>
 
         {/* モフ残高 */}
         <div style={{
           textAlign: "center",
-          margin: "20px 0",
+          margin: "30px 30px",
           padding: "20px",
-          background: "#fffbe6",
+          background: "#ffffff",
           borderRadius: "20px",
-          border: "2px solid #FFD700",
+          border: "0px solid #ffffff",
         }}>
+          <div style={{ fontSize: "13px", color: "#525252", marginBottom: "10px" }}>現在のモフ</div>
           <img
-            src="/images/icons/mofu.svg"
+            src="/images/icons/mofu_333.svg"
             alt="モフ"
-            style={{ width: "50px", height: "50px", marginBottom: "8px" }}
+            style={{ width: "40px", height: "40px", marginBottom: "0px" }}
           />
-          <div style={{ fontSize: "13px", color: "#888", marginBottom: "4px" }}>現在のモフ</div>
-          <div style={{ fontSize: "44px", fontWeight: "bold", color: "#FF9F43" }}>
+          <div style={{ fontSize: "30px", fontWeight: "bold", color: "#333333" }}>
             {mofu}
           </div>
         </div>
@@ -224,11 +224,11 @@ export default function Mofu() {
                         </div>
                       ) : purchased ? (
                         <div style={{ fontSize: "12px", color: "#a9b8e7", fontWeight: "bold" }}>
-                          購入済み
+                          取得済み
                         </div>
                       ) : isFree ? (
                         <div style={{ fontSize: "12px", color: "#888" }}>
-                          無料
+                          取得済み
                         </div>
                       ) : (
                         <button
@@ -246,7 +246,7 @@ export default function Mofu() {
                           }}
                           disabled={mofu < parseInt(item.mofu_cost)}
                         >
-                          {item.mofu_cost} モフ
+                          {item.mofu_cost}モフ
                         </button>
                       )}
                     </div>
