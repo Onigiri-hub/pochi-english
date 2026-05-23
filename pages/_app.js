@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { Noto_Sans_JP } from "next/font/google"
 import "../styles/home.css";
 import "../styles/profile.css";
@@ -11,6 +12,7 @@ import { DictionaryContext } from "../utils/DictionaryContext";
 import { ProfileContext } from "../utils/ProfileContext";
 import { loadCSV } from "../utils/csvLoader";
 import { auth } from "../firebase";
+
 
 const noto = Noto_Sans_JP({
   weight: ["400", "700"],
@@ -168,6 +170,12 @@ export default function MyApp({ Component, pageProps }) {
         totalRounds, setTotalRounds,      // ★追加
         totalDays, setTotalDays,          // ★追加
       }}>
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#ebebeb" />
+          {/* iOSのホーム画面アイコン用（これがないとiPhoneで反映されないことがある） */}
+          <link rel="apple-touch-icon" href="/images/icons/icon-192.png" />
+        </Head>
         <main className={noto.className}>
           <Component {...pageProps} />
         </main>
