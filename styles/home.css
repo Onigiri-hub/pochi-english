@@ -63,7 +63,7 @@
 }
 
 .homeBtnImg {
-  width: 65%;
+  width: 70%;
   height: auto;
   display: block;
   cursor: pointer;
@@ -79,4 +79,27 @@
 
 .homeBtnImg:active {
   transform: scale(0.95);
+}
+
+.supportLink {
+  display: block;
+  text-align: center;
+  margin: 50px auto 0px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #585858;
+  /*text-decoration: none;*/
+  letter-spacing: 0.05em;
+}
+
+.supportLink:hover {
+  color: #f08080;
+}
+
+.supportNote {
+  text-align: center;
+  margin: 0 auto 0px;
+  font-size: 11px;
+  color: #aaa;
+  letter-spacing: 0.05em;
 }

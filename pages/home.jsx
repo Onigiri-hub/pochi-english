@@ -78,8 +78,22 @@ export default function Home() {
             onClick={() => router.push("/stageList")}
           />
 
-
         </div>
+
+        <a href="https://ofuse.me/pochipochi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="supportLink"
+        >
+          💝 Pochiを応援する
+        </a>
+        <p className="supportNote">
+          ↑こどもの皆さんは
+        </p>
+        <p className="supportNote">
+          おうちの人と一緒にね
+        </p>
+
       </div>
       <Navigation />
     </div>
