@@ -34,7 +34,7 @@ export default function Terms() {
           }}>
             利用規約
           </h3>
-          <p>最終更新日：2026年4月</p>
+          <p>最終更新日：2026年5月</p>
           <p>本規約は、ミエリカ・ワークス（以下「当方」）が提供する英語学習アプリ（以下「本サービス」）の利用条件を定めるものです。</p>
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第1条（サービス内容）</h3>
@@ -44,6 +44,7 @@ export default function Terms() {
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第2条（利用条件）</h3>
           <p>年齢制限はありません。</p>
+          <p>ただし、13歳未満のお子様は、保護者の同意のもとご利用ください。</p>
           <p>ユーザーは本規約に同意の上、本サービスを利用するものとします。</p>
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第3条（コンテンツについて）</h3>
@@ -84,7 +85,7 @@ export default function Terms() {
           }}>
             プライバシーポリシー
           </h3>
-          <p>最終更新日：2026年4月</p>
+          <p>最終更新日：2026年5月</p>
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第1条（収集する情報）</h3>
           <p>本サービスでは以下の情報を取得します。</p>
@@ -104,14 +105,15 @@ export default function Terms() {
           <p>本サービスでは、以下の第三者サービスを利用しています。</p>
           <p>・Firebase（Google LLC）</p>
           <p>・Googleログイン</p>
+          <p>・Google AdSense（広告配信）</p>
           <p>これらのサービスにおけるデータの取り扱いについては、以下をご確認ください。</p>
           <p>https://policies.google.com/privacy</p>
           <p>https://policies.google.com/terms</p>
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px", marginTop: "20px" }}>第5条（広告について）</h3>
-          <p>本サービスでは、Google AdMob等の広告配信サービスを利用する可能性があります。</p>
-          <p>広告配信事業者は、ユーザーの興味に応じた広告を表示するため、Cookie等を使用することがあります。</p>
-          <p>広告に関する詳細は以下をご確認ください。</p>
+          <p>本サービスでは、Google AdSenseによる広告配信を行っています。</p>
+          <p>本サービスは未成年（13歳未満を含む）の利用も想定しているため、Google AdSenseに対し「子供向け取り扱いタグ」を設定しています。これにより、パーソナライズ広告は配信されず、ユーザーの興味・関心に基づくターゲティング広告は表示されません。</p>
+          <p>広告配信に関する詳細は以下をご確認ください。</p>
           <p>https://policies.google.com/technologies/ads</p>
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px", marginTop: "20px" }}>第6条（第三者提供）</h3>
@@ -119,10 +121,9 @@ export default function Terms() {
           <p>第三者への提供は行いません（法令に基づく場合を除く）。</p>
 
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px", marginTop: "20px" }}>第7条（お問い合わせ）</h3>
-          <p>現在、お問い合わせ窓口は設置していません。</p>
-          <p>今後設置した場合は、アプリ内にて案内します。</p>
-
-          
+          <p>本サービスに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+          <p>mierika.works@gmail.com</p>
+          <p>個人運営のため、ご返信にお時間をいただく場合があります。あらかじめご了承ください。</p>          
         </div>
 
       </div>
