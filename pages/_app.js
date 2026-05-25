@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Script from "next/script"
 import { Noto_Sans_JP } from "next/font/google"
 import "../styles/home.css";
 import "../styles/profile.css";
