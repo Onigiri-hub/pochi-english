@@ -182,39 +182,51 @@ export default function Mofu() {
                         background: "#f8f8f8",
                         padding: "10px",
                         textAlign: "center",
-                        border: purchased ? "2px solid #a9b8e7" : "2px solid transparent",
+                        border: purchased ? "0px solid #a9b8e7" : "2px solid transparent",
                         opacity: unlocked ? 1 : 0.6,
                       }}
                     >
 
                       {/* アイテム画像 */}
                       <div style={{ position: "relative", marginBottom: "8px" }}>
-                        {/* シルエット（アバターカテゴリのときは表示しない） */}
-                        {category !== "avatar" && (
+                        {!unlocked ? (
+                          /* ロック中は宝箱を表示 */
                           <img
-                            src="/images/avatars/silhouette.png"
-                            alt=""
+                            src="/images/avatars/chest.png"
+                            alt="ロック中"
                             style={{
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
                               width: "100%",
                               borderRadius: "10px",
-                              filter: unlocked ? "none" : "grayscale(100%)",
                             }}
                           />
+                        ) : (
+                          <>
+                            {/* シルエット（アバターカテゴリのときは表示しない） */}
+                            {category !== "avatar" && (
+                              <img
+                                src="/images/avatars/silhouette.png"
+                                alt=""
+                                style={{
+                                  position: "absolute",
+                                  top: 0,
+                                  left: 0,
+                                  width: "100%",
+                                  borderRadius: "10px",
+                                }}
+                              />
+                            )}
+                            {/* アイテム本体（シルエットの上に重ねる） */}
+                            <img
+                              src={`/images/avatars/${item.file_name}`}
+                              alt={item.item_id}
+                              style={{
+                                position: "relative",
+                                width: "100%",
+                                borderRadius: "10px",
+                              }}
+                            />
+                          </>
                         )}
-                        {/* アイテム本体（シルエットの上に重ねる） */}
-                        <img
-                          src={`/images/avatars/${item.file_name}`}
-                          alt={item.item_id}
-                          style={{
-                            position: "relative",
-                            width: "100%",
-                            borderRadius: "10px",
-                            filter: unlocked ? "none" : "grayscale(100%)",
-                          }}
-                        />
                       </div>
 
                       {/* 解放条件 or モフ数 or 購入済み */}
@@ -223,12 +235,12 @@ export default function Mofu() {
                           🔒 {item.unlock_label}
                         </div>
                       ) : purchased ? (
-                        <div style={{ fontSize: "12px", color: "#a9b8e7", fontWeight: "bold" }}>
-                          取得済み
+                        <div style={{ fontSize: "12px", color: "#8197da", fontWeight: "bold" }}>
+                          ✓ 取得済み
                         </div>
                       ) : isFree ? (
-                        <div style={{ fontSize: "12px", color: "#888" }}>
-                          取得済み
+                        <div style={{ fontSize: "12px", color: "#8197da", fontWeight: "bold" }}>
+                          ✓ 取得済み
                         </div>
                       ) : (
                         <button
