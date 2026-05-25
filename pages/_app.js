@@ -177,13 +177,15 @@ export default function MyApp({ Component, pageProps }) {
           {/* iOSのホーム画面アイコン用 */}
           <link rel="apple-touch-icon" href="/images/icons/icon-192.png" />
         </Head>
-        {/* Google AdSense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3714576929730992"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        {/* Google AdSense（本番環境のみ） */}
+        {process.env.NEXT_PUBLIC_VERCEL_ENV === "production" && (
+          <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3714576929730992"
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
         <main className={noto.className}>
           <Component {...pageProps} />
         </main>
