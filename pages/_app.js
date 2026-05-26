@@ -78,6 +78,7 @@ export default function MyApp({ Component, pageProps }) {
           acc_eye: null,
           acc_mouth: null,
           mofu: 0,
+          startDate: new Date().toLocaleDateString("sv-SE"),  // ★追加: アカウント作成日
         }
         await setDoc(userRef, defaultProfile)
         setProfile(defaultProfile)

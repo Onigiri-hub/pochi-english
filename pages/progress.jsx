@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
 import { auth, db } from "../firebase";
-import { doc, getDoc, setDoc, collection, query, getDocs, orderBy } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, query, where, getDocs, orderBy } from "firebase/firestore";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -15,49 +15,84 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { getBadges, loadBadgeList } from "../utils/badgeManager"; // ★追加
+import { getBadges, loadBadgeList } from "../utils/badgeManager";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function Progress() {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // ★追加
-  const [streakCount, setStreakCount] = useState(0) // ★追加
+  const [loading, setLoading] = useState(true);
   const [historyData, setHistoryData] = useState([]);
   const [vocabHistoryData, setVocabHistoryData] = useState([])
-  const [earnedBadges, setEarnedBadges] = useState([])  // ★追加
-  const [badgeList, setBadgeList] = useState([])         // ★追加
+  const [earnedBadges, setEarnedBadges] = useState([])
+  const [badgeList, setBadgeList] = useState([])
+  const [startDate, setStartDate] = useState(null)
   const router = useRouter();
-  const { profile, setProfile } = useProfileContext()
+  const { profile, streak } = useProfileContext()
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (u) => {
-      setUser(u);
       if (!u) return;
 
-      const [
-        hSnap,
-        vocabSnap,
-        streakSnap,
-        earnedBadgesData,
-        badgeListData,
-      ] = await Promise.all([
-        getDocs(query(collection(db, "users", u.uid, "history"), orderBy("clearedAt", "desc"))),
-        getDocs(query(collection(db, "users", u.uid, "vocab_history"), orderBy("clearedAt", "desc"))),
-        getDoc(doc(db, "users", u.uid, "streak", "current")),
+      const userRef = doc(db, "users", u.uid)
+
+      // 1. userドキュメントを取得してstartDateをチェック
+      const userSnap = await getDoc(userRef)
+      const userData = userSnap.exists() ? userSnap.data() : {}
+      let userStartDate = userData.startDate || null
+
+      let hSnap, vocabSnap
+
+      if (userStartDate) {
+        // startDateあり → 直近30日だけ取得
+        const thirtyDaysAgo = new Date()
+        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30)
+        const cutoff = thirtyDaysAgo.toLocaleDateString("sv-SE")
+
+        ;[hSnap, vocabSnap, , , ] = await Promise.all([
+          getDocs(query(
+            collection(db, "users", u.uid, "history"),
+            where("dateString", ">=", cutoff),
+            orderBy("dateString", "desc")
+          )),
+          getDocs(query(
+            collection(db, "users", u.uid, "vocab_history"),
+            where("dateString", ">=", cutoff),
+            orderBy("dateString", "desc")
+          )),
+        ])
+      } else {
+        // startDateなし → 全件取得して最古日を保存（マイグレーション）
+        ;[hSnap, vocabSnap] = await Promise.all([
+          getDocs(query(collection(db, "users", u.uid, "history"), orderBy("clearedAt", "desc"))),
+          getDocs(query(collection(db, "users", u.uid, "vocab_history"), orderBy("clearedAt", "desc"))),
+        ])
+
+        // 最古日を計算
+        const allHistory = [...hSnap.docs.map(d => d.data()), ...vocabSnap.docs.map(d => d.data())]
+        if (allHistory.length > 0) {
+          const oldest = allHistory.reduce((acc, h) =>
+            h.dateString < acc ? h.dateString : acc
+          , allHistory[0].dateString)
+          userStartDate = oldest
+        } else {
+          // 履歴ゼロなら今日をstartDateに
+          userStartDate = new Date().toLocaleDateString("sv-SE")
+        }
+
+        // Firestoreに保存（次回以降は直近30日だけで済む）
+        await setDoc(userRef, { startDate: userStartDate }, { merge: true })
+      }
+
+      setStartDate(userStartDate)
+
+      // 2. バッジ取得
+      const [earnedBadgesData, badgeListData] = await Promise.all([
         getBadges(),
         loadBadgeList(),
       ])
 
-
-      // 履歴
       setHistoryData(hSnap.docs.map(d => d.data()));
       setVocabHistoryData(vocabSnap.docs.map(d => d.data()));
-
-      // streak
-      setStreakCount(streakSnap.exists() ? streakSnap.data().count || 0 : 0);
-
-      // バッジ
       setEarnedBadges(earnedBadgesData);
       setBadgeList(badgeListData);
 
@@ -65,7 +100,6 @@ export default function Progress() {
     });
     return () => unsubscribe();
   }, []);
-
 
 
   const getGraphData = () => {
@@ -104,35 +138,7 @@ export default function Progress() {
     }
   }
 
-  // 学習開始日
-  const allHistory = [...historyData, ...vocabHistoryData]
-  const startDate = allHistory.length > 0
-    ? allHistory.reduce((oldest, h) =>
-        h.dateString < oldest ? h.dateString : oldest
-      , allHistory[0].dateString)
-    : null
-
-  // 連続記録
-  //const calcStreak = () => {
-  //  const allDays = new Set(allHistory.map(h => h.dateString))
-  //  let streak = 0
-  //  const today = new Date()
-  //  for (let i = 0; i < 365; i++) {
-  //    const d = new Date(today)
-  //    d.setDate(d.getDate() - i)
-  //    const s = d.toLocaleDateString("sv-SE")
-  //    if (allDays.has(s)) {
-  //      streak++
-  //    } else {
-  //      break
-  //    }
-  //  }
-  //  return streak
-  //}
-  
-  //const streak = calcStreak()
-  
-  if (loading) return null; // ★追加（何も表示しない）
+  if (loading) return null;
 
   return (
     <div className="container">
@@ -191,7 +197,7 @@ export default function Progress() {
           </div>
           <div className="statItem">
             <span className="statLabel">連続記録</span>
-            <span className="statValue">{streakCount}日</span>
+            <span className="statValue">{streak}日</span>
           </div>
         </div>
 
@@ -234,7 +240,7 @@ export default function Progress() {
           />
         </div>
 
-        {/* バッジ一覧 ★追加 */}
+        {/* バッジ一覧 */}
         <div style={{ marginTop: "50px" }}>
           <h3 style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>
             実績バッジ
@@ -247,10 +253,6 @@ export default function Progress() {
  
             {badgeList.map(badge => {
               const earned = earnedBadges.includes(badge.badge_id)
-              if (badge.badge_id.includes("stage")) {
-              }
-             
-             
               return (
                 <div
                   key={badge.badge_id}
