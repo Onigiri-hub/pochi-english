@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
+import { getVocabRoundProgress } from "../utils/vocabProgressManager"
 import Papa from "papaparse"
 import Navigation from "../components/Navigation"
 
@@ -49,13 +50,15 @@ export default function StageList() {
 
               totalRounds += rounds.length
 
-              // 各roundのクリア状況をlocalStorageから確認
-              rounds.forEach(round => {
-                const key = `vocab_round_${round.round_id}`
-                const progress = JSON.parse(localStorage.getItem(key) || '{"doneWords":[],"totalWords":0}')
-                const isCleared = progress.totalWords > 0 && progress.doneWords.length >= progress.totalWords
-                if (isCleared) clearedRounds++
-              })
+              // 各roundのクリア状況をFirestoreから確認
+              await Promise.all(
+                rounds.map(async (round) => {
+                  const progress = await getVocabRoundProgress(round.round_id)
+                  const isCleared = progress.totalWords > 0 && progress.doneWords.length >= progress.totalWords
+                  if (isCleared) clearedRounds++
+                })
+              )
+
             })
           )
 
@@ -87,8 +90,7 @@ export default function StageList() {
             <div
               className="unitCard"
               key={stage.stage_id}
-              onClick={() => router.push(`/sectionList?stage=${stage.stage_id}`)}
-            >
+              onClick={() => router.push(`/sectionList?stage=${stage.stage_id}&name=${encodeURIComponent(stage.stage_name)}`)}            >
               <img
                 src="/images/illustrations/stagelist_button.png"
                 className="unitCardBg"
@@ -118,7 +120,7 @@ export default function StageList() {
                 <div
                   className="unitCard"
                   key={stage.stage_id}
-                  onClick={() => router.push(`/sectionList?stage=${stage.stage_id}`)}
+                  onClick={() => router.push(`/sectionList?stage=${stage.stage_id}&name=${encodeURIComponent(stage.stage_name)}`)}
                 >
                   <img
                     src="/images/illustrations/stagelist_button.png"

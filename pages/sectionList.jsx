@@ -9,7 +9,8 @@ export default function SectionList() {
   const [roundsMap, setRoundsMap] = useState({})
   const [roundProgressMap, setRoundProgressMap] = useState({})
   const router = useRouter()
-  const { stage } = router.query
+  const { stage, name } = router.query
+  const stageName = name ? decodeURIComponent(name) : ""
 
   useEffect(() => {
     if (!stage) return
@@ -58,8 +59,13 @@ export default function SectionList() {
     <div className="unitListContainer" style={{ paddingBottom: "100px" }}>
       <div className="unitList">
 
-        {/* 戻るボタン */}
-        <div style={{ marginBottom: "10px" }}>
+        {/* 戻るボタン＋ステージ名 */}
+        <div style={{ 
+          display: "flex", 
+          alignItems: "center", 
+          marginBottom: "10px",
+          position: "relative"
+        }}>
           <button
             onClick={() => router.push("/stageList")}
             style={{
@@ -73,7 +79,19 @@ export default function SectionList() {
           >
             ◀
           </button>
+          <div style={{
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+            fontWeight: "bold",
+            fontSize: "16px",
+            color: "#333333",
+          }}>
+            {stageName}
+          </div>
         </div>
+
+
         {/* デバッグ用リセットボタン（確認したら消す） 
         <button
           onClick={() => {

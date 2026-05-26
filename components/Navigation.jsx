@@ -1,16 +1,18 @@
 import { useRouter } from "next/router";
-import { getProgress } from "../utils/progressManager";
-import { getMofu } from "../utils/mofuManager";
-import { useState, useEffect } from "react";
-import Papa from "papaparse";
+import { useProfileContext } from "../utils/ProfileContext";
+//import { getProgress } from "../utils/progressManager";
+//import { getMofu } from "../utils/mofuManager";
+//import { useState, useEffect } from "react";
+//import Papa from "papaparse";
 
 export default function Navigation() {
   const router = useRouter();
-  const [mofu, setMofu] = useState(null)
+  const { mofu } = useProfileContext();
+  //const [mofu, setMofu] = useState(null)
 
-  useEffect(() => {
-    getMofu().then(m => setMofu(m))
-  }, [])
+  //useEffect(() => {
+  //  getMofu().then(m => setMofu(m))
+  //}, [])
 
   const handleHomeClick = () => {
     router.push("/home");
