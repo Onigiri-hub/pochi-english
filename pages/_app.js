@@ -50,7 +50,7 @@ export default function MyApp({ Component, pageProps }) {
       if (dataLoadedRef.current) return
       dataLoadedRef.current = true
 
-      const { doc, getDoc, setDoc, collection, getDocs, query, orderBy } = await import("firebase/firestore")
+      const { doc, getDoc, setDoc, collection, getDocs } = await import("firebase/firestore")
       const { db } = await import("../firebase")
 
       // プロフィール・mofu・streakを一括取得
@@ -64,12 +64,19 @@ export default function MyApp({ Component, pageProps }) {
       const completedUnitIds = new Set(completedUnitsSnap.docs.map(d => d.id))
       setCompletedUnits(completedUnitIds)
 
+      // 取得した値をローカル変数に保持（dailyCheckで使う）
+      let currentStreak = 0
+      let currentTotalLessons = 0
+      let currentTotalRounds = 0
+
       if (profileSnap.exists()) {
         const data = profileSnap.data()
         setProfile(data)
         setMofu(data.mofu || 0)
         setTotalLessons(data.totalLessons || 0)
         setTotalRounds(data.totalRounds || 0)
+        currentTotalLessons = data.totalLessons || 0
+        currentTotalRounds = data.totalRounds || 0
       } else {
         const defaultProfile = {
           nickname: user.displayName || "ゲスト",
@@ -78,7 +85,7 @@ export default function MyApp({ Component, pageProps }) {
           acc_eye: null,
           acc_mouth: null,
           mofu: 0,
-          startDate: new Date().toLocaleDateString("sv-SE"),  // ★追加: アカウント作成日
+          startDate: new Date().toLocaleDateString("sv-SE"),
         }
         await setDoc(userRef, defaultProfile)
         setProfile(defaultProfile)
@@ -92,53 +99,44 @@ export default function MyApp({ Component, pageProps }) {
         const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("sv-SE")
         if (data.lastDate === today || data.lastDate === yesterday) {
           setStreak(data.count || 0)
+          currentStreak = data.count || 0
         } else {
           setStreak(0)
+          currentStreak = 0
         }
       }
 
-      // dailyCheck（1日1回だけ）
+      // ★ dailyCheck（1日1回だけ、保険として全バッジ再チェック）
+      // 開発中はバッジリスト変更で既存ユーザーに条件達成済みバッジが付与されない可能性があるため
       const today = new Date().toLocaleDateString("sv-SE")
       const lastCheck = localStorage.getItem("dailyCheck")
       if (lastCheck === today) return
 
       try {
-        const hSnap = await getDocs(query(collection(db, "users", user.uid, "history"), orderBy("clearedAt")))
-        const vSnap = await getDocs(query(collection(db, "users", user.uid, "vocab_history"), orderBy("clearedAt")))
-        const allHistory = [
-          ...hSnap.docs.map(d => d.data()),
-          ...vSnap.docs.map(d => d.data()),
-        ]
+        const { checkAndEarnBadges } = await import("../utils/badgeManager")
 
-        const allDays = new Set(allHistory.map(h => h.dateString))
-        let streakCount = 0
-        const todayDate = new Date()
-        for (let i = 0; i < 365; i++) {
-          const d = new Date(todayDate)
-          d.setDate(d.getDate() - i)
-          const s = d.toLocaleDateString("sv-SE")
-          if (allDays.has(s)) {
-            streakCount++
-          } else {
-            break
-          }
+        const baseParams = {
+          streak: currentStreak,
+          totalLessons: currentTotalLessons,
+          totalRounds: currentTotalRounds,
+          isPerfect: false,
         }
 
-        const { checkAndEarnBadges } = await import("../utils/badgeManager")
-        const pSnap = await getDocs(collection(db, "users", user.uid, "progress"))
-        const progressMap = {}
-        pSnap.docs.forEach(d => { progressMap[d.id] = d.data().value })
-
-        const unitList = await loadCSV("/data/all_unit_list.csv")
-        const unit1Lessons = unitList.filter(r => r.unit_NO === "1")
-        const isUnit1Complete = (progressMap["u1"] || 0) >= unit1Lessons.length
-
-        await checkAndEarnBadges({
-          streak: streakCount,
-          totalLessons: hSnap.size,
-          isUnitComplete: isUnit1Complete ? "1" : null,
-          isPerfect: false,
-        })
+        if (completedUnitIds.size > 0) {
+          // 各Unitコンプリートバッジをチェック
+          for (const unitId of completedUnitIds) {
+            await checkAndEarnBadges({
+              ...baseParams,
+              isUnitComplete: unitId.replace("u", ""),
+            })
+          }
+        } else {
+          // Unitコンプリートなしでも、streak/lesson/roundバッジはチェック
+          await checkAndEarnBadges({
+            ...baseParams,
+            isUnitComplete: null,
+          })
+        }
 
         localStorage.setItem("dailyCheck", today)
 
