@@ -7,7 +7,7 @@ import "../styles/unitList.css";
 import "../styles/lecture.css";
 import "../styles/lessonList.css";
 import "../styles/practice.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { DictionaryContext } from "../utils/DictionaryContext";
 import { ProfileContext } from "../utils/ProfileContext";
@@ -32,115 +32,133 @@ export default function MyApp({ Component, pageProps }) {
   const [totalRounds, setTotalRounds] = useState(0)
   const [totalDays, setTotalDays] = useState(0)
   const [completedUnits, setCompletedUnits] = useState(new Set())
+  const [authChecked, setAuthChecked] = useState(false)  // 認証チェックが終わったか
+  const [currentUser, setCurrentUser] = useState(null)    // 現在のユーザー
+  const dataLoadedRef = useRef(false)  // データを取得済みかどうか
   const router = useRouter()
 
+  // ★ 認証＆データ取得（起動時1回だけ）
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
-      if (!user && !PUBLIC_PAGES.includes(router.pathname)) {
-        router.push("/")
+      setCurrentUser(user)
+      setAuthChecked(true)
+
+      if (!user) {
+        // ログアウト時はデータ取得フラグをリセット
+        dataLoadedRef.current = false
         return
       }
 
-      if (user) {
-        const { doc, getDoc, setDoc, collection, getDocs, query, orderBy } = await import("firebase/firestore")
-        const { db } = await import("../firebase")
+      // すでにデータ取得済みなら何もしない
+      if (dataLoadedRef.current) return
+      dataLoadedRef.current = true
 
-        // プロフィール・mofu・streakを一括取得
-        const userRef = doc(db, "users", user.uid)
-        const [profileSnap, streakSnap, completedUnitsSnap] = await Promise.all([
-          getDoc(userRef),
-          getDoc(doc(db, "users", user.uid, "streak", "current")),
-          getDocs(collection(db, "users", user.uid, "completedUnits")),
-        ])
+      const { doc, getDoc, setDoc, collection, getDocs, query, orderBy } = await import("firebase/firestore")
+      const { db } = await import("../firebase")
 
-        const completedUnitIds = new Set(completedUnitsSnap.docs.map(d => d.id))
-        setCompletedUnits(completedUnitIds)
+      // プロフィール・mofu・streakを一括取得
+      const userRef = doc(db, "users", user.uid)
+      const [profileSnap, streakSnap, completedUnitsSnap] = await Promise.all([
+        getDoc(userRef),
+        getDoc(doc(db, "users", user.uid, "streak", "current")),
+        getDocs(collection(db, "users", user.uid, "completedUnits")),
+      ])
 
-        if (profileSnap.exists()) {
-          const data = profileSnap.data()
-          setProfile(data)
-          setMofu(data.mofu || 0)
-          setTotalLessons(data.totalLessons || 0)  // ★追加
-          setTotalRounds(data.totalRounds || 0)    // ★追加
-          setTotalDays(data.totalDays || 0)        // ★追加
-        } else {
-          const defaultProfile = {
-            nickname: user.displayName || "ゲスト",
-            avatar: "01.png",
-            acc_head: null,
-            acc_eye: null,
-            acc_mouth: null,
-            mofu: 0,
-          }
-          await setDoc(userRef, defaultProfile)
-          setProfile(defaultProfile)
-          setMofu(0)
+      const completedUnitIds = new Set(completedUnitsSnap.docs.map(d => d.id))
+      setCompletedUnits(completedUnitIds)
+
+      if (profileSnap.exists()) {
+        const data = profileSnap.data()
+        setProfile(data)
+        setMofu(data.mofu || 0)
+        setTotalLessons(data.totalLessons || 0)
+        setTotalRounds(data.totalRounds || 0)
+        setTotalDays(data.totalDays || 0)
+      } else {
+        const defaultProfile = {
+          nickname: user.displayName || "ゲスト",
+          avatar: "01.png",
+          acc_head: null,
+          acc_eye: null,
+          acc_mouth: null,
+          mofu: 0,
         }
+        await setDoc(userRef, defaultProfile)
+        setProfile(defaultProfile)
+        setMofu(0)
+      }
 
-        // streak取得
-        if (streakSnap.exists()) {
-          const data = streakSnap.data()
-          const today = new Date().toLocaleDateString("sv-SE")
-          const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("sv-SE")
-          if (data.lastDate === today || data.lastDate === yesterday) {
-            setStreak(data.count || 0)
-          } else {
-            setStreak(0)
-          }
-        }
-
-        // dailyCheck（1日1回だけ）
+      // streak取得
+      if (streakSnap.exists()) {
+        const data = streakSnap.data()
         const today = new Date().toLocaleDateString("sv-SE")
-        const lastCheck = localStorage.getItem("dailyCheck")
-        if (lastCheck === today) return
-
-        try {
-          const hSnap = await getDocs(query(collection(db, "users", user.uid, "history"), orderBy("clearedAt")))
-          const vSnap = await getDocs(query(collection(db, "users", user.uid, "vocab_history"), orderBy("clearedAt")))
-          const allHistory = [
-            ...hSnap.docs.map(d => d.data()),
-            ...vSnap.docs.map(d => d.data()),
-          ]
-
-          const allDays = new Set(allHistory.map(h => h.dateString))
-          let streakCount = 0
-          const todayDate = new Date()
-          for (let i = 0; i < 365; i++) {
-            const d = new Date(todayDate)
-            d.setDate(d.getDate() - i)
-            const s = d.toLocaleDateString("sv-SE")
-            if (allDays.has(s)) {
-              streakCount++
-            } else {
-              break
-            }
-          }
-
-          const { checkAndEarnBadges } = await import("../utils/badgeManager")
-          const pSnap = await getDocs(collection(db, "users", user.uid, "progress"))
-          const progressMap = {}
-          pSnap.docs.forEach(d => { progressMap[d.id] = d.data().value })
-
-          const unitList = await loadCSV("/data/all_unit_list.csv")
-          const unit1Lessons = unitList.filter(r => r.unit_NO === "1")
-          const isUnit1Complete = (progressMap["u1"] || 0) >= unit1Lessons.length
-
-          await checkAndEarnBadges({
-            streak: streakCount,
-            totalLessons: hSnap.size,
-            isUnit1Complete,
-            isPerfect: false,
-          })
-
-          localStorage.setItem("dailyCheck", today)
-
-        } catch (e) {
-          console.error("dailyCheck失敗:", e)
+        const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("sv-SE")
+        if (data.lastDate === today || data.lastDate === yesterday) {
+          setStreak(data.count || 0)
+        } else {
+          setStreak(0)
         }
+      }
+
+      // dailyCheck（1日1回だけ）
+      const today = new Date().toLocaleDateString("sv-SE")
+      const lastCheck = localStorage.getItem("dailyCheck")
+      if (lastCheck === today) return
+
+      try {
+        const hSnap = await getDocs(query(collection(db, "users", user.uid, "history"), orderBy("clearedAt")))
+        const vSnap = await getDocs(query(collection(db, "users", user.uid, "vocab_history"), orderBy("clearedAt")))
+        const allHistory = [
+          ...hSnap.docs.map(d => d.data()),
+          ...vSnap.docs.map(d => d.data()),
+        ]
+
+        const allDays = new Set(allHistory.map(h => h.dateString))
+        let streakCount = 0
+        const todayDate = new Date()
+        for (let i = 0; i < 365; i++) {
+          const d = new Date(todayDate)
+          d.setDate(d.getDate() - i)
+          const s = d.toLocaleDateString("sv-SE")
+          if (allDays.has(s)) {
+            streakCount++
+          } else {
+            break
+          }
+        }
+
+        const { checkAndEarnBadges } = await import("../utils/badgeManager")
+        const pSnap = await getDocs(collection(db, "users", user.uid, "progress"))
+        const progressMap = {}
+        pSnap.docs.forEach(d => { progressMap[d.id] = d.data().value })
+
+        const unitList = await loadCSV("/data/all_unit_list.csv")
+        const unit1Lessons = unitList.filter(r => r.unit_NO === "1")
+        const isUnit1Complete = (progressMap["u1"] || 0) >= unit1Lessons.length
+
+        await checkAndEarnBadges({
+          streak: streakCount,
+          totalLessons: hSnap.size,
+          isUnit1Complete,
+          isPerfect: false,
+        })
+
+        localStorage.setItem("dailyCheck", today)
+
+      } catch (e) {
+        console.error("dailyCheck失敗:", e)
       }
     })
     return () => unsubscribe()
-  }, [router.pathname])
+  }, [])
+
+  // ★ ページ遷移ごとに、未ログイン時のリダイレクト判定だけ行う
+  useEffect(() => {
+    if (!authChecked) return  // 認証チェック完了前は何もしない
+    if (!currentUser && !PUBLIC_PAGES.includes(router.pathname)) {
+      router.push("/")
+    }
+  }, [router.pathname, authChecked, currentUser])
 
   // 辞書読み込み＋効果音プリロード
   useEffect(() => {
@@ -175,7 +193,7 @@ export default function MyApp({ Component, pageProps }) {
         totalLessons, setTotalLessons,
         totalRounds, setTotalRounds,
         totalDays, setTotalDays,
-        completedUnits, setCompletedUnits,  // ←追加
+        completedUnits, setCompletedUnits,
       }}>
 
         <Head>
