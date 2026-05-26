@@ -31,6 +31,7 @@ export default function MyApp({ Component, pageProps }) {
   const [totalLessons, setTotalLessons] = useState(0)
   const [totalRounds, setTotalRounds] = useState(0)
   const [totalDays, setTotalDays] = useState(0)
+  const [completedUnits, setCompletedUnits] = useState(new Set())
   const router = useRouter()
 
   useEffect(() => {
@@ -46,10 +47,14 @@ export default function MyApp({ Component, pageProps }) {
 
         // プロフィール・mofu・streakを一括取得
         const userRef = doc(db, "users", user.uid)
-        const [profileSnap, streakSnap] = await Promise.all([
+        const [profileSnap, streakSnap, completedUnitsSnap] = await Promise.all([
           getDoc(userRef),
           getDoc(doc(db, "users", user.uid, "streak", "current")),
+          getDocs(collection(db, "users", user.uid, "completedUnits")),
         ])
+
+        const completedUnitIds = new Set(completedUnitsSnap.docs.map(d => d.id))
+        setCompletedUnits(completedUnitIds)
 
         if (profileSnap.exists()) {
           const data = profileSnap.data()
@@ -167,10 +172,12 @@ export default function MyApp({ Component, pageProps }) {
         profile, setProfile, 
         mofu, setMofu, 
         streak, setStreak, 
-        totalLessons, setTotalLessons,    // ★追加
-        totalRounds, setTotalRounds,      // ★追加
-        totalDays, setTotalDays,          // ★追加
+        totalLessons, setTotalLessons,
+        totalRounds, setTotalRounds,
+        totalDays, setTotalDays,
+        completedUnits, setCompletedUnits,  // ←追加
       }}>
+
         <Head>
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#ebebeb" />

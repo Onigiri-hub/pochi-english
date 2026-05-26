@@ -59,13 +59,13 @@ async function earnBadge(badgeId) {
 export async function checkAndEarnBadges({
   streak = 0,
   totalLessons = 0,
-  totalRounds = 0,    // ★追加
-  totalDays = 0,      // ★追加
-  completedStages = [], // ★追加（例：["stage1", "stage2"]）
-  isUnit1Complete = false,
+  totalRounds = 0,
+  totalDays = 0,
+  completedStages = [],
+  isUnitComplete = null,  // ←isUnit1CompleteをこれにRename
   isPerfect = false,
 }) {
-  const earned = await getBadges();
+const earned = await getBadges();
   const newBadges = [];
 
   const check = async (id, condition) => {
@@ -74,33 +74,33 @@ export async function checkAndEarnBadges({
       newBadges.push(id);
     }
   };
-  // 既存
-  await check("first_clear", totalLessons >= 1 || totalRounds >= 1);
+
+  // 既存のfirst_clearとlesson系はそのまま
+  await check("first_clear", totalLessons >= 1);
   await check("lesson_5", totalLessons >= 5);
   await check("lesson_10", totalLessons >= 10);
-  await check("unit1_complete", isUnit1Complete);
+
+  // unit1_completeをunit_〇_completeに変更
+  if (isUnitComplete) {
+    await check(`unit_${isUnitComplete}_complete`, true)
+  }
+
   await check("streak_3", streak >= 3);
   await check("streak_7", streak >= 7);
 
-
-  // ★Stage系（forEachをfor...ofに変更）
   for (const stageId of completedStages) {
     await check(`${stageId}_clear`, true);
   }
 
-  // ★Round系（badge_idから数字を自動判定）
   await check("round_10", totalRounds >= 10);
   await check("round_20", totalRounds >= 20);
   await check("round_30", totalRounds >= 30);
   await check("round_50", totalRounds >= 50);
 
-  // ★累計日数系（badge_idから数字を自動判定）
   await check("days_7", totalDays >= 7);
   await check("days_30", totalDays >= 30);
   await check("days_100", totalDays >= 100);
 
-
-
-  return newBadges;
-}
+    return newBadges;
+  }
 

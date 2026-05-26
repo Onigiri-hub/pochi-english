@@ -18,7 +18,7 @@ const CATEGORIES = ["avatar", "head", "eye", "mouth"]
 
 export default function Mofu() {
   const router = useRouter()
-  const { mofu, setMofu, profile, streak } = useProfileContext()
+  const { mofu, setMofu, profile, streak, completedUnits, totalLessons, totalRounds } = useProfileContext()
   const [items, setItems] = useState([])
   const [purchasedIds, setPurchasedIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
@@ -43,11 +43,23 @@ export default function Mofu() {
 
       // 条件達成したアイテムを新たに解放
       const toUnlock = allItems.filter((item) => {
-        if (unlockedIds.has(item.item_id)) return false  // すでに解放済み
-        if (item.unlock_condition === "none") return false  // 最初から解放
+        if (unlockedIds.has(item.item_id)) return false
+        if (item.unlock_condition === "none") return false
         if (item.unlock_condition.startsWith("streak_")) {
           const required = parseInt(item.unlock_condition.replace("streak_", ""))
           return streak >= required
+        }
+        if (item.unlock_condition.startsWith("unit_") && item.unlock_condition.endsWith("_complete")) {
+          const unitNo = item.unlock_condition.replace("unit_", "").replace("_complete", "")
+          return completedUnits.has(`u${unitNo}`)
+        }
+        if (item.unlock_condition.startsWith("rounds_")) {
+          const required = parseInt(item.unlock_condition.replace("rounds_", ""))
+          return totalRounds >= required
+        }
+        if (item.unlock_condition.startsWith("lessons_")) {
+          const required = parseInt(item.unlock_condition.replace("lessons_", ""))
+          return totalLessons >= required
         }
         return false
       })
@@ -67,12 +79,31 @@ export default function Mofu() {
       setLoading(false)
     })
     return () => unsubscribe()
-  }, [])
+  }, [completedUnits, totalLessons, totalRounds, streak])
 
   const isUnlocked = (item) => {
     if (item.unlock_condition === "none") return true
-    return unlockedIds.has(item.item_id)  // Firestoreの解放済みリストを参照
+    if (unlockedIds.has(item.item_id)) return true
+
+    if (item.unlock_condition.startsWith("streak_")) {
+      const required = parseInt(item.unlock_condition.replace("streak_", ""))
+      return streak >= required
+    }
+    if (item.unlock_condition.startsWith("unit_") && item.unlock_condition.endsWith("_complete")) {
+      const unitNo = item.unlock_condition.replace("unit_", "").replace("_complete", "")
+      return completedUnits.has(`u${unitNo}`)
+    }
+    if (item.unlock_condition.startsWith("rounds_")) {
+      const required = parseInt(item.unlock_condition.replace("rounds_", ""))
+      return totalRounds >= required
+    }
+    if (item.unlock_condition.startsWith("lessons_")) {
+      const required = parseInt(item.unlock_condition.replace("lessons_", ""))
+      return totalLessons >= required
+    }
+    return false
   }
+    
 
   const handlePurchase = async (item) => {
     const user = auth.currentUser

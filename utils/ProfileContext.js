@@ -13,6 +13,8 @@ export const ProfileContext = createContext({
   setTotalRounds: () => {},
   totalDays: 0,
   setTotalDays: () => {},
+  completedUnits: new Set(),
+  setCompletedUnits: () => {},
 })
 
 export function useProfileContext() {

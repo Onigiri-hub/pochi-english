@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
-import { saveProgress } from "../utils/progressManager"
+import { saveProgress, checkAndSaveUnitComplete } from "../utils/progressManager"
+import { loadCSV } from "../utils/csvLoader"
 import { checkAndEarnBadges, loadBadgeList } from "../utils/badgeManager"
 import { useEffect, useState } from "react"
 import { useProfileContext } from "../utils/ProfileContext"
@@ -12,7 +13,7 @@ import { auth } from "../firebase"
 export default function LessonComplete() {
   const router = useRouter()
   const { unit, order, isPerfect } = router.query
-  const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays } = useProfileContext()
+  const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays, completedUnits, setCompletedUnits } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])   // 新しく取ったバッジオブジェクトの配列
   const [mofuEarned, setMofuEarned] = useState(0)
   const [streakCount, setStreakCount] = useState(0)
@@ -69,13 +70,24 @@ export default function LessonComplete() {
       // 5. Unit1全クリア判定
       const isUnit1Complete = String(unit) === "1" && isFirstClear;
 
+      // Unit完了チェック
+      const unitList = await loadCSV("/data/all_unit_list.csv")
+      const unitLessons = unitList.filter(r => r.unit_NO === String(unit))
+      const totalLessonsInUnit = unitLessons.length
+
+      const isUnitComplete = await checkAndSaveUnitComplete(unit, totalLessonsInUnit, completedUnits)
+      if (isUnitComplete) {
+        setCompletedUnits(prev => new Set([...prev, `u${unit}`]))
+      }
+
       // 6. バッジチェック
       const newBadgeIds = await checkAndEarnBadges({
         streak,
-        totalLessons: totalLessons + (isFirstClear ? 1 : 0),  // 最新値
+        totalLessons: totalLessons + (isFirstClear ? 1 : 0),
         totalRounds,
         totalDays,
-        isUnit1Complete,
+        isUnit1Complete: false,  // ←削除
+        isUnitComplete: isUnitComplete ? String(unit) : null,  // ←追加
         isPerfect: isPerfect === "true",
       })
 
