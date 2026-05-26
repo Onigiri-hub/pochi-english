@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
-import { getVocabRoundProgress } from "../utils/vocabProgressManager"
+import { db, auth } from "../firebase"
+import { collection, getDocs } from "firebase/firestore"
 import Papa from "papaparse"
 import Navigation from "../components/Navigation"
 
@@ -28,6 +29,23 @@ export default function StageList() {
         skipEmptyLines: true
       }).data
 
+      // ★ 全vocab_roundsを1回で取得して、クリア済みRoundのSetを作る
+      const user = auth.currentUser
+      const clearedSet = new Set()
+      if (user) {
+        try {
+          const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
+          roundsSnap.docs.forEach(d => {
+            const data = d.data()
+            if (data.totalWords > 0 && data.doneWords?.length >= data.totalWords) {
+              clearedSet.add(d.id)
+            }
+          })
+        } catch (e) {
+          console.error("vocab_rounds一括取得失敗:", e)
+        }
+      }
+
       // 各stageの進捗を計算
       const map = {}
       await Promise.all(
@@ -50,15 +68,10 @@ export default function StageList() {
 
               totalRounds += rounds.length
 
-              // 各roundのクリア状況をFirestoreから確認
-              await Promise.all(
-                rounds.map(async (round) => {
-                  const progress = await getVocabRoundProgress(round.round_id)
-                  const isCleared = progress.totalWords > 0 && progress.doneWords.length >= progress.totalWords
-                  if (isCleared) clearedRounds++
-                })
-              )
-
+              // ★ clearedSetで判定するだけ（Firestoreアクセスなし）
+              rounds.forEach(round => {
+                if (clearedSet.has(round.round_id)) clearedRounds++
+              })
             })
           )
 
