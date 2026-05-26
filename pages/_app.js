@@ -30,11 +30,10 @@ export default function MyApp({ Component, pageProps }) {
   const [streak, setStreak] = useState(0)
   const [totalLessons, setTotalLessons] = useState(0)
   const [totalRounds, setTotalRounds] = useState(0)
-  const [totalDays, setTotalDays] = useState(0)
   const [completedUnits, setCompletedUnits] = useState(new Set())
-  const [authChecked, setAuthChecked] = useState(false)  // 認証チェックが終わったか
-  const [currentUser, setCurrentUser] = useState(null)    // 現在のユーザー
-  const dataLoadedRef = useRef(false)  // データを取得済みかどうか
+  const [authChecked, setAuthChecked] = useState(false)
+  const [currentUser, setCurrentUser] = useState(null)
+  const dataLoadedRef = useRef(false)
   const router = useRouter()
 
   // ★ 認証＆データ取得（起動時1回だけ）
@@ -44,12 +43,10 @@ export default function MyApp({ Component, pageProps }) {
       setAuthChecked(true)
 
       if (!user) {
-        // ログアウト時はデータ取得フラグをリセット
         dataLoadedRef.current = false
         return
       }
 
-      // すでにデータ取得済みなら何もしない
       if (dataLoadedRef.current) return
       dataLoadedRef.current = true
 
@@ -73,7 +70,6 @@ export default function MyApp({ Component, pageProps }) {
         setMofu(data.mofu || 0)
         setTotalLessons(data.totalLessons || 0)
         setTotalRounds(data.totalRounds || 0)
-        setTotalDays(data.totalDays || 0)
       } else {
         const defaultProfile = {
           nickname: user.displayName || "ゲスト",
@@ -139,7 +135,7 @@ export default function MyApp({ Component, pageProps }) {
         await checkAndEarnBadges({
           streak: streakCount,
           totalLessons: hSnap.size,
-          isUnit1Complete,
+          isUnitComplete: isUnit1Complete ? "1" : null,
           isPerfect: false,
         })
 
@@ -154,7 +150,7 @@ export default function MyApp({ Component, pageProps }) {
 
   // ★ ページ遷移ごとに、未ログイン時のリダイレクト判定だけ行う
   useEffect(() => {
-    if (!authChecked) return  // 認証チェック完了前は何もしない
+    if (!authChecked) return
     if (!currentUser && !PUBLIC_PAGES.includes(router.pathname)) {
       router.push("/")
     }
@@ -192,7 +188,6 @@ export default function MyApp({ Component, pageProps }) {
         streak, setStreak, 
         totalLessons, setTotalLessons,
         totalRounds, setTotalRounds,
-        totalDays, setTotalDays,
         completedUnits, setCompletedUnits,
       }}>
 

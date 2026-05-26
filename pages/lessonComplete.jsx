@@ -6,14 +6,16 @@ import { useEffect, useState } from "react"
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
 import { updateStreak, calcMofu, addMofu, addTotalLessons } from "../utils/mofuManager"
-import { db } from "../firebase"
-import { doc, getDoc } from "firebase/firestore"
-import { auth } from "../firebase"
 
 export default function LessonComplete() {
   const router = useRouter()
   const { unit, order, isPerfect } = router.query
-  const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays, completedUnits, setCompletedUnits } = useProfileContext()
+  const { 
+    setMofu, setStreak, 
+    setTotalLessons, totalLessons, 
+    totalRounds, 
+    completedUnits, setCompletedUnits 
+  } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])   // 新しく取ったバッジオブジェクトの配列
   const [mofuEarned, setMofuEarned] = useState(0)
   const [streakCount, setStreakCount] = useState(0)
@@ -51,26 +53,12 @@ export default function LessonComplete() {
       await addMofu(mofu);
       if (isFirstClear) {
         await addTotalLessons()
-        setTotalLessons(prev => prev + 1)  // ★追加
+        setTotalLessons(prev => prev + 1)
       }      
       setMofuEarned(mofu);
-      setMofu(prev => prev + mofu)  // ★追加
+      setMofu(prev => prev + mofu)
 
-      // 4. 累計レッスン数を取得
-      //const totalLessons = await getTotalLessons();
-
-      // 4. カウンター取得
-      const user = auth.currentUser
-      const userSnap = await getDoc(doc(db, "users", user.uid))
-      const userData = userSnap.exists() ? userSnap.data() : {}
-      const totalLessons = userData.totalLessons || 0
-      const totalRounds = userData.totalRounds || 0
-      const totalDays = userData.totalDays || 0
-
-      // 5. Unit1全クリア判定
-      const isUnit1Complete = String(unit) === "1" && isFirstClear;
-
-      // Unit完了チェック
+      // 4. Unit完了チェック
       const unitList = await loadCSV("/data/all_unit_list.csv")
       const unitLessons = unitList.filter(r => r.unit_NO === String(unit))
       const totalLessonsInUnit = unitLessons.length
@@ -80,18 +68,16 @@ export default function LessonComplete() {
         setCompletedUnits(prev => new Set([...prev, `u${unit}`]))
       }
 
-      // 6. バッジチェック
+      // 5. バッジチェック（Contextの値を使う）
       const newBadgeIds = await checkAndEarnBadges({
         streak,
         totalLessons: totalLessons + (isFirstClear ? 1 : 0),
         totalRounds,
-        totalDays,
-        isUnit1Complete: false,  // ←削除
-        isUnitComplete: isUnitComplete ? String(unit) : null,  // ←追加
+        isUnitComplete: isUnitComplete ? String(unit) : null,
         isPerfect: isPerfect === "true",
       })
 
-      // 7. csvからバッジ一覧を読み込んで、IDからオブジェクトに変換
+      // 6. csvからバッジ一覧を読み込んで、IDからオブジェクトに変換
       if (newBadgeIds.length > 0) {
         const badgeList = await loadBadgeList()
         const badgeObjects = newBadgeIds

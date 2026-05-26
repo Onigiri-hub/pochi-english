@@ -30,14 +30,13 @@ export async function getStreak() {
 
 // ===================================
 // 連続学習日数を更新（1日1回だけカウント）
+// 戻り値: { count, isFirstToday }
 // ===================================
-
 export async function updateStreak() {
   const user = auth.currentUser;
-  if (!user) return { count: 0, isFirstToday: false }
+  if (!user) return { count: 0, isFirstToday: false };
 
   try {
-    const ref = doc(db, "users", user.uid);
     const streakRef = doc(db, "users", user.uid, "streak", "current");
     const snap = await getDoc(streakRef);
     const today = new Date().toLocaleDateString("sv-SE");
@@ -48,7 +47,8 @@ export async function updateStreak() {
     if (snap.exists()) {
       const data = snap.data();
       if (data.lastDate === today) {
-        return { count: data.count, isFirstToday: false }  // 今日すでに更新済み
+        // 今日すでに更新済み
+        return { count: data.count || 0, isFirstToday: false };
       } else if (data.lastDate === yesterday) {
         newCount = (data.count || 0) + 1;
       } else {
@@ -58,13 +58,11 @@ export async function updateStreak() {
 
     // streak更新
     await setDoc(streakRef, { count: newCount, lastDate: today });
-    await setDoc(ref, { totalDays: increment(1) }, { merge: true });
 
-    return { count: newCount, isFirstToday: true }  // 今日初めて
-
+    return { count: newCount, isFirstToday: true };
   } catch (e) {
     console.error("ストリーク更新失敗:", e);
-    return { count: 0, isFirstToday: false }
+    return { count: 0, isFirstToday: false };
   }
 }
 

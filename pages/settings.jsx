@@ -84,6 +84,10 @@ export default function Settings() {
     return () => unsubscribe();
   }, []);
 
+// ===================================
+// settings.jsx の handleReset 関数を以下に差し替えてください
+// (88行目あたりから117行目までを置き換え)
+// ===================================
 
   const handleReset = async () => {
     const user = auth.currentUser;
@@ -97,6 +101,9 @@ export default function Settings() {
       const subCollections = [
         "progress", "history", "vocab_rounds",
         "vocab_progress", "vocab_history", "streak", "badges",
+        "completedUnits",  // ★追加
+        "items",           // ★追加（購入済みアイテム）
+        "unlocked",        // ★追加（条件達成で解放されたアイテム）
       ];
       await Promise.all(
         subCollections.map(async (colName) => {
@@ -105,8 +112,16 @@ export default function Settings() {
           await Promise.all(snap.docs.map((d) => deleteDoc(d.ref)));
         })
       );
+      // users ドキュメント直下のカウンターと装着アクセサリーもリセット
       const userRef = doc(db, "users", uid);
-      await setDoc(userRef, { mofu: 0 }, { merge: true });
+      await setDoc(userRef, { 
+        mofu: 0,
+        totalLessons: 0,
+        totalRounds: 0,
+        acc_head: null,
+        acc_eye: null,
+        acc_mouth: null,
+      }, { merge: true });
       localStorage.clear();
       alert("すべてのデータをリセットしました！");
       router.reload?.();

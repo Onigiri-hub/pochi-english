@@ -34,7 +34,6 @@ export async function getBadges() {
 // ===================================
 // バッジを獲得済みに追加
 // ===================================
-
 async function earnBadge(badgeId) {
   const user = auth.currentUser;
   if (!user) return;
@@ -60,12 +59,11 @@ export async function checkAndEarnBadges({
   streak = 0,
   totalLessons = 0,
   totalRounds = 0,
-  totalDays = 0,
   completedStages = [],
-  isUnitComplete = null,  // ←isUnit1CompleteをこれにRename
+  isUnitComplete = null,
   isPerfect = false,
 }) {
-const earned = await getBadges();
+  const earned = await getBadges();
   const newBadges = [];
 
   const check = async (id, condition) => {
@@ -75,32 +73,34 @@ const earned = await getBadges();
     }
   };
 
-  // 既存のfirst_clearとlesson系はそのまま
+  // 英文法レッスン系
   await check("first_clear", totalLessons >= 1);
   await check("lesson_5", totalLessons >= 5);
   await check("lesson_10", totalLessons >= 10);
 
-  // unit1_completeをunit_〇_completeに変更
+  // Unit完了系
   if (isUnitComplete) {
     await check(`unit_${isUnitComplete}_complete`, true)
   }
 
+  // 連続学習系
   await check("streak_3", streak >= 3);
   await check("streak_7", streak >= 7);
+  await check("streak_10", streak >= 10);
+  await check("streak_30", streak >= 30);
+  await check("streak_50", streak >= 50);
 
+  // Stage完了系
   for (const stageId of completedStages) {
     await check(`${stageId}_clear`, true);
   }
 
+  // 英単語Round系
+  await check("round_5", totalRounds >= 5);
   await check("round_10", totalRounds >= 10);
   await check("round_20", totalRounds >= 20);
   await check("round_30", totalRounds >= 30);
   await check("round_50", totalRounds >= 50);
 
-  await check("days_7", totalDays >= 7);
-  await check("days_30", totalDays >= 30);
-  await check("days_100", totalDays >= 100);
-
-    return newBadges;
-  }
-
+  return newBadges;
+}

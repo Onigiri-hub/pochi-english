@@ -4,15 +4,17 @@ import Navigation from "../components/Navigation"
 import { checkAndEarnBadges, loadBadgeList } from "../utils/badgeManager"
 import { useProfileContext } from "../utils/ProfileContext"
 import { updateStreak, calcMofu, addMofu, addTotalRounds } from "../utils/mofuManager"
-import { db } from "../firebase"
-import { doc, getDoc } from "firebase/firestore"
-import { auth } from "../firebase"
+import { db, auth } from "../firebase"
 import { loadCSV } from "../utils/csvLoader"
 
 export default function VocabComplete() {
   const router = useRouter()
   const { stage, section, round, isFirstClear } = router.query
-  const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays } = useProfileContext()
+  const { 
+    setMofu, setStreak, 
+    setTotalRounds, 
+    totalLessons, totalRounds 
+  } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])
   const [mofuEarned, setMofuEarned] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
@@ -30,7 +32,7 @@ export default function VocabComplete() {
 
     async function handleComplete() {
 
-      // 1. URLから初クリア判定を受け取る ★修正
+      // 1. URLから初クリア判定を受け取る
       const firstClear = isFirstClear === "true"
 
       // 2. 連続日数を更新して取得
@@ -46,24 +48,13 @@ export default function VocabComplete() {
       const mofu = calcMofu(streak, firstClear)
       await addMofu(mofu)
       if (firstClear) {
-        await addTotalRounds() // ★初クリアだけ
-        setTotalLessons(prev => prev + 1)  // ★追加
+        await addTotalRounds()
+        setTotalRounds(prev => prev + 1)  // ★バグ修正: setTotalLessons → setTotalRounds
       } 
       setMofuEarned(mofu)
-      setMofu(prev => prev + mofu)  // ★追加
+      setMofu(prev => prev + mofu)
 
-      // 4. 累計レッスン数を取得
-      //const totalLessons = await getTotalLessons()
-
-      // 4. カウンター取得
-      const user = auth.currentUser
-      const userSnap = await getDoc(doc(db, "users", user.uid))
-      const userData = userSnap.exists() ? userSnap.data() : {}
-      const totalLessons = userData.totalLessons || 0
-      const totalRounds = userData.totalRounds || 0
-      const totalDays = userData.totalDays || 0
-
-      // Stageクリア判定
+      // 4. Stageクリア判定
       const stageId = stage
       const completedStages = []
 
@@ -79,6 +70,7 @@ export default function VocabComplete() {
       }))
 
       // vocab_roundsに全round_idが存在するか確認
+      const user = auth.currentUser
       const { getDocs, collection } = await import("firebase/firestore")
       const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
       const clearedRoundIds = new Set(roundsSnap.docs.map(d => d.id))
@@ -86,14 +78,13 @@ export default function VocabComplete() {
       const isStageComplete = allRoundIds.every(id => clearedRoundIds.has(id))
       if (isStageComplete) completedStages.push(stageId)
 
-      // バッジチェック
+      // 5. バッジチェック（Contextの値を使う）
       const badges = await checkAndEarnBadges({
         streak,
         totalLessons,
-        totalRounds: totalRounds + (firstClear ? 1 : 0),  // ★初クリアなら+1
-        totalDays,
+        totalRounds: totalRounds + (firstClear ? 1 : 0),
         completedStages,
-        isUnit1Complete: false,
+        isUnitComplete: null,
         isPerfect: false,
       })
       if (badges.length > 0) {
