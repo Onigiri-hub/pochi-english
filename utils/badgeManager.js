@@ -75,7 +75,7 @@ export async function checkAndEarnBadges({
     }
   };
   // 既存
-  await check("first_clear", totalLessons >= 1);
+  await check("first_clear", totalLessons >= 1 || totalRounds >= 1);
   await check("lesson_5", totalLessons >= 5);
   await check("lesson_10", totalLessons >= 10);
   await check("unit1_complete", isUnit1Complete);

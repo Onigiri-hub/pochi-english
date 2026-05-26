@@ -15,6 +15,8 @@ export default function LessonComplete() {
   const { setMofu, setStreak, setTotalLessons, setTotalDays, totalLessons, totalRounds, totalDays } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])   // 新しく取ったバッジオブジェクトの配列
   const [mofuEarned, setMofuEarned] = useState(0)
+  const [streakCount, setStreakCount] = useState(0)
+  const [showStreakPopup, setShowStreakPopup] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
   const [showRest, setShowRest] = useState(false)
 
@@ -35,8 +37,13 @@ export default function LessonComplete() {
       const { isFirstClear } = await saveProgress(unit, Number(order));
 
       // 2. 連続日数を更新して取得
-      const streak = await updateStreak();
-      setStreak(streak)  // ★追加
+      const { count: streak, isFirstToday } = await updateStreak()
+      setStreak(streak)
+
+      if (isFirstToday && streak >= 2) {
+        setStreakCount(streak)
+        setShowStreakPopup(true)
+      }
 
       // 3. モフを計算して加算
       const mofu = calcMofu(streak, isFirstClear);
@@ -79,9 +86,7 @@ export default function LessonComplete() {
           .map(id => badgeList.find(b => b.badge_id === id))
           .filter(Boolean)
         setNewBadges(badgeObjects)
-        setShowPopup(true)
-      } else if (mofu > 0) {
-        setShowPopup(true)
+        if (!(isFirstToday && streak >= 2)) setShowPopup(true)  // streakポップアップがなければ即表示
       }
     }
 
@@ -141,6 +146,58 @@ export default function LessonComplete() {
           )}
 
         </div>
+
+        {/* 連続学習ポップアップ */}
+        {showStreakPopup && (
+          <>
+            <div
+              onClick={() => {
+                setShowStreakPopup(false)
+                if (newBadges.length > 0) setShowPopup(true)
+              }}
+              style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.5)", zIndex: 100 }}
+            />
+            <div style={{
+              position: "fixed",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              background: "white",
+              borderRadius: "20px",
+              padding: "30px 24px",
+              zIndex: 101,
+              textAlign: "center",
+              minWidth: "280px",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.2)"
+            }}>
+              <div style={{ fontSize: "48px", marginBottom: "8px" }}>🔥</div>
+              <div style={{ fontSize: "22px", fontWeight: "bold", color: "#FF9F43" }}>
+                {streakCount}日連続！
+              </div>
+              <div style={{ fontSize: "14px", color: "#888", margin: "8px 0 20px" }}>
+                すごい！頑張ってるね！
+              </div>
+              <button
+                onClick={() => {
+                  setShowStreakPopup(false)
+                  if (newBadges.length > 0) setShowPopup(true)
+                }}
+                style={{
+                  padding: "10px 30px",
+                  borderRadius: "20px",
+                  border: "none",
+                  background: "#FF9F43",
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: "16px",
+                  cursor: "pointer",
+                }}
+              >
+                やった！
+              </button>
+            </div>
+          </>
+        )}
 
         {/* バッジ獲得ポップアップ */}
         {showPopup && newBadges.length > 0 && (
