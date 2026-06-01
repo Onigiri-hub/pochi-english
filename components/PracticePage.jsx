@@ -172,7 +172,6 @@ export default function PracticePage({ questions }) {
     }
   }
 
-
   function next(){
     if(index < questions.length-1){
       setIndex(i=>i+1)
@@ -180,10 +179,11 @@ export default function PracticePage({ questions }) {
       setChips([])
       setResult(null)
     }else{
-      router.push(`/lessonComplete?unit=${unit}&order=${order}`)
+      const isExtra = lesson?.includes("extra")
+      router.push(`/lessonComplete?unit=${unit}&order=${order}&extra=${isExtra}`)
     }
   }
-
+  
   return (
 
     <div className="app">

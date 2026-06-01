@@ -7,6 +7,7 @@ import Navigation from "../components/Navigation";
 export default function LessonList() {
   const [lessons, setLessons] = useState([])
   const [progress, setProgress] = useState(1)
+  const [hasExtra, setHasExtra] = useState(false) 
   const router = useRouter()
   const { unit } = router.query
 
@@ -20,9 +21,24 @@ export default function LessonList() {
 
       setLessons(data.filter(l => l.unit_NO === unit))
       setProgress(await getProgress(unit) || 1)
-    }
 
+      // エクストラCSVが存在するかチェック
+      try {
+        const extraRes = await fetch(`/data/practice/u${unit}_extra.csv`)
+        // ファイルがあれば200、なければ404が返る
+        if (extraRes.ok) {
+          const extraText = await extraRes.text()
+          // 中身が空っぽやHTMLエラーページじゃないか軽く確認
+          if (extraText && !extraText.trim().startsWith("<")) {
+            setHasExtra(true)
+          }
+        }
+      } catch (e) {
+        setHasExtra(false)
+      }
+    }    
     load()
+
   }, [unit])
 
   function goLesson(l) {
@@ -96,6 +112,25 @@ export default function LessonList() {
           </div>
         );
       })}
+
+      {/* エクストラLesson（全Lessonクリア済み＆CSVがあるときだけ表示） */}
+      {hasExtra && progress > Number(lessons[lessons.length - 1]?.lesson_order) && (
+        <div className="lessonRow">
+          <div
+            className="lessonIcon current"
+            style={{ backgroundColor: "#FFD54F" }}
+            onClick={() => router.push(`/testPractice?lesson=u${unit}_extra`)}
+          >
+            <img
+              src="/images/icons/practice_icon.png"
+              className="iconImage"
+            />
+          </div>
+          <div className="lessonInfo">
+            <div className="lessonName">ひたすら復習！</div>
+          </div>
+        </div>
+      )}
 
       <Navigation />
     </div>

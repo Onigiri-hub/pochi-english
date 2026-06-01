@@ -13,6 +13,17 @@ export default function TestPractice() {
 
   console.log("lesson:", lesson)
 
+  function shuffle(array) {
+    const copy = [...array]
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      const temp = copy[i]
+      copy[i] = copy[j]
+      copy[j] = temp
+    }
+    return copy
+  }
+
   useEffect(() => {
 
     if(!router.isReady) return
@@ -26,7 +37,12 @@ export default function TestPractice() {
 
       console.log("csv data:", data)
 
-      const q = getPracticeQuestions(data)
+      let q = getPracticeQuestions(data)
+
+      // エクストラLessonならシャッフルして上から10問
+      if (lesson.includes("extra")) {
+        q = shuffle(q).slice(0, 10)
+      }
 
       console.log("questions:", q)
 

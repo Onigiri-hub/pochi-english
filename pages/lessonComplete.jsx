@@ -9,7 +9,7 @@ import { updateStreak, calcMofu, addMofu, addTotalLessons } from "../utils/mofuM
 
 export default function LessonComplete() {
   const router = useRouter()
-  const { unit, order, isPerfect } = router.query
+  const { unit, order, isPerfect, extra } = router.query
   const { 
     setMofu, setStreak, 
     setTotalLessons, totalLessons, 
@@ -35,6 +35,47 @@ export default function LessonComplete() {
 
     async function updateProgress() {
       if (cancelled) return;
+
+      const isExtra = extra === "true"
+
+      // ★ エクストラLessonの場合：モフ+3固定、進捗・初回判定はスキップ
+      if (isExtra) {
+        // streakは更新する（学習した事実として）
+        const { count: streak, isFirstToday } = await updateStreak()
+        setStreak(streak)
+
+        if (isFirstToday && streak >= 2) {
+          setStreakCount(streak)
+          setShowStreakPopup(true)
+        }
+
+        // モフ+3固定
+        await addMofu(3)
+        setMofuEarned(3)
+        setMofu(prev => prev + 3)
+
+        // バッジチェック（累計Lessonは増やさない＝totalLessonsそのまま）
+        const newBadgeIds = await checkAndEarnBadges({
+          streak,
+          totalLessons,
+          totalRounds,
+          isUnitComplete: null,
+          isPerfect: false,
+        })
+
+        if (newBadgeIds.length > 0) {
+          const badgeList = await loadBadgeList()
+          const badgeObjects = newBadgeIds
+            .map(id => badgeList.find(b => b.badge_id === id))
+            .filter(Boolean)
+          setNewBadges(badgeObjects)
+          if (!(isFirstToday && streak >= 2)) setShowPopup(true)
+        }
+
+        return  // ★ 通常処理はやらずに終了
+      }
+
+      // ===== ここから下は通常Lessonの処理（今まで通り）=====
 
       // 1. 進捗保存 → 初クリアかどうかが返ってくる
       const { isFirstClear } = await saveProgress(unit, Number(order));
@@ -84,7 +125,7 @@ export default function LessonComplete() {
           .map(id => badgeList.find(b => b.badge_id === id))
           .filter(Boolean)
         setNewBadges(badgeObjects)
-        if (!(isFirstToday && streak >= 2)) setShowPopup(true)  // streakポップアップがなければ即表示
+        if (!(isFirstToday && streak >= 2)) setShowPopup(true)
       }
     }
 
