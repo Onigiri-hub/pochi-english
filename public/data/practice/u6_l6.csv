@@ -1,14 +1,14 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u6_l6_p1,u6_l6,user,05.png,left,right,1,,1,_____________ .,run は自動詞だよ。,She runs fast.,run は自動詞だよ。,彼女は速く走る。,,She runs fast,She|runs|fast,6-6-1-a.mp3,,She runs fast,6-6-1,,y
-u6_l6_p2,u6_l6,user,05.png,left,right,1,,1,_____________ .,smilesは自動詞だよ。,She smiles at me.,smilesは自動詞だよ。,彼女は私に微笑む,,She smiles at me,She|smiles|at|me,6-6-2-a.mp3,,She smiles at me,6-6-2,,y
-u6_l6_p3,u6_l6,user,05.png,left,right,1,,1,_____________ .,likeは他動詞だよ。「何を」好きなのかが欲しいね。,You like music.,likeは他動詞だよ。「何を」好きなのかが欲しいね。,あなたは音楽がすきだ。,,You like music,You|like|music,6-6-3-a.mp3,,You like music,6-6-3,,y
-u6_l6_p4,u6_l6,user,05.png,left,right,1,,1,_____________ .,talkは自動詞だよ。,We talk to her.,talkは自動詞だよ。,私たちは彼女に話しかけます。,,We talk to her,We|talk|to|her,6-6-4-a.mp3,,We talk to her,6-6-4,,y
-u6_l6_p5,u6_l6,user,05.png,left,right,1,,1,_____________ .,arriveは自動詞だよ。,They arrive at 3 o’clock.,arriveは自動詞だよ。,彼らは3時に着く。,,They arrive at 3 o’clock,They|arrive|at|3|o’clock,6-6-5-a.mp3,,They arrive at 3 o’clock,6-6-5,,y
-u6_l6_p6,u6_l6,user,05.png,left,right,1,,1,_____________ .,eatは他動詞だよ。「何を」食べるのかが欲しいね,I eat breakfast.,eatは他動詞だよ。「何を」食べるのかが欲しいね,私は朝食をたべます。,,I eat breakfast,I|eat|breakfast,6-6-6-a.mp3,,I eat breakfast,6-6-6,,y
-u6_l6_p7,u6_l6,user,05.png,left,right,1,,1,_____________ .,readは他動詞だよ。「何を」読むのかが欲しいね。,He reads a book to his children.,readは他動詞だよ。「何を」読むのかが欲しいね。,彼は子供たちに本を読んであげます。,,He reads a book to his children,He|reads|a|book|to|his|children,6-6-7-a.mp3,,He reads a book to his children,6-6-7,,y
-u6_l6_p8,u6_l6,user,05.png,left,right,1,,1,_____________ .,makeは他動詞だよ。「何を」作るのかが欲しいね。,She makes dinner.,makeは他動詞だよ。「何を」作るのかが欲しいね。,彼女はディナーを作る。,,She makes dinner,She|makes|dinner,6-6-8-a.mp3,,She makes dinner,6-6-8,,y
-u6_l6_p9,u6_l6,user,05.png,left,right,1,,1,_____________ .,walksは自動詞だよ。,He walks to the park.,walksは自動詞だよ。,彼は公園に歩いていく。,,He walks to the park,He|walks|to|the|park,6-6-9-a.mp3,,He walks to the park,6-6-9,,y
-u6_l6_p10,u6_l6,user,05.png,left,right,1,,1,_____________ .,watchは他動詞だよ。「何を」見るのかが欲しいね。,We watch TV every weekend.,watchは他動詞だよ。「何を」見るのかが欲しいね。,私たちは毎週末テレビをみるよ。,,We watch TV every weekend,We|watch|TV|every|weekend,6-6-10-a.mp3,,We watch TV every weekend,6-6-10,,y
-u6_l6_p11,u6_l6,user,05.png,left,right,1,,1,_____________ .,playは他動詞だよ。「何を」プレイするのかが欲しいね。,They play soccer.,playは他動詞だよ。「何を」プレイするのかが欲しいね。,彼らはサッカーをします,,They play soccer,They|play|soccer,6-6-11-a.mp3,,They play soccer,6-6-11,,y
-u6_l6_p12,u6_l6,user,05.png,left,right,1,,1,_____________ .,sleepは自動詞だよ。,You sleep well every day.,sleepは自動詞だよ。,あなたは毎日良く寝る。,,You sleep well every day,You|sleep|well|every|day,6-6-12-a.mp3,,You sleep well every day,6-6-12,,y
-u6_l6_p13,u6_l6,user,05.png,left,right,1,,1,_____________ .,useは他動詞だよ。「何を」使うのかが欲しいね。,I use this app.,useは他動詞だよ。「何を」使うのかが欲しいね。,私はこのアプリを使う。,,I use this app,I|use|this|app,6-6-13-a.mp3,,I use this app,6-6-13,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u6_l6_p1,u6_l6,user,05.png,left,right,1,,1,_____________ .,run は自動詞だよ。,彼女は速く走る。,,She runs fast,She|runs|fast,6-6-1-a.mp3,
+u6_l6_p2,u6_l6,user,05.png,left,right,1,,1,_____________ .,smilesは自動詞だよ。,彼女は私に微笑む,,She smiles at me,She|smiles|at|me,6-6-2-a.mp3,
+u6_l6_p3,u6_l6,user,05.png,left,right,1,,1,_____________ .,likeは他動詞だよ。「何を」好きなのかが欲しいね。,あなたは音楽がすきだ。,,You like music,You|like|music,6-6-3-a.mp3,
+u6_l6_p4,u6_l6,user,05.png,left,right,1,,1,_____________ .,talkは自動詞だよ。,私たちは彼女に話しかけます。,,We talk to her,We|talk|to|her,6-6-4-a.mp3,
+u6_l6_p5,u6_l6,user,05.png,left,right,1,,1,_____________ .,arriveは自動詞だよ。,彼らは3時に着く。,,They arrive at 3 o’clock,They|arrive|at|3|o’clock,6-6-5-a.mp3,
+u6_l6_p6,u6_l6,user,05.png,left,right,1,,1,_____________ .,eatは他動詞だよ。「何を」食べるのかが欲しいね,私は朝食をたべます。,,I eat breakfast,I|eat|breakfast,6-6-6-a.mp3,
+u6_l6_p7,u6_l6,user,05.png,left,right,1,,1,_____________ .,readは他動詞だよ。「何を」読むのかが欲しいね。,彼は子供たちに本を読んであげます。,,He reads a book to his children,He|reads|a|book|to|his|children,6-6-7-a.mp3,
+u6_l6_p8,u6_l6,user,05.png,left,right,1,,1,_____________ .,makeは他動詞だよ。「何を」作るのかが欲しいね。,彼女はディナーを作る。,,She makes dinner,She|makes|dinner,6-6-8-a.mp3,
+u6_l6_p9,u6_l6,user,05.png,left,right,1,,1,_____________ .,walksは自動詞だよ。,彼は公園に歩いていく。,,He walks to the park,He|walks|to|the|park,6-6-9-a.mp3,
+u6_l6_p10,u6_l6,user,05.png,left,right,1,,1,_____________ .,watchは他動詞だよ。「何を」見るのかが欲しいね。,私たちは毎週末テレビをみるよ。,,We watch TV every weekend,We|watch|TV|every|weekend,6-6-10-a.mp3,
+u6_l6_p11,u6_l6,user,05.png,left,right,1,,1,_____________ .,playは他動詞だよ。「何を」プレイするのかが欲しいね。,彼らはサッカーをします,,They play soccer,They|play|soccer,6-6-11-a.mp3,
+u6_l6_p12,u6_l6,user,05.png,left,right,1,,1,_____________ .,sleepは自動詞だよ。,あなたは毎日良く寝る。,,You sleep well every day,You|sleep|well|every|day,6-6-12-a.mp3,
+u6_l6_p13,u6_l6,user,05.png,left,right,1,,1,_____________ .,useは他動詞だよ。「何を」使うのかが欲しいね。,私はこのアプリを使う。,,I use this app,I|use|this|app,6-6-13-a.mp3,

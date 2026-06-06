@@ -1,19 +1,19 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u6_l7_p1,u6_l7,user,,left,none,1,,0,_____________ .,,This is my bag.,,これは私のかばんだよ。,,This is my bag,This|is|my|bag,6-2-3-a.mp3,,This is my bag,6-2-3,,y
-u6_l7_p2,u6_l7,user,,left,none,1,,0,_____________ .,,That is your desk.,,あれはあなたの机だよ,,That is your desk,That|is|your|desk,6-2-4-a.mp3,,That is your desk,6-2-4,,y
-u6_l7_p3,u6_l7,user,,left,none,1,,0,_____________ .,,This eraser is mine.,,この消しゴムは私のだよ,,This eraser is mine,This|eraser|is|mine,6-2-5-a.mp3,,This eraser is mine,6-2-5,,y
-u6_l7_p4,u6_l7,user,,left,none,1,,0,_____________ .,,She helps me.,,彼女は私を手伝ってくれるよ。,,She helps me,She|helps|me,6-2-8-a.mp3,,She helps me,6-2-8,,y
-u6_l7_p5,u6_l7,user,,left,none,1,,0,_____________ .,,I call him every day.,,私は彼に毎日連絡するよ。,,I call him every day,I|call|him|every|day,6-2-9-a.mp3,,I call him every day,6-2-9,,y
-u6_l7_p6,u6_l7,user,,left,none,1,,0,_____________ ?,,Do you like my picture?,,私の絵、好き？,,Do you like my picture,Do|you|like|my|picture,6-2-14-a.mp3,,Do you like my picture,6-2-14,,y
-u6_l7_p7,u6_l7,user,,left,none,1,,0,"_________ ,　________ .",,"This is mine, not yours.",,これは私の。あなたのじゃないよ。,,This is mine not yours,This|is|mine|not|yours,6-2-15-a.mp3,,This is mine not yours,6-2-15,,y
-u6_l7_p8,u6_l7,user,,left,none,1,,0,_____________ .,,I show you my notebook.,,私のノート、あなたに見せるよ。,,I show you my notebook,I|show|you|my|notebook,6-2-17-a.mp3,,I show you my notebook,6-2-17,,y
-u6_l7_p9,u6_l7,user,,left,none,1,,0,_____________ .,,I often see them.,,私はよく彼らを見かけるよ。,,I often see them,I|often|see|them,6-4-3-a.mp3,,I often see them,6-4-3,,y
-u6_l7_p10,u6_l7,user,,left,none,1,,0,_____________ .,,I use it at the park.,,私はそれを公園で使います。,,I use it at the park,I|use|it|at|the|park,6-4-4-a.mp3,,I use it at the park,6-4-4,,y
-u6_l7_p11,u6_l7,user,,left,none,1,,0,_____________ .,,This is Mary’s bag.,,これはメアリーのバッグだよ。,,This is Mary’s bag|This bag is Mary's,This|is|Mary’s|bag,6-4-5-a.mp3,,This is Mary’s bag,6-4-5,,y
-u6_l7_p12,u6_l7,user,,left,none,1,,0,_____________ .,,These are their pens.,,これらは、彼らのペンだよ。,,These are their pens,These|are|their|pens,6-4-7-a.mp3,,These are their pens,6-4-7,,y
-u6_l7_p13,u6_l7,user,,left,none,1,,0,_____________ .,,This is our room.,,これは私たちの部屋だよ。,,This is our room,This|is|our|room,6-4-8-a.mp3,,This is our room,6-4-8,,y
-u6_l7_p14,u6_l7,user,,left,none,1,,0,_____________ .,,This room is ours.,,この部屋は私たちのだよ。,,This room is ours,This|room|is|ours,6-4-12-a.mp3,,This room is ours,6-4-12,,y
-u6_l7_p15,u6_l7,user,,left,none,1,,0,_____________ .,,I show her my picture.,,彼女に私の絵を見せます。,,I show her my picture,I|show|her|my|picture,6-4-14-a.mp3,,I show her my picture,6-4-14,,y
-u6_l7_p16,u6_l7,user,,left,none,1,,0,_____________ .,,That book is hers.,,あの本は彼女のです。,,That book is hers,That|book|is|hers,6-4-15-a.mp3,,That book is hers,6-4-15,,y
-u6_l7_p17,u6_l7,user,,left,none,1,,0,_____________ .,,They help us.,,彼らは私たちを手伝ってくれる。,,They help us,They|help|us,6-4-17-a.mp3,,They help us,6-4-17,,y
-u6_l7_p18,u6_l7,user,,left,none,1,,0,_____________ .,,I use his computer.,,私は彼のコンピューターを使います。,,I use his computer,I|use|his|computer,6-4-18-a.mp3,,I use his computer,6-4-18,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u6_l7_p1,u6_l7,user,,left,none,1,,0,_____________ .,,これは私のかばんだよ。,,This is my bag,This|is|my|bag,6-2-3-a.mp3,
+u6_l7_p2,u6_l7,user,,left,none,1,,0,_____________ .,,あれはあなたの机だよ,,That is your desk,That|is|your|desk,6-2-4-a.mp3,
+u6_l7_p3,u6_l7,user,,left,none,1,,0,_____________ .,,この消しゴムは私のだよ,,This eraser is mine,This|eraser|is|mine,6-2-5-a.mp3,
+u6_l7_p4,u6_l7,user,,left,none,1,,0,_____________ .,,彼女は私を手伝ってくれるよ。,,She helps me,She|helps|me,6-2-8-a.mp3,
+u6_l7_p5,u6_l7,user,,left,none,1,,0,_____________ .,,私は彼に毎日連絡するよ。,,I call him every day,I|call|him|every|day,6-2-9-a.mp3,
+u6_l7_p6,u6_l7,user,,left,none,1,,0,_____________ ?,,私の絵、好き？,,Do you like my picture,Do|you|like|my|picture,6-2-14-a.mp3,
+u6_l7_p7,u6_l7,user,,left,none,1,,0,"_________ ,　________ .",,これは私の。あなたのじゃないよ。,,This is mine not yours,This|is|mine|not|yours,6-2-15-a.mp3,
+u6_l7_p8,u6_l7,user,,left,none,1,,0,_____________ .,,私のノート、あなたに見せるよ。,,I show you my notebook,I|show|you|my|notebook,6-2-17-a.mp3,
+u6_l7_p9,u6_l7,user,,left,none,1,,0,_____________ .,,私はよく彼らを見かけるよ。,,I often see them,I|often|see|them,6-4-3-a.mp3,
+u6_l7_p10,u6_l7,user,,left,none,1,,0,_____________ .,,私はそれを公園で使います。,,I use it at the park,I|use|it|at|the|park,6-4-4-a.mp3,
+u6_l7_p11,u6_l7,user,,left,none,1,,0,_____________ .,,これはメアリーのバッグだよ。,,This is Mary’s bag|This bag is Mary's,This|is|Mary’s|bag,6-4-5-a.mp3,
+u6_l7_p12,u6_l7,user,,left,none,1,,0,_____________ .,,これらは、彼らのペンだよ。,,These are their pens,These|are|their|pens,6-4-7-a.mp3,
+u6_l7_p13,u6_l7,user,,left,none,1,,0,_____________ .,,これは私たちの部屋だよ。,,This is our room,This|is|our|room,6-4-8-a.mp3,
+u6_l7_p14,u6_l7,user,,left,none,1,,0,_____________ .,,この部屋は私たちのだよ。,,This room is ours,This|room|is|ours,6-4-12-a.mp3,
+u6_l7_p15,u6_l7,user,,left,none,1,,0,_____________ .,,彼女に私の絵を見せます。,,I show her my picture,I|show|her|my|picture,6-4-14-a.mp3,
+u6_l7_p16,u6_l7,user,,left,none,1,,0,_____________ .,,あの本は彼女のです。,,That book is hers,That|book|is|hers,6-4-15-a.mp3,
+u6_l7_p17,u6_l7,user,,left,none,1,,0,_____________ .,,彼らは私たちを手伝ってくれる。,,They help us,They|help|us,6-4-17-a.mp3,
+u6_l7_p18,u6_l7,user,,left,none,1,,0,_____________ .,,私は彼のコンピューターを使います。,,I use his computer,I|use|his|computer,6-4-18-a.mp3,

@@ -1,8 +1,8 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u5_l4_p1,u5_l4,user,,left,none,1,,1,_____________ .,,He eats breakfast.,,彼は朝ごはんを食べます。,,He eats breakfast,He|eats|breakfast,5-4-1-a.mp3,,He eats breakfast,5-4-1,,
-u5_l4_p2,u5_l4,user,,left,none,1,,1,_____________ .,,She studies English.,,彼女は英語を学んでるよ。,,She studies English,She|studies|English,5-4-2-a.mp3,,She studies English,5-4-2,,
-u5_l4_p3,u5_l4,user,,left,none,1,,1,_____________ .,,He drinks water.,,彼は水を飲むよ。,,He drinks water,He|drinks|water,5-4-3-a.mp3,,He drinks water,5-4-3,,
-u5_l4_p4,u5_l4,user,,left,none,1,,1,_____________ .,,She makes dinner.,,彼女はディナーを作ります。,,She makes dinner,She|makes|dinner,5-4-4-a.mp3,,She makes dinner,5-4-4,,
-u5_l4_p5,u5_l4,user,,left,none,1,,1,_____________ .,,He plays soccer.,,彼はサッカーをプレイします。,,He plays soccer,He|plays|soccer,5-4-5-a.mp3,,He plays soccer,5-4-5,,
-u5_l4_p6,u5_l4,user,,left,none,1,,1,_____________ .,,She likes music.,,彼女は音楽が好きです。,,She likes music,She|likes|music,5-4-6-a.mp3,,She likes music,5-4-6,,
-u5_l4_p7,u5_l4,user,user,left,left,1,1,1,I have a cat.,_____________ .,I have a cat.,It runs fast.,私は猫を飼ってるんだ。,そいつ、早く走るんだよ。,It runs fast,It|runs|fast,5-4-7-a.mp3,5-4-7-b.mp3,It runs fast,5-4-7,5-4-7,
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u5_l4_p1,u5_l4,user,,left,none,1,,1,_____________ .,,彼は朝ごはんを食べます。,,He eats breakfast,He|eats|breakfast,5-4-1-a.mp3,
+u5_l4_p2,u5_l4,user,,left,none,1,,1,_____________ .,,彼女は英語を学んでるよ。,,She studies English,She|studies|English,5-4-2-a.mp3,
+u5_l4_p3,u5_l4,user,,left,none,1,,1,_____________ .,,彼は水を飲むよ。,,He drinks water,He|drinks|water,5-4-3-a.mp3,
+u5_l4_p4,u5_l4,user,,left,none,1,,1,_____________ .,,彼女はディナーを作ります。,,She makes dinner,She|makes|dinner,5-4-4-a.mp3,
+u5_l4_p5,u5_l4,user,,left,none,1,,1,_____________ .,,彼はサッカーをプレイします。,,He plays soccer,He|plays|soccer,5-4-5-a.mp3,
+u5_l4_p6,u5_l4,user,,left,none,1,,1,_____________ .,,彼女は音楽が好きです。,,She likes music,She|likes|music,5-4-6-a.mp3,
+u5_l4_p7,u5_l4,user,user,left,left,1,1,1,I have a cat.,_____________ .,私は猫を飼ってるんだ。,そいつ、早く走るんだよ。,It runs fast,It|runs|fast,5-4-7-a.mp3,5-4-7-b.mp3

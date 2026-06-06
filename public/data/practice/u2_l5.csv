@@ -1,11 +1,11 @@
-question_id,lesson_id,icon_first,icon_second,ja_show_first,position_first,position_second,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second
-u2_l5_q1,u2_l5,05.png,user,1,left,right,1,1,What sports do you like?,______ !,What sports do you like?,Soccer!,スポーツは何が好き？,サッカー！,Soccer,Soccer|Soccers|a,2-5-1-a.mp3,2-5-1-b.mp3,Soccer Soccers a,2-5-1,2-5-1
-u2_l5_q2,u2_l5,05.png,user,1,left,right,1,1,Would you like some coffee?,"__　______ , please.",Would you like some coffee?,"A coffee, please.",コーヒー飲む？,一杯お願い,A coffee,A|coffee|coffees,2-5-2-a.mp3,2-5-2-b.mp3,A coffee coffees,2-5-2,2-5-2
-u2_l5_q3,u2_l5,05.png,user,1,left,right,1,1,What did you spill?,______ .,What did you spill?,Milk.,何こぼしたの？,牛乳。,Milk,A|Milk,2-5-3-a.mp3,2-5-3-b.mp3,A Milk,2-5-3,2-5-3
-u2_l5_q4,u2_l5,05.png,user,1,left,right,1,1,What can you see in the sky?,_______  !,What can you see in the sky?,Stars!,お空に何が見える？,星！,Stars,Stars|Star,2-5-4-a.mp3,2-5-4-b.mp3,Stars Star,2-5-4,2-5-4
-u2_l5_q5,u2_l5,05.png,user,1,left,right,1,1,What do you put in a pool?,______ !,What do you put in a pool?,Water!,プールに入れるものといえば？,水！,Water,Water|Waters,2-5-5-a.mp3,2-5-5-b.mp3,Water Waters,2-5-5,2-5-5
-u2_l5_q6,u2_l5,05.png,user,1,left,right,1,1,What’s in your bag?,"__　_____ ,　__　_____ ,  and three chocolates ! ",What’s in your bag?,"A towel, a pen, and three chocolates!",かばんの中に何が入ってるの？,タオルと、ペンと、チョコ3つ！,A towel a pen,A|towel|a|pen,2-5-6-a.mp3,2-5-6-b.mp3,A towel a pen,2-5-6,2-5-6
-u2_l5_q7,u2_l5,05.png,user,1,left,right,1,1,What do you want to do tomorrow?,_____  !,What do you want to do tomorrow?,Tennis!,明日何したい？,テニス！,Tennis,Tennis|A|Tennises,2-5-7-a.mp3,2-5-7-b.mp3,Tennis A Tennises,2-5-7,2-5-7
-u2_l5_q8,u2_l5,05.png,user,1,left,right,1,1,What did you buy?,_____　_______ .,What did you buy?,Three books.,何買ったの？,本三冊,Three books,Three|books|book,2-5-8-a.mp3,2-5-8-b.mp3,Three books book,2-5-8,2-5-8
-u2_l5_q9,u2_l5,05.png,user,1,left,right,1,1,What do you have?,__　____ .,What do you have?,A frog.,何もってるの？,カエル。,A frog,A|frog,2-5-9-a.mp3,2-5-9-b.mp3,A frog,2-5-9,2-5-9
-u2_l5_q10,u2_l5,05.png,user,1,left,right,1,1,What did you eat?,__　_____ .,What did you eat?,A salad.,何食べた？,サラダ。,A salad,A|salad,2-5-10-a.mp3,2-5-10-b.mp3,A salad,2-5-10,2-5-10
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u2_l5_p1,u2_l5,05.png,user,left,right,1,1,1,What sports do you like?,______ !,スポーツは何が好き？,サッカー！,Soccer,Soccer|Soccers|a,2-5-1-a.mp3,2-5-1-b.mp3
+u2_l5_p2,u2_l5,05.png,user,left,right,1,1,1,Would you like some coffee?,"__　______ , please.",コーヒー飲む？,一杯お願い,A coffee,A|coffee|coffees,2-5-2-a.mp3,2-5-2-b.mp3
+u2_l5_p3,u2_l5,05.png,user,left,right,1,1,1,What did you spill?,______ .,何こぼしたの？,牛乳。,Milk,A|Milk,2-5-3-a.mp3,2-5-3-b.mp3
+u2_l5_p4,u2_l5,05.png,user,left,right,1,1,1,What can you see in the sky?,_______  !,お空に何が見える？,星！,Stars,Stars|Star,2-5-4-a.mp3,2-5-4-b.mp3
+u2_l5_p5,u2_l5,05.png,user,left,right,1,1,1,What do you put in a pool?,______ !,プールに入れるものといえば？,水！,Water,Water|Waters,2-5-5-a.mp3,2-5-5-b.mp3
+u2_l5_p6,u2_l5,05.png,user,left,right,1,1,1,What’s in your bag?,"__　_____ ,　__　_____ ,  and three chocolates ! ",かばんの中に何が入ってるの？,タオルと、ペンと、チョコ3つ！,A towel a pen,A|towel|a|pen,2-5-6-a.mp3,2-5-6-b.mp3
+u2_l5_p7,u2_l5,05.png,user,left,right,1,1,1,What do you want to do tomorrow?,_____  !,明日何したい？,テニス！,Tennis,Tennis|A|Tennises,2-5-7-a.mp3,2-5-7-b.mp3
+u2_l5_p8,u2_l5,05.png,user,left,right,1,1,1,What did you buy?,_____　_______ .,何買ったの？,本三冊,Three books,Three|books|book,2-5-8-a.mp3,2-5-8-b.mp3
+u2_l5_p9,u2_l5,05.png,user,left,right,1,1,1,What do you have?,__　____ .,何もってるの？,カエル。,A frog,A|frog,2-5-9-a.mp3,2-5-9-b.mp3
+u2_l5_p10,u2_l5,05.png,user,left,right,1,1,1,What did you eat?,__　_____ .,何食べた？,サラダ。,A salad,A|salad,2-5-10-a.mp3,2-5-10-b.mp3

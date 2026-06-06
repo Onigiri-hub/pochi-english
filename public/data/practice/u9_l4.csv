@@ -1,10 +1,10 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u9_l4_p1,u9_l4,user,,left,none,1,,1,________________ .,,She talks about her dog happily.,,彼女は犬のことを幸せそうに話すよ。,,She talks about her dog happily,She|talks|about|her|dog|happily,9-4-1-a.mp3,,She talks about her dog happily,9-4-1,,y
-u9_l4_p2,u9_l4,user,,left,none,1,,1,________________ .,,I wash my hands before lunch.,,私はランチの前に手を洗うよ。,,I wash my hands before lunch,I|wash|my|hands|before|lunch,9-4-2-a.mp3,,I wash my hands before lunch,9-4-2,,y
-u9_l4_p3,u9_l4,user,,left,none,1,,1,________________ .,,I drink coffee after lunch.,,私はランチの後、コーヒーを飲むよ。,,I drink coffee after lunch,I|drink|coffee|after|lunch,9-4-3-a.mp3,,I drink coffee after lunch,9-4-3,,y
-u9_l4_p4,u9_l4,user,,left,none,1,,1,________________ .,,She goes to school without breakfast sometimes.,,彼女は時々、朝食抜きで学校に行くよ。,,She goes to school without breakfast sometimes|She sometimes goes to school without breakfast,She|goes|to|school|without|breakfast|sometimes,9-4-4-a.mp3,,She goes to school without breakfast sometimes,9-4-4,,y
-u9_l4_p5,u9_l4,user,,left,none,1,,1,________________ .,,It takes about 10 minutes on foot.,,歩いて大体10分かかるよ。,,It takes about 10 minutes on foot,It|takes|about|10|minutes|on|foot,9-4-5-a.mp3,,It takes about 10 minutes on foot,9-4-5,,y
-u9_l4_p6,u9_l4,user,,left,none,1,,1,________________ .,,This book is about English grammar.,,この本は英文法についての本だよ。,,This book is about English grammar,This|book|is|about|English|grammar,9-4-6-a.mp3,,This book is about English grammar,9-4-6,,y
-u9_l4_p7,u9_l4,user,,left,none,1,,1,________________ .,,He plays the piano without sheet music.,,彼は楽譜無しでピアノを弾くよ。,,He plays the piano without sheet music,He|plays|the|piano|without|sheet|music,9-4-7-a.mp3,,He plays the piano without sheet music,9-4-7,,y
-u9_l4_p8,u9_l4,user,,left,none,1,,1,________________ .,,I brush my teeth before bed.,,私は寝る前に歯を磨くよ。,,I brush my teeth before bed,I|brush|my|teeth|before|bed,9-4-8-a.mp3,,I brush my teeth before bed,9-4-8,,y
-u9_l4_p9,u9_l4,user,,left,none,1,,1,________________ .,,She walks her dog after dinner.,,彼女は夕食後、犬の散歩をするよ。,,She walks her dog after dinner,She|walks|her|dog|after|dinner,9-4-9-a.mp3,,She walks her dog after dinner,9-4-9,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u9_l4_p1,u9_l4,user,,left,none,1,,1,________________ .,,彼女は犬のことを幸せそうに話すよ。,,She talks about her dog happily,She|talks|about|her|dog|happily,9-4-1-a.mp3,
+u9_l4_p2,u9_l4,user,,left,none,1,,1,________________ .,,私はランチの前に手を洗うよ。,,I wash my hands before lunch,I|wash|my|hands|before|lunch,9-4-2-a.mp3,
+u9_l4_p3,u9_l4,user,,left,none,1,,1,________________ .,,私はランチの後、コーヒーを飲むよ。,,I drink coffee after lunch,I|drink|coffee|after|lunch,9-4-3-a.mp3,
+u9_l4_p4,u9_l4,user,,left,none,1,,1,________________ .,,彼女は時々、朝食抜きで学校に行くよ。,,She goes to school without breakfast sometimes|She sometimes goes to school without breakfast,She|goes|to|school|without|breakfast|sometimes,9-4-4-a.mp3,
+u9_l4_p5,u9_l4,user,,left,none,1,,1,________________ .,,歩いて大体10分かかるよ。,,It takes about 10 minutes on foot,It|takes|about|10|minutes|on|foot,9-4-5-a.mp3,
+u9_l4_p6,u9_l4,user,,left,none,1,,1,________________ .,,この本は英文法についての本だよ。,,This book is about English grammar,This|book|is|about|English|grammar,9-4-6-a.mp3,
+u9_l4_p7,u9_l4,user,,left,none,1,,1,________________ .,,彼は楽譜無しでピアノを弾くよ。,,He plays the piano without sheet music,He|plays|the|piano|without|sheet|music,9-4-7-a.mp3,
+u9_l4_p8,u9_l4,user,,left,none,1,,1,________________ .,,私は寝る前に歯を磨くよ。,,I brush my teeth before bed,I|brush|my|teeth|before|bed,9-4-8-a.mp3,
+u9_l4_p9,u9_l4,user,,left,none,1,,1,________________ .,,彼女は夕食後、犬の散歩をするよ。,,She walks her dog after dinner,She|walks|her|dog|after|dinner,9-4-9-a.mp3,

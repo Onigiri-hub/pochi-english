@@ -1,11 +1,11 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u9_l2_p1,u9_l2,user,,left,none,1,,1,________________ .,,The name of this app is Pochi.,,このアプリの名前はPochiだよ。,,The name of this app is Pochi,The|name|of|this|app|is|Pochi,9-2-1-a.mp3,,The name of this app is Pochi,9-2-1,,y
-u9_l2_p2,u9_l2,user,,left,none,1,,1,________________ .,,The color of her bag is white.,,彼女のかばんの色は白だよ。,,The color of her bag is white,The|color|of|her|bag|is|white,9-2-2-a.mp3,,The color of her bag is white,9-2-2,,y
-u9_l2_p3,u9_l2,user,,left,none,1,,1,________________ .,,She walks with her dog every morning.,,彼女は毎日犬とお散歩してるんだ。,,She walks with her dog every morning,She|walks|with|her|dog|every|morning,9-2-3-a.mp3,,She walks with her dog every morning,9-2-3,,y
-u9_l2_p4,u9_l2,user,,left,none,1,,1,________________ .,,She drinks a cup of coffee every morning.,,彼女は毎朝コーヒーを一杯飲むよ。,,She drinks a cup of coffee every morning,She|drinks|a|cup|of|coffee|every|morning,9-2-4-a.mp3,,She drinks a cup of coffee every morning,9-2-4,,y
-u9_l2_p5,u9_l2,user,,left,none,1,,1,________________ .,,The girl with blue eyes is my friend.,,あの青い目の女の子は、私の友達。,,The girl with blue eyes is my friend,The|girl|with|blue|eyes|is|my|friend,9-2-5-a.mp3,,The girl with blue eyes is my friend,9-2-5,,y
-u9_l2_p6,u9_l2,user,,left,none,1,,1,________________ .,,She cleans her room with a vacuum.,,彼女は掃除機で部屋を掃除するよ。,,She cleans her room with a vacuum,She|cleans|her|room|with|a|vacuum,9-2-6-a.mp3,,She cleans her room with a vacuum,9-2-6,,y
-u9_l2_p7,u9_l2,user,,left,none,1,,1,________________ .,,My school is north of the park.,,私の学校は公園の北だよ。,,My school is north of the park,My|school|is|north|of|the|park,9-2-7-a.mp3,,My school is north of the park,9-2-7,,y
-u9_l2_p8,u9_l2,user,,left,none,1,,1,________________ .,,He sleeps with the window open.,,彼は窓を開けたまま寝るんだ,,He sleeps with the window open,He|sleeps|with|the|window|open,9-2-8-a.mp3,,He sleeps with the window open,9-2-8,,y
-u9_l2_p9,u9_l2,user,,left,none,1,,1,________________ .,,Some of my friends like English.,,友達のうち何人かは英語が好き。,,Some of my friends like English,Some|of|my|friends|like|English,9-2-9-a.mp3,,Some of my friends like English,9-2-9,,y
-u9_l2_p10,u9_l2,user,,left,none,1,,1,________________ .,,He studies with his friends at the library.,,彼は図書館で友達と一緒に勉強するよ。,,He studies with his friends at the library,He|studies|with|his|friends|at|the|library,9-2-10-a.mp3,,He studies with his friends at the library,9-2-10,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u9_l2_p1,u9_l2,user,,left,none,1,,1,________________ .,,このアプリの名前はPochiだよ。,,The name of this app is Pochi,The|name|of|this|app|is|Pochi,9-2-1-a.mp3,
+u9_l2_p2,u9_l2,user,,left,none,1,,1,________________ .,,彼女のかばんの色は白だよ。,,The color of her bag is white,The|color|of|her|bag|is|white,9-2-2-a.mp3,
+u9_l2_p3,u9_l2,user,,left,none,1,,1,________________ .,,彼女は毎日犬とお散歩してるんだ。,,She walks with her dog every morning,She|walks|with|her|dog|every|morning,9-2-3-a.mp3,
+u9_l2_p4,u9_l2,user,,left,none,1,,1,________________ .,,彼女は毎朝コーヒーを一杯飲むよ。,,She drinks a cup of coffee every morning,She|drinks|a|cup|of|coffee|every|morning,9-2-4-a.mp3,
+u9_l2_p5,u9_l2,user,,left,none,1,,1,________________ .,,あの青い目の女の子は、私の友達。,,The girl with blue eyes is my friend,The|girl|with|blue|eyes|is|my|friend,9-2-5-a.mp3,
+u9_l2_p6,u9_l2,user,,left,none,1,,1,________________ .,,彼女は掃除機で部屋を掃除するよ。,,She cleans her room with a vacuum,She|cleans|her|room|with|a|vacuum,9-2-6-a.mp3,
+u9_l2_p7,u9_l2,user,,left,none,1,,1,________________ .,,私の学校は公園の北だよ。,,My school is north of the park,My|school|is|north|of|the|park,9-2-7-a.mp3,
+u9_l2_p8,u9_l2,user,,left,none,1,,1,________________ .,,彼は窓を開けたまま寝るんだ,,He sleeps with the window open,He|sleeps|with|the|window|open,9-2-8-a.mp3,
+u9_l2_p9,u9_l2,user,,left,none,1,,1,________________ .,,友達のうち何人かは英語が好き。,,Some of my friends like English,Some|of|my|friends|like|English,9-2-9-a.mp3,
+u9_l2_p10,u9_l2,user,,left,none,1,,1,________________ .,,彼は図書館で友達と一緒に勉強するよ。,,He studies with his friends at the library,He|studies|with|his|friends|at|the|library,9-2-10-a.mp3,

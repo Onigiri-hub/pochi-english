@@ -1,45 +1,45 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done,,
-u4_l2_p1,u4_l2,user,,left,none,1,,0,__　__　__　______ .,,I am a student.,-,私は学生である。,,I am a student,I|am|a|student,4-2-1-a.mp3,,I am a student,4-2-1,,,,y
-u4_l2_p2,u4_l2,user,,left,none,1,,0,____　__　_　______ .,,She is a doctor.,-,彼女は医者である。,,She is a doctor,She|is|a|doctor,4-2-2-a.mp3,,She is a doctor,4-2-2,,,,y
-u4_l2_p3,u4_l2,user,,left,none,1,,0,___　___　____　______ .,,You are from Osaka.,-,あなたは大阪出身だ。,,You are from Osaka,You|are|from|Osaka,4-2-3-a.mp3,,You are from Osaka,4-2-3,,,,y
-u4_l2_p4,u4_l2,user,,left,none,1,,0,___　___　__　_______ .,,You are a teacher.,-,あなたは先生です。,,You are a teacher,You|are|a|teacher,4-2-4-a.mp3,,You are a teacher,4-2-4,,,,y
-u4_l2_p5,u4_l2,user,,left,none,1,,0,____　__　__　___　_____ .,,He is at the park.,-,彼は公園にいるよ。,,He is at the park,He|is|at|the|park,4-2-5-a.mp3,,He is at the park,4-2-5,,,,y
-u4_l2_p6,u4_l2,user,,left,none,1,,0,___　__　__　___　_______ .,,She is in the kitchen.,-,彼女はキッチンにいるよ,,She is in the kitchen,She|is|in|the|kitchen,4-2-6-a.mp3,,She is in the kitchen,4-2-6,,,,y
-u4_l2_p7,u4_l2,user,,left,none,1,,0,_　__　____　________ .,,I am from Hokkaido.,-,私は北海道出身です。,,I am from Hokkaido,I|am|from|Hokkaido,4-2-7-a.mp3,,I am from Hokkaido,4-2-7,,,,y
-u4_l2_p8,u4_l2,user,,left,none,1,,0,___　__　______ .,,You are funny.,-,おまえ、おもろいやん。,,You are funny,You|are|funny,4-2-8-a.mp3,,You are funny,4-2-8,,,,y
-u4_l2_p9,u4_l2,user,,left,none,1,,0,___　___　like an angel.,,She is like an angel.,-,彼女は天使みたいですね。,,She is,She|is,4-2-9-a.mp3,,She is,4-2-9,,,,y
-u4_l2_p10,u4_l2,user,,left,none,1,,0,___　__　a chattarbox.,,She is a chattarbox.,-,彼女、しゃべりすぎ。,,She is,She|is,4-2-10-a.mp3,,She is,4-2-10,,,,y
-u4_l4_p1,u4_l4,05.png,user,left,right,1,1,0,Where are you?,__　___　at the zoo !,Where are you?,We are at the zoo!,あなたたち、どこにいるの？,私たち、動物園にいるのよ！,We are,We|are,4-4-1-a.mp3,4-4-1-b.mp3,We are,4-4-1,4-4-1,,,y
-u4_l4_p2,u4_l4,05.png,user,left,right,1,1,0,Who is over there?,____　___　my friend.,Who is over there?,They are my friend.,あそこにいるのは誰？,彼らは私の友達よ。,They are,They|are,4-4-2-a.mp3,4-4-2-b.mp3,They are,4-4-2,4-4-2,,,y
-u4_l4_p3,u4_l4,user,,left,none,1,,0,____　___　awesome!,,You are awesome!,,お前たち、最高だぜ！,-,You are,You|are,4-4-3-a.mp3,,You are,4-4-3,,,,y
-u4_l4_p4,u4_l4,05.png,user,left,right,1,1,0,__　__　_____ .,Me too.,He is kind.,Me too.,彼は優しいよ。,わたしもよ。,He is kind,He|is|kind,4-4-4-a.mp3,4-4-4-b.mp3,He is kind,4-4-4,4-4-4,,,y
-u4_l4_p6,u4_l4,user,,left,none,1,,0,__　___　so happy.,,We are so happy.,,私たちはとてもうれしいです。,-,We are,We|are,4-4-6-a.mp3,,We are,4-4-6,,,,y
-u4_l4_p7,u4_l4,user,,left,none,1,,0,"____　joking, right?",,"You are joking, right?",,おまえ、冗談をいっているんだよな？,-,You're,You're,4-4-7-a.mp3,,You're,4-4-7,,,,y
-u4_l4_p8,u4_l4,user,05.png,left,right,1,1,0,Why are you there?,____　___　______ .,Why are you there?,We're the police.,君たち、なんでそんなところにいるんだ。,私たちは警察ですよ。,We're the police,We're|the|police,4-4-8-a.mp3,4-4-8-b.mp3,We're the police,4-4-8,4-4-8,,,y
-u4_l6_p1,u4_l6,user,,left,none,1,,0,___　__　_　___ .,,That is a dog.,,あれは犬です。,,That is a dog,That|is|a|dog,4-6-1-a.mp3,,That is a dog,4-6-1,,,,y
-u4_l6_p2,u4_l6,user,,left,none,1,,0,____　___　_____ .,,These are books.,,これらは本です。,,These are books,These|are|books,4-6-2-a.mp3,,These are books,4-6-2,,,,y
-u4_l6_p3,u4_l6,user,,left,none,1,,0,____ 　___ 　_____ .,,Those are chairs.,,あれらは椅子です。,,Those are chairs,Those|are|chairs,4-6-3-a.mp3,,Those are chairs,4-6-3,,,,y
-u4_l6_p4,u4_l6,05.png,user,left,right,1,1,0,What is this?,____ 　__ 　__ 　_____ .,What is this?,This is an apple.,これは何？,これはリンゴだよ。,This is an apple,This|is|an|apple,4-6-4-a.mp3,4-6-4-b.mp3,This is an apple,4-6-4,4-6-4,,,y
-u4_l6_p5,u4_l6,05.png,user,left,right,1,1,0,What are those?,_____ 　___　 __ 　______ .,What are those?,Those are my shoes.,あれらは何？,あれらは私の靴だよ,Those are my shoes,Those|are|my|shoes,4-6-5-a.mp3,4-6-5-b.mp3,Those are my shoes,4-6-5,4-6-5,,,y
-u4_l6_p6,u4_l6,05.png,user,left,right,1,1,0,What is this?,____　 __ 　_ 　____ 　____ 　___ .,What is this?,This is a very cute cat.,これは何？,これはとてもかわいい猫だよ。,This is a very cute cat,This|is|a|very|cute|cat,4-6-6-a.mp3,4-6-6-b.mp3,This is a very cute cat,4-6-6,4-6-6,,,y
-u4_l6_p7,u4_l6,05.png,user,left,right,1,1,0,What are those?,_____ 　___　 ____ .,What are those?,Those are birds.,あれらは何？,あれらは鳥だよ。,Those are birds,Those|are|birds,4-6-7-a.mp3,4-6-7-b.mp3,Those are birds,4-6-7,4-6-7,,,y
-u4_l6_p8,u4_l6,05.png,user,left,right,1,1,0,Is this your bag?,Yes. 　__ 　__ 　____ .,Is this your bag?,Yes. It is new.,これはあなたのかばん？,そうだよ。それはあたらしいんだよ。,It is new,It|is|new,4-6-8-a.mp3,4-6-8-b.mp3,It is new,4-6-8,4-6-8,,,y
-u4_l8_p1,u4_l8,05.png,user,left,right,1,1,0,Are you busy?,"___ ,　__　___ .",Are you busy?,"Yes, I am.",忙しい？,うん,Yes I am,Yes|I|am,4-8-1-a.mp3,4-8-1-b.mp3,Yes I am,4-8-1,4-8-1,,,y
-u4_l8_p2,u4_l8,05.png,user,left,right,1,1,0,__　__　_____?,Maybe.,Is he happy?,Maybe.,彼は幸せ？,たぶんね。,Is he happy,Is|he|happy,4-8-2-a.mp3,4-8-2-b.mp3,Is he happy,4-8-2,4-8-2,,,y
-u4_l8_p3,u4_l8,05.png,user,left,right,1,1,0,__　___　_　______ ?,"No, she is a stranger.",Is she a teacher?,"No, she is a stranger.",彼女は先生ですか？,いいえ、彼女は知らない人です。,Is she a teacher,Is|she|a|teacher,4-8-3-a.mp3,4-8-3-b.mp3,Is she a teacher,4-8-3,4-8-3,,,y
-u4_l8_p4,u4_l8,05.png,user,left,right,1,1,0,__　__　____ ?,Yes,Is it cold?,Yes,寒い？,うん,Is it cold,Is|it|cold,4-8-4-a.mp3,4-8-4-b.mp3,Is it cold,4-8-4,4-8-4,,,y
-u4_l8_p5,u4_l8,05.png,user,left,right,1,1,0,___　_____　______ ?,I’m not sure.,Are they friends?,I’m not sure.,彼らは友達？,わからない,Are they friends,Are|they|friends,4-8-5-a.mp3,4-8-5-b.mp3,Are they friends,4-8-5,4-8-5,,,y
-u4_l8_p6,u4_l8,05.png,user,left,right,1,1,0,Is this your book?,"__ ,　___　____ .",Is this your book?,"No, it's not.",これはあなたの本？,いいえ,No it's not,No|it's|not,4-8-6-a.mp3,4-8-6-b.mp3,No it's not,4-8-6,4-8-6,,,y
-u4_l8_p7,u4_l8,05.png,user,left,right,1,1,0,Are these his shoes?,"___ ,　____　___ .",Are these his shoes?,"Yes, they are.",これらは彼の靴？,はい、そうです,Yes they are,Yes|they|are,4-8-7-a.mp3,4-8-7-b.mp3,Yes they are,4-8-7,4-8-7,,,y
-u4_l8_p8,u4_l8,05.png,user,left,right,1,1,0,Are those dogs?,"__ ,　____　___　____ .",Are those dogs?,"No, they are cats.",あれらは犬ですか？,いいえ、猫です,No they are cats,No|they|are|cats,4-8-8-a.mp3,4-8-8-b.mp3,No they are cats,4-8-8,4-8-8,,,y
-u4_l8_p9,u4_l8,05.png,user,left,right,1,1,0,Are these your pencils?,"___ ,　____　___ .",Are these your pencils?,"Yes, they are.",これらはあなたの鉛筆ですか？,はい、そうです,Yes they are,Yes|they|are,4-8-9-a.mp3,4-8-9-b.mp3,Yes they are,4-8-9,4-8-9,,,y
-u4_l10_p1,u4_l10,05.png,,left,none,1,,0,__　___　___　_____ .,,I am not tired.,,私は疲れてないよ,,I am not tired,I|am|not|tired,4-10-1-a.mp3,,I am not tired,4-10-1,,,,y
-u4_l10_p2,u4_l10,05.png,,left,none,1,,0,___　___　___　_____ .,,You are not busy.,,あなたは忙しくない,,You are not busy,You|are|not|busy,4-10-2-a.mp3,,You are not busy,4-10-2,,,,y
-u4_l10_p3,u4_l10,05.png,,left,none,1,,0,__　__　___　______ .,,He is not happy.,,彼は幸せじゃない,,He is not happy,He|is|not|happy,4-10-3-a.mp3,,He is not happy,4-10-3,,,,y
-u4_l10_p4,u4_l10,05.png,,left,none,1,,0,___　__　___　__　______ .,,She is not a teacher.,,彼女は先生ではない,,She is not a teacher,She|is|not|a|teacher,4-10-4-a.mp3,,She is not a teacher,4-10-4,,,,y
-u4_l10_p5,u4_l10,05.png,,left,none,1,,0,__　__　___　_____ .,,It is not hot.,,暑くはない,,It is not hot,It|is|not|hot,4-10-5-a.mp3,,It is not hot,4-10-5,,,,y
-u4_l10_p6,u4_l10,05.png,,left,none,1,,0,___　___　___　______ .,,We are not ready.,,私たちは準備できてない,,We are not ready,We|are|not|ready,4-10-6-a.mp3,,We are not ready,4-10-6,,,,y
-u4_l10_p7,u4_l10,05.png,,left,none,1,,0,____　___　___　______ .,,They are not friends.,,彼らは友達ではない,,They are not friends,They|are|not|friends,4-10-7-a.mp3,,They are not friends,4-10-7,,,,y
-u4_l10_p8,u4_l10,05.png,,left,none,1,,0,____　__　___　__　____ .,,This is not my bag.,,これは私のかばんではない,,This is not my bag,This|is|not|my|bag,4-10-8-a.mp3,,This is not my bag,4-10-8,,,,y
-u4_l10_p9,u4_l10,05.png,,left,none,1,,0,_____　_____　___　______ .,,These aren't new books.,,これらは新しい本ではない,,These aren't new books,These|aren't|new|books,4-10-9-a.mp3,,These aren't new books,4-10-9,,,,y
-u4_l10_p10,u4_l10,05.png,,left,none,1,,0,_____　_____　___　_____ .,,Those aren't big dogs.,,あれらは大きいイヌではない,,Those aren't big dogs,Those|aren't|big|dogs,4-10-10-a.mp3,,Those aren't big dogs,4-10-10,,,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u4_l2_p1,u4_l2,user,,left,none,1,,0,__　__　__　______ .,,私は学生である。,,I am a student,I|am|a|student,4-2-1-a.mp3,
+u4_l2_p2,u4_l2,user,,left,none,1,,0,____　__　_　______ .,,彼女は医者である。,,She is a doctor,She|is|a|doctor,4-2-2-a.mp3,
+u4_l2_p3,u4_l2,user,,left,none,1,,0,___　___　____　______ .,,あなたは大阪出身だ。,,You are from Osaka,You|are|from|Osaka,4-2-3-a.mp3,
+u4_l2_p4,u4_l2,user,,left,none,1,,0,___　___　__　_______ .,,あなたは先生です。,,You are a teacher,You|are|a|teacher,4-2-4-a.mp3,
+u4_l2_p5,u4_l2,user,,left,none,1,,0,____　__　__　___　_____ .,,彼は公園にいるよ。,,He is at the park,He|is|at|the|park,4-2-5-a.mp3,
+u4_l2_p6,u4_l2,user,,left,none,1,,0,___　__　__　___　_______ .,,彼女はキッチンにいるよ,,She is in the kitchen,She|is|in|the|kitchen,4-2-6-a.mp3,
+u4_l2_p7,u4_l2,user,,left,none,1,,0,_　__　____　________ .,,私は北海道出身です。,,I am from Hokkaido,I|am|from|Hokkaido,4-2-7-a.mp3,
+u4_l2_p8,u4_l2,user,,left,none,1,,0,___　__　______ .,,おまえ、おもろいやん。,,You are funny,You|are|funny,4-2-8-a.mp3,
+u4_l2_p9,u4_l2,user,,left,none,1,,0,___　___　like an angel.,,彼女は天使みたいですね。,,She is,She|is,4-2-9-a.mp3,
+u4_l2_p10,u4_l2,user,,left,none,1,,0,___　__　a chattarbox.,,彼女、しゃべりすぎ。,,She is,She|is,4-2-10-a.mp3,
+u4_l4_p1,u4_l4,05.png,user,left,right,1,1,0,Where are you?,__　___　at the zoo !,あなたたち、どこにいるの？,私たち、動物園にいるのよ！,We are,We|are,4-4-1-a.mp3,4-4-1-b.mp3
+u4_l4_p2,u4_l4,05.png,user,left,right,1,1,0,Who is over there?,____　___　my friend.,あそこにいるのは誰？,彼らは私の友達よ。,They are,They|are,4-4-2-a.mp3,4-4-2-b.mp3
+u4_l4_p3,u4_l4,user,,left,none,1,,0,____　___　awesome!,,お前たち、最高だぜ！,-,You are,You|are,4-4-3-a.mp3,
+u4_l4_p4,u4_l4,05.png,user,left,right,1,1,0,__　__　_____ .,Me too.,彼は優しいよ。,わたしもよ。,He is kind,He|is|kind,4-4-4-a.mp3,4-4-4-b.mp3
+u4_l4_p6,u4_l4,user,,left,none,1,,0,__　___　so happy.,,私たちはとてもうれしいです。,-,We are,We|are,4-4-6-a.mp3,
+u4_l4_p7,u4_l4,user,,left,none,1,,0,"____　joking, right?",,おまえ、冗談をいっているんだよな？,-,You're,You're,4-4-7-a.mp3,
+u4_l4_p8,u4_l4,user,05.png,left,right,1,1,0,Why are you there?,____　___　______ .,君たち、なんでそんなところにいるんだ。,私たちは警察ですよ。,We're the police,We're|the|police,4-4-8-a.mp3,4-4-8-b.mp3
+u4_l6_p1,u4_l6,user,,left,none,1,,0,___　__　_　___ .,,あれは犬です。,,That is a dog,That|is|a|dog,4-6-1-a.mp3,
+u4_l6_p2,u4_l6,user,,left,none,1,,0,____　___　_____ .,,これらは本です。,,These are books,These|are|books,4-6-2-a.mp3,
+u4_l6_p3,u4_l6,user,,left,none,1,,0,____ 　___ 　_____ .,,あれらは椅子です。,,Those are chairs,Those|are|chairs,4-6-3-a.mp3,
+u4_l6_p4,u4_l6,05.png,user,left,right,1,1,0,What is this?,____ 　__ 　__ 　_____ .,これは何？,これはリンゴだよ。,This is an apple,This|is|an|apple,4-6-4-a.mp3,4-6-4-b.mp3
+u4_l6_p5,u4_l6,05.png,user,left,right,1,1,0,What are those?,_____ 　___　 __ 　______ .,あれらは何？,あれらは私の靴だよ,Those are my shoes,Those|are|my|shoes,4-6-5-a.mp3,4-6-5-b.mp3
+u4_l6_p6,u4_l6,05.png,user,left,right,1,1,0,What is this?,____　 __ 　_ 　____ 　____ 　___ .,これは何？,これはとてもかわいい猫だよ。,This is a very cute cat,This|is|a|very|cute|cat,4-6-6-a.mp3,4-6-6-b.mp3
+u4_l6_p7,u4_l6,05.png,user,left,right,1,1,0,What are those?,_____ 　___　 ____ .,あれらは何？,あれらは鳥だよ。,Those are birds,Those|are|birds,4-6-7-a.mp3,4-6-7-b.mp3
+u4_l6_p8,u4_l6,05.png,user,left,right,1,1,0,Is this your bag?,Yes. 　__ 　__ 　____ .,これはあなたのかばん？,そうだよ。それはあたらしいんだよ。,It is new,It|is|new,4-6-8-a.mp3,4-6-8-b.mp3
+u4_l8_p1,u4_l8,05.png,user,left,right,1,1,0,Are you busy?,"___ ,　__　___ .",忙しい？,うん,Yes I am,Yes|I|am,4-8-1-a.mp3,4-8-1-b.mp3
+u4_l8_p2,u4_l8,05.png,user,left,right,1,1,0,__　__　_____?,Maybe.,彼は幸せ？,たぶんね。,Is he happy,Is|he|happy,4-8-2-a.mp3,4-8-2-b.mp3
+u4_l8_p3,u4_l8,05.png,user,left,right,1,1,0,__　___　_　______ ?,"No, she is a stranger.",彼女は先生ですか？,いいえ、彼女は知らない人です。,Is she a teacher,Is|she|a|teacher,4-8-3-a.mp3,4-8-3-b.mp3
+u4_l8_p4,u4_l8,05.png,user,left,right,1,1,0,__　__　____ ?,Yes,寒い？,うん,Is it cold,Is|it|cold,4-8-4-a.mp3,4-8-4-b.mp3
+u4_l8_p5,u4_l8,05.png,user,left,right,1,1,0,___　_____　______ ?,I’m not sure.,彼らは友達？,わからない,Are they friends,Are|they|friends,4-8-5-a.mp3,4-8-5-b.mp3
+u4_l8_p6,u4_l8,05.png,user,left,right,1,1,0,Is this your book?,"__ ,　___　____ .",これはあなたの本？,いいえ,No it's not,No|it's|not,4-8-6-a.mp3,4-8-6-b.mp3
+u4_l8_p7,u4_l8,05.png,user,left,right,1,1,0,Are these his shoes?,"___ ,　____　___ .",これらは彼の靴？,はい、そうです,Yes they are,Yes|they|are,4-8-7-a.mp3,4-8-7-b.mp3
+u4_l8_p8,u4_l8,05.png,user,left,right,1,1,0,Are those dogs?,"__ ,　____　___　____ .",あれらは犬ですか？,いいえ、猫です,No they are cats,No|they|are|cats,4-8-8-a.mp3,4-8-8-b.mp3
+u4_l8_p9,u4_l8,05.png,user,left,right,1,1,0,Are these your pencils?,"___ ,　____　___ .",これらはあなたの鉛筆ですか？,はい、そうです,Yes they are,Yes|they|are,4-8-9-a.mp3,4-8-9-b.mp3
+u4_l10_p1,u4_l10,05.png,,left,none,1,,0,__　___　___　_____ .,,私は疲れてないよ,,I am not tired,I|am|not|tired,4-10-1-a.mp3,
+u4_l10_p2,u4_l10,05.png,,left,none,1,,0,___　___　___　_____ .,,あなたは忙しくない,,You are not busy,You|are|not|busy,4-10-2-a.mp3,
+u4_l10_p3,u4_l10,05.png,,left,none,1,,0,__　__　___　______ .,,彼は幸せじゃない,,He is not happy,He|is|not|happy,4-10-3-a.mp3,
+u4_l10_p4,u4_l10,05.png,,left,none,1,,0,___　__　___　__　______ .,,彼女は先生ではない,,She is not a teacher,She|is|not|a|teacher,4-10-4-a.mp3,
+u4_l10_p5,u4_l10,05.png,,left,none,1,,0,__　__　___　_____ .,,暑くはない,,It is not hot,It|is|not|hot,4-10-5-a.mp3,
+u4_l10_p6,u4_l10,05.png,,left,none,1,,0,___　___　___　______ .,,私たちは準備できてない,,We are not ready,We|are|not|ready,4-10-6-a.mp3,
+u4_l10_p7,u4_l10,05.png,,left,none,1,,0,____　___　___　______ .,,彼らは友達ではない,,They are not friends,They|are|not|friends,4-10-7-a.mp3,
+u4_l10_p8,u4_l10,05.png,,left,none,1,,0,____　__　___　__　____ .,,これは私のかばんではない,,This is not my bag,This|is|not|my|bag,4-10-8-a.mp3,
+u4_l10_p9,u4_l10,05.png,,left,none,1,,0,_____　_____　___　______ .,,これらは新しい本ではない,,These aren't new books,These|aren't|new|books,4-10-9-a.mp3,
+u4_l10_p10,u4_l10,05.png,,left,none,1,,0,_____　_____　___　_____ .,,あれらは大きいイヌではない,,Those aren't big dogs,Those|aren't|big|dogs,4-10-10-a.mp3,

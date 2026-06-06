@@ -1,19 +1,19 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done,,
-u3_l2_p1,u3_l2,05.png,user,left,right,1,1,0,When do you leave home?,__　______  !,When do you leave home?,At noon!,いつ（家を）出発する？,正午！,At noon,At|noon,3-2-1-a.mp3,3-2-1-b.mp3,At noon,3-2-1,3-2-1,,,y
-u3_l2_p2,u3_l2,05.png,user,left,right,1,1,0,Where did you eat the banana?,__　____　______ .,Where did you eat the banana?,In the park.,どこでバナナたべたの？,公園で。,In the park,In|the|park,3-2-2-a.mp3,3-2-2-b.mp3,In the park,3-2-2,3-2-2,,,y
-u3_l2_p3,u3_l2,05.png,user,left,right,1,1,0,Where did you hear that?,__　_______ .,Where did you hear that?,At school.,どこでそれを聞いたの？,学校でだよ。,At school,At|school,3-2-3-a.mp3,3-2-3-b.mp3,At school,3-2-3,3-2-3,,,y
-u3_l2_p4,u3_l2,05.png,user,left,right,1,1,0,Where did I put my hat?,__　____　______ .,Where did I put my hat?,On the table.,私の帽子、どこに置いたっけ？,テーブルの上。,On the table,On|the|table,3-2-4-a.mp3,3-2-4-b.mp3,On the table,3-2-4,3-2-4,,,y
-u3_l2_p5,u3_l2,05.png,user,left,right,1,1,0,Where is my smartphone?,__　____　_____ .,Where is my smartphone?,On the bed.,私のスマホどこ？,ベッドの上だよ,On the bed,On|the|bed,3-2-5-a.mp3,3-2-5-b.mp3,On the bed,3-2-5,3-2-5,,,y
-u3_l2_p6,u3_l2,05.png,user,left,right,1,1,0,When do we hang out?,__　________ !,When do we hang out?,On Saturday!,いつ遊ぶ？,土曜日！,On Saturday,On|Saturday,3-2-6-a.mp3,3-2-6-b.mp3,On Saturday,3-2-6,3-2-6,,,y
-u3_l2_p7,u3_l2,05.png,user,left,right,1,1,0,Did you go to the sea?,__　____　_______ .,Did you go to the sea?,In the summer.,いつ海にいったの？,夏にね。,In the summer,In|the|summer,3-2-7-a.mp3,3-2-7-b.mp3,In the summer,3-2-7,3-2-7,,,y
-u3_l2_p8,u3_l2,05.png,user,left,right,1,1,0,When are you coming?,_　______　o'clock !,When are you coming?,At three o'clock.,いつ来るー？,3時！,At three,At|three,3-2-8-a.mp3,3-2-8-b.mp3,At three,3-2-8,3-2-8,,,y
-u3_l4_p1,u3_l4,05.png,user,left,right,1,1,0,Where are you from?,____　______ .,Where are you from?,From Tokyo.,どこから来たの？,東京からよ。,From Tokyo,From|Tokyo,3-4-1-a.mp3,3-4-1-b.mp3,From Tokyo,3-4-1,3-4-1,,,y
-u3_l4_p2,u3_l4,05.png,user,left,right,1,1,0,Where are you going?,__　______ .,Where are you going?,To school.,どこに行くの？,学校。,To school,To|school,3-4-2-a.mp3,3-4-2-b.mp3,To school,3-4-2,3-4-2,,,y
-u3_l4_p3,u3_l4,05.png,user,left,right,1,1,0,How do you go to school?,__　____ .,How do you go to school?,By bus.,どうやって登校してるの？,バスで。,By bus,By|bus,3-4-3-a.mp3,3-4-3-b.mp3,By bus,3-4-3,3-4-3,,,y
-u3_l4_p4,u3_l4,05.png,user,left,right,1,1,0,Where is your bag?,__　___　______ .,Where is your bag?,By the window.,あなたのかばん、どこ？,窓のそばだよ。,By the window,By|the|window,3-4-4-a.mp3,3-4-4-b.mp3,By the window,3-4-4,3-4-4,,,y
-u3_l4_p5,u3_l4,05.png,user,left,right,1,1,0,Where are you sending this message?,__　__　______ .,Where are you sending this message?,To my friend.,このメッセージ、どこに送った？,友達に。,To my friend,To|my|friend,3-4-5-a.mp3,3-4-5-b.mp3,To my friend,3-4-5,3-4-5,,,y
-u3_l4_p6,u3_l4,05.png,user,left,right,1,1,0,Where's my phone?,__　___　______ .,Where's my phone?,By the couch.,私のスマホ、どこー？,ソファー（カウチ）の近く。,By the couch,By|the|couch,3-4-6-a.mp3,3-4-6-b.mp3,By the couch,3-4-6,3-4-6,,,y
-u3_l4_p7,u3_l4,05.png,user,left,right,1,1,0,Where's this pizza from?,____　___　____ .,Where's this pizza from?,From that shop.,これ、どこのピザ？,あのお店の。,From that shop,From|that|shop,3-4-7-a.mp3,3-4-7-b.mp3,From that shop,3-4-7,3-4-7,,,y
-u3_l4_p8,u3_l4,05.png,user,left,right,1,1,0,Where are you off?,__　___　____ .,Where are you off?,To the park.,どこに行くの？,公園に。,To the park,To|the|park,3-4-8-a.mp3,3-4-8-b.mp3,To the park,3-4-8,3-4-8,,,y
-u3_l4_p9,u3_l4,05.png,user,left,right,1,1,0,Who should I send this message to?,__　____　______ .,Who should I send this message to?,To your mother.,だれにメッセージ送ったらいいの？,お前の母ちゃんに。,To your mother,To|your|mother,3-4-9-a.mp3,3-4-9-b.mp3,To your mother,3-4-9,3-4-9,,,y
-u3_l4_p10,u3_l4,05.png,user,left,right,1,1,0,Who sent you this message?,____　___　______ .,Who sent you this message?,From the police.,だれがあなたにこのメッセージ送ってきたの？,警察から。,From the police,From|the|police,3-4-10-a.mp3,3-4-10-b.mp3,From the police,3-4-10,3-4-10,,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u3_l2_p1,u3_l2,05.png,user,left,right,1,1,0,When do you leave home?,__　______  !,いつ（家を）出発する？,正午！,At noon,At|noon,3-2-1-a.mp3,3-2-1-b.mp3
+u3_l2_p2,u3_l2,05.png,user,left,right,1,1,0,Where did you eat the banana?,__　____　______ .,どこでバナナたべたの？,公園で。,In the park,In|the|park,3-2-2-a.mp3,3-2-2-b.mp3
+u3_l2_p3,u3_l2,05.png,user,left,right,1,1,0,Where did you hear that?,__　_______ .,どこでそれを聞いたの？,学校でだよ。,At school,At|school,3-2-3-a.mp3,3-2-3-b.mp3
+u3_l2_p4,u3_l2,05.png,user,left,right,1,1,0,Where did I put my hat?,__　____　______ .,私の帽子、どこに置いたっけ？,テーブルの上。,On the table,On|the|table,3-2-4-a.mp3,3-2-4-b.mp3
+u3_l2_p5,u3_l2,05.png,user,left,right,1,1,0,Where is my smartphone?,__　____　_____ .,私のスマホどこ？,ベッドの上だよ,On the bed,On|the|bed,3-2-5-a.mp3,3-2-5-b.mp3
+u3_l2_p6,u3_l2,05.png,user,left,right,1,1,0,When do we hang out?,__　________ !,いつ遊ぶ？,土曜日！,On Saturday,On|Saturday,3-2-6-a.mp3,3-2-6-b.mp3
+u3_l2_p7,u3_l2,05.png,user,left,right,1,1,0,Did you go to the sea?,__　____　_______ .,いつ海にいったの？,夏にね。,In the summer,In|the|summer,3-2-7-a.mp3,3-2-7-b.mp3
+u3_l2_p8,u3_l2,05.png,user,left,right,1,1,0,When are you coming?,_　______　o'clock !,いつ来るー？,3時！,At three,At|three,3-2-8-a.mp3,3-2-8-b.mp3
+u3_l4_p1,u3_l4,05.png,user,left,right,1,1,0,Where are you from?,____　______ .,どこから来たの？,東京からよ。,From Tokyo,From|Tokyo,3-4-1-a.mp3,3-4-1-b.mp3
+u3_l4_p2,u3_l4,05.png,user,left,right,1,1,0,Where are you going?,__　______ .,どこに行くの？,学校。,To school,To|school,3-4-2-a.mp3,3-4-2-b.mp3
+u3_l4_p3,u3_l4,05.png,user,left,right,1,1,0,How do you go to school?,__　____ .,どうやって登校してるの？,バスで。,By bus,By|bus,3-4-3-a.mp3,3-4-3-b.mp3
+u3_l4_p4,u3_l4,05.png,user,left,right,1,1,0,Where is your bag?,__　___　______ .,あなたのかばん、どこ？,窓のそばだよ。,By the window,By|the|window,3-4-4-a.mp3,3-4-4-b.mp3
+u3_l4_p5,u3_l4,05.png,user,left,right,1,1,0,Where are you sending this message?,__　__　______ .,このメッセージ、どこに送った？,友達に。,To my friend,To|my|friend,3-4-5-a.mp3,3-4-5-b.mp3
+u3_l4_p6,u3_l4,05.png,user,left,right,1,1,0,Where's my phone?,__　___　______ .,私のスマホ、どこー？,ソファー（カウチ）の近く。,By the couch,By|the|couch,3-4-6-a.mp3,3-4-6-b.mp3
+u3_l4_p7,u3_l4,05.png,user,left,right,1,1,0,Where's this pizza from?,____　___　____ .,これ、どこのピザ？,あのお店の。,From that shop,From|that|shop,3-4-7-a.mp3,3-4-7-b.mp3
+u3_l4_p8,u3_l4,05.png,user,left,right,1,1,0,Where are you off?,__　___　____ .,どこに行くの？,公園に。,To the park,To|the|park,3-4-8-a.mp3,3-4-8-b.mp3
+u3_l4_p9,u3_l4,05.png,user,left,right,1,1,0,Who should I send this message to?,__　____　______ .,だれにメッセージ送ったらいいの？,お前の母ちゃんに。,To your mother,To|your|mother,3-4-9-a.mp3,3-4-9-b.mp3
+u3_l4_p10,u3_l4,05.png,user,left,right,1,1,0,Who sent you this message?,____　___　______ .,だれがあなたにこのメッセージ送ってきたの？,警察から。,From the police,From|the|police,3-4-10-a.mp3,3-4-10-b.mp3

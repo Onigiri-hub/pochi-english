@@ -1,67 +1,67 @@
-page_id,lesson_id,page_NO,text,deco_words,style,image_NO,layout
+page_id,lesson_id,page_NO,text,image_NO,layout
 u12_l1_p1,u12_l1,1,"前のUnitで助動詞を
-いくつか紹介したけど、",,,12-1-1,image_top
+いくつか紹介したけど、",12-1-1,image_top
 u12_l1_p2,u12_l1,2,"ここでは残りの助動詞を
-見ていくよ！",,,12-1-1,image_top
-u12_l1_p3,u12_l1,3,まずはmust。,,,12-1-2-1,image_top
+見ていくよ！",12-1-1,image_top
+u12_l1_p3,u12_l1,3,まずはmust。,12-1-2-1,image_top
 u12_l1_p4,u12_l1,4,"～しなければならない
 （やらなくちゃいけないことが
 あるってよりは、決まり事）
-っていう意味と",,,12-1-2-2,image_top
+っていう意味と",12-1-2-2,image_top
 u12_l1_p5,u12_l1,5,"～にちがいない
-っていう意味があるよ。",,,12-1-2-3,image_top
-u12_l1_p6,u12_l1,6,強制力を感じるね。,,,12-1-2-4,image_top
+っていう意味があるよ。",12-1-2-3,image_top
+u12_l1_p6,u12_l1,6,強制力を感じるね。,12-1-2-4,image_top
 u12_l1_p7,u12_l1,7,"You must wear a helmet. 
-ヘルメットを着用しなければならない。",,,12-1-3-1,image_top
+ヘルメットを着用しなければならない。",12-1-3-1,image_top
 u12_l1_p8,u12_l1,8,"I must call my mother. 
 母に電話しなきゃ…！
-（自分に課した強制、強い意志。）",,,12-1-3-2,image_top
+（自分に課した強制、強い意志。）",12-1-3-2,image_top
 u12_l1_p9,u12_l1,9,"とはいえ日常的にはこんなに
-強く強制されることは無いので、",,,12-1-3-2,image_top
+強く強制されることは無いので、",12-1-3-2,image_top
 u12_l1_p10,u12_l1,10,"日常会話では
 mustと似た
-have to がよく使われる。",,,12-1-3-2,image_top
+have to がよく使われる。",12-1-3-2,image_top
 u12_l1_p11,u12_l1,11,"You have to take off your shoes before you come in. 
-（家に）入るまえに靴をぬがなければいけないよ。",,,12-1-4-1,image_top
-u12_l1_p12,u12_l1,12,こんな感じ。,,,12-1-4-1,image_top
-u12_l1_p13,u12_l1,13,have to の使い方は後のlessonで詳しく扱うね！,,,12-1-4-1,image_top
+（家に）入るまえに靴をぬがなければいけないよ。",12-1-4-1,image_top
+u12_l1_p12,u12_l1,12,こんな感じ。,12-1-4-1,image_top
+u12_l1_p13,u12_l1,13,have to の使い方は後のlessonで詳しく扱うね！,12-1-4-1,image_top
 u12_l1_p14,u12_l1,14,"ちょっとわき道にそれたけど
-mustに戻るよー",,,12-1-4-1,image_top
+mustに戻るよー",12-1-4-1,image_top
 u12_l1_p15,u12_l1,15,"疑問文にするなら、
 Must I go?
 「行かなきゃダメ？」
-（ちょっと堅い言い方だね）",,,12-1-5-1,image_top
+（ちょっと堅い言い方だね）",12-1-5-1,image_top
 u12_l1_p16,u12_l1,16,"でもその返事を
 No, you mustn't (must not).
 って言うと、
 「行っちゃダメ！」
-になるから、",,,12-1-5-2,image_top
+になるから、",12-1-5-2,image_top
 u12_l1_p17,u12_l1,17,"普通は
 No, you don't have to.
 「行かなくてもいいよ。」
-って答える。",,,12-1-5-3,image_top
+って答える。",12-1-5-3,image_top
 u12_l1_p18,u12_l1,18,"must notは
 「やっちゃだめ！」
-っていう禁止になる。",,,12-1-6-1,image_top
+っていう禁止になる。",12-1-6-1,image_top
 u12_l1_p19,u12_l1,19,"You must not touch that.
-それに触っちゃダメ！",,,12-1-6-2,image_top
+それに触っちゃダメ！",12-1-6-2,image_top
 u12_l1_p20,u12_l1,20,"You must not tell anyone.
-誰にも言っちゃだめだよ。。",,,12-1-6-3,image_top
+誰にも言っちゃだめだよ。。",12-1-6-3,image_top
 u12_l1_p21,u12_l1,21,"mustには
 「～に違いない」の
-意味もある",,,12-1-7-1,image_top
+意味もある",12-1-7-1,image_top
 u12_l1_p22,u12_l1,22,"He must know the answer.
-彼は答えを知っているに違いない。",,,12-1-7-3,image_top
+彼は答えを知っているに違いない。",12-1-7-3,image_top
 u12_l1_p23,u12_l1,23,"That must be true. 
 それは真実に違いない。
-（本当のはずだ）",,,12-1-7-4,image_top
+（本当のはずだ）",12-1-7-4,image_top
 u12_l1_p24,u12_l1,24,"ちなみに、
 「それは真実のはずがない」
-は、must notを使わない。",,,12-1-8-3,image_top
+は、must notを使わない。",12-1-8-3,image_top
 u12_l1_p25,u12_l1,25,"That can't be true.
 「それは真実のはずがない」
 （それが真実だなんてありえない）
-になる。",,,12-1-8-4,image_top
+になる。",12-1-8-4,image_top
 u12_l1_p26,u12_l1,26,"mustの否定形は
 「禁止」に
-なっちゃうからね。",,,12-1-8-4,image_top
+なっちゃうからね。",12-1-8-4,image_top

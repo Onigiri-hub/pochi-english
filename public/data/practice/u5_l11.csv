@@ -1,16 +1,16 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u5_l11_p1,u5_l11,user,,left,none,1,,1,_____________ .,,I have a pen.,,私はペンを持ってるよ。,,I have a pen,I|have|a|pen,5-2-5-a.mp3,,I have a pen,5-2-5,,
-u5_l11_p2,u5_l11,user,,left,none,1,,1,___________________ .,,We eat lunch together.,,私たちは一緒にランチを食べます。,,We eat lunch together,We|eat|lunch|together,5-2-9-a.mp3,,We eat lunch together,5-2-9,,
-u5_l11_p3,u5_l11,user,,left,none,1,,1,_____________ .,,I like cute animals.,,私はかわいい動物が好きです。,,I like cute animals,I|like|cute|animals,5-2-11-a.mp3,,I like cute animals,5-2-11,,
-u5_l11_p4,u5_l11,user,,left,none,1,,1,_____________ .,,She makes dinner.,,彼女はディナーを作ります。,,She makes dinner,She|makes|dinner,5-4-4-a.mp3,,She makes dinner,5-4-4,,
-u5_l11_p5,u5_l11,user,,left,none,1,,1,_____________ .,,She likes music.,,彼女は音楽が好きです。,,She likes music,She|likes|music,5-4-6-a.mp3,,She likes music,5-4-6,,
-u5_l11_p6,u5_l11,05.png,user,left,right,1,1,1,___________________ ？,I don’t know.,Does she like cats?,I don’t know.,彼女は猫好きですか？,わからない。,Does she like cats,Does|she|like|cats,5-6-2-a.mp3,5-6-2-b.mp3,Does she like cats,5-6-2,5-6-2,
-u5_l11_p7,u5_l11,05.png,user,left,right,1,1,1,Do you like music?,___ .　________ . ,Do you like music?,"Yes, I like classics.",あなたは音楽好きですか？,はい、クラシックが好きです,Yes I like classics,Yes|I|like|classics,5-6-6-a.mp3,5-6-6-b.mp3,Yes I like classics,5-6-6,5-6-6,
-u5_l11_p8,u5_l11,user,,left,none,1,,1,___________________ .,,I don't like math.,,私は数学が嫌い。,,I don't like math,I|don't|like|math,5-8-1-a.mp3,-b.mp3,I don't like math,5-8-1,,
-u5_l11_p9,u5_l11,user,,left,none,1,,1,___________________ .,,She doesn't like snakes.,,彼女は蛇が嫌いです。,,She doesn't like snakes,She|doesn't|like|snakes,5-8-3-a.mp3,-b.mp3,She doesn't like snakes,5-8-3,,
-u5_l11_p10,u5_l11,05.png,user,left,right,1,1,1,Does he play the guitar?,"___ ,　________ . ",Does he play the guitar?,"Yes, he does.",彼はギターを演奏する？,はい、しますよ。,Yes he does,Yes|he|does,5-8-10-a.mp3,5-8-10-b.mp3,Yes he does,5-8-10,5-8-10,
-u5_l11_p11,u5_l11,05.png,user,left,right,1,1,1,Does he drink green tea?,"___ ,　________ ..　He drinks coffee.",Does he drink green tea?,"No, he doesn’t. He drinks coffee.",彼は緑茶飲むかな？,いいえ、彼はコーヒーを飲むよ。,No he doesn’t,No|he|doesn’t,5-8-12-a.mp3,5-8-12-b.mp3,No he doesn’t,5-8-12,5-8-12,
-u5_l11_p12,u5_l11,user,,left,none,1,,1,"______________ ,　________？",,"You are busy, aren’t you?",,あなたは忙しいんだよね？,,You are busy aren’t you,You|are|busy|aren’t|you,5-10-1-a.mp3,-b.mp3,You are busy aren’t you,5-10-1,,
-u5_l11_p13,u5_l11,user,,left,none,1,,1,"______________ ,　________？",,"They are friends, aren’t they?",,彼らは友達だよね？,,They are friends aren’t they,They|are|friends|aren’t|they,5-10-5-a.mp3,-b.mp3,They are friends aren’t they,5-10-5,,
-u5_l11_p14,u5_l11,user,,left,none,1,,1,"______________ ,　________？",,"It is cold, isn’t it?",,寒くない？,,It is cold isn’t it,It|is|cold|isn’t|it,5-10-10-a.mp3,-b.mp3,It is cold isn’t it,5-10-10,,
-u5_l11_p15,u5_l11,05.png,user,left,right,1,1,1,I bought a car!,"______________ ,　________？",I bought a car!,"It runs fast, doesn't it?",車を買ったんだ！,それって速いんでしょ？,It runs fast doesn't it,It|runs|fast|doesn't|it,5-10-11-a.mp3,5-10-11-b.mp3,It runs fast doesn't it,5-10-11,5-10-11,
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u5_l11_p1,u5_l11,user,,left,none,1,,1,_____________ .,,私はペンを持ってるよ。,,I have a pen,I|have|a|pen,5-2-5-a.mp3,
+u5_l11_p2,u5_l11,user,,left,none,1,,1,___________________ .,,私たちは一緒にランチを食べます。,,We eat lunch together,We|eat|lunch|together,5-2-9-a.mp3,
+u5_l11_p3,u5_l11,user,,left,none,1,,1,_____________ .,,私はかわいい動物が好きです。,,I like cute animals,I|like|cute|animals,5-2-11-a.mp3,
+u5_l11_p4,u5_l11,user,,left,none,1,,1,_____________ .,,彼女はディナーを作ります。,,She makes dinner,She|makes|dinner,5-4-4-a.mp3,
+u5_l11_p5,u5_l11,user,,left,none,1,,1,_____________ .,,彼女は音楽が好きです。,,She likes music,She|likes|music,5-4-6-a.mp3,
+u5_l11_p6,u5_l11,05.png,user,left,right,1,1,1,___________________ ？,I don’t know.,彼女は猫好きですか？,わからない。,Does she like cats,Does|she|like|cats,5-6-2-a.mp3,5-6-2-b.mp3
+u5_l11_p7,u5_l11,05.png,user,left,right,1,1,1,Do you like music?,___ .　________ . ,あなたは音楽好きですか？,はい、クラシックが好きです,Yes I like classics,Yes|I|like|classics,5-6-6-a.mp3,5-6-6-b.mp3
+u5_l11_p8,u5_l11,user,,left,none,1,,1,___________________ .,,私は数学が嫌い。,,I don't like math,I|don't|like|math,5-8-1-a.mp3,
+u5_l11_p9,u5_l11,user,,left,none,1,,1,___________________ .,,彼女は蛇が嫌いです。,,She doesn't like snakes,She|doesn't|like|snakes,5-8-3-a.mp3,
+u5_l11_p10,u5_l11,05.png,user,left,right,1,1,1,Does he play the guitar?,"___ ,　________ . ",彼はギターを演奏する？,はい、しますよ。,Yes he does,Yes|he|does,5-8-10-a.mp3,5-8-10-b.mp3
+u5_l11_p11,u5_l11,05.png,user,left,right,1,1,1,Does he drink green tea?,"___ ,　________ ..　He drinks coffee.",彼は緑茶飲むかな？,いいえ、彼はコーヒーを飲むよ。,No he doesn’t,No|he|doesn’t,5-8-12-a.mp3,5-8-12-b.mp3
+u5_l11_p12,u5_l11,user,,left,none,1,,1,"______________ ,　________？",,あなたは忙しいんだよね？,,You are busy aren’t you,You|are|busy|aren’t|you,5-10-1-a.mp3,
+u5_l11_p13,u5_l11,user,,left,none,1,,1,"______________ ,　________？",,彼らは友達だよね？,,They are friends aren’t they,They|are|friends|aren’t|they,5-10-5-a.mp3,
+u5_l11_p14,u5_l11,user,,left,none,1,,1,"______________ ,　________？",,寒くない？,,It is cold isn’t it,It|is|cold|isn’t|it,5-10-10-a.mp3,
+u5_l11_p15,u5_l11,05.png,user,left,right,1,1,1,I bought a car!,"______________ ,　________？",車を買ったんだ！,それって速いんでしょ？,It runs fast doesn't it,It|runs|fast|doesn't|it,5-10-11-a.mp3,5-10-11-b.mp3

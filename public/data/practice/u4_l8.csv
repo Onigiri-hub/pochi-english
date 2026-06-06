@@ -1,10 +1,10 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u4_l8_p1,u4_l8,05.png,user,left,right,1,1,1,Are you busy?,"___ ,　__　___ .",Are you busy?,"Yes, I am.",忙しい？,うん,Yes I am,Yes|I|am,4-8-1-a.mp3,4-8-1-b.mp3,Yes I am,4-8-1,4-8-1,y
-u4_l8_p2,u4_l8,05.png,user,left,right,1,1,1,__　__　_____?,Maybe.,Is he happy?,Maybe.,彼は幸せ？,たぶんね。,Is he happy,Is|he|happy,4-8-2-a.mp3,4-8-2-b.mp3,Is he happy,4-8-2,4-8-2,y
-u4_l8_p3,u4_l8,05.png,user,left,right,1,1,1,__　___　_　______ ?,"No, she is a stranger.",Is she a teacher?,"No, she is a stranger.",彼女は先生ですか？,いいえ、彼女は知らない人です。,Is she a teacher,Is|she|a|teacher,4-8-3-a.mp3,4-8-3-b.mp3,Is she a teacher,4-8-3,4-8-3,y
-u4_l8_p4,u4_l8,05.png,user,left,right,1,1,1,__　__　____ ?,Yes,Is it cold?,Yes,寒い？,うん,Is it cold,Is|it|cold,4-8-4-a.mp3,4-8-4-b.mp3,Is it cold,4-8-4,4-8-4,y
-u4_l8_p5,u4_l8,05.png,user,left,right,1,1,1,___　_____　______ ?,I’m not sure.,Are they friends?,I’m not sure.,彼らは友達？,わからない,Are they friends,Are|they|friends,4-8-5-a.mp3,4-8-5-b.mp3,Are they friends,4-8-5,4-8-5,y
-u4_l8_p6,u4_l8,05.png,user,left,right,1,1,1,Is this your book?,"__ ,　___　____ .",Is this your book?,"No, it's not.",これはあなたの本？,いいえ,No it's not,No|it's|not,4-8-6-a.mp3,4-8-6-b.mp3,No it's not,4-8-6,4-8-6,y
-u4_l8_p7,u4_l8,05.png,user,left,right,1,1,1,Are these his shoes?,"___ ,　____　___ .",Are these his shoes?,"Yes, they are.",これらは彼の靴？,はい、そうです,Yes they are,Yes|they|are,4-8-7-a.mp3,4-8-7-b.mp3,Yes they are,4-8-7,4-8-7,y
-u4_l8_p8,u4_l8,05.png,user,left,right,1,1,1,Are those dogs?,"__ ,　____　___　____ .",Are those dogs?,"No, they are cats.",あれらは犬ですか？,いいえ、猫です,No they are cats,No|they|are|cats,4-8-8-a.mp3,4-8-8-b.mp3,No they are cats,4-8-8,4-8-8,y
-u4_l8_p9,u4_l8,05.png,user,left,right,1,1,1,Are these your pencils?,"___ ,　____　___ .",Are these your pencils?,"Yes, they are.",これらはあなたの鉛筆ですか？,はい、そうです,Yes they are,Yes|they|are,4-8-9-a.mp3,4-8-9-b.mp3,Yes they are,4-8-9,4-8-9,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u4_l8_p1,u4_l8,05.png,user,left,right,1,1,1,Are you busy?,"___ ,　__　___ .",忙しい？,うん,Yes I am,Yes|I|am,4-8-1-a.mp3,4-8-1-b.mp3
+u4_l8_p2,u4_l8,05.png,user,left,right,1,1,1,__　__　_____?,Maybe.,彼は幸せ？,たぶんね。,Is he happy,Is|he|happy,4-8-2-a.mp3,4-8-2-b.mp3
+u4_l8_p3,u4_l8,05.png,user,left,right,1,1,1,__　___　_　______ ?,"No, she is a stranger.",彼女は先生ですか？,いいえ、彼女は知らない人です。,Is she a teacher,Is|she|a|teacher,4-8-3-a.mp3,4-8-3-b.mp3
+u4_l8_p4,u4_l8,05.png,user,left,right,1,1,1,__　__　____ ?,Yes,寒い？,うん,Is it cold,Is|it|cold,4-8-4-a.mp3,4-8-4-b.mp3
+u4_l8_p5,u4_l8,05.png,user,left,right,1,1,1,___　_____　______ ?,I’m not sure.,彼らは友達？,わからない,Are they friends,Are|they|friends,4-8-5-a.mp3,4-8-5-b.mp3
+u4_l8_p6,u4_l8,05.png,user,left,right,1,1,1,Is this your book?,"__ ,　___　____ .",これはあなたの本？,いいえ,No it's not,No|it's|not,4-8-6-a.mp3,4-8-6-b.mp3
+u4_l8_p7,u4_l8,05.png,user,left,right,1,1,1,Are these his shoes?,"___ ,　____　___ .",これらは彼の靴？,はい、そうです,Yes they are,Yes|they|are,4-8-7-a.mp3,4-8-7-b.mp3
+u4_l8_p8,u4_l8,05.png,user,left,right,1,1,1,Are those dogs?,"__ ,　____　___　____ .",あれらは犬ですか？,いいえ、猫です,No they are cats,No|they|are|cats,4-8-8-a.mp3,4-8-8-b.mp3
+u4_l8_p9,u4_l8,05.png,user,left,right,1,1,1,Are these your pencils?,"___ ,　____　___ .",これらはあなたの鉛筆ですか？,はい、そうです,Yes they are,Yes|they|are,4-8-9-a.mp3,4-8-9-b.mp3

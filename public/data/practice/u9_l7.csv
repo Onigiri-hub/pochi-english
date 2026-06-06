@@ -1,12 +1,12 @@
-question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_origin,sentence_second_origin,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second,chip,audio_first,audio_second,audio_done
-u9_l7_p1,u9_l7,user,,left,none,1,,0,________________ .,,The name of this app is Pochi.,,このアプリの名前はPochiだよ。,,The name of this app is Pochi,The|name|of|this|app|is|Pochi,9-2-1-a.mp3,,The name of this app is Pochi,9-2-1,,y
-u9_l7_p2,u9_l7,user,,left,none,1,,0,________________ .,,The girl with blue eyes is my friend.,,あの青い目の女の子は、私の友達。,,The girl with blue eyes is my friend,The|girl|with|blue|eyes|is|my|friend,9-2-5-a.mp3,,The girl with blue eyes is my friend,9-2-5,,y
-u9_l7_p3,u9_l7,user,,left,none,1,,0,________________ .,,She cleans her room with a vacuum.,,彼女は掃除機で部屋を掃除するよ。,,She cleans her room with a vacuum,She|cleans|her|room|with|a|vacuum,9-2-6-a.mp3,,She cleans her room with a vacuum,9-2-6,,y
-u9_l7_p4,u9_l7,user,,left,none,1,,0,________________ .,,Some of my friends like English.,,友達のうち何人かは英語が好き。,,Some of my friends like English,Some|of|my|friends|like|English,9-2-9-a.mp3,,Some of my friends like English,9-2-9,,y
-u9_l7_p5,u9_l7,user,,left,none,1,,0,________________ .,,I wash my hands before lunch.,,私はランチの前に手を洗うよ。,,I wash my hands before lunch,I|wash|my|hands|before|lunch,9-4-2-a.mp3,,I wash my hands before lunch,9-4-2,,y
-u9_l7_p6,u9_l7,user,,left,none,1,,0,________________ .,,This book is about English grammar.,,この本は英文法についての本だよ。,,This book is about English grammar,This|book|is|about|English|grammar,9-4-6-a.mp3,,This book is about English grammar,9-4-6,,y
-u9_l7_p7,u9_l7,user,,left,none,1,,0,________________ .,,He plays the piano without sheet music.,,彼は楽譜無しでピアノを弾くよ。,,He plays the piano without sheet music,He|plays|the|piano|without|sheet|music,9-4-7-a.mp3,,He plays the piano without sheet music,9-4-7,,y
-u9_l7_p8,u9_l7,user,,left,none,1,,0,________________ .,,She walks her dog after dinner.,,彼女は夕食後、犬の散歩をするよ。,,She walks her dog after dinner,She|walks|her|dog|after|dinner,9-4-9-a.mp3,,She walks her dog after dinner,9-4-9,,y
-u9_l7_p9,u9_l7,user,,left,none,1,,0,________________ .,,My father works as a teacher at my school.,,父さんはうちの学校で先生として働いているよ。,,My father works as a teacher at my school,My|father|works|as|a|teacher|at|my|school,9-6-1-a.mp3,,My father works as a teacher at my school,9-6-1,,y
-u9_l7_p10,u9_l7,user,,left,none,1,,0,________________ .,,I make bento for my children every day.,,私は毎日、子供たちにお弁当を作るよ。,,I make bento for my children every day,I|make|bento|for|my|children|every|day,9-6-4-a.mp3,,I make bento for my children every day,9-6-4,,y
-u9_l7_p11,u9_l7,user,,left,none,1,,0,________________ .,,He runs for 30 minutes every morning.,,彼は毎朝30分走る。,,He runs for 30 minutes every morning,He|runs|for|30|minutes|every|morning,9-6-8-a.mp3,,He runs for 30 minutes every morning,9-6-8,,y
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u9_l7_p1,u9_l7,user,,left,none,1,,0,________________ .,,このアプリの名前はPochiだよ。,,The name of this app is Pochi,The|name|of|this|app|is|Pochi,9-2-1-a.mp3,
+u9_l7_p2,u9_l7,user,,left,none,1,,0,________________ .,,あの青い目の女の子は、私の友達。,,The girl with blue eyes is my friend,The|girl|with|blue|eyes|is|my|friend,9-2-5-a.mp3,
+u9_l7_p3,u9_l7,user,,left,none,1,,0,________________ .,,彼女は掃除機で部屋を掃除するよ。,,She cleans her room with a vacuum,She|cleans|her|room|with|a|vacuum,9-2-6-a.mp3,
+u9_l7_p4,u9_l7,user,,left,none,1,,0,________________ .,,友達のうち何人かは英語が好き。,,Some of my friends like English,Some|of|my|friends|like|English,9-2-9-a.mp3,
+u9_l7_p5,u9_l7,user,,left,none,1,,0,________________ .,,私はランチの前に手を洗うよ。,,I wash my hands before lunch,I|wash|my|hands|before|lunch,9-4-2-a.mp3,
+u9_l7_p6,u9_l7,user,,left,none,1,,0,________________ .,,この本は英文法についての本だよ。,,This book is about English grammar,This|book|is|about|English|grammar,9-4-6-a.mp3,
+u9_l7_p7,u9_l7,user,,left,none,1,,0,________________ .,,彼は楽譜無しでピアノを弾くよ。,,He plays the piano without sheet music,He|plays|the|piano|without|sheet|music,9-4-7-a.mp3,
+u9_l7_p8,u9_l7,user,,left,none,1,,0,________________ .,,彼女は夕食後、犬の散歩をするよ。,,She walks her dog after dinner,She|walks|her|dog|after|dinner,9-4-9-a.mp3,
+u9_l7_p9,u9_l7,user,,left,none,1,,0,________________ .,,父さんはうちの学校で先生として働いているよ。,,My father works as a teacher at my school,My|father|works|as|a|teacher|at|my|school,9-6-1-a.mp3,
+u9_l7_p10,u9_l7,user,,left,none,1,,0,________________ .,,私は毎日、子供たちにお弁当を作るよ。,,I make bento for my children every day,I|make|bento|for|my|children|every|day,9-6-4-a.mp3,
+u9_l7_p11,u9_l7,user,,left,none,1,,0,________________ .,,彼は毎朝30分走る。,,He runs for 30 minutes every morning,He|runs|for|30|minutes|every|morning,9-6-8-a.mp3,
