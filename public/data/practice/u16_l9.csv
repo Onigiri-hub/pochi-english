@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u16_l9_p1,u16_l9,user,,right,none,1,,0,________.,,私たちは先週の日曜日に祖父母を訪ねました。,,We visited our grandparents last Sunday,We|visited|our|grandparents|last|Sunday,16-2-2-a.mp3,
+u16_l9_p2,u16_l9,user,,right,none,1,,0,________.,,ポチは今朝自分の部屋を掃除しました。,,Pochi cleaned his room this morning,Pochi|cleaned|his|room|this|morning,16-2-4-a.mp3,
+u16_l9_p3,u16_l9,05.png,,left,none,1,,0,________.,,私は昨日テニスをしませんでした。,,I did not play tennis yesterday,I|did|not|play|tennis|yesterday,16-4-4-a.mp3,
+u16_l9_p4,u16_l9,05.png,user,left,right,1,1,0,________?,"No, I didn't.",宿題は終わった？,いいえ、終わっていません。,Did you finish your homework,Did|you|finish|your|homework,16-4-6-a.mp3,16-4-6-b.mp3
+u16_l9_p5,u16_l9,05.png,,left,none,1,,0,________.,,彼女は試合の後疲れていました。,,She was tired after the game,She|was|tired|after|the|game,16-6-1-a.mp3,
+u16_l9_p6,u16_l9,05.png,user,left,right,1,1,0,________?,"Yes, I was.",昨日は家にいましたか。,はい、いました。,Were you at home yesterday,Were|you|at|home|yesterday,16-6-3-a.mp3,16-6-3-b.mp3
+u16_l9_p7,u16_l9,05.png,,left,none,1,,0,________.,,私はそのとき眠くありませんでした。,,I was not sleepy then,I|was|not|sleepy|then,16-6-5-a.mp3,
+u16_l9_p8,u16_l9,user,,right,none,1,,0,________.,,私は昨夜7時に勉強していました。,,I was studying at seven last night,I|was|studying|at|seven|last|night,16-8-1-a.mp3,
+u16_l9_p9,u16_l9,user,,right,none,1,,0,________.,,彼らはバスを待っていました。,,They were waiting for the bus,They|were|waiting|for|the|bus,16-8-6-a.mp3,
+u16_l9_p10,u16_l9,05.png,user,left,right,1,1,0,________?,"Yes, he was.",トムはパソコンを使っていましたか。,はい、使っていました。,Was Tom using the computer,Was|Tom|using|the|computer,16-8-9-a.mp3,16-8-9-b.mp3

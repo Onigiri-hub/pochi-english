@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u14_l7_p1,u14_l7,05.png,,left,none,1,,0,________.,,帰り道は気をつけてね。,,Be careful on your way home,Be|careful|on|your|way|home,14-2-2-a.mp3,
+u14_l7_p2,u14_l7,05.png,,left,none,1,,0,________.,,図書館では静かにしてください。,,Be quiet in the library,Be|quiet|in|the|library,14-2-4-a.mp3,
+u14_l7_p3,u14_l7,05.png,,left,none,1,,0,"________, everyone.",,みなさん、私の話を聞いてください。,,Listen to me,Listen|to|me,14-2-7-a.mp3,
+u14_l7_p4,u14_l7,05.png,,left,none,1,,0,________.,,このケーキを食べてみて。,,Try this cake,Try|this|cake,14-2-9-a.mp3,
+u14_l7_p5,u14_l7,05.png,,left,none,1,,0,________.,,廊下を走ってはいけません。,,Don't run in the hallway,Don't|run|in|the|hallway,14-4-1-a.mp3,
+u14_l7_p6,u14_l7,05.png,,left,none,1,,0,________.,,窓を開けないでください。,,Don't open the window,Don't|open|the|window,14-4-4-a.mp3,
+u14_l7_p7,u14_l7,05.png,,left,none,1,,0,________.,,この部屋に入ってはいけません。,,You must not enter this room,You|must|not|enter|this|room,14-4-6-a.mp3,
+u14_l7_p8,u14_l7,user,,right,none,1,,0,________.,,放課後にサッカーをしよう。,,Let's play soccer after school,Let's|play|soccer|after|school,14-6-1-a.mp3,
+u14_l7_p9,u14_l7,user,05.png,right,left,1,1,0,I'm hungry.,________.,おなかすいた。,お昼ご飯を食べよう。,Let's have lunch,Let's|have|lunch,14-6-5-a.mp3,14-6-5-b.mp3
+u14_l7_p10,u14_l7,user,05.png,right,left,1,1,0,It's sunny today.,________.,今日は晴れてるね。,外で遊ぼう。,Let's play outside,Let's|play|outside,14-6-6-a.mp3,14-6-6-b.mp3
+u14_l7_p11,u14_l7,user,,right,none,1,,0,________.,,今夜この映画を見よう。,,Let's watch this movie tonight,Let's|watch|this|movie|tonight,14-6-8-a.mp3,

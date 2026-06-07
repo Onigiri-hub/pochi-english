@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u16_l8_p1,u16_l8,user,,right,none,1,,1,________.,,私は昨夜7時に勉強していました。,,I was studying at seven last night,I|was|studying|at|seven|last|night,16-8-1-a.mp3,
+u16_l8_p2,u16_l8,user,,right,none,1,,1,________.,,妹はそのとき本を読んでいました。,,My sister was reading a book then,My|sister|was|reading|a|book|then,16-8-2-a.mp3,
+u16_l8_p3,u16_l8,user,,right,none,1,,1,________.,,私たちは放課後サッカーをしていました。,,We were playing soccer after school,We|were|playing|soccer|after|school,16-8-3-a.mp3,
+u16_l8_p4,u16_l8,05.png,user,left,right,1,1,1,________?,I was helping my mother.,そのとき何をしていたの？,母を手伝っていたよ。,What were you doing then,What|were|you|doing|then,16-8-4-a.mp3,16-8-4-b.mp3
+u16_l8_p5,u16_l8,user,,right,none,1,,1,________.,,先生は生徒たちと話していました。,,The teacher was talking to the students,The|teacher|was|talking|to|the|students,16-8-5-a.mp3,
+u16_l8_p6,u16_l8,user,,right,none,1,,1,________.,,彼らはバスを待っていました。,,They were waiting for the bus,They|were|waiting|for|the|bus,16-8-6-a.mp3,
+u16_l8_p7,u16_l8,user,,right,none,1,,1,________.,,私は10時には寝ていませんでした。,,I was not sleeping at ten,I|was|not|sleeping|at|ten,16-8-7-a.mp3,
+u16_l8_p8,u16_l8,user,,right,none,1,,1,________?,,そのときテレビを見ていましたか。,,Were you watching TV then,Were|you|watching|TV|then,16-8-8-a.mp3,
+u16_l8_p9,u16_l8,05.png,user,left,right,1,1,1,________?,"Yes, he was.",トムはパソコンを使っていましたか。,はい、使っていました。,Was Tom using the computer,Was|Tom|using|the|computer,16-8-9-a.mp3,16-8-9-b.mp3
+u16_l8_p10,u16_l8,user,,right,none,1,,1,________.,,子どもたちは公園で遊んでいました。,,The children were playing in the park,The|children|were|playing|in|the|park,16-8-10-a.mp3,

@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u15_l3_p1,u15_l3,user,,right,none,1,,1,________.,,妹は本を読むことが好きです。,,My sister likes reading books,My|sister|likes|reading|books,15-3-1-a.mp3,
+u15_l3_p2,u15_l3,user,,right,none,1,,1,________.,,泳ぐことは楽しいです。,,Swimming is fun,Swimming|is|fun,15-3-2-a.mp3,
+u15_l3_p3,u15_l3,user,,right,none,1,,1,________.,,ゲームをすることは面白いです。,,Playing games is interesting,Playing|games|is|interesting,15-3-3-a.mp3,
+u15_l3_p4,u15_l3,user,,right,none,1,,1,________.,,英語を学ぶことは大切です。,,Learning English is important,Learning|English|is|important,15-3-4-a.mp3,
+u15_l3_p5,u15_l3,user,,right,none,1,,1,________.,,私の趣味は切手を集めることです。,,My hobby is collecting stamps,My|hobby|is|collecting|stamps,15-3-5-a.mp3,
+u15_l3_p6,u15_l3,user,,right,none,1,,1,________.,,犬と散歩することは気分が落ち着きます。,,Walking with my dog is relaxing,Walking|with|my|dog|is|relaxing,15-3-6-a.mp3,
+u15_l3_p7,u15_l3,user,,right,none,1,,1,________.,,彼は料理を楽しんでいます。,,He enjoys cooking,He|enjoys|cooking,15-3-7-a.mp3,

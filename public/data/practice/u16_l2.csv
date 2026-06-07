@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u16_l2_p1,u16_l2,user,,right,none,1,,1,________.,,彼らは昨日サッカーをしました。,,They played soccer yesterday,They|played|soccer|yesterday,16-2-1-a.mp3,
+u16_l2_p2,u16_l2,user,,right,none,1,,1,________.,,私たちは先週の日曜日に祖父母を訪ねました。,,We visited our grandparents last Sunday,We|visited|our|grandparents|last|Sunday,16-2-2-a.mp3,
+u16_l2_p3,u16_l2,user,,right,none,1,,1,________.,,私は家族と夕食を食べました。,,I ate dinner with my family,I|ate|dinner|with|my|family,16-2-3-a.mp3,
+u16_l2_p4,u16_l2,user,,right,none,1,,1,________.,,ポチは今朝自分の部屋を掃除しました。,,Pochi cleaned his room this morning,Pochi|cleaned|his|room|this|morning,16-2-4-a.mp3,
+u16_l2_p5,u16_l2,user,,right,none,1,,1,________.,,父は昨日夕食を作りました。,,My father cooked dinner yesterday,My|father|cooked|dinner|yesterday,16-2-5-a.mp3,
+u16_l2_p6,u16_l2,user,,right,none,1,,1,________.,,私たちは学校祭に行きました。,,We went to the school festival,We|went|to|the|school|festival,16-2-6-a.mp3,
+u16_l2_p7,u16_l2,user,,right,none,1,,1,________.,,私は寝る前に音楽を聞きました。,,I listened to music before bed,I|listened|to|music|before|bed,16-2-7-a.mp3,
+u16_l2_p8,u16_l2,user,,right,none,1,,1,________.,,彼らは昨日歩いて学校へ行きました。,,They walked to school yesterday,They|walked|to|school|yesterday,16-2-8-a.mp3,

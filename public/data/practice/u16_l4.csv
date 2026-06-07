@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u16_l4_p1,u16_l4,05.png,,left,none,1,,1,________?,,昨日その試合を見ましたか。,,Did you watch the game yesterday,Did|you|watch|the|game|yesterday,16-4-1-a.mp3,
+u16_l4_p2,u16_l4,05.png,user,left,right,1,1,1,________?,"Yes, she did.",エミは学校に来ましたか。,はい、来ました。,Did Emi come to school,Did|Emi|come|to|school,16-4-2-a.mp3,16-4-2-b.mp3
+u16_l4_p3,u16_l4,05.png,,left,none,1,,1,________?,,お兄さんは昨夜勉強しましたか。,,Did your brother study last night,Did|your|brother|study|last|night,16-4-3-a.mp3,
+u16_l4_p4,u16_l4,05.png,,left,none,1,,1,________.,,私は昨日テニスをしませんでした。,,I did not play tennis yesterday,I|did|not|play|tennis|yesterday,16-4-4-a.mp3,
+u16_l4_p5,u16_l4,05.png,,left,none,1,,1,________.,,私たちは図書館へ行きませんでした。,,We did not go to the library,We|did|not|go|to|the|library,16-4-5-a.mp3,
+u16_l4_p6,u16_l4,05.png,user,left,right,1,1,1,________?,"No, I didn't.",宿題は終わった？,いいえ、終わっていません。,Did you finish your homework,Did|you|finish|your|homework,16-4-6-a.mp3,16-4-6-b.mp3
+u16_l4_p7,u16_l4,05.png,,left,none,1,,1,________.,,父は昨夜テレビを見ませんでした。,,My father did not watch TV last night,My|father|did|not|watch|TV|last|night,16-4-7-a.mp3,
+u16_l4_p8,u16_l4,05.png,,left,none,1,,1,________.,,私は授業中スマホを使いませんでした。,,I did not use my phone during class,I|did|not|use|my|phone|during|class,16-4-8-a.mp3,

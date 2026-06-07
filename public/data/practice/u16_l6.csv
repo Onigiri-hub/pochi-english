@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u16_l6_p1,u16_l6,05.png,,left,none,1,,1,________.,,彼女は試合の後疲れていました。,,She was tired after the game,She|was|tired|after|the|game,16-6-1-a.mp3,
+u16_l6_p2,u16_l6,05.png,,left,none,1,,1,________.,,私たちはそのとき教室にいました。,,We were in the classroom then,We|were|in|the|classroom|then,16-6-2-a.mp3,
+u16_l6_p3,u16_l6,05.png,user,left,right,1,1,1,________?,"Yes, I was.",昨日は家にいましたか。,はい、いました。,Were you at home yesterday,Were|you|at|home|yesterday,16-6-3-a.mp3,16-6-3-b.mp3
+u16_l6_p4,u16_l6,05.png,,left,none,1,,1,________.,,先週の日曜日は天気が良かったです。,,The weather was nice last Sunday,The|weather|was|nice|last|Sunday,16-6-4-a.mp3,
+u16_l6_p5,u16_l6,05.png,,left,none,1,,1,________.,,私はそのとき眠くありませんでした。,,I was not sleepy then,I|was|not|sleepy|then,16-6-5-a.mp3,
+u16_l6_p6,u16_l6,05.png,user,left,right,1,1,1,________?,"No, he wasn't.",ケンは昨日病気でしたか。,いいえ,Was Ken sick yesterday,Was|Ken|sick|yesterday,16-6-6-a.mp3,16-6-6-b.mp3
+u16_l6_p7,u16_l6,05.png,,left,none,1,,1,________.,,その公園はとても混んでいました。,,The park was very crowded,The|park|was|very|crowded,16-6-7-a.mp3,

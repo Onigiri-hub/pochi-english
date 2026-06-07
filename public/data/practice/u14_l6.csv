@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u14_l6_p1,u14_l6,user,,right,none,1,,1,________.,,放課後にサッカーをしよう。,,Let's play soccer after school,Let's|play|soccer|after|school,14-6-1-a.mp3,
+u14_l6_p2,u14_l6,user,,right,none,1,,1,________.,,いっしょに勉強しよう。,,Let's study together,Let's|study|together,14-6-2-a.mp3,
+u14_l6_p3,u14_l6,user,,right,none,1,,1,________.,,図書館に行こう。,,Let's go to the library,Let's|go|to|the|library,14-6-3-a.mp3,
+u14_l6_p4,u14_l6,user,,right,none,1,,1,________.,,写真を撮ろう。,,Let's take a picture,Let's|take|a|picture,14-6-4-a.mp3,
+u14_l6_p5,u14_l6,user,05.png,right,left,1,1,1,I'm hungry.,________.,おなかすいた。,お昼ご飯を食べよう。,Let's have lunch,Let's|have|lunch,14-6-5-a.mp3,14-6-5-b.mp3
+u14_l6_p6,u14_l6,user,05.png,right,left,1,1,1,It's sunny today.,________.,今日は晴れてるね。,外で遊ぼう。,Let's play outside,Let's|play|outside,14-6-6-a.mp3,14-6-6-b.mp3
+u14_l6_p7,u14_l6,user,,right,none,1,,1,________.,,先生を手伝おう。,,Let's help our teacher,Let's|help|our|teacher,14-6-7-a.mp3,
+u14_l6_p8,u14_l6,user,,right,none,1,,1,________.,,今夜この映画を見よう。,,Let's watch this movie tonight,Let's|watch|this|movie|tonight,14-6-8-a.mp3,
+u14_l6_p9,u14_l6,user,05.png,right,left,1,1,1,What should we do now?,________.,今何をしようか。,英語を練習しよう。,Let's practice English,Let's|practice|English,14-6-9-a.mp3,14-6-9-b.mp3
+u14_l6_p10,u14_l6,user,,right,none,1,,1,________.,,いっしょに教室を掃除しよう。,,Let's clean the classroom together,Let's|clean|the|classroom|together,14-6-10-a.mp3,

@@ -1,0 +1,18 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u15_l3_p1,u15_l3,user,,right,none,1,,0,________.,,妹は本を読むことが好きです。,,My sister likes reading books,My|sister|likes|reading|books,15-3-1-a.mp3,
+u15_l3_p2,u15_l3,user,,right,none,1,,0,________.,,泳ぐことは楽しいです。,,Swimming is fun,Swimming|is|fun,15-3-2-a.mp3,
+u15_l3_p3,u15_l3,user,,right,none,1,,0,________.,,ゲームをすることは面白いです。,,Playing games is interesting,Playing|games|is|interesting,15-3-3-a.mp3,
+u15_l3_p4,u15_l3,user,,right,none,1,,0,________.,,英語を学ぶことは大切です。,,Learning English is important,Learning|English|is|important,15-3-4-a.mp3,
+u15_l3_p5,u15_l3,user,,right,none,1,,0,________.,,私の趣味は切手を集めることです。,,My hobby is collecting stamps,My|hobby|is|collecting|stamps,15-3-5-a.mp3,
+u15_l3_p6,u15_l3,user,,right,none,1,,0,________.,,犬と散歩することは気分が落ち着きます。,,Walking with my dog is relaxing,Walking|with|my|dog|is|relaxing,15-3-6-a.mp3,
+u15_l3_p7,u15_l3,user,,right,none,1,,0,________.,,彼は料理を楽しんでいます。,,He enjoys cooking,He|enjoys|cooking,15-3-7-a.mp3,
+u15_l5_p1,u15_l5,user,,right,none,1,,0,________.,,私は今テレビを見ていません。,,I am not watching TV now,I|am|not|watching|TV|now,15-5-1-a.mp3,
+u15_l5_p2,u15_l5,user,,right,none,1,,0,________.,,私の父は寝ていません。,,My father is not sleeping,My|father|is|not|sleeping,15-5-2-a.mp3,
+u15_l5_p3,u15_l5,05.png,user,left,right,1,1,0,Where is Ken?,________.,ケンはどこ？,図書館で勉強しているよ。,He is studying in the library,He|is|studying|in|the|library,15-5-3-a.mp3,15-5-3-b.mp3
+u15_l5_p4,u15_l5,05.png,user,left,right,1,1,0,________?,"No, I am not.",勉強しているの？,いいえ？,Are you studying,Are|you|studying,15-5-4-a.mp3,15-5-4-b.mp3
+u15_l5_p5,u15_l5,user,,right,none,1,,0,________.,,あの眠っている赤ちゃんを見て。,,Look at that sleeping baby,Look|at|that|sleeping|baby,15-5-5-a.mp3,
+u15_l5_p6,u15_l5,user,,right,none,1,,0,________?,,バスを待っていますか。,,Are you waiting for the bus,Are|you|waiting|for|the|bus,15-5-6-a.mp3,
+u15_l5_p7,u15_l5,user,,right,none,1,,0,________.,,走っている男の子は私の弟です。,,The running boy is my brother,The|running|boy|is|my|brother,15-5-7-a.mp3,
+u15_l5_p8,u15_l5,user,,right,none,1,,0,________.,,お兄ちゃんはゲームしてるよ,,My brother is playing a game,My|brother|is|playing|a|game,15-5-8-a.mp3,
+u15_l5_p9,u15_l5,user,,right,none,1,,0,________.,,泳いでいる犬はかわいいです。,,The swimming dog is cute,The|swimming|dog|is|cute,15-5-9-a.mp3,
+u15_l5_p10,u15_l5,user,,right,none,1,,0,________.,,彼らは私たちを待っていません。,,They are not waiting for us,They|are|not|waiting|for|us,15-5-10-a.mp3,

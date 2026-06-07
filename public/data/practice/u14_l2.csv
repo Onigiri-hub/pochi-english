@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u14_l2_p1,u14_l2,05.png,,left,none,1,,1,"________, please.",,ノートを開いてください。,,Open your notebook,Open|your|notebook,14-2-1-a.mp3,
+u14_l2_p2,u14_l2,05.png,,left,none,1,,1,________.,,帰り道は気をつけてね。,,Be careful on your way home,Be|careful|on|your|way|home,14-2-2-a.mp3,
+u14_l2_p3,u14_l2,05.png,,left,none,1,,1,________.,,黒板を見てください。,,Look at the board,Look|at|the|board,14-2-3-a.mp3,
+u14_l2_p4,u14_l2,05.png,,left,none,1,,1,________.,,図書館では静かにしてください。,,Be quiet in the library,Be|quiet|in|the|library,14-2-4-a.mp3,
+u14_l2_p5,u14_l2,05.png,,left,none,1,,1,________.,,ちょっとこちらへ来てください。,,Come here for a minute,Come|here|for|a|minute,14-2-5-a.mp3,
+u14_l2_p6,u14_l2,05.png,,left,none,1,,1,________.,,クラスメートに親切にしてください。,,Be kind to your classmates,Be|kind|to|your|classmates,14-2-6-a.mp3,
+u14_l2_p7,u14_l2,05.png,,left,none,1,,1,"________, everyone.",,みなさん、私の話を聞いてください。,,Listen to me,Listen|to|me,14-2-7-a.mp3,
+u14_l2_p8,u14_l2,05.png,,left,none,1,,1,________.,,明日の試合の準備をしておいてください。,,Be ready for the game tomorrow,Be|ready|for|the|game|tomorrow,14-2-8-a.mp3,
+u14_l2_p9,u14_l2,05.png,,left,none,1,,1,________.,,このケーキを食べてみて。,,Try this cake,Try|this|cake,14-2-9-a.mp3,
+u14_l2_p10,u14_l2,05.png,,left,none,1,,1,________. The floor is wet.,,気をつけて。床がぬれています。,,Be careful,Be|careful,14-2-10-a.mp3,

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u14_l4_p1,u14_l4,05.png,,left,none,1,,1,________.,,廊下を走ってはいけません。,,Don't run in the hallway,Don't|run|in|the|hallway,14-4-1-a.mp3,
+u14_l4_p2,u14_l4,05.png,,left,none,1,,1,________.,,授業中にスマホを使ってはいけません。,,Don't use your phone during class,Don't|use|your|phone|during|class,14-4-2-a.mp3,
+u14_l4_p3,u14_l4,05.png,,left,none,1,,1,________.,,宿題を忘れないでね。,,Don't forget your homework,Don't|forget|your|homework,14-4-3-a.mp3,
+u14_l4_p4,u14_l4,05.png,,left,none,1,,1,________.,,窓を開けないでください。,,Don't open the window,Don't|open|the|window,14-4-4-a.mp3,
+u14_l4_p5,u14_l4,05.png,,left,none,1,,1,________.,,ここで食べてはいけません。,,You must not eat here,You|must|not|eat|here,14-4-5-a.mp3,
+u14_l4_p6,u14_l4,05.png,,left,none,1,,1,________.,,この部屋に入ってはいけません。,,You must not enter this room,You|must|not|enter|this|room,14-4-6-a.mp3,
+u14_l4_p7,u14_l4,05.png,,left,none,1,,1,________.,,明日は学校に遅れないでね。,,Don't be late for school tomorrow,Don't|be|late|for|school|tomorrow,14-4-7-a.mp3,
+u14_l4_p8,u14_l4,05.png,,left,none,1,,1,________.,,ここで写真を撮ってはいけません。,,You must not take pictures here,You|must|not|take|pictures|here,14-4-8-a.mp3,
+u14_l4_p9,u14_l4,05.png,,left,none,1,,1,"________, please.",,私のパソコンに触らないでください。,,Don't touch my computer,Don't|touch|my|computer,14-4-9-a.mp3,
+u14_l4_p10,u14_l4,05.png,,left,none,1,,1,________,,この川で泳いではいけません。,,You must not swim in this river.,You|must|not|swim|in|this|river.,14-4-10-a.mp3,
