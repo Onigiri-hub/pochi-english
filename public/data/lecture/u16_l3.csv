@@ -1,29 +1,30 @@
 page_id,lesson_id,page_NO,text,image_NO,layout
-u16_l3_p1,u16_l3,1,過去形の疑問文と否定文をみていくよ。,,image_top
-u16_l3_p2,u16_l3,2,まずは疑問文。,,image_top
-u16_l3_p3,u16_l3,3,現在形の文だと、,,image_top
+u16_l3_p1,u16_l3,1,過去形の疑問文と否定文をみていくよ。,16-3-1,image_top
+u16_l3_p2,u16_l3,2,まずは疑問文。,16-3-1,image_top
+u16_l3_p3,u16_l3,3,現在形の文だと、,16-3-2-1,image_top
 u16_l3_p4,u16_l3,4,"Do you eat sushi?
-お寿司を食べますか？",,image_top
-u16_l3_p5,u16_l3,5,って、Doを前に出す。,,image_top
-u16_l3_p6,u16_l3,6,過去形だと,,image_top
+お寿司を食べますか？",16-3-2-1,image_top
+u16_l3_p5,u16_l3,5,って、Doを前に出す。,16-3-2-1,image_top
+u16_l3_p6,u16_l3,6,過去形だと,16-3-2-2,image_top
 u16_l3_p7,u16_l3,7,"Did you eat sushi?
-お寿司食べた？",,image_top
-u16_l3_p8,u16_l3,8,になる。DoのところをDid（過去形）にするんだね。,,image_top
+お寿司食べた？",16-3-2-2,image_top
+u16_l3_p8,u16_l3,8,になる。DoのところをDid（過去形）にするんだね。,16-3-2-2,image_top
 u16_l3_p9,u16_l3,9,"そして大事なこと。
-eatの方は原形に戻してあげる。",,image_top
-u16_l3_p10,u16_l3,10,過去感はDidが引き受けてくれるから、eatは原形に戻してあげよう。,,image_top
-u16_l3_p11,u16_l3,11,というか、助動詞がついたら動詞は必ず原形に戻してあげないといけない。,,image_top
-u16_l3_p12,u16_l3,12,否定文も見てみよう。,,image_top
+eatの方は原形に戻してあげる。",16-3-2-3,image_top
+u16_l3_p10,u16_l3,10,過去感はDidが引き受けてくれるから、eatは原形に戻してあげよう。,16-3-2-3,image_top
+u16_l3_p11,u16_l3,11,というか、ここのDidは助動詞だから、動詞は必ず原形になる。,16-3-2-3,image_top
+u16_l3_p12,u16_l3,12,否定文も見てみよう。,16-3-2-3,image_top
 u16_l3_p13,u16_l3,13,"I didn't eat sushi.
-わたしは寿司を食べなかった。",,image_top
-u16_l3_p14,u16_l3,14,やっぱり、現在形でdon'tだったところが、過去形のdidn'tになってる。,,image_top
-u16_l3_p15,u16_l3,15,そして、eatのほうは原形ね。,,image_top
-u16_l3_p16,u16_l3,16,もうひとつ。,,image_top
+わたしは寿司を食べなかった。
+didn'tはdid notの略だよ。",16-3-3-1,image_top
+u16_l3_p14,u16_l3,14,やっぱり、現在形でdon'tだったところが、過去形のdidn'tになってる。,16-3-3-1,image_top
+u16_l3_p15,u16_l3,15,そして、eatのほうは原形ね。,16-3-3-2,image_top
+u16_l3_p16,u16_l3,16,もうひとつ。,16-3-3-2,image_top
 u16_l3_p17,u16_l3,17,"Did he play soccer?
-彼はサッカーしましたか？",,image_top
+彼はサッカーしましたか？",16-3-3-3,image_top
 u16_l3_p18,u16_l3,18,"No, he didn't.
-いいえ。してないよ。",,image_top
-u16_l3_p19,u16_l3,19,気づいた？過去形になると三単現考えなくてもよくなる。,,image_top
-u16_l3_p20,u16_l3,20,みんなdidなの。,,image_top
+いいえ。してないよ。",16-3-3-4,image_top
+u16_l3_p19,u16_l3,19,気づいた？過去形になると三単現考えなくてもよくなる。,16-3-3-5,image_top
+u16_l3_p20,u16_l3,20,みんなdidなの。,16-3-3-5,image_top
 u16_l3_p21,u16_l3,21,"三人称、単数、現在、の、
-現在じゃないからね。",,image_top
+現在じゃないからね。",16-3-3-6,image_top

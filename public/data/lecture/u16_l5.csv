@@ -1,21 +1,34 @@
 page_id,lesson_id,page_NO,text,image_NO,layout
-u16_l5_p1,u16_l5,1,もちろん、be動詞も過去形にできる。,,image_top
-u16_l5_p2,u16_l5,2,be動詞の過去形は2つだけ。,,image_top
+u16_l5_p1,u16_l5,1,もちろん、be動詞も過去形にできる。,16-5-1,image_top
+u16_l5_p2,u16_l5,2,be動詞の過去形は2つだけ。,16-5-1,image_top
 u16_l5_p3,u16_l5,3,"amと is → was
 are → were
-だよ。",,image_top
+だよ。",16-5-2-2,image_top
 u16_l5_p4,u16_l5,4,"I was a student then.
-私はその時、生徒だった。",,image_top
+私はその時、生徒だった。",16-5-3-1,image_top
 u16_l5_p5,u16_l5,5,"You were tired yesterday.
-あなたは昨日、疲れていた。",,image_top
+あなたは昨日、疲れていた。",16-5-3-2,image_top
 u16_l5_p6,u16_l5,6,"こんな感じね。
-過去のある時点の説明をしている。",,image_top
-u16_l5_p7,u16_l5,7,疑問文と否定文も見ていこう。,,image_top
+過去のある時点の説明をしている。",16-5-3-2,image_top
+u16_l5_p7,u16_l5,7,疑問文と否定文も見ていこう。,16-5-4-1,image_top
 u16_l5_p8,u16_l5,8,"Was he a doctor then?
-彼はその時、医者でしたか？",,image_top
-u16_l5_p9,u16_l5,9,"No, he wasn't. He was a nurse.
-いいえ、彼は看護師でした。",,image_top
-u16_l5_p10,u16_l5,10,"I wasn't tired last week.
-私は先週、疲れていませんでした。",,image_top
-u16_l5_p11,u16_l5,11,覚えることは少ないから、そんなに大変じゃないね。,,image_top
-u16_l5_p12,u16_l5,12,練習行ってみよう！,,image_top
+彼はその時、医者でしたか？",165-4-1,image_top
+u16_l5_p9,u16_l5,9,"No, he wasn't. 
+いいえ",16-5-4-2,image_top
+u16_l5_p10,u16_l5,10,"He was a nurse.
+彼は看護師でした。",16-5-4-3,image_top
+u16_l5_p11,u16_l5,11,"You weren't tired last week, right?
+あなたは先週、疲れていなかったでしょ？",16-5-5-1,image_top
+u16_l5_p12,u16_l5,12,"Yes, I was! I was really tired!
+いやいや、すっごく疲れてたよ！",16-5-5-2,image_top
+u16_l5_p13,u16_l5,13,"ここ、日本語と逆だから注意！
+相手の言うことを
+否定するって発想じゃなくて
+肯定的なことを言うからYesになる",16-5-5-3,image_top
+u16_l5_p14,u16_l5,14,"日本人は
+こういうときに
+YesかNoか混乱するから、",16-5-5-3,image_top
+u16_l5_p15,u16_l5,15,"YesもNoも言わず、
+I was really tired!って
+事実だけ言っちゃうのも
+アリだよ。",16-5-5-3,image_top

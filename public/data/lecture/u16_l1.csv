@@ -1,43 +1,47 @@
 page_id,lesson_id,page_NO,text,image_NO,layout
-u16_l1_p1,u16_l1,1,さあ来た！過去形だ。,,image_top
-u16_l1_p2,u16_l1,2,過去形を使えば、過去のことを表現できる！,,image_top
-u16_l1_p3,u16_l1,3,過去形の作り方は、日本語と似てる。,,image_top
-u16_l1_p4,u16_l1,4,日本語は、動詞をちょっと変えて過去にするよね。,,image_top
+u16_l1_p1,u16_l1,1,さあ来た！過去形だ。,16-1-1,image_top
+u16_l1_p2,u16_l1,2,過去形を使えば、過去のことを表現できる！,16-1-1,image_top
+u16_l1_p3,u16_l1,3,過去形の作り方は、日本語と似てる。,16-1-1,image_top
+u16_l1_p4,u16_l1,4,日本語は、動詞をちょっと変えて過去にするよね。,16-1-2-1,image_top
 u16_l1_p5,u16_l1,5,"食べる→食べた
 見る→見た
-歩く→歩いた",,image_top
-u16_l1_p6,u16_l1,6,英語も同じ。,,image_top
+歩く→歩いた",16-1-2-1,image_top
+u16_l1_p6,u16_l1,6,英語も同じ。,16-1-2-1,image_top
 u16_l1_p7,u16_l1,7,"eat → ate
 look → looked
-walk → walked",,image_top
-u16_l1_p8,u16_l1,8,ここを変えるだけで過去のことを言うことができるよ。,,image_top
+walk → walked",16-1-2-2,image_top
+u16_l1_p8,u16_l1,8,ここを変えるだけで過去のことを言うことができるよ。,16-1-2-2,image_top
 u16_l1_p9,u16_l1,9,"I walk to the park.
-わたしは公園へ歩いて行く。",,image_top
+わたしは公園へ歩いて行く。
+これは現在形だね。",16-1-3-1,image_top
 u16_l1_p10,u16_l1,10,"I walked to the park.
-わたしは公園へ歩いて行った。",,image_top
-u16_l1_p11,u16_l1,11,かんたーん！,,image_top
+わたしは公園へ歩いて行った。
+これで過去形のできあがり！",16-1-3-2,image_top
+u16_l1_p11,u16_l1,11,かんたーん！,16-1-3-2,image_top
 u16_l1_p12,u16_l1,12,"I eat sushi.
-わたしは寿司を食べます。",,image_top
+わたしは寿司を食べます。",16-1-4-1,image_top
 u16_l1_p13,u16_l1,13,"I ate sushi.
-わたしは寿司を食べた。",,image_top
-u16_l1_p14,u16_l1,14,簡単だね！,,image_top
-u16_l1_p15,u16_l1,15,yesterday（昨日）とかもつけちゃったりして。,,image_top
-u16_l1_p16,u16_l1,16,ということで、過去形はよゆーだね。,,image_top
-u16_l1_p17,u16_l1,17,おいおい、ちょっと待て、,,image_top
-u16_l1_p18,u16_l1,18,全部の動詞の過去形を覚えないといけないの？,,image_top
-u16_l1_p19,u16_l1,19,……,,image_top
+わたしは寿司を食べた。",16-1-4-2,image_top
+u16_l1_p14,u16_l1,14,簡単だね！,16-1-4-2,image_top
+u16_l1_p15,u16_l1,15,yesterday（昨日）とかもつけちゃったりして。,16-1-4-3,image_top
+u16_l1_p16,u16_l1,16,ということで、過去形はよゆーだね。,16-1-5-1,image_top
+u16_l1_p17,u16_l1,17,おいおい、ちょっと待て、,16-1-5-1,image_top
+u16_l1_p18,u16_l1,18,全部の動詞の過去形を覚えないといけないの？,16-1-5-1,image_top
+u16_l1_p19,u16_l1,19,……,16-1-5-2,image_top
 u16_l1_p20,u16_l1,20,"それは…そうなんだよね…。
-全部覚えないといけない…。",,image_top
-u16_l1_p21,u16_l1,21,でもでも、規則的に変化するものがほとんどだから、ちょっと安心して。,,image_top
+全部覚えないといけない…。",16-1-5-2,image_top
+u16_l1_p21,u16_l1,21,でもでも、規則的に変化するものがほとんどだから、ちょっと安心して。,16-1-5-2,image_top
 u16_l1_p22,u16_l1,22,"規則的なものは、
-edをつけるだけ。",,image_top
+edをつけるだけ。",16-1-6-1,image_top
 u16_l1_p23,u16_l1,23,"walk → walked
-このパターンが大半だよ。",,image_top
+look → looked
+change → changed
+このパターンが大半だよ。",16-1-6-1,image_top
 u16_l1_p24,u16_l1,24,"不規則なものは、
-もう頑張って覚えるしかない。",,image_top
+もう頑張って覚えるしかない。",16-1-6-2,image_top
 u16_l1_p25,u16_l1,25,"eat → ate
 speak → spoke
-take → took",,image_top
-u16_l1_p26,u16_l1,26,不規則動詞一覧表をネットで探して、それを片手に、,,image_top
+take → took",16-1-6-2,image_top
+u16_l1_p26,u16_l1,26,不規則動詞一覧表をネットで探して、それを片手に、,16-1-6-2,image_top
 u16_l1_p27,u16_l1,27,"実際の例文をたくさんこなすのが
-覚えやすいと思うよ！",,image_top
+覚えやすいと思うよ！",16-1-6-2,image_top
