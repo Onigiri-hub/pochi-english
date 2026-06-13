@@ -167,7 +167,7 @@ export default function LessonComplete() {
           )}
 
           {/* 広告エリア */}
-          {showRest && (
+          {false && showRest && (
             <div style={{
               width: "100%",
               minHeight: "100px",

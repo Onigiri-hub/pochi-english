@@ -271,7 +271,7 @@ export default function VocabComplete() {
             </div>
           </>
         )}
-        {showRest && (
+        {false && showRest && (
           <div className="bottomArea">
             <div className="completeBottom">
               <button
