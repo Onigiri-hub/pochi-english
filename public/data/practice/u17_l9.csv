@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u17_l9_p1,u17_l9,05.png,,left,none,1,,0,________. ,,机の下に猫がいます。,,There is a cat under the table,There|is|a|cat|under|the|table,17-2-2-a.mp3,
+u17_l9_p2,u17_l9,05.png,user,left,right,1,1,0,________? ,"Yes, there are a few.",部屋に生徒はいますか。,はい、数人います。,Are there any students in the room,Are|there|any|students|in|the|room,17-2-6-a.mp3,17-2-6-b.mp3
+u17_l9_p3,u17_l9,05.png,,left,none,1,,0,________? ,,何か問題がありますか。,,Is there a problem,Is|there|a|problem,17-2-8-a.mp3,
+u17_l9_p4,u17_l9,05.png,,left,none,1,,0,________. ,,昨夜は寒かったです。,,It was cold last night,It|was|cold|last|night,17-4-4-a.mp3,
+u17_l9_p5,u17_l9,05.png,,left,none,1,,0,________? ,,昨日は晴れていましたか。,,Was it sunny yesterday,Was|it|sunny|yesterday,17-4-5-a.mp3,
+u17_l9_p6,u17_l9,05.png,,left,none,1,,0,Hurry up. ________. ,,急ぎなさい。学校の時間よ。,,It's time for school,It's|time|for|school,17-4-7-a.mp3,
+u17_l9_p7,u17_l9,user,,right,none,1,,0,________.,,私にとって早起きは難しい。,,It’s difficult for me to wake up early,It’s|difficult|for|me|to|wake|up|early,17-6-1-a.mp3,
+u17_l9_p8,u17_l9,user,,right,none,1,,0,________.,,トムにとってピアノを弾くのは簡単だ。,,It’s easy for Tom to play the piano,It’s|easy|for|Tom|to|play|the|piano,17-6-5-a.mp3,
+u17_l9_p9,u17_l9,user,,right,none,1,,0,________.,,うるさすぎてここでは勉強できない。,,It’s too noisy to study here,It’s|too|noisy|to|study|here,17-8-4-a.mp3,

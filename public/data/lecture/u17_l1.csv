@@ -1,0 +1,31 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u17_l1_p1,u17_l1,1,"There is〜っていう
+便利なやつを使ってみよう。
+まずは例文から。",17-1-1,image_top
+u17_l1_p2,u17_l1,2,"There is a cat under the table.
+ 猫がいるよ！テーブルの下に！",17-1-2-1,image_top
+u17_l1_p3,u17_l1,3,こんな感じで,17-1-2-1,image_top
+u17_l1_p4,u17_l1,4,"There isっていうのは
+存在を伝えたいときに使うんだ。",17-1-2-1,image_top
+u17_l1_p5,u17_l1,5,"Thereって主語じゃないの？
+なんて訳したらいいの？",17-1-3-1,image_top
+u17_l1_p6,u17_l1,6,…と言われると非常に困る。,17-1-3-1,image_top
+u17_l1_p7,u17_l1,7,"英語は、主語を必要とする言語なので、
+（無いと命令になったり意味が伝わらなかったりする）",17-1-3-1,image_top
+u17_l1_p8,u17_l1,8,主語っぽいものが無くても、主語の位置になにかしら置かないといけないんだ。,17-1-3-1,image_top
+u17_l1_p9,u17_l1,9,"だから、There isがきたら、
+主語は何だろう…？とか難しく考えないで",17-1-3-2,image_top
+u17_l1_p10,u17_l1,10,"「何かがあるってことを言いたいんだな、
+なになに？何があるの？」
+って身構えて、",17-1-3-2,image_top
+u17_l1_p11,u17_l1,11,次の言葉を待とう！,17-1-3-3,image_top
+u17_l1_p12,u17_l1,12,疑問文も見てみよう。,17-1-3-3,image_top
+u17_l1_p13,u17_l1,13,"Is there a convenience store near here? 
+この近くにコンビニはありますか。",17-1-4-1,image_top
+u17_l1_p14,u17_l1,14,否定文は…,17-1-4-1,image_top
+u17_l1_p15,u17_l1,15,"There isn't a convenience store near here.
+この近くにコンビニはありません。",17-1-4-2,image_top
+u17_l1_p16,u17_l1,16,複数形は、,17-1-4-2,image_top
+u17_l1_p17,u17_l1,17,"There are three books on the desk.
+机の上に本が三冊あります。",17-1-5,image_top
+u17_l1_p18,u17_l1,18,普通のbe動詞の使い方と一緒だね。,17-1-5,image_top

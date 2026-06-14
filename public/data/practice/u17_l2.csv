@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u17_l2_p1,u17_l2,05.png,,left,none,1,,1,________.,,冷蔵庫に牛乳があります。,,There is some milk in the refrigerator,There|is|some|milk|in|the|refrigerator,17-2-1-a.mp3,
+u17_l2_p2,u17_l2,05.png,,left,none,1,,1,________. ,,机の下に猫がいます。,,There is a cat under the table,There|is|a|cat|under|the|table,17-2-2-a.mp3,
+u17_l2_p3,u17_l2,05.png,,left,none,1,,1,________? ,,あなたの学校の近くに公園はありますか。,,Is there a park near your school,Is|there|a|park|near|your|school,17-2-3-a.mp3,
+u17_l2_p4,u17_l2,05.png,,left,none,1,,1,________. ,,机の上に3冊の本があります。,,There are three books on the desk,There|are|three|books|on|the|desk,17-2-4-a.mp3,
+u17_l2_p5,u17_l2,05.png,,left,none,1,,1,________? ,,この町に図書館はありますか。,,Is there a library in this town,Is|there|a|library|in|this|town,17-2-5-a.mp3,
+u17_l2_p6,u17_l2,05.png,user,left,right,1,1,1,________? ,"Yes, there are a few.",部屋に生徒はいますか。,はい、数人います。,Are there any students in the room,Are|there|any|students|in|the|room,17-2-6-a.mp3,17-2-6-b.mp3
+u17_l2_p7,u17_l2,05.png,,left,none,1,,1,________? ,,この近くにコンビニはありますか。,,Is there a convenience store near here,Is|there|a|convenience|store|near|here,17-2-7-a.mp3,
+u17_l2_p8,u17_l2,05.png,,left,none,1,,1,________? ,,何か問題がありますか。,,Is there a problem,Is|there|a|problem,17-2-8-a.mp3,
+u17_l2_p9,u17_l2,05.png,user,left,right,1,1,1,________?,I recommend POCHI's Deli.,この近くに良いレストランはありますか。,はい、あります。,Is there a good restaurant near here,Is|there|a|good|restaurant|near|here,17-2-9-a.mp3,17-2-9-b.mp3

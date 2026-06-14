@@ -1,0 +1,7 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u18_l2_p1,u18_l2,user,,right,none,1,,1,________.,,彼女は夕食を作って、皿を洗いました。,,She cooked dinner and washed the dishes,She|cooked|dinner|and|washed|the|dishes,18-2-1-a.mp3,
+u18_l2_p2,u18_l2,user,,right,none,1,,1,________!,,花火を見に行こうよ。,,Let's go and watch the fireworks,Let's|go|and|watch|the|fireworks,18-2-2-a.mp3,
+u18_l2_p3,u18_l2,user,,right,none,1,,1,________.,,私は猫と犬が好きです。,,I like cats and dogs,I|like|cats|and|dogs,18-2-3-a.mp3,
+u18_l2_p4,u18_l2,user,,right,none,1,,1,________.,,疲れていたけれど勉強した。,,"I was tired, but I studied","I|was|tired,|but|I|studied",18-2-4-a.mp3,
+u18_l2_p5,u18_l2,user,,right,none,1,,1,________.,,トムが電話してきたけど出なかった。,,"Tom called me, but I didn't answer","Tom|called|me,|but|I|didn't|answer",18-2-5-a.mp3,
+u18_l2_p6,u18_l2,user,,right,none,1,,1,________.,,このゲーム好きだけど難しい。,,"I like this game, but it's difficult","I|like|this|game,|but|it's|difficult",18-2-6-a.mp3,

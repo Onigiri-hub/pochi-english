@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u18_l8_p1,u18_l8,user,,right,none,1,,1,________.,,家に帰ったとき、誰もいませんでした。,,"When I got home, nobody was there|nobody was there When I got home,","When|I|got|home,|nobody|was|there",18-8-1-a.mp3,
+u18_l8_p2,u18_l8,user,,right,none,1,,1,________.,,あなたが電話したとき、私は勉強していませんでした。,,I wasn't studying when you called me|when you called me I wasn't studying,I|wasn't|studying|when|you|called|me,18-8-2-a.mp3,
+u18_l8_p3,u18_l8,user,,right,none,1,,1,________?,,雨が降り始めたとき、何をしていましたか。,,What were you doing when it started to rain,What|were|you|doing|when|it|started|to|rain,18-8-3-a.mp3,
+u18_l8_p4,u18_l8,user,,right,none,1,,1,________.,,トムが料理している間、私はテーブルの準備をしました。,,"While Tom was cooking, I set the table|I set the table While Tom was cooking,","While|Tom|was|cooking,|I|set|the|table",18-8-4-a.mp3,
+u18_l8_p5,u18_l8,user,,right,none,1,,1,________.,,運転中はスマホを使いませんでした。,,I didn't use my phone while I was driving|while I was driving I didn't use my phone,I|didn't|use|my|phone|while|I|was|driving,18-8-5-a.mp3,
+u18_l8_p6,u18_l8,user,,right,none,1,,1,________?,,バスを待っている間、何をしますか。,,What do you do while you are waiting for the bus|while you are waiting for the bus What do you do,What|do|you|do|while|you|are|waiting|for|the|bus,18-8-6-a.mp3,
+u18_l8_p7,u18_l8,user,,right,none,1,,1,________.,,家に着いたら電話してね。,,Please call me when you get home,Please|call|me|when|you|get|home,18-8-7-a.mp3,

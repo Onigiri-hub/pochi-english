@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u18_l4_p1,u18_l4,user,,right,none,1,,1,________?,,お茶とコーヒー、どっちがいい？,,Do you want tea or coffee,Do|you|want|tea|or|coffee,18-4-1-a.mp3,
+u18_l4_p2,u18_l4,user,,right,none,1,,1,________.,,急いで。さもないと遅刻するよ。,,"Hurry up, or you'll be late","Hurry|up,|or|you'll|be|late",18-4-2-a.mp3,
+u18_l4_p3,u18_l4,user,,right,none,1,,1,________?,,家にいる？それとも出かける？,,Do you want to stay home or go out,Do|you|want|to|stay|home|or|go|out,18-4-3-a.mp3,
+u18_l4_p4,u18_l4,user,,right,none,1,,1,________.,,雨だったので家にいた。,,"It was raining, so we stayed home","It|was|raining,|so|we|stayed|home",18-4-4-a.mp3,
+u18_l4_p5,u18_l4,user,,right,none,1,,1,________.,,鍵をなくしたのでドアを開けられなかった。,,"I lost my key, so I couldn't open the door","I|lost|my|key,|so|I|couldn't|open|the|door",18-4-5-a.mp3,
+u18_l4_p6,u18_l4,user,,right,none,1,,1,________.,,勉強しなかったから、テストがちょっと不安なんだ。,,"I didn't study, so I'm a little nervous about the test","I|didn't|study,|so|I'm|a|little|nervous|about|the|test",18-4-6-a.mp3,
+u18_l4_p7,u18_l4,user,,right,none,1,,1,________?,,名前はケン？それともレン？,,Is your name Ken or Ren,Is|your|name|Ken|or|Ren,18-4-7-a.mp3,

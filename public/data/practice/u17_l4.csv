@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u17_l4_p1,u17_l4,05.png,,left,none,1,,1,Go to bed. ________. ,,寝なさい。もう遅いから。,,It's late,It's|late,17-4-1-a.mp3,
+u17_l4_p2,u17_l4,05.png,,left,none,1,,1,________. ,,今日は月曜日です。,,It's Monday today,It's|Monday|today,17-4-2-a.mp3,
+u17_l4_p3,u17_l4,05.png,,left,none,1,,1,________? ,,そこは夏とても暑いですか。,,Is it very hot in summer there,Is|it|very|hot|in|summer|there,17-4-3-a.mp3,
+u17_l4_p4,u17_l4,05.png,,left,none,1,,1,________. ,,昨夜は寒かったです。,,It was cold last night,It|was|cold|last|night,17-4-4-a.mp3,
+u17_l4_p5,u17_l4,05.png,,left,none,1,,1,________? ,,昨日は晴れていましたか。,,Was it sunny yesterday,Was|it|sunny|yesterday,17-4-5-a.mp3,
+u17_l4_p6,u17_l4,05.png,user,left,right,1,1,1,________? ,It's five o'clock. ,何時ですか。,5時です。,What time is it,What|time|is|it,17-4-6-a.mp3,17-4-6-b.mp3
+u17_l4_p7,u17_l4,05.png,,left,none,1,,1,Hurry up. ________. ,,急ぎなさい。学校の時間よ。,,It's time for school,It's|time|for|school,17-4-7-a.mp3,
+u17_l4_p8,u17_l4,05.png,,left,none,1,,1,________.,,夕飯の時間だよ,,It's time for dinner,It's|time|for|dinner,17-4-8-a.mp3,
