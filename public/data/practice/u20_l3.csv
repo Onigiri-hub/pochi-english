@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u20_l3_p1,u20_l3,05.png,,left,none,1,,1,________.,,明日電話するよ。,,I will call you tomorrow,I|will|call|you|tomorrow,20-3-1-a.mp3,
+u20_l3_p2,u20_l3,05.png,,left,none,1,,1,________.,,トムは明日忙しいだろう。,,Tom will be busy tomorrow,Tom|will|be|busy|tomorrow,20-3-2-a.mp3,
+u20_l3_p3,u20_l3,05.png,,left,none,1,,1,________.,,明日は雨が降ると思う。,,I think it will rain tomorrow,I|think|it|will|rain|tomorrow,20-3-3-a.mp3,
+u20_l3_p4,u20_l3,05.png,,left,none,1,,1,________.,,明日は雨が降るかもしれません。,,It may rain tomorrow,It|may|rain|tomorrow,20-3-4-a.mp3,
+u20_l3_p5,u20_l3,05.png,05.png,left,left,1,1,1,________.,Please prepare some dog food.,ポチはパーティーに来るかもしれません。,ドッグフードを用意しておいてください。,Pochi may come to the party,Pochi|may|come|to|the|party,20-3-5-a.mp3,20-3-5-b.mp3
+u20_l3_p6,u20_l3,user,user,right,right,1,1,1,________.,Why don't you call her tonight? ,彼女は今忙しいかもしれない。,夜電話してみたら？,She may be busy now,She|may|be|busy|now,20-3-6-a.mp3,20-3-6-b.mp3
+u20_l3_p7,u20_l3,05.png,user,left,right,1,1,1,________.,"If you do, let me know! Let's play together.",今夜ゲームをするかもしれません。,もしやるなら教えて！一緒にやろう。,I may play a game tonight,I|may|play|a|game|tonight,20-3-7-a.mp3,20-3-7-b.mp3
+u20_l3_p8,u20_l3,05.png,,left,none,1,,1,________.,,その電車は明日8時に出発します,,The train leaves at 8:00 tomorrow,The|train|leaves|at|8:00|tomorrow,20-3-8-a.mp3,
+u20_l3_p9,u20_l3,05.png,,left,none,1,,1,________.,,学校は来週の月曜日に始まります。,,School starts next Monday,School|starts|next|Monday,20-3-9-a.mp3,
+u20_l3_p10,u20_l3,05.png,,left,none,1,,1,________.,,映画は7時に始まります。,,The movie begins at 7 p.m,The|movie|begins|at|7|p.m,20-3-10-a.mp3,

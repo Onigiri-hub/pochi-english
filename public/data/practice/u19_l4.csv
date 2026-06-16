@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u19_l4_p1,u19_l4,05.png,,left,none,1,,1,________.,,テスト中は話してはいけません。,,Don't talk during the test,Don't|talk|during|the|test,19-4-1-a.mp3,
+u19_l4_p2,u19_l4,05.png,,left,none,1,,1,________.,,旅行中に雨が降りました。,,It rained during our trip,It|rained|during|our|trip,19-4-2-a.mp3,
+u19_l4_p3,u19_l4,05.png,,left,none,1,,1,________.,,駅は学校と公園の間にあります。,,The station is between the school and the park,The|station|is|between|the|school|and|the|park,19-4-3-a.mp3,
+u19_l4_p4,u19_l4,05.png,,left,none,1,,1,________.,,猫は箱と箱の間にいます。,,The cat is between the boxes,The|cat|is|between|the|boxes,19-4-4-a.mp3,
+u19_l4_p5,u19_l4,05.png,,left,none,1,,1,________.,,駅のまわりにはたくさんのお店があります。,,There are many shops around the station,There|are|many|shops|around|the|station,19-4-5-a.mp3,
+u19_l4_p6,u19_l4,05.png,,left,none,1,,1,________.,,私たちは湖のまわりを歩きました。,,We walked around the lake,We|walked|around|the|lake,19-4-6-a.mp3,
+u19_l4_p7,u19_l4,05.png,,left,none,1,,1,________.,,この本は生徒たちの間で人気があります。,,This book is popular among students,This|book|is|popular|among|students,19-4-7-a.mp3,
+u19_l4_p8,u19_l4,05.png,,left,none,1,,1,________.,,電車はトンネルを通りました。,,The train went through a tunnel,The|train|went|through|a|tunnel,19-4-8-a.mp3,
+u19_l4_p9,u19_l4,05.png,,left,none,1,,1,________,,日光が窓を通って入ってきました。,,Sunlight came through the window.,Sunlight|came|through|the|window.,19-4-9-a.mp3,

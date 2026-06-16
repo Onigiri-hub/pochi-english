@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u20_l5_p1,u20_l5,user,,right,none,1,,1,________.,,今週末、祖父母を訪ねる予定です。,,We're going to visit my grandparents this weekend,We're|going|to|visit|my|grandparents|this|weekend,20-5-1-a.mp3,
+u20_l5_p2,u20_l5,user,,right,none,1,,1,________.,,トムは新しいパソコンを買う予定です。,,Tom is going to buy a new computer,Tom|is|going|to|buy|a|new|computer,20-5-2-a.mp3,
+u20_l5_p3,u20_l5,user,,right,none,1,,1,________.,,今夜はテレビを見ないつもりです。,,I'm not going to watch TV tonight,I'm|not|going|to|watch|TV|tonight,20-5-3-a.mp3,
+u20_l5_p4,u20_l5,user,,right,none,1,,1,________?,,夕食の後ゲームをする予定ですか。,,Are you going to play a game after dinner,Are|you|going|to|play|a|game|after|dinner,20-5-4-a.mp3,
+u20_l5_p5,u20_l5,user,,right,none,1,,1,________.,,日曜日に両親と夕食を食べる予定です。,,We're having dinner with my parents on Sunday,We're|having|dinner|with|my|parents|on|Sunday,20-5-5-a.mp3,
+u20_l5_p6,u20_l5,user,,right,none,1,,1,________.,,そろそろ新しい趣味を始めようと思ってるんだ。,,I'm going to start a new hobby soon,I'm|going|to|start|a|new|hobby|soon,20-5-6-a.mp3,
+u20_l5_p7,u20_l5,user,,right,none,1,,1,________.,,日曜日に公園を掃除する予定なんだ。,,We're going to clean the park on Sunday,We're|going|to|clean|the|park|on|Sunday,20-5-7-a.mp3,
+u20_l5_p8,u20_l5,user,,right,none,1,,1,________.,,明日は晴れる予定だから、ハイキングできるよ。,,"It's going to be sunny tomorrow, so we can hike","It's|going|to|be|sunny|tomorrow,|so|we|can|hike",20-5-8-a.mp3,

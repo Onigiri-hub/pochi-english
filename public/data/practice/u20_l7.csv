@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u20_l7_p1,u20_l7,user,05.png,right,left,1,1,1,________.,Lucky you! The food there is amazing.,7月に沖縄に行くんだ。,いいなあ!あそこの食べ物最高だよ。,I'm visiting Okinawa on July,I'm|visiting|Okinawa|on|July,20-7-1-a.mp3,20-7-1-b.mp3
+u20_l7_p2,u20_l7,05.png,user,left,right,1,1,1,________.,Awesome! Can I bring a friend?,今週金曜日にパーティーをするんだ。,いいね!友達連れてってもいい?,We're having a party this Friday,We're|having|a|party|this|Friday,20-7-2-a.mp3,20-7-2-b.mp3
+u20_l7_p3,u20_l7,user,,right,none,1,,1,________.,,明日は練習に行かないんだ。,,I'm not coming to practice tomorrow,I'm|not|coming|to|practice|tomorrow,20-7-3-a.mp3,
+u20_l7_p4,u20_l7,user,,right,none,1,,1,________?,,駅でケンと会うの?,,Are you meeting Ken at the station,Are|you|meeting|Ken|at|the|station,20-7-4-a.mp3,
+u20_l7_p5,u20_l7,user,,right,none,1,,1,________.,,今年の夏、いとこたちがうちに泊まるんだ。,,My cousins are staying with us this summer,My|cousins|are|staying|with|us|this|summer,20-7-5-a.mp3,
+u20_l7_p6,u20_l7,user,,right,none,1,,1,________.,,彼女は来週京都を訪れる予定です。,,She's visiting Kyoto next week,She's|visiting|Kyoto|next|week,20-7-6-a.mp3,
+u20_l7_p7,u20_l7,user,,right,none,1,,1,________.,,明日は仕事の予定がありません。,,I'm not working tomorrow,I'm|not|working|tomorrow,20-7-7-a.mp3,
+u20_l7_p8,u20_l7,user,,right,none,1,,1,________?,,今日の午後、お医者さんに会う予定ですか。,,Are you seeing the doctor this afternoon,Are|you|seeing|the|doctor|this|afternoon,20-7-8-a.mp3,

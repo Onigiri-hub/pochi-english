@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u20_l9_p1,u20_l9,user,,right,none,1,,1,________.,,真夜中には寝ているとおもう。,,I'll be sleeping at midnight,I'll|be|sleeping|at|midnight,20-9-1-a.mp3,
+u20_l9_p2,u20_l9,user,,right,none,1,,1,________.,,明日の夜は花火を見ているとおもうよ。,,We'll be watching the fireworks tomorrow night,We'll|be|watching|the|fireworks|tomorrow|night,20-9-2-a.mp3,
+u20_l9_p3,u20_l9,user,,right,none,1,,1,________.,,明日トムと会う予定です。,,I'll be meeting Tom tomorrow,I'll|be|meeting|Tom|tomorrow,20-9-3-a.mp3,
+u20_l9_p4,u20_l9,user,,right,none,1,,1,________.,,日曜日は両親と夕食を食べている予定です。,,We'll be having dinner with my parents on Sunday,We'll|be|having|dinner|with|my|parents|on|Sunday,20-9-4-a.mp3,
+u20_l9_p5,u20_l9,user,,right,none,1,,1,________?,,今夜パソコンを使う予定はある？,,Will you be using your computer tonight,Will|you|be|using|your|computer|tonight,20-9-5-a.mp3,
+u20_l9_p6,u20_l9,user,,right,none,1,,1,________?,,トムは明日参加する予定ですか。,,Will Tom be joining us tomorrow,Will|Tom|be|joining|us|tomorrow,20-9-6-a.mp3,
+u20_l9_p7,u20_l9,user,user,right,right,1,1,1,________.,The new game is coming out.,来週は仕事はしないかな。,新作ゲーム出るの。,I won't be working next week,I|won't|be|working|next|week,20-9-7-a.mp3,20-9-7-b.mp3
+u20_l9_p8,u20_l9,user,,right,none,1,,1,________?,,会議に参加される予定ですか。,,Will you be attending the meeting,Will|you|be|attending|the|meeting,20-9-8-a.mp3,
+u20_l9_p9,u20_l9,user,user,right,right,1,1,1,________?,Do you want to watch the movie with me?,今夜は家にいる？,一緒に映画見ない？,Will you be staying home tonight,Will|you|be|staying|home|tonight,20-9-9-a.mp3,20-9-9-b.mp3

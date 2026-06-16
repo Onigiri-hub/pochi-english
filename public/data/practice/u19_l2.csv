@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u19_l2_p1,u19_l2,05.png,,left,none,1,,1,________.,,電車は10分以内に到着します。,,The train will arrive within ten minutes,The|train|will|arrive|within|ten|minutes,19-2-1-a.mp3,
+u19_l2_p2,u19_l2,05.png,,left,none,1,,1,________.,,3日以内に返信してください。,,Please reply within three days,Please|reply|within|three|days,19-2-2-a.mp3,
+u19_l2_p3,u19_l2,05.png,,left,none,1,,1,________.,,映画は10分後に始まります。,,The movie starts in ten minutes,The|movie|starts|in|ten|minutes,19-2-3-a.mp3,
+u19_l2_p4,u19_l2,05.png,,left,none,1,,1,________.,,夕食は30分でできあがります。,,Dinner will be ready in thirty minutes,Dinner|will|be|ready|in|thirty|minutes,19-2-4-a.mp3,
+u19_l2_p5,u19_l2,05.png,,left,none,1,,1,________.,,正午までにレポートを終えます。,,I'll finish the report by noon,I'll|finish|the|report|by|noon,19-2-5-a.mp3,
+u19_l2_p6,u19_l2,05.png,,left,none,1,,1,________?,,明日までに終えられますか。,,Can you finish it by tomorrow,Can|you|finish|it|by|tomorrow,19-2-6-a.mp3,
+u19_l2_p7,u19_l2,05.png,,left,none,1,,1,________.,,私が戻るまで出発しないでね,,Don't leave until I come back,Don't|leave|until|I|come|back,19-2-7-a.mp3,
+u19_l2_p8,u19_l2,05.png,,left,none,1,,1,________.,,お店は今夜9時まで開いてるよ。,,The store is open until nine tonight,The|store|is|open|until|nine|tonight,19-2-8-a.mp3,
+u19_l2_p9,u19_l2,05.png,,left,none,1,,1,________?,,私が戻るまでここで待っててくれる?,,Can you wait here until I come back,Can|you|wait|here|until|I|come|back,19-2-9-a.mp3,

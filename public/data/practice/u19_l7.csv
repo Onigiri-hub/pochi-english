@@ -1,0 +1,13 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u19_l7_p1,u19_l7,05.png,,left,none,1,,0,________.,,電車は10分以内に到着します。,,The train will arrive within ten minutes,The|train|will|arrive|within|ten|minutes,19-2-1-a.mp3,
+u19_l7_p2,u19_l7,05.png,,left,none,1,,0,________.,,夕食は30分でできあがります。,,Dinner will be ready in thirty minutes,Dinner|will|be|ready|in|thirty|minutes,19-2-4-a.mp3,
+u19_l7_p3,u19_l7,05.png,,left,none,1,,0,________.,,正午までにレポートを終えます。,,I'll finish the report by noon,I'll|finish|the|report|by|noon,19-2-5-a.mp3,
+u19_l7_p4,u19_l7,05.png,,left,none,1,,0,________?,,私が戻るまでここで待っててくれる?,,Can you wait here until I come back,Can|you|wait|here|until|I|come|back,19-2-9-a.mp3,
+u19_l7_p5,u19_l7,05.png,,left,none,1,,0,________.,,テスト中は話してはいけません。,,Don't talk during the test,Don't|talk|during|the|test,19-4-1-a.mp3,
+u19_l7_p6,u19_l7,05.png,,left,none,1,,0,________.,,猫は箱と箱の間にいます。,,The cat is between the boxes,The|cat|is|between|the|boxes,19-4-4-a.mp3,
+u19_l7_p7,u19_l7,05.png,,left,none,1,,0,________.,,私たちは湖のまわりを歩きました。,,We walked around the lake,We|walked|around|the|lake,19-4-6-a.mp3,
+u19_l7_p8,u19_l7,05.png,,left,none,1,,0,________,,日光が窓を通って入ってきました。,,Sunlight came through the window.,Sunlight|came|through|the|window.,19-4-9-a.mp3,
+u19_l7_p9,u19_l7,05.png,,left,none,1,,0,________.,,その犬は私の方へ走ってきました。,,The dog ran towards me,The|dog|ran|towards|me,19-6-1-a.mp3,
+u19_l7_p10,u19_l7,05.png,,left,none,1,,0,________.,,私は川を泳いで渡りました。,,I swam across the river,I|swam|across|the|river,19-6-4-a.mp3,
+u19_l7_p11,u19_l7,05.png,,left,none,1,,0,________.,,トムは私の後ろに立っていました。,,Tom was standing behind me,Tom|was|standing|behind|me,19-6-5-a.mp3,
+u19_l7_p12,u19_l7,05.png,,left,none,1,,0,________.,,門の前に駐車しないでください。,,Don't park in front of the gate,Don't|park|in|front|of|the|gate,19-6-8-a.mp3,

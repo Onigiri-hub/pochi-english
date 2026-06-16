@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u20_l10_p1,u20_l10,05.png,,left,none,1,,0,________.,,明日電話するよ。,,I will call you tomorrow,I|will|call|you|tomorrow,20-3-1-a.mp3,
+u20_l10_p2,u20_l10,user,user,right,right,1,1,0,________.,Why don't you call her tonight? ,彼女は今忙しいかもしれない。,夜電話してみたら？,She may be busy now,She|may|be|busy|now,20-3-6-a.mp3,20-3-6-b.mp3
+u20_l10_p3,u20_l10,05.png,,left,none,1,,0,________.,,学校は来週の月曜日に始まります。,,School starts next Monday,School|starts|next|Monday,20-3-9-a.mp3,
+u20_l10_p4,u20_l10,user,,right,none,1,,0,________.,,トムは新しいパソコンを買う予定です。,,Tom is going to buy a new computer,Tom|is|going|to|buy|a|new|computer,20-5-2-a.mp3,
+u20_l10_p5,u20_l10,user,,right,none,1,,0,________?,,夕食の後ゲームをする予定ですか。,,Are you going to play a game after dinner,Are|you|going|to|play|a|game|after|dinner,20-5-4-a.mp3,
+u20_l10_p6,u20_l10,user,05.png,right,left,1,1,0,________.,Lucky you! The food there is amazing.,7月に沖縄に行くんだ。,いいなあ!あそこの食べ物最高だよ。,I'm visiting Okinawa on July,I'm|visiting|Okinawa|on|July,20-7-1-a.mp3,20-7-1-b.mp3
+u20_l10_p7,u20_l10,user,,right,none,1,,0,________?,,駅でケンと会うの?,,Are you meeting Ken at the station,Are|you|meeting|Ken|at|the|station,20-7-4-a.mp3,
+u20_l10_p8,u20_l10,user,,right,none,1,,0,________.,,明日の夜は花火を見ているとおもうよ。,,We'll be watching the fireworks tomorrow night,We'll|be|watching|the|fireworks|tomorrow|night,20-9-2-a.mp3,
+u20_l10_p9,u20_l10,user,,right,none,1,,0,________?,,今夜パソコンを使う予定はある？,,Will you be using your computer tonight,Will|you|be|using|your|computer|tonight,20-9-5-a.mp3,
+u20_l10_p10,u20_l10,user,user,right,right,1,1,0,________.,The new game is coming out.,来週は仕事はしないかな。,新作ゲーム出るの。,I won't be working next week,I|won't|be|working|next|week,20-9-7-a.mp3,20-9-7-b.mp3
+u20_l10_p11,u20_l10,user,,right,none,1,,0,________?,,会議に参加される予定ですか。,,Will you be attending the meeting,Will|you|be|attending|the|meeting,20-9-8-a.mp3,

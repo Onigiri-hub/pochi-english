@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u19_l6_p1,u19_l6,05.png,,left,none,1,,1,________.,,その犬は私の方へ走ってきました。,,The dog ran towards me,The|dog|ran|towards|me,19-6-1-a.mp3,
+u19_l6_p2,u19_l6,05.png,,left,none,1,,1,________.,,みんな空の方を見ました。,,Everyone looked towards the sky,Everyone|looked|towards|the|sky,19-6-2-a.mp3,
+u19_l6_p3,u19_l6,05.png,,left,none,1,,1,________.,,トムは道路を横切りました。,,Tom ran across the street,Tom|ran|across|the|street,19-6-3-a.mp3,
+u19_l6_p4,u19_l6,05.png,,left,none,1,,1,________.,,私は川を泳いで渡りました。,,I swam across the river,I|swam|across|the|river,19-6-4-a.mp3,
+u19_l6_p5,u19_l6,05.png,,left,none,1,,1,________.,,トムは私の後ろに立っていました。,,Tom was standing behind me,Tom|was|standing|behind|me,19-6-5-a.mp3,
+u19_l6_p6,u19_l6,05.png,,left,none,1,,1,________.,,学校は図書館の後ろにあります。,,The school is behind the library,The|school|is|behind|the|library,19-6-6-a.mp3,
+u19_l6_p7,u19_l6,05.png,,left,none,1,,1,________.,,彼女はクラスの前に立ちました。,,She stood in front of the class,She|stood|in|front|of|the|class,19-6-7-a.mp3,
+u19_l6_p8,u19_l6,05.png,,left,none,1,,1,________.,,門の前に駐車しないでください。,,Don't park in front of the gate,Don't|park|in|front|of|the|gate,19-6-8-a.mp3,
