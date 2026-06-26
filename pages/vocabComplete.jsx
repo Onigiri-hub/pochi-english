@@ -139,7 +139,7 @@ export default function VocabComplete() {
           )}
 
           {/* 広告エリア */}
-          {showRest && (
+          {false && showRest && (
             <div style={{
               width: "100%",
               minHeight: "100px",
@@ -271,12 +271,12 @@ export default function VocabComplete() {
             </div>
           </>
         )}
-        {false && showRest && (
+        {showRest && (
           <div className="bottomArea">
             <div className="completeBottom">
               <button
                 className="finishButton"
-                onClick={() => router.push(`/sectionList?stage=${stage}`)}
+                onClick={() => router.replace(`/sectionList?stage=${stage}`)}
                 data-sound
               >
                 次へ

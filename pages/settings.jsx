@@ -20,6 +20,7 @@ export default function Settings() {
   const [mouthItems, setMouthItems] = useState([]);
   const [chipSoundOn, setChipSoundOn] = useState(true);
   const [autoPlayOn, setAutoPlayOn] = useState(true);
+  const [showJaTranslation, setShowJaTranslation] = useState(true);
 
   const avatarCarouselRef = useRef(null);
   const headCarouselRef = useRef(null);
@@ -61,6 +62,7 @@ export default function Settings() {
         // 音声設定をlocalStorageから読み込み（チップ音はデフォルトOFF、自動再生はデフォルトON）
         setChipSoundOn(localStorage.getItem("chipSoundOn") === "true");
         setAutoPlayOn(localStorage.getItem("autoPlayOn") !== "false");
+        setShowJaTranslation(localStorage.getItem("showJaTranslation") !== "false");
       }
 
 
@@ -150,6 +152,7 @@ export default function Settings() {
       // 音声設定をlocalStorageに保存
       localStorage.setItem("chipSoundOn", chipSoundOn);
       localStorage.setItem("autoPlayOn", autoPlayOn);
+      localStorage.setItem("showJaTranslation", showJaTranslation);
       // Contextのprofileも更新
       setProfile({
         ...profile,
@@ -302,6 +305,15 @@ export default function Settings() {
               onClick={() => setAutoPlayOn(!autoPlayOn)}
             >
               {autoPlayOn ? "ON" : "OFF"}
+            </button>
+          </div>
+          <div className="audioToggle">
+            <label>日本語訳を表示する</label>
+            <button
+              className={`toggleBtn ${showJaTranslation ? "on" : "off"}`}
+              onClick={() => setShowJaTranslation(!showJaTranslation)}
+            >
+              {showJaTranslation ? "ON" : "OFF"}
             </button>
           </div>
         </section>        

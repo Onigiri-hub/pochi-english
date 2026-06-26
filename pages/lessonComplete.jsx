@@ -304,7 +304,7 @@ export default function LessonComplete() {
             <div className="completeBottom">
               <button
                 className="finishButton"
-                onClick={() => router.push(`/lessonList?unit=${unit}`)}
+                onClick={() => router.replace(`/lessonList?unit=${unit}`)}
                 data-sound
               >
                 次へ

@@ -233,7 +233,7 @@ export default function Typing() {
     } else {
       await saveProgress()
       // ★ isFirstClearをURLに追加
-      router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}`)
+      router.replace(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}`)
     }
   }
 

@@ -18,6 +18,7 @@ export default function PracticePage({ questions }) {
   const q = questions[index]
   const [showJaFirst, setShowJaFirst] = useState(false)
   const [showJaSecond, setShowJaSecond] = useState(false)
+  const [userShowJa, setUserShowJa] = useState(true)
   const nextQ = questions[index+1]
   const router = useRouter()
   const { lesson } = router.query
@@ -81,8 +82,12 @@ export default function PracticePage({ questions }) {
 
 
   useEffect(() => {
-    setShowJaFirst(q.ja_show_first === "1")
-    setShowJaSecond(q.ja_show_second === "1")
+    setUserShowJa(localStorage.getItem("showJaTranslation") !== "false")
+  }, [])
+
+  useEffect(() => {
+    setShowJaFirst(false)
+    setShowJaSecond(false)
   }, [index])
 
   // 自動再生（1文目→2文目の連続再生）
@@ -180,7 +185,7 @@ export default function PracticePage({ questions }) {
       setResult(null)
     }else{
       const isExtra = lesson?.includes("extra")
-      router.push(`/lessonComplete?unit=${unit}&order=${order}&extra=${isExtra}`)
+      router.replace(`/lessonComplete?unit=${unit}&order=${order}&extra=${isExtra}`)
     }
   }
   
@@ -229,14 +234,14 @@ export default function PracticePage({ questions }) {
                 <span key={i}>{token.text}</span>
               )
             )}
-            {q.ja_show_first !== "1" && (
+            {!userShowJa && q.sentence_first_ja && (
               <span className="jaToggleBtn" onClick={() => setShowJaFirst(v => !v)}>
                 {showJaFirst ? "🔼" : "🔽"}
               </span>
             )}
           </div>
 
-          {showJaFirst && (
+          {(userShowJa ? !!q.sentence_first_ja : showJaFirst) && (
             <div className="ja">{q.sentence_first_ja}</div>
           )}
         </div>
@@ -276,14 +281,14 @@ export default function PracticePage({ questions }) {
                   <span key={i}>{token.text}</span>
                 )
               )}
-              {q.ja_show_second !== "1" && (
+              {!userShowJa && q.sentence_second_ja && (
                 <span className="jaToggleBtn" onClick={() => setShowJaSecond(v => !v)}>
-                  {showJaFirst ? "🔼" : "🔽"}
+                  {showJaSecond ? "🔼" : "🔽"}
                 </span>
               )}
             </div>
 
-            {showJaSecond && (
+            {(userShowJa ? !!q.sentence_second_ja : showJaSecond) && (
               <div className="ja">{q.sentence_second_ja}</div>
             )}
           </div>

@@ -27,7 +27,7 @@ export default function LecturePage({ pages }) {
     if (index < pages.length - 1) {
       setIndex(index + 1);
     } else {
-      router.push(`/lessonComplete?unit=${unit}`)
+      router.replace(`/lessonComplete?unit=${unit}`)
     }
   }
 
@@ -90,7 +90,7 @@ export default function LecturePage({ pages }) {
         {index === pages.length-1 ? (
           <button
             className="finishButton"
-            onClick={()=>router.push(`/lessonComplete?unit=${unit}&order=${order}`)}
+            onClick={()=>router.replace(`/lessonComplete?unit=${unit}&order=${order}`)}
             data-sound
           >
             Finish

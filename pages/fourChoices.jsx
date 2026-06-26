@@ -137,7 +137,7 @@ export default function FourChoices() {
           saveRoundProgress(roundInfo?.is_review === "1")
           saveMastery()
           // ★ isFirstClearをURLに追加
-          router.push(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}`)
+          router.replace(`/vocabComplete?stage=${section.split("_")[0]}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}`)
           return 0
         }
         return t - 1
