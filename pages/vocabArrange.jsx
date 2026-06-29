@@ -4,6 +4,7 @@ import { useRouter } from "next/router"
 import Papa from "papaparse"
 import { checkAnswer } from "../engines/PracticeEngine"
 import { useProfileContext } from "../utils/ProfileContext"
+import Navigation from "../components/Navigation"
 
 export default function VocabArrange() {
   const router = useRouter()
@@ -188,6 +189,7 @@ export default function VocabArrange() {
 
   return (
     <div className="app" style={{ paddingBottom: "180px" }}>
+      <Navigation />
 
       <div className="progressDots">
         {questions.map((_, i) => (
