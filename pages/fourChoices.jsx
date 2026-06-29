@@ -31,6 +31,7 @@ export default function FourChoices() {
       if (!seikaiRef.current) {
         seikaiRef.current = new Audio("/sound/seikai.mp3")
         seikaiRef.current.load()
+        seikaiRef.current.volume = 0.7
         seikaiRef.current.addEventListener("canplaythrough", () => {
           seikaiRef.current.playbackRate = 1.5
         })

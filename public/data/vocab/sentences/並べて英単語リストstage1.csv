@@ -1,0 +1,443 @@
+example_id,word,en1,en2,ja1,ja2,stage,voice1,voice2
+e0001,art,I really love my art class!,Same! Painting is so much fun.,美術の授業、ほんと大好き！,だよね！絵を描くのってすごく楽しい。,1,Ivy,Ruth
+e0002,right now,"Mom, can you help me right now?","Sure, what's wrong?",ママ、今すぐ手伝ってくれる？,いいよ、どうしたの？,1,Ivy,Ruth
+e0003,cook,Can you cook dinner with me tonight?,Sure! What should we make?,今夜、一緒に夕ごはん作らない？,いいよ！何作ろうか？,1,Ivy,Ruth
+e0004,ago,I moved here three years ago.,Really? It feels like you've always been here!,3年前にここに引っ越してきたんだ。,ほんと？ずっとここにいるみたいだよ！,1,Ivy,Ruth
+e0005,a few,I made a few cookies. Want some?,Yes please! They smell so good!,クッキーをちょっと作ったの。いる？,ほしい！すごくいい匂い！,1,Ivy,Ruth
+e0006,near,My school is near my house.,Lucky! Mine is so far.,私の学校、家のすぐ近くなんだ。,いいなぁ！うちはすごく遠いよ。,1,Ivy,Ruth
+e0007,plant,Let's plant some flowers in the garden!,Yes! I want to plant sunflowers!,庭にお花を植えようよ！,うん！ひまわりを植えたい！,1,Ivy,Ruth
+e0008,enter,You can't enter this room without knocking!,"Oh, sorry! I forgot.",ノックしないでこの部屋に入っちゃダメ！,あっ、ごめん！忘れてた。,1,Ivy,Ruth
+e0009,Take care,See you next week!,Take care! Don't forget to text me!,また来週ね！,気をつけてね！メールするの忘れないで！,1,Ivy,Ruth
+e0010,I'd like to,"I'd like to order a pizza, please!","Sure, what size?",ピザを一つ注文したいんですけど！,かしこまりました、サイズはどうしますか？,1,Ivy,Ruth
+e0011,What's new?,Hi! What's new?,"Not much, just school stuff. You?",やあ！何か変わったことあった？,別に、学校のことくらいかな。そっちは？,1,Ivy,Ruth
+e0012,always,My brother always eats my snacks!,"Ugh, that's so annoying!",お兄ちゃんがいつも私のお菓子を食べちゃうの！,うわ、それすごくむかつくね！,1,Ivy,Ruth
+e0013,good at,"Wow, you're really good at drawing!",Thanks! I practice every day.,わぁ、絵がほんとに上手だね！,ありがとう！毎日練習してるんだ。,1,Ivy,Ruth
+e0014,going to,I'm going to make a cake for Mom's birthday!,Cool! Can I help you?,ママの誕生日にケーキを作るんだ！,いいね！手伝ってもいい？,1,Ivy,Ruth
+e0015,made of,"Look, this toy is made of wood!",Cool! It feels so warm.,見て、このおもちゃ木でできてるよ！,いいね！あったかい感じがする。,1,Ivy,Ruth
+e0016,run,Don't run in the hallway!,Sorry! I was just in a hurry.,廊下を走っちゃダメ！,ごめん！ちょっと急いでて。,1,Ivy,Ruth
+e0017,everywhere,There are flowers everywhere in spring!,I love it! Let's go for a walk.,春はそこら中に花が咲くね！,大好き！散歩に行こうよ。,1,Ivy,Ruth
+e0018,ready for,Are you ready for the test tomorrow?,Almost! I just need to review one more time.,明日のテストの準備できてる？,もう少し！あと一回見直すだけ。,1,Ivy,Ruth
+e0019,make tea,Want me to make tea for you?,Yes please! Some warm tea sounds nice.,お茶いれてあげようか？,うん、お願い！あったかいお茶飲みたい。,1,Ivy,Ruth
+e0020,no one,No one was home when I got there.,"Aw, that's lonely.",着いたとき、誰も家にいなかったんだ。,あぁ、それはさみしいね。,1,Ivy,Ruth
+e0021,That's fine with me,Can we have pizza tonight?,That's fine with me! I love pizza.,今夜ピザにしてもいい？,私はいいよ！ピザ大好き。,1,Ivy,Ruth
+e0022,center,Look! There's a coin in the center of the fountain!,Cool! Should we make a wish?,見て！噴水の真ん中にコインがあるよ！,ほんとだ！お願いごとしようか？,1,Ivy,Ruth
+e0023,each other,We helped each other with our homework.,That's so nice of you!,私たち、お互いに宿題を手伝ったんだ。,えらいね！,1,Ivy,Ruth
+e0024,color,What's your favorite color?,Blue! Like the sky on a sunny day.,好きな色は何？,青！晴れた日の空みたいな。,1,Ivy,Ruth
+e0025,thanks for,Thanks for helping me with my homework!,No problem! Anytime!,宿題手伝ってくれてありがとう！,どういたしまして！いつでもどうぞ！,1,Ivy,Ruth
+e0026,Good morning,Good morning! Did you sleep well?,"Yes, thanks! I had a fun dream.",おはよう！よく眠れた？,うん、ありがとう！楽しい夢を見たよ。,1,Ivy,Ruth
+e0027,How about,What should we eat for lunch?,How about pasta?,お昼ごはん何にする？,パスタはどう？,1,Ivy,Ruth
+e0028,throw,Don't throw the ball inside the house!,"Sorry, Mom! I won't do it again.",家の中でボールを投げちゃダメ！,ごめんなさい、ママ！もうしないよ。,1,Ivy,Ruth
+e0029,never,I've never been to Disneyland before!,What?! We have to go someday!,ディズニーランド、一回も行ったことないんだ！,ええっ！？いつか絶対行こうよ！,1,Ivy,Ruth
+e0030,better,I feel better today. My fever is gone!,Yay! Let's go play outside!,今日は調子がいいよ。熱も下がった！,やった！外で遊ぼう！,1,Ivy,Ruth
+e0031,young,"When my mom was young, she lived in Kyoto.",Cool! I want to visit Kyoto someday.,ママは若いころ京都に住んでたんだって。,いいね！私もいつか京都に行きたいな。,1,Ivy,Ruth
+e0032,anyway,"It's raining, but anyway, let's go outside!","Wait, let me grab an umbrella!",雨だけど、とにかく外に行こうよ！,待って、傘を取ってくる！,1,Ivy,Ruth
+e0033,like this,How do I tie my shoes?,Like this! Watch carefully.,靴ひもってどうやって結ぶの？,こうだよ！よく見ててね。,1,Ivy,Ruth
+e0034,wonderful,This birthday party is wonderful!,Thanks! I'm so happy you came!,この誕生日パーティー、最高だね！,ありがとう！来てくれてすごくうれしい！,1,Ivy,Ruth
+e0035,follow,Follow me! I know a shortcut!,"Okay, wait up! Don't go too fast!",ついてきて！近道知ってるんだ！,わかった、待って！そんなに速く行かないで！,1,Ivy,Ruth
+e0036,get better,I hope you get better soon!,Thanks! My fever is going down already.,早くよくなるといいね！,ありがとう！もう熱が下がってきたよ。,1,Ivy,Ruth
+e0037,between,I sit between Mike and Tom at school.,Cool! Are they nice?,学校ではマイクとトムの間に座ってるんだ。,いいね！二人とも優しい？,1,Ivy,Ruth
+e0038,bring,Don't forget to bring your umbrella!,Thanks! I almost forgot.,傘を持っていくの忘れないでね！,ありがとう！危うく忘れるとこだった。,1,Ivy,Ruth
+e0039,fly,Look! That bird can fly so high!,"Wow, I wish I could fly too!",見て！あの鳥、すごく高く飛べるね！,わぁ、私も飛べたらいいのに！,1,Ivy,Ruth
+e0040,else,What else do you want for your birthday?,Maybe some new books!,誕生日に他に何がほしいの？,新しい本とかかな！,1,Ivy,Ruth
+e0041,first of all,"First of all, let's wash our hands.","Okay, then can we make cookies?",まず最初に、手を洗おうね。,うん、それからクッキー作っていい？,1,Ivy,Ruth
+e0042,return,When does Dad return from his trip?,Tomorrow night! I can't wait!,パパは旅行からいつ帰ってくるの？,明日の夜だよ！待ちきれない！,1,Ivy,Ruth
+e0043,I hope,I hope it doesn't rain tomorrow.,Me too! I want to go to the park.,明日、雨が降らないといいな。,私も！公園に行きたいもん。,1,Ivy,Ruth
+e0044,arrive,When will Grandma arrive?,She'll be here in about ten minutes!,おばあちゃんはいつ着くの？,あと10分くらいで来るよ！,1,Ivy,Ruth
+e0045,quick,Let's take a quick break!,Good idea! I'm so tired.,ちょっと休憩しようよ！,いいね！すごく疲れた。,1,Ivy,Ruth
+e0046,example,Can you give me an example?,"Sure, for example, a dog is an animal.",例を一つ挙げてくれる？,いいよ、例えば犬は動物だよ。,1,Ivy,Ruth
+e0047,close,Can you close the window? It's cold!,"Sure, no problem!",窓を閉めてくれる？寒いの！,いいよ、お安いご用！,1,Ivy,Ruth
+e0048,important,It's important to brush your teeth every day.,"I know, Mom! I do it twice!",毎日歯を磨くのは大事だよ。,わかってるよ、ママ！1日2回磨いてるもん！,1,Ivy,Ruth
+e0049,You mean,You mean we don't have school tomorrow?,Yes! It's a holiday!,つまり明日は学校がないってこと？,そう！お休みだよ！,1,Ivy,Ruth
+e0050,business,My dad started a small business.,"Wow, that's so cool! What does he sell?",パパが小さな会社を始めたんだ。,わぁ、かっこいい！何を売ってるの？,1,Ivy,Ruth
+e0051,science,Science is my favorite subject!,Cool! What are you studying now?,理科が一番好きな科目なんだ！,いいね！今は何を勉強してるの？,1,Ivy,Ruth
+e0052,cover,Don't forget to cover the food in the fridge!,"Oh right, thanks for reminding me!",冷蔵庫の食べ物にフタするの忘れないでね！,あ、そうだ、教えてくれてありがとう！,1,Ivy,Ruth
+e0053,What a surprise!,Look who's here! Grandma came to visit!,What a surprise! I missed her so much!,見て、誰が来たと思う？おばあちゃんが遊びに来たよ！,なんてうれしい驚き！すごく会いたかったの！,1,Ivy,Ruth
+e0054,best,You're my best friend!,"Aw, you're mine too!",きみは私のいちばんの親友だよ！,えへへ、私もだよ！,1,Ivy,Ruth
+e0055,early,Wake up early tomorrow! We're going hiking!,Yay! I can't wait!,明日は早起きしてね！ハイキングに行くよ！,やったぁ！待ちきれない！,1,Ivy,Ruth
+e0056,world,I want to travel around the world someday.,Me too! Let's go together!,いつか世界中を旅したいな。,私も！一緒に行こうよ！,1,Ivy,Ruth
+e0057,others,"Some kids like soccer, but others love drawing.","Yeah, everyone is different!",サッカーが好きな子もいれば、絵が大好きな子もいるね。,うん、みんなそれぞれだね！,1,Ivy,Ruth
+e0058,face,Wash your face before breakfast!,"Okay, Mom! I'm going now.",朝ごはんの前に顔を洗ってね！,はーい、ママ！今行くよ。,1,Ivy,Ruth
+e0059,kill,Don't kill that bug! Just put it outside.,"Okay, you're right. Sorry, bug!",その虫を殺さないで！外に出してあげよう。,そうだね、ごめんね、虫さん！,1,Ivy,Ruth
+e0060,Nice to meet you,"Hi, I'm Mia! Nice to meet you!",Nice to meet you too! I'm Sora.,こんにちは、ミアだよ！はじめまして！,こちらこそはじめまして！ソラだよ。,1,Ivy,Ruth
+e0061,once,I've been to Tokyo only once.,Was it fun?,東京には一回だけ行ったことがあるよ。,楽しかった？,1,Ivy,Ruth
+e0062,promise,Promise me you won't tell anyone!,I promise! Your secret is safe with me.,誰にも言わないって約束して！,約束する！秘密は守るよ。,1,Ivy,Ruth
+e0063,pay,Mom said she'll pay for the movie tickets!,"Yay! Thank you, Mom!",ママが映画のチケット代を払ってくれるって！,やったぁ！ありがとう、ママ！,1,Ivy,Ruth
+e0064,everyone,Everyone in my class likes the new teacher.,Cool! What makes her so special?,クラスのみんな、新しい先生が好きなんだ。,いいね！どんなところが素敵なの？,1,Ivy,Ruth
+e0065,That makes sense.,We can't go because it's raining hard.,"Oh, that makes sense.",雨が強いから行けないんだ。,あぁ、それなら仕方ないね。,1,Ivy,Ruth
+e0066,something,Can I get you something to drink?,Yes please! Water would be great.,何か飲み物いる？,うん、お願い！お水がいいな。,1,Ivy,Ruth
+e0067,cold,"Brrr, my hands are so cold!","Here, take my gloves.",ぶるぶる、手がすごく冷たい！,はい、私の手袋を使って。,1,Ivy,Ruth
+e0068,like,I like math the best of all subjects.,Really? It's so hard for me!,全科目の中で算数が一番好き。,ほんと？私にはすごく難しいよ！,1,Ivy,Ruth
+e0069,since,I've been waiting since 9 o'clock!,Sorry I'm late! The bus was slow.,9時からずっと待ってたんだよ！,遅れてごめん！バスが遅くて。,1,Ivy,Ruth
+e0070,have a party,Let's have a party for Mom's birthday!,Yes! I'll make a cake!,ママの誕生日にパーティーしようよ！,うん！私がケーキ作るね！,1,Ivy,Ruth
+e0071,able to,I want to be able to swim like you!,I can teach you! It's not that hard.,きみみたいに泳げるようになりたいな！,教えてあげるよ！そんなに難しくないから。,1,Ivy,Ruth
+e0072,free,Are you free this Saturday?,Yes! Let's hang out!,今度の土曜、ひま？,うん！一緒に遊ぼう！,1,Ivy,Ruth
+e0073,delicious,"Wow, this cake is so delicious!",Right? My grandma made it!,わぁ、このケーキすごくおいしい！,でしょ？おばあちゃんが作ったんだ！,1,Ivy,Ruth
+e0074,draw a picture,Let's draw a picture together!,Yes! I want to draw a unicorn!,一緒に絵を描こうよ！,うん！ユニコーンを描きたい！,1,Ivy,Ruth
+e0075,Good for you,I finally learned to ride a bike!,Good for you! That's awesome!,やっと自転車に乗れるようになったんだ！,よかったね！すごいじゃん！,1,Ivy,Ruth
+e0076,red,Why is your face so red?,I ran here all the way from school!,なんで顔がそんなに赤いの？,学校からずっと走ってきたんだ！,1,Ivy,Ruth
+e0077,real,Is that diamond real?,Of course not! It's just plastic.,そのダイヤモンド、本物？,まさか！ただのプラスチックだよ。,1,Ivy,Ruth
+e0078,human,"Dogs are so smart, almost like a human!","I know, right? My dog understands everything.",犬ってすごく賢いよね、まるで人間みたい！,ほんとだよね？うちの犬、何でもわかるんだ。,1,Ivy,Ruth
+e0079,decided that,I decided that I want to be a vet someday.,Cool! You love animals so much.,いつか獣医になろうって決めたんだ。,いいね！動物が大好きだもんね。,1,Ivy,Ruth
+e0080,idea,That's such a great idea!,Thanks! I just thought of it.,それ、すごくいいアイデアだね！,ありがとう！今思いついたんだ。,1,Ivy,Ruth
+e0081,either,I don't like math either.,Right? It's so boring!,私も算数は好きじゃないな。,だよね？すごくつまらないもん！,1,Ivy,Ruth
+e0082,everybody,"Everybody, listen up!","Wait, what's going on?",みんな、聞いて！,え、どうしたの？,1,Ivy,Ruth
+e0083,because of,We can't go outside because of the rain.,"Aw man, what should we do instead?",雨だから外に行けないね。,あーあ、代わりに何しようか？,1,Ivy,Ruth
+e0084,at all,I'm not tired at all!,"Wow, you have so much energy!",ぜんぜん疲れてないよ！,わぁ、すごい元気だね！,1,Ivy,Ruth
+e0085,enough,Do you have enough money for the snack?,"Yes, just enough! Thanks for checking.",おやつを買うのに十分なお金ある？,うん、ちょうど足りる！確認ありがとう。,1,Ivy,Ruth
+e0086,agree,I think pizza is the best food ever.,Totally agree! Especially with extra cheese!,ピザって世界一おいしい食べ物だと思う。,完全に同意！特にチーズ多めのやつ！,1,Ivy,Ruth
+e0087,well done,"Look, I cleaned my room all by myself!",Well done! It looks great.,見て、自分一人で部屋を片付けたよ！,よくできました！すごくきれいだね。,1,Ivy,Ruth
+e0088,Come in,Knock knock! Are you home?,Come in! The door's open.,トントン、いる？,入って！鍵は開いてるよ。,1,Ivy,Ruth
+e0089,possible,Is it possible to finish this by tomorrow?,"I think so, if we work together!",これ、明日までに終わらせるの可能かな？,協力すればできると思う！,1,Ivy,Ruth
+e0090,all day long,It rained all day long yesterday.,I know! I was so bored at home.,昨日は一日中雨だったね。,ほんと！家ですごく退屈だったよ。,1,Ivy,Ruth
+e0091,get up,It's hard to get up on cold mornings.,I know! I want to stay in bed forever.,寒い朝に起きるのってつらいよね。,わかる！ずっとベッドにいたい。,1,Ivy,Ruth
+e0092,full of,Look! The sky is full of stars tonight!,"Wow, so beautiful! Let's count them!",見て！今夜は空が星でいっぱいだよ！,わぁ、きれい！数えてみようよ！,1,Ivy,Ruth
+e0093,point,What's the point of this game?,You have to find all the hidden coins!,このゲームの目的って何なの？,隠れてるコインを全部見つけるんだよ！,1,Ivy,Ruth
+e0094,human being,Every human being deserves kindness.,That's a beautiful thing to say.,どんな人も優しくされるべきだよ。,それ、すてきな言葉だね。,1,Ivy,Ruth
+e0095,far,Is your school far from here?,"Not really, just a 10-minute walk.",学校はここから遠いの？,そうでもないよ、歩いて10分くらい。,1,Ivy,Ruth
+e0096,eat at home,Let's eat at home tonight. I'm too tired to go out.,Sure! I'll help you cook.,今夜は家で食べようよ。出かけるには疲れすぎちゃった。,いいよ！料理手伝うね。,1,Ivy,Ruth
+e0097,stand,"Stand up, everyone! It's time for the song.","Okay, here we go!",みんな、立って！歌の時間だよ。,はーい、いくよ！,1,Ivy,Ruth
+e0098,decide,Have you decided what to eat?,"Not yet, everything looks so good!",何食べるか決めた？,まだ！全部おいしそうなんだもん。,1,Ivy,Ruth
+e0099,brush,Did you brush your teeth before bed?,"Oops, not yet! I'll do it now.",寝る前に歯を磨いた？,あっ、まだ！今やるよ。,1,Ivy,Ruth
+e0100,matter,What's the matter? You look sad.,I broke my new toy...,どうしたの？悲しそうだよ。,新しいおもちゃを壊しちゃって…,1,Ivy,Ruth
+e0101,hit,Don't hit your brother!,He started it! He took my toy!,弟をたたいちゃダメ！,あいつが先に始めたんだ！おもちゃ取られた！,1,Ivy,Ruth
+e0102,strong,"Wow, you're so strong! Can you lift this box?","Sure, no problem!",わぁ、力持ちだね！この箱持てる？,もちろん、お安いご用！,1,Ivy,Ruth
+e0103,popular,This song is so popular at school!,I know! Everyone sings it!,この歌、学校ですごく人気なんだ！,だよね！みんな歌ってる！,1,Ivy,Ruth
+e0104,meet,Where should we meet tomorrow?,How about at the school gate?,明日どこで待ち合わせる？,校門のところでどう？,1,Ivy,Ruth
+e0105,Congratulations!,I got first place in the race!,Congratulations! That's amazing!,かけっこで1位になったよ！,おめでとう！すごいじゃん！,1,Ivy,Ruth
+e0106,because,I love summer because I can swim every day!,Same! I can't wait for vacation!,夏は毎日泳げるから大好き！,同じ！休みが待ちきれないよ！,1,Ivy,Ruth
+e0107,hate,I hate spiders so much!,Me too! They're so scary!,クモがほんと大嫌い！,私も！すごく怖いよね！,1,Ivy,Ruth
+e0108,It's good to see you,Long time no see!,It's good to see you again!,久しぶりだね！,また会えてうれしいよ！,1,Ivy,Ruth
+e0109,space,Move your bag. There's no space for me.,"Oh, sorry!",バッグをどけて。私の場所がないよ。,あ、ごめん！,1,Ivy,Ruth
+e0110,dead,"Oh no, my phone is dead!","Here, you can borrow my charger.",やばい、スマホの充電が切れちゃった！,はい、私の充電器貸すよ。,1,Ivy,Ruth
+e0111,spend,How much money did you spend at the store?,About 500 yen on snacks.,お店でいくら使ったの？,おやつに500円くらい。,1,Ivy,Ruth
+e0112,all right,Are you all right? You look sad.,I just had a bad day at school...,大丈夫？悲しそうだよ。,学校でちょっと嫌なことがあって…,1,Ivy,Ruth
+e0113,less,Eat less candy. It's bad for your teeth!,"Just one more piece, please!",お菓子を減らしなさい。歯に悪いよ！,あと一個だけ、お願い！,1,Ivy,Ruth
+e0114,change,I want to change my clothes. They're all wet!,"Here, use this towel first!",服を着替えたい。びしょ濡れなんだ！,はい、まずこのタオル使って！,1,Ivy,Ruth
+e0115,difficult,This math problem is too difficult!,Don't give up! I'll help you.,この算数の問題、難しすぎる！,あきらめないで！手伝ってあげる。,1,Ivy,Ruth
+e0116,I'm sorry to hear that.,My grandpa is in the hospital.,"Oh no, I'm sorry to hear that.",おじいちゃんが入院してるんだ。,えぇ、それは大変だね。,1,Ivy,Ruth
+e0117,take a picture,Let's take a picture of this rainbow!,Yes! Smile for the camera!,この虹の写真撮ろうよ！,うん!カメラに向かって笑って！,1,Ivy,Ruth
+e0118,age,What's your dog's age?,He's five! But he still acts like a puppy.,きみの犬、何歳なの？,5歳だよ！でもまだ子犬みたいなんだ。,1,Ivy,Ruth
+e0119,stay home,I'm going to stay home today. I have a headache.,"Aw, feel better soon!",今日は家にいるよ。頭が痛くて。,あぁ、早くよくなってね。,1,Ivy,Ruth
+e0120,probably,Will it rain tomorrow?,Probably. Bring your umbrella just in case.,明日は雨降るかな？,たぶんね。念のため傘を持っていって。,1,Ivy,Ruth
+e0121,number,What's your favorite number?,Seven! It's my lucky one.,好きな数字は何？,7！私のラッキーナンバーなんだ。,1,Ivy,Ruth
+e0122,believe,I can't believe we won the game!,"I know, right?! That was amazing!",試合に勝てたなんて信じられない！,だよね！すごかったよね！,1,Ivy,Ruth
+e0123,come on in,"Hi! Come on in, the snacks are ready!","Yay, thanks for inviting me!",やあ！入って入って、おやつができたよ！,やったぁ、呼んでくれてありがとう！,1,Ivy,Ruth
+e0124,take a look at,Take a look at this funny video!,"Haha, that puppy is so cute!",この面白い動画を見て！,あはは、その子犬すごくかわいい！,1,Ivy,Ruth
+e0125,go on,Please go on with your story!,"Okay, so then the dog jumped over the fence...",続きを話して！,うん、それでね、犬がフェンスを飛び越えたんだ…,1,Ivy,Ruth
+e0126,finally,Yes! I finally finished my homework!,Nice! Now let's go play outside!,やった！やっと宿題が終わった！,いいね！じゃあ外で遊ぼう！,1,Ivy,Ruth
+e0127,and so on,"I packed snacks, water, a map, and so on.","Wow, you're ready for the trip!",おやつ、水、地図、とかを詰めたよ。,わぁ、旅行の準備バッチリだね！,1,Ivy,Ruth
+e0128,corner,Turn left at the next corner!,Got it! Thanks for the directions.,次の角を左に曲がってね！,了解！道案内ありがとう。,1,Ivy,Ruth
+e0129,about,What are you reading about?,Dinosaurs! Look at this huge T-Rex!,何の本を読んでるの？,恐竜だよ！この大きなティラノサウルス見て！,1,Ivy,Ruth
+e0130,have to do,I have to do my homework before dinner.,Need help with it?,夕ごはんの前に宿題やらなきゃ。,手伝おうか？,1,Ivy,Ruth
+e0131,second,"Wait a second, I'm coming!",Hurry up! The bus is here!,ちょっと待って、今行く！,急いで！バスが来たよ！,1,Ivy,Ruth
+e0132,younger,My younger brother is so funny!,How old is he?,私の弟、すごく面白いんだ！,何歳なの？,1,Ivy,Ruth
+e0133,travel,I want to go traveling around the world!,Same! Where should we go first?,世界中を旅したいな！,同じ！まずどこ行こうか？,1,Ivy,Ruth
+e0134,a lot,Thanks a lot for helping me!,No problem! That's what friends are for.,手伝ってくれて本当にありがとう！,どういたしまして！友だちだもん。,1,Ivy,Ruth
+e0135,almost,Hurry up! The bus is almost here!,"Wait, I forgot my lunch box!",急いで！バスがもうすぐ来るよ！,待って、お弁当忘れた！,1,Ivy,Ruth
+e0136,buy,"Mom, can you buy me this game?","Maybe for your birthday, okay?",ママ、このゲーム買ってくれる？,誕生日にね、いい？,1,Ivy,Ruth
+e0137,different,Your bag is so different from mine!,"Yeah, my sister made it for me.",きみのバッグ、私のとぜんぜん違うね！,うん、お姉ちゃんが作ってくれたんだ。,1,Ivy,Ruth
+e0138,I have an idea,I'm bored. What should we do?,I have an idea! Let's build a fort!,退屈だなぁ。何しよう？,いいこと思いついた！秘密基地を作ろう！,1,Ivy,Ruth
+e0139,borrow,Can I borrow your eraser?,"Sure, here you go!",消しゴム借りてもいい？,いいよ、はいどうぞ！,1,Ivy,Ruth
+e0140,dirty,Your shoes are so dirty!,"Yeah, I was playing in the mud.",靴がすごく汚れてるよ！,うん、泥んこで遊んでたんだ。,1,Ivy,Ruth
+e0141,get hungry,I always get hungry after swimming.,Same! Let's grab some lunch.,泳いだあとはいつもお腹がすくんだ。,同じ！お昼ごはん食べに行こう。,1,Ivy,Ruth
+e0142,made friends,I made friends with the new kid today!,That's so nice of you!,今日、転校生と友だちになったよ！,えらいね！,1,Ivy,Ruth
+e0143,look like,You look like your mom!,Really? People say that a lot!,ママにそっくりだね！,ほんと？よく言われるんだ！,1,Ivy,Ruth
+e0144,How can I help you?,"Excuse me, how can I help you?",I'm looking for the kids' books.,すみません、何かお探しですか？,子ども向けの本を探してるんです。,1,Ivy,Ruth
+e0145,a little,I'm a little scared of the dark.,"Don't worry, I'll stay with you.",暗いのがちょっと怖いんだ。,大丈夫、一緒にいてあげるよ。,1,Ivy,Ruth
+e0146,before,"Wash your hands before dinner, please!","Okay, Mom! I'm going now.",夕ごはんの前に手を洗ってね！,はーい、ママ！今行くよ。,1,Ivy,Ruth
+e0147,end,Don't tell me the end of the movie!,"Oops, sorry! I won't say anything.",映画の結末を言わないで！,あっ、ごめん!何も言わないよ。,1,Ivy,Ruth
+e0148,try my best,I'll try my best in the race tomorrow!,Good luck! You'll do great!,明日のかけっこ、全力でがんばる！,がんばって！きっとうまくいくよ！,1,Ivy,Ruth
+e0149,ask,Can I ask you a question?,"Sure, what is it?",質問してもいい？,いいよ、何？,1,Ivy,Ruth
+e0150,new,Did you hear the news? Our team won!,Yes! That's awesome!,ニュース聞いた？私たちのチームが勝ったよ！,うん!最高だね！,1,Ivy,Ruth
+e0151,action,I love action movies!,Me too! The fight scenes are the best.,アクション映画が大好き！,私も！戦うシーンが一番いいよね。,1,Ivy,Ruth
+e0152,happily,My dog is happily playing in the yard.,"Aww, dogs are so cute!",うちの犬が庭で楽しそうに遊んでる。,あぁ、犬ってほんとかわいいね！,1,Ivy,Ruth
+e0153,light,Can you turn off the light? I want to sleep.,"Sure, good night!",電気消してくれる？寝たいの。,いいよ、おやすみ！,1,Ivy,Ruth
+e0154,company,My mom works at a big company.,Cool! What does she do there?,ママは大きな会社で働いてるんだ。,いいね！そこで何してるの？,1,Ivy,Ruth
+e0155,explain,Can you explain this math problem to me?,"Sure, let me show you step by step.",この算数の問題、説明してくれる？,いいよ、一歩ずつ教えてあげる。,1,Ivy,Ruth
+e0156,job,My dad has a new job!,Cool! What does he do?,パパが新しい仕事を始めたんだ！,いいね！何してるの？,1,Ivy,Ruth
+e0157,online,Let's play games online tonight!,Yes! I'll send you a message later.,今夜オンラインでゲームしようよ！,うん！あとでメッセージ送るね。,1,Ivy,Ruth
+e0158,able,"Wow, you're able to swim already?",Yeah! My dad taught me last summer.,わぁ、もう泳げるの？,うん！去年の夏にパパが教えてくれたんだ。,1,Ivy,Ruth
+e0159,past,We learned about the past in history class today.,Cool! What did you learn?,今日、歴史の授業で昔のことを習ったよ。,いいね！何を習ったの？,1,Ivy,Ruth
+e0160,come from,Where do you come from?,I come from Osaka! Have you been there?,どこの出身なの？,大阪だよ！行ったことある？,1,Ivy,Ruth
+e0161,someone,Someone is at the door!,I'll go see who it is.,誰かが玄関にいるよ！,誰か見てくるね。,1,Ivy,Ruth
+e0162,guy,Who's that guy over there?,"Oh, that's my cousin. He's nice!",あそこにいる人、誰？,あぁ、私のいとこだよ。優しいんだ！,1,Ivy,Ruth
+e0163,large,This pizza is so large!,Yay! More for everyone!,このピザ、すごく大きい！,やった!みんなの分があるね！,1,Ivy,Ruth
+e0164,anybody,Is anybody home?,"Yeah, I'm in the kitchen!",誰か家にいる？,うん、台所にいるよ！,1,Ivy,Ruth
+e0165,add,Can you add some sugar to my tea?,"Sure, how many spoons?",お茶にお砂糖を足してくれる？,いいよ、スプーン何杯？,1,Ivy,Ruth
+e0166,easily,I can easily finish this puzzle!,"No way, it's so hard!",このパズル、簡単に終わらせられるよ！,えー、すごく難しいのに！,1,Ivy,Ruth
+e0167,year,I'll be ten years old next year.,Really? Me too!,来年で10歳になるんだ。,ほんと？私も！,1,Ivy,Ruth
+e0168,could,"Could you pass me the salt, please?","Sure, here you go!",お塩を取ってくれますか？,はい、どうぞ！,1,Ivy,Ruth
+e0169,goodbye,Don't forget to say goodbye to Grandma!,Bye Grandma! See you soon!,おばあちゃんにさよならを言うの忘れないでね！,バイバイ、おばあちゃん！またね！,1,Ivy,Ruth
+e0170,body,"Ouch, my whole body hurts after gym class!",Same! That coach is so tough.,いたた、体育のあと体じゅうが痛いよ！,同じ！あのコーチ厳しいよね。,1,Ivy,Ruth
+e0171,care,I don't care if I lose. I just want to have fun!,That's a great attitude!,負けても気にしないよ。ただ楽しみたいんだ！,いい考え方だね！,1,Ivy,Ruth
+e0172,How have you been?,Hey! Long time no see! How have you been?,Pretty good! How about you?,やあ！久しぶり！元気だった？,まあまあかな！そっちは？,1,Ivy,Ruth
+e0173,one,I want to visit the moon one day!,Cool! Maybe you'll be an astronaut!,いつか月に行きたいな！,いいね!宇宙飛行士になれるかもよ！,1,Ivy,Ruth
+e0174,slowly,Walk slowly! It's slippery here.,"Okay, I'll be careful.",ゆっくり歩いて！ここ滑りやすいよ。,うん、気をつける。,1,Ivy,Ruth
+e0175,"No, thank you.",Want some more cake?,"No, thank you. I'm so full!",ケーキもっといる？,いえ、けっこうです。お腹いっぱい！,1,Ivy,Ruth
+e0176,also,I love drawing. I also like painting.,Cool! You should join the art club!,絵を描くのが大好き。塗るのも好きなんだ。,いいね！美術部に入りなよ！,1,Ivy,Ruth
+e0177,get married,My sister is going to get married next year!,"Wow, that's so exciting!",お姉ちゃんが来年結婚するんだ！,わぁ、楽しみだね！,1,Ivy,Ruth
+e0178,continue,Should we continue the game tomorrow?,Yes! I want to win this time!,ゲームの続きは明日にする？,うん！今度こそ勝ちたい！,1,Ivy,Ruth
+e0179,hear,Did you hear that sound?,Yeah! What was it?,あの音、聞こえた？,うん！何だろう？,1,Ivy,Ruth
+e0180,healthy,Eat vegetables! They keep you healthy.,"Okay, Mom. I'll finish my salad.",野菜を食べなさい!健康でいられるよ。,はーい、ママ。サラダ食べきるよ。,1,Ivy,Ruth
+e0181,in English,How do you say 'ありがとう' in English?,It's 'thank you'!,「ありがとう」って英語で何て言うの？,'thank you'だよ！,1,Ivy,Ruth
+e0182,have a cold,"Sorry, I can't come to school. I have a cold.","Aw, feel better soon!",ごめん、学校に行けないんだ。風邪をひいちゃって。,あぁ、早くよくなってね。,1,Ivy,Ruth
+e0183,anywhere,I can't find my pencil anywhere!,Did you check under your bed?,鉛筆がどこにも見つからない！,ベッドの下は見た？,1,Ivy,Ruth
+e0184,nobody,Nobody told me about the party!,Sorry! It was a secret.,パーティーのこと、誰も教えてくれなかった！,ごめん!秘密だったんだ。,1,Ivy,Ruth
+e0185,cheap,"Wow, these stickers are so cheap!",Let's get one for each of our friends!,わぁ、このシール、すごく安い！,友だちみんなに一個ずつ買おうよ！,1,Ivy,Ruth
+e0186,either,You can have either apple juice or orange juice.,"Orange, please!",リンゴジュースかオレンジジュース、どっちか選んでいいよ。,オレンジ、お願い！,1,Ivy,Ruth
+e0187,choose,I can't choose between chocolate and strawberry!,Get both! It's your birthday!,チョコかいちごか選べないよ！,両方にしなよ!誕生日だもん！,1,Ivy,Ruth
+e0188,go ahead,Can I have the last cookie?,"Sure, go ahead!",最後のクッキー食べてもいい？,いいよ、どうぞ！,1,Ivy,Ruth
+e0189,already,I'm already done with my homework!,"Wow, that was fast! Can you help me?",もう宿題終わったよ！,わぁ、早いね!手伝ってくれる？,1,Ivy,Ruth
+e0190,top,I'm at the top of the hill!,"Wow, you're so fast!",丘のてっぺんに着いたよ！,わぁ、足速いね！,1,Ivy,Ruth
+e0191,Here we are,Are we there yet?,Here we are! Welcome to the zoo!,まだ着かないの？,着いたよ！動物園へようこそ！,1,Ivy,Ruth
+e0192,Is that so?,I heard the new movie is amazing!,Is that so? Let's go see it!,新しい映画、すごく面白いんだって！,そうなの？見に行こうよ！,1,Ivy,Ruth
+e0193,away,Stay away from that dog! It looks mean!,"Oh no, you're right. Let's go this way.",あの犬に近づかないで!怖そうだよ！,あ、ほんとだ。こっちの道行こう。,1,Ivy,Ruth
+e0194,future,What do you want to be in the future?,I want to be a chef and make yummy food!,将来何になりたい？,シェフになっておいしい料理を作りたい！,1,Ivy,Ruth
+e0195,got married to,Mom got married to Dad twenty years ago!,"Whoa, that's a long time!",ママは20年前にパパと結婚したんだよ！,わぁ、長いね！,1,Ivy,Ruth
+e0196,become,I want to become a doctor someday!,Cool! You'll be a great one.,いつかお医者さんになりたいな！,いいね!きっといいお医者さんになるよ。,1,Ivy,Ruth
+e0197,leave home,Don't forget to feed the cat before you leave home!,"Okay, I'll do it now.",家を出る前に猫にごはんをあげるの忘れないでね！,うん、今やるよ。,1,Ivy,Ruth
+e0198,cute,Look at this cute puppy!,"Aww, can I pet it?",この子犬を見て、かわいい！,あぁ、なでてもいい？,1,Ivy,Ruth
+e0199,carefully,"Listen carefully to the teacher, okay?","Yes, I will!",先生の話をよく聞いてね、いい？,はい、聞きます！,1,Ivy,Ruth
+e0200,useful,This pencil case is so useful!,Right? It can hold so many things!,この筆箱、すごく便利！,でしょ?たくさん入るんだよ！,1,Ivy,Ruth
+e0201,I see.,My dad is a firefighter.,I see. That's such a cool job!,私のパパは消防士なんだ。,へぇ。すごくかっこいい仕事だね！,1,Ivy,Ruth
+e0202,own,I have my own room now!,Lucky! Can I come see it?,自分の部屋ができたんだ！,いいなぁ！見に行ってもいい？,1,Ivy,Ruth
+e0203,send,Can you send me a photo of the puppy?,Sure! Hold on a second.,子犬の写真送ってくれる？,いいよ!ちょっと待ってね。,1,Ivy,Ruth
+e0204,perfect,Look at my drawing!,"Wow, it's perfect! You're so good at art.",私の絵を見て！,わぁ、完璧だね!絵が上手だね。,1,Ivy,Ruth
+e0205,afternoon,What are you doing this afternoon?,I'm going to play games with my brother!,今日の午後は何するの？,弟とゲームするんだ！,1,Ivy,Ruth
+e0206,cry,Why are you crying?,I lost my favorite toy...,なんで泣いてるの？,お気に入りのおもちゃをなくしちゃって…,1,Ivy,Ruth
+e0207,somebody,Somebody left their bag in the classroom.,Whose is it? Let's check inside.,誰かが教室にバッグを置いていったよ。,誰のだろう?中を確認してみよう。,1,Ivy,Ruth
+e0208,sweet,These candies are too sweet!,Really? I think they're perfect.,このキャンディー、甘すぎるよ！,ほんと?私はちょうどいいと思うけど。,1,Ivy,Ruth
+e0209,fan,I'm a big fan of that singer!,Me too! Her songs make me so happy!,私、あの歌手の大ファンなんだ！,私も!あの人の歌、すごく元気が出る！,1,Ivy,Ruth
+e0210,person,Who's the kindest person you know?,My grandma! She always shares her cookies.,知ってる中でいちばん優しい人って誰？,おばあちゃん!いつもクッキーを分けてくれるんだ。,1,Ivy,Ruth
+e0211,Have a seat,Welcome! Have a seat over there.,Thanks! This couch is so comfy!,いらっしゃい！あそこに座って。,ありがとう!このソファふかふか！,1,Ivy,Ruth
+e0212,in the afternoon,Can we go swimming in the afternoon?,Sure! Bring your swimsuit!,午後に泳ぎに行ってもいい？,いいよ!水着持っておいで！,1,Ivy,Ruth
+e0213,rich,I wish I was rich!,Why? What would you buy?,お金持ちだったらなぁ！,なんで?何を買うの？,1,Ivy,Ruth
+e0214,in order to,I practice every day in order to get better.,That's why you're so good!,上手になるために毎日練習してるんだ。,だからそんなに上手なんだね！,1,Ivy,Ruth
+e0215,set,Did you set the alarm for tomorrow?,Yes! It's set for 7.,明日のアラームセットした？,うん!7時にセットしたよ。,1,Ivy,Ruth
+e0216,tall,"Wow, you're so tall now!","Yeah, I grew over summer!",わぁ、背が伸びたね！,うん、夏の間に伸びたんだ！,1,Ivy,Ruth
+e0217,often,How often do you visit your grandma?,About once a month.,どのくらいの頻度でおばあちゃんに会うの？,月に一回くらいかな。,1,Ivy,Ruth
+e0218,start,When did you start playing the piano?,Last year! I love it!,いつからピアノを始めたの？,去年だよ!大好きなんだ！,1,Ivy,Ruth
+e0219,city,I want to visit a big city like Tokyo!,Same! Let's go together someday!,東京みたいな大きな街に行きたいな！,同じ!いつか一緒に行こうよ！,1,Ivy,Ruth
+e0220,happiness,What brings you the most happiness?,Eating ice cream with my family!,一番幸せを感じるのはどんなとき？,家族とアイスを食べるとき！,1,Ivy,Ruth
+e0221,have no idea,Where did I put my keys?,I have no idea. Check the kitchen?,鍵どこに置いたっけ？,さあ、わかんない。台所見てみたら？,1,Ivy,Ruth
+e0222,another,"Can I have another cookie, please?","Just one more, okay? Dinner is almost ready.",クッキーもう一個もらってもいい？,あと一個だけだよ、いい?もうすぐ夕ごはんだから。,1,Ivy,Ruth
+e0223,funny,That joke was so funny!,Right? I almost died laughing!,あの冗談、すごく面白かった！,でしょ?笑い死ぬかと思った！,1,Ivy,Ruth
+e0224,American,My new friend is American.,Cool! Can he speak Japanese?,新しい友だちはアメリカ人なんだ。,いいね!日本語話せるの？,1,Ivy,Ruth
+e0225,That would be great,Want me to drive you to school?,"Yes, that would be great! Thanks!",学校まで車で送ろうか？,うん、助かる!ありがとう！,1,Ivy,Ruth
+e0226,busy,"Sorry, I'm too busy to play today.","Aw, maybe tomorrow then?",ごめん、今日は忙しくて遊べないんだ。,あぁ、じゃあ明日かな？,1,Ivy,Ruth
+e0227,fact,Did you know this fun fact about whales?,"No, tell me! I love learning new things.",クジラのこの面白い豆知識、知ってた？,ううん、教えて!新しいこと知るの大好き！,1,Ivy,Ruth
+e0228,wear,What should I wear to the party?,How about your blue dress?,パーティーに何を着ていこう？,青いワンピースはどう？,1,Ivy,Ruth
+e0229,Good afternoon,"Good afternoon, everyone!","Good afternoon, teacher!",みなさん、こんにちは！,こんにちは、先生！,1,Ivy,Ruth
+e0230,How's it going?,"Hey, how's it going?",Pretty good! Just got back from school.,やあ、調子どう？,まあまあだよ!今学校から帰ってきたとこ。,1,Ivy,Ruth
+e0231,correct,Is this the correct answer?,Yes! Good job!,これで正しい答え？,うん!よくできました！,1,Ivy,Ruth
+e0232,push,Push the button to open the door!,"Got it! Wow, that was easy.",ボタンを押すとドアが開くよ！,了解!わぁ、簡単だった。,1,Ivy,Ruth
+e0233,anything,Is there anything to eat?,There's some bread on the table.,何か食べるものある？,テーブルにパンがあるよ。,1,Ivy,Ruth
+e0234,kind,What kind of pet do you want?,A puppy! A small fluffy one!,どんなペットがほしいの？,子犬!小さくてふわふわのやつ！,1,Ivy,Ruth
+e0235,safe,Is it safe to swim here?,Yes! The water is shallow.,ここで泳いでも安全？,うん!水が浅いから。,1,Ivy,Ruth
+e0236,above,Look! A rainbow above the trees!,So pretty! Let's take a picture!,見て!木の上に虹が出てる！,きれい!写真撮ろうよ！,1,Ivy,Ruth
+e0237,take care of ~,Can you take care of my cat while I'm away?,Of course! I love your cat!,私が留守の間、猫のお世話してくれる？,もちろん!きみの猫大好きだもん！,1,Ivy,Ruth
+e0238,rock,Look at this cool rock I found!,"Whoa, it sparkles! Can I see?",見て、この見つけたかっこいい石！,おぉ、キラキラしてる!見せて！,1,Ivy,Ruth
+e0239,a bit,I'm a bit hungry. Can we eat soon?,Sure! Let's make sandwiches together.,ちょっとお腹すいた。すぐ食べていい？,いいよ!一緒にサンドイッチ作ろう。,1,Ivy,Ruth
+e0240,during,I read three books during summer vacation.,"Wow, that's so many!",夏休みの間に本を3冊読んだよ。,わぁ、すごい量だね！,1,Ivy,Ruth
+e0241,park,Let's play soccer at the park!,Yes! I'll bring the ball.,公園でサッカーしようよ！,うん!ボール持ってくね。,1,Ivy,Ruth
+e0242,closed,"Oh no, the candy shop is closed!","Aw, let's come back tomorrow.",あぁ、お菓子屋さん閉まってる！,残念、明日また来ようよ。,1,Ivy,Ruth
+e0243,enjoy,Enjoy your trip!,Thanks! I'll bring you a souvenir!,旅行楽しんでね！,ありがとう!お土産買ってくるね！,1,Ivy,Ruth
+e0244,build,Let's build a sandcastle!,Yes! I'll get the bucket!,砂のお城を作ろうよ！,うん!バケツ取ってくる！,1,Ivy,Ruth
+e0245,sing,Will you sing with me at the school festival?,Yes! It will be so fun!,学校のお祭りで一緒に歌ってくれる？,うん!すごく楽しそう！,1,Ivy,Ruth
+e0246,super,This cake is super yummy!,Right? My mom baked it!,このケーキ、めっちゃおいしい！,でしょ?ママが焼いたんだ！,1,Ivy,Ruth
+e0247,Is that right?,Mom said we can have ice cream after dinner!,Is that right? Lucky us!,夕ごはんのあとアイス食べていいってママが言ってた！,ほんと?ラッキーだね！,1,Ivy,Ruth
+e0248,through,Let's walk through the park on the way home.,Good idea! It's so pretty today.,帰り道、公園を通って歩こうよ。,いいね!今日すごくいい天気だし。,1,Ivy,Ruth
+e0249,quiet,Please be quiet! The baby is sleeping.,"Oh sorry, I didn't know!",静かにして!赤ちゃんが寝てるの。,あ、ごめん、知らなかった！,1,Ivy,Ruth
+e0250,go to work,When does your dad go to work?,Around 8 in the morning.,きみのパパはいつ仕事に行くの？,朝8時くらいかな。,1,Ivy,Ruth
+e0251,Excuse me,"Excuse me, where is the bathroom?","It's right over there, next to the kitchen.",すみません、トイレはどこですか？,すぐそこ、台所の隣だよ。,1,Ivy,Ruth
+e0252,Good luck.,I'm going to ask Mom if I can have a puppy.,Good luck. I hope she says yes!,ママに子犬飼っていいか聞いてみるんだ。,がんばって。いいって言ってくれるといいね！,1,Ivy,Ruth
+e0253,brown,I want to dye my hair brown.,Cool! It will look nice on you.,髪を茶色に染めたいな。,いいね!似合うと思うよ。,1,Ivy,Ruth
+e0254,true,Is it true that you're moving to America?,Yes! I'm moving next month.,アメリカに引っ越すって本当？,うん!来月引っ越すんだ。,1,Ivy,Ruth
+e0255,save,I'm trying to save money for a new toy.,How much do you have so far?,新しいおもちゃのためにお金をためてるんだ。,今どのくらいたまった？,1,Ivy,Ruth
+e0256,white,Look! The mountain is all white with snow!,So pretty! Let's go play in it!,見て!山が雪で真っ白だよ！,きれい!遊びに行こうよ！,1,Ivy,Ruth
+e0257,a long time ago,I lost this teddy bear a long time ago.,Oh no! Let's look for it together.,このテディベア、ずっと前になくしちゃったんだ。,えぇ!一緒に探そうよ。,1,Ivy,Ruth
+e0258,born,I was born in spring.,Cool! My birthday is in spring too!,私は春に生まれたんだ。,いいね!私も誕生日春だよ！,1,Ivy,Ruth
+e0259,both,I like both pizza and pasta.,Same! Let's eat Italian food tonight!,ピザもパスタも両方好き。,同じ!今夜イタリアンにしようよ！,1,Ivy,Ruth
+e0260,leave,What time do we have to leave?,Around 7. So get ready soon!,何時に出発しなきゃいけないの？,7時くらい。だから早く準備して！,1,Ivy,Ruth
+e0261,next time,I missed the bus again!,"Next time, leave home earlier!",またバスに乗り遅れちゃった！,次はもっと早く家を出なよ！,1,Ivy,Ruth
+e0262,What's new with you?,Hey! What's new with you?,I got a new puppy last week!,やあ!何か変わったことあった？,先週、子犬を飼い始めたんだ！,1,Ivy,Ruth
+e0263,bad at,I'm so bad at math!,"Don't worry, I can help you study.",算数がほんとに苦手なんだ！,大丈夫、勉強手伝ってあげる。,1,Ivy,Ruth
+e0264,feeling,I have a strange feeling about this.,What do you mean? Are you scared?,これ、なんか嫌な予感がする。,どういうこと?怖いの？,1,Ivy,Ruth
+e0265,interesting,This book is so interesting!,Can I read it after you?,この本、すごく面白い！,あなたの後に読んでもいい？,1,Ivy,Ruth
+e0266,think about,Let me think about it for a minute.,"Sure, take your time!",ちょっと考えさせて。,いいよ、ゆっくりどうぞ！,1,Ivy,Ruth
+e0267,I'm not sure.,Will it snow tonight?,I'm not sure. Let's check the weather!,今夜は雪降るかな？,わかんない。天気予報見てみよう！,1,Ivy,Ruth
+e0268,May I help you?,May I help you?,"Yes, I'm looking for a birthday gift for my mom.",いらっしゃいませ、何かお探しですか？,はい、母への誕生日プレゼントを探してて。,1,Ivy,Ruth
+e0269,see each other,When will we see each other again?,Maybe next weekend! Let's plan something!,次はいつ会える？,来週末とか!何か計画しようよ！,1,Ivy,Ruth
+e0270,life,Books make my life so much fun!,Same! I love reading too.,本があると人生がすごく楽しくなる！,同じ!私も読書大好き。,1,Ivy,Ruth
+e0271,go to bed,It's 10 o'clock! Time to go to bed!,"Just five more minutes, please!",10時だよ!寝る時間！,あと5分だけ、お願い！,1,Ivy,Ruth
+e0272,once upon a time,"Once upon a time, there was a tiny dragon.","Ooh, I love stories like this! Tell me more!",むかしむかし、小さなドラゴンがいました。,わぁ、こういうお話大好き!もっと聞かせて！,1,Ivy,Ruth
+e0273,famous,Is this restaurant famous?,Yes! Everyone says their pizza is the best!,このレストラン、有名なの？,うん!ピザが一番おいしいってみんな言ってる！,1,Ivy,Ruth
+e0274,take a look,I made a new drawing! Take a look!,"Wow, it's amazing!",新しい絵を描いたんだ!見て！,わぁ、すごい！,1,Ivy,Ruth
+e0275,take a bath,It's time to take a bath!,"Five more minutes, please!",お風呂の時間だよ！,あと5分だけ、お願い！,1,Ivy,Ruth
+e0276,how much,How much is this toy?,It's 500 yen. Pretty cheap!,このおもちゃいくら？,500円だよ。けっこう安いね！,1,Ivy,Ruth
+e0277,clean,Please clean up your room before dinner!,"Okay, Mom! I'm almost done.",夕ごはんの前に部屋を片付けてね！,はーい、ママ!もうすぐ終わるよ。,1,Ivy,Ruth
+e0278,size,These shoes are too small.,Try a bigger size.,この靴、小さすぎるよ。,もっと大きいサイズを試してみて。,1,Ivy,Ruth
+e0279,quickly,Eat quickly! We're going to be late!,"Okay, okay! Don't rush me!",早く食べて!遅れちゃうよ！,わかった、わかった!急かさないで！,1,Ivy,Ruth
+e0280,Not at all,Do you mind if I sit here?,Not at all! Please do.,ここに座ってもいい？,ぜんぜんいいよ!どうぞ。,1,Ivy,Ruth
+e0281,include,Does this menu include drinks?,"Yes, you get free juice with it!",このメニューって飲み物込み？,うん、ジュースが無料でつくよ！,1,Ivy,Ruth
+e0282,office,"Look, my mom works at this office.","Wow, it's so big!",見て、ママはこのオフィスで働いてるんだ。,わぁ、すごく大きいね！,1,Ivy,Ruth
+e0283,went up,The price of candy went up again!,"No way, that's so unfair!",キャンディーの値段がまた上がったよ！,ええっ、それひどいね！,1,Ivy,Ruth
+e0284,begin,When does the show begin?,In about five minutes! Hurry up!,ショーはいつ始まるの？,あと5分くらい!急いで！,1,Ivy,Ruth
+e0285,sport,What's your favorite sport?,Basketball! It's so much fun!,好きなスポーツは何？,バスケ!すごく楽しいんだ！,1,Ivy,Ruth
+e0286,drive,"Can you drive me to school, Mom?","Sure, hurry up and get in the car!",ママ、学校まで車で送ってくれる？,いいよ、早く車に乗って！,1,Ivy,Ruth
+e0287,simple,This recipe is so simple!,Awesome! Let's try making it together.,このレシピ、すごく簡単！,いいね!一緒に作ってみようよ。,1,Ivy,Ruth
+e0288,the same,We have the same shoes!,"Whoa, really? That's so cool!",私たち、同じ靴だ！,えっ、ほんと?すごい！,1,Ivy,Ruth
+e0289,remember,Do you remember our trip to the beach?,Yes! It was so much fun!,海に行ったときのこと覚えてる？,うん!すごく楽しかったね！,1,Ivy,Ruth
+e0290,mistake,I made a mistake on the test.,It's okay! You'll do better next time.,テストでミスしちゃった。,大丈夫!次がんばればいいよ。,1,Ivy,Ruth
+e0291,inside,It's too cold outside. Let's stay inside!,Good idea. I'll make hot chocolate!,外は寒すぎるよ。中にいようよ！,いい考え。ホットチョコ作るね！,1,Ivy,Ruth
+e0292,friends with,"Hey, I want to be friends with you!",Really? That makes me so happy!,ねえ、きみと友だちになりたいな！,ほんと?すごくうれしい！,1,Ivy,Ruth
+e0293,go shopping,Let's go shopping after school!,Yes! I need new pencils.,放課後、買い物に行こうよ！,うん!新しい鉛筆がいるんだ。,1,Ivy,Ruth
+e0294,come back to,Can we come back to this park next week?,Of course! It's so fun here.,来週またこの公園に来てもいい？,もちろん!ここすごく楽しいもん。,1,Ivy,Ruth
+e0295,What else?,We need eggs and milk. What else?,Bread! Don't forget bread.,卵と牛乳がいるね。他には？,パン!パン忘れないで。,1,Ivy,Ruth
+e0296,beginning,I missed the beginning of the movie!,"Don't worry, I'll tell you what happened.",映画の最初を見逃しちゃった！,大丈夫、何があったか教えてあげる。,1,Ivy,Ruth
+e0297,last,I had a scary dream last night.,Oh no! What was it about?,昨日の夜、怖い夢を見たんだ。,えぇ!どんな夢？,1,Ivy,Ruth
+e0298,living,I love living near the beach.,I'm so jealous! Can I visit?,海の近くに住むのって最高なんだ。,いいなぁ!遊びに行ってもいい？,1,Ivy,Ruth
+e0299,come home,What time will Dad come home?,He said around six o'clock.,パパは何時に帰ってくるの？,6時くらいって言ってたよ。,1,Ivy,Ruth
+e0300,"Oh, my gosh!","Oh, my gosh! Look at all these puppies!",I know! They're so cute!,わぁ!この子犬たち見て！,ほんと!すごくかわいい！,1,Ivy,Ruth
+e0301,look at,Look at that beautiful sunset!,"Wow, the sky is full of orange and pink!",見て、あのきれいな夕焼け！,わぁ、空がオレンジとピンクでいっぱい！,1,Ivy,Ruth
+e0302,side,There's a snack bar on the other side of the park.,Cool! Let's check it out.,公園の反対側に売店があるよ。,いいね!見に行こう。,1,Ivy,Ruth
+e0303,carry,These bags are too heavy. Can you carry one?,"Sure, let me help you!",このバッグ重すぎる。一つ持ってくれる？,いいよ、手伝うね！,1,Ivy,Ruth
+e0304,every year,We visit Grandma every year in summer.,That sounds so fun!,毎年夏におばあちゃんに会いに行くんだ。,すごく楽しそう！,1,Ivy,Ruth
+e0305,do my best,I'll do my best in the test tomorrow!,I believe in you! You got this!,明日のテスト、全力でがんばる！,信じてるよ!きみならできる！,1,Ivy,Ruth
+e0306,fall,Be careful! Don't fall off the swing!,"Okay, I'll hold on tight!",気をつけて!ブランコから落ちないでね！,うん、しっかりつかまる！,1,Ivy,Ruth
+e0307,how to,Can you teach me how to swim?,Sure! It's not that hard.,泳ぎ方を教えてくれる？,いいよ!そんなに難しくないから。,1,Ivy,Ruth
+e0308,die,I'm going to die if I don't get water!,"Haha, you're being so dramatic!",水飲まないと死んじゃう！,あはは、大げさだなぁ！,1,Ivy,Ruth
+e0309,I agree.,I think recess is the best part of school!,I agree. Playing outside is so fun.,休み時間が学校で一番いいと思う！,賛成。外で遊ぶの楽しいもんね。,1,Ivy,Ruth
+e0310,Help yourself,Help yourself to the cookies!,Thanks! These look so good!,クッキー、好きなだけ食べてね！,ありがとう!すごくおいしそう！,1,Ivy,Ruth
+e0311,answer,I don't know the answer to this question.,Let me help you. It's not that hard!,この問題の答えがわからないよ。,手伝ってあげる。そんなに難しくないよ！,1,Ivy,Ruth
+e0312,live,Where do you live?,Right next to the park!,どこに住んでるの？,公園のすぐ隣だよ！,1,Ivy,Ruth
+e0313,expensive,"Whoa, this toy is so expensive!",Maybe ask for it for your birthday.,うわ、このおもちゃすごく高い！,誕生日にお願いしてみたら？,1,Ivy,Ruth
+e0314,What's up?,"Hey, what's up?",Just hanging out with my brother.,やあ、調子どう？,弟とのんびりしてるとこ。,1,Ivy,Ruth
+e0315,all day,I played video games all day.,"Wow, didn't your mom get mad?",一日中ゲームしてたんだ。,わぁ、ママに怒られなかった？,1,Ivy,Ruth
+e0316,No problem,Thanks for lending me your eraser!,No problem! Anytime.,消しゴム貸してくれてありがとう！,どういたしまして!いつでもどうぞ。,1,Ivy,Ruth
+e0317,Great job,"Look, I got 100 on my spelling test!",Great job! I'm proud of you!,見て、つづりのテストで100点取ったよ！,すごいね!えらいぞ！,1,Ivy,Ruth
+e0318,alone,I don't want to walk home alone.,"Don't worry, I'll come with you!",一人で家まで帰りたくないな。,大丈夫、一緒に行ってあげる！,1,Ivy,Ruth
+e0319,welcome,Welcome to my new house!,"Wow, it's so big! Show me around!",私の新しい家へようこそ！,わぁ、すごく大きい!案内して！,1,Ivy,Ruth
+e0320,big,Look at that big dog!,"Whoa, it's huge! Is it friendly?",あの大きな犬を見て！,わぁ、でかい!人に優しいのかな？,1,Ivy,Ruth
+e0321,behind,Look behind you! There's a butterfly!,"Wow, so pretty! I want to catch it!",後ろを見て!ちょうちょがいるよ！,わぁ、きれい!つかまえたい！,1,Ivy,Ruth
+e0322,next to ~,Can I sit next to you?,Sure! Come over here.,隣に座ってもいい？,いいよ!こっちおいで。,1,Ivy,Ruth
+e0323,think,I think that this puzzle is too hard for me.,Don't give up! Try one more time.,このパズル、私には難しすぎると思う。,あきらめないで!もう一回やってみて。,1,Ivy,Ruth
+e0324,get dressed,Hurry up and get dressed! We're late!,I'm coming! Just need to find my socks.,早く着替えて!遅れちゃうよ！,今行く!靴下を探してるだけ。,1,Ivy,Ruth
+e0325,short,My hair is too short. I miss it long.,"Don't worry, it will grow back fast.",髪が短すぎる。長いほうがよかったな。,大丈夫、すぐに伸びるよ。,1,Ivy,Ruth
+e0326,What about you?,I love chocolate ice cream. What about you?,Strawberry! It's the best!,私はチョコアイスが好き。きみは？,いちご!最高だよね！,1,Ivy,Ruth
+e0327,get sick,Don't go outside without a coat. You'll get sick!,"Okay, Mom! I'm getting it now.",コートなしで外に出ちゃダメ!風邪ひくよ！,はーい、ママ!今着るよ。,1,Ivy,Ruth
+e0328,Good luck!,I'm so nervous about my piano test.,Good luck! You'll do great!,ピアノのテスト、すごく緊張する。,がんばって!きっとうまくいくよ！,1,Ivy,Ruth
+e0329,poor,"Oh no, this poor little kitten is lost.",Let's help find its mom!,あぁ、このかわいそうな子猫、迷子だ。,ママを探すの手伝おうよ！,1,Ivy,Ruth
+e0330,kind of,I'm kind of tired today.,Want to rest before we play?,今日はちょっと疲れてるんだ。,遊ぶ前に休む？,1,Ivy,Ruth
+e0331,again,Can we watch this movie again?,Again?! We just saw it yesterday!,この映画もう一回見ていい？,また?昨日見たばっかりじゃん！,1,Ivy,Ruth
+e0332,low,"Be careful, this ceiling is very low!","Oops, I almost hit my head!",気をつけて、この天井すごく低いよ！,うわ、危うく頭ぶつけるとこだった！,1,Ivy,Ruth
+e0333,plan,What's your plan for Sunday?,I'm going to the zoo with my dad!,日曜の予定は何？,パパと動物園に行くんだ！,1,Ivy,Ruth
+e0334,Here you are.,Can I have a pencil?,Here you are. You can keep it!,鉛筆もらってもいい？,はい、どうぞ。あげるよ！,1,Ivy,Ruth
+e0335,line,There's a long line at the ice cream shop!,"Aw, let's come back later.",アイス屋さん、すごく行列だよ！,あぁ、あとでまた来ようよ。,1,Ivy,Ruth
+e0336,at first,"At first, I was scared to ride the bike.",But now you're so good at it!,最初は自転車に乗るのが怖かったんだ。,でも今はすごく上手だね！,1,Ivy,Ruth
+e0337,go for it,I'm not sure if I should try out for the team...,Go for it! You can do it!,チームの入団テスト受けようか迷ってて…,やってみなよ!きみならできる！,1,Ivy,Ruth
+e0338,difference,What's the difference between these two pens?,This one writes thicker. Try them both!,この2本のペン、何が違うの？,こっちのほうが太く書けるよ。両方試してみて！,1,Ivy,Ruth
+e0339,ready to,I'm ready to start! Where should I begin?,Let's clean up the toys first.,始める準備できた!どこから始めればいい？,まずおもちゃを片付けようか。,1,Ivy,Ruth
+e0340,glad,I'm so glad you came to my party!,Me too! It was so much fun!,パーティーに来てくれてすごくうれしい！,私も!すごく楽しかった！,1,Ivy,Ruth
+e0341,air,The air smells so fresh after the rain!,"Yeah, let's go outside and play!",雨のあとの空気、すごく気持ちいい！,うん、外に出て遊ぼうよ！,1,Ivy,Ruth
+e0342,in front of,Stand in front of the camera!,Okay! Should I smile?,カメラの前に立って！,うん!笑ったほうがいい？,1,Ivy,Ruth
+e0343,copy,Stop trying to copy my drawing!,Sorry! I just like your style.,私の絵をまねしないでよ！,ごめん!きみの絵が好きでつい。,1,Ivy,Ruth
+e0344,kid,Stop being a kid and clean your room!,"Aw, but I am a kid!",子どもみたいなこと言ってないで部屋を片付けなさい！,えー、だって子どもだもん！,1,Ivy,Ruth
+e0345,over,"Yay, school is over! Let's play!",I'll race you to the playground!,やった、学校終わり!遊ぼう！,遊び場まで競争だ！,1,Ivy,Ruth
+e0346,soon,Want to come over and play games?,Sounds great! I'll be there soon!,うちに来てゲームしない？,いいね!すぐ行くよ！,1,Ivy,Ruth
+e0347,break,Don't break my new toy!,"Sorry, I didn't mean to. I'll be careful.",私の新しいおもちゃを壊さないで！,ごめん、わざとじゃないんだ。気をつけるよ。,1,Ivy,Ruth
+e0348,careful,Be careful! The floor is wet!,Thanks for telling me!,気をつけて!床が濡れてるよ！,教えてくれてありがとう！,1,Ivy,Ruth
+e0349,eat all,Did you eat all the cookies?,"Sorry, they were so good!",クッキー全部食べちゃったの？,ごめん、おいしすぎて！,1,Ivy,Ruth
+e0350,beauty,The beauty of this park makes me so happy.,I know! Let's come here every weekend!,この公園の美しさを見ると幸せになるよ。,わかる!毎週末ここに来ようよ！,1,Ivy,Ruth
+e0351,interested in,Are you interested in dinosaurs?,Yes! I want to be a scientist when I grow up!,恐竜に興味ある？,うん!大きくなったら科学者になりたいんだ！,1,Ivy,Ruth
+e0352,pull,Pull harder! The door is stuck!,I'm trying! It won't open!,もっと強く引っ張って!ドアが動かないんだ！,やってるよ!開かない！,1,Ivy,Ruth
+e0353,beautiful,Look at this beautiful flower!,"Wow, it's so pretty! Can I smell it?",このきれいな花を見て！,わぁ、すてき!匂いかいでもいい？,1,Ivy,Ruth
+e0354,in the evening,I usually read books in the evening.,That's a great habit!,私はたいてい夜に本を読むんだ。,いい習慣だね！,1,Ivy,Ruth
+e0355,I understand.,"Sorry, I'm too tired to play today.",I understand. Maybe tomorrow!,ごめん、今日は疲れすぎて遊べないんだ。,わかった。じゃあ明日ね！,1,Ivy,Ruth
+e0356,talk,Can we talk for a minute?,"Sure, what's up?",ちょっと話せる？,いいよ、どうしたの？,1,Ivy,Ruth
+e0357,last year,We went to Hawaii last year.,"Wow, that sounds amazing!",去年ハワイに行ったんだ。,わぁ、最高そう！,1,Ivy,Ruth
+e0358,happy to,I'm so happy to see you again!,Me too! It's been forever!,また会えてすごくうれしい！,私も!すごく久しぶりだね！,1,Ivy,Ruth
+e0359,actually,"I thought this was easy, but actually it's really hard.",Don't give up! I'll help you.,簡単だと思ったけど、実はすごく難しいんだ。,あきらめないで!手伝ってあげる。,1,Ivy,Ruth
+e0360,sometimes,Sometimes I wish I could fly.,Me too! That would be so cool.,たまに空を飛べたらなって思うんだ。,私も!すごくかっこいいよね。,1,Ivy,Ruth
+e0361,looking for,What are you looking for?,My favorite pencil. I can't find it!,何を探してるの？,お気に入りの鉛筆。見つからないんだ！,1,Ivy,Ruth
+e0362,watch,Let's watch a movie tonight!,Yes! Can we have popcorn too?,今夜、映画を見ようよ！,うん！ポップコーンも食べていい？,1,Ivy,Ruth
+e0363,no way,I got 100 on my test!,No way! That's amazing!,テストで100点取ったよ！,うそでしょ！すごいじゃん！,1,Ivy,Ruth
+e0364,go for a walk,Do you want to go for a walk?,Sure! Let's bring the dog!,散歩に行かない？,いいね！犬も連れて行こう！,1,Ivy,Ruth
+e0365,pretty good,How was your soccer game?,Pretty good! We almost won.,サッカーの試合どうだった？,けっこう良かったよ！もう少しで勝てたんだ。,1,Ivy,Ruth
+e0366,need,"I need your help, Mom!","Okay, what's wrong?",ママ、手伝ってほしいの！,いいよ、どうしたの？,1,Ivy,Ruth
+e0367,say,What did you say? I couldn't hear you.,I said dinner is ready!,何て言ったの？聞こえなかった。,ごはんできたよって言ったの！,1,Ivy,Ruth
+e0368,people,"Wow, so many people are here!",I know! It's really crowded.,うわぁ、人がいっぱいいる！,ほんとだね！すごく混んでる。,1,Ivy,Ruth
+e0369,speak,"Can you speak more slowly, please?","Oh, sorry! Is this better?",もっとゆっくり話してくれる？,あっ、ごめん！これなら大丈夫？,1,Ivy,Ruth
+e0370,use,Can I use your eraser?,Sure! Here you go.,消しゴム使ってもいい？,いいよ！はい、どうぞ。,1,Ivy,Ruth
+e0371,sad,Why do you look so sad?,I lost my favorite pen.,なんでそんなに悲しそうなの？,お気に入りのペンをなくしちゃったの。,1,Ivy,Ruth
+e0372,interested,Are you interested in dinosaurs?,Yes! They're so cool!,恐竜に興味ある？,うん！すごくかっこいいよね！,1,Ivy,Ruth
+e0373,pretty,Look at this pretty flower!,"Wow, it's so colorful!",このきれいな花を見て！,わぁ、すごくカラフルだね！,1,Ivy,Ruth
+e0374,laugh,Don't laugh at me!,Sorry! Your hat just looks funny.,笑わないでよ！,ごめん！その帽子がちょっと面白くて。,1,Ivy,Ruth
+e0375,turn,Turn left at the next corner.,Okay! Is the store close?,次の角を左に曲がってね。,うん！お店は近いの？,1,Ivy,Ruth
+e0376,lose,Don't lose your ticket!,"Don't worry, it's in my pocket.",チケットなくさないでね！,大丈夫、ポケットに入ってるよ。,1,Ivy,Ruth
+e0377,hard,This math problem is so hard!,Let me help you with it.,この算数の問題、すごく難しい！,じゃあ手伝ってあげる。,1,Ivy,Ruth
+e0378,hold,Can you hold my bag for a second?,Sure! Take your time.,ちょっとバッグ持っててくれる？,いいよ！ゆっくりでいいからね。,1,Ivy,Ruth
+e0379,tomorrow,Let's meet at the park tomorrow!,Okay! What time?,明日、公園で会おうよ！,いいよ！何時に？,1,Ivy,Ruth
+e0380,price,"Wow, what a high price!","Yeah, let's find something cheaper.",うわ、すごく高い値段だね！,うん、もっと安いの探そう。,1,Ivy,Ruth
+e0381,stand up,Please stand up and say your name.,"Okay! Um, I'm Ken.",立ち上がって名前を言ってね。,はい！えっと、ケンです。,1,Ivy,Ruth
+e0382,ride,Can you ride a bike?,Yes! I learned last summer.,自転車に乗れる？,うん！去年の夏に乗れるようになったよ。,1,Ivy,Ruth
+e0383,understand,I don't understand this question.,Let me explain it to you.,この問題、わからないな。,じゃあ説明してあげるね。,1,Ivy,Ruth
+e0384,then,"First we cook, then we eat!",Yum! I'm so hungry.,まず料理して、それから食べよう！,やったぁ！すごくお腹すいた。,1,Ivy,Ruth
+e0385,stay,Can I stay at your house tonight?,Yes! Let's watch movies!,今夜、あなたの家に泊まっていい？,うん！映画見ようよ！,1,Ivy,Ruth
+e0386,win,I hope we win the game!,Me too! Let's do our best!,試合に勝てるといいな！,私も！がんばろうね！,1,Ivy,Ruth
+e0387,right,Is this the right answer?,Yes! Good job!,これで正しい答え？,うん！よくできました！,1,Ivy,Ruth
+e0388,thing,What's that thing in your hand?,It's my new toy car!,その手に持ってるもの、何？,新しいおもちゃの車だよ！,1,Ivy,Ruth
+e0389,over there,Where's the bathroom?,"It's over there, next to the door.",トイレはどこ？,あそこだよ、ドアの隣。,1,Ivy,Ruth
+e0390,hurt,Ouch! My knee hurts!,Oh no! Let's get a bandage.,いたっ！ひざが痛い！,大変！絆創膏を取ってこよう。,1,Ivy,Ruth
+e0391,write,Can you write your name here?,Sure! Here you go.,ここに名前を書いてくれる？,いいよ！はい、書いたよ。,1,Ivy,Ruth
+e0392,move,Can you move a little? I can't see.,"Oh, sorry! Is this better?",ちょっとどいてくれる？見えないの。,あっ、ごめん！これで見える？,1,Ivy,Ruth
+e0393,pink,I love your pink shoes!,Thanks! Pink is my favorite color.,そのピンクの靴、すてきだね！,ありがとう！ピンクが一番好きなの。,1,Ivy,Ruth
+e0394,read,Can you read this book to me?,Of course! Sit next to me.,この本、読んでくれる？,もちろん！となりに座って。,1,Ivy,Ruth
+e0395,smell,"Mmm, something smells good!",It's cookies! They're almost ready.,んー、いい匂いがする！,クッキーだよ！もうすぐ焼けるよ。,1,Ivy,Ruth
+e0396,married,My sister is getting married!,"Wow, congratulations!",お姉ちゃんが結婚するの！,わぁ、おめでとう！,1,Ivy,Ruth
+e0397,walk,Let's walk to school together!,Okay! Wait for me!,一緒に歩いて学校行こうよ！,うん！待ってて！,1,Ivy,Ruth
+e0398,problem,I have a problem with my computer.,Let me take a look.,パソコンの調子が悪いんだ。,ちょっと見せて。,1,Ivy,Ruth
+e0399,wish,I wish I could fly!,Me too! That would be so fun!,空を飛べたらいいのに！,私も！すごく楽しそう！,1,Ivy,Ruth
+e0400,key,I can't find my key!,Did you check your bag?,鍵が見つからない！,バッグの中見た？,1,Ivy,Ruth
+e0401,special,Today is a special day!,Oh? What's happening?,今日は特別な日なんだ！,え？何があるの？,1,Ivy,Ruth
+e0402,wash,Don't forget to wash your hands!,"Okay, Mom! I will.",手を洗うのを忘れないでね！,わかった、ママ！洗うよ。,1,Ivy,Ruth
+e0403,sell,Do they sell ice cream here?,Yes! Let's get some!,ここってアイス売ってる？,うん！買おうよ！,1,Ivy,Ruth
+e0404,just,I just finished my homework!,Great! Now let's play!,ちょうど宿題が終わったとこ！,やったね！じゃあ遊ぼう！,1,Ivy,Ruth
+e0405,sound,What's that sound?,I think it's the rain.,あの音、何だろう？,雨の音じゃないかな。,1,Ivy,Ruth
+e0406,hope,I hope you feel better soon!,Thanks! I think I do already.,早く元気になるといいね！,ありがとう！もうけっこう良くなってきたよ。,1,Ivy,Ruth
+e0407,tell,Can you tell me a secret?,"Okay, but don't tell anyone!",秘密を教えてくれる？,いいよ、でも誰にも言わないでね！,1,Ivy,Ruth
+e0408,place,This is my favorite place!,"Wow, it's so quiet and pretty.",ここが私のお気に入りの場所なの！,わぁ、すごく静かできれいだね。,1,Ivy,Ruth
+e0409,join,Can I join your team?,Of course! We need one more player!,あなたのチームに入ってもいい？,もちろん！あと一人ほしかったんだ！,1,Ivy,Ruth
+e0410,small,This shirt is too small for me.,Let's get a bigger one!,このシャツ、私には小さすぎる。,じゃあもっと大きいの買おう！,1,Ivy,Ruth
+e0411,question,"I have a question, teacher!","Sure, go ahead!",先生、質問があります！,いいよ、どうぞ！,1,Ivy,Ruth
+e0412,still,Are you still hungry?,Yes! Can I have more?,まだお腹すいてるの？,うん！もっと食べてもいい？,1,Ivy,Ruth
+e0413,maybe,Will it rain today?,Maybe. Let's bring an umbrella.,今日、雨降るかな？,たぶんね。傘を持って行こう。,1,Ivy,Ruth
+e0414,work,Does this toy still work?,Let me check the batteries.,このおもちゃ、まだ動くかな？,電池を確認してみるね。,1,Ivy,Ruth
+e0415,heavy,This box is so heavy!,"Here, let me help you carry it.",この箱、すごく重い！,ほら、運ぶの手伝うよ。,1,Ivy,Ruth
+e0416,study,Let's study together for the test!,Good idea! Come to my house.,テストのために一緒に勉強しようよ！,いいね！うちに来てよ。,1,Ivy,Ruth
+e0417,Sounds great!,Let's go swimming this weekend!,Sounds great! I'll bring snacks!,今週末、泳ぎに行こうよ！,いいね！おやつ持ってくよ！,1,Ivy,Ruth
+e0418,money,I saved my money for this game!,"Wow, you really wanted it!",このゲームのためにお金をためたんだ！,わぁ、すごくほしかったんだね！,1,Ivy,Ruth
+e0419,outside,Let's play outside!,Okay! It's so sunny today!,外で遊ぼうよ！,うん！今日すごく晴れてるね！,1,Ivy,Ruth
+e0420,wake up,Wake up! We're late for school!,What?! Why didn't you tell me?,起きて！学校に遅れちゃうよ！,えっ！？なんで言ってくれなかったの？,1,Ivy,Ruth
+e0421,same,We have the same backpack!,"Haha, really? That's so funny!",私たち、同じリュックだ！,あはは、ほんとだ？面白い！,1,Ivy,Ruth
+e0422,learn,I want to learn how to swim.,I can teach you this summer!,泳ぎ方を習いたいな。,この夏、私が教えてあげる！,1,Ivy,Ruth
+e0423,teach,Can you teach me this song?,Sure! Listen carefully.,この歌、教えてくれる？,いいよ！よく聞いてね。,1,Ivy,Ruth
+e0424,someday,I want to visit Paris someday.,Me too! Let's go together!,いつかパリに行きたいな。,私も！一緒に行こうよ！,1,Ivy,Ruth
+e0425,sick,I feel sick today.,Oh no! You should rest.,今日、気分が悪いんだ。,大変！休んだほうがいいよ。,1,Ivy,Ruth
+e0426,visit,Let's visit Grandma this weekend!,Yes! I miss her so much.,今週末おばあちゃんに会いに行こうよ！,うん！すごく会いたかったんだ。,1,Ivy,Ruth
+e0427,many,How many cookies did you eat?,Um... maybe five?,クッキー何個食べたの？,えっと…たぶん5個？,1,Ivy,Ruth
+e0428,story,Tell me a story before bed!,Okay! Once upon a time...,寝る前にお話して！,いいよ！むかしむかし…,1,Ivy,Ruth
+e0429,hungry,I'm so hungry!,Me too! Let's make sandwiches.,すごくお腹すいた！,私も！サンドイッチ作ろう。,1,Ivy,Ruth
+e0430,wait,Wait for me!,Hurry up! We're going to be late!,待ってよ！,急いで！遅れちゃうよ！,1,Ivy,Ruth
+e0431,you know,You know what? I love rainy days.,Really? I like sunny days better.,あのね、私、雨の日が好きなんだ。,ほんと？私は晴れの日のほうが好きだな。,1,Ivy,Ruth
+e0432,together,Let's do our homework together!,Yes! It's more fun that way.,一緒に宿題やろうよ！,うん！そのほうが楽しいもんね。,1,Ivy,Ruth
+e0433,school,Do you like our new school?,Yes! The library is so big!,新しい学校、好き？,うん！図書室がすごく大きいの！,1,Ivy,Ruth
+e0434,usually,I usually wake up at seven.,"Wow, that's early!",私はいつも7時に起きるよ。,わぁ、早いね！,1,Ivy,Ruth
+e0435,What's wrong?,What's wrong? You look sad.,I lost my favorite toy.,どうしたの？悲しそうだよ。,お気に入りのおもちゃをなくしちゃったの。,1,Ivy,Ruth
+e0436,really,This cake is really good!,Thanks! I made it myself.,このケーキ、本当においしい！,ありがとう！自分で作ったんだ。,1,Ivy,Ruth
+e0437,tired,I'm so tired after the game.,Me too! Let's take a break.,試合のあとですごく疲れた。,私も！ちょっと休もう。,1,Ivy,Ruth
+e0438,such,This is such a fun day!,I know! Let's do it again!,今日は本当に楽しい一日だね！,ほんと！また今度やろう！,1,Ivy,Ruth
+e0439,show,Can you show me your drawing?,Sure! I drew a big dragon!,あなたの絵、見せてくれる？,いいよ！大きなドラゴンを描いたんだ！,1,Ivy,Ruth
+e0440,warm,This blanket is so warm!,I know! I don't want to get up.,この毛布、すごくあったかい！,ほんと！起きたくないね。,1,Ivy,Ruth
+e0441,tonight,Can we have pizza tonight?,Sure! That sounds great!,今夜ピザにしてもいい？,いいよ！いいね！,1,Ivy,Ruth
+e0442,keep,You can keep this book!,Really? Thank you so much!,この本、あげるよ（持ってていいよ）！,ほんと？ほんとありがとう！,1,Ivy,Ruth

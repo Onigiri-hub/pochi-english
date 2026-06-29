@@ -120,6 +120,7 @@ export default function Typing() {
       if (!seikaiRef.current) {
         seikaiRef.current = new Audio("/sound/seikai.mp3")
         seikaiRef.current.playbackRate = 1.5
+        seikaiRef.current.volume = 0.7
       }
     }
     load()

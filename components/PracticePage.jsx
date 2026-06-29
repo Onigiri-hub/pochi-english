@@ -127,6 +127,7 @@ export default function PracticePage({ questions }) {
     if (!seikaiRef.current) {
       seikaiRef.current = new Audio("/sound/seikai.mp3")
       seikaiRef.current.playbackRate = 1.5 // ここで1.5倍速！
+      seikaiRef.current.volume = 0.7
     }
     
   },[index])

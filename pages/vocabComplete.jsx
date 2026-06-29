@@ -9,7 +9,8 @@ import { loadCSV } from "../utils/csvLoader"
 
 export default function VocabComplete() {
   const router = useRouter()
-  const { stage, section, round, isFirstClear } = router.query
+  const { stage, section, round, isFirstClear, mode } = router.query
+  const isArrangeMode = mode === "arrange"
   const { 
     setMofu, setStreak, 
     setTotalRounds, 
@@ -59,13 +60,17 @@ export default function VocabComplete() {
       const completedStages = []
 
       // そのStageの全sectionを取得
-      const allSections = await loadCSV("/data/vocab/sectionList.csv")
+      const sectionsCsv = isArrangeMode ? "/data/vocab/arrangeSectionList.csv" : "/data/vocab/sectionList.csv"
+      const allSections = await loadCSV(sectionsCsv)
       const stageSections = allSections.filter(s => s.stage_id === stageId)
 
       // 全sectionの全round_idを収集
       const allRoundIds = []
       await Promise.all(stageSections.map(async (sec) => {
-        const rounds = await loadCSV(`/data/vocab/rounds/${sec.rounds_csv}`)
+        const roundsCsv = isArrangeMode
+          ? `/data/vocab/arrange_rounds/${sec.arrange_rounds_csv}`
+          : `/data/vocab/rounds/${sec.rounds_csv}`
+        const rounds = await loadCSV(roundsCsv)
         rounds.forEach(r => allRoundIds.push(r.round_id))
       }))
 
@@ -276,7 +281,7 @@ export default function VocabComplete() {
             <div className="completeBottom">
               <button
                 className="finishButton"
-                onClick={() => router.replace(`/sectionList?stage=${stage}`)}
+                onClick={() => router.replace(isArrangeMode ? `/arrangeSectionList?stage=${stage}` : `/sectionList?stage=${stage}`)}
                 data-sound
               >
                 次へ
