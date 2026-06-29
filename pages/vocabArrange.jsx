@@ -70,19 +70,9 @@ export default function VocabArrange() {
     if (!autoPlayOn) return
     const q = questions[index]
 
-    let audio2 = null
     const timer = setTimeout(() => {
       if (q.audio_auto === "1" && q.audio_first) {
-        const audio1 = new Audio(`/audio/arrange_words/${q.audio_first}`)
-        audio1.play().catch(() => {})
-        if (q.audio_second) {
-          audio1.addEventListener("ended", () => {
-            setTimeout(() => {
-              audio2 = new Audio(`/audio/arrange_words/${q.audio_second}`)
-              audio2.play().catch(() => {})
-            }, 100)
-          })
-        }
+        new Audio(`/audio/arrange_words/${q.audio_first}`).play().catch(() => {})
       } else if (q.audio_auto === "2" && q.audio_second) {
         new Audio(`/audio/arrange_words/${q.audio_second}`).play().catch(() => {})
       }
