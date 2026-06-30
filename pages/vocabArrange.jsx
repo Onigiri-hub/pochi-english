@@ -5,6 +5,8 @@ import Papa from "papaparse"
 import { checkAnswer } from "../engines/PracticeEngine"
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation"
+import { useDictionary } from "../utils/useDictionary"
+import WordPopup from "../components/WordPopup"
 
 export default function VocabArrange() {
   const router = useRouter()
@@ -20,6 +22,39 @@ export default function VocabArrange() {
   const pa = useRef(null)
   const seikaiRef = useRef(null)
   const { profile } = useProfileContext()
+  const { tokenize, findEntry } = useDictionary()
+  const [popupEntry, setPopupEntry] = useState(null)
+  const longPressTimer = useRef(null)
+  const chipLockRef = useRef(false)
+
+  function handleChipPressStart(word) {
+    longPressTimer.current = setTimeout(() => {
+      const entry = findEntry(word)
+      if (entry) setPopupEntry(entry)
+      longPressTimer.current = null
+    }, 400)
+  }
+
+  function handleChipPressEnd(word, action, e) {
+    if (e) e.preventDefault()
+    if (chipLockRef.current) return
+    chipLockRef.current = true
+    setTimeout(() => { chipLockRef.current = false }, 100)
+    if (longPressTimer.current === null) {
+      setPopupEntry(null)
+      return
+    }
+    clearTimeout(longPressTimer.current)
+    longPressTimer.current = null
+    action()
+  }
+
+  function handleWordTap(entry) {
+    if (entry.audio) {
+      new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
+    }
+    setPopupEntry(entry)
+  }
 
   useEffect(() => {
     setUserShowJa(localStorage.getItem("showJaTranslation") !== "false")
@@ -151,16 +186,23 @@ export default function VocabArrange() {
   }
 
   function renderSentence(text) {
-    if (!text || !highlightWord || text.includes("____")) return text
-    const escaped = highlightWord.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-    const regex = new RegExp(`\\b(${escaped})\\b`, "gi")
-    const parts = text.split(regex)
-    if (parts.length === 1) return text
-    return parts.map((part, i) =>
-      part.toLowerCase() === highlightWord
-        ? <span key={i} style={{ color: "#02ccbb", fontWeight: "bold" }}>{part}</span>
-        : <span key={i}>{part}</span>
-    )
+    if (!text || text.includes("____")) return text
+    return tokenize(text).map((token, i) => {
+      const highlighted = isHighlighted(token.text)
+      const style = {
+        ...(highlighted ? { color: "#02ccbb", fontWeight: "bold" } : {}),
+        ...(token.entry ? { borderBottom: "2px solid #a9b8e7", cursor: "pointer" } : {})
+      }
+      return (
+        <span
+          key={i}
+          style={Object.keys(style).length > 0 ? style : undefined}
+          onClick={token.entry ? () => handleWordTap(token.entry) : undefined}
+        >
+          {token.text}
+        </span>
+      )
+    })
   }
 
   function renderAvatar(iconName) {
@@ -236,8 +278,12 @@ export default function VocabArrange() {
           <button
             key={i}
             className="chip"
-            onClick={() => removeChip(w, i)}
             style={isHighlighted(w) ? { background: "#02ccbb", color: "white" } : {}}
+            onMouseDown={() => handleChipPressStart(w)}
+            onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
+            onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
+            onTouchStart={() => handleChipPressStart(w)}
+            onTouchEnd={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
           >
             {w}
           </button>
@@ -249,8 +295,12 @@ export default function VocabArrange() {
           <button
             key={i}
             className="chip"
-            onClick={() => addChip(c, i)}
             style={isHighlighted(c) ? { background: "#02ccbb", color: "white" } : {}}
+            onMouseDown={() => handleChipPressStart(c)}
+            onMouseUp={(e) => handleChipPressEnd(c, () => addChip(c, i), e)}
+            onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
+            onTouchStart={() => handleChipPressStart(c)}
+            onTouchEnd={(e) => handleChipPressEnd(c, () => addChip(c, i), e)}
           >
             {c}
           </button>
@@ -272,6 +322,7 @@ export default function VocabArrange() {
         </button>
       </div>
 
+      <WordPopup entry={popupEntry} onClose={() => setPopupEntry(null)} />
     </div>
   )
 }
