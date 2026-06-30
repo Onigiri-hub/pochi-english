@@ -46,6 +46,13 @@ export default function VocabArrange() {
     }
     clearTimeout(longPressTimer.current)
     longPressTimer.current = null
+    const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
+    if (chipSoundOn) {
+      const entry = findEntry(word)
+      if (entry?.audio) {
+        new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
+      }
+    }
     action()
   }
 
