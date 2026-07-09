@@ -82,6 +82,11 @@ export default function PracticePage({ questions }) {
 
 
   useEffect(() => {
+    document.body.style.overscrollBehavior = "none"
+    return () => { document.body.style.overscrollBehavior = "" }
+  }, [])
+
+  useEffect(() => {
     setUserShowJa(localStorage.getItem("showJaTranslation") !== "false")
   }, [])
 
