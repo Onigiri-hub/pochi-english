@@ -25,6 +25,15 @@ export default function FourChoices() {
   const isFirstClearRef = useRef(false) // ★追加：初クリア判定用
 
   useEffect(() => {
+    document.documentElement.style.overscrollBehavior = "none"
+    document.body.style.overscrollBehavior = "none"
+    return () => {
+      document.documentElement.style.overscrollBehavior = ""
+      document.body.style.overscrollBehavior = ""
+    }
+  }, [])
+
+  useEffect(() => {
     if (!router.isReady) return
 
       // ★効果音を最初に準備（load()より先に）
