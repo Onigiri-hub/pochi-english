@@ -1,46 +1,45 @@
-page_id,lesson_id,page_NO,text,deco_words,style,image_NO,layout
+page_id,lesson_id,page_NO,text,image_NO,layout
 u9_l3_p1,u9_l3,1,"前回のレッスンに引き続き
-前置詞をやるよ",,,9-3-1,image_top
+前置詞をやるよ",9-3-1,image_top
 u9_l3_p2,u9_l3,2,"まずは「about」
 「だいたい」と
 「～について」
-という意味があるよ。",,,9-3-2-1,image_top
+という意味があるよ。",9-3-2-1,image_top
 u9_l3_p3,u9_l3,3,"about 10 people
-大体10人くらい",,,9-3-2-2,image_top
+大体10人くらい",9-3-2-2,image_top
 u9_l3_p4,u9_l3,4,"I want to talk about environmental issues.
-環境問題について話したいと思います。",,,9-3-2-3,image_top
-u9_l3_p5,u9_l3,5,（ちょっとした演説会が始まった…）,,,9-3-2-3,image_top
-u9_l3_p6,u9_l3,6,"つぎは「before」
-「～～より前に」ってこと。",,,9-3-3-1,image_top
-u9_l3_p7,u9_l3,7,"I always go to bed before 10 pm.
-私はいつも10時より前に寝る",,,9-3-3-2,image_top
-u9_l3_p8,u9_l3,8,"Wash your hands before dinner.
-夕飯の前に手を洗いなさい！",,,9-3-3-3,image_top
-u9_l3_p9,u9_l3,9,"どんどんいこう！
+環境問題について話したいと思います。",9-3-2-3,image_top
+u9_l3_p5,u9_l3,5,（ちょっとした演説会が始まった…）,9-3-2-3,image_top
+u9_l3_p6,u9_l3,6,どちらも、「ぼんやりとその周辺」ってイメージかな。,9-3-2-3,
+u9_l3_p7,u9_l3,7,"つぎは「before」
+「ある時点より前に」ってこと。",9-3-3-1,image_top
+u9_l3_p8,u9_l3,8,"I always go to bed before 10 pm.
+私はいつも10時より前に寝る",9-3-3-2,image_top
+u9_l3_p9,u9_l3,9,"Wash your hands before dinner.
+夕飯の前に手を洗いなさい！",9-3-3-3,image_top
+u9_l3_p10,u9_l3,10,"どんどんいこう！
 次は「after」
-「～～より後に」ってこと。",,,9-3-4-1,image_top
-u9_l3_p10,u9_l3,10,「before」の反対だね。,,,9-3-4-1,image_top
-u9_l3_p11,u9_l3,11,"I often go to bed after 10 pm.
-10時以降に寝ることはよくある。",,,9-3-4-2,image_top
-u9_l3_p12,u9_l3,12,"I eat snacks after school.
-私は学校の後におやつ食べるよ。",,,9-3-4-3,image_top
-u9_l3_p13,u9_l3,13,"もう一つ行っちゃおう！
+「ある時点より後に」ってこと。",9-3-4-1,image_top
+u9_l3_p11,u9_l3,11,「before」の反対だね。,9-3-4-1,image_top
+u9_l3_p12,u9_l3,12,"I often go to bed after 10 pm.
+10時以降に寝ることはよくある。",9-3-4-2,image_top
+u9_l3_p13,u9_l3,13,"I eat snacks after school.
+私は学校の後におやつ食べるよ。",9-3-4-3,image_top
+u9_l3_p14,u9_l3,14,"もう一つ行っちゃおう！
 「without」
-「～無しで」って意味。",,,9-3-5-1,image_top
-u9_l3_p14,u9_l3,14,"「out」が、
+「～無しで」って意味。",9-3-5-1,image_top
+u9_l3_p15,u9_l3,15,"「out」が、
 「外に出る」、「無くなる」って
-意味だから",,,9-3-5-1,image_top
-u9_l3_p15,u9_l3,15,"with＋outで
+意味だから",9-3-5-1,image_top
+u9_l3_p16,u9_l3,16,"with＋outで
 「いっしょに」「いない」
-つまり「〇〇無しで」",,,9-3-5-1,image_top
-u9_l3_p16,u9_l3,16,"I like coffee without sugar.
-私は砂糖なしのコーヒーが好き。",,,9-3-5-2,image_top
-u9_l3_p17,u9_l3,17,"I do my homework without help.
-わたしは自分で（お手伝いしてもらわないで）宿題やるよ。",,,9-3-5-3,image_top
-u9_l3_p18,u9_l3,18,"さあ、今回は一気に4つも
-前置詞をやったね。",,,9-3-5-3,image_top
-u9_l3_p19,u9_l3,19,"このユニットでは
-欲張りなことに",,,0-0-0,image_top
-u9_l3_p20,u9_l3,20,あと二つだけ、前置詞をやるよ！,,,0-0-0,image_top
-u9_l3_p21,u9_l3,21,"その前に一旦
-練習パートいくよ！",,,0-0-0,image_top
+つまり「〇〇無しで」",9-3-5-1,image_top
+u9_l3_p17,u9_l3,17,"I like coffee without sugar.
+私は砂糖なしのコーヒーが好き。",9-3-5-2,image_top
+u9_l3_p18,u9_l3,18,"I do my homework without help.
+わたしは自分で（お手伝いしてもらわないで）宿題やるよ。",9-3-5-3,image_top
+u9_l3_p19,u9_l3,19,"さあ、今回は一気に4つも
+前置詞をやったね。",9-3-5-3,image_top
+u9_l3_p20,u9_l3,20,練習パートを挟んで、,0-0-0,image_top
+u9_l3_p21,u9_l3,21,あと二つだけ、前置詞をやるよ！,0-0-0,image_top
+u9_l3_p22,u9_l3,22,がんばっていこう！,0-0-0,image_top

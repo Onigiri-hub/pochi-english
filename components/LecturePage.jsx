@@ -23,7 +23,13 @@ export default function LecturePage({ pages }) {
     setPopupEntry(entry)
   }
   
+  function playKachi() {
+    const audio = new Audio("/sound/kachi.mp3")
+    audio.play().catch(() => {})
+  }
+
   function next() {
+    playKachi()
     if (index < pages.length - 1) {
       setIndex(index + 1);
     } else {
@@ -80,7 +86,7 @@ export default function LecturePage({ pages }) {
 
         <button
           className="navButton"
-          onClick={() => { if (index > 0) setIndex(index - 1) }}
+          onClick={() => { if (index > 0) { playKachi(); setIndex(index - 1) } }}
           style={{ visibility: index === 0 ? "hidden" : "visible" }}  // ★ disabledじゃなくvisibilityで
           data-sound
         >
@@ -90,7 +96,7 @@ export default function LecturePage({ pages }) {
         {index === pages.length-1 ? (
           <button
             className="finishButton"
-            onClick={()=>router.replace(`/lessonComplete?unit=${unit}&order=${order}`)}
+            onClick={()=>{ playKachi(); router.replace(`/lessonComplete?unit=${unit}&order=${order}`) }}
             data-sound
           >
             Finish
