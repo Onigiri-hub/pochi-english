@@ -143,8 +143,7 @@ export default function Progress() {
   return (
     <div className="container">
       <div className="mainContent">
-        <div className="header">
-          <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333" }}>◀</button>
+        <div className="header" style={{ justifyContent: "flex-end" }}>
           <button className="settingsBtn" onClick={() => router.push("/settings")}>⚙️</button>
         </div>
 

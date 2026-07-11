@@ -151,7 +151,6 @@ export default function Mofu() {
 
         {/* ヘッダー */}
         <div className="header">
-          <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333" }}>◀</button>
           <h2></h2>
         </div>
 
