@@ -134,7 +134,7 @@ export default function AvatarSettings() {
     <div className="container">
       <div className="mainContent">
         <div className="header">
-          <button className="backBtn" onClick={() => router.back()}>←</button>
+          <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333", fontSize: "14px" }}>◀</button>
           <h2>アバターの設定</h2>
         </div>
 

@@ -96,12 +96,12 @@ export default function Settings() {
     <div className="container">
       <div className="mainContent">
         <div className="header">
-          <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333" }}>◀</button>
+          <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333", fontSize: "14px" }}>◀</button>
           <h2>設定</h2>
         </div>
 
         {/* ニックネーム */}
-        <section className="settingSection" style={{ marginTop: "30px" }}>
+        <section className="settingSection" style={{ marginTop: "60px" }}>
           <h3>ニックネームの変更</h3>
           <input
             type="text"
