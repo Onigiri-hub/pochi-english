@@ -175,6 +175,24 @@ export default function Mofu() {
           </div>
         </div>
 
+        {/* アバター変更リンク */}
+        <div style={{ textAlign: "right", margin: "-10px 30px 20px" }}>
+          <button
+            onClick={() => router.push("/avatar-settings")}
+            style={{
+              background: "none",
+              border: "none",
+              fontSize: "13px",
+              color: "#6f70a7",
+              fontWeight: "bold",
+              cursor: "pointer",
+              padding: "4px 0",
+            }}
+          >
+            ▶ アバターを変更する
+          </button>
+        </div>
+
         {/* アイテムショップ */}
         <h3 style={{ fontSize: "16px", color: "#666", marginBottom: "16px" }}>アイテムショップ</h3>
 

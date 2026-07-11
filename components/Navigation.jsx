@@ -26,7 +26,7 @@ export default function Navigation() {
 
 
         <button onClick={() => router.push("/progress")} className="navItem" data-sound>
-          <img src="/images/icons/person.svg" alt="プロフ" />
+          <img src="/images/icons/graph.svg" alt="プロフ" />
         </button>
 
         {/* モフボタン */}
