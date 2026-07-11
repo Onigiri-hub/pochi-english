@@ -149,7 +149,7 @@ export default function Progress() {
 
         <div className="profileSection">
 
-          <div className="avatarCircle" style={{ position: "relative" }}>
+          <div className="avatarCircle" style={{ position: "relative", cursor: "pointer" }} onClick={() => router.push("/avatar-settings")}>
             {/* レイヤー1: アバター（ベース） */}
             <img
               src={`/images/avatars/${profile?.avatar || "01.png"}`}
@@ -289,21 +289,6 @@ export default function Progress() {
           </div>
         </div>
 
-        <div className="profileLinks" style={{ marginTop: "30px" }}>
-          <ul className="links">
-            <li onClick={() => router.push("/help")} style={{ cursor: "pointer" }}>ヘルプ</li>
-            <li onClick={() => router.push("/terms")} style={{ cursor: "pointer" }}>利用規約とプライバシーポリシー</li>
-          </ul>
-          <button
-            className="logoutBtn"
-            onClick={async () => {
-              await auth.signOut();
-              router.push("/");
-            }}
-          >
-            ログアウト
-          </button>
-        </div>
 
       </div>
       <Navigation />

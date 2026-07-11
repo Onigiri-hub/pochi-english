@@ -147,9 +147,20 @@ export default function Settings() {
         <div className="actionButtons">
           <button className="saveBtn" onClick={handleSave}>設定を保存する</button>
           <ul className="links">
+            <li onClick={() => router.push("/help")} style={{ cursor: "pointer" }}>ヘルプ</li>
+            <li onClick={() => router.push("/terms")} style={{ cursor: "pointer" }}>利用規約とプライバシーポリシー</li>
             <li onClick={() => router.push("/delete-account")} style={{ cursor: "pointer", color: "#878787" }}>アカウントの削除</li>
             <li onClick={handleReset} style={{ cursor: "pointer", color: "#878787" }}>データリセット</li>
           </ul>
+          <button
+            className="logoutBtn"
+            onClick={async () => {
+              await auth.signOut();
+              router.push("/");
+            }}
+          >
+            ログアウト
+          </button>
         </div>
 
       </div>
