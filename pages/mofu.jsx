@@ -131,7 +131,7 @@ export default function Mofu() {
       })
 
       setPurchasedIds((prev) => new Set([...prev, item.item_id]))
-      alert("購入完了！設定画面から着せ替えできるよ🎉")
+      alert("購入完了！アバター設定画面で着せ替えできるよ🎉")
     } catch (e) {
       console.error(e)
       alert("購入に失敗しました。")
@@ -151,7 +151,7 @@ export default function Mofu() {
 
         {/* ヘッダー */}
         <div className="header">
-          <button className="backBtn" onClick={() => router.back()}>←</button>
+          <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333" }}>◀</button>
           <h2></h2>
         </div>
 
