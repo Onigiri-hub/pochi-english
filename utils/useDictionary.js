@@ -20,6 +20,7 @@ export function useDictionary() {
 
       for (const target of targets) {
         const regex = new RegExp(`(\\b${target}\\b)`, "gi")
+        const lowerTarget = target.toLowerCase()
         tokens = tokens.flatMap(token => {
           if (token.entry) return [token]
           const parts = token.text.split(regex)
@@ -27,7 +28,7 @@ export function useDictionary() {
             .filter(p => p !== "")
             .map(p => ({
               text: p,
-              entry: regex.test(p) ? entry : null
+              entry: p.toLowerCase() === lowerTarget ? entry : null
             }))
         })
       }
@@ -38,7 +39,9 @@ export function useDictionary() {
 
   function findEntry(word) {
     if (!dictionary.length || !word) return null
-    const lower = word.toLowerCase()
+    const cleaned = word.replace(/^[^\w]+|[^\w]+$/g, "")
+    if (!cleaned) return null
+    const lower = cleaned.toLowerCase()
     return dictionary.find(entry => {
       const targets = [
         entry.word,

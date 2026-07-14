@@ -1,15 +1,15 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
 u12_l2_p1,u12_l2,05.png,user,left,right,1,1,0,________.,Okay I'll start it right now.,夕飯の前に宿題を終わらせなきゃダメだよ。,分かった、今すぐ始めるよ。,You must finish your homework before dinner,You|must|finish|your|homework|before|dinner,12-2-1-a.mp3,12-2-1-b.mp3
-u12_l2_p2,u12_l2,05.png,05.png,left,left,1,1,0,________ ,It's very hot.,それに触っちゃダメだよ。,すごく熱いから。,You must not touch that.,You|must|not|touch|that.,12-2-2-a.mp3,12-2-2-b.mp3
+u12_l2_p2,u12_l2,05.png,05.png,left,left,1,1,0,________. ,It's very hot.,それに触っちゃダメだよ。,すごく熱いから。,You must not touch that,You|must|not|touch|that,12-2-2-a.mp3,12-2-2-b.mp3
 u12_l2_p3,u12_l2,05.png,user,left,right,1,1,0,________ after that long trip.,"Yeah, she slept for twelve hours straight.",あんなに長い旅のあとだから、彼女きっとすごく疲れてるよ。,うん、12時間ぶっ通しで寝てたよ。,She must be really tired,She|must|be|really|tired,12-2-3-a.mp3,12-2-3-b.mp3
 u12_l2_p4,u12_l2,05.png,user,left,right,1,1,0,________.,Then let's ask him.,彼はきっと答えを知ってるよ。,じゃあ彼に聞いてみよう。,He must know the answer,He|must|know|the|answer,12-2-4-a.mp3,12-2-4-b.mp3
 u12_l2_p5,u12_l2,05.png,user,left,right,1,1,0,________.,"Oops, sorry. I'll keep my voice down.",図書館では静かにしないといけないよ。,あっ、ごめん。声を抑えるね。,We must be quiet in the library,We|must|be|quiet|in|the|library,12-2-5-a.mp3,12-2-5-b.mp3
-u12_l2_p6,u12_l2,05.png,user,left,right,1,1,0,________.,OK. I won’t.,他の人には言っちゃだめだよ,わかった、言わないよ。,You must not tell anyone,You|must|not|tell|anyone,12-2-6-a.mp3,12-2-6-b.mp3
+u12_l2_p6,u12_l2,05.png,user,left,right,1,1,0,________.,OK. I won't.,他の人には言っちゃだめだよ,わかった、言わないよ。,You must not tell anyone,You|must|not|tell|anyone,12-2-6-a.mp3,12-2-6-b.mp3
 u12_l4_p1,u12_l4,05.png,05.png,left,left,1,1,0,________. ,Have something warm instead.,冷たいもの食べないほうがいいよ。,温かいものにしな。,You shouldn't eat cold food,You|shouldn't|eat|cold|food,12-4-1-a.mp3,12-4-1-b.mp3
 u12_l4_p2,u12_l4,05.png,user,left,right,1,1,0,________.,I know. I'll do it tomorrow.,彼女に謝ったほうがいいよ。,分かってる。明日謝るよ。,You should apologize to her,You|should|apologize|to|her,12-4-2-a.mp3,12-4-2-b.mp3
 u12_l4_p3,u12_l4,05.png,user,left,right,1,1,0,________.,Are you sure? It looks a little strange.,これが駅への正しい道のはずだよ。,本当に？ちょっと変な感じがするけど。,This should be the right way to the station,This|should|be|the|right|way|to|the|station,12-4-3-a.mp3,12-4-3-b.mp3
 u12_l4_p4,u12_l4,05.png,user,left,right,1,1,0,________.,I know but this game is so much fun.,夜更かししすぎないほうがいいよ。,分かってるけど、このゲームすごく面白いんだ。,You shouldn't stay up too late,You|shouldn't|stay|up|too|late,12-4-4-a.mp3,12-4-4-b.mp3
-u12_l4_p5,u12_l4,05.png,user,left,right,1,1,0,________?,That sounds lovely. Let's go now.,散歩に行きましょうか？,いいですね。今行きましょう。,Shall we go for a walk,Shall|we|go|for|a|walk,12-4-5-a.mp3,12-4-5-b.mp3
+u12_l4_p5,u12_l4,05.png,user,left,right,1,1,0,________?,That sounds lovely. Let's go now.,散歩に行きましょう！,いいですね。今行きましょう。,Shall we go for a walk,Shall|we|go|for|a|walk,12-4-5-a.mp3,12-4-5-b.mp3
 u12_l4_p6,u12_l4,05.png,user,left,right,1,1,0,________?,"Yeah, so you don't forget.",これ、メモしといたほうがいいかな？,そうだね、忘れないようにね。,Should I write this down,Should|I|write|this|down,12-4-6-a.mp3,12-4-6-b.mp3
 u12_l6_p1,u12_l6,user,05.png,right,right,1,1,0,________.,Then you should go to bed now.,明日は早く起きないといけないんだ。,じゃあもう寝たほうがいいよ。,I have to wake up early tomorrow,I|have|to|wake|up|early|tomorrow,12-6-1-a.mp3,12-6-1-b.mp3
 u12_l6_p2,u12_l6,05.png,user,left,right,1,1,0,________?,"Yes, my mom is waiting for me.",そんなに早く帰らないといけないの？,うん、お母さんが待ってるんだ。,Do you have to leave so soon,Do|you|have|to|leave|so|soon,12-6-2-a.mp3,12-6-2-b.mp3

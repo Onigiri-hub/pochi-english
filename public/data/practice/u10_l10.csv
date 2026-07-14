@@ -1,14 +1,14 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u10_l10_p1,u10_l10,05.png,user,left,right,1,1,1,________?,A little. He can say basic stuff.,お父さんって英語しゃべれるの？,ちょっとだけ。簡単なことなら言えるよ。,Can your dad speak English,Can|your|dad|speak|English,10-2-3-a.mp3,10-2-3-b.mp3
-u10_l10_p2,u10_l10,05.png,user,left,right,1,1,1,________?,"Sorry, I can't. I have piano practice.",今日公園来れる？,ごめん、いけない。ピアノの練習があって。,Can you come to the park today,Can|you|come|to|the|park|today,10-2-5-a.mp3,10-2-5-b.mp3
-u10_l10_p3,u10_l10,05.png,user,left,right,1,1,1,________.,Oh yeah! I think it's the festival!,外で何か聞こえる。,あ、ほんとだ！お祭りじゃないかな！,I can hear something outside,I|can|hear|something|outside,10-2-8-a.mp3,10-2-8-b.mp3
-u10_l10_p4,u10_l10,05.png,user,left,right,1,1,1,________.,Really? Even curry?,彼、辛いものが全然食べられないんだよ。,え、ほんと？カレーも？,He can't eat spicy food at all,He|can't|eat|spicy|food|at|all,10-2-9-a.mp3,10-2-9-b.mp3
-u10_l10_p5,u10_l10,05.png,user,left,right,1,1,1,________?,"Sure, but it can be slow sometimes.",ちょっとスマホ借りていい？,いいよ、でも時々遅くなるよ。,Can I use your phone for a sec,Can|I|use|your|phone|for|a|sec,10-4-4-a.mp3,10-4-4-b.mp3
-u10_l10_p6,u10_l10,05.png,user,left,right,1,1,1,________!,"Oops, sorry!",廊下は走ったらダメ！,あ、ごめんなさい！,You can't run in the hallway,You|can't|run|in|the|hallway,10-4-5-a.mp3,10-4-5-b.mp3
-u10_l10_p7,u10_l10,05.png,user,left,right,1,1,1,________.,"Yeah, nobody's perfect!",彼女でもたまにミスすることがあるんだよ。,だよね、完璧な人なんていないよ！,Even she can make mistakes sometimes,Even|she|can|make|mistakes|sometimes,10-4-10-a.mp3,10-4-10-b.mp3
-u10_l10_p8,u10_l10,05.png,user,left,right,1,1,1,________.,"Oh no, is she okay?",彼女、明日学校来ないかもしれない。,え、大丈夫なのかな？,She may not come to school tomorrow,She|may|not|come|to|school|tomorrow,10-6-4-a.mp3,10-6-4-b.mp3
-u10_l10_p9,u10_l10,05.png,user,left,right,1,1,1,________?,"Yeah, but you may need to sharpen it first.",鉛筆借りていいですか？,いいよ、でも削らないとダメかも。,May I borrow your pencil,May|I|borrow|your|pencil,10-6-5-a.mp3,10-6-5-b.mp3
-u10_l10_p10,u10_l10,05.png,user,left,right,1,1,1,________.,"Wait, seriously? That's so helpful!",テスト中は辞書を使ってもいいです。,え、マジで？めちゃくちゃ助かる！,You may use a dictionary during the test,You|may|use|a|dictionary|during|the|test,10-6-7-a.mp3,10-6-7-b.mp3
-u10_l10_p11,u10_l10,05.png,user,left,right,1,1,1,________?,"Sure, no problem!",これ運ぶの手伝ってくれる？,いいよ、任せて！,Will you help me carry this,Will|you|help|me|carry|this,10-8-1-a.mp3,10-8-1-b.mp3
-u10_l10_p12,u10_l10,05.png,user,left,right,1,1,1,________. I promise.,Thank you. I really mean it.,誰にも言わない、約束する。,ありがとう。本当に助かる。,I won't tell anyone,I|won't|tell|anyone,10-8-5-a.mp3,10-8-5-b.mp3
-u10_l10_p13,u10_l10,user,user,left,left,1,1,1,________.,For real this time.,今日こそ部屋を片付ける。,本当に今度こそ。,I will clean my room today,I|will|clean|my|room|today,10-8-8-a.mp3,10-8-8-b.mp3
+u10_l10_p1,u10_l10,05.png,user,left,right,1,1,0,________?,A little. He can say basic stuff.,お父さんって英語しゃべれるの？,ちょっとだけ。簡単なことなら言えるよ。,Can your dad speak English,Can|your|dad|speak|English,10-2-3-a.mp3,10-2-3-b.mp3
+u10_l10_p2,u10_l10,05.png,user,left,right,1,1,0,________?,"Sorry, I can't. I have piano practice.",今日公園来れる？,ごめん、いけない。ピアノの練習があって。,Can you come to the park today,Can|you|come|to|the|park|today,10-2-5-a.mp3,10-2-5-b.mp3
+u10_l10_p3,u10_l10,05.png,user,left,right,1,1,0,________.,Oh yeah! I think it's the festival!,外で何か聞こえる。,あ、ほんとだ！お祭りじゃないかな！,I can hear something outside,I|can|hear|something|outside,10-2-8-a.mp3,10-2-8-b.mp3
+u10_l10_p4,u10_l10,05.png,user,left,right,1,1,0,________.,Really? Even curry?,彼、辛いものが全然食べられないんだよ。,え、ほんと？カレーも？,He can't eat spicy food at all,He|can't|eat|spicy|food|at|all,10-2-9-a.mp3,10-2-9-b.mp3
+u10_l10_p5,u10_l10,05.png,user,left,right,1,1,0,________?,"Sure, but it can be slow sometimes.",ちょっとスマホ借りていい？,いいよ、でも時々遅くなるよ。,Can I use your phone for a sec,Can|I|use|your|phone|for|a|sec,10-4-4-a.mp3,10-4-4-b.mp3
+u10_l10_p6,u10_l10,05.png,user,left,right,1,1,0,________!,"Oops, sorry!",廊下は走ったらダメ！,あ、ごめんなさい！,You can't run in the hallway,You|can't|run|in|the|hallway,10-4-5-a.mp3,10-4-5-b.mp3
+u10_l10_p7,u10_l10,05.png,user,left,right,1,1,0,________.,"Yeah, nobody's perfect!",彼女でもたまにミスすることがあるんだよ。,だよね、完璧な人なんていないよ！,Even she can make mistakes sometimes,Even|she|can|make|mistakes|sometimes,10-4-10-a.mp3,10-4-10-b.mp3
+u10_l10_p8,u10_l10,05.png,user,left,right,1,1,0,________.,"Oh no, is she okay?",彼女、明日学校来ないかもしれない。,え、大丈夫なのかな？,She may not come to school tomorrow,She|may|not|come|to|school|tomorrow,10-6-4-a.mp3,10-6-4-b.mp3
+u10_l10_p9,u10_l10,05.png,user,left,right,1,1,0,________?,"Yeah, but you may need to sharpen it first.",鉛筆借りていいですか？,いいよ、でも削らないとダメかも。,May I borrow your pencil,May|I|borrow|your|pencil,10-6-5-a.mp3,10-6-5-b.mp3
+u10_l10_p10,u10_l10,05.png,user,left,right,1,1,0,________.,"Wait, seriously? That's so helpful!",テスト中は辞書を使ってもいいです。,え、マジで？めちゃくちゃ助かる！,You may use a dictionary during the test,You|may|use|a|dictionary|during|the|test,10-6-7-a.mp3,10-6-7-b.mp3
+u10_l10_p11,u10_l10,05.png,user,left,right,1,1,0,________?,"Sure, no problem!",これ運ぶの手伝ってくれる？,いいよ、任せて！,Will you help me carry this,Will|you|help|me|carry|this,10-8-1-a.mp3,10-8-1-b.mp3
+u10_l10_p12,u10_l10,05.png,user,left,right,1,1,0,________. I promise.,Thank you. I really mean it.,誰にも言わない、約束する。,ありがとう。本当に助かる。,I won't tell anyone,I|won't|tell|anyone,10-8-5-a.mp3,10-8-5-b.mp3
+u10_l10_p13,u10_l10,user,user,left,left,1,1,0,________.,For real this time.,今日こそ部屋を片付ける。,本当に今度こそ。,I will clean my room today,I|will|clean|my|room|today,10-8-8-a.mp3,10-8-8-b.mp3

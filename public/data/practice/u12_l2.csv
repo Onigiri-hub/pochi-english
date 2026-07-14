@@ -1,7 +1,7 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
 u12_l2_p1,u12_l2,05.png,user,left,right,1,1,1,________.,Okay I'll start it right now.,夕飯の前に宿題を終わらせなきゃダメだよ。,分かった、今すぐ始めるよ。,You must finish your homework before dinner,You|must|finish|your|homework|before|dinner,12-2-1-a.mp3,12-2-1-b.mp3
-u12_l2_p2,u12_l2,05.png,05.png,left,left,1,1,1,________ ,It's very hot.,それに触っちゃダメだよ。,すごく熱いから。,You must not touch that.,You|must|not|touch|that.,12-2-2-a.mp3,12-2-2-b.mp3
+u12_l2_p2,u12_l2,05.png,05.png,left,left,1,1,1,________. ,It's very hot.,それに触っちゃダメだよ。,すごく熱いから。,You must not touch that,You|must|not|touch|that,12-2-2-a.mp3,12-2-2-b.mp3
 u12_l2_p3,u12_l2,05.png,user,left,right,1,1,1,________ after that long trip.,"Yeah, she slept for twelve hours straight.",あんなに長い旅のあとだから、彼女きっとすごく疲れてるよ。,うん、12時間ぶっ通しで寝てたよ。,She must be really tired,She|must|be|really|tired,12-2-3-a.mp3,12-2-3-b.mp3
 u12_l2_p4,u12_l2,05.png,user,left,right,1,1,1,________.,Then let's ask him.,彼はきっと答えを知ってるよ。,じゃあ彼に聞いてみよう。,He must know the answer,He|must|know|the|answer,12-2-4-a.mp3,12-2-4-b.mp3
 u12_l2_p5,u12_l2,05.png,user,left,right,1,1,1,________.,"Oops, sorry. I'll keep my voice down.",図書館では静かにしないといけないよ。,あっ、ごめん。声を抑えるね。,We must be quiet in the library,We|must|be|quiet|in|the|library,12-2-5-a.mp3,12-2-5-b.mp3
-u12_l2_p6,u12_l2,05.png,user,left,right,1,1,1,________.,OK. I won’t.,他の人には言っちゃだめだよ,わかった、言わないよ。,You must not tell anyone,You|must|not|tell|anyone,12-2-6-a.mp3,12-2-6-b.mp3
+u12_l2_p6,u12_l2,05.png,user,left,right,1,1,1,________.,OK. I won't.,他の人には言っちゃだめだよ,わかった、言わないよ。,You must not tell anyone,You|must|not|tell|anyone,12-2-6-a.mp3,12-2-6-b.mp3
