@@ -30,7 +30,12 @@ export default function VocabArrange() {
   function handleChipPressStart(word) {
     longPressTimer.current = setTimeout(() => {
       const entry = findEntry(word)
-      if (entry) setPopupEntry(entry)
+      if (entry) {
+        setPopupEntry(entry)
+        if (entry.audio) {
+          new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
+        }
+      }
       longPressTimer.current = null
     }, 400)
   }
@@ -66,9 +71,10 @@ export default function VocabArrange() {
   useEffect(() => {
     setUserShowJa(localStorage.getItem("showJaTranslation") !== "false")
     pa.current = new Audio("/sound/pi.mp3")
+    pa.current.volume = 0.7
     seikaiRef.current = new Audio("/sound/seikai.mp3")
     seikaiRef.current.playbackRate = 1.5
-    seikaiRef.current.volume = 0.7
+    seikaiRef.current.volume = 0.5
   }, [])
 
   useEffect(() => {

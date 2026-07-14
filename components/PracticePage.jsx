@@ -13,7 +13,7 @@ export default function PracticePage({ questions }) {
   const [selected,setSelected] = useState([])
   const [chips,setChips] = useState([])
   const [result,setResult] = useState(null)
-  const pa = useRef(new Audio("/sound/pi.mp3"))
+  const pa = useRef((() => { const a = new Audio("/sound/pi.mp3"); a.volume = 0.7; return a })()
   const seikaiRef = useRef(null) // 新しく追加（名前をseikaiRefにして区別する
   const q = questions[index]
   const [showJaFirst, setShowJaFirst] = useState(false)
@@ -33,10 +33,15 @@ export default function PracticePage({ questions }) {
   const chipLockRef = useRef(false)
 
   function handleChipPressStart(word) {
-    // 400ms長押しで意味表示
+    // 400ms長押しで意味表示＋音声再生
     longPressTimer.current = setTimeout(() => {
       const entry = findEntry(word)
-      if (entry) setPopupEntry(entry)
+      if (entry) {
+        setPopupEntry(entry)
+        if (entry.audio) {
+          new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
+        }
+      }
       longPressTimer.current = null  // 長押し成立フラグ
     }, 400)
   }
@@ -136,7 +141,7 @@ export default function PracticePage({ questions }) {
     if (!seikaiRef.current) {
       seikaiRef.current = new Audio("/sound/seikai.mp3")
       seikaiRef.current.playbackRate = 1.5 // ここで1.5倍速！
-      seikaiRef.current.volume = 0.7
+      seikaiRef.current.volume = 0.5
     }
     
   },[index])

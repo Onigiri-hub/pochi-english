@@ -165,7 +165,7 @@ export default function MyApp({ Component, pageProps }) {
 
     // kirakira事前読み込み
     const kirakira = new Audio("/sound/kirakira.mp3")
-    kirakira.volume = 0.3
+    kirakira.volume = 0.2
     kirakira.load()
     window._kirakira = kirakira
 

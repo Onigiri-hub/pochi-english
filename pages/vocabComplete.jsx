@@ -27,7 +27,7 @@ export default function VocabComplete() {
     if (!router.isReady) return
 
     const audio = window._kirakira || new Audio("/sound/kirakira.mp3");
-    audio.volume = 0.3;
+    audio.volume = 0.2;
     audio.currentTime = 0;
     audio.play().catch(e => console.log("音の再生に失敗:", e));
 
