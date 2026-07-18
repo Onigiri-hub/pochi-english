@@ -1,8 +1,8 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u17_l8_p1,u17_l8,user,,right,none,1,,1,________.,,寒すぎて外に出られない。,,It’s too cold to go outside,It’s|too|cold|to|go|outside,17-8-1-a.mp3,
-u17_l8_p2,u17_l8,user,,right,none,1,,1,________.,,彼女に電話するには遅すぎる。,,It’s too late to call her,It’s|too|late|to|call|her,17-8-2-a.mp3,
-u17_l8_p3,u17_l8,user,,right,none,1,,1,________.,,私には難しすぎてこの問題は解けない。,,It’s too difficult for me to solve this problem,It’s|too|difficult|for|me|to|solve|this|problem,17-8-3-a.mp3,
-u17_l8_p4,u17_l8,user,,right,none,1,,1,________.,,うるさすぎてここでは勉強できない。,,It’s too noisy to study here,It’s|too|noisy|to|study|here,17-8-4-a.mp3,
+u17_l8_p1,u17_l8,user,,right,none,1,,1,________.,,寒すぎて外に出られない。,,It's too cold to go outside,It's|too|cold|to|go|outside,17-8-1-a.mp3,
+u17_l8_p2,u17_l8,user,,right,none,1,,1,________.,,彼女に電話するには遅すぎる。,,It's too late to call her,It's|too|late|to|call|her,17-8-2-a.mp3,
+u17_l8_p3,u17_l8,user,,right,none,1,,1,________.,,私には難しすぎてこの問題は解けない。,,It's too difficult for me to solve this problem,It's|too|difficult|for|me|to|solve|this|problem,17-8-3-a.mp3,
+u17_l8_p4,u17_l8,user,,right,none,1,,1,________.,,うるさすぎてここでは勉強できない。,,It's too noisy to study here,It's|too|noisy|to|study|here,17-8-4-a.mp3,
 u17_l8_p5,u17_l8,user,,right,none,1,,1,________.,,ここは本を読むには暗すぎるよ。,,It's too dark to read here,It's|too|dark|to|read|here,17-8-5-a.mp3,
 u17_l8_p6,u17_l8,user,,right,none,1,,1,________.,,あきらめるにはまだ早すぎるよ。,,It's too early to give up,It's|too|early|to|give|up,17-8-6-a.mp3,
 u17_l8_p7,u17_l8,user,,right,none,1,,1,________.,,このコーヒー、飲むには熱すぎるよ。,,This coffee is too hot to drink,This|coffee|is|too|hot|to|drink,17-8-7-a.mp3,

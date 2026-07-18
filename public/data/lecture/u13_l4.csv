@@ -1,44 +1,47 @@
-page_id,lesson_id,page_NO,text,deco_words,style,image_NO,layout
+page_id,lesson_id,page_NO,text,image_NO,layout
 u13_l4_p1,u13_l4,1,"whoで基礎をやったから
 こんどはさらに3つ
-紹介するよ！",,,13-4-1,image_top
+紹介するよ！",13-4-1,image_top
 u13_l4_p2,u13_l4,2,"まずはwhen
-「いつ？」を聞きたいとき。",,,13-4-2-1,image_top
+「いつ？」を聞きたいとき。",13-4-2-1,image_top
 u13_l4_p3,u13_l4,3,"使い方はwho一緒だよ。
 疑問詞を一番はじめに言っちゃう。
-When",,,13-4-2-2,image_top
+When",13-4-2-2,image_top
 u13_l4_p4,u13_l4,4,"次に、「いつなのか」が抜けた疑問文
 do you get up?
-これで完成！",,,13-4-2-3,image_top
-u13_l4_p5,u13_l4,5,もうひとつ見てみよう。,,,13-4-2-3,image_top
-u13_l4_p6,u13_l4,6,"When
-いつ？",,,13-4-2-4,image_top
-u13_l4_p7,u13_l4,7," will Tom come to our house?
-トムはうちに来るの？",,,13-4-2-5,image_top
-u13_l4_p8,u13_l4,8,"次はWhere
-「どこ？」を聞きたいときにつかう。",,,13-4-3-1,image_top
-u13_l4_p9,u13_l4,9,"同じように、
+これで完成！",13-4-2-3,image_top
+u13_l4_p5,u13_l4,5,本来なら、Do you get up early?みたいに、get upのあとに「いつ?」が来るはずだよね。,13-4-2-3,image_top
+u13_l4_p6,u13_l4,6,もうひとつ見てみよう。,13-4-2-3,image_top
+u13_l4_p7,u13_l4,7,"When
+いつ？",13-4-2-4,image_top
+u13_l4_p8,u13_l4,8," will Tom come to our house?
+トムはうちに来るの？",13-4-2-5,image_top
+u13_l4_p9,u13_l4,9,"次はWhere
+「どこ？」を聞きたいときにつかう。",13-4-3-1,image_top
+u13_l4_p10,u13_l4,10,"同じように、
 疑問詞をはじめに持ってきて
-次に疑問文をくっつける。",,,13-4-3-1,image_top
-u13_l4_p10,u13_l4,10,"Where 
-どこで？",,,13-4-3-2,image_top
-u13_l4_p11,u13_l4,11,"do you play soccer?
-サッカーするの？",,,13-4-3-3,image_top
-u13_l4_p12,u13_l4,12,"Where
-どこで？",,,13-4-3-4,image_top
-u13_l4_p13,u13_l4,13," can I buy it?
-ソレを買えるの？",,,13-4-3-5,image_top
-u13_l4_p14,u13_l4,14,"つぎはwhyだよ！
-「なぜ？どうして？」を聞きたいときに使う。",,,13-4-4-1,image_top
-u13_l4_p15,u13_l4,15,"Why
-どうして？",,,13-4-4-2,image_top
-u13_l4_p16,u13_l4,16,"can you speak English?
-あなたは英語を話せるの？",,,13-4-4-3,image_top
-u13_l4_p17,u13_l4,17,"Why
-どうして？",,,13-4-4-4,image_top
-u13_l4_p18,u13_l4,18,"is the dog in the classroom?
-犬が教室にいるの？",,,13-4-4-5,image_top
-u13_l4_p19,u13_l4,19,"とにかく聞きたいことがあったら
-まず疑問詞を言う。",,,13-4-4-5,image_top
-u13_l4_p20,u13_l4,20,"次に、疑問文をくっつける。
-それでOK！！",,,13-4-4-5,image_top
+次に疑問文をくっつける。",13-4-3-1,image_top
+u13_l4_p11,u13_l4,11,"Where 
+どこで？",13-4-3-2,image_top
+u13_l4_p12,u13_l4,12,"do you play soccer?
+サッカーするの？",13-4-3-3,image_top
+u13_l4_p13,u13_l4,13,これも、Do you play soccer in the park? みたいに、「どこで」が抜けて、Whereになってる。,13-4-3-3,image_top
+u13_l4_p14,u13_l4,14,もうひとつ見てみよう。,13-4-3-3,image_top
+u13_l4_p15,u13_l4,15,"Where
+どこで？",13-4-3-4,image_top
+u13_l4_p16,u13_l4,16," can I buy it?
+ソレを買えるの？",13-4-3-5,image_top
+u13_l4_p17,u13_l4,17,"つぎはwhyだよ！
+「なぜ？どうして？」を聞きたいときに使う。",13-4-4-1,image_top
+u13_l4_p18,u13_l4,18,"Why
+どうして？",13-4-4-2,image_top
+u13_l4_p19,u13_l4,19,"can you speak English?
+あなたは英語を話せるの？",13-4-4-3,image_top
+u13_l4_p20,u13_l4,20,"Why
+どうして？",13-4-4-4,image_top
+u13_l4_p21,u13_l4,21,"is the dog in the classroom?
+犬が教室にいるの？",13-4-4-5,image_top
+u13_l4_p22,u13_l4,22,"とにかく聞きたいことがあったら
+まず疑問詞を言う。",13-4-4-5,image_top
+u13_l4_p23,u13_l4,23,"次に、疑問文をくっつける。
+それでOK！！",13-4-4-5,image_top

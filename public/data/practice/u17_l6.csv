@@ -1,9 +1,9 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u17_l6_p1,u17_l6,user,,right,none,1,,1,________.,,私にとって早起きは難しい。,,It’s difficult for me to wake up early,It’s|difficult|for|me|to|wake|up|early,17-6-1-a.mp3,
-u17_l6_p2,u17_l6,user,,right,none,1,,1,________.,,毎日勉強することは大事だ。,,It’s important to study every day,It’s|important|to|study|every|day,17-6-2-a.mp3,
+u17_l6_p1,u17_l6,user,,right,none,1,,1,________.,,私にとって早起きは難しい。,,It's difficult for me to wake up early,It's|difficult|for|me|to|wake|up|early,17-6-1-a.mp3,
+u17_l6_p2,u17_l6,user,,right,none,1,,1,________.,,毎日勉強することは大事だ。,,It's important to study every day,It's|important|to|study|every|day,17-6-2-a.mp3,
 u17_l6_p3,u17_l6,user,,right,none,1,,1,________.,,子どもにとって雪で遊ぶのは楽しいよね。,,It's fun for kids to play in the snow,It's|fun|for|kids|to|play|in|the|snow,17-6-3-a.mp3,
 u17_l6_p4,u17_l6,user,,right,none,1,,1,________.,,彼にとってこのパズルを解くのは簡単なんだ。,,It's easy for him to solve this puzzle,It's|easy|for|him|to|solve|this|puzzle,17-6-4-a.mp3,
-u17_l6_p5,u17_l6,user,,right,none,1,,1,________.,,トムにとってピアノを弾くのは簡単だ。,,It’s easy for Tom to play the piano,It’s|easy|for|Tom|to|play|the|piano,17-6-5-a.mp3,
+u17_l6_p5,u17_l6,user,,right,none,1,,1,________.,,トムにとってピアノを弾くのは簡単だ。,,It's easy for Tom to play the piano,It's|easy|for|Tom|to|play|the|piano,17-6-5-a.mp3,
 u17_l6_p6,u17_l6,user,,right,none,1,,1,________.,,これを説明するのは子供には難しい。,,It's difficult for children to explain this,It's|difficult|for|children|to|explain|this,17-6-6-a.mp3,
 u17_l6_p7,u17_l6,user,,right,none,1,,1,________.,,この川で泳ぐのは危険だよ。,,It's dangerous to swim in this river,It's|dangerous|to|swim|in|this|river,17-6-7-a.mp3,
 u17_l6_p8,u17_l6,user,,right,none,1,,1,________.,,朝食を抜くのは体に良くないよ。,,It's not good for you to skip breakfast,It's|not|good|for|you|to|skip|breakfast,17-6-8-a.mp3,

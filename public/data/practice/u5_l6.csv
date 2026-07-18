@@ -1,10 +1,10 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u5_l6_p1,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, they don’t.",彼らはサッカーしますか？,いいえ、しません。,Do they play soccer,Do|they|play|soccer,5-6-1-a.mp3,5-6-1-b.mp3
-u5_l6_p2,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,I don’t know.,彼女は猫好きですか？,わからない。,Does she like cats,Does|she|like|cats,5-6-2-a.mp3,5-6-2-b.mp3
+u5_l6_p1,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, they don't.",彼らはサッカーしますか？,いいえ、しません。,Do they play soccer,Do|they|play|soccer,5-6-1-a.mp3,5-6-1-b.mp3
+u5_l6_p2,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,I don't know.,彼女は猫好きですか？,わからない。,Does she like cats,Does|she|like|cats,5-6-2-a.mp3,5-6-2-b.mp3
 u5_l6_p3,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, but I have a pencil.",ペンをもっていますか？,いいえ、でも鉛筆は持っています。,Do you have a pen,Do|you|have|a|pen,5-6-3-a.mp3,5-6-3-b.mp3
 u5_l6_p4,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"Yes, he does.",彼はピアノをしますか？,はい、します。,Does he play the piano,Does|he|play|the|piano,5-6-4-a.mp3,5-6-4-b.mp3
-u5_l6_p5,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, he doesn’t.",彼は朝食を食べますか？,いいえ、たべませんよ。,Does he eat breakfast,Does|he|eat|breakfast,5-6-5-a.mp3,5-6-5-b.mp3
+u5_l6_p5,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, he doesn't.",彼は朝食を食べますか？,いいえ、たべませんよ。,Does he eat breakfast,Does|he|eat|breakfast,5-6-5-a.mp3,5-6-5-b.mp3
 u5_l6_p6,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"Yes, I like classics.",あなたは音楽好きですか？,はい、クラシックが好きです,Do you like music,Do|you|like|music,5-6-6-a.mp3,5-6-6-b.mp3
 u5_l6_p7,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"Yes, it does.",それ、走るの速いですか？,はい、速いです。,Does it run fast,Does|it|run|fast,5-6-7-a.mp3,5-6-7-b.mp3
-u5_l6_p8,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, they don’t.",彼らはテレビを見ますか？,いいえ、みません。,Do they watch TV,Do|they|watch|TV,5-6-8-a.mp3,5-6-8-b.mp3
+u5_l6_p8,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"No, they don't.",彼らはテレビを見ますか？,いいえ、みません。,Do they watch TV,Do|they|watch|TV,5-6-8-a.mp3,5-6-8-b.mp3
 u5_l6_p9,u5_l6,05.png,user,left,right,1,1,1,___________________ ？,"Yes, she does.",彼女はコンピュータは使いますか？,はい、使います。,Does she use a computer,Does|she|use|a|computer,5-6-9-a.mp3,5-6-9-b.mp3

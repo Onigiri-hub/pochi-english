@@ -121,7 +121,7 @@ w_living room,living room,,リビング,living room.mp3,済
 w_ask,ask,,訪ねる、お願いする,ask.mp3,済
 w_again,again,,再び,again.mp3,済
 w_milk,milk,,牛乳,milk.mp3,済
-w_park,park,,公園,park.mp3,済
+w_park,park,,公園、駐車する,park.mp3,済
 w_table,table,,テーブル,table.mp3,済
 w_bed,bed,,ベッド,bed.mp3,済
 w_summer,summer,,夏,summer.mp3,済
@@ -1033,3 +1033,5 @@ w_mary,mary,,メアリー（人の名前）,mary.mp3,済
 w_tom,tom,,トム（人の名前）,tom.mp3,済
 w_i,I,,私,i.mp3,済
 w_a,a,,（ひとつの）,a.mp3,済
+w_were,were,,areの過去形,were.mp3,済
+w_doing,doing,,doのing形,doing.mp3,済

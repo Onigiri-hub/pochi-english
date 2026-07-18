@@ -1,12 +1,12 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u4_l11_p1,u4_l11,05.png,user,left,right,1,1,0,____　__　__　_______ .,It’s nice!,これは私の絵だよ,いいね！,This is my picture,This|is|my|picture,4-11-1-a.mp3,4-11-1-b.mp3
+u4_l11_p1,u4_l11,05.png,user,left,right,1,1,0,____　__　__　_______ .,It's nice!,これは私の絵だよ,いいね！,This is my picture,This|is|my|picture,4-11-1-a.mp3,4-11-1-b.mp3
 u4_l11_p2,u4_l11,05.png,user,left,right,1,1,0,__　__　_______？,Maybe he is.,彼は疲れてる？,たぶんね。,Is he tired,Is|he|tired,4-11-2-a.mp3,4-11-2-b.mp3
 u4_l11_p3,u4_l11,05.png,user,left,right,1,1,0,What is this?,__　__　_　_____ .,これは何？,それはキャンディだよ,It is a candy,It|is|a|candy,4-11-3-a.mp3,4-11-3-b.mp3
 u4_l11_p4,u4_l11,05.png,user,left,right,1,1,0,Where is my pen?,__　__　_____ .,私のペンはどこ？,ここだよ,It is here,It|is|here,4-11-4-a.mp3,4-11-4-b.mp3
 u4_l11_p5,u4_l11,05.png,user,left,right,1,1,0,What are those? ,____　___　_______ .,あれらは何？,イモだよ,They are potatoes,They|are|potatoes,4-11-5-a.mp3,4-11-5-b.mp3
-u4_l11_p6,u4_l11,05.png,user,left,right,1,1,0,___　___　___？,I’m OK.,だいじょうぶ？,私は大丈夫だよ,Are you OK,Are|you|OK,4-11-6-a.mp3,4-11-6-b.mp3
+u4_l11_p6,u4_l11,05.png,user,left,right,1,1,0,___　___　___？,I'm OK.,だいじょうぶ？,私は大丈夫だよ,Are you OK,Are|you|OK,4-11-6-a.mp3,4-11-6-b.mp3
 u4_l11_p7,u4_l11,05.png,05.png,left,left,1,1,0,____　__　___　__　____ .,It is yours.,これは私のかばんではないよ。,あなたのだよ。,This is not my bag,This|is|not|my|bag,4-11-7-a.mp3,4-11-7-b.mp3
 u4_l11_p8,u4_l11,05.png,user,left,right,1,1,0,___　______　____　_____？,"No, they are not.",これらはあなたの本？,いいえ、ちがいます,Are these your books,Are|these|your|books,4-11-8-a.mp3,4-11-8-b.mp3
 u4_l11_p9,u4_l11,05.png,user,left,right,1,1,0,__　___　____　_____？,"Yes, she is.",彼はあなたのお姉さん？,そうだよ。,Is she your sister,Is|she|your|sister,4-11-9-a.mp3,4-11-9-b.mp3
 u4_l11_p10,u4_l11,05.png,user,left,right,1,1,0,____　__　_　___　____ .,It is very cute.,あれは大きな犬です。,とてもかわいいですね。,That is a big dog,That|is|a|big|dog,4-11-10-a.mp3,4-11-10-b.mp3
-u4_l11_p11,u4_l11,05.png,user,left,right,1,1,0,___　____　__　_____？,I don’t know.,彼らは家にいる？,私はしらないよ。,Are they at home,Are|they|at|home,4-11-11-a.mp3,4-11-11-b.mp3
+u4_l11_p11,u4_l11,05.png,user,left,right,1,1,0,___　____　__　_____？,I don't know.,彼らは家にいる？,私はしらないよ。,Are they at home,Are|they|at|home,4-11-11-a.mp3,4-11-11-b.mp3

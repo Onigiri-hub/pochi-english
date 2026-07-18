@@ -17,14 +17,14 @@ u5_l4_p4,u5_l4,user,,left,none,1,,0,_____________ .,,彼女はディナーを作
 u5_l4_p5,u5_l4,user,,left,none,1,,0,_____________ .,,彼はサッカーをプレイします。,,He plays soccer,He|plays|soccer,5-4-5-a.mp3,
 u5_l4_p6,u5_l4,user,,left,none,1,,0,_____________ .,,彼女は音楽が好きです。,,She likes music,She|likes|music,5-4-6-a.mp3,
 u5_l4_p7,u5_l4,user,user,left,left,1,1,0,I have a cat.,_____________ .,私は猫を飼ってるんだ。,そいつ、早く走るんだよ。,It runs fast,It|runs|fast,5-4-7-a.mp3,5-4-7-b.mp3
-u5_l6_p1,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, they don’t.",彼らはサッカーしますか？,いいえ、しません。,Do they play soccer,Do|they|play|soccer,5-6-1-a.mp3,5-6-1-b.mp3
-u5_l6_p2,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,I don’t know.,彼女は猫好きですか？,わからない。,Does she like cats,Does|she|like|cats,5-6-2-a.mp3,5-6-2-b.mp3
+u5_l6_p1,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, they don't.",彼らはサッカーしますか？,いいえ、しません。,Do they play soccer,Do|they|play|soccer,5-6-1-a.mp3,5-6-1-b.mp3
+u5_l6_p2,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,I don't know.,彼女は猫好きですか？,わからない。,Does she like cats,Does|she|like|cats,5-6-2-a.mp3,5-6-2-b.mp3
 u5_l6_p3,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, but I have a pencil.",ペンをもっていますか？,いいえ、でも鉛筆は持っています。,Do you have a pen,Do|you|have|a|pen,5-6-3-a.mp3,5-6-3-b.mp3
 u5_l6_p4,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"Yes, he does.",彼はピアノをしますか？,はい、します。,Does he play the piano,Does|he|play|the|piano,5-6-4-a.mp3,5-6-4-b.mp3
-u5_l6_p5,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, he doesn’t.",彼は朝食を食べますか？,いいえ、たべませんよ。,Does he eat breakfast,Does|he|eat|breakfast,5-6-5-a.mp3,5-6-5-b.mp3
+u5_l6_p5,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, he doesn't.",彼は朝食を食べますか？,いいえ、たべませんよ。,Does he eat breakfast,Does|he|eat|breakfast,5-6-5-a.mp3,5-6-5-b.mp3
 u5_l6_p6,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"Yes, I like classics.",あなたは音楽好きですか？,はい、クラシックが好きです,Do you like music,Do|you|like|music,5-6-6-a.mp3,5-6-6-b.mp3
 u5_l6_p7,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"Yes, it does.",それ、走るの速いですか？,はい、速いです。,Does it run fast,Does|it|run|fast,5-6-7-a.mp3,5-6-7-b.mp3
-u5_l6_p8,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, they don’t.",彼らはテレビを見ますか？,いいえ、みません。,Do they watch TV,Do|they|watch|TV,5-6-8-a.mp3,5-6-8-b.mp3
+u5_l6_p8,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"No, they don't.",彼らはテレビを見ますか？,いいえ、みません。,Do they watch TV,Do|they|watch|TV,5-6-8-a.mp3,5-6-8-b.mp3
 u5_l6_p9,u5_l6,05.png,user,left,right,1,1,0,___________________ ？,"Yes, she does.",彼女はコンピュータは使いますか？,はい、使います。,Does she use a computer,Does|she|use|a|computer,5-6-9-a.mp3,5-6-9-b.mp3
 u5_l8_p1,u5_l8,user,,left,none,1,,0,_____________ .,,私は数学が嫌い。,,I don't like math,I|don't|like|math,5-8-1-a.mp3,
 u5_l8_p2,u5_l8,user,,left,none,1,,0,___________________ .,,あなたは卓球はしません。,,You don't play table tennis,You|don't|play|table|tennis,5-8-2-a.mp3,
@@ -33,21 +33,21 @@ u5_l8_p4,u5_l8,user,,left,none,1,,0,___________________ .,,私たちは映画を
 u5_l8_p5,u5_l8,user,,left,none,1,,0,___________________ .,,彼らは、このアプリは使いません。,,They don't use this app,They|don't|use|this|app,5-8-5-a.mp3,
 u5_l8_p6,u5_l8,user,,left,none,1,,0,_____________ .,,彼は、納豆は食べません。,,He doesn't eat natto.,He|doesn't|eat|natto.,5-8-6-a.mp3,
 u5_l8_p7,u5_l8,05.png,user,left,right,1,1,0,Do you like music?,"___ ,　_____________ ?",音楽は好きですか？,はい、ポップスが好きです。,Yes I like pop music,Yes|I|like|pop|music,5-8-7-a.mp3,5-8-7-b.mp3
-u5_l8_p8,u5_l8,05.png,user,left,right,1,1,0,Do they play soccer?,"___ ,　________ . 　They play tennis.",彼らはサッカーしますか？,いいえ、彼らはテニスをします。,No they don’t,No|they|don’t,5-8-8-a.mp3,5-8-8-b.mp3
-u5_l8_p9,u5_l8,05.png,user,left,right,1,1,0,Do you have a pen?,"___ ,　________ . ",ペンは持っていますか？,いいえ、持っていません。,No I don’t,No|I|don’t,5-8-9-a.mp3,5-8-9-b.mp3
+u5_l8_p8,u5_l8,05.png,user,left,right,1,1,0,Do they play soccer?,"___ ,　________ . 　They play tennis.",彼らはサッカーしますか？,いいえ、彼らはテニスをします。,No they don't,No|they|don't,5-8-8-a.mp3,5-8-8-b.mp3
+u5_l8_p9,u5_l8,05.png,user,left,right,1,1,0,Do you have a pen?,"___ ,　________ . ",ペンは持っていますか？,いいえ、持っていません。,No I don't,No|I|don't,5-8-9-a.mp3,5-8-9-b.mp3
 u5_l8_p10,u5_l8,05.png,user,left,right,1,1,0,Does he play the guitar?,"___ ,　________ . ",彼はギターを演奏する？,はい、しますよ。,Yes he does,Yes|he|does,5-8-10-a.mp3,5-8-10-b.mp3
-u5_l8_p11,u5_l8,05.png,user,left,right,1,1,0,Does she like dogs?,_____________ .　Maybe she does.,彼女は犬、好きかな？,わからない。多分好きだよ。,I don’t know,I|don’t|know,5-8-11-a.mp3,5-8-11-b.mp3
-u5_l8_p12,u5_l8,05.png,user,left,right,1,1,0,Does he drink green tea?,"___ ,　________ .　He drinks coffee.",彼は緑茶飲むかな？,いいえ、彼はコーヒーを飲むよ。,No he doesn’t,No|he|doesn’t,5-8-12-a.mp3,5-8-12-b.mp3
-u5_l10_p1,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,あなたは忙しいんだよね？,,You are busy aren’t you,You|are|busy|aren’t|you,5-10-1-a.mp3,
-u5_l10_p2,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼は幸せだよね？,,He is happy isn’t he,He|is|happy|isn’t|he,5-10-2-a.mp3,
+u5_l8_p11,u5_l8,05.png,user,left,right,1,1,0,Does she like dogs?,_____________ .　Maybe she does.,彼女は犬、好きかな？,わからない。多分好きだよ。,I don't know,I|don't|know,5-8-11-a.mp3,5-8-11-b.mp3
+u5_l8_p12,u5_l8,05.png,user,left,right,1,1,0,Does he drink green tea?,"___ ,　________ .　He drinks coffee.",彼は緑茶飲むかな？,いいえ、彼はコーヒーを飲むよ。,No he doesn't,No|he|doesn't,5-8-12-a.mp3,5-8-12-b.mp3
+u5_l10_p1,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,あなたは忙しいんだよね？,,You are busy aren't you,You|are|busy|aren't|you,5-10-1-a.mp3,
+u5_l10_p2,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼は幸せだよね？,,He is happy isn't he,He|is|happy|isn't|he,5-10-2-a.mp3,
 u5_l10_p3,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,これはあなたのかばんだよね？,,This is your bag right,This|is|your|bag|right,5-10-3-a.mp3,
-u5_l10_p4,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,あなた、音楽、すきでしょ？,,You like music don’t you,You|like|music|don’t|you,5-10-4-a.mp3,
-u5_l10_p5,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼らは友達だよね？,,They are friends aren’t they,They|are|friends|aren’t|they,5-10-5-a.mp3,
-u5_l10_p6,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,あなた、ペンを持っていないんでしょ？,,You don’t have a pen do you,You|don’t|have|a|pen|do|you,5-10-6-a.mp3,
-u5_l10_p7,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼女は先生だよね…？,,She is a teacher isn’t she,She|is|a|teacher|isn’t|she,5-10-7-a.mp3,
-u5_l10_p8,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼女は猫が嫌いなんだよね？,,She doesn’t like cats does she,She|doesn’t|like|cats|does|she,5-10-8-a.mp3,
-u5_l10_p9,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼らはテレビを見るよね？,,They watch TV don’t they,They|watch|TV|don’t|they,5-10-9-a.mp3,
-u5_l10_p10,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,寒くない？,,It is cold isn’t it,It|is|cold|isn’t|it,5-10-10-a.mp3,
+u5_l10_p4,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,あなた、音楽、すきでしょ？,,You like music don't you,You|like|music|don't|you,5-10-4-a.mp3,
+u5_l10_p5,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼らは友達だよね？,,They are friends aren't they,They|are|friends|aren't|they,5-10-5-a.mp3,
+u5_l10_p6,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,あなた、ペンを持っていないんでしょ？,,You don't have a pen do you,You|don't|have|a|pen|do|you,5-10-6-a.mp3,
+u5_l10_p7,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼女は先生だよね…？,,She is a teacher isn't she,She|is|a|teacher|isn't|she,5-10-7-a.mp3,
+u5_l10_p8,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼女は猫が嫌いなんだよね？,,She doesn't like cats does she,She|doesn't|like|cats|does|she,5-10-8-a.mp3,
+u5_l10_p9,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼らはテレビを見るよね？,,They watch TV don't they,They|watch|TV|don't|they,5-10-9-a.mp3,
+u5_l10_p10,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,寒くない？,,It is cold isn't it,It|is|cold|isn't|it,5-10-10-a.mp3,
 u5_l10_p11,u5_l10,05.png,user,left,right,1,1,0,I bought a car!,"______________ ,　________？",車を買ったんだ！,それって速いんでしょ？,It runs fast doesn't it,It|runs|fast|doesn't|it,5-10-11-a.mp3,5-10-11-b.mp3
-u5_l10_p12,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼は朝ごはんを食べますよね？,,He eats breakfast doesn’t he,He|eats|breakfast|doesn’t|he,5-10-12-a.mp3,
-u5_l10_p13,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼らはサッカーするよね？,,They play soccer don’t they,They|play|soccer|don’t|they,5-10-13-a.mp3,
+u5_l10_p12,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼は朝ごはんを食べますよね？,,He eats breakfast doesn't he,He|eats|breakfast|doesn't|he,5-10-12-a.mp3,
+u5_l10_p13,u5_l10,user,,left,none,1,,0,"______________ ,　________？",,彼らはサッカーするよね？,,They play soccer don't they,They|play|soccer|don't|they,5-10-13-a.mp3,

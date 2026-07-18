@@ -1,6 +1,6 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
 u18_l10_p1,u18_l10,user,,right,none,1,,1,________.,,あなたの誕生日だから、ランチは私がおごるよ。,,"Since it's your birthday, I'll pay for lunch|I'll pay for lunch Since it's your birthday,","Since|it's|your|birthday,|I'll|pay|for|lunch",18-10-1-a.mp3,
-u18_l10_p2,u18_l10,user,,right,none,1,,1,________?,,時間があるんだから、アイスでも食べる？,,"Since we have time, should we get some ice cream","Since|we|have|time,|should|we|get|some|ice|cream",18-10-2-a.mp3,
+u18_l10_p2,u18_l10,user,,right,none,1,,1,________.,,時間があるんだから、アイスでも食べる？,,"Since we have time, should we get some ice cream","Since|we|have|time,|should|we|get|some|ice|cream",18-10-2-a.mp3,
 u18_l10_p3,u18_l10,user,,right,none,1,,1,I haven't seen Tom ________.,,先月以来トムに会っていません。,,since last month,since|last|month,18-10-3-a.mp3,
 u18_l10_p4,u18_l10,user,,right,none,1,,1,Have you been busy ________?,,新しい仕事を始めて以来忙しいですか。,,since you started your new job,since|you|started|your|new|job,18-10-4-a.mp3,
 u18_l10_p5,u18_l10,user,,right,none,1,,1,________.,,宿題がたくさんあったので夜更かししました。,,I stayed up late since I had a lot of homework|since I had a lot of homework I stayed up late,I|stayed|up|late|since|I|had|a|lot|of|homework,18-10-5-a.mp3,
