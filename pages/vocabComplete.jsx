@@ -112,6 +112,11 @@ export default function VocabComplete() {
   }, [router.isReady])
 
   useEffect(() => {
+    document.body.style.overscrollBehavior = "none"
+    return () => { document.body.style.overscrollBehavior = "" }
+  }, [])
+
+  useEffect(() => {
     const timer = setTimeout(() => setShowRest(true), 2000)
     return () => clearTimeout(timer)
   }, [])
