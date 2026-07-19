@@ -70,8 +70,8 @@ export default function VocabArrange() {
 
   useEffect(() => {
     setUserShowJa(localStorage.getItem("showJaTranslation") !== "false")
-    pa.current = new Audio("/sound/pi.mp3")
-    pa.current.volume = 0.7
+    pa.current = new Audio("/sound/pa.mp3")
+    pa.current.volume = 0.3
     seikaiRef.current = new Audio("/sound/seikai.mp3")
     seikaiRef.current.playbackRate = 1.5
     seikaiRef.current.volume = 0.5
