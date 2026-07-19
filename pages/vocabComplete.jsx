@@ -112,8 +112,12 @@ export default function VocabComplete() {
   }, [router.isReady])
 
   useEffect(() => {
+    document.documentElement.style.overscrollBehavior = "none"
     document.body.style.overscrollBehavior = "none"
-    return () => { document.body.style.overscrollBehavior = "" }
+    return () => {
+      document.documentElement.style.overscrollBehavior = ""
+      document.body.style.overscrollBehavior = ""
+    }
   }, [])
 
   useEffect(() => {
