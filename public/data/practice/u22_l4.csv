@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l4_p1,u22_l4,user,,right,none,1,,1,________?,,その鳥見える？,,Can you see the bird,Can|you|see|the|bird,22-4-1-a.mp3,
+u22_l4_p2,u22_l4,user,,right,none,1,,1,________.,,サッカーの試合を見た。,,We watched a soccer game,We|watched|a|soccer|game,22-4-2-a.mp3,
+u22_l4_p3,u22_l4,user,,right,none,1,,1,________.,,私たちは映画を観たよ。,,We watched a movie last night,We|watched|a|movie|last|night,22-4-3-a.mp3,
+u22_l4_p4,u22_l4,user,,right,none,1,,1,________.,,海が見えるよ。,,I can see the ocean,I|can|see|the|ocean,22-4-4-a.mp3,
+u22_l4_p5,u22_l4,user,user,right,right,1,1,1,________.,But there was nobody outside.,彼女は窓の外を見た。,でも外には誰もいなかった。,She looked out the window,She|looked|out|the|window,22-4-5-a.mp3,22-4-5-b.mp3
+u22_l4_p6,u22_l4,user,user,right,right,1,1,1,________.,This is my dog. Isn't he cute?,この写真を見て。,これうちの犬なんだ。可愛いでしょ？,Look at this photo,Look|at|this|photo,22-4-6-a.mp3,22-4-6-b.mp3
+u22_l4_p7,u22_l4,user,,right,none,1,,1,________.,,虹が見える。,,I can see a rainbow,I|can|see|a|rainbow,22-4-7-a.mp3,
+u22_l4_p8,u22_l4,user,05.png,right,left,1,1,1,________.,Then turn on the light!,何も見えない。,じゃあ電気つけなさい,I can't see anything,I|can't|see|anything,22-4-8-a.mp3,22-4-8-b.mp3
+u22_l4_p9,u22_l4,user,,right,none,1,,1,________.,,彼女は子供たちが遊ぶ様子を見ていた。,,She watched the children play,She|watched|the|children|play,22-4-9-a.mp3,
+u22_l4_p10,u22_l4,user,,right,none,1,,1,________.,,1時間花火を見ていた。,,We watched the fireworks for an hour,We|watched|the|fireworks|for|an|hour,22-4-10-a.mp3,

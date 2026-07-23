@@ -1,0 +1,14 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u24_l3_p1,u24_l3,user,,right,none,1,,1,________.,,京都に行ったことがある。,,I've been to Kyoto,I've|been|to|Kyoto,24-3-1-a.mp3,
+u24_l3_p2,u24_l3,user,,right,none,1,,1,________.,,そのゲームをやったことがある。,,I've played the game,I've|played|the|game,24-3-2-a.mp3,
+u24_l3_p3,u24_l3,user,,right,none,1,,1,________.,,馬に乗ったことがある。,,I've ridden a horse,I've|ridden|a|horse,24-3-3-a.mp3,
+u24_l3_p4,u24_l3,user,,right,none,1,,1,________.,,お母さんは沖縄を訪れたことがある,,My mom has visited Okinawa,My|mom|has|visited|Okinawa,24-3-4-a.mp3,
+u24_l3_p5,u24_l3,user,,right,none,1,,1,________.,,東京で寿司を食べたことがある。,,I've eaten sushi in Tokyo,I've|eaten|sushi|in|Tokyo,24-3-5-a.mp3,
+u24_l3_p6,u24_l3,user,,right,none,1,,1,________.,,この本を読んだことがある。,,I've read this book before,I've|read|this|book|before,24-3-6-a.mp3,
+u24_l3_p7,u24_l3,user,user,right,right,1,1,1,________.,Can I play games now?,宿題を終えたよ。,もうゲームしていい？,I've finished my homework,I've|finished|my|homework,24-3-7-a.mp3,24-3-7-b.mp3
+u24_l3_p8,u24_l3,user,,right,none,1,,1,________.,,部屋を掃除したよ。,,I've cleaned my room,I've|cleaned|my|room,24-3-8-a.mp3,
+u24_l3_p9,u24_l3,user,05.png,right,left,1,1,1,________.,Let's watch TV together.,皿洗いをしたよ。,じゃあ一緒にテレビ見よう。,I've washed the dishes,I've|washed|the|dishes,24-3-9-a.mp3,24-3-9-b.mp3
+u24_l3_p10,u24_l3,user,05.png,right,left,1,1,1,________.,You should go to the police station.,財布をなくしてしまった。,交番に行ったほうがいいよ。,I've lost my wallet,I've|lost|my|wallet,24-3-10-a.mp3,24-3-10-b.mp3
+u24_l3_p11,u24_l3,user,05.png,right,left,1,1,1,________.,Are you okay?,メガネを壊してしまった。,大丈夫？,I've broken my glasses,I've|broken|my|glasses,24-3-11-a.mp3,24-3-11-b.mp3
+u24_l3_p12,u24_l3,user,05.png,right,left,1,1,1,________.,Let's hurry and get on.,電車が到着した。,急いで乗ろう。,The train has arrived,The|train|has|arrived,24-3-12-a.mp3,24-3-12-b.mp3
+u24_l3_p13,u24_l3,user,,right,none,1,,1,________.,,試合が始まった。,,The game has started,The|game|has|started,24-3-13-a.mp3,

@@ -1,0 +1,7 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u21_l2_p1,u21_l2,user,,right,none,1,,1,________!,,今やお母さんと同じくらいの背の高さだね!,,You're as tall as your mother now,You're|as|tall|as|your|mother|now,21-2-1-a.mp3,
+u21_l2_p2,u21_l2,user,,right,none,1,,1,________.,,このテスト、思ったほど難しくなかったよ。 ,, This test wasn't as hard as I expected,|This|test|wasn't|as|hard|as|I|expected,21-2-2-a.mp3,
+u21_l2_p3,u21_l2,user,05.png,right,left,1,1,1,________.,That's why he always gets good grades.  ,彼はクラスの誰にも負けないくらい一生懸命勉強するんだ。,だからいつもいい成績なんだね。 ,He studies as hard as anyone in our class,He|studies|as|hard|as|anyone|in|our|class,21-2-3-a.mp3,21-2-3-b.mp3
+u21_l2_p4,u21_l2,user,05.png,right,left,1,1,1,________.,No wonder I hear it everywhere! ,この曲、あの曲と同じくらい人気なんだよ,どうりであちこちで聞くわけだ! ,This song is as popular as that one,This|song|is|as|popular|as|that|one,21-2-4-a.mp3,21-2-4-b.mp3
+u21_l2_p5,u21_l2,user,,right,none,1,,1,________.,,私の部屋、あなたのほどきれいじゃないんだ。 ,,My room isn't as clean as yours,My|room|isn't|as|clean|as|yours,21-2-5-a.mp3,
+u21_l2_p6,u21_l2,user,,right,none,1,,1,________.,,今日は月曜日ほど忙しくないね。 ,,Today isn't as busy as Monday,Today|isn't|as|busy|as|Monday,21-2-6-a.mp3,

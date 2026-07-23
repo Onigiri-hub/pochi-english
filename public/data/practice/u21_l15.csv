@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u21_l15_p1,u21_l15,user,,right,none,1,,0,________.,,このテスト、思ったほど難しくなかったよ。 ,, This test wasn't as hard as I expected,|This|test|wasn't|as|hard|as|I|expected,21-2-2-a.mp3,
+u21_l15_p2,u21_l15,05.png,user,left,right,1,1,0,________.,"Okay, I'll be there by eight. ",できるだけ早く来てね。 ,分かった、8時までには行くよ。,Please come as early as possible,Please|come|as|early|as|possible,21-4-1-a.mp3,21-4-1-b.mp3
+u21_l15_p3,u21_l15,05.png,,left,none,1,,0,________.,,この箱はあれより大きい。,,This box is bigger than that one,This|box|is|bigger|than|that|one,21-6-1-a.mp3,
+u21_l15_p4,u21_l15,05.png,,left,none,1,,0,________.,,今日は昨日より体調がいい。,,Today I feel better than yesterday,Today|I|feel|better|than|yesterday,21-6-4-a.mp3,
+u21_l15_p5,u21_l15,user,,right,none,1,,0,________.,,もっと時間が必要だ。,,I need more time,I|need|more|time,21-8-3-a.mp3,
+u21_l15_p6,u21_l15,user,,right,none,1,,0,________?,,クラスで一番足が速いのは誰ですか。,,Who is the fastest runner in your class,Who|is|the|fastest|runner|in|your|class,21-10-3-a.mp3,
+u21_l15_p7,u21_l15,user,,right,none,1,,0,________.,,あれは人生最悪の日だった。,,That was the worst day of my life,That|was|the|worst|day|of|my|life,21-12-2-a.mp3,
+u21_l15_p8,u21_l15,user,,right,none,1,,0,________.,,東京は世界最大級の都市の一つだ。,,Tokyo is one of the biggest cities in the world,Tokyo|is|one|of|the|biggest|cities|in|the|world,21-12-5-a.mp3,
+u21_l15_p9,u21_l15,05.png,,left,none,1,,0,________.,,このパソコンは昔のものより100倍速い。,,This computer is 100 times as fast as the old one,This|computer|is|100|times|as|fast|as|the|old|one,21-14-4-a.mp3,
+u21_l15_p10,u21_l15,05.png,,left,none,1,,0,________.,,彼女はポチよりも速く走る。,,She runs faster than Pochi,She|runs|faster|than|Pochi,21-6-6-a.mp3,
+u21_l15_p11,u21_l15,user,,right,none,1,,0,________.,,もっとゆっくり話してください。,,Please speak more slowly,Please|speak|more|slowly,21-8-4-a.mp3,

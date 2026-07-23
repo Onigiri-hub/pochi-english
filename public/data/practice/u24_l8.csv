@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u24_l8_p1,u24_l8,user,,right,none,1,,0,________.,,京都に行ったことがある。,,I've been to Kyoto,I've|been|to|Kyoto,24-3-1-a.mp3,
+u24_l8_p2,u24_l8,user,,right,none,1,,0,________.,,東京で寿司を食べたことがある。,,I've eaten sushi in Tokyo,I've|eaten|sushi|in|Tokyo,24-3-5-a.mp3,
+u24_l8_p3,u24_l8,user,05.png,right,left,1,1,0,________.,You should go to the police station.,財布をなくしてしまった。,交番に行ったほうがいいよ。,I've lost my wallet,I've|lost|my|wallet,24-3-10-a.mp3,24-3-10-b.mp3
+u24_l8_p4,u24_l8,05.png,,left,none,1,,0,________.,,私たちは長い付き合いです。,,We have known each other for a long time,We|have|known|each|other|for|a|long|time,24-5-2-a.mp3,
+u24_l8_p5,u24_l8,05.png,,left,none,1,,0,________.,,その犬は午後ずっとソファで寝ています。,,The dog has slept on the sofa all afternoon,The|dog|has|slept|on|the|sofa|all|afternoon,24-5-7-a.mp3,
+u24_l8_p6,u24_l8,05.png,05.png,left,left,1,1,0,________.,I'm thinking about getting a new one.,私はこのスマホを3年間使っています。,そろそろ買い替えようかな。,I have had this phone for three years,I|have|had|this|phone|for|three|years,24-5-8-a.mp3,24-5-8-b.mp3
+u24_l8_p7,u24_l8,user,user,right,right,1,1,0,________.,I need a little more time.,まだ宿題終わってないんだ。,もう少し時間が必要なんだ。,I haven't finished my homework yet,I|haven't|finished|my|homework|yet,24-7-1-a.mp3,24-7-1-b.mp3
+u24_l8_p8,u24_l8,user,user,right,right,1,1,0,________.,Don't tell me the ending.,まだそれ見てないんだ。,結末は言わないでね。,I haven't seen it yet,I|haven't|seen|it|yet,24-7-5-a.mp3,24-7-5-b.mp3
+u24_l8_p9,u24_l8,user,user,right,right,1,1,0,________?,You should tell her soon.,もう先生と話した？,早めに伝えた方がいいよ。,Have you talked to your teacher yet,Have|you|talked|to|your|teacher|yet,24-7-6-a.mp3,24-7-6-b.mp3
+u24_l8_p10,u24_l8,user,user,right,right,1,1,0,________?,Mom is coming home soon.,部屋もう片付けた？,もうすぐお母さん帰ってくるよ。,Have you cleaned your room yet,Have|you|cleaned|your|room|yet,24-7-9-a.mp3,24-7-9-b.mp3

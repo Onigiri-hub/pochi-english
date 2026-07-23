@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u21_l4_p1,u21_l4,05.png,user,left,right,1,1,1,________.,"Okay, I'll be there by eight. ",できるだけ早く来てね。 ,分かった、8時までには行くよ。,Please come as early as possible,Please|come|as|early|as|possible,21-4-1-a.mp3,21-4-1-b.mp3
+u21_l4_p2,u21_l4,05.png,,left,none,1,,1,________?,,できるだけ早く終わらせてくれる? ,,Can you finish it as soon as possible,Can|you|finish|it|as|soon|as|possible,21-4-2-a.mp3,
+u21_l4_p3,u21_l4,05.png,,left,none,1,,1,________!,,できるだけ速く走って! ,,Run as fast as you can,Run|as|fast|as|you|can,21-4-3-a.mp3,
+u21_l4_p4,u21_l4,05.png,,left,none,1,,1,________.,,できるだけ早く出発しよう。 ,,Let's leave as soon as possible,Let's|leave|as|soon|as|possible,21-4-4-a.mp3,
+u21_l4_p5,u21_l4,05.png,,left,none,1,,1,________.,,好きなだけ食べていいよ。 ,,Eat as much as you want,Eat|as|much|as|you|want,21-4-5-a.mp3,
+u21_l4_p6,u21_l4,05.png,,left,none,1,,1,________.,,できるだけたくさんお金を貯めなよ。 ,,Save as much money as you can,Save|as|much|money|as|you|can,21-4-6-a.mp3,
+u21_l4_p7,u21_l4,05.png,,left,none,1,,1,________.,,今年はできるだけたくさん学びたいんだ。 ,,I want to learn as much as possible this year,I|want|to|learn|as|much|as|possible|this|year,21-4-7-a.mp3,

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u24_l5_p1,u24_l5,05.png,,left,none,1,,1,________.,,父はこの会社で20年間働いています。,,My father has worked at this company for twenty years,My|father|has|worked|at|this|company|for|twenty|years,24-5-1-a.mp3,
+u24_l5_p2,u24_l5,05.png,,left,none,1,,1,________.,,私たちは長い付き合いです。,,We have known each other for a long time,We|have|known|each|other|for|a|long|time,24-5-2-a.mp3,
+u24_l5_p3,u24_l5,05.png,,left,none,1,,1,________.,,一日中雨が降ってるね,,It has rained all day,It|has|rained|all|day,24-5-3-a.mp3,
+u24_l5_p4,u24_l5,05.png,,left,none,1,,1,________.,,その店は9時から営業しています。,,The shop has been open since nine o'clock,The|shop|has|been|open|since|nine|o'clock,24-5-4-a.mp3,
+u24_l5_p5,u24_l5,05.png,,left,none,1,,1,________.,,彼らは何年もこの町に住んでいます。,,They have lived in this town for many years,They|have|lived|in|this|town|for|many|years,24-5-5-a.mp3,
+u24_l5_p6,u24_l5,05.png,,left,none,1,,1,________.,,妹は6年間英語を勉強しています。,,My sister has studied English for six years,My|sister|has|studied|English|for|six|years,24-5-6-a.mp3,
+u24_l5_p7,u24_l5,05.png,,left,none,1,,1,________.,,その犬は午後ずっとソファで寝ています。,,The dog has slept on the sofa all afternoon,The|dog|has|slept|on|the|sofa|all|afternoon,24-5-7-a.mp3,
+u24_l5_p8,u24_l5,05.png,05.png,left,left,1,1,1,________.,I'm thinking about getting a new one.,私はこのスマホを3年間使っています。,そろそろ買い替えようかな。,I have had this phone for three years,I|have|had|this|phone|for|three|years,24-5-8-a.mp3,24-5-8-b.mp3
+u24_l5_p9,u24_l5,05.png,,left,none,1,,1,________.,,彼女はここで1時間待っています。,,She has waited here for an hour,She|has|waited|here|for|an|hour,24-5-9-a.mp3,
+u24_l5_p10,u24_l5,05.png,,left,none,1,,1,________.,,その城は何百年もここに建っています。,,The castle has stood here for hundreds of years,The|castle|has|stood|here|for|hundreds|of|years,24-5-10-a.mp3,

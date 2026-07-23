@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l12_p1,u22_l12,05.png,05.png,left,left,1,1,1,________.,It looks like rain.,傘持っていきなよ。,雨が降りそうだから。,Take an umbrella with you,Take|an|umbrella|with|you,22-12-1-a.mp3,22-12-1-b.mp3
+u22_l12_p2,u22_l12,user,user,right,right,1,1,1,________.,I just cleaned the floor.,靴を脱いで。,床を掃除したばかりなんだ。,Take off your shoes|Take your shoes off,Take|off|your|shoes,22-12-2-a.mp3,22-12-2-b.mp3
+u22_l12_p3,u22_l12,05.png,05.png,left,left,1,1,1,"________, please.",The garbage truck will be here soon.,ゴミを出してくれる？,もうすぐゴミ収集車が来るから。,Take the trash out|Take out the trash,Take|the|trash|out,22-12-3-a.mp3,22-12-3-b.mp3
+u22_l12_p4,u22_l12,user,,right,none,1,,1,________.,,本をテーブルに置いた。,,I put the book on the table,I|put|the|book|on|the|table,22-12-4-a.mp3,
+u22_l12_p5,u22_l12,user,05.png,right,left,1,1,1,________?,Under the shelf is fine.,この箱どこに置けばいい？,棚の下でいいよ。,Where should I put this box,Where|should|I|put|this|box,22-12-5-a.mp3,22-12-5-b.mp3
+u22_l12_p6,u22_l12,05.png,05.png,left,left,1,1,1,________.,Dinner is ready.,おもちゃを片付けなさい。,ご飯できたよ。,Put your toys away|Put away your toys,Put|your|toys|away,22-12-6-a.mp3,22-12-6-b.mp3
+u22_l12_p7,u22_l12,user,,right,none,1,,1,________.,,彼女はスマホをバッグに入れた。,,She put her phone in her bag,She|put|her|phone|in|her|bag,22-12-7-a.mp3,
+u22_l12_p8,u22_l12,user,,right,none,1,,1,________.,,私はテレビをつけて、ニュースを見た。,,I turned the TV on and watched the news|I turned on the TV an watched the news,I|turned|the|TV|on|and|watched|the|news,22-12-8-a.mp3,
+u22_l12_p9,u22_l12,05.png,05.png,left,left,1,1,1,________.,It's time for bed.,電気を消して。,もう寝る時間だから。,Turn off the light|Turn the light off,Turn|off|the|light,22-12-9-a.mp3,22-12-9-b.mp3
+u22_l12_p10,u22_l12,05.png,05.png,left,left,1,1,1,It's getting dark.,________.,暗くなってきたね。,電気をつけよう。,Let's turn on the light|Let's turn the light on,Let's|turn|on|the|light,22-12-10-a.mp3,22-12-10-b.mp3
+u22_l12_p11,u22_l12,05.png,user,left,right,1,1,1,________.,Show me!,写真をたくさん撮った。,見せて！,I took a lot of pictures,I|took|a|lot|of|pictures,22-12-11-a.mp3,22-12-11-b.mp3

@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l2_p1,u22_l2,05.png,,left,none,1,,1,________.,,彼女は良いアイデアを思いついた。,,She came up with a great idea,She|came|up|with|a|great|idea,22-2-1-a.mp3,
+u22_l2_p2,u22_l2,05.png,,left,none,1,,1,________.,,夢がかなった。,,My dream came true,My|dream|came|true,22-2-2-a.mp3,
+u22_l2_p3,u22_l2,05.png,,left,none,1,,1,________.,,話はこんな感じにすすんでいく。,,The story goes like this,The|story|goes|like|this,22-2-3-a.mp3,
+u22_l2_p4,u22_l2,05.png,,left,none,1,,1,________.,,会議はうまくいった。,,The meeting went well,The|meeting|went|well,22-2-4-a.mp3,
+u22_l2_p5,u22_l2,05.png,,left,none,1,,1,________?,,テストどうだった？,,How did the test go,How|did|the|test|go,22-2-5-a.mp3,
+u22_l2_p6,u22_l2,05.png,,left,none,1,,1,________.,,彼の顔が赤くなった。,,His face went red,His|face|went|red,22-2-6-a.mp3,
+u22_l2_p7,u22_l2,05.png,,left,none,1,,1,________.,,牛乳が腐った。,,The milk went bad,The|milk|went|bad,22-2-7-a.mp3,
+u22_l2_p8,u22_l2,05.png,user,left,right,1,1,1,Come over to my house tomorrow!,________.,明日うちにおいでよ！,わかった、行くね。,"Okay, I'll come","Okay,|I'll|come",22-2-8-a.mp3,22-2-8-b.mp3
+u22_l2_p9,u22_l2,05.png,user,left,right,1,1,1,It's time for dinner!,________!,夕飯のじかんだよ,今行くー,I'm coming,I'm|coming,22-2-9-a.mp3,22-2-9-b.mp3

@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l8_p1,u22_l8,user,,right,none,1,,1,________?,,何て言ったの？,,What did you say,What|did|you|say,22-8-1-a.mp3,
+u22_l8_p2,u22_l8,user,,right,none,1,,1,________?,,もう一回言ってくれる？,,Can you say that again,Can|you|say|that|again,22-8-2-a.mp3,
+u22_l8_p3,u22_l8,user,,right,none,1,,1,________.,,本当のことを教えて。,,Tell me the truth,Tell|me|the|truth,22-8-3-a.mp3,
+u22_l8_p4,u22_l8,user,,right,none,1,,1,________.,,母は部屋を掃除しなさいと言った。,,My mom told me to clean my room,My|mom|told|me|to|clean|my|room,22-8-4-a.mp3,
+u22_l8_p5,u22_l8,user,,right,none,1,,1,________?,,今何時か教えてくれる？,,Can you tell me the time,Can|you|tell|me|the|time,22-8-5-a.mp3,
+u22_l8_p6,u22_l8,user,,right,none,1,,1,________.,,彼女は3か国語話せる。,,She speaks three languages,She|speaks|three|languages,22-8-6-a.mp3,
+u22_l8_p7,u22_l8,user,,right,none,1,,1,________?,,電話口でトムとお話しできますか？,,May I speak to Tom,May|I|speak|to|Tom,22-8-7-a.mp3,
+u22_l8_p8,u22_l8,user,,right,none,1,,1,________.,,責任者とお話ししたいのですが。,,I'd like to speak with the manager,I'd|like|to|speak|with|the|manager,22-8-8-a.mp3,
+u22_l8_p9,u22_l8,user,,right,none,1,,1,________.,,何時間も話した。,,We talked for hours,We|talked|for|hours,22-8-9-a.mp3,
+u22_l8_p10,u22_l8,user,,right,none,1,,1,________.,,昨日友達と話した。,,I talked with my friend yesterday,I|talked|with|my|friend|yesterday,22-8-10-a.mp3,
+u22_l8_p11,u22_l8,user,,right,none,1,,1,________.,,旅行の話をしよう。,,Let's talk about your trip,Let's|talk|about|your|trip,22-8-11-a.mp3,

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l6_p1,u22_l6,user,,right,none,1,,1,________.,,変な音が聞こえた。,,I heard a strange noise,I|heard|a|strange|noise,22-6-1-a.mp3,
+u22_l6_p2,u22_l6,user,,right,none,1,,1,________?,,私の声聞こえる？,,Can you hear me,Can|you|hear|me,22-6-2-a.mp3,
+u22_l6_p3,u22_l6,user,,right,none,1,,1,________.,,私の話を聞いて。,,Listen to me,Listen|to|me,22-6-3-a.mp3,
+u22_l6_p4,u22_l6,user,,right,none,1,,1,________.,,音楽を聴いている。,,I'm listening to music,I'm|listening|to|music,22-6-4-a.mp3,
+u22_l6_p5,u22_l6,user,05.png,right,left,1,1,1,________.,"Sorry, I was muted.",あなたの声、聞こえないんだけど。,ごめん、ミュートになってた。,I can't hear you,I|can't|hear|you,22-6-5-a.mp3,22-6-5-b.mp3
+u22_l6_p6,u22_l6,user,,right,none,1,,1,________.,,寝る前に音楽を聴くのが好き。,,I like listening to music before bed,I|like|listening|to|music|before|bed,22-6-6-a.mp3,
+u22_l6_p7,u22_l6,user,,right,none,1,,1,________.,,鳥のさえずりが聞こえる。,,I can hear a bird singing,I|can|hear|a|bird|singing,22-6-7-a.mp3,
+u22_l6_p8,u22_l6,user,05.png,right,left,1,1,1,________?,It's raining pretty hard.,雨の音聞こえる？,結構強く降ってるね。,Can you hear the rain,Can|you|hear|the|rain,22-6-8-a.mp3,22-6-8-b.mp3
+u22_l6_p9,u22_l6,user,,right,none,1,,1,________.,,ゲームで勝ったって聞いたよ。,,I heard you won the game,I|heard|you|won|the|game,22-6-9-a.mp3,
+u22_l6_p10,u22_l6,05.png,user,left,right,1,1,1,________.,Not really. I just didn't want to help my mom.,忙しいって聞いたよ。,いや、そんなに。お母さんの手伝いしたくなかっただけ。,I heard you're busy,I|heard|you're|busy,22-6-10-a.mp3,22-6-10-b.mp3

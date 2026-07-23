@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u21_l10_p1,u21_l10,user,,right,none,1,,1,________.,,これは公園で一番大きな犬です。,,This is the biggest dog in the park,This|is|the|biggest|dog|in|the|park,21-10-1-a.mp3,
+u21_l10_p2,u21_l10,user,,right,none,1,,1,________.,,彼女は家族で一番年下です。,,She is the youngest in her family,She|is|the|youngest|in|her|family,21-10-2-a.mp3,
+u21_l10_p3,u21_l10,user,,right,none,1,,1,________?,,クラスで一番足が速いのは誰ですか。,,Who is the fastest runner in your class,Who|is|the|fastest|runner|in|your|class,21-10-3-a.mp3,
+u21_l10_p4,u21_l10,user,,right,none,1,,1,________.,,ケンは4人のランナーのうちで一番速い。,,Ken is the fastest of the four runners,Ken|is|the|fastest|of|the|four|runners,21-10-4-a.mp3,
+u21_l10_p5,u21_l10,user,,right,none,1,,1,________.,,これは図書館で一番面白い本です。,,This is the most interesting book in the library,This|is|the|most|interesting|book|in|the|library,21-10-5-a.mp3,
+u21_l10_p6,u21_l10,user,,right,none,1,,1,________.,,数学は私にとって一番難しい教科です。,,Math is the most difficult subject for me,Math|is|the|most|difficult|subject|for|me,21-10-6-a.mp3,
+u21_l10_p7,u21_l10,user,,right,none,1,,1,________.,,ポチはクラスで一番背が高い。,,Pochi is the tallest in his class,Pochi|is|the|tallest|in|his|class,21-10-7-a.mp3,
+u21_l10_p8,u21_l10,user,,right,none,1,,1,________?,,あなたの人生で一番大切なことは何ですか。,,What is the most important thing in your life,What|is|the|most|important|thing|in|your|life,21-10-8-a.mp3,
+u21_l10_p9,u21_l10,user,,right,none,1,,1,________.,,これはこの店で一番高価なバッグだ。,,This is the most expensive bag in the store,This|is|the|most|expensive|bag|in|the|store,21-10-9-a.mp3,

@@ -1,0 +1,63 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l2_p1,u22_l2,05.png,,left,none,1,,0,________.,,彼女は良いアイデアを思いついた。,,She came up with a great idea,She|came|up|with|a|great|idea,22-2-1-a.mp3,
+u22_l2_p2,u22_l2,05.png,,left,none,1,,0,________.,,夢がかなった。,,My dream came true,My|dream|came|true,22-2-2-a.mp3,
+u22_l2_p3,u22_l2,05.png,,left,none,1,,0,________.,,話はこんな感じにすすんでいく。,,The story goes like this,The|story|goes|like|this,22-2-3-a.mp3,
+u22_l2_p4,u22_l2,05.png,,left,none,1,,0,________.,,会議はうまくいった。,,The meeting went well,The|meeting|went|well,22-2-4-a.mp3,
+u22_l2_p5,u22_l2,05.png,,left,none,1,,0,________?,,テストどうだった？,,How did the test go,How|did|the|test|go,22-2-5-a.mp3,
+u22_l2_p6,u22_l2,05.png,,left,none,1,,0,________.,,彼の顔が赤くなった。,,His face went red,His|face|went|red,22-2-6-a.mp3,
+u22_l2_p7,u22_l2,05.png,,left,none,1,,0,________.,,牛乳が腐った。,,The milk went bad,The|milk|went|bad,22-2-7-a.mp3,
+u22_l2_p8,u22_l2,05.png,user,left,right,1,1,0,Come over to my house tomorrow!,________.,明日うちにおいでよ！,わかった、行くね。,"Okay, I'll come","Okay,|I'll|come",22-2-8-a.mp3,22-2-8-b.mp3
+u22_l2_p9,u22_l2,05.png,user,left,right,1,1,0,It's time for dinner!,________!,夕飯のじかんだよ,今行くー,I'm coming,I'm|coming,22-2-9-a.mp3,22-2-9-b.mp3
+u22_l4_p1,u22_l4,user,,right,none,1,,0,________?,,その鳥見える？,,Can you see the bird,Can|you|see|the|bird,22-4-1-a.mp3,
+u22_l4_p2,u22_l4,user,,right,none,1,,0,________.,,サッカーの試合を見た。,,We watched a soccer game,We|watched|a|soccer|game,22-4-2-a.mp3,
+u22_l4_p3,u22_l4,user,,right,none,1,,0,________.,,私たちは映画を観たよ。,,We watched a movie last night,We|watched|a|movie|last|night,22-4-3-a.mp3,
+u22_l4_p4,u22_l4,user,,right,none,1,,0,________.,,海が見えるよ。,,I can see the ocean,I|can|see|the|ocean,22-4-4-a.mp3,
+u22_l4_p5,u22_l4,user,user,right,right,1,1,0,________.,But there was nobody outside.,彼女は窓の外を見た。,でも外には誰もいなかった。,She looked out the window,She|looked|out|the|window,22-4-5-a.mp3,22-4-5-b.mp3
+u22_l4_p6,u22_l4,user,user,right,right,1,1,0,________.,This is my dog. Isn't he cute?,この写真を見て。,これうちの犬なんだ。可愛いでしょ？,Look at this photo,Look|at|this|photo,22-4-6-a.mp3,22-4-6-b.mp3
+u22_l4_p7,u22_l4,user,,right,none,1,,0,________.,,虹が見える。,,I can see a rainbow,I|can|see|a|rainbow,22-4-7-a.mp3,
+u22_l4_p8,u22_l4,user,05.png,right,left,1,1,0,________.,Then turn on the light!,何も見えない。,じゃあ電気つけなさい,I can't see anything,I|can't|see|anything,22-4-8-a.mp3,22-4-8-b.mp3
+u22_l4_p9,u22_l4,user,,right,none,1,,0,________.,,彼女は子供たちが遊ぶ様子を見ていた。,,She watched the children play,She|watched|the|children|play,22-4-9-a.mp3,
+u22_l4_p10,u22_l4,user,,right,none,1,,0,________.,,1時間花火を見ていた。,,We watched the fireworks for an hour,We|watched|the|fireworks|for|an|hour,22-4-10-a.mp3,
+u22_l6_p1,u22_l6,user,,right,none,1,,0,________.,,変な音が聞こえた。,,I heard a strange noise,I|heard|a|strange|noise,22-6-1-a.mp3,
+u22_l6_p2,u22_l6,user,,right,none,1,,0,________?,,私の声聞こえる？,,Can you hear me,Can|you|hear|me,22-6-2-a.mp3,
+u22_l6_p3,u22_l6,user,,right,none,1,,0,________.,,私の話を聞いて。,,Listen to me,Listen|to|me,22-6-3-a.mp3,
+u22_l6_p4,u22_l6,user,,right,none,1,,0,________.,,音楽を聴いている。,,I'm listening to music,I'm|listening|to|music,22-6-4-a.mp3,
+u22_l6_p5,u22_l6,user,05.png,right,left,1,1,0,________.,"Sorry, I was muted.",あなたの声、聞こえないんだけど。,ごめん、ミュートになってた。,I can't hear you,I|can't|hear|you,22-6-5-a.mp3,22-6-5-b.mp3
+u22_l6_p6,u22_l6,user,,right,none,1,,0,________.,,寝る前に音楽を聴くのが好き。,,I like listening to music before bed,I|like|listening|to|music|before|bed,22-6-6-a.mp3,
+u22_l6_p7,u22_l6,user,,right,none,1,,0,________.,,鳥のさえずりが聞こえる。,,I can hear a bird singing,I|can|hear|a|bird|singing,22-6-7-a.mp3,
+u22_l6_p8,u22_l6,user,05.png,right,left,1,1,0,________?,It's raining pretty hard.,雨の音聞こえる？,結構強く降ってるね。,Can you hear the rain,Can|you|hear|the|rain,22-6-8-a.mp3,22-6-8-b.mp3
+u22_l6_p9,u22_l6,user,,right,none,1,,0,________.,,ゲームで勝ったって聞いたよ。,,I heard you won the game,I|heard|you|won|the|game,22-6-9-a.mp3,
+u22_l6_p10,u22_l6,05.png,user,left,right,1,1,0,________.,Not really. I just didn't want to help my mom.,忙しいって聞いたよ。,いや、そんなに。お母さんの手伝いしたくなかっただけ。,I heard you're busy,I|heard|you're|busy,22-6-10-a.mp3,22-6-10-b.mp3
+u22_l8_p1,u22_l8,user,,right,none,1,,0,________?,,何て言ったの？,,What did you say,What|did|you|say,22-8-1-a.mp3,
+u22_l8_p2,u22_l8,user,,right,none,1,,0,________?,,もう一回言ってくれる？,,Can you say that again,Can|you|say|that|again,22-8-2-a.mp3,
+u22_l8_p3,u22_l8,user,,right,none,1,,0,________.,,本当のことを教えて。,,Tell me the truth,Tell|me|the|truth,22-8-3-a.mp3,
+u22_l8_p4,u22_l8,user,,right,none,1,,0,________.,,母は部屋を掃除しなさいと言った。,,My mom told me to clean my room,My|mom|told|me|to|clean|my|room,22-8-4-a.mp3,
+u22_l8_p5,u22_l8,user,,right,none,1,,0,________?,,今何時か教えてくれる？,,Can you tell me the time,Can|you|tell|me|the|time,22-8-5-a.mp3,
+u22_l8_p6,u22_l8,user,,right,none,1,,0,________.,,彼女は3か国語話せる。,,She speaks three languages,She|speaks|three|languages,22-8-6-a.mp3,
+u22_l8_p7,u22_l8,user,,right,none,1,,0,________?,,電話口でトムとお話しできますか？,,May I speak to Tom,May|I|speak|to|Tom,22-8-7-a.mp3,
+u22_l8_p8,u22_l8,user,,right,none,1,,0,________.,,責任者とお話ししたいのですが。,,I'd like to speak with the manager,I'd|like|to|speak|with|the|manager,22-8-8-a.mp3,
+u22_l8_p9,u22_l8,user,,right,none,1,,0,________.,,何時間も話した。,,We talked for hours,We|talked|for|hours,22-8-9-a.mp3,
+u22_l8_p10,u22_l8,user,,right,none,1,,0,________.,,昨日友達と話した。,,I talked with my friend yesterday,I|talked|with|my|friend|yesterday,22-8-10-a.mp3,
+u22_l8_p11,u22_l8,user,,right,none,1,,0,________.,,旅行の話をしよう。,,Let's talk about your trip,Let's|talk|about|your|trip,22-8-11-a.mp3,
+u22_l10_p1,u22_l10,user,,right,none,1,,0,________.,,仕事の後は疲れる。,,I get tired after work,I|get|tired|after|work,22-10-1-a.mp3,
+u22_l10_p2,u22_l10,user,,right,none,1,,0,________.,,妹は私がスマホを使うと怒る。,,My sister gets angry when I use her phone,My|sister|gets|angry|when|I|use|her|phone,22-10-2-a.mp3,
+u22_l10_p3,u22_l10,user,,right,none,1,,0,________.,,準備して。あと5分で出るよ。,,Get ready. We're leaving in five minutes,Get|ready.|We're|leaving|in|five|minutes,22-10-3-a.mp3,
+u22_l10_p4,u22_l10,user,,right,none,1,,0,________.,,彼らは10年前に結婚した。,,They got married ten years ago,They|got|married|ten|years|ago,22-10-4-a.mp3,
+u22_l10_p5,u22_l10,user,,right,none,1,,0,________.,,体調は良くなってきてるよ。,,I'm getting better,I'm|getting|better,22-10-5-a.mp3,
+u22_l10_p6,u22_l10,user,,right,none,1,,0,________.,,昨日新しいゲームを手に入れた。,,I got a new game yesterday,I|got|a|new|game|yesterday,22-10-6-a.mp3,
+u22_l10_p7,u22_l10,user,,right,none,1,,0,________?,,チケット取れた？,,Did you get a ticket,Did|you|get|a|ticket,22-10-7-a.mp3,
+u22_l10_p8,u22_l10,user,,right,none,1,,0,________.,,暗くなってきた。,,It's getting dark,It's|getting|dark,22-10-8-a.mp3,
+u22_l10_p9,u22_l10,user,,right,none,1,,0,________.,,空が曇ってきた。,,The sky is getting cloudy,The|sky|is|getting|cloudy,22-10-9-a.mp3,
+u22_l10_p10,u22_l10,user,,right,none,1,,0,________.,,そのゲーム面白くなってきた。,,The game is getting interesting,The|game|is|getting|interesting,22-10-10-a.mp3,
+u22_l10_p11,u22_l10,user,,right,none,1,,0,________.,,最初はつまらなかったんだけどね。,,"It was boring at first, though","It|was|boring|at|first,|though",22-10-11-a.mp3,
+u22_l12_p1,u22_l12,05.png,05.png,left,left,1,1,0,________.,It looks like rain.,傘持っていきなよ。,雨が降りそうだから。,Take an umbrella with you,Take|an|umbrella|with|you,22-12-1-a.mp3,22-12-1-b.mp3
+u22_l12_p2,u22_l12,user,user,right,right,1,1,0,________.,I just cleaned the floor.,靴を脱いで。,床を掃除したばかりなんだ。,Take off your shoes|Take your shoes off,Take|off|your|shoes,22-12-2-a.mp3,22-12-2-b.mp3
+u22_l12_p3,u22_l12,05.png,05.png,left,left,1,1,0,"________, please.",The garbage truck will be here soon.,ゴミを出してくれる？,もうすぐゴミ収集車が来るから。,Take the trash out|Take out the trash,Take|the|trash|out,22-12-3-a.mp3,22-12-3-b.mp3
+u22_l12_p4,u22_l12,user,,right,none,1,,0,________.,,本をテーブルに置いた。,,I put the book on the table,I|put|the|book|on|the|table,22-12-4-a.mp3,
+u22_l12_p5,u22_l12,user,05.png,right,left,1,1,0,________?,Under the shelf is fine.,この箱どこに置けばいい？,棚の下でいいよ。,Where should I put this box,Where|should|I|put|this|box,22-12-5-a.mp3,22-12-5-b.mp3
+u22_l12_p6,u22_l12,05.png,05.png,left,left,1,1,0,________.,Dinner is ready.,おもちゃを片付けなさい。,ご飯できたよ。,Put your toys away|Put away your toys,Put|your|toys|away,22-12-6-a.mp3,22-12-6-b.mp3
+u22_l12_p7,u22_l12,user,,right,none,1,,0,________.,,彼女はスマホをバッグに入れた。,,She put her phone in her bag,She|put|her|phone|in|her|bag,22-12-7-a.mp3,
+u22_l12_p8,u22_l12,user,,right,none,1,,0,________.,,私はテレビをつけて、ニュースを見た。,,I turned the TV on and watched the news|I turned on the TV an watched the news,I|turned|the|TV|on|and|watched|the|news,22-12-8-a.mp3,
+u22_l12_p9,u22_l12,05.png,05.png,left,left,1,1,0,________.,It's time for bed.,電気を消して。,もう寝る時間だから。,Turn off the light|Turn the light off,Turn|off|the|light,22-12-9-a.mp3,22-12-9-b.mp3
+u22_l12_p10,u22_l12,05.png,05.png,left,left,1,1,0,It's getting dark.,________.,暗くなってきたね。,電気をつけよう。,Let's turn on the light|Let's turn the light on,Let's|turn|on|the|light,22-12-10-a.mp3,22-12-10-b.mp3
+u22_l12_p11,u22_l12,05.png,user,left,right,1,1,0,________.,Show me!,写真をたくさん撮った。,見せて！,I took a lot of pictures,I|took|a|lot|of|pictures,22-12-11-a.mp3,22-12-11-b.mp3

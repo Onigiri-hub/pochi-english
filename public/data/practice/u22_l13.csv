@@ -1,0 +1,12 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u22_l13_p1,u22_l13,05.png,,left,none,1,,0,________?,,テストどうだった？,,How did the test go,How|did|the|test|go,22-2-5-a.mp3,
+u22_l13_p2,u22_l13,user,,right,none,1,,0,________?,,その鳥見える？,,Can you see the bird,Can|you|see|the|bird,22-4-1-a.mp3,
+u22_l13_p3,u22_l13,user,user,right,right,1,1,0,________.,But there was nobody outside.,彼女は窓の外を見た。,でも外には誰もいなかった。,She looked out the window,She|looked|out|the|window,22-4-5-a.mp3,22-4-5-b.mp3
+u22_l13_p4,u22_l13,user,,right,none,1,,0,________.,,変な音が聞こえた。,,I heard a strange noise,I|heard|a|strange|noise,22-6-1-a.mp3,
+u22_l13_p5,u22_l13,user,,right,none,1,,0,________.,,寝る前に音楽を聴くのが好き。,,I like listening to music before bed,I|like|listening|to|music|before|bed,22-6-6-a.mp3,
+u22_l13_p6,u22_l13,user,,right,none,1,,0,________.,,本当のことを教えて。,,Tell me the truth,Tell|me|the|truth,22-8-3-a.mp3,
+u22_l13_p7,u22_l13,user,,right,none,1,,0,________?,,電話口でトムとお話しできますか？,,May I speak to Tom,May|I|speak|to|Tom,22-8-7-a.mp3,
+u22_l13_p8,u22_l13,user,,right,none,1,,0,________.,,彼らは10年前に結婚した。,,They got married ten years ago,They|got|married|ten|years|ago,22-10-4-a.mp3,
+u22_l13_p9,u22_l13,user,user,right,right,1,1,0,________.,I just cleaned the floor.,靴を脱いで。,床を掃除したばかりなんだ。,Take off your shoes|Take your shoes off,Take|off|your|shoes,22-12-2-a.mp3,22-12-2-b.mp3
+u22_l13_p10,u22_l13,05.png,05.png,left,left,1,1,0,It's getting dark.,________.,暗くなってきたね。,電気をつけよう。,Let's turn on the light|Let's turn the light on,Let's|turn|on|the|light,22-12-10-a.mp3,22-12-10-b.mp3
+u22_l13_p11,u22_l13,user,,right,none,1,,0,________.,,妹は私がスマホを使うと怒る。,,My sister gets angry when I use her phone,My|sister|gets|angry|when|I|use|her|phone,22-10-2-a.mp3,

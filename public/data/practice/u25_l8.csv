@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u25_l8_p1,u25_l8,user,,right,none,1,,0,________.,,私は疲れている。,,I am tired,I|am|tired,25-3-2-a.mp3,
+u25_l8_p2,u25_l8,user,,right,none,1,,0,________.,,彼女は幸せそうに見える。,,She looks happy,She|looks|happy,25-3-4-a.mp3,
+u25_l8_p3,u25_l8,user,,right,none,1,,0,________.,,電車が到着した。,,The train arrived,The|train|arrived,25-3-13-a.mp3,
+u25_l8_p4,u25_l8,user,,right,none,1,,0,________.,,彼女は映画を見た。（SVO）,,She watched a movie,She|watched|a|movie,25-5-3-a.mp3,
+u25_l8_p5,u25_l8,user,,right,none,1,,0,________.,,彼は新しい自転車を見せてくれた。（SVOO）,,He showed me his new bike,He|showed|me|his|new|bike,25-5-7-a.mp3,
+u25_l8_p6,u25_l8,user,,right,none,1,,0,________.,,彼女は息子にクッキーをあげた。（SVOO）,,She gave her son some cookies,She|gave|her|son|some|cookies,25-5-13-a.mp3,
+u25_l8_p7,u25_l8,user,,right,none,1,,0,________.,,私は京都に行ったことがある。（SVO）,,I've visited Kyoto,I've|visited|Kyoto,25-5-14-a.mp3,
+u25_l8_p8,u25_l8,user,,right,none,1,,0,________.,,そのニュースで私は悲しくなった。,,The news made me sad,The|news|made|me|sad,25-7-1-a.mp3,
+u25_l8_p9,u25_l8,user,,right,none,1,,0,________.,,私はそのゲームを面白いと思った。,,I found the game interesting,I|found|the|game|interesting,25-7-5-a.mp3,
+u25_l8_p10,u25_l8,user,,right,none,1,,0,________.,,彼らは壁を白く塗った。,,They painted the wall white,They|painted|the|wall|white,25-7-13-a.mp3,

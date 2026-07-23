@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u21_l6_p1,u21_l6,05.png,,left,none,1,,1,________.,,この箱はあれより大きい。,,This box is bigger than that one,This|box|is|bigger|than|that|one,21-6-1-a.mp3,
+u21_l6_p2,u21_l6,05.png,,left,none,1,,1,________.,,いつもより早く起きた。,,I woke up earlier than usual,I|woke|up|earlier|than|usual,21-6-2-a.mp3,
+u21_l6_p3,u21_l6,05.png,,left,none,1,,1,________.,,会議は予想より遅く終わった。,,The meeting finished later than expected,The|meeting|finished|later|than|expected,21-6-3-a.mp3,
+u21_l6_p4,u21_l6,05.png,,left,none,1,,1,________.,,今日は昨日より体調がいい。,,Today I feel better than yesterday,Today|I|feel|better|than|yesterday,21-6-4-a.mp3,
+u21_l6_p5,u21_l6,05.png,,left,none,1,,1,________.,,前より少ない時間で済む。,,We need less time than before,We|need|less|time|than|before,21-6-5-a.mp3,
+u21_l6_p6,u21_l6,05.png,,left,none,1,,1,________.,,彼女はポチよりも速く走る。,,She runs faster than Pochi,She|runs|faster|than|Pochi,21-6-6-a.mp3,
+u21_l6_p7,u21_l6,05.png,,left,none,1,,1,________.,,このゲームの方がいい。,,This game is better than that one,This|game|is|better|than|that|one,21-6-7-a.mp3,
+u21_l6_p8,u21_l6,05.png,,left,none,1,,1,________.,,天気は昨日より悪い。,,The weather is worse than yesterday,The|weather|is|worse|than|yesterday,21-6-8-a.mp3,
+u21_l6_p9,u21_l6,user,05.png,right,left,1,1,1,________?,I think Chinese is easier. ,中国語って日本語より難しい？,私は中国語のほうが簡単だと思うよ。,Is  Chinese more difficult than Japanese,Is||Chinese|more|difficult|than|Japanese,21-6-9-a.mp3,21-6-9-b.mp3

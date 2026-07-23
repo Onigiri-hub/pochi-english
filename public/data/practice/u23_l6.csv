@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u23_l6_p1,u23_l6,user,,right,none,1,,1,________.,,英語は多くの国で話されている。,,English is spoken in many countries,English|is|spoken|in|many|countries,23-3-1-a.mp3,
+u23_l6_p2,u23_l6,user,,right,none,1,,1,________.,,私は家族に愛されている。,,I am loved by my family,I|am|loved|by|my|family,23-3-3-a.mp3,
+u23_l6_p3,u23_l6,user,,right,none,1,,1,________.,,会議は中止された。,,The meeting was canceled,The|meeting|was|canceled,23-3-4-a.mp3,
+u23_l6_p4,u23_l6,user,,right,none,1,,1,________.,,そのケーキは母が作った。,,The cake was made by my mother,The|cake|was|made|by|my|mother,23-3-5-a.mp3,
+u23_l6_p5,u23_l6,user,,right,none,1,,1,________.,,私は1980年に生まれた。,,I was born in 1980,I|was|born|in|1980,23-3-8-a.mp3,
+u23_l6_p6,u23_l6,05.png,,left,none,1,,1,________.,,このアプリは無料で使えます。,,This app can be used for free,This|app|can|be|used|for|free,23-5-2-a.mp3,
+u23_l6_p7,u23_l6,05.png,,left,none,1,,1,________.,,この部屋は掃除されなければならない。,,This room must be cleaned,This|room|must|be|cleaned,23-5-4-a.mp3,
+u23_l6_p8,u23_l6,05.png,,left,none,1,,1,________.,,会議は中止されるかもしれない。,,The meeting may be canceled,The|meeting|may|be|canceled,23-5-7-a.mp3,
+u23_l6_p9,u23_l6,05.png,,left,none,1,,1,________?,,この物語はPochiが書いたのですか？,,Was this story written by Pochi,Was|this|story|written|by|Pochi,23-5-8-a.mp3,

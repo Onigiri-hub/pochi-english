@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u21_l8_p1,u21_l8,user,,right,none,1,,1,________.,,今日は調子がいい。（昨日より）,,I feel better today,I|feel|better|today,21-8-1-a.mp3,
+u21_l8_p2,u21_l8,user,,right,none,1,,1,________.,,天気が悪くなってきている。,,The weather is getting worse,The|weather|is|getting|worse,21-8-2-a.mp3,
+u21_l8_p3,u21_l8,user,,right,none,1,,1,________.,,もっと時間が必要だ。,,I need more time,I|need|more|time,21-8-3-a.mp3,
+u21_l8_p4,u21_l8,user,,right,none,1,,1,________.,,もっとゆっくり話してください。,,Please speak more slowly,Please|speak|more|slowly,21-8-4-a.mp3,
+u21_l8_p5,u21_l8,user,,right,none,1,,1,________.,,コーヒーの砂糖はもっと少なくしてほしい。,,I need less sugar in my coffee,I|need|less|sugar|in|my|coffee,21-8-5-a.mp3,
+u21_l8_p6,u21_l8,user,,right,none,1,,1,________.,,数学は英語より難しいと私は思う,,I think math is more difficult than English,I|think|math|is|more|difficult|than|English,21-8-6-a.mp3,
+u21_l8_p7,u21_l8,user,,right,none,1,,1,________.,,このバッグは私のより高い。,,This bag is more expensive than mine,This|bag|is|more|expensive|than|mine,21-8-7-a.mp3,
+u21_l8_p8,u21_l8,user,,right,none,1,,1,________?,,このゲームは前のより面白い？,,Is this game more interesting than the last one,Is|this|game|more|interesting|than|the|last|one,21-8-8-a.mp3,
