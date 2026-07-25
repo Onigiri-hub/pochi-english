@@ -48,8 +48,7 @@ u22_l10_p6,u22_l10,user,,right,none,1,,0,________.,,昨日新しいゲームを�
 u22_l10_p7,u22_l10,user,,right,none,1,,0,________?,,チケット取れた？,,Did you get a ticket,Did|you|get|a|ticket,22-10-7-a.mp3,
 u22_l10_p8,u22_l10,user,,right,none,1,,0,________.,,暗くなってきた。,,It's getting dark,It's|getting|dark,22-10-8-a.mp3,
 u22_l10_p9,u22_l10,user,,right,none,1,,0,________.,,空が曇ってきた。,,The sky is getting cloudy,The|sky|is|getting|cloudy,22-10-9-a.mp3,
-u22_l10_p10,u22_l10,user,,right,none,1,,0,________.,,そのゲーム面白くなってきた。,,The game is getting interesting,The|game|is|getting|interesting,22-10-10-a.mp3,
-u22_l10_p11,u22_l10,user,,right,none,1,,0,________.,,最初はつまらなかったんだけどね。,,"It was boring at first, though","It|was|boring|at|first,|though",22-10-11-a.mp3,
+u22_l10_p10,u22_l10,user,user,right,right,1,1,0,________.,"It was boring at first, though.",そのゲーム面白くなってきた。,最初はつまらなかったんだけどね。,The game is getting interesting,The|game|is|getting|interesting,22-10-10-a.mp3,22-10-11-a.mp3
 u22_l12_p1,u22_l12,05.png,05.png,left,left,1,1,0,________.,It looks like rain.,傘持っていきなよ。,雨が降りそうだから。,Take an umbrella with you,Take|an|umbrella|with|you,22-12-1-a.mp3,22-12-1-b.mp3
 u22_l12_p2,u22_l12,user,user,right,right,1,1,0,________.,I just cleaned the floor.,靴を脱いで。,床を掃除したばかりなんだ。,Take off your shoes|Take your shoes off,Take|off|your|shoes,22-12-2-a.mp3,22-12-2-b.mp3
 u22_l12_p3,u22_l12,05.png,05.png,left,left,1,1,0,"________, please.",The garbage truck will be here soon.,ゴミを出してくれる？,もうすぐゴミ収集車が来るから。,Take the trash out|Take out the trash,Take|the|trash|out,22-12-3-a.mp3,22-12-3-b.mp3

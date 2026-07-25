@@ -80,6 +80,13 @@ export default function Home() {
 
         </div>
 
+        <button
+          className="newsLink"
+          onClick={() => router.push("/news")}
+        >
+          📢 お知らせ
+        </button>
+
         <a href="https://ofuse.me/pochipochi"
           target="_blank"
           rel="noopener noreferrer"

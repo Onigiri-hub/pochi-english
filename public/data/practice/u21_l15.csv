@@ -1,5 +1,5 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u21_l15_p1,u21_l15,user,,right,none,1,,0,________.,,このテスト、思ったほど難しくなかったよ。 ,, This test wasn't as hard as I expected,|This|test|wasn't|as|hard|as|I|expected,21-2-2-a.mp3,
+u21_l15_p1,u21_l15,user,,right,none,1,,0,________.,,このテスト、思ったほど難しくなかったよ。 ,,This test wasn't as hard as I expected,This|test|wasn't|as|hard|as|I|expected,21-2-2-a.mp3,
 u21_l15_p2,u21_l15,05.png,user,left,right,1,1,0,________.,"Okay, I'll be there by eight. ",できるだけ早く来てね。 ,分かった、8時までには行くよ。,Please come as early as possible,Please|come|as|early|as|possible,21-4-1-a.mp3,21-4-1-b.mp3
 u21_l15_p3,u21_l15,05.png,,left,none,1,,0,________.,,この箱はあれより大きい。,,This box is bigger than that one,This|box|is|bigger|than|that|one,21-6-1-a.mp3,
 u21_l15_p4,u21_l15,05.png,,left,none,1,,0,________.,,今日は昨日より体調がいい。,,Today I feel better than yesterday,Today|I|feel|better|than|yesterday,21-6-4-a.mp3,

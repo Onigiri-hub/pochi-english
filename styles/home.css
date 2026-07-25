@@ -81,6 +81,24 @@
   transform: scale(0.95);
 }
 
+.newsLink {
+  display: block;
+  margin: 30px auto 0px;
+  padding: 8px 20px;
+  font-size: 13px;
+  color: #585858;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background 0.15s;
+}
+
+.newsLink:hover {
+  background: #e0e0e0;
+}
+
 .supportLink {
   display: block;
   text-align: center;
