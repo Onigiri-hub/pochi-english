@@ -3,8 +3,13 @@ import Navigation from "../components/Navigation";
 
 const newsItems = [
   {
-    date: "2026-07-25",
-    title: "サイトを公開しました",
+    date: "2026-07-26",
+    title: "Unit25まで追加しました",
+    body: "",
+  },
+  {
+    date: "2026-07-18",
+    title: "Pochi β版を公開しました",
     body: "ポチの英文法アプリをリリースしました。今後もコンテンツを追加していく予定です。どうぞよろしくお願いします！",
   },
 ];
@@ -41,9 +46,11 @@ export default function News() {
                 <p style={{ fontWeight: "bold", color: "#FF9F43", margin: "0 0 8px" }}>
                   {item.title}
                 </p>
-                <p style={{ fontSize: "14px", lineHeight: "1.6", margin: 0 }}>
-                  {item.body}
-                </p>
+                {item.body && (
+                  <p style={{ fontSize: "14px", lineHeight: "1.6", margin: 0 }}>
+                    {item.body}
+                  </p>
+                )}
               </div>
             ))
           )}
