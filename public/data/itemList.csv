@@ -1,4 +1,4 @@
-item_id,category,file_name,mofu_cost,unlock_condition,unlock_label,item_explanation
+item_id,category,file_name,mofu_cost,unlock_condition,unlock_label,item_name
 chara_01,avatar,01.png,0,none,,女の子①
 chara_02,avatar,02.png,0,none,,男の子①
 chara_03,avatar,03.png,0,none,,女の子②
