@@ -15,6 +15,7 @@ export default function AvatarSettings() {
   const [headItems, setHeadItems] = useState([]);
   const [eyeItems, setEyeItems] = useState([]);
   const [mouthItems, setMouthItems] = useState([]);
+  const [toast, setToast] = useState(null);
 
   const avatarCarouselRef = useRef(null);
   const headCarouselRef = useRef(null);
@@ -71,10 +72,18 @@ export default function AvatarSettings() {
     return () => unsubscribe();
   }, []);
 
+  const showToast = (msg, callback) => {
+    setToast(msg);
+    setTimeout(() => {
+      setToast(null);
+      if (callback) callback();
+    }, 1500);
+  };
+
   const handleSave = async () => {
     const user = auth.currentUser;
     if (!user) {
-      alert("ログイン状態が確認できません。");
+      showToast("ログイン状態が確認できません。");
       return;
     }
     try {
@@ -93,11 +102,10 @@ export default function AvatarSettings() {
         acc_eye: selectedEye,
         acc_mouth: selectedMouth,
       });
-      alert("アバターを保存しました！");
-      router.back();
+      showToast("アバターを保存しました！", () => router.back());
     } catch (error) {
       console.error(error);
-      alert("保存に失敗しました。");
+      showToast("保存に失敗しました。");
     }
   };
 
@@ -206,6 +214,19 @@ export default function AvatarSettings() {
 
       </div>
       <Navigation />
+
+      {toast && (
+        <div style={{
+          position: "fixed", bottom: "90px", left: "50%",
+          transform: "translateX(-50%)",
+          background: "rgba(50,50,50,0.85)",
+          color: "#fff", borderRadius: "20px",
+          padding: "10px 20px", fontSize: "13px",
+          whiteSpace: "nowrap", zIndex: 1001,
+        }}>
+          {toast}
+        </div>
+      )}
     </div>
   );
 }

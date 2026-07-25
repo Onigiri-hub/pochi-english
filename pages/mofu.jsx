@@ -351,7 +351,7 @@ export default function Mofu() {
                 onClick={() => setConfirmItem(null)}
                 style={{
                   flex: 1, padding: "10px", borderRadius: "12px",
-                  border: "1px solid #ddd", background: "#f5f5f5",
+                  border: "1px solid #bbb", background: "#d0d0d0",
                   fontSize: "14px", cursor: "pointer",
                 }}
               >
