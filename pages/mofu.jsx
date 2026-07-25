@@ -23,6 +23,8 @@ export default function Mofu() {
   const [purchasedIds, setPurchasedIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
   const [unlockedIds, setUnlockedIds] = useState(new Set())
+  const [confirmItem, setConfirmItem] = useState(null)
+  const [toast, setToast] = useState(null)
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
@@ -105,36 +107,37 @@ export default function Mofu() {
   }
     
 
-  const handlePurchase = async (item) => {
-    const user = auth.currentUser
-    if (!user) return
+  const showToast = (msg) => {
+    setToast(msg)
+    setTimeout(() => setToast(null), 2500)
+  }
 
-    const cost = parseInt(item.mofu_cost)
-
-    if (mofu < cost) {
-      alert("モフが足りないよ！")
+  const handlePurchase = (item) => {
+    if (mofu < parseInt(item.mofu_cost)) {
+      showToast("モフが足りないよ！")
       return
     }
+    setConfirmItem(item)
+  }
 
-    const confirmed = window.confirm(`「${item.item_id}」を${cost}モフで購入しますか？`)
-    if (!confirmed) return
-
+  const executePurchase = async () => {
+    const item = confirmItem
+    setConfirmItem(null)
+    const user = auth.currentUser
+    if (!user) return
+    const cost = parseInt(item.mofu_cost)
     try {
-      // モフを消費
       await spendMofu(cost)
       setMofu((prev) => prev - cost)
-
-      // Firestoreのitemsに追加
       await setDoc(doc(db, "users", user.uid, "items", item.item_id), {
         purchased: true,
         purchasedAt: new Date(),
       })
-
       setPurchasedIds((prev) => new Set([...prev, item.item_id]))
-      alert("購入完了！アバター設定画面で着せ替えできるよ🎉")
+      showToast("購入完了！アバター設定画面で着せ替えできるよ🎉")
     } catch (e) {
       console.error(e)
-      alert("購入に失敗しました。")
+      showToast("購入に失敗しました。")
     }
   }
 
@@ -320,6 +323,68 @@ export default function Mofu() {
         <div style={{ height: "80px" }} />
       </div>
       <Navigation />
+
+      {/* 購入確認モーダル */}
+      {confirmItem && (
+        <div style={{
+          position: "fixed", inset: 0,
+          background: "rgba(0,0,0,0.4)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          zIndex: 1000,
+        }}>
+          <div style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "28px 24px",
+            width: "280px",
+            textAlign: "center",
+          }}>
+            <p style={{ fontSize: "15px", marginBottom: "8px", fontWeight: "bold" }}>
+              購入確認
+            </p>
+            <p style={{ fontSize: "13px", color: "#555", marginBottom: "20px", lineHeight: "1.6" }}>
+              {confirmItem.item_name || confirmItem.item_id} を<br />
+              <span style={{ color: "#FF9F43", fontWeight: "bold" }}>{confirmItem.mofu_cost}モフ</span> で購入しますか？
+            </p>
+            <div style={{ display: "flex", gap: "12px" }}>
+              <button
+                onClick={() => setConfirmItem(null)}
+                style={{
+                  flex: 1, padding: "10px", borderRadius: "12px",
+                  border: "1px solid #ddd", background: "#f5f5f5",
+                  fontSize: "14px", cursor: "pointer",
+                }}
+              >
+                キャンセル
+              </button>
+              <button
+                onClick={executePurchase}
+                style={{
+                  flex: 1, padding: "10px", borderRadius: "12px",
+                  border: "none", background: "#FF9F43",
+                  color: "#fff", fontSize: "14px", fontWeight: "bold", cursor: "pointer",
+                }}
+              >
+                購入する
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* トースト通知 */}
+      {toast && (
+        <div style={{
+          position: "fixed", bottom: "90px", left: "50%",
+          transform: "translateX(-50%)",
+          background: "rgba(50,50,50,0.85)",
+          color: "#fff", borderRadius: "20px",
+          padding: "10px 20px", fontSize: "13px",
+          whiteSpace: "nowrap", zIndex: 1001,
+        }}>
+          {toast}
+        </div>
+      )}
     </div>
   )
 }
