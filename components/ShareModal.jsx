@@ -164,10 +164,11 @@ export default function ShareModal({ badge, onClose }) {
 
         {/* コントロールパネル */}
         <div style={{
-          width: "min(92vw, 460px)",
+          width: "min(88vw, 460px)",
+          boxSizing: "border-box",
           background: "#fff",
           borderRadius: "18px",
-          padding: "18px 18px 20px",
+          padding: "18px 26px 20px",
           display: "flex",
           flexDirection: "column",
           gap: "16px",
@@ -279,7 +280,7 @@ export default function ShareModal({ badge, onClose }) {
 
         {/* ボタン */}
         <div style={{
-          width: "min(92vw, 460px)",
+          width: "min(88vw, 460px)",
           display: "flex",
           gap: "10px",
         }}>
