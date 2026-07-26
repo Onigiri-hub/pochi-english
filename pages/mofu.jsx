@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation"
-import { getMofu, spendMofu } from "../utils/mofuManager"
+import { spendMofu } from "../utils/mofuManager"
 import { loadCSV } from "../utils/csvLoader"
 import { auth, db } from "../firebase"
 import { doc, getDoc, setDoc, collection, getDocs } from "firebase/firestore"
@@ -127,7 +127,7 @@ export default function Mofu() {
     if (!user) return
     const cost = parseInt(item.mofu_cost)
     try {
-      await spendMofu(cost)
+      await spendMofu(mofu, cost)
       setMofu((prev) => prev - cost)
       await setDoc(doc(db, "users", user.uid, "items", item.item_id), {
         purchased: true,

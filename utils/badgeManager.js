@@ -31,25 +31,6 @@ export async function getBadges() {
   }
 }
 
-// ===================================
-// バッジを獲得済みに追加
-// ===================================
-async function earnBadge(badgeId) {
-  const user = auth.currentUser;
-  if (!user) return;
-
-  try {
-    const ref = doc(db, "users", user.uid, "badges", "earned");
-    const snap = await getDoc(ref);
-    const current = snap.exists() ? (snap.data().list || []) : [];
-
-    if (current.includes(badgeId)) return;
-
-    await setDoc(ref, { list: [...current, badgeId] });
-  } catch (e) {
-    console.error("バッジ保存失敗:", e);
-  }
-}
 
 // ===================================
 // バッジ条件チェック（クリア画面で呼ぶ）
@@ -64,12 +45,14 @@ export async function checkAndEarnBadges({
   isPerfect = false,
   completedUnitCount = 0,
 }) {
+  const user = auth.currentUser;
+  if (!user) return [];
+
   const earned = await getBadges();
   const newBadges = [];
 
-  const check = async (id, condition) => {
+  const check = (id, condition) => {
     if (condition && !earned.includes(id)) {
-      await earnBadge(id);
       newBadges.push(id);
     }
   };
@@ -119,6 +102,16 @@ export async function checkAndEarnBadges({
   await check("unit_clear_50", completedUnitCount >= 50);
   await check("unit_clear_30", completedUnitCount >= 30);
   await check("unit_clear_40", completedUnitCount >= 40);
+
+  // 新しいバッジがあれば1回だけ書き込む
+  if (newBadges.length > 0) {
+    try {
+      const ref = doc(db, "users", user.uid, "badges", "earned");
+      await setDoc(ref, { list: [...earned, ...newBadges] });
+    } catch (e) {
+      console.error("バッジ保存失敗:", e);
+    }
+  }
 
   return newBadges;
 }

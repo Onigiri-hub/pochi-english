@@ -139,15 +139,12 @@ export async function addTotalRounds() {
 // ===================================
 // モフを消費する
 // ===================================
-export async function spendMofu(amount) {
+export async function spendMofu(currentMofu, amount) {
   const user = auth.currentUser
-  if (!user) return
+  if (!user) return currentMofu
 
+  const newMofu = Math.max(0, currentMofu - amount)
   const userRef = doc(db, "users", user.uid)
-  const snap = await getDoc(userRef)
-  const current = snap.exists() ? snap.data().mofu || 0 : 0
-  const newMofu = Math.max(0, current - amount)
-
   await setDoc(userRef, { mofu: newMofu }, { merge: true })
   return newMofu
 }

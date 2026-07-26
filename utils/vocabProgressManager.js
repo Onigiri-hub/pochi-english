@@ -55,13 +55,9 @@ export async function saveVocabMastery(section, modeKey, masteryMap) {
   try {
     // 単語ごとにvocab_progressに保存
     await Promise.all(
-      Object.entries(masteryMap).map(async ([wordId, data]) => {
+      Object.entries(masteryMap).map(([wordId, data]) => {
         const progressRef = doc(db, "users", user.uid, "vocab_progress", wordId)
-        const snap = await getDoc(progressRef)
-        const existing = snap.exists() ? snap.data() : {}
-
-        await setDoc(progressRef, {
-          ...existing,
+        return setDoc(progressRef, {
           section_id: section,
           [modeKey]: data,
           lastStudied: data.lastStudied || new Date().toISOString()
