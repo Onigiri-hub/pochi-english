@@ -103,9 +103,9 @@ export default function Typing() {
           const dateB = masteryData[b.word_id]?.lastStudied ?? "0"
           return dateA.localeCompare(dateB)
         })
-        selectedWords = sorted.slice(0, 20)
+        selectedWords = sorted.slice(0, 10)
       } else {
-        selectedWords = shuffle(filtered).slice(0, 20)
+        selectedWords = shuffle(filtered).slice(0, 10)
       }
 
       setWords(selectedWords)
@@ -116,7 +116,7 @@ export default function Typing() {
       setDoneWords(new Set(roundProgress.doneWords))
 
       // ★ ロード時点で✓がついてないなら初クリア扱い
-      const totalWords = 20
+      const totalWords = 10
       const alreadyCleared = (roundProgress.doneWords?.length || 0) >= totalWords
       isFirstClearRef.current = !alreadyCleared
 

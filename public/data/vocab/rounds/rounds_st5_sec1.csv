@@ -7,7 +7,7 @@ st5_sec1,r389,5,fourChoices_ja2en,v1243,v1262,0
 st5_sec1,r390,6,fourChoices_ja2en,v1257,v1276,0
 st5_sec1,r391,7,review_ja2en,v1242,v1276,1
 st5_sec1,r392,8,review_ja2en,v1242,v1276,1
-st5_sec1,r393,9,typing,v1243,v1262,0
-st5_sec1,r394,10,typing,v1257,v1276,0
-st5_sec1,r395,11,review_typing,v1242,v1276,1
-st5_sec1,r396,12,review_typing,v1242,v1276,1
+st5_sec1,r393,9,typing,v1243,v1252,0
+st5_sec1,r394,10,typing,v1253,v1262,0
+st5_sec1,r395,11,typing,v1263,v1272,0
+st5_sec1,r396,12,typing,v1273,v1276,0
