@@ -6,6 +6,7 @@ import { useProfileContext } from "../utils/ProfileContext"
 import { updateStreak, calcMofu, addMofu, addTotalRounds } from "../utils/mofuManager"
 import { db, auth } from "../firebase"
 import { loadCSV } from "../utils/csvLoader"
+import ShareModal from "../components/ShareModal"
 
 export default function VocabComplete() {
   const router = useRouter()
@@ -22,6 +23,7 @@ export default function VocabComplete() {
   const [showRest, setShowRest] = useState(false)
   const [streakCount, setStreakCount] = useState(0)
   const [showStreakPopup, setShowStreakPopup] = useState(false)
+  const [shareTarget, setShareTarget] = useState(null)
 
   useEffect(() => {
     if (!router.isReady) return
@@ -264,6 +266,22 @@ export default function VocabComplete() {
                   <div style={{ fontSize: "32px" }}>{badge.icon}</div>
                   <div style={{ fontSize: "16px", fontWeight: "bold" }}>{badge.name}</div>
                   <div style={{ fontSize: "13px", color: "#888", marginTop: "4px" }}>{badge.description}</div>
+                  <button
+                    onClick={() => { setShowPopup(false); setShareTarget(badge) }}
+                    style={{
+                      marginTop: "10px",
+                      padding: "8px 20px",
+                      borderRadius: "16px",
+                      border: "none",
+                      background: "#f4a6c0",
+                      color: "#fff",
+                      fontWeight: "bold",
+                      fontSize: "13px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    shareする
+                  </button>
                 </div>
               ))}
               <button
@@ -285,6 +303,11 @@ export default function VocabComplete() {
             </div>
           </>
         )}
+
+        {shareTarget && (
+          <ShareModal badge={shareTarget} onClose={() => setShareTarget(null)} />
+        )}
+
         {showRest && (
           <div className="bottomArea">
             <div className="completeBottom">

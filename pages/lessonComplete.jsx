@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
 import { updateStreak, calcMofu, addMofu, addTotalLessons } from "../utils/mofuManager"
+import ShareModal from "../components/ShareModal"
 
 export default function LessonComplete() {
   const router = useRouter()
@@ -22,6 +23,7 @@ export default function LessonComplete() {
   const [showStreakPopup, setShowStreakPopup] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
   const [showRest, setShowRest] = useState(false)
+  const [shareTarget, setShareTarget] = useState(null)
 
   useEffect(() => {
     if (!unit) return;
@@ -287,6 +289,22 @@ export default function LessonComplete() {
                   <div style={{ fontSize: "32px" }}>{badge.icon}</div>
                   <div style={{ fontSize: "16px", fontWeight: "bold" }}>{badge.name}</div>
                   <div style={{ fontSize: "13px", color: "#888", marginTop: "4px" }}>{badge.description}</div>
+                  <button
+                    onClick={() => { setShowPopup(false); setShareTarget(badge) }}
+                    style={{
+                      marginTop: "10px",
+                      padding: "8px 20px",
+                      borderRadius: "16px",
+                      border: "none",
+                      background: "#f4a6c0",
+                      color: "#fff",
+                      fontWeight: "bold",
+                      fontSize: "13px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    shareする
+                  </button>
                 </div>
               ))}
               <button
@@ -308,6 +326,11 @@ export default function LessonComplete() {
             </div>
           </>
         )}
+
+        {shareTarget && (
+          <ShareModal badge={shareTarget} onClose={() => setShareTarget(null)} />
+        )}
+
         {showRest && (
           <div className="bottomArea">
             <div className="completeBottom">

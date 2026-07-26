@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation";
+import ShareModal from "../components/ShareModal";
 import { auth, db } from "../firebase";
 import { doc, getDoc, setDoc, collection, query, where, getDocs, orderBy } from "firebase/firestore";
 import { Bar } from "react-chartjs-2";
@@ -26,6 +27,7 @@ export default function Progress() {
   const [earnedBadges, setEarnedBadges] = useState([])
   const [badgeList, setBadgeList] = useState([])
   const [startDate, setStartDate] = useState(null)
+  const [shareTarget, setShareTarget] = useState(null)
   const router = useRouter();
   const { profile, streak } = useProfileContext()
 
@@ -256,11 +258,13 @@ export default function Progress() {
               return (
                 <div
                   key={badge.badge_id}
+                  onClick={earned ? () => setShareTarget(badge) : undefined}
                   style={{
                     textAlign: "center",
                     opacity: earned ? 1 : 0.35,
+                    cursor: earned ? "pointer" : "default",
                   }}
-                  title={badge.description}
+                  title={earned ? `${badge.name}（タップしてシェア）` : badge.description}
                 >
                   <img
                     src={earned
@@ -292,6 +296,13 @@ export default function Progress() {
 
       </div>
       <Navigation />
+
+      {shareTarget && (
+        <ShareModal
+          badge={shareTarget}
+          onClose={() => setShareTarget(null)}
+        />
+      )}
     </div>
   );
 }

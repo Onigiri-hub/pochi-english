@@ -100,8 +100,26 @@ export default function Settings() {
           <h2>設定</h2>
         </div>
 
+        {/* アバター変更リンク */}
+        <div style={{ textAlign: "left", margin: "60px 0 0" }}>
+          <button
+            onClick={() => router.push("/avatar-settings")}
+            style={{
+              background: "none",
+              border: "none",
+              fontSize: "13px",
+              color: "#6f70a7",
+              fontWeight: "bold",
+              cursor: "pointer",
+              padding: "4px 0",
+            }}
+          >
+            ▶ アバターを変更する
+          </button>
+        </div>
+
         {/* ニックネーム */}
-        <section className="settingSection" style={{ marginTop: "60px" }}>
+        <section className="settingSection" style={{ marginTop: "20px" }}>
           <h3>ニックネームの変更</h3>
           <input
             type="text"

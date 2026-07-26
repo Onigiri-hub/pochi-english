@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Script from "next/script"
-import { Noto_Sans_JP } from "next/font/google"
+import { Noto_Sans_JP, M_PLUS_Rounded_1c } from "next/font/google"
 import "../styles/home.css";
 import "../styles/profile.css";
 import "../styles/unitList.css";
@@ -19,6 +19,13 @@ const noto = Noto_Sans_JP({
   weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
+})
+
+const mplus = M_PLUS_Rounded_1c({
+  weight: ["700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mplus",
 })
 
 const PUBLIC_PAGES = ["/", "/terms"]
@@ -197,7 +204,7 @@ export default function MyApp({ Component, pageProps }) {
             strategy="afterInteractive"
           />
         )}
-        <main className={noto.className}>
+        <main className={`${noto.className} ${mplus.variable}`}>
           <Component {...pageProps} />
         </main>
       </ProfileContext.Provider>
