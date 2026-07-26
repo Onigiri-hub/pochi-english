@@ -20,6 +20,25 @@ import { getBadges, loadBadgeList } from "../utils/badgeManager";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
+const BADGE_CATEGORIES = [
+  {
+    label: "連続記録",
+    ids: ["streak_3", "streak_7", "streak_10", "streak_30", "streak_50", "streak_100", "streak_200", "streak_365"],
+  },
+  {
+    label: "英文法レッスン",
+    ids: ["first_clear", "lesson_5", "lesson_10", "lesson_50", "lesson_100", "lesson_200"],
+  },
+  {
+    label: "英文法Unitクリア",
+    ids: ["unit_clear_5", "unit_clear_10", "unit_clear_20", "unit_clear_30", "unit_clear_40", "unit_clear_50"],
+  },
+  {
+    label: "英単語レッスン",
+    ids: ["round_5", "round_10", "round_20", "round_30", "round_50", "round_100", "round_200", "round_500"],
+  },
+]
+
 export default function Progress() {
   const [loading, setLoading] = useState(true);
   const [historyData, setHistoryData] = useState([]);
@@ -242,55 +261,78 @@ export default function Progress() {
           />
         </div>
 
-        {/* バッジ一覧 */}
+        {/* バッジ一覧（カテゴリ別） */}
         <div style={{ marginTop: "50px" }}>
           <h3 style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>
             実績バッジ
           </h3>
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gap: "8px",
-          }}>
- 
-            {badgeList.map(badge => {
-              const earned = earnedBadges.includes(badge.badge_id)
-              return (
-                <div
-                  key={badge.badge_id}
-                  onClick={earned ? () => setShareTarget(badge) : undefined}
-                  style={{
-                    textAlign: "center",
-                    opacity: earned ? 1 : 0.35,
-                    cursor: earned ? "pointer" : "default",
-                  }}
-                  title={earned ? `${badge.name}（タップしてシェア）` : badge.description}
-                >
-                  <img
-                    src={earned
-                      ? `/images/badges/${badge.image_earned}`
-                      : `/images/badges/${badge.image_locked}`
-                    }
-                    alt={badge.name}
-                    style={{
-                      width: "70%",
-                      aspectRatio: "1",
-                      objectFit: "contain",
-                      borderRadius: "12px",
-                    }}
-                  />
-                  <div style={{
-                    fontSize: "10px",
-                    color: "#555",
-                    marginTop: "4px",
-                    lineHeight: 1.2,
-                  }}>
-                    {badge.name}
-                  </div>
+          {BADGE_CATEGORIES.map(category => {
+            // 獲得済み + 次の1個だけ表示
+            const visible = []
+            let nextShown = false
+            for (const id of category.ids) {
+              if (earnedBadges.includes(id)) {
+                visible.push({ id, earned: true })
+              } else if (!nextShown) {
+                visible.push({ id, earned: false })
+                nextShown = true
+              } else {
+                break
+              }
+            }
+            if (visible.length === 0) return null
+            return (
+              <div key={category.label} style={{ marginBottom: "32px" }}>
+                <div style={{ fontSize: "13px", fontWeight: "bold", color: "#888", marginBottom: "12px" }}>
+                  {category.label}
                 </div>
-              )
-            })}
-          </div>
+                <div style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(4, 1fr)",
+                  gap: "8px",
+                }}>
+                  {visible.map(({ id, earned }) => {
+                    const badge = badgeList.find(b => b.badge_id === id)
+                    if (!badge) return null
+                    return (
+                      <div
+                        key={id}
+                        onClick={earned ? () => setShareTarget(badge) : undefined}
+                        style={{
+                          textAlign: "center",
+                          opacity: earned ? 1 : 0.35,
+                          cursor: earned ? "pointer" : "default",
+                        }}
+                        title={earned ? `${badge.name}（タップしてシェア）` : badge.description}
+                      >
+                        <img
+                          src={earned
+                            ? `/images/badges/${badge.image_earned}`
+                            : `/images/badges/${badge.image_locked}`
+                          }
+                          alt={badge.name}
+                          style={{
+                            width: "70%",
+                            aspectRatio: "1",
+                            objectFit: "contain",
+                            borderRadius: "12px",
+                          }}
+                        />
+                        <div style={{
+                          fontSize: "10px",
+                          color: "#555",
+                          marginTop: "4px",
+                          lineHeight: 1.2,
+                        }}>
+                          {badge.name}
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
         </div>
 
 

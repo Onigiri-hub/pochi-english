@@ -62,6 +62,7 @@ export async function checkAndEarnBadges({
   completedStages = [],
   isUnitComplete = null,
   isPerfect = false,
+  completedUnitCount = 0,
 }) {
   const earned = await getBadges();
   const newBadges = [];
@@ -77,6 +78,9 @@ export async function checkAndEarnBadges({
   await check("first_clear", totalLessons >= 1);
   await check("lesson_5", totalLessons >= 5);
   await check("lesson_10", totalLessons >= 10);
+  await check("lesson_50", totalLessons >= 50);
+  await check("lesson_100", totalLessons >= 100);
+  await check("lesson_200", totalLessons >= 200);
 
   // Unit完了系
   if (isUnitComplete) {
@@ -89,6 +93,9 @@ export async function checkAndEarnBadges({
   await check("streak_10", streak >= 10);
   await check("streak_30", streak >= 30);
   await check("streak_50", streak >= 50);
+  await check("streak_100", streak >= 100);
+  await check("streak_200", streak >= 200);
+  await check("streak_365", streak >= 365);
 
   // Stage完了系
   for (const stageId of completedStages) {
@@ -101,6 +108,17 @@ export async function checkAndEarnBadges({
   await check("round_20", totalRounds >= 20);
   await check("round_30", totalRounds >= 30);
   await check("round_50", totalRounds >= 50);
+  await check("round_100", totalRounds >= 100);
+  await check("round_200", totalRounds >= 200);
+  await check("round_500", totalRounds >= 500);
+
+  // UnitクリアCount系
+  await check("unit_clear_5", completedUnitCount >= 5);
+  await check("unit_clear_10", completedUnitCount >= 10);
+  await check("unit_clear_20", completedUnitCount >= 20);
+  await check("unit_clear_50", completedUnitCount >= 50);
+  await check("unit_clear_30", completedUnitCount >= 30);
+  await check("unit_clear_40", completedUnitCount >= 40);
 
   return newBadges;
 }

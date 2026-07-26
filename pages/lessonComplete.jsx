@@ -63,6 +63,7 @@ export default function LessonComplete() {
           totalRounds,
           isUnitComplete: null,
           isPerfect: false,
+          completedUnitCount: completedUnits.size,
         })
 
         if (newBadgeIds.length > 0) {
@@ -118,6 +119,7 @@ export default function LessonComplete() {
         totalRounds,
         isUnitComplete: isUnitComplete ? String(unit) : null,
         isPerfect: isPerfect === "true",
+        completedUnitCount: completedUnits.size + (isUnitComplete ? 1 : 0),
       })
 
       // 6. csvからバッジ一覧を読み込んで、IDからオブジェクトに変換

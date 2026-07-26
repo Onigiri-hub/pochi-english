@@ -127,6 +127,7 @@ export default function MyApp({ Component, pageProps }) {
           totalLessons: currentTotalLessons,
           totalRounds: currentTotalRounds,
           isPerfect: false,
+          completedUnitCount: completedUnitIds.size,
         }
 
         if (completedUnitIds.size > 0) {
