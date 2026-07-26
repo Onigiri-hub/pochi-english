@@ -40,8 +40,6 @@ export default function ShareCard({ bgIndex, bgHue, bgSat, textLightness, showNa
     }
   }, [comment])
 
-  const today = new Date()
-  const dateStr = `${today.getFullYear()}.${today.getMonth() + 1}.${today.getDate()}`
   const textColor = `hsl(0, 0%, ${textLightness}%)`
 
   return (
@@ -152,18 +150,6 @@ export default function ShareCard({ bgIndex, bgHue, bgSat, textLightness, showNa
         </div>
       )}
 
-      {/* 日付（白固定） */}
-      <div style={{
-        position: "absolute",
-        right: "40px",
-        bottom: "6px",
-        fontSize: "28px",
-        fontWeight: 700,
-        color: "#ffffff",
-        fontFamily: "var(--font-mplus)",
-      }}>
-        {dateStr}
-      </div>
     </div>
   )
 }
