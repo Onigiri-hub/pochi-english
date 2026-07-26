@@ -12,6 +12,7 @@ export default function ShareModal({ badge, onClose }) {
 
   const cardRef = useRef(null)
   const stageRef = useRef(null)
+  const scaleWrapperRef = useRef(null)
   const [stageWidth, setStageWidth] = useState(340)
 
   const comment = badge?.share_text || badge?.description || badge?.name || ""
@@ -35,6 +36,15 @@ export default function ShareModal({ badge, onClose }) {
   async function captureCard() {
     const { default: html2canvas } = await import("html2canvas")
     await document.fonts.ready
+
+    // キャプチャ中はスケールを解除して原寸1080×1080でキャプチャ
+    const stage = stageRef.current
+    const wrapper = scaleWrapperRef.current
+    stage.style.overflow = "visible"
+    stage.style.width = "1080px"
+    stage.style.height = "1080px"
+    wrapper.style.transform = "none"
+
     const canvas = await html2canvas(cardRef.current, {
       width: 1080,
       height: 1080,
@@ -42,6 +52,13 @@ export default function ShareModal({ badge, onClose }) {
       backgroundColor: null,
       useCORS: true,
     })
+
+    // 元に戻す
+    wrapper.style.transform = `scale(${scale})`
+    stage.style.overflow = "hidden"
+    stage.style.width = ""
+    stage.style.height = ""
+
     return canvas
   }
 
@@ -127,7 +144,7 @@ export default function ShareModal({ badge, onClose }) {
             position: "relative",
           }}
         >
-          <div style={{
+          <div ref={scaleWrapperRef} style={{
             width: "1080px",
             height: "1080px",
             transform: `scale(${scale})`,
