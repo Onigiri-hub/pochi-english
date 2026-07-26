@@ -140,7 +140,7 @@ export default function ShareCard({ bgIndex, bgHue, bgSat, textLightness, showNa
         <div style={{
           position: "absolute",
           right: "40px",
-          bottom: "32px",
+          bottom: "16px",
           fontSize: "40px",
           fontWeight: 700,
           color: "#ffffff",
