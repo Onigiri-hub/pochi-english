@@ -170,6 +170,8 @@ export default function Progress() {
 
         <div className="profileSection">
 
+          <h2 className="nickname">{profile ? profile.nickname : ""}</h2>
+
           <div className="avatarCircle" style={{ position: "relative", cursor: "pointer" }} onClick={() => router.push("/avatar-settings")}>
             {/* レイヤー1: アバター（ベース） */}
             <img
@@ -203,7 +205,21 @@ export default function Progress() {
             )}
           </div>
 
-          <h2 className="nickname">{profile ? profile.nickname : ""}</h2>
+          <button
+            onClick={() => router.push("/avatar-settings")}
+            style={{
+              background: "none",
+              border: "none",
+              fontSize: "13px",
+              color: "#6f70a7",
+              fontWeight: "bold",
+              cursor: "pointer",
+              padding: "4px 0",
+              marginTop: "8px",
+            }}
+          >
+            ▶ アバターを変更する
+          </button>
         </div>
 
         <div className="statsGrid">
