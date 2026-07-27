@@ -10,6 +10,7 @@ export default function Settings() {
   const [chipSoundOn, setChipSoundOn] = useState(true);
   const [autoPlayOn, setAutoPlayOn] = useState(true);
   const [showJaTranslation, setShowJaTranslation] = useState(true);
+  const [savedValues, setSavedValues] = useState(null);
 
   const router = useRouter();
   const { profile, setProfile } = useProfileContext();
@@ -18,14 +19,26 @@ export default function Settings() {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (!user) return;
       if (profile) {
-        setNickname(profile.nickname || "user");
-        setChipSoundOn(localStorage.getItem("chipSoundOn") === "true");
-        setAutoPlayOn(localStorage.getItem("autoPlayOn") !== "false");
-        setShowJaTranslation(localStorage.getItem("showJaTranslation") !== "false");
+        const nick = profile.nickname || "user";
+        const chip = localStorage.getItem("chipSoundOn") !== "false";
+        const auto = localStorage.getItem("autoPlayOn") !== "false";
+        const ja = localStorage.getItem("showJaTranslation") !== "false";
+        setNickname(nick);
+        setChipSoundOn(chip);
+        setAutoPlayOn(auto);
+        setShowJaTranslation(ja);
+        setSavedValues({ nickname: nick, chipSoundOn: chip, autoPlayOn: auto, showJaTranslation: ja });
       }
     });
     return () => unsubscribe();
   }, []);
+
+  const isDirty = savedValues !== null && (
+    nickname !== savedValues.nickname ||
+    chipSoundOn !== savedValues.chipSoundOn ||
+    autoPlayOn !== savedValues.autoPlayOn ||
+    showJaTranslation !== savedValues.showJaTranslation
+  );
 
   const handleReset = async () => {
     const user = auth.currentUser;
@@ -84,6 +97,7 @@ export default function Settings() {
       localStorage.setItem("autoPlayOn", autoPlayOn);
       localStorage.setItem("showJaTranslation", showJaTranslation);
       setProfile({ ...profile, nickname });
+      setSavedValues({ nickname, chipSoundOn, autoPlayOn, showJaTranslation });
       alert("設定を保存しました！");
       router.push("/progress");
     } catch (error) {
@@ -145,7 +159,16 @@ export default function Settings() {
         </section>
 
         <div className="actionButtons">
-          <button className="saveBtn" onClick={handleSave}>設定を保存する</button>
+          <button
+            className="saveBtn"
+            onClick={isDirty ? handleSave : undefined}
+            style={{
+              opacity: isDirty ? 1 : 0.4,
+              cursor: isDirty ? "pointer" : "default",
+            }}
+          >
+            設定を保存する
+          </button>
           <ul className="links">
             <li onClick={() => router.push("/help")} style={{ cursor: "pointer" }}>ヘルプ</li>
             <li onClick={() => router.push("/terms")} style={{ cursor: "pointer" }}>利用規約とプライバシーポリシー</li>
