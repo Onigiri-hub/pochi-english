@@ -205,21 +205,23 @@ export default function Progress() {
             )}
           </div>
 
-          <button
-            onClick={() => router.push("/avatar-settings")}
-            style={{
-              background: "none",
-              border: "none",
-              fontSize: "13px",
-              color: "#6f70a7",
-              fontWeight: "bold",
-              cursor: "pointer",
-              padding: "4px 0",
-              marginTop: "8px",
-            }}
-          >
-            ▶ アバターを変更する
-          </button>
+          <div style={{ width: "100%", textAlign: "right" }}>
+            <button
+              onClick={() => router.push("/avatar-settings")}
+              style={{
+                background: "none",
+                border: "none",
+                fontSize: "13px",
+                color: "#6f70a7",
+                fontWeight: "bold",
+                cursor: "pointer",
+                padding: "4px 0",
+                marginTop: "8px",
+              }}
+            >
+              ▶ アバターを変更する
+            </button>
+          </div>
         </div>
 
         <div className="statsGrid">
