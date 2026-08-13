@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u30_l12_p1,u30_l12,user,user,right,right,1,1,0,________?,You look busy.,手伝ってほしい？,忙しそうだもん。,Do you want me to help you,Do|you|want|me|to|help|you,30-3-4-a.mp3,30-3-4-b.mp3
+u30_l12_p2,u30_l12,user,05.png,right,left,1,1,0,________.,We have a big game soon.,コーチはもっと練習してほしいって。,もうすぐ大事な試合だからね。,My coach wants us to practice more,My|coach|wants|us|to|practice|more,30-3-7-a.mp3,30-3-7-b.mp3
+u30_l12_p3,u30_l12,user,,right,none,1,,0,________.,,この箱、一人で運べるくらい軽い。,,This box is light enough to carry by myself,This|box|is|light|enough|to|carry|by|myself,30-5-3-a.mp3,
+u30_l12_p4,u30_l12,user,user,right,right,1,1,0,________.,Just barely!,彼はバスに間に合うくらい速く走った。,ギリギリだったけどね！,He ran fast enough to catch the bus,He|ran|fast|enough|to|catch|the|bus,30-5-7-a.mp3,30-5-7-b.mp3
+u30_l12_p5,u30_l12,user,user,right,right,1,1,0,________.,Maybe tomorrow.,疲れすぎて今夜は出かけられない。,明日ならいけるかも。,I'm too tired to go out tonight,I'm|too|tired|to|go|out|tonight,30-7-1-a.mp3,30-7-1-b.mp3
+u30_l12_p6,u30_l12,05.png,,left,none,1,,0,________.,,彼はみんなに聞こえるように大きな声で話した。,,He spoke loudly so that everyone could hear him,He|spoke|loudly|so|that|everyone|could|hear|him,30-9-4-a.mp3,
+u30_l12_p7,u30_l12,05.png,05.png,left,left,1,1,0,________.,You always do!,忘れないようにメモしといて。,いつも忘れるんだから！,Write it down so that you won't forget,Write|it|down|so|that|you|won't|forget,30-9-6-a.mp3,30-9-6-b.mp3
+u30_l12_p8,u30_l12,user,,right,none,1,,0,________.,,彼女は英語を上達させるために毎日練習してる。,,She practices every day to improve her English,She|practices|every|day|to|improve|her|English,30-9-9-a.mp3,
+u30_l12_p9,u30_l12,user,05.png,right,left,1,1,0,________.,Fingers crossed!,彼女はパーティーに招待されたいと思ってる。,うまくいくといいね。,She hopes to be invited to the party,She|hopes|to|be|invited|to|the|party,30-11-3-a.mp3,30-11-3-b.mp3
+u30_l12_p10,u30_l12,05.png,,left,none,1,,0,________.,,笑われるのが好きな人なんていないよ。,,Nobody likes to be laughed at,Nobody|likes|to|be|laughed|at,30-11-6-a.mp3,

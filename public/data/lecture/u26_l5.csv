@@ -1,0 +1,23 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u26_l5_p1,u26_l5,1,今度は確信度ランキング！,26-5-1,image_top
+u26_l5_p2,u26_l5,2,"「絶対！」とか、「たぶん…」とかの
+自信の程を表す言葉だよ！",26-5-1,image_top
+u26_l5_p3,u26_l5,3,ノミネートしたのは、こちらの副詞たち！,26-5-1,image_top
+u26_l5_p4,u26_l5,4,"maybe
+definitely
+probably
+possibly",26-5-1,image_top
+u26_l5_p5,u26_l5,5,今回は、自信がない順に行ってみよう！,26-5-1,image_top
+u26_l5_p6,u26_l5,6,4位:確信度10〜40%→possibly,26-5-2-1,image_top
+u26_l5_p7,u26_l5,7,"I will possibly go to the party.
+そのパーティーに行く可能性は、あるよ。",26-5-2-2,image_top
+u26_l5_p8,u26_l5,8,3位:確信度30〜50%→maybe,26-5-3-1,image_top
+u26_l5_p9,u26_l5,9,"Maybe I'll go to the party.
+パーティー行くかも。",26-5-3-2,image_top
+u26_l5_p10,u26_l5,10,2位:確信度70〜90%→probably,26-5-4-1,image_top
+u26_l5_p11,u26_l5,11,"I will probably go to the party.
+たぶんパーティーに行くよ。",26-5-4-2,image_top
+u26_l5_p12,u26_l5,12,1位:確信度95〜100%→definitely,26-5-5-1,image_top
+u26_l5_p13,u26_l5,13,"I will definitely go to the party.
+絶対にパーティーに行くよ!",26-5-5-2,image_top
+u26_l5_p14,u26_l5,14,さあ、これで自信のほどはどれくらいか伝えられるね！,26-5-6,image_top

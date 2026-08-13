@@ -1,0 +1,13 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u26_l4_p1,u26_l4,user,,right,none,1,,1,________.,,私はいつも朝ごはんを食べる。,,I always eat breakfast,I|always|eat|breakfast,26-4-1-a.mp3,
+u26_l4_p2,u26_l4,user,,right,none,1,,1,________.,,彼女はいつも時間通りに来る。,,She always arrives on time,She|always|arrives|on|time,26-4-2-a.mp3,
+u26_l4_p3,u26_l4,user,,right,none,1,,1,________.,,私はたいてい夜12時前に寝る。,,I usually go to bed before midnight,I|usually|go|to|bed|before|midnight,26-4-3-a.mp3,
+u26_l4_p4,u26_l4,user,,right,none,1,,1,________.,,私たちはたいてい一緒に夕食を食べる。,,We usually have dinner together,We|usually|have|dinner|together,26-4-4-a.mp3,
+u26_l4_p5,u26_l4,user,,right,none,1,,1,________.,,私は仕事中によく音楽を聴く。,,I often listen to music while working,I|often|listen|to|music|while|working,26-4-5-a.mp3,
+u26_l4_p6,u26_l4,user,,right,none,1,,1,________.,,彼は放課後によくサッカーをする。,,He often plays soccer after school,He|often|plays|soccer|after|school,26-4-6-a.mp3,
+u26_l4_p7,u26_l4,user,,right,none,1,,1,________.,,私はときどき一人で映画を見る。,,I sometimes watch movies alone,I|sometimes|watch|movies|alone,26-4-7-a.mp3,
+u26_l4_p8,u26_l4,user,,right,none,1,,1,________.,,彼女はときどき鍵を忘れる。,,She sometimes forgets her keys,She|sometimes|forgets|her|keys,26-4-8-a.mp3,
+u26_l4_p9,u26_l4,user,,right,none,1,,1,________.,,私はファストフードをほとんど食べない。,,I hardly ever eat fast food,I|hardly|ever|eat|fast|food,26-4-9-a.mp3,
+u26_l4_p10,u26_l4,user,,right,none,1,,1,________.,,彼はめったに怒らない。,,He hardly ever gets angry,He|hardly|ever|gets|angry,26-4-10-a.mp3,
+u26_l4_p11,u26_l4,user,,right,none,1,,1,________.,,私は決してタバコを吸わない。,,I never smoke,I|never|smoke,26-4-11-a.mp3,
+u26_l4_p12,u26_l4,user,,right,none,1,,1,________.,,彼女は決してうそをつかない。,,She never tells lies,She|never|tells|lies,26-4-12-a.mp3,

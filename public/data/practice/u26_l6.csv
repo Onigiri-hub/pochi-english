@@ -1,0 +1,13 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u26_l6_p1,u26_l6,user,,right,none,1,,1,________.,,私は絶対にパーティーに行く。,,I will definitely go to the party,I|will|definitely|go|to|the|party,26-6-1-a.mp3,
+u26_l6_p2,u26_l6,user,,right,none,1,,1,________.,,彼女は間違いなく正しい。,,She is definitely right,She|is|definitely|right,26-6-2-a.mp3,
+u26_l6_p3,u26_l6,user,,right,none,1,,1,________.,,このゲームは絶対にやってみるべきだよ。,,You should definitely try this game,You|should|definitely|try|this|game,26-6-3-a.mp3,
+u26_l6_p4,u26_l6,user,,right,none,1,,1,________.,,今夜はたぶん家にいるよ。,,I'll probably stay home tonight,I'll|probably|stay|home|tonight,26-6-4-a.mp3,
+u26_l6_p5,u26_l6,user,,right,none,1,,1,________.,,明日はたぶん雨が降る。,,It will probably rain tomorrow,It|will|probably|rain|tomorrow,26-6-5-a.mp3,
+u26_l6_p6,u26_l6,user,,right,none,1,,1,________.,,彼は今たぶん忙しい。,,He's probably busy right now,He's|probably|busy|right|now,26-6-6-a.mp3,
+u26_l6_p7,u26_l6,user,,right,none,1,,1,________.,,今日中に終わる可能性はある。,,We could possibly finish it today,We|could|possibly|finish|it|today,26-6-7-a.mp3,
+u26_l6_p8,u26_l6,user,,right,none,1,,1,________.,,彼女なら答えを知っているかもしれない。,,She might possibly know the answer,She|might|possibly|know|the|answer,26-6-8-a.mp3,
+u26_l6_p9,u26_l6,user,,right,none,1,,1,________.,,これは今まで食べた中で最高のケーキかもしれない。,,This is possibly the best cake I've ever had,This|is|possibly|the|best|cake|I've|ever|had,26-6-9-a.mp3,
+u26_l6_p10,u26_l6,user,,right,none,1,,1,________.,,あとで買い物に行くかも。,,Maybe I'll go shopping later,Maybe|I'll|go|shopping|later,26-6-10-a.mp3,
+u26_l6_p11,u26_l6,user,,right,none,1,,1,________.,,彼女はまだ寝ているのかも。,,Maybe she's still sleeping,Maybe|she's|still|sleeping,26-6-11-a.mp3,
+u26_l6_p12,u26_l6,user,,right,none,1,,1,________.,,明日一緒に遊べるかもね。,,Maybe we can play together tomorrow,Maybe|we|can|play|together|tomorrow,26-6-12-a.mp3,

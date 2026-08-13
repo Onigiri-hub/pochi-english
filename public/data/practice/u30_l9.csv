@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u30_l9_p1,u30_l9,user,user,right,right,1,1,1,________.,I made it just in time.,始発に乗るために早起きした。,なんとか間に合った。,I woke up early to catch the first train,I|woke|up|early|to|catch|the|first|train,30-9-1-a.mp3,30-9-1-b.mp3
+u30_l9_p2,u30_l9,user,,right,none,1,,1,________.,,彼女は医者になれるように一生懸命勉強してる。,,She studies hard so that she can become a doctor,She|studies|hard|so|that|she|can|become|a|doctor,30-9-2-a.mp3,
+u30_l9_p3,u30_l9,user,user,right,right,1,1,1,________.,Almost there!,新しいスマホを買うために貯金してる。,あともう少し！,I'm saving money to buy a new phone,I'm|saving|money|to|buy|a|new|phone,30-9-3-a.mp3,30-9-3-b.mp3
+u30_l9_p4,u30_l9,05.png,,left,none,1,,1,________.,,彼はみんなに聞こえるように大きな声で話した。,,He spoke loudly so that everyone could hear him,He|spoke|loudly|so|that|everyone|could|hear|him,30-9-4-a.mp3,
+u30_l9_p5,u30_l9,05.png,05.png,left,left,1,1,1,________.,Good thing we did.,渋滞を避けるために早く出発した。,そうしといて正解だった。,We left early to avoid the traffic,We|left|early|to|avoid|the|traffic,30-9-5-a.mp3,30-9-5-b.mp3
+u30_l9_p6,u30_l9,05.png,05.png,left,left,1,1,1,________.,You always do!,忘れないようにメモしといて。,いつも忘れるんだから！,Write it down so that you won't forget,Write|it|down|so|that|you|won't|forget,30-9-6-a.mp3,30-9-6-b.mp3
+u30_l9_p7,u30_l9,user,,right,none,1,,1,________.,,お礼を言いたくて電話したんだ。,,I called just to say thank you,I|called|just|to|say|thank|you,30-9-7-a.mp3,
+u30_l9_p8,u30_l9,user,user,right,right,1,1,1,________.,Their English is still basic.,分かるようにゆっくり話してあげて。,彼らの英語はまだ基礎レベルだから。,Speak slowly so that they can understand you,Speak|slowly|so|that|they|can|understand|you,30-9-8-a.mp3,30-9-8-b.mp3
+u30_l9_p9,u30_l9,user,,right,none,1,,1,________.,,彼女は英語を上達させるために毎日練習してる。,,She practices every day to improve her English,She|practices|every|day|to|improve|her|English,30-9-9-a.mp3,
+u30_l9_p10,u30_l9,user,user,right,right,1,1,1,________.,It's chilly today.,風邪ひかないように上着着てるんだ。,今日は肌寒いからね。,I'm wearing a jacket so that I won't catch a cold,I'm|wearing|a|jacket|so|that|I|won't|catch|a|cold,30-9-10-a.mp3,30-9-10-b.mp3

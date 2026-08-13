@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u29_l11_p1,u29_l11,user,user,right,right,1,1,1,________.,He waved at me.,公園で彼が走っているのを見た。,手を振ってくれたよ。,I saw him running in the park,I|saw|him|running|in|the|park,29-11-1-a.mp3,29-11-1-b.mp3
+u29_l11_p2,u29_l11,user,,right,none,1,,1,________.,,隣で誰かが歌っているのが聞こえた。,,I heard someone singing next door,I|heard|someone|singing|next|door,29-11-2-a.mp3,
+u29_l11_p3,u29_l11,user,user,right,right,1,1,1,________.,It was so fast!,飛行機が離陸するのを見た。,すごく速かった！,I saw the plane take off,I|saw|the|plane|take|off,29-11-3-a.mp3,29-11-3-b.mp3
+u29_l11_p4,u29_l11,user,user,right,right,1,1,1,________.,Her face lit up.,彼女がプレゼントを開けるのを見た。,パッと笑顔になった。,I watched her open the present,I|watched|her|open|the|present,29-11-4-a.mp3,29-11-4-b.mp3
+u29_l11_p5,u29_l11,user,,right,none,1,,1,________.,,入ってきたとき、彼らが踊っているのを見た。,,"When I came in, I saw them dancing","When|I|came|in,|I|saw|them|dancing",29-11-5-a.mp3,
+u29_l11_p6,u29_l11,user,user,right,right,1,1,1,________.,I jumped!,何かが肩に触れるのを感じた。,飛び上がっちゃった！,I felt something touch my shoulder,I|felt|something|touch|my|shoulder,29-11-6-a.mp3,29-11-6-b.mp3
+u29_l11_p7,u29_l11,user,user,right,right,1,1,1,________.,It looked so comfy.,猫が車の上で寝ているのを見た。,すごく気持ちよさそうだった。,I saw a cat sleeping on the car,I|saw|a|cat|sleeping|on|the|car,29-11-7-a.mp3,29-11-7-b.mp3
+u29_l11_p8,u29_l11,user,,right,none,1,,1,________.,,ベルが2回鳴るのが聞こえた。,,I heard the bell ring twice,I|heard|the|bell|ring|twice,29-11-8-a.mp3,
+u29_l11_p9,u29_l11,user,user,right,right,1,1,1,________.,Is he okay?,彼が自転車から落ちるのを見た。,大丈夫かな？,I saw him fall off his bike,I|saw|him|fall|off|his|bike,29-11-9-a.mp3,29-11-9-b.mp3
+u29_l11_p10,u29_l11,user,user,right,right,1,1,1,________.,It was so peaceful.,外で雨が降っているのをずっと眺めてた。,すごく穏やかな気分だった。,I watched the rain falling outside,I|watched|the|rain|falling|outside,29-11-10-a.mp3,29-11-10-b.mp3

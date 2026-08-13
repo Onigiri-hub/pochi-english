@@ -1,0 +1,51 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u30_l3_p1,u30_l3,05.png,05.png,left,left,1,1,0,________.,That's all I care about.,あなたに幸せでいてほしい。,それだけが願いなんだ。,I want you to be happy,I|want|you|to|be|happy,30-3-1-a.mp3,30-3-1-b.mp3
+u30_l3_p2,u30_l3,user,user,right,right,1,1,0,________.,I wonder why.,先生に放課後残るよう頼まれた。,なんでだろう。,My teacher asked me to stay after class,My|teacher|asked|me|to|stay|after|class,30-3-2-a.mp3,30-3-2-b.mp3
+u30_l3_p3,u30_l3,05.png,,left,none,1,,0,________.,,彼に私を待つように言って。,,Please tell him to wait for me,Please|tell|him|to|wait|for|me,30-3-3-a.mp3,
+u30_l3_p4,u30_l3,user,user,right,right,1,1,0,________?,You look busy.,手伝ってほしい？,忙しそうだもん。,Do you want me to help you,Do|you|want|me|to|help|you,30-3-4-a.mp3,30-3-4-b.mp3
+u30_l3_p5,u30_l3,user,,right,none,1,,0,________.,,彼女は私たちに静かにしなさいと言った。,,She told us to be quiet,She|told|us|to|be|quiet,30-3-5-a.mp3,
+u30_l3_p6,u30_l3,user,user,right,right,1,1,0,________.,It started raining.,お父さんに迎えに来てって頼んだ。,雨が降ってきたんだ。,I asked my dad to pick me up,I|asked|my|dad|to|pick|me|up,30-3-6-a.mp3,30-3-6-b.mp3
+u30_l3_p7,u30_l3,user,05.png,right,left,1,1,0,________.,We have a big game soon.,コーチはもっと練習してほしいって。,もうすぐ大事な試合だからね。,My coach wants us to practice more,My|coach|wants|us|to|practice|more,30-3-7-a.mp3,30-3-7-b.mp3
+u30_l3_p8,u30_l3,user,,right,none,1,,0,________?,,あとで電話するよう彼女に頼んでくれる？,,Can you ask her to call me later,Can|you|ask|her|to|call|me|later,30-3-8-a.mp3,
+u30_l3_p9,u30_l3,user,user,right,right,1,1,0,________.,No sports for a while.,医者に一週間休むよう言われた。,しばらくスポーツはお預けだ。,The doctor told me to rest for a week,The|doctor|told|me|to|rest|for|a|week,30-3-9-a.mp3,30-3-9-b.mp3
+u30_l3_p10,u30_l3,user,,right,none,1,,0,________.,,いつか私の家族に会ってほしいな。,,I want you to meet my family someday,I|want|you|to|meet|my|family|someday,30-3-10-a.mp3,
+u30_l5_p1,u30_l5,user,,right,none,1,,0,________.,,彼は一番上の棚に届くくらい背が高い。,,He is tall enough to reach the top shelf,He|is|tall|enough|to|reach|the|top|shelf,30-5-1-a.mp3,
+u30_l5_p2,u30_l5,05.png,05.png,left,left,1,1,0,________?,It's rated for adults.,この映画見ていい歳なの？,大人向けだよ。,Are you old enough to watch this movie,Are|you|old|enough|to|watch|this|movie,30-5-2-a.mp3,30-5-2-b.mp3
+u30_l5_p3,u30_l5,user,,right,none,1,,0,________.,,この箱、一人で運べるくらい軽い。,,This box is light enough to carry by myself,This|box|is|light|enough|to|carry|by|myself,30-5-3-a.mp3,
+u30_l5_p4,u30_l5,user,user,right,right,1,1,0,________.,I was so grateful.,彼女は親切にも手伝ってくれた。,すごくありがたかった。,She was kind enough to help me,She|was|kind|enough|to|help|me,30-5-4-a.mp3,30-5-4-b.mp3
+u30_l5_p5,u30_l5,user,user,right,right,1,1,0,________?,I really want to!,今日は泳げるくらい暖かい？,すごく泳ぎたいんだ！,Is it warm enough to go swimming today,Is|it|warm|enough|to|go|swimming|today,30-5-5-a.mp3,30-5-5-b.mp3
+u30_l5_p6,u30_l5,user,,right,none,1,,0,________.,,ロープは地面に届くくらい長かった。,,The rope was long enough to reach the ground,The|rope|was|long|enough|to|reach|the|ground,30-5-6-a.mp3,
+u30_l5_p7,u30_l5,user,user,right,right,1,1,0,________.,Just barely!,彼はバスに間に合うくらい速く走った。,ギリギリだったけどね！,He ran fast enough to catch the bus,He|ran|fast|enough|to|catch|the|bus,30-5-7-a.mp3,30-5-7-b.mp3
+u30_l5_p8,u30_l5,user,,right,none,1,,0,________!,,ピザ一枚まるごといけるくらいお腹すいた！,,I'm hungry enough to eat a whole pizza,I'm|hungry|enough|to|eat|a|whole|pizza,30-5-8-a.mp3,
+u30_l5_p9,u30_l5,05.png,,left,none,1,,0,________.,,ここの水は飲めるくらいきれいだよ。,,The water here is clean enough to drink,The|water|here|is|clean|enough|to|drink,30-5-9-a.mp3,
+u30_l5_p10,u30_l5,05.png,05.png,left,left,1,1,0,________?,"Come on, let's go!",挑戦する勇気ある？,ほら、やってみようよ！,Are you brave enough to try it,Are|you|brave|enough|to|try|it,30-5-10-a.mp3,30-5-10-b.mp3
+u30_l7_p1,u30_l7,user,user,right,right,1,1,0,________.,Maybe tomorrow.,疲れすぎて今夜は出かけられない。,明日ならいけるかも。,I'm too tired to go out tonight,I'm|too|tired|to|go|out|tonight,30-7-1-a.mp3,30-7-1-b.mp3
+u30_l7_p2,u30_l7,user,,right,none,1,,0,________.,,このかばん、重すぎて持ち上げられない。,,This bag is too heavy to lift,This|bag|is|too|heavy|to|lift,30-7-2-a.mp3,
+u30_l7_p3,u30_l7,user,user,right,right,1,1,0,________.,Where's the light switch?,暗すぎてここじゃ何も見えない。,電気のスイッチどこ？,It's too dark to see anything in here,It's|too|dark|to|see|anything|in|here,30-7-3-a.mp3,30-7-3-b.mp3
+u30_l7_p4,u30_l7,user,05.png,right,left,1,1,0,________.,Poor thing.,彼は恥ずかしすぎて挨拶できなかった。,かわいそうに。,He was too shy to say hello,He|was|too|shy|to|say|hello,30-7-4-a.mp3,30-7-4-b.mp3
+u30_l7_p5,u30_l7,user,,right,none,1,,0,________.,,このスープ、しょっぱすぎて食べられない。,,This soup is too salty to eat,This|soup|is|too|salty|to|eat,30-7-5-a.mp3,
+u30_l7_p6,u30_l7,user,user,right,right,1,1,0,________.,It's the school trip today!,昨夜はわくわくしすぎて眠れなかった。,今日は修学旅行なんだ！,I was too excited to sleep last night,I|was|too|excited|to|sleep|last|night,30-7-6-a.mp3,30-7-6-b.mp3
+u30_l7_p7,u30_l7,user,user,right,right,1,1,0,________.,Can you say that again?,彼女は速すぎて聞き取れなかった。,もう一回言ってくれる？,She spoke too fast to understand,She|spoke|too|fast|to|understand,30-7-7-a.mp3,30-7-7-b.mp3
+u30_l7_p8,u30_l7,user,05.png,right,left,1,1,0,________.,Let's wait for summer.,今日は寒すぎて泳げない。,夏まで待とう。,It's too cold to swim today,It's|too|cold|to|swim|today,30-7-8-a.mp3,30-7-8-b.mp3
+u30_l7_p9,u30_l7,user,,right,none,1,,0,________.,,お腹いっぱいすぎてデザート食べられない。,,I'm too full to eat dessert,I'm|too|full|to|eat|dessert,30-7-9-a.mp3,
+u30_l7_p10,u30_l7,user,user,right,right,1,1,0,________.,I gave up in the end.,その問題は難しすぎて解けなかった。,結局あきらめちゃった。,The problem was too hard to solve,The|problem|was|too|hard|to|solve,30-7-10-a.mp3,30-7-10-b.mp3
+u30_l9_p1,u30_l9,user,user,right,right,1,1,0,________.,I made it just in time.,始発に乗るために早起きした。,なんとか間に合った。,I woke up early to catch the first train,I|woke|up|early|to|catch|the|first|train,30-9-1-a.mp3,30-9-1-b.mp3
+u30_l9_p2,u30_l9,user,,right,none,1,,0,________.,,彼女は医者になれるように一生懸命勉強してる。,,She studies hard so that she can become a doctor,She|studies|hard|so|that|she|can|become|a|doctor,30-9-2-a.mp3,
+u30_l9_p3,u30_l9,user,user,right,right,1,1,0,________.,Almost there!,新しいスマホを買うために貯金してる。,あともう少し！,I'm saving money to buy a new phone,I'm|saving|money|to|buy|a|new|phone,30-9-3-a.mp3,30-9-3-b.mp3
+u30_l9_p4,u30_l9,05.png,,left,none,1,,0,________.,,彼はみんなに聞こえるように大きな声で話した。,,He spoke loudly so that everyone could hear him,He|spoke|loudly|so|that|everyone|could|hear|him,30-9-4-a.mp3,
+u30_l9_p5,u30_l9,05.png,05.png,left,left,1,1,0,________.,Good thing we did.,渋滞を避けるために早く出発した。,そうしといて正解だった。,We left early to avoid the traffic,We|left|early|to|avoid|the|traffic,30-9-5-a.mp3,30-9-5-b.mp3
+u30_l9_p6,u30_l9,05.png,05.png,left,left,1,1,0,________.,You always do!,忘れないようにメモしといて。,いつも忘れるんだから！,Write it down so that you won't forget,Write|it|down|so|that|you|won't|forget,30-9-6-a.mp3,30-9-6-b.mp3
+u30_l9_p7,u30_l9,user,,right,none,1,,0,________.,,お礼を言いたくて電話したんだ。,,I called just to say thank you,I|called|just|to|say|thank|you,30-9-7-a.mp3,
+u30_l9_p8,u30_l9,user,user,right,right,1,1,0,________.,Their English is still basic.,分かるようにゆっくり話してあげて。,彼らの英語はまだ基礎レベルだから。,Speak slowly so that they can understand you,Speak|slowly|so|that|they|can|understand|you,30-9-8-a.mp3,30-9-8-b.mp3
+u30_l9_p9,u30_l9,user,,right,none,1,,0,________.,,彼女は英語を上達させるために毎日練習してる。,,She practices every day to improve her English,She|practices|every|day|to|improve|her|English,30-9-9-a.mp3,
+u30_l9_p10,u30_l9,user,user,right,right,1,1,0,________.,It's chilly today.,風邪ひかないように上着着てるんだ。,今日は肌寒いからね。,I'm wearing a jacket so that I won't catch a cold,I'm|wearing|a|jacket|so|that|I|won't|catch|a|cold,30-9-10-a.mp3,30-9-10-b.mp3
+u30_l11_p1,u30_l11,user,user,right,right,1,1,0,________.,Is that too much to ask?,ただ分かってほしいだけなんだ。,それって、わがままかな？,I just want to be understood,I|just|want|to|be|understood,30-11-1-a.mp3,30-11-1-b.mp3
+u30_l11_p2,u30_l11,05.png,,left,none,1,,0,________.,,仲間はずれにされたい人なんていないよ。,,No one wants to be left out,No|one|wants|to|be|left|out,30-11-2-a.mp3,
+u30_l11_p3,u30_l11,user,05.png,right,left,1,1,0,________.,Fingers crossed!,彼女はパーティーに招待されたいと思ってる。,うまくいくといいね。,She hopes to be invited to the party,She|hopes|to|be|invited|to|the|party,30-11-3-a.mp3,30-11-3-b.mp3
+u30_l11_p4,u30_l11,user,05.png,right,left,1,1,0,________.,He's growing up fast.,彼は大人扱いされたいんだ。,大人びてるんだね。,He wants to be treated like an adult,He|wants|to|be|treated|like|an|adult,30-11-4-a.mp3,30-11-4-b.mp3
+u30_l11_p5,u30_l11,user,user,right,right,1,1,0,________.,I've practiced so hard.,チームに選ばれたいなあ。,すごく練習してきたんだよお。,I'd love to be chosen for the team,I'd|love|to|be|chosen|for|the|team,30-11-5-a.mp3,30-11-5-b.mp3
+u30_l11_p6,u30_l11,05.png,,left,none,1,,0,________.,,笑われるのが好きな人なんていないよ。,,Nobody likes to be laughed at,Nobody|likes|to|be|laughed|at,30-11-6-a.mp3,
+u30_l11_p7,u30_l11,user,user,right,right,1,1,0,________.,Their parents were late.,子どもたちは迎えに来てもらうのを待っていた。,親が遅れてたんだ。,The kids waited to be picked up,The|kids|waited|to|be|picked|up,30-11-7-a.mp3,30-11-7-b.mp3
+u30_l11_p8,u30_l11,user,05.png,right,left,1,1,0,________.,We'd better hurry.,このレポートは金曜までに終わらせないといけない。,急いだほうがいいね。,This report needs to be finished by Friday,This|report|needs|to|be|finished|by|Friday,30-11-8-a.mp3,30-11-8-b.mp3
+u30_l11_p9,u30_l11,user,,right,none,1,,0,________.,,彼女は先生にほめられて嬉しかった。,,She was happy to be praised by her teacher,She|was|happy|to|be|praised|by|her|teacher,30-11-9-a.mp3,
+u30_l11_p10,u30_l11,user,05.png,right,left,1,1,0,________.,It's only natural.,誰だって愛されたいよ。,当たり前のことだよ。,Everyone wants to be loved,Everyone|wants|to|be|loved,30-11-10-a.mp3,30-11-10-b.mp3

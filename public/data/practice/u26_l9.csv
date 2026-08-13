@@ -1,0 +1,9 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u26_l9_p1,u26_l9,user,,right,none,1,,0,________.,,私は完全にあなたに同意する。（マジでそれな。）,,I totally agree with you,I|totally|agree|with|you,26-2-1-a.mp3,
+u26_l9_p2,u26_l9,user,,right,none,1,,0,________.,,私は今日はとても忙しい。,,I'm very busy today,I'm|very|busy|today,26-2-6-a.mp3,
+u26_l9_p3,u26_l9,user,,right,none,1,,0,________.,,その質問はちょっと難しい。,,That question is kind of difficult,That|question|is|kind|of|difficult,26-2-10-a.mp3,
+u26_l9_p4,u26_l9,user,,right,none,1,,0,________.,,私は少し緊張している。,,I'm a little nervous,I'm|a|little|nervous,26-2-11-a.mp3,
+u26_l9_p5,u26_l9,user,,right,none,1,,0,________.,,私はたいてい夜12時前に寝る。,,I usually go to bed before midnight,I|usually|go|to|bed|before|midnight,26-4-3-a.mp3,
+u26_l9_p6,u26_l9,user,,right,none,1,,0,________.,,私はファストフードをほとんど食べない。,,I hardly ever eat fast food,I|hardly|ever|eat|fast|food,26-4-9-a.mp3,
+u26_l9_p7,u26_l9,user,,right,none,1,,0,________.,,私は決してタバコを吸わない。,,I never smoke,I|never|smoke,26-4-11-a.mp3,
+u26_l9_p8,u26_l9,user,,right,none,1,,0,________.,,彼女は間違いなく正しい。,,She is definitely right,She|is|definitely|right,26-6-2-a.mp3,
