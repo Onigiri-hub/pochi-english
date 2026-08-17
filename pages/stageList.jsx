@@ -123,7 +123,7 @@ export default function StageList() {
                 <div
                   className="unitCard"
                   key={stage.stage_id}
-                  style={{ opacity: 0.4, pointerEvents: "none" }}
+                  onClick={() => router.push(`/arrangeSectionList?stage=${stage.stage_id}&name=${encodeURIComponent(stage.stage_name)}`)}
                 >
                   <img src="/images/illustrations/stagelist_button.png" className="unitCardBg" />
                   <div className="unitCardContent">

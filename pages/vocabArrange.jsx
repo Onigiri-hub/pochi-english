@@ -17,6 +17,8 @@ export default function VocabArrange() {
   const [chips, setChips] = useState([])
   const [result, setResult] = useState(null)
   const [userShowJa, setUserShowJa] = useState(true)
+  const [showJaFirst, setShowJaFirst] = useState(false)
+  const [showJaSecond, setShowJaSecond] = useState(false)
   const doneWordsRef = useRef(new Set())
   const isFirstClearRef = useRef(false)
   const pa = useRef(null)
@@ -69,6 +71,15 @@ export default function VocabArrange() {
   }
 
   useEffect(() => {
+    document.documentElement.style.overscrollBehavior = "none"
+    document.body.style.overscrollBehavior = "none"
+    return () => {
+      document.documentElement.style.overscrollBehavior = ""
+      document.body.style.overscrollBehavior = ""
+    }
+  }, [])
+
+  useEffect(() => {
     setUserShowJa(localStorage.getItem("showJaTranslation") !== "false")
     pa.current = new Audio("/sound/pa.mp3")
     pa.current.volume = 0.3
@@ -76,6 +87,11 @@ export default function VocabArrange() {
     seikaiRef.current.playbackRate = 1.5
     seikaiRef.current.volume = 0.5
   }, [])
+
+  useEffect(() => {
+    setShowJaFirst(false)
+    setShowJaSecond(false)
+  }, [index])
 
   useEffect(() => {
     if (!router.isReady) return
@@ -112,17 +128,26 @@ export default function VocabArrange() {
     setResult(null)
   }, [index, questions])
 
+  // 自動再生（1文目→2文目の連続再生）
   useEffect(() => {
     if (questions.length === 0) return
     const autoPlayOn = localStorage.getItem("autoPlayOn") !== "false"
-    if (!autoPlayOn) return
     const q = questions[index]
+    if (!autoPlayOn || q.audio_auto !== "1" || !q.audio_first) return
 
+    let audio2 = null
     const timer = setTimeout(() => {
-      if (q.audio_auto === "1" && q.audio_first) {
-        new Audio(`/audio/arrange_words/${q.audio_first}`).play().catch(() => {})
-      } else if (q.audio_auto === "2" && q.audio_second) {
-        new Audio(`/audio/arrange_words/${q.audio_second}`).play().catch(() => {})
+      const audio1 = new Audio(`/audio/arrange_words/${q.audio_first}`)
+      audio1.play().catch(() => {})
+
+      // 1文目が終わったら2文目を再生
+      if (q.audio_second) {
+        audio1.addEventListener("ended", () => {
+          setTimeout(() => {
+            audio2 = new Audio(`/audio/arrange_words/${q.audio_second}`)
+            audio2.play().catch(() => {})
+          }, 100)
+        })
       }
     }, 500)
 
@@ -190,32 +215,22 @@ export default function VocabArrange() {
   if (questions.length === 0) return <div>loading...</div>
 
   const q = questions[index]
-  const highlightWord = q.highlight_word?.trim().toLowerCase() || ""
-
-  function isHighlighted(chip) {
-    if (!highlightWord) return false
-    const stripped = chip.toLowerCase().replace(/[.,!?'"]/g, "").trim()
-    return stripped === highlightWord
-  }
 
   function renderSentence(text) {
     if (!text || text.includes("____")) return text
-    return tokenize(text).map((token, i) => {
-      const highlighted = isHighlighted(token.text)
-      const style = {
-        ...(highlighted ? { color: "#02ccbb", fontWeight: "bold" } : {}),
-        ...(token.entry ? { borderBottom: "2px solid #a9b8e7", cursor: "pointer" } : {})
-      }
-      return (
+    return tokenize(text).map((token, i) =>
+      token.entry ? (
         <span
           key={i}
-          style={Object.keys(style).length > 0 ? style : undefined}
-          onClick={token.entry ? () => handleWordTap(token.entry) : undefined}
+          style={{ borderBottom: "2px solid #a9b8e7", cursor: "pointer" }}
+          onClick={() => handleWordTap(token.entry)}
         >
           {token.text}
         </span>
+      ) : (
+        <span key={i}>{token.text}</span>
       )
-    })
+    )
   }
 
   function renderAvatar(iconName) {
@@ -242,33 +257,30 @@ export default function VocabArrange() {
         ))}
       </div>
 
-      {q.position_first !== "none" && (
-        <div
-          className={`chat ${q.position_first || "left"}`}
-          style={{ opacity: q.bubble_gray === "1" ? 0.35 : 1 }}
-        >
-          <div className="iconContainer">
-            {renderAvatar(q.icon_first)}
-          </div>
-          <div className="bubble">
-            <div className="en">
-              {q.audio_first && (
-                <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
-              )}
-              {renderSentence(q.sentence_first_en)}
-            </div>
-            {userShowJa && q.sentence_first_ja && (
-              <div className="ja">{q.sentence_first_ja}</div>
+      <div className={`chat ${q.position_first || "left"}`}>
+        <div className="iconContainer">
+          {renderAvatar(q.icon_first)}
+        </div>
+        <div className="bubble">
+          <div className="en">
+            {q.audio_first && (
+              <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
+            )}
+            {renderSentence(q.sentence_first_en)}
+            {!userShowJa && q.sentence_first_ja && (
+              <span className="jaToggleBtn" onClick={() => setShowJaFirst(v => !v)}>
+                {showJaFirst ? "🔼" : "🔽"}
+              </span>
             )}
           </div>
+          {(userShowJa ? !!q.sentence_first_ja : showJaFirst) && (
+            <div className="ja">{q.sentence_first_ja}</div>
+          )}
         </div>
-      )}
+      </div>
 
       {q.position_second !== "none" && (
-        <div
-          className={`chat ${q.position_second || "right"}`}
-          style={{ opacity: q.bubble_gray === "2" ? 0.35 : 1 }}
-        >
+        <div className={`chat ${q.position_second || "right"}`}>
           <div className="iconContainer">
             {renderAvatar(q.icon_second)}
           </div>
@@ -278,8 +290,13 @@ export default function VocabArrange() {
                 <span className="audioBtn" onClick={() => playAudio(q.audio_second)}>🔊</span>
               )}
               {renderSentence(q.sentence_second_en)}
+              {!userShowJa && q.sentence_second_ja && (
+                <span className="jaToggleBtn" onClick={() => setShowJaSecond(v => !v)}>
+                  {showJaSecond ? "🔼" : "🔽"}
+                </span>
+              )}
             </div>
-            {userShowJa && q.sentence_second_ja && (
+            {(userShowJa ? !!q.sentence_second_ja : showJaSecond) && (
               <div className="ja">{q.sentence_second_ja}</div>
             )}
           </div>
@@ -291,7 +308,6 @@ export default function VocabArrange() {
           <button
             key={i}
             className="chip"
-            style={isHighlighted(w) ? { background: "#02ccbb", color: "white" } : {}}
             onMouseDown={() => handleChipPressStart(w)}
             onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
             onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
@@ -308,7 +324,6 @@ export default function VocabArrange() {
           <button
             key={i}
             className="chip"
-            style={isHighlighted(c) ? { background: "#02ccbb", color: "white" } : {}}
             onMouseDown={() => handleChipPressStart(c)}
             onMouseUp={(e) => handleChipPressEnd(c, () => addChip(c, i), e)}
             onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
