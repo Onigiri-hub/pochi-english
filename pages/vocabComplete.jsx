@@ -12,6 +12,7 @@ export default function VocabComplete() {
   const router = useRouter()
   const { stage, section, round, isFirstClear, mode } = router.query
   const isArrangeMode = mode === "arrange"
+  const isArrangeWord = mode === "arrangeWord" // 単語ベースの並べ替え（ラウンド制なし）
   const { 
     setMofu, setStreak, 
     setTotalRounds, 
@@ -57,33 +58,35 @@ export default function VocabComplete() {
       setMofuEarned(mofu)
       setMofu(prev => prev + mofu)
 
-      // 4. Stageクリア判定
+      // 4. Stageクリア判定（単語ベースの並べ替えはラウンド制がないのでスキップ）
       const stageId = stage
       const completedStages = []
 
-      // そのStageの全sectionを取得
-      const sectionsCsv = isArrangeMode ? "/data/vocab/arrangeSectionList.csv" : "/data/vocab/sectionList.csv"
-      const allSections = await loadCSV(sectionsCsv)
-      const stageSections = allSections.filter(s => s.stage_id === stageId)
+      if (!isArrangeWord) {
+        // そのStageの全sectionを取得
+        const sectionsCsv = isArrangeMode ? "/data/vocab/arrangeSectionList.csv" : "/data/vocab/sectionList.csv"
+        const allSections = await loadCSV(sectionsCsv)
+        const stageSections = allSections.filter(s => s.stage_id === stageId)
 
-      // 全sectionの全round_idを収集
-      const allRoundIds = []
-      await Promise.all(stageSections.map(async (sec) => {
-        const roundsCsv = isArrangeMode
-          ? `/data/vocab/arrange_rounds/${sec.arrange_rounds_csv}`
-          : `/data/vocab/rounds/${sec.rounds_csv}`
-        const rounds = await loadCSV(roundsCsv)
-        rounds.forEach(r => allRoundIds.push(r.round_id))
-      }))
+        // 全sectionの全round_idを収集
+        const allRoundIds = []
+        await Promise.all(stageSections.map(async (sec) => {
+          const roundsCsv = isArrangeMode
+            ? `/data/vocab/arrange_rounds/${sec.arrange_rounds_csv}`
+            : `/data/vocab/rounds/${sec.rounds_csv}`
+          const rounds = await loadCSV(roundsCsv)
+          rounds.forEach(r => allRoundIds.push(r.round_id))
+        }))
 
-      // vocab_roundsに全round_idが存在するか確認
-      const user = auth.currentUser
-      const { getDocs, collection } = await import("firebase/firestore")
-      const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
-      const clearedRoundIds = new Set(roundsSnap.docs.map(d => d.id))
+        // vocab_roundsに全round_idが存在するか確認
+        const user = auth.currentUser
+        const { getDocs, collection } = await import("firebase/firestore")
+        const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
+        const clearedRoundIds = new Set(roundsSnap.docs.map(d => d.id))
 
-      const isStageComplete = allRoundIds.every(id => clearedRoundIds.has(id))
-      if (isStageComplete) completedStages.push(stageId)
+        const isStageComplete = allRoundIds.every(id => clearedRoundIds.has(id))
+        if (isStageComplete) completedStages.push(stageId)
+      }
 
       // 5. バッジチェック（Contextの値を使う）
       const badges = await checkAndEarnBadges({
@@ -313,7 +316,7 @@ export default function VocabComplete() {
             <div className="completeBottom">
               <button
                 className="finishButton"
-                onClick={() => router.replace(isArrangeMode ? `/arrangeSectionList?stage=${stage}` : `/sectionList?stage=${stage}`)}
+                onClick={() => router.replace((isArrangeMode || isArrangeWord) ? `/arrangeSectionList?stage=${stage}` : `/sectionList?stage=${stage}`)}
                 data-sound
               >
                 次へ

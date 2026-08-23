@@ -1,4 +1,3 @@
-import { saveVocabRoundProgress, getVocabRoundProgress, addVocabHistory } from "../utils/vocabProgressManager"
 import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/router"
 import Papa from "papaparse"
@@ -7,10 +6,20 @@ import { useProfileContext } from "../utils/ProfileContext"
 import Navigation from "../components/Navigation"
 import { useDictionary } from "../utils/useDictionary"
 import WordPopup from "../components/WordPopup"
+import { getArrangeWordStatus, markArrangeWordLearned } from "../utils/vocabProgressManager"
 
-export default function VocabArrange() {
+function shuffle(array) {
+  const copy = [...array]
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
+  }
+  return copy
+}
+
+export default function ArrangePractice() {
   const router = useRouter()
-  const { section, round } = router.query
+  const { stage, words, order } = router.query
   const [questions, setQuestions] = useState([])
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState([])
@@ -19,8 +28,7 @@ export default function VocabArrange() {
   const [userShowJa, setUserShowJa] = useState(true)
   const [showJaFirst, setShowJaFirst] = useState(false)
   const [showJaSecond, setShowJaSecond] = useState(false)
-  const doneWordsRef = useRef(new Set())
-  const isFirstClearRef = useRef(false)
+  const anyNewRef = useRef(false) // このセッションに未習の単語が含まれるか
   const pa = useRef(null)
   const seikaiRef = useRef(null)
   const { profile } = useProfileContext()
@@ -94,31 +102,39 @@ export default function VocabArrange() {
   }, [index])
 
   useEffect(() => {
-    if (!router.isReady) return
+    if (!router.isReady || !stage || !words) return
 
     async function load() {
-      const secRes = await fetch("/data/vocab/arrangeSectionList.csv")
-      const secText = await secRes.text()
-      const secData = Papa.parse(secText, { header: true, skipEmptyLines: true }).data
-      const sec = secData.find(s => s.section_id === section)
-      if (!sec) return
+      const res = await fetch(`/data/vocab/arrange_sentences/arrange_sentences_${stage}.csv`)
+      const text = await res.text()
+      const data = Papa.parse(text, { header: true, skipEmptyLines: true }).data
 
-      const wRes = await fetch(`/data/vocab/sentences/${sec.sentences_csv}`)
-      const wText = await wRes.text()
-      const wData = Papa.parse(wText, { header: true, skipEmptyLines: true }).data
+      // words クエリ（arrange_word_id のカンマ区切り、優先順位の順）
+      const idOrder = String(words).split(",").filter(Boolean)
+      const idSet = new Set(idOrder)
 
-      const filtered = wData.filter(q => q.round_id === round)
-      if (filtered.length === 0) return
-      setQuestions(filtered)
+      // 単語ごとに設問をまとめ、question_id順に並べる
+      const byWord = {}
+      data.forEach(r => {
+        if (idSet.has(r.arrange_word_id)) {
+          (byWord[r.arrange_word_id] = byWord[r.arrange_word_id] || []).push(r)
+        }
+      })
+      Object.values(byWord).forEach(arr =>
+        arr.sort((a, b) => (a.question_id || "").localeCompare(b.question_id || ""))
+      )
+      let built = idOrder.flatMap(id => byWord[id] || [])
+      if (built.length === 0) return
+      // ランダム出題なら設問の並びもシャッフル
+      if (order === "random") built = shuffle(built)
+      setQuestions(built)
 
-      const roundProgress = await getVocabRoundProgress(round)
-      doneWordsRef.current = new Set(roundProgress.doneWords || [])
-
-      const alreadyCleared = (roundProgress.doneWords?.length || 0) >= filtered.length
-      isFirstClearRef.current = !alreadyCleared
+      // 初クリア判定：未習(learned=false)の単語が1つでもあれば true
+      const status = await getArrangeWordStatus(stage)
+      anyNewRef.current = idOrder.some(id => !status[id]?.learned)
     }
     load()
-  }, [router.isReady])
+  }, [router.isReady, stage, words, order])
 
   useEffect(() => {
     if (questions.length === 0) return
@@ -139,8 +155,6 @@ export default function VocabArrange() {
     const timer = setTimeout(() => {
       const audio1 = new Audio(`/audio/arrange_words/${q.audio_first}`)
       audio1.play().catch(() => {})
-
-      // 1文目が終わったら2文目を再生
       if (q.audio_second) {
         audio1.addEventListener("ended", () => {
           setTimeout(() => {
@@ -153,15 +167,6 @@ export default function VocabArrange() {
 
     return () => clearTimeout(timer)
   }, [index, questions])
-
-  function shuffle(array) {
-    const copy = [...array]
-    for (let i = copy.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[copy[i], copy[j]] = [copy[j], copy[i]]
-    }
-    return copy
-  }
 
   function playAudio(filename) {
     if (!filename) return
@@ -189,8 +194,8 @@ export default function VocabArrange() {
     const answer = selected.join(" ")
     const ok = checkAnswer(answer, q.answer)
     if (ok) {
-      const newDone = new Set([...doneWordsRef.current, q.question_id])
-      doneWordsRef.current = newDone
+      // 並べ替え問題を一度でも正解したら履修ON（冪等）
+      markArrangeWordLearned(stage, q.arrange_word_id)
       if (seikaiRef.current) {
         seikaiRef.current.currentTime = 0
         seikaiRef.current.play()
@@ -201,20 +206,21 @@ export default function VocabArrange() {
     }
   }
 
-  async function next() {
+  function next() {
     if (index < questions.length - 1) {
       setIndex(i => i + 1)
     } else {
-      await saveVocabRoundProgress(round, [...doneWordsRef.current], questions.length)
-      await addVocabHistory(round, section)
-      const stageId = section.split("_")[0]
-      router.replace(`/vocabComplete?stage=${stageId}&section=${section}&round=${round}&isFirstClear=${isFirstClearRef.current}&mode=arrange`)
+      router.replace(`/vocabComplete?stage=${stage}&mode=arrangeWord&isFirstClear=${anyNewRef.current}`)
     }
   }
 
   if (questions.length === 0) return <div>loading...</div>
 
   const q = questions[index]
+  const posFirst = q.position_first || "right"
+  const posSecond = q.position_second || "left"
+  const iconFirst = q.icon_first || "user"
+  const iconSecond = q.icon_second || "05.png"
 
   function renderSentence(text) {
     if (!text || text.includes("____")) return text
@@ -257,9 +263,9 @@ export default function VocabArrange() {
         ))}
       </div>
 
-      <div className={`chat ${q.position_first || "left"}`}>
+      <div className={`chat ${posFirst}`}>
         <div className="iconContainer">
-          {renderAvatar(q.icon_first)}
+          {renderAvatar(iconFirst)}
         </div>
         <div className="bubble">
           <div className="en">
@@ -267,22 +273,22 @@ export default function VocabArrange() {
               <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
             )}
             {renderSentence(q.sentence_first_en)}
-            {!userShowJa && q.sentence_first_ja && (
+            {!userShowJa && q.ja1 && (
               <span className="jaToggleBtn" onClick={() => setShowJaFirst(v => !v)}>
                 {showJaFirst ? "🔼" : "🔽"}
               </span>
             )}
           </div>
-          {(userShowJa ? !!q.sentence_first_ja : showJaFirst) && (
-            <div className="ja">{q.sentence_first_ja}</div>
+          {(userShowJa ? !!q.ja1 : showJaFirst) && (
+            <div className="ja">{q.ja1}</div>
           )}
         </div>
       </div>
 
-      {q.position_second !== "none" && (
-        <div className={`chat ${q.position_second || "right"}`}>
+      {q.sentence_second_en && (
+        <div className={`chat ${posSecond}`}>
           <div className="iconContainer">
-            {renderAvatar(q.icon_second)}
+            {renderAvatar(iconSecond)}
           </div>
           <div className="bubble">
             <div className="en">
@@ -290,14 +296,14 @@ export default function VocabArrange() {
                 <span className="audioBtn" onClick={() => playAudio(q.audio_second)}>🔊</span>
               )}
               {renderSentence(q.sentence_second_en)}
-              {!userShowJa && q.sentence_second_ja && (
+              {!userShowJa && q.ja2 && (
                 <span className="jaToggleBtn" onClick={() => setShowJaSecond(v => !v)}>
                   {showJaSecond ? "🔼" : "🔽"}
                 </span>
               )}
             </div>
-            {(userShowJa ? !!q.sentence_second_ja : showJaSecond) && (
-              <div className="ja">{q.sentence_second_ja}</div>
+            {(userShowJa ? !!q.ja2 : showJaSecond) && (
+              <div className="ja">{q.ja2}</div>
             )}
           </div>
         </div>
