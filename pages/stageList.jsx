@@ -4,6 +4,7 @@ import { db, auth } from "../firebase"
 import { collection, getDocs } from "firebase/firestore"
 import Papa from "papaparse"
 import Navigation from "../components/Navigation"
+import { getArrangeWordStatus } from "../utils/vocabProgressManager"
 
 export default function StageList() {
   const [stages, setStages] = useState([])
@@ -12,15 +13,13 @@ export default function StageList() {
 
   useEffect(() => {
     async function load() {
-      const [stageRes, secRes, arrSecRes] = await Promise.all([
+      const [stageRes, secRes] = await Promise.all([
         fetch("/data/vocab/stageList.csv"),
         fetch("/data/vocab/sectionList.csv"),
-        fetch("/data/vocab/arrangeSectionList.csv"),
       ])
 
       const stageData = Papa.parse(await stageRes.text(), { header: true, skipEmptyLines: true }).data
       const secData = Papa.parse(await secRes.text(), { header: true, skipEmptyLines: true }).data
-      const arrSecData = Papa.parse(await arrSecRes.text(), { header: true, skipEmptyLines: true }).data
       setStages(stageData)
 
       const user = auth.currentUser
@@ -42,26 +41,38 @@ export default function StageList() {
       const map = {}
       await Promise.all(
         stageData.map(async (stage) => {
-          const isArrange = stage.mode_category === "arrange"
-          const sections = isArrange
-            ? arrSecData.filter(s => s.stage_id === stage.stage_id)
-            : secData.filter(s => s.stage_id === stage.stage_id)
+          // 並べて英単語：Rounds ではなく「履修済み単語数 / 全単語数」で進捗を出す
+          if (stage.mode_category === "arrange") {
+            try {
+              const wRes = await fetch(`/data/vocab/arrange_words/arrange_words_${stage.stage_id}.csv`)
+              const wText = await wRes.text()
+              const wordsData = Papa.parse(wText, { header: true, skipEmptyLines: true }).data
+                .filter(w => w.arrange_word)
+              const status = await getArrangeWordStatus(stage.stage_id)
+              const learnedCount = wordsData.filter(w => status[w.arrange_word_id]?.learned).length
+              map[stage.stage_id] = { total: wordsData.length, cleared: learnedCount }
+            } catch (e) {
+              console.error(`arrange_words取得失敗: ${stage.stage_id}`)
+              map[stage.stage_id] = { total: 0, cleared: 0 }
+            }
+            return
+          }
 
-          let totalRounds = 0
-          let clearedRounds = 0
+          // 1:1英単語：Rounds のクリア数で進捗を出す
+          const sections = secData.filter(s => s.stage_id === stage.stage_id)
+          let total = 0
+          let cleared = 0
 
           await Promise.all(
             sections.map(async (section) => {
-              const csvPath = isArrange
-                ? `/data/vocab/arrange_rounds/${section.arrange_rounds_csv}`
-                : `/data/vocab/rounds/${section.rounds_csv}`
+              const csvPath = `/data/vocab/rounds/${section.rounds_csv}`
               try {
                 const rRes = await fetch(csvPath)
                 const rText = await rRes.text()
                 const rounds = Papa.parse(rText, { header: true, skipEmptyLines: true }).data
-                totalRounds += rounds.length
+                total += rounds.length
                 rounds.forEach(round => {
-                  if (clearedSet.has(round.round_id)) clearedRounds++
+                  if (clearedSet.has(round.round_id)) cleared++
                 })
               } catch (e) {
                 console.error(`rounds取得失敗: ${csvPath}`)
@@ -69,7 +80,7 @@ export default function StageList() {
             })
           )
 
-          map[stage.stage_id] = { totalRounds, clearedRounds }
+          map[stage.stage_id] = { total, cleared }
         })
       )
       setProgressMap(map)
@@ -91,7 +102,7 @@ export default function StageList() {
         </div>
 
         {oneToOne.map((stage) => {
-          const progress = progressMap[stage.stage_id] || { totalRounds: 0, clearedRounds: 0 }
+          const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0 }
           return (
             <div
               className="unitCard"
@@ -102,7 +113,7 @@ export default function StageList() {
               <div className="unitCardContent">
                 <div className="unitTitle">{stage.stage_name}</div>
                 <div style={{ fontSize: "14px", marginTop: "8px" }}>
-                  {progress.clearedRounds}/{progress.totalRounds}
+                  {progress.cleared}/{progress.total}
                 </div>
               </div>
             </div>
@@ -118,7 +129,7 @@ export default function StageList() {
             </div>
 
             {arrange.map((stage) => {
-              const progress = progressMap[stage.stage_id] || { totalRounds: 0, clearedRounds: 0 }
+              const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0 }
               return (
                 <div
                   className="unitCard"
@@ -129,7 +140,7 @@ export default function StageList() {
                   <div className="unitCardContent">
                     <div className="unitTitle">{stage.stage_name}</div>
                     <div style={{ fontSize: "14px", marginTop: "8px" }}>
-                      {progress.clearedRounds}/{progress.totalRounds}
+                      {progress.cleared}/{progress.total}
                     </div>
                   </div>
                 </div>
