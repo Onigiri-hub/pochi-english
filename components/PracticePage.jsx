@@ -234,7 +234,7 @@ export default function PracticePage({ questions }) {
         <div className="bubble">
           <div className="en">
             {q.audio_first && (
-              <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
+              <span className="audioBtn" onClick={() => playAudio(q.audio_first)}><img src="/images/icons/speaker-333.svg" alt="音声を再生" /></span>
             )}
             {tokenize(q.sentence_first_en).map((token, i) =>
               token.entry ? (
@@ -281,7 +281,7 @@ export default function PracticePage({ questions }) {
           <div className="bubble">
             <div className="en">
               {q.audio_second && (
-                <span className="audioBtn" onClick={() => playAudio(q.audio_second)}>🔊</span>
+                <span className="audioBtn" onClick={() => playAudio(q.audio_second)}><img src="/images/icons/speaker-333.svg" alt="音声を再生" /></span>
               )}
               {tokenize(q.sentence_second_en).map((token, i) =>
                 token.entry ? (

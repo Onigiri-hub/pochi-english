@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u30_l3_p1,u30_l3,05.png,05.png,left,left,1,1,1,________.,That's all I care about.,あなたに幸せでいてほしい。,それだけが願いなんだ。,I want you to be happy,I|want|you|to|be|happy,30-3-1-a.mp3,30-3-1-b.mp3
+u30_l3_p2,u30_l3,user,user,right,right,1,1,1,________.,I wonder why.,先生に放課後残るよう頼まれた。,なんでだろう。,My teacher asked me to stay after class,My|teacher|asked|me|to|stay|after|class,30-3-2-a.mp3,30-3-2-b.mp3
+u30_l3_p3,u30_l3,05.png,,left,none,1,,1,________.,,彼に私を待つように言って。,,Please tell him to wait for me,Please|tell|him|to|wait|for|me,30-3-3-a.mp3,
+u30_l3_p4,u30_l3,user,user,right,right,1,1,1,________?,You look busy.,手伝ってほしい？,忙しそうだもん。,Do you want me to help you,Do|you|want|me|to|help|you,30-3-4-a.mp3,30-3-4-b.mp3
+u30_l3_p5,u30_l3,user,,right,none,1,,1,________.,,彼女は私たちに静かにしなさいと言った。,,She told us to be quiet,She|told|us|to|be|quiet,30-3-5-a.mp3,
+u30_l3_p6,u30_l3,user,user,right,right,1,1,1,________.,It started raining.,お父さんに迎えに来てって頼んだ。,雨が降ってきたんだ。,I asked my dad to pick me up,I|asked|my|dad|to|pick|me|up,30-3-6-a.mp3,30-3-6-b.mp3
+u30_l3_p7,u30_l3,user,user,right,right,1,1,1,________.,We have a big game soon.,コーチはもっと練習してほしいって。,もうすぐ大事な試合だからね。,My coach wants us to practice more,My|coach|wants|us|to|practice|more,30-3-7-a.mp3,30-3-7-b.mp3
+u30_l3_p8,u30_l3,user,,right,none,1,,1,________?,,あとで電話するよう彼女に頼んでくれる？,,Can you ask her to call me later,Can|you|ask|her|to|call|me|later,30-3-8-a.mp3,
+u30_l3_p9,u30_l3,user,user,right,right,1,1,1,________.,No sports for a while.,医者に一週間休むよう言われた。,しばらくスポーツはお預けだ。,The doctor told me to rest for a week,The|doctor|told|me|to|rest|for|a|week,30-3-9-a.mp3,30-3-9-b.mp3
+u30_l3_p10,u30_l3,user,,right,none,1,,1,________.,,いつか私の家族に会ってほしいな。,,I want you to meet my family someday,I|want|you|to|meet|my|family|someday,30-3-10-a.mp3,

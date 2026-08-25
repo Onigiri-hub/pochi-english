@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u30_l5_p1,u30_l5,user,,right,none,1,,1,________.,,彼は一番上の棚に届くくらい背が高い。,,He is tall enough to reach the top shelf,He|is|tall|enough|to|reach|the|top|shelf,30-5-1-a.mp3,
+u30_l5_p2,u30_l5,05.png,05.png,left,left,1,1,1,________?,It's rated for adults.,この映画見ていい歳なの？,大人向けだよ。,Are you old enough to watch this movie,Are|you|old|enough|to|watch|this|movie,30-5-2-a.mp3,30-5-2-b.mp3
+u30_l5_p3,u30_l5,user,,right,none,1,,1,________.,,この箱、一人で運べるくらい軽い。,,This box is light enough to carry by myself,This|box|is|light|enough|to|carry|by|myself,30-5-3-a.mp3,
+u30_l5_p4,u30_l5,user,user,right,right,1,1,1,________.,I was so grateful.,彼女は親切にも手伝ってくれた。,すごくありがたかった。,She was kind enough to help me,She|was|kind|enough|to|help|me,30-5-4-a.mp3,30-5-4-b.mp3
+u30_l5_p5,u30_l5,user,user,right,right,1,1,1,________?,I really want to!,今日は泳げるくらい暖かい？,すごく泳ぎたいんだ！,Is it warm enough to go swimming today,Is|it|warm|enough|to|go|swimming|today,30-5-5-a.mp3,30-5-5-b.mp3
+u30_l5_p6,u30_l5,user,,right,none,1,,1,________.,,ロープは地面に届くくらい長かった。,,The rope was long enough to reach the ground,The|rope|was|long|enough|to|reach|the|ground,30-5-6-a.mp3,
+u30_l5_p7,u30_l5,user,user,right,right,1,1,1,________.,Just barely!,彼はバスに間に合うくらい速く走った。,ギリギリだったけどね！,He ran fast enough to catch the bus,He|ran|fast|enough|to|catch|the|bus,30-5-7-a.mp3,30-5-7-b.mp3
+u30_l5_p8,u30_l5,user,,right,none,1,,1,________!,,ピザ一枚まるごといけるくらいお腹すいた！,,I'm hungry enough to eat a whole pizza,I'm|hungry|enough|to|eat|a|whole|pizza,30-5-8-a.mp3,
+u30_l5_p9,u30_l5,05.png,,left,none,1,,1,________.,,ここの水は飲めるくらいきれいだよ。,,The water here is clean enough to drink,The|water|here|is|clean|enough|to|drink,30-5-9-a.mp3,
+u30_l5_p10,u30_l5,05.png,05.png,left,left,1,1,1,________?,"Come on, let's go!",挑戦する勇気ある？,ほら、やってみようよ！,Are you brave enough to try it,Are|you|brave|enough|to|try|it,30-5-10-a.mp3,30-5-10-b.mp3

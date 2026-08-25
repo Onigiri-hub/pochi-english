@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u30_l11_p1,u30_l11,user,user,right,right,1,1,1,________.,Is that too much to ask?,ただ分かってほしいだけなんだ。,それって、わがままかな？,I just want to be understood,I|just|want|to|be|understood,30-11-1-a.mp3,30-11-1-b.mp3
+u30_l11_p2,u30_l11,05.png,,left,none,1,,1,________.,,仲間はずれにされたい人なんていないよ。,,No one wants to be left out,No|one|wants|to|be|left|out,30-11-2-a.mp3,
+u30_l11_p3,u30_l11,user,05.png,right,left,1,1,1,________.,Fingers crossed!,彼女はパーティーに招待されたいと思ってる。,うまくいくといいね。,She hopes to be invited to the party,She|hopes|to|be|invited|to|the|party,30-11-3-a.mp3,30-11-3-b.mp3
+u30_l11_p4,u30_l11,user,05.png,right,left,1,1,1,________.,He's growing up fast.,彼は大人扱いされたいんだ。,大人びてるんだね。,He wants to be treated like an adult,He|wants|to|be|treated|like|an|adult,30-11-4-a.mp3,30-11-4-b.mp3
+u30_l11_p5,u30_l11,user,user,right,right,1,1,1,________.,I've practiced so hard.,チームに選ばれたいなあ。,すごく練習してきたんだよお。,I'd love to be chosen for the team,I'd|love|to|be|chosen|for|the|team,30-11-5-a.mp3,30-11-5-b.mp3
+u30_l11_p6,u30_l11,05.png,,left,none,1,,1,________.,,笑われるのが好きな人なんていないよ。,,Nobody likes to be laughed at,Nobody|likes|to|be|laughed|at,30-11-6-a.mp3,
+u30_l11_p7,u30_l11,user,user,right,right,1,1,1,________.,Their parents were late.,子どもたちは迎えに来てもらうのを待っていた。,親が遅れてたんだ。,The kids waited to be picked up,The|kids|waited|to|be|picked|up,30-11-7-a.mp3,30-11-7-b.mp3
+u30_l11_p8,u30_l11,user,05.png,right,left,1,1,1,________.,We'd better hurry.,このレポートは金曜までに終わらせないといけない。,急いだほうがいいね。,This report needs to be finished by Friday,This|report|needs|to|be|finished|by|Friday,30-11-8-a.mp3,30-11-8-b.mp3
+u30_l11_p9,u30_l11,user,,right,none,1,,1,________.,,彼女は先生にほめられて嬉しかった。,,She was happy to be praised by her teacher,She|was|happy|to|be|praised|by|her|teacher,30-11-9-a.mp3,
+u30_l11_p10,u30_l11,user,05.png,right,left,1,1,1,________.,It's only natural.,誰だって愛されたいよ。,当たり前のことだよ。,Everyone wants to be loved,Everyone|wants|to|be|loved,30-11-10-a.mp3,30-11-10-b.mp3

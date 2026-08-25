@@ -84,7 +84,7 @@ export default function Home() {
           className="newsLink"
           onClick={() => router.push("/news")}
         >
-          📢 お知らせ
+          お知らせ
         </button>
 
         <a href="https://ofuse.me/pochipochi"
@@ -92,13 +92,13 @@ export default function Home() {
           rel="noopener noreferrer"
           className="supportLink"
         >
-          💝 Pochiを応援する
+          Pochiを応援する
         </a>
         <p className="supportNote">
-          ↑こどもの皆さんは
+          こどもたちが無料で学べるように、
         </p>
         <p className="supportNote">
-          おうちの人と一緒にね
+          ご支援を募っています
         </p>
 
       </div>

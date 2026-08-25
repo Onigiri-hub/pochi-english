@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u27_l7_p1,u27_l7,05.png,,left,none,1,,1,________.,,今日の午後は雨が降るかもしれない。,,It might rain this afternoon,It|might|rain|this|afternoon,27-7-1-a.mp3,
+u27_l7_p2,u27_l7,05.png,,left,none,1,,1,________.,,明日図書館に行くかも。,,I might go to the library tomorrow,I|might|go|to|the|library|tomorrow,27-7-2-a.mp3,
+u27_l7_p3,u27_l7,05.png,,left,none,1,,1,________.,,彼女は今忙しいかもしれない。,,She might be busy now,She|might|be|busy|now,27-7-3-a.mp3,
+u27_l7_p4,u27_l7,05.png,,left,none,1,,1,________.,,この鍵で開くかもしれない。,,This key might work,This|key|might|work,27-7-4-a.mp3,
+u27_l7_p5,u27_l7,05.png,,left,none,1,,1,________.,,彼は答えを知っているかもしれない。,,He might know the answer,He|might|know|the|answer,27-7-5-a.mp3,
+u27_l7_p6,u27_l7,05.png,,left,none,1,,1,________.,,そのゲームは思ったより難しいかもしれない。,,The game might be harder than I thought,The|game|might|be|harder|than|I|thought,27-7-6-a.mp3,
+u27_l7_p7,u27_l7,05.png,,left,none,1,,1,________.,,私たちは遅れるかもしれない。,,We might be late,We|might|be|late,27-7-7-a.mp3,
+u27_l7_p8,u27_l7,05.png,,left,none,1,,1,________.,,この映画、君は気に入るかもしれないよ。,,You might like this movie,You|might|like|this|movie,27-7-8-a.mp3,
+u27_l7_p9,u27_l7,05.png,,left,none,1,,1,________.,,スマホを家に忘れてきたのかもしれない。,,I might have left my phone at home,I|might|have|left|my|phone|at|home,27-7-9-a.mp3,
+u27_l7_p10,u27_l7,05.png,,left,none,1,,1,________.,,彼は約束を忘れたのかもしれない。,,He might have forgotten our meeting,He|might|have|forgotten|our|meeting,27-7-10-a.mp3,

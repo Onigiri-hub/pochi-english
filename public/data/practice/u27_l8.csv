@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u27_l8_p1,u27_l8,05.png,,left,none,1,,0,________.,,祖母はピアノがとても上手だった。,,My grandmother could play the piano very well,My|grandmother|could|play|the|piano|very|well,27-3-2-a.mp3,
+u27_l8_p2,u27_l8,05.png,,left,none,1,,0,________?,,窓を開けてもらえますか？,,Could you open the window,Could|you|open|the|window,27-3-4-a.mp3,
+u27_l8_p3,u27_l8,05.png,,left,none,1,,0,________.,,今年の夏は京都に行ってもいいかもね。,,We could go to Kyoto this summer,We|could|go|to|Kyoto|this|summer,27-3-8-a.mp3,
+u27_l8_p4,u27_l8,05.png,,left,none,1,,0,________.,,それは本当かもしれない。,,That could be true,That|could|be|true,27-3-10-a.mp3,
+u27_l8_p5,u27_l8,05.png,,left,none,1,,0,________.,,祖父は寝る前によく昔話をしてくれた。,,My grandfather would tell me stories before bed,My|grandfather|would|tell|me|stories|before|bed,27-5-2-a.mp3,
+u27_l8_p6,u27_l8,05.png,,left,none,1,,0,________.,,パソコンがどうしても起動しなかった。,,My computer wouldn't start,My|computer|wouldn't|start,27-5-7-a.mp3,
+u27_l8_p7,u27_l8,05.png,,left,none,1,,0,________.,,Lサイズのピザをお願いします。,,I'd like a large pizza,I'd|like|a|large|pizza,27-5-9-a.mp3,
+u27_l8_p8,u27_l8,05.png,,left,none,1,,0,________.,,彼女は今忙しいかもしれない。,,She might be busy now,She|might|be|busy|now,27-7-3-a.mp3,
+u27_l8_p9,u27_l8,05.png,,left,none,1,,0,________.,,彼は答えを知っているかもしれない。,,He might know the answer,He|might|know|the|answer,27-7-5-a.mp3,
+u27_l8_p10,u27_l8,05.png,,left,none,1,,0,________.,,スマホを家に忘れてきたのかもしれない。,,I might have left my phone at home,I|might|have|left|my|phone|at|home,27-7-9-a.mp3,

@@ -1,0 +1,6 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u26_l8_p1,u26_l8,user,,right,none,1,,1,________.,,私はそんなにお腹が空いていない。,,I'm not very hungry,I'm|not|very|hungry,26-8-1-a.mp3,
+u26_l8_p2,u26_l8,user,,right,none,1,,1,________.,,私はそれほど疲れていない。,,I'm not really tired,I'm|not|really|tired,26-8-2-a.mp3,
+u26_l8_p3,u26_l8,user,,right,none,1,,1,________.,,それほど難しくない。,,It's not so difficult,It's|not|so|difficult,26-8-3-a.mp3,
+u26_l8_p4,u26_l8,user,,right,none,1,,1,________.,,その映画はそれほど良くなかった。,,The movie wasn't very good,The|movie|wasn't|very|good,26-8-4-a.mp3,
+u26_l8_p5,u26_l8,user,05.png,right,left,1,1,1,________?,Not really. I'm not into romance manga at all.,恋愛漫画好き？,うーん。恋愛漫画には全然興味ないかな。,Do you like romance manga,Do|you|like|romance|manga,26-8-5-a.mp3,26-8-5-b.mp3

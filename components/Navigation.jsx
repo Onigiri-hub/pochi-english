@@ -14,19 +14,23 @@ export default function Navigation() {
       <div className="navInner">
         <button onClick={handleHomeClick} className="navItem" data-sound>
           <img src="/images/icons/home.svg" alt="ホーム" />
+          <span className="label">HOME</span>
         </button>
 
         <button onClick={() => router.push("/unitList")} className="navItem" data-sound>
           <img src="/images/icons/dog.svg" alt="リスト" />
+          <span className="label">GRAMMAR</span>
         </button>
 
         <button onClick={() => router.push("/stageList")} className="navItem">
           <img src="/images/icons/honekko.svg" alt="英単語" />
+          <span className="label">WORDS</span>
         </button>
 
 
         <button onClick={() => router.push("/progress")} className="navItem" data-sound>
           <img src="/images/icons/graph.svg" alt="プロフ" />
+          <span className="label">STATS</span>
         </button>
 
         {/* モフボタン */}
@@ -72,14 +76,15 @@ export default function Navigation() {
           padding: 5px;
         }
         .navItem img {
-          width: 28px;
-          height: 28px;
+          width: 24px;
+          height: 24px;
           object-fit: contain;
           margin-bottom: 2px;
         }
         .label {
           font-size: 10px;
           font-weight: bold;
+          color: #ebebeb;
         }
       `}</style>
     </div>

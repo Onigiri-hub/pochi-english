@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u29_l9_p1,u29_l9,user,user,right,right,1,1,1,________.,You were amazing!,パーティーで君が踊るのを見たよ。,すごく上手だった！,I saw you dance at the party,I|saw|you|dance|at|the|party,29-9-1-a.mp3,29-9-1-b.mp3
+u29_l9_p2,u29_l9,user,,right,none,1,,1,________?,,電話が鳴るの聞こえた？,,Did you hear the phone ring,Did|you|hear|the|phone|ring,29-9-2-a.mp3,
+u29_l9_p3,u29_l9,05.png,05.png,left,left,1,1,1,________.,Was that an earthquake?,地面が揺れるのを感じた。,今の地震だった？,I felt the ground shake,I|felt|the|ground|shake,29-9-3-a.mp3,29-9-3-b.mp3
+u29_l9_p4,u29_l9,user,user,right,right,1,1,1,________.,But no one was there.,誰かが私の名前を呼ぶのが聞こえた。,でも誰もいなかったの。,I heard someone call my name,I|heard|someone|call|my|name,29-9-4-a.mp3,29-9-4-b.mp3
+u29_l9_p5,u29_l9,user,,right,none,1,,1,________.,,私たちは海に沈む夕日を見た。,,We watched the sun set over the sea,We|watched|the|sun|set|over|the|sea,29-9-5-a.mp3,
+u29_l9_p6,u29_l9,user,user,right,right,1,1,1,________.,Should I tell him?,彼が財布を落とすのを見た。,教えてあげるべきかな？,I saw him drop his wallet,I|saw|him|drop|his|wallet,29-9-6-a.mp3,29-9-6-b.mp3
+u29_l9_p7,u29_l9,user,user,right,right,1,1,1,________.,Someone must be angry.,ドアがバタンと閉まるのが聞こえた。,誰か怒ってるのかも。,I heard the door slam,I|heard|the|door|slam,29-9-7-a.mp3,29-9-7-b.mp3
+u29_l9_p8,u29_l9,user,05.png,right,left,1,1,1,________?,It was so close!,彼女がレースで勝つの見た？,めっちゃ接戦だった！,Did you see her win the race,Did|you|see|her|win|the|race,29-9-8-a.mp3,29-9-8-b.mp3
+u29_l9_p9,u29_l9,user,,right,none,1,,1,________.,,心臓がドキドキ速くなるのを感じた。,,I felt my heart beat faster,I|felt|my|heart|beat|faster,29-9-9-a.mp3,
+u29_l9_p10,u29_l9,user,user,right,right,1,1,1,________.,It was beautiful.,花火が空を照らすのを見た。,きれいだったよ。,We watched the fireworks light up the sky,We|watched|the|fireworks|light|up|the|sky,29-9-10-a.mp3,29-9-10-b.mp3

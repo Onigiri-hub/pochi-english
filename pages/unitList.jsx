@@ -10,6 +10,7 @@ export default function UnitList(){
   const [progressMap, setProgressMap] = useState({}) // ★ 全ユニットの進捗をまとめて管理
   const router = useRouter()
   const scrollRefs = useRef({});
+  const iconAngles = [0, 0, 0]
 
   useEffect(()=>{
     async function load() {
@@ -68,8 +69,16 @@ export default function UnitList(){
       <div className="unitList">
         {/* タイトル追加 */}
         <div style={{ textAlign: "center", margin: "25px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
-          <img src="/images/icons/dog_333.svg" style={{ width: "30px", marginRight: "8px", verticalAlign: "middle" }} />
           キホンの英文法
+          <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
+            {iconAngles.map((angle, i) => (
+              <img
+                key={i}
+                src="/images/icons/dog_333.svg"
+                style={{ width: "24px", transform: `rotate(${angle}deg)` }}
+              />
+            ))}
+          </div>
         </div>
 
         {Object.entries(units).map(([no, unit]) => {

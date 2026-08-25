@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u29_l3_p1,u29_l3,user,user,right,right,1,1,1,________.,I really wanted to play games.,お母さんは、私に先に宿題をやらせた。,本当はゲームがしたかったのに。,My mom made me finish my homework first,My|mom|made|me|finish|my|homework|first,29-3-1-a.mp3,29-3-1-b.mp3
+u29_l3_p2,u29_l3,user,user,right,right,1,1,1,________!,My stomach already hurts.,笑わせないでよ！,もうお腹痛いってば。,Don't make me laugh,Don't|make|me|laugh,29-3-2-a.mp3,29-3-2-b.mp3
+u29_l3_p3,u29_l3,user,,right,none,1,,1,________.,,先生は私たちに教室を掃除させた。,,The teacher made us clean the classroom,The|teacher|made|us|clean|the|classroom,29-3-3-a.mp3,
+u29_l3_p4,u29_l3,05.png,user,left,right,1,1,1,________?,I just thought about it again.,どうして考えを変えたの？,もう一回考えてみただけだよ。,What made you change your mind,What|made|you|change|your|mind,29-3-4-a.mp3,29-3-4-b.mp3
+u29_l3_p5,u29_l3,user,user,right,right,1,1,1,________.,Even my dad was crying!,この映画はみんなを泣かせた。,お父さんまで泣いてたよ！,This movie made everyone cry,This|movie|made|everyone|cry,29-3-5-a.mp3,29-3-5-b.mp3
+u29_l3_p6,u29_l3,user,,right,none,1,,1,________!,,あなたは私にそんなことさせられないよ！（あなたの言うことは聞けないね）,,You can't make me do that,You|can't|make|me|do|that,29-3-6-a.mp3,
+u29_l3_p7,u29_l3,05.png,user,left,right,1,1,1,________.,"No wonder, it was so loud.",大きな音が赤ちゃんを泣かせた。（大きな音で赤ちゃんが泣いた）,だよね、すごくうるさかったもん。,The loud noise made the baby cry,The|loud|noise|made|the|baby|cry,29-3-7-a.mp3,29-3-7-b.mp3
+u29_l3_p8,u29_l3,user,,right,none,1,,1,________.,,妹はいつも私を待たせるんだ。,,My little sister always makes me wait,My|little|sister|always|makes|me|wait,29-3-8-a.mp3,
+u29_l3_p9,u29_l3,user,,right,none,1,,1,________!,,何があっても私を諦めさせられないよ！（何があっても私はあきらめないよ）,,Nothing can make me give up,Nothing|can|make|me|give|up,29-3-9-a.mp3,
+u29_l3_p10,u29_l3,user,user,right,right,1,1,1,________?,You seem a little upset.,何があなたにそんなことを言わせたの？（どうしてそんなこと言うの？）,なんか少し怒ってるみたい。,What makes you say that,What|makes|you|say|that,29-3-10-a.mp3,29-3-10-b.mp3

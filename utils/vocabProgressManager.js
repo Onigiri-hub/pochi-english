@@ -5,7 +5,7 @@ import {
 } from "firebase/firestore"
 
 // ログインが確定するまで待つ関数
-function waitForUser() {
+export function waitForUser() {
   return new Promise((resolve) => {
     if (auth.currentUser) {
       resolve(auth.currentUser)
@@ -157,6 +157,81 @@ export async function getVocabMastery(section, modeKey) {
   }
 }
 
+// ===== 並べ替え単語の履修・自信度ステータス =====
+// 保存先: users/{uid}/arrange_word_status/{stage}
+//   = { va0001: { learned: true, confidence: "none"|"low"|"high" }, ... }
+
+// ステータスを取得（一覧表示用）
+export async function getArrangeWordStatus(stage) {
+  const user = await waitForUser()
+  const key = `arrange_word_status_${stage}`
+
+  if (!user) {
+    const local = localStorage.getItem(key)
+    return local ? JSON.parse(local) : {}
+  }
+
+  try {
+    const local = localStorage.getItem(key)
+    if (local) return JSON.parse(local)
+
+    const ref = doc(db, "users", user.uid, "arrange_word_status", stage)
+    const snap = await getDoc(ref)
+    const data = snap.exists() ? snap.data() : {}
+    localStorage.setItem(key, JSON.stringify(data))
+    return data
+
+  } catch (e) {
+    console.error("arrange_word_status取得失敗:", e)
+    const local = localStorage.getItem(key)
+    return local ? JSON.parse(local) : {}
+  }
+}
+
+// 右●：自信度をユーザー入力で保存
+export async function saveArrangeWordConfidence(stage, wordId, confidence) {
+  const key = `arrange_word_status_${stage}`
+
+  // localStorageを先に更新（learnedは保持）
+  const local = localStorage.getItem(key)
+  const current = local ? JSON.parse(local) : {}
+  current[wordId] = { ...(current[wordId] || { learned: false }), confidence }
+  localStorage.setItem(key, JSON.stringify(current))
+
+  const user = auth.currentUser
+  if (!user) return current
+
+  try {
+    const ref = doc(db, "users", user.uid, "arrange_word_status", stage)
+    await setDoc(ref, { [wordId]: current[wordId] }, { merge: true })
+  } catch (e) {
+    console.error("arrange_word_confidence保存失敗:", e)
+  }
+  return current
+}
+
+// 左●：単語ベース出題を一度でもやったら履修にする（例文データ完成後に呼ぶ）
+export async function markArrangeWordLearned(stage, wordId) {
+  const key = `arrange_word_status_${stage}`
+
+  const local = localStorage.getItem(key)
+  const current = local ? JSON.parse(local) : {}
+  if (current[wordId]?.learned) return current  // 既に履修済みなら何もしない
+  current[wordId] = { confidence: "none", ...(current[wordId] || {}), learned: true }
+  localStorage.setItem(key, JSON.stringify(current))
+
+  const user = auth.currentUser
+  if (!user) return current
+
+  try {
+    const ref = doc(db, "users", user.uid, "arrange_word_status", stage)
+    await setDoc(ref, { [wordId]: current[wordId] }, { merge: true })
+  } catch (e) {
+    console.error("arrange_word_learned保存失敗:", e)
+  }
+  return current
+}
+
 // Round終了時にhistoryに記録（グラフ用）
 export async function addVocabHistory(roundId, sectionId) {
   const user = auth.currentUser
@@ -171,5 +246,23 @@ export async function addVocabHistory(roundId, sectionId) {
     })
   } catch (e) {
     console.error("vocab_history保存失敗:", e)
+  }
+}
+
+// 並べて英単語（単語ベース・ラウンド制なし）の完了をvocab_historyに記録
+// グラフでは英単語（青緑）としてカウントされる
+export async function addArrangeWordHistory(stageId) {
+  const user = auth.currentUser
+  if (!user) return
+
+  try {
+    await addDoc(collection(db, "users", user.uid, "vocab_history"), {
+      stage_id: stageId,
+      mode: "arrangeWord",
+      clearedAt: serverTimestamp(),
+      dateString: new Date().toLocaleDateString("sv-SE")
+    })
+  } catch (e) {
+    console.error("arrange_word_history保存失敗:", e)
   }
 }
