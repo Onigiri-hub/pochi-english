@@ -6,6 +6,7 @@ import { useProfileContext } from "../utils/ProfileContext"
 import { updateStreak, calcMofu, addMofu, addTotalRounds } from "../utils/mofuManager"
 import { db, auth } from "../firebase"
 import { loadCSV } from "../utils/csvLoader"
+import { addArrangeWordHistory } from "../utils/vocabProgressManager"
 import ShareModal from "../components/ShareModal"
 
 export default function VocabComplete() {
@@ -38,6 +39,11 @@ export default function VocabComplete() {
 
       // 1. URLから初クリア判定を受け取る
       const firstClear = isFirstClear === "true"
+
+      // 並べて英単語（単語ベース）は完了ごとにvocab_historyへ記録（英単語としてカウント）
+      if (isArrangeWord) {
+        await addArrangeWordHistory(stage)
+      }
 
       // 2. 連続日数を更新して取得
       const { count: streak, isFirstToday } = await updateStreak()

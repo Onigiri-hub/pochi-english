@@ -4,7 +4,42 @@ import { db, auth } from "../firebase"
 import { collection, getDocs } from "firebase/firestore"
 import Papa from "papaparse"
 import Navigation from "../components/Navigation"
-import { getArrangeWordStatus } from "../utils/vocabProgressManager"
+import { getArrangeWordStatus, waitForUser } from "../utils/vocabProgressManager"
+
+// 円グラフ（ドーナツ型の進捗リング）
+function CircleProgress({ value, total, color, label }) {
+  const size = 84
+  const stroke = 9
+  const r = (size - stroke) / 2
+  const circumference = 2 * Math.PI * r
+  const fraction = total > 0 ? value / total : 0
+  const offset = circumference * (1 - fraction)
+
+  return (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+      <circle
+        cx={size / 2} cy={size / 2} r={r}
+        fill="none" stroke="#ccc" strokeWidth={stroke}
+      />
+      <circle
+        cx={size / 2} cy={size / 2} r={r}
+        fill="none" stroke={color} strokeWidth={stroke}
+        strokeLinecap="round"
+        strokeDasharray={circumference}
+        strokeDashoffset={offset}
+        transform={`rotate(-90 ${size / 2} ${size / 2})`}
+        style={{ transition: "stroke-dashoffset 0.6s cubic-bezier(0.22, 1, 0.36, 1)" }}
+      />
+      <text
+        x="50%" y="50%"
+        dominantBaseline="central" textAnchor="middle"
+        fontSize="14" fontWeight="bold" fill="#333"
+      >
+        {label}
+      </text>
+    </svg>
+  )
+}
 
 export default function StageList() {
   const [stages, setStages] = useState([])
@@ -22,7 +57,7 @@ export default function StageList() {
       const secData = Papa.parse(await secRes.text(), { header: true, skipEmptyLines: true }).data
       setStages(stageData)
 
-      const user = auth.currentUser
+      const user = await waitForUser()
       const clearedSet = new Set()
       if (user) {
         try {
@@ -50,7 +85,8 @@ export default function StageList() {
                 .filter(w => w.arrange_word)
               const status = await getArrangeWordStatus(stage.stage_id)
               const learnedCount = wordsData.filter(w => status[w.arrange_word_id]?.learned).length
-              map[stage.stage_id] = { total: wordsData.length, cleared: learnedCount }
+              const confidentCount = wordsData.filter(w => status[w.arrange_word_id]?.confidence === "high").length
+              map[stage.stage_id] = { total: wordsData.length, cleared: learnedCount, confident: confidentCount }
             } catch (e) {
               console.error(`arrange_words取得失敗: ${stage.stage_id}`)
               map[stage.stage_id] = { total: 0, cleared: 0 }
@@ -97,8 +133,12 @@ export default function StageList() {
 
         {/* 1:1英単語セクション */}
         <div style={{ textAlign: "center", margin: "25px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
-          <img src="/images/icons/honekko_333.svg" style={{ width: "24px", marginRight: "8px", verticalAlign: "middle" }} />
           1:1英単語
+          <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
+            <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+            <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+            <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+          </div>
         </div>
 
         {oneToOne.map((stage) => {
@@ -112,8 +152,18 @@ export default function StageList() {
               <img src="/images/illustrations/stagelist_button.png" className="unitCardBg" />
               <div className="unitCardContent">
                 <div className="unitTitle">{stage.stage_name}</div>
-                <div style={{ fontSize: "14px", marginTop: "8px" }}>
-                  {progress.cleared}/{progress.total}
+                <div style={{ width: "80%", marginTop: "24px", display: "flex", alignItems: "center", gap: "10px" }}>
+                  <div style={{ flex: 1, height: "8px", borderRadius: "4px", background: "#ccc", overflow: "hidden" }}>
+                    <div style={{
+                      height: "100%",
+                      width: `${progress.total > 0 ? (progress.cleared / progress.total) * 100 : 0}%`,
+                      background: "#02ccbb",
+                      transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
+                    }} />
+                  </div>
+                  <div style={{ fontSize: "13px", minWidth: "48px", textAlign: "right" }}>
+                    {progress.cleared}/{progress.total}
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,24 +173,33 @@ export default function StageList() {
         {/* 並べて英単語セクション */}
         {arrange.length > 0 && (
           <>
-            <div style={{ textAlign: "center", margin: "40px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
-              <img src="/images/icons/honekko_333.svg" style={{ width: "24px", marginRight: "8px", verticalAlign: "middle" }} />
+            <div style={{ textAlign: "center", margin: "70px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
               並べて英単語
+              <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
+                <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+                <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+                <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+              </div>
             </div>
 
             {arrange.map((stage) => {
-              const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0 }
+              const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0, confident: 0 }
+              // データ読み込み完了後、単語データが無い（total=0）Stageはグレーアウトして無効化
+              const loaded = progressMap[stage.stage_id] !== undefined
+              const disabled = loaded && progress.total === 0
               return (
                 <div
                   className="unitCard"
                   key={stage.stage_id}
-                  onClick={() => router.push(`/arrangeSectionList?stage=${stage.stage_id}&name=${encodeURIComponent(stage.stage_name)}`)}
+                  onClick={disabled ? undefined : () => router.push(`/arrangeSectionList?stage=${stage.stage_id}&name=${encodeURIComponent(stage.stage_name)}`)}
+                  style={disabled ? { filter: "grayscale(100%)", opacity: 0.5, cursor: "default", pointerEvents: "none" } : undefined}
                 >
-                  <img src="/images/illustrations/stagelist_button.png" className="unitCardBg" />
+                  <img src="/images/illustrations/unitlist_button.png" className="unitCardBg" />
                   <div className="unitCardContent">
                     <div className="unitTitle">{stage.stage_name}</div>
-                    <div style={{ fontSize: "14px", marginTop: "8px" }}>
-                      {progress.cleared}/{progress.total}
+                    <div style={{ display: "flex", justifyContent: "center", gap: "24px", marginTop: "20px" }}>
+                      <CircleProgress value={progress.cleared} total={progress.total} color="#ffa726" label="やったよ" />
+                      <CircleProgress value={progress.confident} total={progress.total} color="#02ccbb" label="自信あり" />
                     </div>
                   </div>
                 </div>

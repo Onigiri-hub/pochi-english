@@ -5,7 +5,7 @@ import {
 } from "firebase/firestore"
 
 // ログインが確定するまで待つ関数
-function waitForUser() {
+export function waitForUser() {
   return new Promise((resolve) => {
     if (auth.currentUser) {
       resolve(auth.currentUser)
@@ -246,5 +246,23 @@ export async function addVocabHistory(roundId, sectionId) {
     })
   } catch (e) {
     console.error("vocab_history保存失敗:", e)
+  }
+}
+
+// 並べて英単語（単語ベース・ラウンド制なし）の完了をvocab_historyに記録
+// グラフでは英単語（青緑）としてカウントされる
+export async function addArrangeWordHistory(stageId) {
+  const user = auth.currentUser
+  if (!user) return
+
+  try {
+    await addDoc(collection(db, "users", user.uid, "vocab_history"), {
+      stage_id: stageId,
+      mode: "arrangeWord",
+      clearedAt: serverTimestamp(),
+      dateString: new Date().toLocaleDateString("sv-SE")
+    })
+  } catch (e) {
+    console.error("arrange_word_history保存失敗:", e)
   }
 }

@@ -221,6 +221,8 @@ export default function ArrangePractice() {
   const posSecond = q.position_second || "left"
   const iconFirst = q.icon_first || "user"
   const iconSecond = q.icon_second || "05.png"
+  // highlight_chips に含まれる単語チップだけ色を少し変える
+  const highlightChips = new Set((q.highlight_chips || "").split("|").map(s => s.trim()).filter(Boolean))
 
   function renderSentence(text) {
     if (!text || text.includes("____")) return text
@@ -314,6 +316,7 @@ export default function ArrangePractice() {
           <button
             key={i}
             className="chip"
+            style={highlightChips.has(w) ? { background: "#7f95b8" } : undefined}
             onMouseDown={() => handleChipPressStart(w)}
             onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
             onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
@@ -330,6 +333,7 @@ export default function ArrangePractice() {
           <button
             key={i}
             className="chip"
+            style={highlightChips.has(c) ? { background: "#7f95b8" } : undefined}
             onMouseDown={() => handleChipPressStart(c)}
             onMouseUp={(e) => handleChipPressEnd(c, () => addChip(c, i), e)}
             onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
