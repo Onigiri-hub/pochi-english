@@ -272,7 +272,7 @@ export default function ArrangePractice() {
         <div className="bubble">
           <div className="en">
             {q.audio_first && (
-              <span className="audioBtn" onClick={() => playAudio(q.audio_first)}>🔊</span>
+              <span className="audioBtn" onClick={() => playAudio(q.audio_first)}><img src="/images/icons/speaker-333.svg" alt="音声を再生" /></span>
             )}
             {renderSentence(q.sentence_first_en)}
             {!userShowJa && q.ja1 && (
@@ -295,7 +295,7 @@ export default function ArrangePractice() {
           <div className="bubble">
             <div className="en">
               {q.audio_second && (
-                <span className="audioBtn" onClick={() => playAudio(q.audio_second)}>🔊</span>
+                <span className="audioBtn" onClick={() => playAudio(q.audio_second)}><img src="/images/icons/speaker-333.svg" alt="音声を再生" /></span>
               )}
               {renderSentence(q.sentence_second_en)}
               {!userShowJa && q.ja2 && (

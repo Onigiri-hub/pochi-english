@@ -165,7 +165,9 @@ export default function Progress() {
     <div className="container">
       <div className="mainContent">
         <div className="header" style={{ justifyContent: "flex-end" }}>
-          <button className="settingsBtn" onClick={() => router.push("/settings")}>⚙️</button>
+          <button className="settingsBtn" onClick={() => router.push("/settings")}>
+            <img src="/images/icons/settings-333.svg" alt="設定" />
+          </button>
         </div>
 
         <div className="profileSection">

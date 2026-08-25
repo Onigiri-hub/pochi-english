@@ -150,11 +150,20 @@
   color: #333;
 }
 
-.settingsBtn { 
-  background: none; 
-  border: none; 
-  font-size: 24px; 
-  cursor: pointer; 
+.settingsBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.settingsBtn img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .profileSection { 

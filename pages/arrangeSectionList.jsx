@@ -247,7 +247,10 @@ export default function ArrangeSectionList() {
         {/* 設定・並べ替えツールバー */}
         <div style={{ display: "flex", justifyContent: "flex-end", gap: "8px", marginBottom: "8px" }}>
           <button onClick={resortNow} style={toolBtnStyle}>🔃 並べ替え</button>
-          <button onClick={() => setShowSortSettings(true)} style={toolBtnStyle}>⚙️ 設定</button>
+          <button onClick={() => setShowSortSettings(true)} style={toolBtnStyle}>
+            <img src="/images/icons/settings-333.svg" alt="" style={{ width: "1em", height: "1em", verticalAlign: "-0.15em", marginRight: "4px" }} />
+            設定
+          </button>
         </div>
 
         {/* 単語一覧（スクロール可能エリア） */}

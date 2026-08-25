@@ -41,6 +41,10 @@ function CircleProgress({ value, total, color, label }) {
   )
 }
 
+// 並べて英単語：例文データが用意できている Stage_no の上限。
+// これより後の Stage はグレーアウトして無効化する（例文を追加したら値を上げる）。
+const ARRANGE_MAX_ENABLED_NO = 2
+
 export default function StageList() {
   const [stages, setStages] = useState([])
   const [progressMap, setProgressMap] = useState({})
@@ -185,8 +189,11 @@ export default function StageList() {
             {arrange.map((stage) => {
               const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0, confident: 0 }
               // データ読み込み完了後、単語データが無い（total=0）Stageはグレーアウトして無効化
+              // さらに、例文が未用意の Stage（stage_no が上限より後）も無効化する
               const loaded = progressMap[stage.stage_id] !== undefined
-              const disabled = loaded && progress.total === 0
+              const disabled =
+                (loaded && progress.total === 0) ||
+                Number(stage.stage_no) > ARRANGE_MAX_ENABLED_NO
               return (
                 <div
                   className="unitCard"
