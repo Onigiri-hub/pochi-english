@@ -27,7 +27,7 @@ const BADGE_CATEGORIES = [
   },
   {
     label: "英文法レッスン",
-    ids: ["first_clear", "lesson_5", "lesson_10", "lesson_50", "lesson_100", "lesson_200"],
+    ids: ["first_clear", "lesson_5", "lesson_10", "lesson_50", "lesson_100", "lesson_200", "lesson_250", "lesson_300"],
   },
   {
     label: "英文法Unitクリア",
