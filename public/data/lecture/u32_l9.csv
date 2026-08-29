@@ -1,0 +1,28 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u32_l9_p1,u32_l9,1,whoseは「だれの？」,32-9-1,image_top
+u32_l9_p2,u32_l9,2,"whose pen（誰のペンか？）
+whose brother（誰の兄弟か？）",32-9-2-1,image_top
+u32_l9_p3,u32_l9,3,みたいに、名詞が続く形になる。,32-9-2-1,image_top
+u32_l9_p4,u32_l9,4,関係代名詞でも同じように、名詞が続くよ。,32-9-2-1,image_top
+u32_l9_p5,u32_l9,5,"I know a boy whose father is a YouTuber.
+お父さんがユーチューバーやってるって男の子、知ってるよ。",32-9-2-2,image_top
+u32_l9_p6,u32_l9,6,頭から見ていくよ。,32-9-2-2,image_top
+u32_l9_p7,u32_l9,7,"I know a boy
+とある男の子を知ってるよ",32-9-2-3,image_top
+u32_l9_p8,u32_l9,8,whose が来たから、その男の子の説明が来るんだなと身構える。,32-9-2-4,image_top
+u32_l9_p9,u32_l9,9,"whose father is a YouTuber
+その男の子の親父の説明かーい！",32-9-2-5,image_top
+u32_l9_p10,u32_l9,10,そんな感じ。,32-9-2-5,image_top
+u32_l9_p11,u32_l9,11,まあそれでも、,32-9-2-5,image_top
+u32_l9_p12,u32_l9,12,その男の子にはどんな父親がいるか？っていう,32-9-2-5,image_top
+u32_l9_p13,u32_l9,13,男の子の説明にはなってるよね。,32-9-2-5,image_top
+u32_l9_p14,u32_l9,14,whose は、誰の？のイメージがつよいけど、,32-9-2-5,image_top
+u32_l9_p15,u32_l9,15,人だけじゃなくてモノにも使える。,32-9-2-5,image_top
+u32_l9_p16,u32_l9,16,"Yesterday, I stayed at the house whose roof was red.
+昨日、赤い屋根の家に滞在した。",32-9-3-1,image_top
+u32_l9_p17,u32_l9,17,"でもこれは、なんか仰々しい感じがする。
+「その家の屋根は赤かったんですがね、」みたいな。",32-9-3-1,image_top
+u32_l9_p18,u32_l9,18,"普段は前置詞を使うかな。
+Yesterday, I stayed at the house with a red roof.
+昨日、赤い屋根の家に滞在した。",32-9-3-2,image_top
+u32_l9_p19,u32_l9,19,こっちのほうがさらっと言えてて、堅苦しさは無いよ。,32-9-3-2,image_top

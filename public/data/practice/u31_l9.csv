@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u31_l9_p1,u31_l9,user,user,right,right,1,1,1,________.,This is so confusing.,どうすればいいか分からない。,ややこしすぎる。,I don't know what I should do,I|don't|know|what|I|should|do,31-9-1-a.mp3,31-9-1-b.mp3
+u31_l9_p2,u31_l9,user,user,right,right,1,1,1,________?,It stopped working.,これの直し方教えてくれる？,動かなくなっちゃって。,Can you tell me how to fix this,Can|you|tell|me|how|to|fix|this,31-9-2-a.mp3,31-9-2-b.mp3
+u31_l9_p3,u31_l9,user,,right,none,1,,1,________.,,間に合うかなあ。,,I wonder if I can finish in time,I|wonder|if|I|can|finish|in|time,31-9-3-a.mp3,
+u31_l9_p4,u31_l9,user,05.png,right,left,1,1,1,________?,Let's decide now.,どこで待ち合わせればいいか分かる？,今決めちゃおう。,Do you know where we should meet,Do|you|know|where|we|should|meet,31-9-4-a.mp3,31-9-4-b.mp3
+u31_l9_p5,u31_l9,user,,right,none,1,,1,________.,,パーティーに何を持ってくればいいか聞かれた。,,She asked me what to bring to the party,She|asked|me|what|to|bring|to|the|party,31-9-5-a.mp3,
+u31_l9_p6,u31_l9,user,user,right,right,1,1,1,________.,Too many choices!,休みにどこ行くか決められない。,選択肢が多すぎ！,I can't decide where to go for vacation,I|can't|decide|where|to|go|for|vacation,31-9-6-a.mp3,31-9-6-b.mp3
+u31_l9_p7,u31_l9,user,user,right,right,1,1,1,________?,I hope so.,彼女がパーティーに来るか知ってる？,来るといいな。,Do you know if she's coming to the party,Do|you|know|if|she's|coming|to|the|party,31-9-7-a.mp3,31-9-7-b.mp3
+u31_l9_p8,u31_l9,user,,right,none,1,,1,________.,,あの日どれだけ楽しかったか覚えてる。,,I remember how happy we were that day,I|remember|how|happy|we|were|that|day,31-9-8-a.mp3,
+u31_l9_p9,u31_l9,05.png,05.png,left,left,1,1,1,________.,I won't be mad.,何があったか教えて。,怒らないから。,Please tell me what happened,Please|tell|me|what|happened,31-9-9-a.mp3,31-9-9-b.mp3
+u31_l9_p10,u31_l9,user,user,right,right,1,1,1,________.,Maybe science.,大学で何を学ぶかまだ迷ってる。,たぶん…理系かな。,I'm still deciding what to study in college,I'm|still|deciding|what|to|study|in|college,31-9-10-a.mp3,31-9-10-b.mp3

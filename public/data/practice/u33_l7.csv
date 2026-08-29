@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u33_l7_p1,u33_l7,user,user,right,right,1,1,0,________.,He cracks me up.,トムは私の後ろの席で、いつも冗談ばっかり。,笑わせてくるんだ。,"Tom, who sits behind me, is always joking","Tom,|who|sits|behind|me,|is|always|joking",33-7-1-a.mp3,33-7-1-b.mp3
+u33_l7_p2,u33_l7,user,user,right,right,1,1,0,________.,She's amazing.,おばあちゃんは90歳なんだけど、今も泳ぎに行くんだ。,すごいよね。,"My grandma, who is 90, still goes swimming","My|grandma,|who|is|90,|still|goes|swimming",33-7-2-a.mp3,33-7-2-b.mp3
+u33_l7_p3,u33_l7,user,user,right,right,1,1,0,________.,Her classes are so fun.,グリーン先生は英語を教えてて、すごく人気なんだ。,授業がめっちゃ楽しい。,"Ms. Green, who teaches English, is really popular","Ms.|Green,|who|teaches|English,|is|really|popular",33-7-3-a.mp3,33-7-3-b.mp3
+u33_l7_p4,u33_l7,user,,right,none,1,,0,________.,,奈良で生まれたんだ。鹿が自由に歩いてる所ね。,,"I was born in Nara, where the deer walk freely","I|was|born|in|Nara,|where|the|deer|walk|freely",33-7-4-a.mp3,
+u33_l7_p5,u33_l7,05.png,,left,none,1,,0,________.,,2011年は忘れられない。大きな地震があった年だ。,,"I'll never forget 2011, when the big earthquake happened","I'll|never|forget|2011,|when|the|big|earthquake|happened",33-7-5-a.mp3,
+u33_l7_p6,u33_l7,05.png,,left,none,1,,0,________.,,沖縄に引っ越したんだ。海がきれいな所だよ。,,"She moved to Okinawa, where the sea is beautiful","She|moved|to|Okinawa,|where|the|sea|is|beautiful",33-7-6-a.mp3,
+u33_l7_p7,u33_l7,user,,right,none,1,,0,________.,,12月が好きなんだ。町中がライトアップされるからね。,,"I love December, when the whole town lights up","I|love|December,|when|the|whole|town|lights|up",33-7-7-a.mp3,
+u33_l7_p8,u33_l7,05.png,,left,none,1,,0,________.,,仕事が決まって、そのことでご両親が誇らしそうだった。,,"She got the job, which made her parents proud","She|got|the|job,|which|made|her|parents|proud",33-7-8-a.mp3,
+u33_l7_p9,u33_l7,user,,right,none,1,,0,________.,,テストが簡単で、それに驚いちゃった。,,"The test was easy, which surprised me","The|test|was|easy,|which|surprised|me",33-7-9-a.mp3,
+u33_l7_p10,u33_l7,user,,right,none,1,,0,________.,,スマホの充電が切れて、それがもう最悪だった。,,"My phone died, which was a total disaster","My|phone|died,|which|was|a|total|disaster",33-7-10-a.mp3,

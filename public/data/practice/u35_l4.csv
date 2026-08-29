@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u35_l4_p1,u35_l4,user,user,right,right,1,1,1,________.,It's my first day.,明日のことで、なんか緊張してるかも。,初日なんだよね。,I'm kind of nervous about tomorrow,I'm|kind|of|nervous|about|tomorrow,35-4-1-a.mp3,35-4-1-b.mp3
+u35_l4_p2,u35_l4,user,05.png,right,left,1,1,1,Do you like this song?,________.,この曲好き？,まあね。悪くない。,Kind of. It's okay,Kind|of.|It's|okay,35-4-2-a.mp3,35-4-2-b.mp3
+u35_l4_p3,u35_l4,user,,right,none,1,,1,________.,,ちょっと長い話なんだけどね。,,It's kind of a long story,It's|kind|of|a|long|story,35-4-3-a.mp3,
+u35_l4_p4,u35_l4,user,user,right,right,1,1,1,________.,That's all.,ただお礼が言いたかっただけ。,それだけだよ。,I just wanted to say thank you,I|just|wanted|to|say|thank|you,35-4-4-a.mp3,35-4-4-b.mp3
+u35_l4_p5,u35_l4,user,,right,none,1,,1,________.,,ちょっと待って、もうすぐ準備できる。,,"Just a second, I'm almost ready","Just|a|second,|I'm|almost|ready",35-4-5-a.mp3,
+u35_l4_p6,u35_l4,user,user,right,right,1,1,1,________?,Let me close the window.,ここ、なんか寒くない？,窓閉めるね。,"It's kind of cold in here, isn't it","It's|kind|of|cold|in|here,|isn't|it",35-4-6-a.mp3,35-4-6-b.mp3
+u35_l4_p7,u35_l4,user,,right,none,1,,1,________.,,心配しないで、冗談だって。,,"Don't worry, I was just kidding","Don't|worry,|I|was|just|kidding",35-4-7-a.mp3,
+u35_l4_p8,u35_l4,user,user,right,right,1,1,1,________.,You have to try it.,このケーキ、もう完璧。,絶対食べてみて。,This cake is just perfect,This|cake|is|just|perfect,35-4-8-a.mp3,35-4-8-b.mp3
+u35_l4_p9,u35_l4,user,user,right,right,1,1,1,________.,I'm so tired.,今日はなんか家にいたい気分。,めっちゃ疲れてて。,I kind of want to stay home today,I|kind|of|want|to|stay|home|today,35-4-9-a.mp3,35-4-9-b.mp3
+u35_l4_p10,u35_l4,user,user,right,right,1,1,1,________.,We're almost there.,それ、すぐそこの角だよ。,もうすぐ着くよ。,It's just around the corner,It's|just|around|the|corner,35-4-10-a.mp3,35-4-10-b.mp3

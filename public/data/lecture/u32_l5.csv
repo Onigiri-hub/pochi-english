@@ -1,0 +1,29 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u32_l5_p1,u32_l5,1,関係代名詞は省略できる場合もある。,32-5-1,image_top
+u32_l5_p2,u32_l5,2,"This is the movie that I watched last night.
+これ、昨日の夜に見た映画だよ。",32-5-2-1,image_top
+u32_l5_p3,u32_l5,3,これはthat以下が説明Boxだね。,32-5-2-2,image_top
+u32_l5_p4,u32_l5,4,前のレッスンの例文と比べると、,32-5-2-2,image_top
+u32_l5_p5,u32_l5,5,すごく細かいところなんだけど、,32-5-2-2,image_top
+u32_l5_p6,u32_l5,6,「the movie」の説明ボックスに「主語・動詞」が来てる。,32-5-2-3,image_top
+u32_l5_p7,u32_l5,7,こういう時、関係代名詞はよく省略される。,32-5-2-4,image_top
+u32_l5_p8,u32_l5,8,This is the movie I watched last night.,32-5-2-4,image_top
+u32_l5_p9,u32_l5,9,省略されてても、なんか雰囲気通じるでしょ？,32-5-2-4,image_top
+u32_l5_p10,u32_l5,10,"The movie I watched last night was terrible.
+昨日の夜に見た映画は酷かった。",32-5-3-1,image_top
+u32_l5_p11,u32_l5,11,"これも、ここに関係代名詞が省略されてる。
+whichかthatが入るはず。",32-5-3-2,image_top
+u32_l5_p12,u32_l5,12,"この文、The movie I…　の並びのところ、
+ちょっと「おや？」って感じない？",32-5-3-3,image_top
+u32_l5_p13,u32_l5,13,普通、The movie …の次に動詞が来そうなもんだけど、,32-5-3-3,image_top
+u32_l5_p14,u32_l5,14,The movie was good とか,32-5-3-3,image_top
+u32_l5_p15,u32_l5,15,The movie made me cry とかね。,32-5-3-3,image_top
+u32_l5_p16,u32_l5,16,でも、The movie I…ってきてる。,32-5-3-3,image_top
+u32_l5_p17,u32_l5,17,そういうときは、「もうちょっと説明させて、そのmovieのこと。」っていう、,32-5-3-3,image_top
+u32_l5_p18,u32_l5,18,そういう気持ちがあるんだろうな、って受け止めよう。,32-5-3-3,image_top
+u32_l5_p19,u32_l5,19,"だから、頭の中に説明ボックスを用意して、
+1文をそこにぽんっと収める。",32-5-3-4,image_top
+u32_l5_p20,u32_l5,20,次に動詞が来たら説明ボックスを閉じて、,32-5-3-5,image_top
+u32_l5_p21,u32_l5,21,そいつがどうだったか、が次に来る。,32-5-3-5,image_top
+u32_l5_p22,u32_l5,22,関係代名詞はよく省略されるから、,32-5-3-5,image_top
+u32_l5_p23,u32_l5,23,この感覚もたくさん練習して慣れておこう！,32-5-3-5,image_top

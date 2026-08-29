@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u34_l3_p1,u34_l3,05.png,,left,none,1,,1,________.,,車があったら、どこでも送ってあげるのに。,,"If I had a car, I would drive you everywhere","If|I|had|a|car,|I|would|drive|you|everywhere",34-3-1-a.mp3,
+u34_l3_p2,u34_l3,user,,right,none,1,,1,________.,,彼女の番号を知ってたら、電話するのになあ。,,"If I knew her number, I would call her","If|I|knew|her|number,|I|would|call|her",34-3-2-a.mp3,
+u34_l3_p3,u34_l3,user,05.png,right,left,1,1,1,________.,But look at this rain.,晴れてたら、ビーチ行くのになあ。,でもこの雨だよ。,"If it were sunny, we would go to the beach","If|it|were|sunny,|we|would|go|to|the|beach",34-3-3-a.mp3,34-3-3-b.mp3
+u34_l3_p4,u34_l3,user,,right,none,1,,1,________.,,お金持ちだったら、世界中を旅するのになあ。,,"If I were rich, I would travel the world","If|I|were|rich,|I|would|travel|the|world",34-3-4-a.mp3,
+u34_l3_p5,u34_l3,user,05.png,right,left,1,1,1,________.,He just doesn't try.,もっと勉強したら、余裕で受かるのに。,やろうとしないんだよね。,"If he studied more, he would pass easily","If|he|studied|more,|he|would|pass|easily",34-3-5-a.mp3,34-3-5-b.mp3
+u34_l3_p6,u34_l3,user,,right,none,1,,1,________.,,もっと近くに住んでたら、毎日会いに行くのになあ。,,"If I lived closer, I would visit you every day","If|I|lived|closer,|I|would|visit|you|every|day",34-3-6-a.mp3,
+u34_l3_p7,u34_l3,user,user,right,right,1,1,1,________.,We really have to go.,時間があったら、もっと一緒にいたいんだけどな。,でももう本当に行かなきゃ。,"If we had more time, we would stay longer","If|we|had|more|time,|we|would|stay|longer",34-3-7-a.mp3,34-3-7-b.mp3
+u34_l3_p8,u34_l3,user,,right,none,1,,1,________.,,フランス語が話せたら、パリに引っ越すのになあ。,,"If I spoke French, I would move to Paris","If|I|spoke|French,|I|would|move|to|Paris",34-3-8-a.mp3,
+u34_l3_p9,u34_l3,user,user,right,right,1,1,1,________.,I really miss her.,彼女がここにいたら、どうすればいいか分かるのに。,本当に会いたいよ。,"If she were here, she would know what to do","If|she|were|here,|she|would|know|what|to|do",34-3-9-a.mp3,34-3-9-b.mp3
+u34_l3_p10,u34_l3,user,,right,none,1,,1,________.,,翼があったら、まっすぐ君のところへ飛んでいくのに。,,"If I had wings, I would fly straight to you","If|I|had|wings,|I|would|fly|straight|to|you",34-3-10-a.mp3,

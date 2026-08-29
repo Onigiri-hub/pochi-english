@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u35_l10_p1,u35_l10,05.png,user,left,right,1,1,1,Do you want to go out this weekend?,________.,今週末出かけたい？,天気次第だな。,It depends on the weather,It|depends|on|the|weather,35-10-1-a.mp3,35-10-1-b.mp3
+u35_l10_p2,u35_l10,user,05.png,right,left,1,1,1,Which one should I choose?,________.,どっち選べばいい？,予算次第だね。,It depends on your budget,It|depends|on|your|budget,35-10-2-a.mp3,35-10-2-b.mp3
+u35_l10_p3,u35_l10,user,05.png,right,left,1,1,1,Can you help me tomorrow?,________?,明日手伝ってくれる？,場合による。何時？,It depends. What time,It|depends.|What|time,35-10-3-a.mp3,35-10-3-b.mp3
+u35_l10_p4,u35_l10,user,05.png,right,left,1,1,1,Are you coming to the party?,________.,パーティー来る？,予定次第かな。,It depends on my schedule,It|depends|on|my|schedule,35-10-4-a.mp3,35-10-4-b.mp3
+u35_l10_p5,u35_l10,05.png,,left,none,1,,1,________.,,季節によって、値段が上がったり下がったりする。,,"Depending on the season, prices go up and down","Depending|on|the|season,|prices|go|up|and|down",35-10-5-a.mp3,
+u35_l10_p6,u35_l10,user,05.png,right,left,1,1,1,________?,It depends on the team.,試合勝てるかな？,チーム次第だね。,Will we win the game,Will|we|win|the|game,35-10-6-a.mp3,35-10-6-b.mp3
+u35_l10_p7,u35_l10,user,user,right,right,1,1,1,________.,I haven't even started.,レポート、来週の月曜が締切なんだ。,まだ手もつけてない。,The report is due next Monday,The|report|is|due|next|Monday,35-10-7-a.mp3,35-10-7-b.mp3
+u35_l10_p8,u35_l10,user,05.png,right,left,1,1,1,________.,We'd better hurry.,電車は8時15分に来る予定。,急いだほうがいいね。,The train is due at 8:15,The|train|is|due|at|8:15,35-10-8-a.mp3,35-10-8-b.mp3
+u35_l10_p9,u35_l10,05.png,,left,none,1,,1,________.,,嵐のせいで飛行機が遅れた。,,The flight was delayed due to the storm,The|flight|was|delayed|due|to|the|storm,35-10-9-a.mp3,
+u35_l10_p10,u35_l10,05.png,05.png,left,left,1,1,1,________?,I don't want a late fee.,図書館の本、いつまで？,延滞料払いたくない。,When is the library book due,When|is|the|library|book|due,35-10-10-a.mp3,35-10-10-b.mp3

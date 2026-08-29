@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u33_l6_p1,u33_l6,user,,right,none,1,,1,________.,,誕生日を忘れられて、それがほんとに傷ついた。,,"He forgot my birthday, which really hurt","He|forgot|my|birthday,|which|really|hurt",33-6-1-a.mp3,
+u33_l6_p2,u33_l6,05.png,,left,none,1,,1,________.,,仕事が決まって、そのことでご両親が誇らしそうだった。,,"She got the job, which made her parents proud","She|got|the|job,|which|made|her|parents|proud",33-6-2-a.mp3,
+u33_l6_p3,u33_l6,user,,right,none,1,,1,________.,,一日中雨で、それで予定が台無しになった。,,"It rained all day, which ruined our plans","It|rained|all|day,|which|ruined|our|plans",33-6-3-a.mp3,
+u33_l6_p4,u33_l6,user,user,right,right,1,1,1,________.,That's not like him.,彼が謝って、それにみんな驚いた。,彼らしくないよね。,"He apologized, which surprised everyone","He|apologized,|which|surprised|everyone",33-6-4-a.mp3,33-6-4-b.mp3
+u33_l6_p5,u33_l6,user,,right,none,1,,1,________.,,終電を逃して、そのせいで長い距離を歩いて帰った。,,"We missed the last train, which meant a long walk home","We|missed|the|last|train,|which|meant|a|long|walk|home",33-6-5-a.mp3,
+u33_l6_p6,u33_l6,user,user,right,right,1,1,1,________.,She won first place.,見事に歌って、それが審査員を感心させた。,優勝したよ。,"She sang beautifully, which impressed the judges","She|sang|beautifully,|which|impressed|the|judges",33-6-6-a.mp3,33-6-6-b.mp3
+u33_l6_p7,u33_l6,user,,right,none,1,,1,________.,,テストが簡単で、それに驚いちゃった。,,"The test was easy, which surprised me","The|test|was|easy,|which|surprised|me",33-6-7-a.mp3,
+u33_l6_p8,u33_l6,user,,right,none,1,,1,________.,,何度も口を挟んで、それが先生をイラつかせた。,,"He kept interrupting, which annoyed the teacher","He|kept|interrupting,|which|annoyed|the|teacher",33-6-8-a.mp3,
+u33_l6_p9,u33_l6,user,,right,none,1,,1,________.,,スマホの充電が切れて、それがもう最悪だった。,,"My phone died, which was a total disaster","My|phone|died,|which|was|a|total|disaster",33-6-9-a.mp3,
+u33_l6_p10,u33_l6,user,user,right,right,1,1,1,________.,I couldn't stop smiling.,彼がイエスって言ってくれて、それで最高の一週間になった。,ずっとニヤけてた。,"He said yes, which made my whole week","He|said|yes,|which|made|my|whole|week",33-6-10-a.mp3,33-6-10-b.mp3

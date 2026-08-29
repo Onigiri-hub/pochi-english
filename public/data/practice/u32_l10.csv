@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u32_l10_p1,u32_l10,user,user,right,right,1,1,1,________.,The food is always amazing.,お父さんがシェフだよって友達がいるんだ。,料理いつも最高。,I have a friend whose dad is a chef,I|have|a|friend|whose|dad|is|a|chef,32-10-1-a.mp3,32-10-1-b.mp3
+u32_l10_p2,u32_l10,user,user,right,right,1,1,1,________.,Everyone knows him.,あの女の子、お兄さんが有名なんだよ。,みんな知ってる。,That's the girl whose brother is famous,That's|the|girl|whose|brother|is|famous,32-10-2-a.mp3,32-10-2-b.mp3
+u32_l10_p3,u32_l10,user,,right,none,1,,1,________.,,お父さんがユーチューバーやってるって男の子、知ってるよ。,,I know a boy whose father is a YouTuber,I|know|a|boy|whose|father|is|a|YouTuber,32-10-3-a.mp3,
+u32_l10_p4,u32_l10,user,user,right,right,1,1,1,________.,I know all the lyrics.,曲が大好きな歌手なんだ。（その歌手の曲がだいすきなんだ）,歌詞全部覚えてる。,She's the singer whose songs I love,She's|the|singer|whose|songs|I|love,32-10-4-a.mp3,32-10-4-b.mp3
+u32_l10_p5,u32_l10,user,,right,none,1,,1,________?,,自転車盗まれた子、知ってる？,,Do you know the kid whose bike got stolen,Do|you|know|the|kid|whose|bike|got|stolen,32-10-5-a.mp3,
+u32_l10_p6,u32_l10,user,,right,none,1,,1,________.,,息子が私と同じ学校に通ってる女性に会ったよ。,,I met a woman whose son goes to my school,I|met|a|woman|whose|son|goes|to|my|school,32-10-6-a.mp3,
+u32_l10_p7,u32_l10,user,user,right,right,1,1,1,________.,They're bestsellers.,みんなが読んでる本の作者だよ。,ベストセラーなんだ。,He's the author whose books everyone reads,He's|the|author|whose|books|everyone|reads,32-10-7-a.mp3,32-10-7-b.mp3
+u32_l10_p8,u32_l10,user,,right,none,1,,1,________.,,クラスに、お母さんが医者の子がいるんだ。,,There's a boy in my class whose mom is a doctor,There's|a|boy|in|my|class|whose|mom|is|a|doctor,32-10-8-a.mp3,
+u32_l10_p9,u32_l10,05.png,05.png,left,left,1,1,1,________.,It's so cute.,隣の人の猫がいつもうちの庭に来るんだ。,すごくかわいい。,I have a neighbor whose cat always comes to my yard,I|have|a|neighbor|whose|cat|always|comes|to|my|yard,32-10-9-a.mp3,32-10-9-b.mp3
+u32_l10_p10,u32_l10,05.png,05.png,left,left,1,1,1,________.,The police are looking into it.,あれ、車を盗まれた人だよ。,警察が捜査してる。,That's the man whose car was stolen,That's|the|man|whose|car|was|stolen,32-10-10-a.mp3,32-10-10-b.mp3

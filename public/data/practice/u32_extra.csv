@@ -1,0 +1,41 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u32_l4_p1,u32_l4,user,user,right,right,1,1,0,________.,He's in a band.,ギターを弾く友達がいるんだ。,バンドやってるんだ。,I have a friend who plays the guitar,I|have|a|friend|who|plays|the|guitar,32-4-1-a.mp3,32-4-1-b.mp3
+u32_l4_p2,u32_l4,user,,right,none,1,,0,________.,,これ、私の人生を変えた本なんだ。,,This is a book that changed my life,This|is|a|book|that|changed|my|life,32-4-2-a.mp3,
+u32_l4_p3,u32_l4,user,user,right,right,1,1,0,________.,He makes me laugh every day.,隣に座ってる子、めっちゃ面白いんだ。,毎日笑わせてくれる。,The boy who sits next to me is really funny,The|boy|who|sits|next|to|me|is|really|funny,32-4-3-a.mp3,32-4-3-b.mp3
+u32_l4_p4,u32_l4,user,user,right,right,1,1,0,________.,That's amazing!,3か国語話せる子を知ってるよ。,すごいよね！,I know a girl who can speak three languages,I|know|a|girl|who|can|speak|three|languages,32-4-4-a.mp3,32-4-4-b.mp3
+u32_l4_p5,u32_l4,user,user,right,right,1,1,0,________.,I can't sleep.,隣の家の犬が一晩中吠えるんだ。,眠れないよ。,The dog that lives next door barks all night,The|dog|that|lives|next|door|barks|all|night,32-4-5-a.mp3,32-4-5-b.mp3
+u32_l4_p6,u32_l4,user,,right,none,1,,0,________.,,彼女、すごく助けてくれた先生なんだ。,,She's the teacher who helped me a lot,She's|the|teacher|who|helped|me|a|lot,32-4-6-a.mp3,
+u32_l4_p7,u32_l4,user,user,right,right,1,1,0,________.,Mine is so old.,いいカメラ付きのスマホが欲しい。,私のめっちゃ古くて。,I want a phone that has a good camera,I|want|a|phone|that|has|a|good|camera,32-4-7-a.mp3,32-4-7-b.mp3
+u32_l4_p8,u32_l4,05.png,05.png,left,left,1,1,0,________.,They always say hi.,上の階の人たち、すごく親切なんだ。,いつも挨拶してくれる。,The people who live upstairs are very kind,The|people|who|live|upstairs|are|very|kind,32-4-8-a.mp3,32-4-8-b.mp3
+u32_l4_p9,u32_l4,05.png,05.png,left,left,1,1,0,________.,You'd love it.,中古レコードを売ってる店があるんだ。,君、絶対好きだよ。,There's a store that sells old records,There's|a|store|that|sells|old|records,32-4-9-a.mp3,32-4-9-b.mp3
+u32_l4_p10,u32_l4,user,,right,none,1,,0,________.,,自転車を直してくれた人、すごくいい人だった。,,The man who fixed my bike was so nice,The|man|who|fixed|my|bike|was|so|nice,32-4-10-a.mp3,
+u32_l6_p1,u32_l6,user,,right,none,1,,0,________.,,昨日買った本、すごく良かった。,,The book I bought yesterday was really good,The|book|I|bought|yesterday|was|really|good,32-6-1-a.mp3,
+u32_l6_p2,u32_l6,05.png,05.png,left,left,1,1,0,________?,I tried a new recipe.,私が作ったケーキ気に入った？,新しいレシピ試したんだ。,Did you like the cake I made,Did|you|like|the|cake|I|made,32-6-2-a.mp3,32-6-2-b.mp3
+u32_l6_p3,u32_l6,user,,right,none,1,,0,________.,,カフェで聞いた曲が頭から離れない。,,The song we heard at the café is stuck in my head,The|song|we|heard|at|the|café|is|stuck|in|my|head,32-6-3-a.mp3,
+u32_l6_p4,u32_l6,user,user,right,right,1,1,0,________.,He was really funny.,あれ、パーティーで会った人だよ。,すごく面白かった。,That's the guy I met at the party,That's|the|guy|I|met|at|the|party,32-6-4-a.mp3,32-6-4-b.mp3
+u32_l6_p5,u32_l6,user,,right,none,1,,0,________.,,昨日の夜見た映画、ひどかったよ。,,The movie that I watched last night was terrible,The|movie|that|I|watched|last|night|was|terrible,32-6-5-a.mp3,
+u32_l6_p6,u32_l6,user,user,right,right,1,1,0,________.,I'm so sorry.,あなたがくれたペン、なくしちゃった。,本当にごめん。,I lost the pen you gave me,I|lost|the|pen|you|gave|me,32-6-6-a.mp3,32-6-6-b.mp3
+u32_l6_p7,u32_l6,user,,right,none,1,,0,________.,,彼女が言ったこと、全部本当だった。,,Everything she said was true,Everything|she|said|was|true,32-6-7-a.mp3,
+u32_l6_p8,u32_l6,user,user,right,right,1,1,0,________?,I found it under the sofa.,これ、探してた鍵？,ソファの下にあったよ。,Is this the key you were looking for,Is|this|the|key|you|were|looking|for,32-6-8-a.mp3,32-6-8-b.mp3
+u32_l6_p9,u32_l6,user,,right,none,1,,0,________.,,旅行で出会った人たち、最高だったよ。,,The people I met on the trip were amazing,The|people|I|met|on|the|trip|were|amazing,32-6-9-a.mp3,
+u32_l6_p10,u32_l6,05.png,05.png,left,left,1,1,0,________.,It was such a good one.,一緒に撮った写真が見つからない。,すごくいいやつだったのに。,I can't find the photo we took together,I|can't|find|the|photo|we|took|together,32-6-10-a.mp3,32-6-10-b.mp3
+u32_l8_p1,u32_l8,05.png,05.png,left,left,1,1,0,________.,The food was amazing.,初デートしたレストランだよ。,料理おいしかったなあ。,This is the restaurant where we had our first date,This|is|the|restaurant|where|we|had|our|first|date,32-8-1-a.mp3,32-8-1-b.mp3
+u32_l8_p2,u32_l8,05.png,,left,none,1,,0,________.,,初めて会った日のこと、覚えてるよ。,,I remember the day when we first met,I|remember|the|day|when|we|first|met,32-8-2-a.mp3,
+u32_l8_p3,u32_l8,user,user,right,right,1,1,0,________?,The library's closed today.,勉強できる場所知ってる？,図書館、今日閉まってて。,Do you know a place where we can study,Do|you|know|a|place|where|we|can|study,32-8-3-a.mp3,32-8-3-b.mp3
+u32_l8_p4,u32_l8,user,user,right,right,1,1,0,________.,Sorry about that.,それが遅刻した理由なんだ。,ごめんね。,That's the reason why I was late,That's|the|reason|why|I|was|late,32-8-4-a.mp3,32-8-4-b.mp3
+u32_l8_p5,u32_l8,user,,right,none,1,,0,________.,,夏は、一番いきいきする季節なんだ。,,Summer is the season when I feel most alive,Summer|is|the|season|when|I|feel|most|alive,32-8-5-a.mp3,
+u32_l8_p6,u32_l8,05.png,05.png,left,left,1,1,0,________.,Nothing's changed.,ここ、僕が育った町なんだ。,何も変わってないな。,This is the town where I grew up,This|is|the|town|where|I|grew|up,32-8-6-a.mp3,32-8-6-b.mp3
+u32_l8_p7,u32_l8,user,user,right,right,1,1,0,________.,I want to understand.,なんで怒ってるのか教えて。,ちゃんと分かりたいんだ。,Tell me the reason why you're upset,Tell|me|the|reason|why|you're|upset,32-8-7-a.mp3,32-8-7-b.mp3
+u32_l8_p8,u32_l8,05.png,,left,none,1,,0,________.,,海を見た瞬間、一生忘れないよ。,,I'll never forget the moment when I saw the ocean,I'll|never|forget|the|moment|when|I|saw|the|ocean,32-8-8-a.mp3,
+u32_l8_p9,u32_l8,05.png,,left,none,1,,0,________?,,切手を買える店ある？,,Is there a shop where I can buy stamps,Is|there|a|shop|where|I|can|buy|stamps,32-8-9-a.mp3,
+u32_l8_p10,u32_l8,05.png,,left,none,1,,0,________.,,子どもの頃よく遊んだ公園だよ。,,This is the park where I used to play as a kid,This|is|the|park|where|I|used|to|play|as|a|kid,32-8-10-a.mp3,
+u32_l10_p1,u32_l10,user,user,right,right,1,1,0,________.,The food is always amazing.,お父さんがシェフだよって友達がいるんだ。,料理いつも最高。,I have a friend whose dad is a chef,I|have|a|friend|whose|dad|is|a|chef,32-10-1-a.mp3,32-10-1-b.mp3
+u32_l10_p2,u32_l10,user,user,right,right,1,1,0,________.,Everyone knows him.,あの女の子、お兄さんが有名なんだよ。,みんな知ってる。,That's the girl whose brother is famous,That's|the|girl|whose|brother|is|famous,32-10-2-a.mp3,32-10-2-b.mp3
+u32_l10_p3,u32_l10,user,,right,none,1,,0,________.,,お父さんがユーチューバーやってるって男の子、知ってるよ。,,I know a boy whose father is a YouTuber,I|know|a|boy|whose|father|is|a|YouTuber,32-10-3-a.mp3,
+u32_l10_p4,u32_l10,user,user,right,right,1,1,0,________.,I know all the lyrics.,曲が大好きな歌手なんだ。（その歌手の曲がだいすきなんだ）,歌詞全部覚えてる。,She's the singer whose songs I love,She's|the|singer|whose|songs|I|love,32-10-4-a.mp3,32-10-4-b.mp3
+u32_l10_p5,u32_l10,user,,right,none,1,,0,________?,,自転車盗まれた子、知ってる？,,Do you know the kid whose bike got stolen,Do|you|know|the|kid|whose|bike|got|stolen,32-10-5-a.mp3,
+u32_l10_p6,u32_l10,user,,right,none,1,,0,________.,,息子が私と同じ学校に通ってる女性に会ったよ。,,I met a woman whose son goes to my school,I|met|a|woman|whose|son|goes|to|my|school,32-10-6-a.mp3,
+u32_l10_p7,u32_l10,user,user,right,right,1,1,0,________.,They're bestsellers.,みんなが読んでる本の作者だよ。,ベストセラーなんだ。,He's the author whose books everyone reads,He's|the|author|whose|books|everyone|reads,32-10-7-a.mp3,32-10-7-b.mp3
+u32_l10_p8,u32_l10,user,,right,none,1,,0,________.,,クラスに、お母さんが医者の子がいるんだ。,,There's a boy in my class whose mom is a doctor,There's|a|boy|in|my|class|whose|mom|is|a|doctor,32-10-8-a.mp3,
+u32_l10_p9,u32_l10,05.png,05.png,left,left,1,1,0,________.,It's so cute.,隣の人の猫がいつもうちの庭に来るんだ。,すごくかわいい。,I have a neighbor whose cat always comes to my yard,I|have|a|neighbor|whose|cat|always|comes|to|my|yard,32-10-9-a.mp3,32-10-9-b.mp3
+u32_l10_p10,u32_l10,05.png,05.png,left,left,1,1,0,________.,The police are looking into it.,あれ、車を盗まれた人だよ。,警察が捜査してる。,That's the man whose car was stolen,That's|the|man|whose|car|was|stolen,32-10-10-a.mp3,32-10-10-b.mp3

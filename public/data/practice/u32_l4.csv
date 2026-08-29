@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u32_l4_p1,u32_l4,user,user,right,right,1,1,1,________.,He's in a band.,ギターを弾く友達がいるんだ。,バンドやってるんだ。,I have a friend who plays the guitar,I|have|a|friend|who|plays|the|guitar,32-4-1-a.mp3,32-4-1-b.mp3
+u32_l4_p2,u32_l4,user,,right,none,1,,1,________.,,これ、私の人生を変えた本なんだ。,,This is a book that changed my life,This|is|a|book|that|changed|my|life,32-4-2-a.mp3,
+u32_l4_p3,u32_l4,user,user,right,right,1,1,1,________.,He makes me laugh every day.,隣に座ってる子、めっちゃ面白いんだ。,毎日笑わせてくれる。,The boy who sits next to me is really funny,The|boy|who|sits|next|to|me|is|really|funny,32-4-3-a.mp3,32-4-3-b.mp3
+u32_l4_p4,u32_l4,user,user,right,right,1,1,1,________.,That's amazing!,3か国語話せる子を知ってるよ。,すごいよね！,I know a girl who can speak three languages,I|know|a|girl|who|can|speak|three|languages,32-4-4-a.mp3,32-4-4-b.mp3
+u32_l4_p5,u32_l4,user,user,right,right,1,1,1,________.,I can't sleep.,隣の家の犬が一晩中吠えるんだ。,眠れないよ。,The dog that lives next door barks all night,The|dog|that|lives|next|door|barks|all|night,32-4-5-a.mp3,32-4-5-b.mp3
+u32_l4_p6,u32_l4,user,,right,none,1,,1,________.,,彼女、すごく助けてくれた先生なんだ。,,She's the teacher who helped me a lot,She's|the|teacher|who|helped|me|a|lot,32-4-6-a.mp3,
+u32_l4_p7,u32_l4,user,user,right,right,1,1,1,________.,Mine is so old.,いいカメラ付きのスマホが欲しい。,私のめっちゃ古くて。,I want a phone that has a good camera,I|want|a|phone|that|has|a|good|camera,32-4-7-a.mp3,32-4-7-b.mp3
+u32_l4_p8,u32_l4,05.png,05.png,left,left,1,1,1,________.,They always say hi.,上の階の人たち、すごく親切なんだ。,いつも挨拶してくれる。,The people who live upstairs are very kind,The|people|who|live|upstairs|are|very|kind,32-4-8-a.mp3,32-4-8-b.mp3
+u32_l4_p9,u32_l4,05.png,05.png,left,left,1,1,1,________.,You'd love it.,中古レコードを売ってる店があるんだ。,君、絶対好きだよ。,There's a store that sells old records,There's|a|store|that|sells|old|records,32-4-9-a.mp3,32-4-9-b.mp3
+u32_l4_p10,u32_l4,user,,right,none,1,,1,________.,,自転車を直してくれた人、すごくいい人だった。,,The man who fixed my bike was so nice,The|man|who|fixed|my|bike|was|so|nice,32-4-10-a.mp3,
