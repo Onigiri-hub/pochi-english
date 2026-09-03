@@ -140,7 +140,7 @@ export default function AvatarSettings() {
 
   return (
     <div className="container">
-      <div className="mainContent">
+      <div className="mainContent" style={{ paddingBottom: "160px" }}>
         <div className="header">
           <button className="backBtn" onClick={() => router.back()} style={{ color: "#333333", fontSize: "14px" }}>◀</button>
           <h2>アバターの設定</h2>
@@ -208,7 +208,23 @@ export default function AvatarSettings() {
           {renderCarousel(mouthCarouselRef, mouthItems, selectedMouth, setSelectedMouth, "mouth")}
         </section>
 
-        <div className="actionButtons">
+        <div
+          className="actionButtons"
+          style={{
+            position: "fixed",
+            bottom: "60px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "100%",
+            maxWidth: "400px",
+            margin: 0,
+            padding: "12px 20px",
+            background: "white",
+            boxSizing: "border-box",
+            boxShadow: "0 -2px 8px rgba(0,0,0,0.08)",
+            zIndex: 100,
+          }}
+        >
           <button className="saveBtn" onClick={handleSave}>保存する</button>
         </div>
 
