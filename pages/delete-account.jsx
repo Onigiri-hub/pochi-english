@@ -21,7 +21,9 @@ export default function DeleteAccount() {
       //    settings.jsx のデータリセットと同じコレクション名に揃えること
       const subCollections = [
         "progress", "history", "vocab_rounds",
-        "vocab_progress", "vocab_history", "streak", "badges",
+        "vocab_progress", "vocab_history",
+        "vocab_section_state", "arrange_word_status",
+        "streak", "badges",
         "completedUnits", "items", "unlocked",
       ];
       await Promise.all(
