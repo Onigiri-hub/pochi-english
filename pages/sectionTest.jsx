@@ -46,6 +46,14 @@ export default function SectionTest() {
   const [finalScore, setFinalScore] = useState(0)
   const savingRef = useRef(false)
   const inputRef = useRef(null)
+  const seikaiRef = useRef(null)
+
+  const playSeikai = () => {
+    if (seikaiRef.current) {
+      seikaiRef.current.currentTime = 0
+      seikaiRef.current.play().catch(() => {})
+    }
+  }
 
   useEffect(() => {
     if (!router.isReady || !section) return
@@ -56,6 +64,12 @@ export default function SectionTest() {
       const sectionInfo = secData.find(s => s.section_id === section)
       if (!sectionInfo) return
       setSectionName(sectionInfo.section_name || "")
+
+      if (!seikaiRef.current) {
+        seikaiRef.current = new Audio("/sound/seikai.mp3")
+        seikaiRef.current.playbackRate = 1.5
+        seikaiRef.current.volume = 0.5
+      }
 
       const wRes = await fetch(`/data/vocab/words/${sectionInfo.words_csv}`)
       const words = Papa.parse(await wRes.text(), { header: true, skipEmptyLines: true }).data
@@ -99,7 +113,7 @@ export default function SectionTest() {
     if (answered) return
     const q = questions[current]
     const ok = choice.word_id === q.word.word_id
-    if (ok) scoreRef.current += 1
+    if (ok) { scoreRef.current += 1; playSeikai() }
     setLastCorrect(ok)
     setPickedId(choice.word_id)
     setAnswered(true)
@@ -109,7 +123,7 @@ export default function SectionTest() {
     if (answered) return
     const q = questions[current]
     const ok = levenshtein(input.trim().toLowerCase(), q.word.word.trim().toLowerCase()) <= 1
-    if (ok) scoreRef.current += 1
+    if (ok) { scoreRef.current += 1; playSeikai() }
     setLastCorrect(ok)
     setAnswered(true)
   }
