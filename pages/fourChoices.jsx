@@ -219,8 +219,8 @@ export default function FourChoices() {
             {isJa2En ? currentWord.ja : currentWord.word}
           </div>
 
-          {/* ヒント（en2jaのみ・イラスト） */}
-          {hintAvailable && (
+          {/* ヒント（en2jaのみ・hint_image列がある単語だけ表示） */}
+          {hintAvailable && currentWord.hint_image && (
             <div style={{ textAlign: "center", marginBottom: "10px" }}>
               {!showHint ? (
                 <button
@@ -230,15 +230,11 @@ export default function FourChoices() {
                   ヒントを見る
                 </button>
               ) : (
-                <>
-                  <img
-                    src={`/images/1to1hints/${currentWord.word_id}.jpg`}
-                    alt="ヒント"
-                    onError={(e) => { e.currentTarget.style.display = "none"; e.currentTarget.nextSibling.style.display = "block" }}
-                    style={{ width: "140px", height: "140px", objectFit: "contain", borderRadius: "12px", background: "#fff" }}
-                  />
-                  <div style={{ display: "none", fontSize: "12px", color: "#aaa" }}>ヒント画像は準備中です</div>
-                </>
+                <img
+                  src={`/images/1to1hints/${currentWord.hint_image}`}
+                  alt="ヒント"
+                  style={{ width: "140px", height: "140px", objectFit: "contain", borderRadius: "12px", background: "#fff" }}
+                />
               )}
             </div>
           )}
