@@ -1,0 +1,41 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u31_l3_p1,u31_l3,user,user,right,right,1,1,0,________.,He's just around the corner.,彼がどこに住んでるか知ってるよ。,すぐそこの角のとこ。,I know where he lives,I|know|where|he|lives,31-3-1-a.mp3,31-3-1-b.mp3
+u31_l3_p2,u31_l3,user,,right,none,1,,0,________.,,彼女が何て言ったか思い出せない。,,I don't remember what she said,I|don't|remember|what|she|said,31-3-2-a.mp3,
+u31_l3_p3,u31_l3,user,user,right,right,1,1,0,________.,Maybe something happened.,なんで今日あんなに静かなんだろう。,何かあったのかな。,I wonder why he's so quiet today,I|wonder|why|he's|so|quiet|today,31-3-3-a.mp3,31-3-3-b.mp3
+u31_l3_p4,u31_l3,user,user,right,right,1,1,0,________.,Anything's fine!,誕生日に何がほしいか教えて。,何でもいいよ！,Tell me what you want for your birthday,Tell|me|what|you|want|for|your|birthday,31-3-4-a.mp3,31-3-4-b.mp3
+u31_l3_p5,u31_l3,user,user,right,right,1,1,0,________.,Have you seen them?,鍵をどこに置いたか忘れちゃった。,見なかった？,I forgot where I put my keys,I|forgot|where|I|put|my|keys,31-3-5-a.mp3,31-3-5-b.mp3
+u31_l3_p6,u31_l3,user,,right,none,1,,0,________.,,それがいくらするか知ってるよ。,,I know how much it costs,I|know|how|much|it|costs,31-3-6-a.mp3,
+u31_l3_p7,u31_l3,user,user,right,right,1,1,0,________.,It's easier than I thought.,彼女が機械の動かし方を見せてくれた。,思ったより簡単だった。,She showed me how the machine works,She|showed|me|how|the|machine|works,31-3-7-a.mp3,31-3-7-b.mp3
+u31_l3_p8,u31_l3,user,,right,none,1,,0,________.,,時間が経つのが速すぎて信じられない。,,I can't believe how fast time flies,I|can't|believe|how|fast|time|flies,31-3-8-a.mp3,
+u31_l3_p9,u31_l3,user,05.png,right,left,1,1,0,________.,Let's ask the teacher.,テストがいつなのか分からない。,先生に聞いてみよう。,I don't know when the test is,I|don't|know|when|the|test|is,31-3-9-a.mp3,31-3-9-b.mp3
+u31_l3_p10,u31_l3,user,user,right,right,1,1,0,________!,You'll never believe it.,今日誰に会ったと思う？,絶対信じられないよ。,Guess who I saw today,Guess|who|I|saw|today,31-3-10-a.mp3,31-3-10-b.mp3
+u31_l5_p1,u31_l5,05.png,05.png,left,left,1,1,0,________?,It's my first time here.,トイレがどこか知ってる？,ここ来るの初めてで。,Do you know where the bathroom is,Do|you|know|where|the|bathroom|is,31-5-1-a.mp3,31-5-1-b.mp3
+u31_l5_p2,u31_l5,05.png,,left,none,1,,0,________?,,これがいくらか教えてもらえますか？,,Could you tell me how much this is,Could|you|tell|me|how|much|this|is,31-5-2-a.mp3,
+u31_l5_p3,u31_l5,user,user,right,right,1,1,0,________?,I left my phone at home.,今何時か分かる？,スマホ家に置いてきちゃって。,Do you know what time it is,Do|you|know|what|time|it|is,31-5-3-a.mp3,31-5-3-b.mp3
+u31_l5_p4,u31_l5,user,user,right,right,1,1,0,________?,I've been waiting forever.,次のバスいつ来るか知ってる？,ずっと待ってるんだけど。,Do you know when the next bus comes,Do|you|know|when|the|next|bus|comes,31-5-4-a.mp3,31-5-4-b.mp3
+u31_l5_p5,u31_l5,user,user,right,right,1,1,0,________.,Can you check it?,これで合ってるか自信ないな。,確認してくれる？,I'm not sure if this is correct,I'm|not|sure|if|this|is|correct,31-5-5-a.mp3,31-5-5-b.mp3
+u31_l5_p6,u31_l5,user,user,right,right,1,1,0,________?,I really need some milk.,お店まだ開いてるか知ってる？,牛乳がどうしても要るんだ。,Do you know if the store is still open,Do|you|know|if|the|store|is|still|open,31-5-6-a.mp3,31-5-6-b.mp3
+u31_l5_p7,u31_l5,05.png,,left,none,1,,0,________.,,明日雨が降るかなあ。,,I wonder whether it will rain tomorrow,I|wonder|whether|it|will|rain|tomorrow,31-5-7-a.mp3,
+u31_l5_p8,u31_l5,05.png,05.png,left,left,1,1,0,________?,I'm new here.,会議がどこであるか教えてもらえますか？,ここ来たばかりで。,Could you tell me where the meeting is,Could|you|tell|me|where|the|meeting|is,31-5-8-a.mp3,31-5-8-b.mp3
+u31_l5_p9,u31_l5,05.png,,left,none,1,,0,________.,,彼女に一緒に来たいかどうか聞いてみて。,,Ask her if she wants to come with us,Ask|her|if|she|wants|to|come|with|us,31-5-9-a.mp3,
+u31_l5_p10,u31_l5,user,user,right,right,1,1,0,________?,I'm going to miss my class.,なんで電車が遅れてるか知ってる？,授業に遅れちゃうよ。,Do you know why the train is late,Do|you|know|why|the|train|is|late,31-5-10-a.mp3,31-5-10-b.mp3
+u31_l7_p1,u31_l7,user,user,right,right,1,1,0,________.,I'm really sorry.,何て言えばいいか分からない。,本当にごめん。,I don't know what to say,I|don't|know|what|to|say,31-7-1-a.mp3,31-7-1-b.mp3
+u31_l7_p2,u31_l7,user,user,right,right,1,1,0,________?,I'm totally lost.,これの使い方教えてくれる？,まったく分かんなくて。,Can you show me how to use this,Can|you|show|me|how|to|use|this,31-7-2-a.mp3,31-7-2-b.mp3
+u31_l7_p3,u31_l7,user,,right,none,1,,0,________.,,今夜何を着ればいいか決められない。,,I can't decide what to wear tonight,I|can't|decide|what|to|wear|tonight,31-7-3-a.mp3,
+u31_l7_p4,u31_l7,user,user,right,right,1,1,0,________.,It's getting heavy!,この箱どこに置けばいいか教えて。,だんだんキツくなってきた！,Tell me where to put this box,Tell|me|where|to|put|this|box,31-7-4-a.mp3,31-7-4-b.mp3
+u31_l7_p5,u31_l7,user,05.png,right,left,1,1,0,________.,Just say the word.,いつ始めればいいか分からない。,合図してくれたらいつでも。,I'm not sure when to start,I'm|not|sure|when|to|start,31-7-5-a.mp3,31-7-5-b.mp3
+u31_l7_p6,u31_l7,05.png,05.png,left,left,1,1,0,________?,We're a little lost.,駅への行き方分かる？,ちょっと迷っちゃって。,Do you know how to get to the station,Do|you|know|how|to|get|to|the|station,31-7-6-a.mp3,31-7-6-b.mp3
+u31_l7_p7,u31_l7,user,user,right,right,1,1,0,________.,I finally did it!,自転車の乗り方を教えてくれた。,やっとできた！,He taught me how to ride a bike,He|taught|me|how|to|ride|a|bike,31-7-7-a.mp3,31-7-7-b.mp3
+u31_l7_p8,u31_l7,user,user,right,right,1,1,0,________.,They both look great.,どっちを選べばいいか分からない。,どっちも良さそうなんだよね。,I don't know which to choose,I|don't|know|which|to|choose,31-7-8-a.mp3,31-7-8-b.mp3
+u31_l7_p9,u31_l7,05.png,,left,none,1,,0,________.,,彼女はいいリーダーになる方法を学んでるんだ。,,She's learning how to be a good leader,She's|learning|how|to|be|a|good|leader,31-7-9-a.mp3,
+u31_l7_p10,u31_l7,05.png,05.png,left,left,1,1,0,________.,We can't invite everyone.,誰を招待するか考えさせて。,全員は呼べないもんね。,Let me think about who to invite,Let|me|think|about|who|to|invite,31-7-10-a.mp3,31-7-10-b.mp3
+u31_l9_p1,u31_l9,user,user,right,right,1,1,0,________.,This is so confusing.,どうすればいいか分からない。,ややこしすぎる。,I don't know what I should do,I|don't|know|what|I|should|do,31-9-1-a.mp3,31-9-1-b.mp3
+u31_l9_p2,u31_l9,user,user,right,right,1,1,0,________?,It stopped working.,これの直し方教えてくれる？,動かなくなっちゃって。,Can you tell me how to fix this,Can|you|tell|me|how|to|fix|this,31-9-2-a.mp3,31-9-2-b.mp3
+u31_l9_p3,u31_l9,user,,right,none,1,,0,________.,,間に合うかなあ。,,I wonder if I can finish in time,I|wonder|if|I|can|finish|in|time,31-9-3-a.mp3,
+u31_l9_p4,u31_l9,user,05.png,right,left,1,1,0,________?,Let's decide now.,どこで待ち合わせればいいか分かる？,今決めちゃおう。,Do you know where we should meet,Do|you|know|where|we|should|meet,31-9-4-a.mp3,31-9-4-b.mp3
+u31_l9_p5,u31_l9,user,,right,none,1,,0,________.,,パーティーに何を持ってくればいいか聞かれた。,,She asked me what to bring to the party,She|asked|me|what|to|bring|to|the|party,31-9-5-a.mp3,
+u31_l9_p6,u31_l9,user,user,right,right,1,1,0,________.,Too many choices!,休みにどこ行くか決められない。,選択肢が多すぎ！,I can't decide where to go for vacation,I|can't|decide|where|to|go|for|vacation,31-9-6-a.mp3,31-9-6-b.mp3
+u31_l9_p7,u31_l9,user,user,right,right,1,1,0,________?,I hope so.,彼女がパーティーに来るか知ってる？,来るといいな。,Do you know if she's coming to the party,Do|you|know|if|she's|coming|to|the|party,31-9-7-a.mp3,31-9-7-b.mp3
+u31_l9_p8,u31_l9,user,,right,none,1,,0,________.,,あの日どれだけ楽しかったか覚えてる。,,I remember how happy we were that day,I|remember|how|happy|we|were|that|day,31-9-8-a.mp3,
+u31_l9_p9,u31_l9,05.png,05.png,left,left,1,1,0,________.,I won't be mad.,何があったか教えて。,怒らないから。,Please tell me what happened,Please|tell|me|what|happened,31-9-9-a.mp3,31-9-9-b.mp3
+u31_l9_p10,u31_l9,user,user,right,right,1,1,0,________.,Maybe science.,大学で何を学ぶかまだ迷ってる。,たぶん…理系かな。,I'm still deciding what to study in college,I'm|still|deciding|what|to|study|in|college,31-9-10-a.mp3,31-9-10-b.mp3

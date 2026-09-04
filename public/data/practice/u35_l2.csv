@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u35_l2_p1,u35_l2,user,user,right,right,1,1,1,________.,Do you want anything?,パーティー用にお菓子買ってくるね。,何か要る？,I'll grab some snacks for the party,I'll|grab|some|snacks|for|the|party,35-2-1-a.mp3,35-2-1-b.mp3
+u35_l2_p2,u35_l2,user,,right,none,1,,1,________.,,今夜、映画でも見ようよ。,,Let's watch some movies tonight,Let's|watch|some|movies|tonight,35-2-2-a.mp3,
+u35_l2_p3,u35_l2,user,user,right,right,1,1,1,________.,Maybe I'm just tired.,なんか知らんけど、あくびが止まらない。,疲れてるだけかもしれん。,"For some reason, I can't stop yawning","For|some|reason,|I|can't|stop|yawning",35-2-3-a.mp3,35-2-3-b.mp3
+u35_l2_p4,u35_l2,user,user,right,right,1,1,1,________!,There are plants everywhere.,ここ、ジャングルみたい！,植物だらけじゃん。,This place is like a jungle,This|place|is|like|a|jungle,35-2-4-a.mp3,35-2-4-b.mp3
+u35_l2_p5,u35_l2,user,,right,none,1,,1,________.,,どこか楽しいとこ行こうよ、ビーチとかさ。,,"We should go somewhere fun, like the beach","We|should|go|somewhere|fun,|like|the|beach",35-2-5-a.mp3,
+u35_l2_p6,u35_l2,user,user,right,right,1,1,1,"________""",She was so shocked.,彼女、「信じらんない！」って感じだった。,めっちゃ驚いてた。,"She was like, ""I can't believe it!","She|was|like,|""I|can't|believe|it!",35-2-6-a.mp3,35-2-6-b.mp3
+u35_l2_p7,u35_l2,user,,right,none,1,,1,________.,,冬が好きな人もいるけど、私は違うな。,,"Some people love winter, but I don't","Some|people|love|winter,|but|I|don't",35-2-7-a.mp3,
+u35_l2_p8,u35_l2,user,user,right,right,1,1,1,________.,We could barely move.,中、なんかー、めっちゃ混んでてさ。,ほとんど動けなかった。,"It was, like, super crowded in there","It|was,|like,|super|crowded|in|there",35-2-8-a.mp3,35-2-8-b.mp3
+u35_l2_p9,u35_l2,user,,right,none,1,,1,________?,,お水もらえますか？,,"Can I have some water, please","Can|I|have|some|water,|please",35-2-9-a.mp3,
+u35_l2_p10,u35_l2,user,user,right,right,1,1,1,"He just looked at me, like, really confused.",________.,彼、なんかすごい困った顔でこっち見ててさ。,ちょっと面白かった。,It was kind of funny,It|was|kind|of|funny,35-2-10-a.mp3,35-2-10-b.mp3

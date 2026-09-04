@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u34_l7_p1,u34_l7,user,,right,none,1,,1,________.,,英語がペラペラだったらなあ。,,I wish I could speak English fluently,I|wish|I|could|speak|English|fluently,34-7-1-a.mp3,
+u34_l7_p2,u34_l7,user,,right,none,1,,1,________.,,もっと自由な時間があったらなあ。,,I wish I had more free time,I|wish|I|had|more|free|time,34-7-2-a.mp3,
+u34_l7_p3,u34_l7,user,user,right,right,1,1,1,________.,I can't reach the shelf.,もう少し背が高かったらなあ。,棚に手が届かないんよね…,I wish I were a little taller,I|wish|I|were|a|little|taller,34-7-3-a.mp3,34-7-3-b.mp3
+u34_l7_p4,u34_l7,user,,right,none,1,,1,________.,,もう週末だったらなあ。,,I wish it were the weekend already,I|wish|it|were|the|weekend|already,34-7-4-a.mp3,
+u34_l7_p5,u34_l7,user,user,right,right,1,1,1,________.,I already have plans.,君のパーティー行けたらなあと思うけど、,もう予定があるんだ。,I wish I could come to your party,I|wish|I|could|come|to|your|party,34-7-5-a.mp3,34-7-5-b.mp3
+u34_l7_p6,u34_l7,user,,right,none,1,,1,________.,,答えが分かればなあ。,,I wish I knew the answer,I|wish|I|knew|the|answer,34-7-6-a.mp3,
+u34_l7_p7,u34_l7,user,user,right,right,1,1,1,________.,Mine is so tiny.,もっと広い部屋だったらなあ。,私の部屋めっちゃ狭くて。,I wish I had a bigger room,I|wish|I|had|a|bigger|room,34-7-7-a.mp3,34-7-7-b.mp3
+u34_l7_p8,u34_l7,user,user,right,right,1,1,1,________.,I really have to go.,もっといられたらいいんだけど…,本当にもう行かなきゃ。,I wish I could stay longer,I|wish|I|could|stay|longer,34-7-8-a.mp3,34-7-8-b.mp3
+u34_l7_p9,u34_l7,user,,right,none,1,,1,________.,,彼女がここに一緒にいてくれたらなあ。,,I wish she were here with us,I|wish|she|were|here|with|us,34-7-9-a.mp3,
+u34_l7_p10,u34_l7,user,user,right,right,1,1,1,________.,Can you teach me?,君みたいにギター弾けたらなあ。,ねえ、教えてくれる？,I wish I could play the guitar like you,I|wish|I|could|play|the|guitar|like|you,34-7-10-a.mp3,34-7-10-b.mp3

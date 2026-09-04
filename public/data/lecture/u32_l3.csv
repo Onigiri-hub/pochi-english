@@ -1,0 +1,31 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u32_l3_p1,u32_l3,1,…ということで、例文を見ながらイメージを固めていこう！,32-3-1,image_top
+u32_l3_p2,u32_l3,2,"I have a friend who speaks French.
+フランス語を話す友達がいるんだ。",32-3-2-1,image_top
+u32_l3_p3,u32_l3,3,I have a friend 友達がいるよ。,32-3-2-2,image_top
+u32_l3_p4,u32_l3,4,who来たからフレンドに説明ボックス用意。,32-3-2-3,image_top
+u32_l3_p5,u32_l3,5,"who speaks French.
+フランス語が話せるやーつ。",32-3-2-4,image_top
+u32_l3_p6,u32_l3,6,この友達の説明がこのBoxの中身。,32-3-2-4,image_top
+u32_l3_p7,u32_l3,7,"This is a train which goes to Tokyo.
+これは東京に行く電車です。",32-3-3-1,image_top
+u32_l3_p8,u32_l3,8,これは、電車だよ、,32-3-3-2,image_top
+u32_l3_p9,u32_l3,9,whichが来たから、電車のところに説明ボックス用意,32-3-3-3,image_top
+u32_l3_p10,u32_l3,10,"which goes to tokyo.
+東京に行くやーつ。",32-3-3-4,image_top
+u32_l3_p11,u32_l3,11,"The girl who has long hair is coming to us.
+長い髪の女の子が私たちの方に向かってきています。",32-3-4-1,image_top
+u32_l3_p12,u32_l3,12,"The girl
+女の子",32-3-4-2,image_top
+u32_l3_p13,u32_l3,13,whoが来たから、女の子のところに説明ボックス用意,32-3-4-3,image_top
+u32_l3_p14,u32_l3,14,"who has long hair
+長い髪を保有している",32-3-4-4,image_top
+u32_l3_p15,u32_l3,15,"is　→ここでボックス閉じる。
+ここからはその子の動作。",32-3-4-4,image_top
+u32_l3_p16,u32_l3,16,"coming to us.
+近づいてくる。",32-3-4-6,image_top
+u32_l3_p17,u32_l3,17,who も which も、that で言いかえられる。,32-3-5-1,image_top
+u32_l3_p18,u32_l3,18,thatは人にもモノにも使える。,32-3-5-1,image_top
+u32_l3_p19,u32_l3,19,"This is a train that goes to Tokyo.
+これは東京に行く電車です。",32-3-5-2,image_top
+u32_l3_p20,u32_l3,20,まずはここまでで、練習行ってみよー,32-3-5-2,image_top

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u31_l5_p1,u31_l5,05.png,05.png,left,left,1,1,1,________?,It's my first time here.,トイレがどこか知ってる？,ここ来るの初めてで。,Do you know where the bathroom is,Do|you|know|where|the|bathroom|is,31-5-1-a.mp3,31-5-1-b.mp3
+u31_l5_p2,u31_l5,05.png,,left,none,1,,1,________?,,これがいくらか教えてもらえますか？,,Could you tell me how much this is,Could|you|tell|me|how|much|this|is,31-5-2-a.mp3,
+u31_l5_p3,u31_l5,user,user,right,right,1,1,1,________?,I left my phone at home.,今何時か分かる？,スマホ家に置いてきちゃって。,Do you know what time it is,Do|you|know|what|time|it|is,31-5-3-a.mp3,31-5-3-b.mp3
+u31_l5_p4,u31_l5,user,user,right,right,1,1,1,________?,I've been waiting forever.,次のバスいつ来るか知ってる？,ずっと待ってるんだけど。,Do you know when the next bus comes,Do|you|know|when|the|next|bus|comes,31-5-4-a.mp3,31-5-4-b.mp3
+u31_l5_p5,u31_l5,user,user,right,right,1,1,1,________.,Can you check it?,これで合ってるか自信ないな。,確認してくれる？,I'm not sure if this is correct,I'm|not|sure|if|this|is|correct,31-5-5-a.mp3,31-5-5-b.mp3
+u31_l5_p6,u31_l5,user,user,right,right,1,1,1,________?,I really need some milk.,お店まだ開いてるか知ってる？,牛乳がどうしても要るんだ。,Do you know if the store is still open,Do|you|know|if|the|store|is|still|open,31-5-6-a.mp3,31-5-6-b.mp3
+u31_l5_p7,u31_l5,05.png,,left,none,1,,1,________.,,明日雨が降るかなあ。,,I wonder whether it will rain tomorrow,I|wonder|whether|it|will|rain|tomorrow,31-5-7-a.mp3,
+u31_l5_p8,u31_l5,05.png,05.png,left,left,1,1,1,________?,I'm new here.,会議がどこであるか教えてもらえますか？,ここ来たばかりで。,Could you tell me where the meeting is,Could|you|tell|me|where|the|meeting|is,31-5-8-a.mp3,31-5-8-b.mp3
+u31_l5_p9,u31_l5,05.png,,left,none,1,,1,________.,,彼女に一緒に来たいかどうか聞いてみて。,,Ask her if she wants to come with us,Ask|her|if|she|wants|to|come|with|us,31-5-9-a.mp3,
+u31_l5_p10,u31_l5,user,user,right,right,1,1,1,________?,I'm going to miss my class.,なんで電車が遅れてるか知ってる？,授業に遅れちゃうよ。,Do you know why the train is late,Do|you|know|why|the|train|is|late,31-5-10-a.mp3,31-5-10-b.mp3

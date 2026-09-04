@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u34_l9_p1,u34_l9,05.png,05.png,left,left,1,1,1,________.,She's really upset.,私だったら、彼女に謝るな。（もし私があなただったら）,すごく怒ってるから。,"If I were you, I would apologize to her","If|I|were|you,|I|would|apologize|to|her",34-9-1-a.mp3,34-9-1-b.mp3
+u34_l9_p2,u34_l9,user,,right,none,1,,1,________.,,私だったら、気にしないけどな。,,"If I were you, I wouldn't worry about it","If|I|were|you,|I|wouldn't|worry|about|it",34-9-2-a.mp3,
+u34_l9_p3,u34_l9,user,user,right,right,1,1,1,________.,It's a great chance.,私だったら、その仕事引き受けるな。,いいチャンスじゃん。,"If I were you, I would take the job","If|I|were|you,|I|would|take|the|job",34-9-3-a.mp3,34-9-3-b.mp3
+u34_l9_p4,u34_l9,user,,right,none,1,,1,________.,,私だったら、お医者さんに相談するな。,,"If I were you, I would talk to a doctor","If|I|were|you,|I|would|talk|to|a|doctor",34-9-4-a.mp3,
+u34_l9_p5,u34_l9,user,,right,none,1,,1,________.,,私だったら、それは買わないな。,,"If I were you, I wouldn't buy that","If|I|were|you,|I|wouldn't|buy|that",34-9-5-a.mp3,
+u34_l9_p6,u34_l9,user,user,right,right,1,1,1,________.,You look exhausted.,私だったら、少し休むけどな。,疲れきってるじゃん。,"If I were you, I would get some rest","If|I|were|you,|I|would|get|some|rest",34-9-6-a.mp3,34-9-6-b.mp3
+u34_l9_p7,u34_l9,user,,right,none,1,,1,________.,,私だったら、先に電話するけどな。,,"If I were you, I would call her first","If|I|were|you,|I|would|call|her|first",34-9-7-a.mp3,
+u34_l9_p8,u34_l9,user,user,right,right,1,1,1,________.,Just wait a bit.,私だったら、まだ何も言わないな。,もう少し待ったほうがいいって。,"If I were you, I wouldn't say anything yet","If|I|were|you,|I|wouldn't|say|anything|yet",34-9-8-a.mp3,34-9-8-b.mp3
+u34_l9_p9,u34_l9,user,user,right,right,1,1,1,________.,Don't give up now.,私だったら、もう一回やってみるな。,今あきらめないで。,"If I were you, I would try again","If|I|were|you,|I|would|try|again",34-9-9-a.mp3,34-9-9-b.mp3
+u34_l9_p10,u34_l9,user,,right,none,1,,1,________.,,私だったら、そのお金は貯めておくな。,,"If I were you, I would save that money","If|I|were|you,|I|would|save|that|money",34-9-10-a.mp3,

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u31_l3_p1,u31_l3,user,user,right,right,1,1,1,________.,He's just around the corner.,彼がどこに住んでるか知ってるよ。,すぐそこの角のとこ。,I know where he lives,I|know|where|he|lives,31-3-1-a.mp3,31-3-1-b.mp3
+u31_l3_p2,u31_l3,user,,right,none,1,,1,________.,,彼女が何て言ったか思い出せない。,,I don't remember what she said,I|don't|remember|what|she|said,31-3-2-a.mp3,
+u31_l3_p3,u31_l3,user,user,right,right,1,1,1,________.,Maybe something happened.,なんで今日あんなに静かなんだろう。,何かあったのかな。,I wonder why he's so quiet today,I|wonder|why|he's|so|quiet|today,31-3-3-a.mp3,31-3-3-b.mp3
+u31_l3_p4,u31_l3,user,user,right,right,1,1,1,________.,Anything's fine!,誕生日に何がほしいか教えて。,何でもいいよ！,Tell me what you want for your birthday,Tell|me|what|you|want|for|your|birthday,31-3-4-a.mp3,31-3-4-b.mp3
+u31_l3_p5,u31_l3,user,user,right,right,1,1,1,________.,Have you seen them?,鍵をどこに置いたか忘れちゃった。,見なかった？,I forgot where I put my keys,I|forgot|where|I|put|my|keys,31-3-5-a.mp3,31-3-5-b.mp3
+u31_l3_p6,u31_l3,user,,right,none,1,,1,________.,,それがいくらするか知ってるよ。,,I know how much it costs,I|know|how|much|it|costs,31-3-6-a.mp3,
+u31_l3_p7,u31_l3,user,user,right,right,1,1,1,________.,It's easier than I thought.,彼女が機械の動かし方を見せてくれた。,思ったより簡単だった。,She showed me how the machine works,She|showed|me|how|the|machine|works,31-3-7-a.mp3,31-3-7-b.mp3
+u31_l3_p8,u31_l3,user,,right,none,1,,1,________.,,時間が経つのが速すぎて信じられない。,,I can't believe how fast time flies,I|can't|believe|how|fast|time|flies,31-3-8-a.mp3,
+u31_l3_p9,u31_l3,user,05.png,right,left,1,1,1,________.,Let's ask the teacher.,テストがいつなのか分からない。,先生に聞いてみよう。,I don't know when the test is,I|don't|know|when|the|test|is,31-3-9-a.mp3,31-3-9-b.mp3
+u31_l3_p10,u31_l3,user,user,right,right,1,1,1,________!,You'll never believe it.,今日誰に会ったと思う？,絶対信じられないよ。,Guess who I saw today,Guess|who|I|saw|today,31-3-10-a.mp3,31-3-10-b.mp3

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u32_l12_p1,u32_l12,user,,right,none,1,,0,________.,,これ、私の人生を変えた本なんだ。,,This is a book that changed my life,This|is|a|book|that|changed|my|life,32-12-1-a.mp3,
+u32_l12_p2,u32_l12,user,user,right,right,1,1,0,________.,Mine is so old.,いいカメラ付きのスマホが欲しい。,私のめっちゃ古くて。,I want a phone that has a good camera,I|want|a|phone|that|has|a|good|camera,32-12-2-a.mp3,32-12-2-b.mp3
+u32_l12_p3,u32_l12,user,,right,none,1,,0,________.,,昨日買った本、すごく良かった。,,The book I bought yesterday was really good,The|book|I|bought|yesterday|was|really|good,32-12-3-a.mp3,
+u32_l12_p4,u32_l12,user,,right,none,1,,0,________.,,昨日の夜見た映画、ひどかったよ。,,The movie that I watched last night was terrible,The|movie|that|I|watched|last|night|was|terrible,32-12-4-a.mp3,
+u32_l12_p5,u32_l12,05.png,05.png,left,left,1,1,0,________.,It was such a good one.,一緒に撮った写真が見つからない。,すごくいいやつだったのに。,I can't find the photo we took together,I|can't|find|the|photo|we|took|together,32-12-5-a.mp3,32-12-5-b.mp3
+u32_l12_p6,u32_l12,user,user,right,right,1,1,0,________?,The library's closed today.,勉強できる場所知ってる？,図書館、今日閉まってて。,Do you know a place where we can study,Do|you|know|a|place|where|we|can|study,32-12-6-a.mp3,32-12-6-b.mp3
+u32_l12_p7,u32_l12,05.png,05.png,left,left,1,1,0,________.,Nothing's changed.,ここ、僕が育った町なんだ。,何も変わってないな。,This is the town where I grew up,This|is|the|town|where|I|grew|up,32-12-7-a.mp3,32-12-7-b.mp3
+u32_l12_p8,u32_l12,user,user,right,right,1,1,0,________.,The food is always amazing.,お父さんがシェフだよって友達がいるんだ。,料理いつも最高。,I have a friend whose dad is a chef,I|have|a|friend|whose|dad|is|a|chef,32-12-8-a.mp3,32-12-8-b.mp3
+u32_l12_p9,u32_l12,user,,right,none,1,,0,________?,,自転車盗まれた子、知ってる？,,Do you know the kid whose bike got stolen,Do|you|know|the|kid|whose|bike|got|stolen,32-12-9-a.mp3,
+u32_l12_p10,u32_l12,05.png,05.png,left,left,1,1,0,________.,It's so cute.,隣の人の猫がいつもうちの庭に来るんだ。,すごくかわいい。,I have a neighbor whose cat always comes to my yard,I|have|a|neighbor|whose|cat|always|comes|to|my|yard,32-12-10-a.mp3,32-12-10-b.mp3

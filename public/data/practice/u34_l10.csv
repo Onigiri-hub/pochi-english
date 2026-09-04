@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u34_l10_p1,u34_l10,05.png,,left,none,1,,0,________.,,車があったら、どこでも送ってあげるのに。,,"If I had a car, I would drive you everywhere","If|I|had|a|car,|I|would|drive|you|everywhere",34-10-1-a.mp3,
+u34_l10_p2,u34_l10,user,,right,none,1,,0,________.,,お金持ちだったら、世界中を旅するのになあ。,,"If I were rich, I would travel the world","If|I|were|rich,|I|would|travel|the|world",34-10-2-a.mp3,
+u34_l10_p3,u34_l10,user,,right,none,1,,0,________.,,もっと近くに住んでたら、毎日会いに行くのになあ。,,"If I lived closer, I would visit you every day","If|I|lived|closer,|I|would|visit|you|every|day",34-10-3-a.mp3,
+u34_l10_p4,u34_l10,user,,right,none,1,,0,________.,,翼があったら、まっすぐ君のところへ飛んでいくのに。,,"If I had wings, I would fly straight to you","If|I|had|wings,|I|would|fly|straight|to|you",34-10-4-a.mp3,
+u34_l10_p5,u34_l10,user,,right,none,1,,0,________.,,宝くじが当たったら、大きい家を買うのになあ。,,"If I won the lottery, I would buy a big house","If|I|won|the|lottery,|I|would|buy|a|big|house",34-10-5-a.mp3,
+u34_l10_p6,u34_l10,user,,right,none,1,,0,________.,,お金を貯めたら、いつか買えるのに。,,"If you saved money, you could buy it someday","If|you|saved|money,|you|could|buy|it|someday",34-10-6-a.mp3,
+u34_l10_p7,u34_l10,user,user,right,right,1,1,0,________.,I can't reach the shelf.,もう少し背が高かったらなあ。,棚に手が届かないんよね…,I wish I were a little taller,I|wish|I|were|a|little|taller,34-10-7-a.mp3,34-10-7-b.mp3
+u34_l10_p8,u34_l10,user,user,right,right,1,1,0,________.,Mine is so tiny.,もっと広い部屋だったらなあ。,私の部屋めっちゃ狭くて。,I wish I had a bigger room,I|wish|I|had|a|bigger|room,34-10-8-a.mp3,34-10-8-b.mp3
+u34_l10_p9,u34_l10,05.png,05.png,left,left,1,1,0,________.,She's really upset.,私だったら、彼女に謝るな。（もし私があなただったら）,すごく怒ってるから。,"If I were you, I would apologize to her","If|I|were|you,|I|would|apologize|to|her",34-10-9-a.mp3,34-10-9-b.mp3
+u34_l10_p10,u34_l10,user,,right,none,1,,0,________.,,私だったら、それは買わないな。,,"If I were you, I wouldn't buy that","If|I|were|you,|I|wouldn't|buy|that",34-10-10-a.mp3,

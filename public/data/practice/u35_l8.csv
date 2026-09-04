@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u35_l8_p1,u35_l8,user,user,right,right,1,1,1,________?,You look hungry.,何か食べる？,お腹すいてそうだね。,Do you want something to eat,Do|you|want|something|to|eat,35-8-1-a.mp3,35-8-1-b.mp3
+u35_l8_p2,u35_l8,user,,right,none,1,,1,________.,,話したいことがあるんだ。,,I have something to tell you,I|have|something|to|tell|you,35-8-2-a.mp3,
+u35_l8_p3,u35_l8,user,user,right,right,1,1,1,________.,It's too loud here.,どこか静かなとこ行こう。,ここうるさすぎ。,Let's go somewhere quiet,Let's|go|somewhere|quiet,35-8-3-a.mp3,35-8-3-b.mp3
+u35_l8_p4,u35_l8,user,user,right,right,1,1,1,________.,Don't give up yet.,どうにかして解決しよう。,まだ諦めないで。,We'll figure it out somehow,We'll|figure|it|out|somehow,35-8-4-a.mp3,35-8-4-b.mp3
+u35_l8_p5,u35_l8,user,,right,none,1,,1,________.,,来週いつか遊ぼうよ。,,Let's hang out sometime next week,Let's|hang|out|sometime|next|week,35-8-5-a.mp3,
+u35_l8_p6,u35_l8,user,user,right,right,1,1,1,________.,That's my dream.,いつか世界中を旅したいな。,それが夢なんだ。,Someday I want to travel the world,Someday|I|want|to|travel|the|world,35-8-6-a.mp3,35-8-6-b.mp3
+u35_l8_p7,u35_l8,05.png,,left,none,1,,1,________.,,誰か傘を忘れてるよ。,,Somebody left their umbrella here,Somebody|left|their|umbrella|here,35-8-7-a.mp3,
+u35_l8_p8,u35_l8,user,user,right,right,1,1,1,________.,I almost fell asleep.,映画はちょっと退屈だった。,寝そうになったよ。,The movie was somewhat boring,The|movie|was|somewhat|boring,35-8-8-a.mp3,35-8-8-b.mp3
+u35_l8_p9,u35_l8,user,05.png,right,left,1,1,1,________.,Did you hear it too?,昨夜、なんか変な音聞いたんだ。,君も聞いたの？,I heard something strange last night,I|heard|something|strange|last|night,35-8-9-a.mp3,35-8-9-b.mp3
+u35_l8_p10,u35_l8,user,,right,none,1,,1,________.,,彼ら、駅の近くのどこかに住んでるよ。,,They live somewhere near the station,They|live|somewhere|near|the|station,35-8-10-a.mp3,

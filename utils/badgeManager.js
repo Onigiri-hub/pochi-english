@@ -64,6 +64,8 @@ export async function checkAndEarnBadges({
   await check("lesson_50", totalLessons >= 50);
   await check("lesson_100", totalLessons >= 100);
   await check("lesson_200", totalLessons >= 200);
+  await check("lesson_250", totalLessons >= 250);
+  await check("lesson_300", totalLessons >= 300);
 
   // Unit完了系
   if (isUnitComplete) {

@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u34_l5_p1,u34_l5,user,user,right,right,1,1,1,________.,I'm so swamped right now.,時間があれば手伝えるのに。,今めっちゃ忙しくて。,"If I had time, I could help you","If|I|had|time,|I|could|help|you",34-5-1-a.mp3,34-5-1-b.mp3
+u34_l5_p2,u34_l5,user,,right,none,1,,1,________.,,雨がやんだら、出かけられるのになあ。,,"If it stopped raining, we could go out","If|it|stopped|raining,|we|could|go|out",34-5-2-a.mp3,
+u34_l5_p3,u34_l5,user,user,right,right,1,1,1,________.,It's worth a try.,頼んでみたら、イエスって言うかもよ。,試す価値あるよ。,"If you asked him, he might say yes","If|you|asked|him,|he|might|say|yes",34-5-3-a.mp3,34-5-3-b.mp3
+u34_l5_p4,u34_l5,user,,right,none,1,,1,________.,,宝くじが当たったら、大きい家を買うのになあ。,,"If I won the lottery, I would buy a big house","If|I|won|the|lottery,|I|would|buy|a|big|house",34-5-4-a.mp3,
+u34_l5_p5,u34_l5,user,,right,none,1,,1,________.,,今出れば、電車に間に合うのに。,,"If we left now, we could catch the train","If|we|left|now,|we|could|catch|the|train",34-5-5-a.mp3,
+u34_l5_p6,u34_l5,user,,right,none,1,,1,________.,,もっと練習したら、大会で勝つかもね。,,"If he practiced more, he might win the tournament","If|he|practiced|more,|he|might|win|the|tournament",34-5-6-a.mp3,
+u34_l5_p7,u34_l5,user,,right,none,1,,1,________.,,中国語が話せたら、海外で働けるのに。,,"If I spoke Chinese, I could work abroad","If|I|spoke|Chinese,|I|could|work|abroad",34-5-7-a.mp3,
+u34_l5_p8,u34_l5,user,,right,none,1,,1,________.,,お金を貯めたら、いつか買えるのに。,,"If you saved money, you could buy it someday","If|you|saved|money,|you|could|buy|it|someday",34-5-8-a.mp3,
+u34_l5_p9,u34_l5,user,,right,none,1,,1,________.,,車があったら、運転して行くかもなあ。,,"If I had a car, I might drive there instead","If|I|had|a|car,|I|might|drive|there|instead",34-5-9-a.mp3,
+u34_l5_p10,u34_l5,user,05.png,right,left,1,1,1,________.,Maybe next weekend.,天気が良ければ、ピクニックできるのに。,来週末かな。,"If the weather were better, we could have a picnic","If|the|weather|were|better,|we|could|have|a|picnic",34-5-10-a.mp3,34-5-10-b.mp3

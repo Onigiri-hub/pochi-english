@@ -43,7 +43,7 @@ function CircleProgress({ value, total, color, label }) {
 
 // 並べて英単語：例文データが用意できている Stage_no の上限。
 // これより後の Stage はグレーアウトして無効化する（例文を追加したら値を上げる）。
-const ARRANGE_MAX_ENABLED_NO = 2
+const ARRANGE_MAX_ENABLED_NO = 4
 
 export default function StageList() {
   const [stages, setStages] = useState([])
@@ -65,15 +65,14 @@ export default function StageList() {
       const clearedSet = new Set()
       if (user) {
         try {
-          const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
-          roundsSnap.docs.forEach(d => {
-            const data = d.data()
-            if (data.totalWords > 0 && data.doneWords?.length >= data.totalWords) {
-              clearedSet.add(d.id)
-            }
+          // vocab_section_state の clearedRounds を集約（新モデル）
+          const stateSnap = await getDocs(collection(db, "users", user.uid, "vocab_section_state"))
+          stateSnap.docs.forEach(d => {
+            const cr = d.data().clearedRounds || {}
+            Object.keys(cr).forEach(rid => { if (cr[rid]) clearedSet.add(rid) })
           })
         } catch (e) {
-          console.error("vocab_rounds一括取得失敗:", e)
+          console.error("vocab_section_state一括取得失敗:", e)
         }
       }
 

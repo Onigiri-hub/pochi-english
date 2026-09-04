@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u35_l6_p1,u35_l6,user,user,right,right,1,1,1,________?,It looks expensive.,あそこのキラキラしたやつ何？,高そうだね。,What's that shiny thing over there,What's|that|shiny|thing|over|there,35-6-1-a.mp3,35-6-1-b.mp3
+u35_l6_p2,u35_l6,user,,right,none,1,,1,________.,,今日やること山ほどある。,,I have so many things to do today,I|have|so|many|things|to|do|today,35-6-2-a.mp3,
+u35_l6_p3,u35_l6,user,,right,none,1,,1,________?,,荷物クローゼットに入れてくれる？,,Can you put your stuff in the closet,Can|you|put|your|stuff|in|the|closet,35-6-3-a.mp3,
+u35_l6_p4,u35_l6,user,,right,none,1,,1,________.,,映画のこととか話したよ。,,We talked about movies and stuff,We|talked|about|movies|and|stuff,35-6-4-a.mp3,
+u35_l6_p5,u35_l6,user,user,right,right,1,1,1,________?,This is too big for me.,もっと小さいやつありますか？,これ、私には大きすぎて。,Do you have a smaller one,Do|you|have|a|smaller|one,35-6-5-a.mp3,35-6-5-b.mp3
+u35_l6_p6,u35_l6,user,user,right,right,1,1,1,________.,I'll take it.,こっちのほうがあれよりかわいい。,これにする。,This one is cuter than that one,This|one|is|cuter|than|that|one,35-6-6-a.mp3,35-6-6-b.mp3
+u35_l6_p7,u35_l6,user,,right,none,1,,1,________.,,旅行用にいろいろ買わなきゃ。,,I need to buy some stuff for the trip,I|need|to|buy|some|stuff|for|the|trip,35-6-7-a.mp3,
+u35_l6_p8,u35_l6,user,user,right,right,1,1,1,________?,I found it on sale.,これ、欲しかったやつじゃない？,セールで見つけたよ。,Is this the one you wanted,Is|this|the|one|you|wanted,35-6-8-a.mp3,35-6-8-b.mp3
+u35_l6_p9,u35_l6,user,,right,none,1,,1,________.,,夏の一番いいところはお祭りだね。,,The best thing about summer is the festivals,The|best|thing|about|summer|is|the|festivals,35-6-9-a.mp3,
+u35_l6_p10,u35_l6,05.png,05.png,left,left,1,1,1,________!,The bus is here.,荷物持って、もう出るよ！,あ、バス来た。,"Grab your stuff, we're leaving","Grab|your|stuff,|we're|leaving",35-6-10-a.mp3,35-6-10-b.mp3

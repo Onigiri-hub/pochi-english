@@ -1,0 +1,31 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u33_l2_p1,u33_l2,user,,right,none,1,,0,________.,,お父さんは消防士で、私のヒーローなんだ。,,"My dad, who is a firefighter, is my hero","My|dad,|who|is|a|firefighter,|is|my|hero",33-2-1-a.mp3,
+u33_l2_p2,u33_l2,user,,right,none,1,,0,________.,,レースで勝った子、うちのクラスなんだ。,,The boy who won the race is in my class,The|boy|who|won|the|race|is|in|my|class,33-2-2-a.mp3,
+u33_l2_p3,u33_l2,user,user,right,right,1,1,0,________.,He cracks me up.,トムは私の後ろの席で、いつも冗談ばっかり。,笑わせてくるんだ。,"Tom, who sits behind me, is always joking","Tom,|who|sits|behind|me,|is|always|joking",33-2-3-a.mp3,33-2-3-b.mp3
+u33_l2_p4,u33_l2,user,,right,none,1,,0,________.,,4か国語を話す友達がいるんだ。,,I have a friend who speaks four languages,I|have|a|friend|who|speaks|four|languages,33-2-4-a.mp3,
+u33_l2_p5,u33_l2,user,user,right,right,1,1,0,________.,She's amazing.,おばあちゃんは90歳なんだけど、今も泳ぎに行くんだ。,すごいよね。,"My grandma, who is 90, still goes swimming","My|grandma,|who|is|90,|still|goes|swimming",33-2-5-a.mp3,33-2-5-b.mp3
+u33_l2_p6,u33_l2,user,,right,none,1,,0,________.,,隣に住んでる女性は画家なんだ。,,The woman who lives next door is a painter,The|woman|who|lives|next|door|is|a|painter,33-2-6-a.mp3,
+u33_l2_p7,u33_l2,user,,right,none,1,,0,________.,,親友がロンドンに引っ越したんだけど、今も毎週電話くれる。,,"My best friend, who moved to London, still calls me every week","My|best|friend,|who|moved|to|London,|still|calls|me|every|week",33-2-7-a.mp3,
+u33_l2_p8,u33_l2,user,,right,none,1,,0,________?,,さっき電話してきた人、知ってる？,,Do you know the man who called earlier,Do|you|know|the|man|who|called|earlier,33-2-8-a.mp3,
+u33_l2_p9,u33_l2,user,user,right,right,1,1,0,________.,Her classes are so fun.,グリーン先生は英語を教えてて、すごく人気なんだ。,授業がめっちゃ楽しい。,"Ms. Green, who teaches English, is really popular","Ms.|Green,|who|teaches|English,|is|really|popular",33-2-9-a.mp3,33-2-9-b.mp3
+u33_l2_p10,u33_l2,user,,right,none,1,,0,________.,,私のことを分かってくれる唯一の人なんだ。,,She's the only person who understands me,She's|the|only|person|who|understands|me,33-2-10-a.mp3,
+u33_l4_p1,u33_l4,user,,right,none,1,,0,________.,,奈良で生まれたんだ。鹿が自由に歩いてる所ね。,,"I was born in Nara, where the deer walk freely","I|was|born|in|Nara,|where|the|deer|walk|freely",33-4-1-a.mp3,
+u33_l4_p2,u33_l4,05.png,05.png,left,left,1,1,0,________.,It was breathtaking.,パリに行って、そこでエッフェル塔を見たよ。,息をのむ美しさだった。,"We visited Paris, where we saw the Eiffel Tower","We|visited|Paris,|where|we|saw|the|Eiffel|Tower",33-4-2-a.mp3,33-4-2-b.mp3
+u33_l4_p3,u33_l4,05.png,,left,none,1,,0,________.,,2011年は忘れられない。大きな地震があった年だ。,,"I'll never forget 2011, when the big earthquake happened","I'll|never|forget|2011,|when|the|big|earthquake|happened",33-4-3-a.mp3,
+u33_l4_p4,u33_l4,05.png,,left,none,1,,0,________.,,お昼に会おうよ。カフェが静かな時間だから。,,"Let's meet at noon, when the café is quiet","Let's|meet|at|noon,|when|the|café|is|quiet",33-4-4-a.mp3,
+u33_l4_p5,u33_l4,05.png,,left,none,1,,0,________.,,沖縄に引っ越したんだ。海がきれいな所だよ。,,"She moved to Okinawa, where the sea is beautiful","She|moved|to|Okinawa,|where|the|sea|is|beautiful",33-4-5-a.mp3,
+u33_l4_p6,u33_l4,05.png,,left,none,1,,0,________.,,春に結婚したんだ。桜が咲く季節ね。,,"We got married in spring, when the cherry blossoms bloom","We|got|married|in|spring,|when|the|cherry|blossoms|bloom",33-4-6-a.mp3,
+u33_l4_p7,u33_l4,user,,right,none,1,,0,________.,,12月が好きなんだ。町中がライトアップされるからね。,,"I love December, when the whole town lights up","I|love|December,|when|the|whole|town|lights|up",33-4-7-a.mp3,
+u33_l4_p8,u33_l4,05.png,05.png,left,left,1,1,0,________.,He shares a small flat.,東京で働いてるんだ。家賃がすごく高い所ね。,小さい部屋をシェアしてる。,"He works in Tokyo, where the rent is really high","He|works|in|Tokyo,|where|the|rent|is|really|high",33-4-8-a.mp3,33-4-8-b.mp3
+u33_l4_p9,u33_l4,05.png,,left,none,1,,0,________.,,母校に行ったんだ。大好きな先生に出会った場所だよ。,,"I visited my old school, where I met my favorite teacher","I|visited|my|old|school,|where|I|met|my|favorite|teacher",33-4-9-a.mp3,
+u33_l4_p10,u33_l4,05.png,05.png,left,left,1,1,0,________.,We can catch up.,今夜電話してよ。やっと空く時間だから。,いろいろ話そう。,"Call me tonight, when I'm finally free","Call|me|tonight,|when|I'm|finally|free",33-4-10-a.mp3,33-4-10-b.mp3
+u33_l6_p1,u33_l6,user,,right,none,1,,0,________.,,誕生日を忘れられて、それがほんとに傷ついた。,,"He forgot my birthday, which really hurt","He|forgot|my|birthday,|which|really|hurt",33-6-1-a.mp3,
+u33_l6_p2,u33_l6,05.png,,left,none,1,,0,________.,,仕事が決まって、そのことでご両親が誇らしそうだった。,,"She got the job, which made her parents proud","She|got|the|job,|which|made|her|parents|proud",33-6-2-a.mp3,
+u33_l6_p3,u33_l6,user,,right,none,1,,0,________.,,一日中雨で、それで予定が台無しになった。,,"It rained all day, which ruined our plans","It|rained|all|day,|which|ruined|our|plans",33-6-3-a.mp3,
+u33_l6_p4,u33_l6,user,user,right,right,1,1,0,________.,That's not like him.,彼が謝って、それにみんな驚いた。,彼らしくないよね。,"He apologized, which surprised everyone","He|apologized,|which|surprised|everyone",33-6-4-a.mp3,33-6-4-b.mp3
+u33_l6_p5,u33_l6,user,,right,none,1,,0,________.,,終電を逃して、そのせいで長い距離を歩いて帰った。,,"We missed the last train, which meant a long walk home","We|missed|the|last|train,|which|meant|a|long|walk|home",33-6-5-a.mp3,
+u33_l6_p6,u33_l6,user,user,right,right,1,1,0,________.,She won first place.,見事に歌って、それが審査員を感心させた。,優勝したよ。,"She sang beautifully, which impressed the judges","She|sang|beautifully,|which|impressed|the|judges",33-6-6-a.mp3,33-6-6-b.mp3
+u33_l6_p7,u33_l6,user,,right,none,1,,0,________.,,テストが簡単で、それに驚いちゃった。,,"The test was easy, which surprised me","The|test|was|easy,|which|surprised|me",33-6-7-a.mp3,
+u33_l6_p8,u33_l6,user,,right,none,1,,0,________.,,何度も口を挟んで、それが先生をイラつかせた。,,"He kept interrupting, which annoyed the teacher","He|kept|interrupting,|which|annoyed|the|teacher",33-6-8-a.mp3,
+u33_l6_p9,u33_l6,user,,right,none,1,,0,________.,,スマホの充電が切れて、それがもう最悪だった。,,"My phone died, which was a total disaster","My|phone|died,|which|was|a|total|disaster",33-6-9-a.mp3,
+u33_l6_p10,u33_l6,user,user,right,right,1,1,0,________.,I couldn't stop smiling.,彼がイエスって言ってくれて、それで最高の一週間になった。,ずっとニヤけてた。,"He said yes, which made my whole week","He|said|yes,|which|made|my|whole|week",33-6-10-a.mp3,33-6-10-b.mp3

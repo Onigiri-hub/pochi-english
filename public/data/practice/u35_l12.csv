@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u35_l12_p1,u35_l12,user,user,right,right,1,1,1,________.,They were half price!,この靴、すごくお得に買えた。,半額だったんだよ！,I got a great deal on these shoes,I|got|a|great|deal|on|these|shoes,35-12-1-a.mp3,35-12-1-b.mp3
+u35_l12_p2,u35_l12,05.png,,left,none,1,,1,________.,,それにはかなりの忍耐が要るよ。,,It takes a great deal of patience,It|takes|a|great|deal|of|patience,35-12-2-a.mp3,
+u35_l12_p3,u35_l12,05.png,05.png,left,left,1,1,1,________.,It can't wait.,この問題、今日中に対処しなきゃ。,後回しにできないんだ。,I have to deal with this problem today,I|have|to|deal|with|this|problem|today,35-12-3-a.mp3,35-12-3-b.mp3
+u35_l12_p4,u35_l12,user,,right,none,1,,1,________.,,気にしないで、大したことないよ。,,"Don't worry, it's no big deal","Don't|worry,|it's|no|big|deal",35-12-4-a.mp3,
+u35_l12_p5,u35_l12,05.png,user,left,right,1,1,1,________.,Deal!,引っ越し手伝ってくれたら夕飯おごるよ。,よっしゃ！決まりだね！,"If you help me move, I'll buy you dinner","If|you|help|me|move,|I'll|buy|you|dinner",35-12-5-a.mp3,35-12-5-b.mp3
+u35_l12_p6,u35_l12,05.png,,left,none,1,,1,________.,,すごく頑張ったね。休んでいいんだよ。,,You worked so hard. You deserve a rest,You|worked|so|hard.|You|deserve|a|rest,35-12-6-a.mp3,
+u35_l12_p7,u35_l12,user,,right,none,1,,1,________.,,みんなに失礼だったから、自業自得だよ。,,"He was rude to everyone, so he deserved it","He|was|rude|to|everyone,|so|he|deserved|it",35-12-7-a.mp3,
+u35_l12_p8,u35_l12,05.png,05.png,left,left,1,1,1,________.,Never forget that.,君は幸せになって当然だよ。,それ、忘れないで。,You deserve to be happy,You|deserve|to|be|happy,35-12-8-a.mp3,35-12-8-b.mp3
+u35_l12_p9,u35_l12,05.png,user,left,right,1,1,1,________?,I go for a run.,ストレスどう対処してる？,わたしはね、走りに行くんだー。,How do you deal with stress,How|do|you|deal|with|stress,35-12-9-a.mp3,35-12-9-b.mp3
+u35_l12_p10,u35_l12,user,,right,none,1,,1,________.,,彼女が賞を取ったけど、それはまさに当然の結果だったと言えよう。,,"She won the prize, and she really deserved it","She|won|the|prize,|and|she|really|deserved|it",35-12-10-a.mp3,
