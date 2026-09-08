@@ -3,7 +3,7 @@ u34_l3_p1,u34_l3,05.png,,left,none,1,,0,________.,,車があったら、どこ�
 u34_l3_p2,u34_l3,user,,right,none,1,,0,________.,,彼女の番号を知ってたら、電話するのになあ。,,"If I knew her number, I would call her","If|I|knew|her|number,|I|would|call|her",34-3-2-a.mp3,
 u34_l3_p3,u34_l3,user,05.png,right,left,1,1,0,________.,But look at this rain.,晴れてたら、ビーチ行くのになあ。,でもこの雨だよ。,"If it were sunny, we would go to the beach","If|it|were|sunny,|we|would|go|to|the|beach",34-3-3-a.mp3,34-3-3-b.mp3
 u34_l3_p4,u34_l3,user,,right,none,1,,0,________.,,お金持ちだったら、世界中を旅するのになあ。,,"If I were rich, I would travel the world","If|I|were|rich,|I|would|travel|the|world",34-3-4-a.mp3,
-u34_l3_p5,u34_l3,user,05.png,right,left,1,1,0,________.,He just doesn't try.,もっと勉強したら、余裕で受かるのに。,やろうとしないんだよね。,"If he studied more, he would pass easily","If|he|studied|more,|he|would|pass|easily",34-3-5-a.mp3,34-3-5-b.mp3
+u34_l3_p5,u34_l3,user,05.png,right,left,1,1,0,________.,He just doesn't try.,彼、もっと勉強したら、余裕で受かるのに。,やろうとしないんだよね。,"If he studied more, he would pass easily","If|he|studied|more,|he|would|pass|easily",34-3-5-a.mp3,34-3-5-b.mp3
 u34_l3_p6,u34_l3,user,,right,none,1,,0,________.,,もっと近くに住んでたら、毎日会いに行くのになあ。,,"If I lived closer, I would visit you every day","If|I|lived|closer,|I|would|visit|you|every|day",34-3-6-a.mp3,
 u34_l3_p7,u34_l3,user,user,right,right,1,1,0,________.,We really have to go.,時間があったら、もっと一緒にいたいんだけどな。,でももう本当に行かなきゃ。,"If we had more time, we would stay longer","If|we|had|more|time,|we|would|stay|longer",34-3-7-a.mp3,34-3-7-b.mp3
 u34_l3_p8,u34_l3,user,,right,none,1,,0,________.,,フランス語が話せたら、パリに引っ越すのになあ。,,"If I spoke French, I would move to Paris","If|I|spoke|French,|I|would|move|to|Paris",34-3-8-a.mp3,
@@ -11,13 +11,13 @@ u34_l3_p9,u34_l3,user,user,right,right,1,1,0,________.,I really miss her.,彼女
 u34_l3_p10,u34_l3,user,,right,none,1,,0,________.,,翼があったら、まっすぐ君のところへ飛んでいくのに。,,"If I had wings, I would fly straight to you","If|I|had|wings,|I|would|fly|straight|to|you",34-3-10-a.mp3,
 u34_l5_p1,u34_l5,user,user,right,right,1,1,0,________.,I'm so swamped right now.,時間があれば手伝えるのに。,今めっちゃ忙しくて。,"If I had time, I could help you","If|I|had|time,|I|could|help|you",34-5-1-a.mp3,34-5-1-b.mp3
 u34_l5_p2,u34_l5,user,,right,none,1,,0,________.,,雨がやんだら、出かけられるのになあ。,,"If it stopped raining, we could go out","If|it|stopped|raining,|we|could|go|out",34-5-2-a.mp3,
-u34_l5_p3,u34_l5,user,user,right,right,1,1,0,________.,It's worth a try.,頼んでみたら、イエスって言うかもよ。,試す価値あるよ。,"If you asked him, he might say yes","If|you|asked|him,|he|might|say|yes",34-5-3-a.mp3,34-5-3-b.mp3
+u34_l5_p3,u34_l5,user,user,right,right,1,1,0,________.,It's worth a try.,彼に頼んでみたら、イエスって言うかもよ。,試す価値あるよ。,"If you asked him, he might say yes","If|you|asked|him,|he|might|say|yes",34-5-3-a.mp3,34-5-3-b.mp3
 u34_l5_p4,u34_l5,user,,right,none,1,,0,________.,,宝くじが当たったら、大きい家を買うのになあ。,,"If I won the lottery, I would buy a big house","If|I|won|the|lottery,|I|would|buy|a|big|house",34-5-4-a.mp3,
 u34_l5_p5,u34_l5,user,,right,none,1,,0,________.,,今出れば、電車に間に合うのに。,,"If we left now, we could catch the train","If|we|left|now,|we|could|catch|the|train",34-5-5-a.mp3,
-u34_l5_p6,u34_l5,user,,right,none,1,,0,________.,,もっと練習したら、大会で勝つかもね。,,"If he practiced more, he might win the tournament","If|he|practiced|more,|he|might|win|the|tournament",34-5-6-a.mp3,
-u34_l5_p7,u34_l5,user,,right,none,1,,0,________.,,中国語が話せたら、海外で働けるのに。,,"If I spoke Chinese, I could work abroad","If|I|spoke|Chinese,|I|could|work|abroad",34-5-7-a.mp3,
-u34_l5_p8,u34_l5,user,,right,none,1,,0,________.,,お金を貯めたら、いつか買えるのに。,,"If you saved money, you could buy it someday","If|you|saved|money,|you|could|buy|it|someday",34-5-8-a.mp3,
-u34_l5_p9,u34_l5,user,,right,none,1,,0,________.,,車があったら、運転して行くかもなあ。,,"If I had a car, I might drive there instead","If|I|had|a|car,|I|might|drive|there|instead",34-5-9-a.mp3,
+u34_l5_p6,u34_l5,user,,right,none,1,,0,________.,,彼、もっと練習したら、大会で勝つかもね。,,"If he practiced more, he might win the tournament","If|he|practiced|more,|he|might|win|the|tournament",34-5-6-a.mp3,
+u34_l5_p7,u34_l5,user,,right,none,1,,0,________.,,英語が話せたら、海外で働けるのに。,,"If I spoke English, I could work abroad","If|I|spoke|English,|I|could|work|abroad",34-5-7-a.mp3,
+u34_l5_p8,u34_l5,user,,right,none,1,,0,________.,,お金を貯めたら、あなたはいつかそれを買えるのに。,,"If you saved money, you could buy it someday","If|you|saved|money,|you|could|buy|it|someday",34-5-8-a.mp3,
+u34_l5_p9,u34_l5,user,,right,none,1,,0,________.,,車があったら、（かわりに）運転して行くかもね。,,"If I had a car, I might drive there instead","If|I|had|a|car,|I|might|drive|there|instead",34-5-9-a.mp3,
 u34_l5_p10,u34_l5,user,05.png,right,left,1,1,0,________.,Maybe next weekend.,天気が良ければ、ピクニックできるのに。,来週末かな。,"If the weather were better, we could have a picnic","If|the|weather|were|better,|we|could|have|a|picnic",34-5-10-a.mp3,34-5-10-b.mp3
 u34_l7_p1,u34_l7,user,,right,none,1,,0,________.,,英語がペラペラだったらなあ。,,I wish I could speak English fluently,I|wish|I|could|speak|English|fluently,34-7-1-a.mp3,
 u34_l7_p2,u34_l7,user,,right,none,1,,0,________.,,もっと自由な時間があったらなあ。,,I wish I had more free time,I|wish|I|had|more|free|time,34-7-2-a.mp3,

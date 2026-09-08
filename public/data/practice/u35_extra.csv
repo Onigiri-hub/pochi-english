@@ -4,11 +4,11 @@ u35_l2_p2,u35_l2,user,,right,none,1,,0,________.,,今夜、映画でも見よう
 u35_l2_p3,u35_l2,user,user,right,right,1,1,0,________.,Maybe I'm just tired.,なんか知らんけど、あくびが止まらない。,疲れてるだけかもしれん。,"For some reason, I can't stop yawning","For|some|reason,|I|can't|stop|yawning",35-2-3-a.mp3,35-2-3-b.mp3
 u35_l2_p4,u35_l2,user,user,right,right,1,1,0,________!,There are plants everywhere.,ここ、ジャングルみたい！,植物だらけじゃん。,This place is like a jungle,This|place|is|like|a|jungle,35-2-4-a.mp3,35-2-4-b.mp3
 u35_l2_p5,u35_l2,user,,right,none,1,,0,________.,,どこか楽しいとこ行こうよ、ビーチとかさ。,,"We should go somewhere fun, like the beach","We|should|go|somewhere|fun,|like|the|beach",35-2-5-a.mp3,
-u35_l2_p6,u35_l2,user,user,right,right,1,1,0,"________""",She was so shocked.,彼女、「信じらんない！」って感じだった。,めっちゃ驚いてた。,"She was like, ""I can't believe it!","She|was|like,|""I|can't|believe|it!",35-2-6-a.mp3,35-2-6-b.mp3
+u35_l2_p6,u35_l2,user,user,right,right,1,1,0,________,She was so shocked.,彼女、「信じらんない！」って感じだった。,めっちゃ驚いてた。,"She was like, ""I can't believe it!""","She|was|like,|""I|can't|believe|it!""",35-2-6-a.mp3,35-2-6-b.mp3
 u35_l2_p7,u35_l2,user,,right,none,1,,0,________.,,冬が好きな人もいるけど、私は違うな。,,"Some people love winter, but I don't","Some|people|love|winter,|but|I|don't",35-2-7-a.mp3,
 u35_l2_p8,u35_l2,user,user,right,right,1,1,0,________.,We could barely move.,中、なんかー、めっちゃ混んでてさ。,ほとんど動けなかった。,"It was, like, super crowded in there","It|was,|like,|super|crowded|in|there",35-2-8-a.mp3,35-2-8-b.mp3
 u35_l2_p9,u35_l2,user,,right,none,1,,0,________?,,お水もらえますか？,,"Can I have some water, please","Can|I|have|some|water,|please",35-2-9-a.mp3,
-u35_l2_p10,u35_l2,user,user,right,right,1,1,0,"He just looked at me, like, really confused.",________.,彼、なんかすごい困った顔でこっち見ててさ。,ちょっと面白かった。,It was kind of funny,It|was|kind|of|funny,35-2-10-a.mp3,35-2-10-b.mp3
+u35_l2_p10,u35_l2,user,user,right,right,1,1,0,________.,It was kind of funny.,彼、なんかすごい困った顔でこっち見ててさ。,ちょっと面白かった。,"He just looked at me, like, really confused","He|just|looked|at|me,|like,|really|confused",35-2-10-a.mp3,35-2-10-b.mp3
 u35_l4_p1,u35_l4,user,user,right,right,1,1,0,________.,It's my first day.,明日のことで、なんか緊張してるかも。,初日なんだよね。,I'm kind of nervous about tomorrow,I'm|kind|of|nervous|about|tomorrow,35-4-1-a.mp3,35-4-1-b.mp3
 u35_l4_p2,u35_l4,user,05.png,right,left,1,1,0,Do you like this song?,________.,この曲好き？,まあね。悪くない。,Kind of. It's okay,Kind|of.|It's|okay,35-4-2-a.mp3,35-4-2-b.mp3
 u35_l4_p3,u35_l4,user,,right,none,1,,0,________.,,ちょっと長い話なんだけどね。,,It's kind of a long story,It's|kind|of|a|long|story,35-4-3-a.mp3,
@@ -44,7 +44,7 @@ u35_l10_p2,u35_l10,user,05.png,right,left,1,1,0,Which one should I choose?,_____
 u35_l10_p3,u35_l10,user,05.png,right,left,1,1,0,Can you help me tomorrow?,________?,明日手伝ってくれる？,場合による。何時？,It depends. What time,It|depends.|What|time,35-10-3-a.mp3,35-10-3-b.mp3
 u35_l10_p4,u35_l10,user,05.png,right,left,1,1,0,Are you coming to the party?,________.,パーティー来る？,予定次第かな。,It depends on my schedule,It|depends|on|my|schedule,35-10-4-a.mp3,35-10-4-b.mp3
 u35_l10_p5,u35_l10,05.png,,left,none,1,,0,________.,,季節によって、値段が上がったり下がったりする。,,"Depending on the season, prices go up and down","Depending|on|the|season,|prices|go|up|and|down",35-10-5-a.mp3,
-u35_l10_p6,u35_l10,user,05.png,right,left,1,1,0,________?,It depends on the team.,試合勝てるかな？,チーム次第だね。,Will we win the game,Will|we|win|the|game,35-10-6-a.mp3,35-10-6-b.mp3
+u35_l10_p6,u35_l10,user,05.png,right,left,1,1,0,Will we win the game?,________.,試合勝てるかな？,チーム次第だね。,It depends on the team,It|depends|on|the|team,35-10-6-a.mp3,35-10-6-b.mp3
 u35_l10_p7,u35_l10,user,user,right,right,1,1,0,________.,I haven't even started.,レポート、来週の月曜が締切なんだ。,まだ手もつけてない。,The report is due next Monday,The|report|is|due|next|Monday,35-10-7-a.mp3,35-10-7-b.mp3
 u35_l10_p8,u35_l10,user,05.png,right,left,1,1,0,________.,We'd better hurry.,電車は8時15分に来る予定。,急いだほうがいいね。,The train is due at 8:15,The|train|is|due|at|8:15,35-10-8-a.mp3,35-10-8-b.mp3
 u35_l10_p9,u35_l10,05.png,,left,none,1,,0,________.,,嵐のせいで飛行機が遅れた。,,The flight was delayed due to the storm,The|flight|was|delayed|due|to|the|storm,35-10-9-a.mp3,

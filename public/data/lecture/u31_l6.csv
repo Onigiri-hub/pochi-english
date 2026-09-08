@@ -12,8 +12,6 @@ u31_l6_p7,u31_l6,7,"She asked me when to start.
 彼女は私に、いつ始めればいいか尋ねた。",31-6-3-1,image_top
 u31_l6_p8,u31_l6,8,"Can you tell me how to get there?
 そこへの行き方を教えてくれる？",31-6-3-2,image_top
-u31_l6_p9,u31_l6,9,"how to 〜 は「〜の仕方・やり方」って訳すと、
-しっくりくることが多いよ。",31-6-3-2,image_top
 u31_l6_p10,u31_l6,10,"I don't know which to choose.
 どれを選べばいいかわからない。",31-6-4-1,image_top
 u31_l6_p11,u31_l6,11,"I don't know who to ask.
@@ -24,4 +22,4 @@ u31_l6_p13,u31_l6,13,うしろが be動詞になることもあるよ。,31-6-4-
 u31_l6_p14,u31_l6,14,"I'm not sure how to be a good friend.
 いい友だちでいるには、どうすればいいのかな。",31-6-5-1,image_top
 u31_l6_p15,u31_l6,15,"この be は「〜でいる・〜になる」のbe動詞。
-to のうしろは原形だから、to be の形になるんだ。",31-6-5-1,image_top
+to のうしろは原形だから、beになるんだ。",31-6-5-1,image_top

@@ -1,7 +1,7 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
 u35_l13_p1,u35_l13,user,user,right,right,1,1,0,________.,Do you want anything?,パーティー用にお菓子買ってくるね。,何か要る？,I'll grab some snacks for the party,I'll|grab|some|snacks|for|the|party,35-13-1-a.mp3,35-13-1-b.mp3
 u35_l13_p2,u35_l13,user,user,right,right,1,1,0,________.,Maybe I'm just tired.,なんか知らんけど、あくびが止まらない。,疲れてるだけかもしれん。,"For some reason, I can't stop yawning","For|some|reason,|I|can't|stop|yawning",35-13-2-a.mp3,35-13-2-b.mp3
-u35_l13_p3,u35_l13,user,user,right,right,1,1,0,"________""",She was so shocked.,彼女、「信じらんない！」って感じだった。,めっちゃ驚いてた。,"She was like, ""I can't believe it!","She|was|like,|""I|can't|believe|it!",35-13-3-a.mp3,35-13-3-b.mp3
+u35_l13_p3,u35_l13,user,user,right,right,1,1,0,________,She was so shocked.,彼女、「信じらんない！」って感じだった。,めっちゃ驚いてた。,"She was like, ""I can't believe it!""","She|was|like,|""I|can't|believe|it!""",35-13-3-a.mp3,35-13-3-b.mp3
 u35_l13_p4,u35_l13,user,user,right,right,1,1,0,________.,It's my first day.,明日のことで、なんか緊張してるかも。,初日なんだよね。,I'm kind of nervous about tomorrow,I'm|kind|of|nervous|about|tomorrow,35-13-4-a.mp3,35-13-4-b.mp3
 u35_l13_p5,u35_l13,user,user,right,right,1,1,0,________.,That's all.,ただお礼が言いたかっただけ。,それだけだよ。,I just wanted to say thank you,I|just|wanted|to|say|thank|you,35-13-5-a.mp3,35-13-5-b.mp3
 u35_l13_p6,u35_l13,user,user,right,right,1,1,0,________?,It looks expensive.,あそこのキラキラしたやつ何？,高そうだね。,What's that shiny thing over there,What's|that|shiny|thing|over|there,35-13-6-a.mp3,35-13-6-b.mp3
