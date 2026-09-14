@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u40_l10_p1,u40_l10,user,Kevin.png,right,left,1,1,0,________.,It smells amazing!,彼女は今、夕飯を作ってる。,いいにおい！,She is cooking dinner right now,She|is|cooking|dinner|right|now,40-10-1-a.mp3,40-10-1-b.mp3
+u40_l10_p2,u40_l10,Kevin.png,user,left,right,1,1,0,________!,That's the spirit!,明日の試合、勝つぞ！,その意気だ！,We will win the game tomorrow,We|will|win|the|game|tomorrow,40-10-2-a.mp3,40-10-2-b.mp3
+u40_l10_p3,u40_l10,user,Kevin.png,right,left,1,1,0,________.,Was it good?,昨夜、映画を観たよ。,おもしろかった？,I watched a movie last night,I|watched|a|movie|last|night,40-10-3-a.mp3,40-10-3-b.mp3
+u40_l10_p4,u40_l10,Kevin.png,user,left,right,1,1,0,________.,That's why he was late.,彼は今朝バスに乗り遅れたんだ。,だから遅刻したのか。,He missed the bus this morning,He|missed|the|bus|this|morning,40-10-4-a.mp3,40-10-4-b.mp3
+u40_l10_p5,u40_l10,user,,right,none,1,,0,________.,,帰宅したとき、子どもたちは寝てた。,,The kids were sleeping when we got home,The|kids|were|sleeping|when|we|got|home,40-10-5-a.mp3,
+u40_l10_p6,u40_l10,user,Mattew.png,right,left,1,1,0,________.,"Great, let's go out!",宿題終わったよ。,よし、出かけよう！,I have finished my homework,I|have|finished|my|homework,40-10-6-a.mp3,40-10-6-b.mp3
+u40_l10_p7,u40_l10,user,Kevin.png,right,left,1,1,0,________.,I hope it stops soon.,一日中ずっと雨が降ってる。,早くやむといいね。,It has been raining all day,It|has|been|raining|all|day,40-10-7-a.mp3,40-10-7-b.mp3
+u40_l10_p8,u40_l10,user,Kevin.png,right,left,1,1,0,________.,"Oh, so you weren't hungry?",彼女が帰ってきたとき、もう食べ終わってた。,じゃあお腹すいてなかったの？,I had already eaten when she came home,I|had|already|eaten|when|she|came|home,40-10-8-a.mp3,40-10-8-b.mp3
+u40_l10_p9,u40_l10,user,Mattew.png,right,left,1,1,0,________.,Sorry I'm so late!,1時間ずっと待ってたんだよ。,遅れて本当にごめん！,I had been waiting for an hour,I|had|been|waiting|for|an|hour,40-10-9-a.mp3,40-10-9-b.mp3
+u40_l10_p10,u40_l10,user,Kevin.png,right,left,1,1,0,________.,That calls for a celebration!,来月で、ここに5年住んだことになるよ。,お祝いしなきゃね！,"By next month, we will have lived here for five years","By|next|month,|we|will|have|lived|here|for|five|years",40-10-10-a.mp3,40-10-10-b.mp3

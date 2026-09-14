@@ -1,0 +1,31 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u37_l2_p1,u37_l2,user,Kevin.png,right,left,1,1,0,________!,I know! How have you been?,やあ！久しぶり！,ほんと！元気にしてた？,Hey! Long time no see,Hey!|Long|time|no|see,37-2-1-a.mp3,37-2-1-b.mp3
+u37_l2_p2,u37_l2,user,Kevin.png,right,left,1,1,0,________?,Pretty good! You?,調子どう？,まあまあかな！そっちは？,How's it going,How's|it|going,37-2-2-a.mp3,37-2-2-b.mp3
+u37_l2_p3,u37_l2,Kevin.png,user,left,right,1,1,0,What's up?,________.,最近どう？,特に何も。のんびりしてる。,Not much. Just relaxing,Not|much.|Just|relaxing,37-2-3-a.mp3,37-2-3-b.mp3
+u37_l2_p4,u37_l2,user,Kevin.png,right,left,1,1,0,I have to go now. See you!,________!,もう行かなきゃ。じゃあね！,またあとで！気をつけて！,See you later! Take care,See|you|later!|Take|care,37-2-4-a.mp3,37-2-4-b.mp3
+u37_l2_p5,u37_l2,user,Mattew.png,right,left,1,1,0,________!,No worries! Anytime.,今日は手伝ってくれてありがとう！,気にしないで！いつでも。,Thanks for your help today,Thanks|for|your|help|today,37-2-5-a.mp3,37-2-5-b.mp3
+u37_l2_p6,u37_l2,Kevin.png,user,left,right,1,1,0,Have a good one!,________.,いい一日を！,そっちもね！またね。,You too! Catch you later,You|too!|Catch|you|later,37-2-6-a.mp3,37-2-6-b.mp3
+u37_l2_p7,u37_l2,05.png,user,left,right,1,1,0,________?,"Great, thanks! Busy but good.",おはよう！元気にしてた？,元気だよ、ありがとう！忙しいけど順調。,Good morning! How have you been,Good|morning!|How|have|you|been,37-2-7-a.mp3,37-2-7-b.mp3
+u37_l2_p8,u37_l2,user,Mattew.png,right,left,1,1,0,Thank you so much for the ride.,________.,送ってくれて本当にありがとう。,もちろん！通り道だったし。,Sure thing! It was on my way,Sure|thing!|It|was|on|my|way,37-2-8-a.mp3,37-2-8-b.mp3
+u37_l2_p9,u37_l2,05.png,user,left,right,1,1,0,________!,You too! Let's meet again soon.,会えてよかったよ！,こちらこそ！また近いうちに会おう。,It was great seeing you,It|was|great|seeing|you,37-2-9-a.mp3,37-2-9-b.mp3
+u37_l2_p10,u37_l2,user,05.png,right,left,1,1,0,I'm heading home. Take care!,________.,帰るね。気をつけて！,そっちも！気をつけて帰ってね。,You too! Get home safe,You|too!|Get|home|safe,37-2-10-a.mp3,37-2-10-b.mp3
+u37_l4_p1,u37_l4,user,Kevin.png,right,left,1,1,0,I got a new puppy yesterday!,________!,昨日、子犬を飼い始めたんだ！,ほんと？かわいい！,Really? So cute,Really?|So|cute,37-4-1-a.mp3,37-4-1-b.mp3
+u37_l4_p2,u37_l4,Kevin.png,user,left,right,1,1,0,I saw a bear on the trail.,________?,山道でクマ見たんだよ。,うそでしょ！怖かった？,No way! Were you scared,No|way!|Were|you|scared,37-4-2-a.mp3,37-4-2-b.mp3
+u37_l4_p3,u37_l4,Kevin.png,user,left,right,1,1,0,Our team won the championship!,________!,うちのチーム、優勝したんだ！,マジで？すごいじゃん！,Seriously? That's amazing,Seriously?|That's|amazing,37-4-3-a.mp3,37-4-3-b.mp3
+u37_l4_p4,u37_l4,user,Kevin.png,right,left,1,1,0,I'm moving to Canada next month.,________?,来月カナダに引っ越すんだ。,そうなの？正確にはいつ？,Oh yeah? When exactly,Oh|yeah?|When|exactly,37-4-4-a.mp3,37-4-4-b.mp3
+u37_l4_p5,u37_l4,user,Kevin.png,right,left,1,1,0,This homework is impossible.,________.,この宿題、無理ゲーだよ。,だよね！めっちゃ難しい。,"I know, right? It's so hard","I|know,|right?|It's|so|hard",37-4-5-a.mp3,37-4-5-b.mp3
+u37_l4_p6,u37_l4,user,Kevin.png,right,left,1,1,0,"So, I actually quit my job.",________?,でさ、実は仕事辞めたんだ。,え、ほんとに？何があったの？,"Wait, really? What happened","Wait,|really?|What|happened",37-4-6-a.mp3,37-4-6-b.mp3
+u37_l4_p7,u37_l4,user,Kevin.png,right,left,1,1,0,The bus was 30 minutes late.,________.,バスが30分も遅れてさ。,うわ、それはきついね。,"Ugh, that's rough","Ugh,|that's|rough",37-4-7-a.mp3,37-4-7-b.mp3
+u37_l4_p8,u37_l4,user,Kevin.png,right,left,1,1,0,I finally finished the report.,________.,やっとレポート終わった。,いいね！おつかれ。,Nice! Good job,Nice!|Good|job,37-4-8-a.mp3,37-4-8-b.mp3
+u37_l4_p9,u37_l4,user,Kevin.png,right,left,1,1,0,________!,No way! Congrats!,聞いて？試験に受かったんだ！,すごい！おめでとう！,Guess what? I passed the exam,Guess|what?|I|passed|the|exam,37-4-9-a.mp3,37-4-9-b.mp3
+u37_l4_p10,u37_l4,user,Kevin.png,right,left,1,1,0,I ran into a celebrity today.,________?,今日、有名人に偶然会ったんだ。,そうなの？誰だったの？,Oh yeah? Who was it,Oh|yeah?|Who|was|it,37-4-10-a.mp3,37-4-10-b.mp3
+u37_l6_p1,u37_l6,user,05.png,right,left,1,1,0,I finally got the job!,________!,やっと仕事決まった！,よかったね！すごいじゃん！,That's great! Good for you,That's|great!|Good|for|you,37-6-1-a.mp3,37-6-1-b.mp3
+u37_l6_p2,u37_l6,user,Kevin.png,right,left,1,1,0,I'm going to Hawaii next week.,________.,来週ハワイ行くんだ。,いいなあ！めっちゃうらやましい。,Nice! I'm so jealous,Nice!|I'm|so|jealous,37-6-2-a.mp3,37-6-2-b.mp3
+u37_l6_p3,u37_l6,user,Kevin.png,right,left,1,1,0,I love this band so much!,________.,このバンド、大好きなんだ！,私も！最高のバンドだよね。,Same here! Best band ever,Same|here!|Best|band|ever,37-6-3-a.mp3,37-6-3-b.mp3
+u37_l6_p4,u37_l6,user,Kevin.png,right,left,1,1,0,I failed my driving test again.,________.,また運転免許の試験落ちた。,えー…残念だったね。,Oh no… that's too bad,Oh|no…|that's|too|bad,37-6-4-a.mp3,37-6-4-b.mp3
+u37_l6_p5,u37_l6,user,Kevin.png,right,left,1,1,0,My laptop crashed and I lost everything.,________.,パソコンが壊れて全部消えた。,それは最悪だね。本当にかわいそうに。,That sucks. I'm so sorry,That|sucks.|I'm|so|sorry,37-6-5-a.mp3,37-6-5-b.mp3
+u37_l6_p6,u37_l6,user,Kevin.png,right,left,1,1,0,I've been so stressed lately.,________.,最近ずっとストレスたまってて。,わかるよ、その気持ち。がんばって。,I feel you. Hang in there,I|feel|you.|Hang|in|there,37-6-6-a.mp3,37-6-6-b.mp3
+u37_l6_p7,u37_l6,user,Kevin.png,right,left,1,1,0,That movie was absolutely amazing.,________.,あの映画、ほんとにすごかった。,ほんとに！ずっと最高だった。,Totally! I loved every minute,Totally!|I|loved|every|minute,37-6-7-a.mp3,37-6-7-b.mp3
+u37_l6_p8,u37_l6,user,Kevin.png,right,left,1,1,0,It's way too hot today.,________.,今日、暑すぎるよ。,ほんとそれ！溶けそう。,Exactly! I'm melting,Exactly!|I'm|melting,37-6-8-a.mp3,37-6-8-b.mp3
+u37_l6_p9,u37_l6,user,Kevin.png,right,left,1,1,0,I think we should leave early.,________.,早めに出たほうがいいと思う。,たしかに。いい考えだね。,True. Good point,True.|Good|point,37-6-9-a.mp3,37-6-9-b.mp3
+u37_l6_p10,u37_l6,user,05.png,right,left,1,1,0,My grandma is in the hospital.,________.,おばあちゃんが入院しててさ。,そんな…早く良くなるといいね。,Oh no. I hope she's okay,Oh|no.|I|hope|she's|okay,37-6-10-a.mp3,37-6-10-b.mp3

@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u40_l3_p1,u40_l3,user,Kevin.png,right,left,1,1,1,________.,That's healthy!,私はいつも歩いて学校に行くよ。,健康的だね！,I usually walk to school,I|usually|walk|to|school,40-3-1-a.mp3,40-3-1-b.mp3
+u40_l3_p2,u40_l3,user,Kevin.png,right,left,1,1,1,________.,It smells amazing!,彼女は今、夕飯を作ってる。,いいにおい！,She is cooking dinner right now,She|is|cooking|dinner|right|now,40-3-2-a.mp3,40-3-2-b.mp3
+u40_l3_p3,u40_l3,user,Kevin.png,right,left,1,1,1,________.,Say hi to her for me!,来週おばあちゃんに会いに行く予定なんだ。,よろしく伝えてね！,I am going to visit my grandma next week,I|am|going|to|visit|my|grandma|next|week,40-3-3-a.mp3,40-3-3-b.mp3
+u40_l3_p4,u40_l3,Kevin.png,user,left,right,1,1,1,________!,That's the spirit!,明日の試合、勝つぞ！,その意気だ！,We will win the game tomorrow,We|will|win|the|game|tomorrow,40-3-4-a.mp3,40-3-4-b.mp3
+u40_l3_p5,u40_l3,user,Kevin.png,right,left,1,1,1,________.,"Okay, I'll be there!",7時には駅で待ってるよ。,了解、行くね！,I will be waiting at the station at seven,I|will|be|waiting|at|the|station|at|seven,40-3-5-a.mp3,40-3-5-b.mp3
+u40_l3_p6,u40_l3,user,Kevin.png,right,left,1,1,1,________.,Let's not bother him.,彼は部屋で本を読んでる。,邪魔しないでおこう。,He is reading a book in his room,He|is|reading|a|book|in|his|room,40-3-6-a.mp3,40-3-6-b.mp3
+u40_l3_p7,u40_l3,user,,right,none,1,,1,________.,,来年、留学するつもりなんだ。,,I am going to study abroad next year,I|am|going|to|study|abroad|next|year,40-3-7-a.mp3,

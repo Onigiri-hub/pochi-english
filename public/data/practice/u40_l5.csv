@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u40_l5_p1,u40_l5,user,Kevin.png,right,left,1,1,1,________.,Was it good?,昨夜、映画を観たよ。,おもしろかった？,I watched a movie last night,I|watched|a|movie|last|night,40-5-1-a.mp3,40-5-1-b.mp3
+u40_l5_p2,u40_l5,user,05.png,right,left,1,1,1,________.,"Oh, sorry to interrupt.",電話したとき、彼女は勉強してた。,あ、邪魔しちゃってごめん。,She was studying when I called her,She|was|studying|when|I|called|her,40-5-2-a.mp3,40-5-2-b.mp3
+u40_l5_p3,u40_l5,user,Kevin.png,right,left,1,1,1,________.,You must have been soaked!,雨の中サッカーしてたんだ。,びしょ濡れだったでしょ！,We were playing soccer in the rain,We|were|playing|soccer|in|the|rain,40-5-3-a.mp3,40-5-3-b.mp3
+u40_l5_p4,u40_l5,Kevin.png,user,left,right,1,1,1,________.,That's why he was late.,彼は今朝バスに乗り遅れたんだ。,だから遅刻したのか。,He missed the bus this morning,He|missed|the|bus|this|morning,40-5-4-a.mp3,40-5-4-b.mp3
+u40_l5_p5,u40_l5,user,Kevin.png,right,left,1,1,1,________.,Did you answer it?,電話が鳴ったとき、料理してた。,出たの？,I was cooking when the phone rang,I|was|cooking|when|the|phone|rang,40-5-5-a.mp3,40-5-5-b.mp3
+u40_l5_p6,u40_l5,user,Kevin.png,right,left,1,1,1,________.,"Good, no rush then.",彼らは早めに空港に着いた。,よかった、急がなくていいね。,They arrived at the airport early,They|arrived|at|the|airport|early,40-5-6-a.mp3,40-5-6-b.mp3
+u40_l5_p7,u40_l5,user,,right,none,1,,1,________.,,帰宅したとき、子どもたちは寝てた。,,The kids were sleeping when we got home,The|kids|were|sleeping|when|we|got|home,40-5-7-a.mp3,

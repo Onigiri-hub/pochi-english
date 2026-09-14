@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u36_l2_p1,u36_l2,user,Kevin.png,right,left,1,1,1,________!,Can't wait!,コンサート来週だよ！,楽しみ！,The concert is next week,The|concert|is|next|week,36-2-1-a.mp3,36-2-1-b.mp3
+u36_l2_p2,u36_l2,Mattew.png,user,left,right,1,1,1,________.,"Okay, okay, you were right.",だから雨降るって言ったのに。,はいはい、あなたが正しかったよ。,Told you it would rain,Told|you|it|would|rain,36-2-2-a.mp3,36-2-2-b.mp3
+u36_l2_p3,u36_l2,05.png,user,left,right,1,1,1,You look tired today.,________.,今日、疲れてるね。,うん、あんまり寝てなくて。,"Yeah, didn't sleep much","Yeah,|didn't|sleep|much",36-2-3-a.mp3,36-2-3-b.mp3
+u36_l2_p4,u36_l2,user,05.png,right,left,1,1,1,I passed the test!,________.,テスト受かった！,やっぱりね！すごく勉強してたもん。,Knew it! You studied so hard,Knew|it!|You|studied|so|hard,36-2-4-a.mp3,36-2-4-b.mp3
+u36_l2_p5,u36_l2,user,Kevin.png,right,left,1,1,1,Should we take an umbrella?,________.,傘持ってく？,どっちでもいいよ、近いし。,"Doesn't matter, it's not far","Doesn't|matter,|it's|not|far",36-2-5-a.mp3,36-2-5-b.mp3
+u36_l2_p6,u36_l2,user,Kevin.png,right,left,1,1,1,I picked this gift myself. Think she'll like it?,________.,このプレゼント、自分で選んだんだ。気に入ってくれるかな？,だといいね！すごく素敵だよ。,Hope so! It's really nice,Hope|so!|It's|really|nice,36-2-6-a.mp3,36-2-6-b.mp3
+u36_l2_p7,u36_l2,Kevin.png,user,left,right,1,1,1,Check out my new phone.,________?,新しいスマホ見て。,よさそう！いつ買ったの？,Looks good! When did you get it,Looks|good!|When|did|you|get|it,36-2-7-a.mp3,36-2-7-b.mp3
+u36_l2_p8,u36_l2,user,05.png,right,left,1,1,1,Sorry I'm late again.,________.,また遅れてごめん。,気にしないで。私たちも今来たとこ。,Doesn't matter. We just got here,Doesn't|matter.|We|just|got|here,36-2-8-a.mp3,36-2-8-b.mp3
+u36_l2_p9,u36_l2,user,Kevin.png,right,left,1,1,1,I think I left my keys at home.,________.,家に鍵忘れてきたかも。,やっぱり！いつもそれなんだから。,Knew it! You always do that,Knew|it!|You|always|do|that,36-2-9-a.mp3,36-2-9-b.mp3
+u36_l2_p10,u36_l2,user,Kevin.png,right,left,1,1,1,It's going to be a long day.,________.,今日は長い一日になりそう。,早く終わってほしいよ。,Can't wait for it to be over,Can't|wait|for|it|to|be|over,36-2-10-a.mp3,36-2-10-b.mp3

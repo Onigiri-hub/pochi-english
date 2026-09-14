@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u40_l9_p1,u40_l9,user,Kevin.png,right,left,1,1,1,________.,"Oh, so you weren't hungry?",彼女が帰ってきたとき、もう食べ終わってた。,じゃあお腹すいてなかったの？,I had already eaten when she came home,I|had|already|eaten|when|she|came|home,40-9-1-a.mp3,40-9-1-b.mp3
+u40_l9_p2,u40_l9,user,Kevin.png,right,left,1,1,1,________.,"Oh no, did you wait long?",着いたとき、電車はもう出ちゃってた。,ええっ、長く待った？,The train had left when I arrived,The|train|had|left|when|I|arrived,40-9-2-a.mp3,40-9-2-b.mp3
+u40_l9_p3,u40_l9,Kevin.png,user,left,right,1,1,1,________.,Really? How did he like it?,その日まで、彼は海を見たことがなかった。,ほんと？気に入った？,He had never seen the sea before that day,He|had|never|seen|the|sea|before|that|day,40-9-3-a.mp3,40-9-3-b.mp3
+u40_l9_p4,u40_l9,user,Mattew.png,right,left,1,1,1,________.,Sorry I'm so late!,1時間ずっと待ってたんだよ。,遅れて本当にごめん！,I had been waiting for an hour,I|had|been|waiting|for|an|hour,40-9-4-a.mp3,40-9-4-b.mp3
+u40_l9_p5,u40_l9,user,Kevin.png,right,left,1,1,1,________.,"Time flies, huh?",2030年には、学校を卒業してるだろうな。,時が経つのは早いね。,"By 2030, I will have finished school","By|2030,|I|will|have|finished|school",40-9-5-a.mp3,40-9-5-b.mp3
+u40_l9_p6,u40_l9,user,Kevin.png,right,left,1,1,1,________.,That calls for a celebration!,来月で、ここに5年住んだことになるよ。,お祝いしなきゃね！,"By next month, we will have lived here for five years","By|next|month,|we|will|have|lived|here|for|five|years",40-9-6-a.mp3,40-9-6-b.mp3
+u40_l9_p7,u40_l9,user,,right,none,1,,1,________.,,電話したとき、彼女はもう帰宅してた。,,She had already gone home when I called,She|had|already|gone|home|when|I|called,40-9-7-a.mp3,

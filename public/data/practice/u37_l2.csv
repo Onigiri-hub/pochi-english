@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u37_l2_p1,u37_l2,user,Kevin.png,right,left,1,1,1,________!,I know! How have you been?,やあ！久しぶり！,ほんと！元気にしてた？,Hey! Long time no see,Hey!|Long|time|no|see,37-2-1-a.mp3,37-2-1-b.mp3
+u37_l2_p2,u37_l2,user,Kevin.png,right,left,1,1,1,________?,Pretty good! You?,調子どう？,まあまあかな！そっちは？,How's it going,How's|it|going,37-2-2-a.mp3,37-2-2-b.mp3
+u37_l2_p3,u37_l2,Kevin.png,user,left,right,1,1,1,What's up?,________.,最近どう？,特に何も。のんびりしてる。,Not much. Just relaxing,Not|much.|Just|relaxing,37-2-3-a.mp3,37-2-3-b.mp3
+u37_l2_p4,u37_l2,user,Kevin.png,right,left,1,1,1,I have to go now. See you!,________!,もう行かなきゃ。じゃあね！,またあとで！気をつけて！,See you later! Take care,See|you|later!|Take|care,37-2-4-a.mp3,37-2-4-b.mp3
+u37_l2_p5,u37_l2,user,Mattew.png,right,left,1,1,1,________!,No worries! Anytime.,今日は手伝ってくれてありがとう！,気にしないで！いつでも。,Thanks for your help today,Thanks|for|your|help|today,37-2-5-a.mp3,37-2-5-b.mp3
+u37_l2_p6,u37_l2,Kevin.png,user,left,right,1,1,1,Have a good one!,________.,いい一日を！,そっちもね！またね。,You too! Catch you later,You|too!|Catch|you|later,37-2-6-a.mp3,37-2-6-b.mp3
+u37_l2_p7,u37_l2,05.png,user,left,right,1,1,1,________?,"Great, thanks! Busy but good.",おはよう！元気にしてた？,元気だよ、ありがとう！忙しいけど順調。,Good morning! How have you been,Good|morning!|How|have|you|been,37-2-7-a.mp3,37-2-7-b.mp3
+u37_l2_p8,u37_l2,user,Mattew.png,right,left,1,1,1,Thank you so much for the ride.,________.,送ってくれて本当にありがとう。,もちろん！通り道だったし。,Sure thing! It was on my way,Sure|thing!|It|was|on|my|way,37-2-8-a.mp3,37-2-8-b.mp3
+u37_l2_p9,u37_l2,05.png,user,left,right,1,1,1,________!,You too! Let's meet again soon.,会えてよかったよ！,こちらこそ！また近いうちに会おう。,It was great seeing you,It|was|great|seeing|you,37-2-9-a.mp3,37-2-9-b.mp3
+u37_l2_p10,u37_l2,user,05.png,right,left,1,1,1,I'm heading home. Take care!,________.,帰るね。気をつけて！,そっちも！気をつけて帰ってね。,You too! Get home safe,You|too!|Get|home|safe,37-2-10-a.mp3,37-2-10-b.mp3

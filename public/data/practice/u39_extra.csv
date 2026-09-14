@@ -1,0 +1,21 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u39_l2_p1,u39_l2,user,Kevin.png,right,left,1,1,0,________!,"Yeah, let's take a picture!",なんて綺麗な夕日！,ほんとだ、写真撮ろう！,What a beautiful sunset,What|a|beautiful|sunset,39-2-1-a.mp3,39-2-1-b.mp3
+u39_l2_p2,u39_l2,user,05.png,right,left,1,1,0,________!,I made it myself!,なんておいしいケーキ！,私が作ったんだよ！,What a delicious cake,What|a|delicious|cake,39-2-2-a.mp3,39-2-2-b.mp3
+u39_l2_p3,u39_l2,user,Kevin.png,right,left,1,1,0,________!,Right? I just got him yesterday.,なんてかわいいの！,でしょ？昨日もらったばっかりなんだ。,How cute,How|cute,39-2-3-a.mp3,39-2-3-b.mp3
+u39_l2_p4,u39_l2,user,Kevin.png,right,left,1,1,0,________!,"Don't worry, he's really friendly.",なんて大きい犬！,大丈夫、すごく人なつっこいよ。,What a big dog,What|a|big|dog,39-2-4-a.mp3,39-2-4-b.mp3
+u39_l2_p5,u39_l2,05.png,user,left,right,1,1,0,________!,"It's nothing, really.",なんて優しいの！,いや、たいしたことないよ。,How kind of you,How|kind|of|you,39-2-5-a.mp3,39-2-5-b.mp3
+u39_l2_p6,u39_l2,user,Kevin.png,right,left,1,1,0,________!,Happy birthday!,なんてサプライズ！,お誕生日おめでとう！,What a surprise,What|a|surprise,39-2-6-a.mp3,39-2-6-b.mp3
+u39_l2_p7,u39_l2,Kevin.png,user,left,right,1,1,0,________!,He's the fastest in our class.,なんて速く走るんだ！,クラスで一番速いんだよ。,How fast he runs,How|fast|he|runs,39-2-7-a.mp3,39-2-7-b.mp3
+u39_l2_p8,u39_l2,user,,right,none,1,,0,________!,,なんて素敵な知らせ！,,What wonderful news,What|wonderful|news,39-2-8-a.mp3,
+u39_l2_p9,u39_l2,user,Kevin.png,right,left,1,1,0,________!,Let's stay a little longer.,今夜は星がなんて綺麗なんだろう！,もう少しここにいようよ。,How beautiful the stars are tonight,How|beautiful|the|stars|are|tonight,39-2-9-a.mp3,39-2-9-b.mp3
+u39_l2_p10,u39_l2,05.png,user,left,right,1,1,0,________!,"Sorry, I'll clean it up right now.",なんて散らかりよう！,ごめん、今すぐ片付けるよ。,What a mess,What|a|mess,39-2-10-a.mp3,39-2-10-b.mp3
+u39_l4_p1,u39_l4,user,Kevin.png,right,left,1,1,0,________?,"Practice, lots of practice!",すごい！どうやったの？,練習、たくさん練習したんだ！,Amazing! How did you do that,Amazing!|How|did|you|do|that,39-4-1-a.mp3,39-4-1-b.mp3
+u39_l4_p2,u39_l4,user,Kevin.png,right,left,1,1,0,________!,"I know, right? Best in town.",このピザめっちゃおいしい！,でしょ？この街で一番だよ。,This pizza is so good,This|pizza|is|so|good,39-4-2-a.mp3,39-4-2-b.mp3
+u39_l4_p3,u39_l4,user,Kevin.png,right,left,1,1,0,________!,Thanks! His name is Max.,なんてかわいい犬！,ありがと！マックスっていうんだ。,That's such a cute dog,That's|such|a|cute|dog,39-4-3-a.mp3,39-4-3-b.mp3
+u39_l4_p4,u39_l4,user,Kevin.png,right,left,1,1,0,________!,We climbed all the way up for this.,うわー、なんて景色！,これのためにここまで登ったんだよ。,"Wow, what a view","Wow,|what|a|view",39-4-4-a.mp3,39-4-4-b.mp3
+u39_l4_p5,u39_l4,Kevin.png,user,left,right,1,1,0,________?,"Yeah, I still can't believe it!",まじで！勝ったの？,うん、自分でもまだ信じられない！,No way! You won,No|way!|You|won,39-4-5-a.mp3,39-4-5-b.mp3
+u39_l4_p6,u39_l4,user,05.png,right,left,1,1,0,________.,Glad you like it!,完璧！まさにこれが欲しかったの。,気に入ってくれてよかった！,Perfect! That's exactly what I wanted,Perfect!|That's|exactly|what|I|wanted,39-4-6-a.mp3,39-4-6-b.mp3
+u39_l4_p7,u39_l4,user,Kevin.png,right,left,1,1,0,________!,Let's go outside!,うわ、雪降ってる！,外行こうよ！,"Oh my god, it's snowing","Oh|my|god,|it's|snowing",39-4-7-a.mp3,39-4-7-b.mp3
+u39_l4_p8,u39_l4,user,Kevin.png,right,left,1,1,0,________!,Do you want to stop watching?,この映画めっちゃ怖い！,見るのやめる？,This movie is so scary,This|movie|is|so|scary,39-4-8-a.mp3,39-4-8-b.mp3
+u39_l4_p9,u39_l4,Kevin.png,user,left,right,1,1,0,________.,"Aww, thank you!",きれい！そのドレスすごく似合ってるよ。,えへへ、ありがと！,Gorgeous! You look great in that dress,Gorgeous!|You|look|great|in|that|dress,39-4-9-a.mp3,39-4-9-b.mp3
+u39_l4_p10,u39_l4,user,Mattew.png,right,left,1,1,0,________!,"Yeah, be careful next time.",うわっ、あぶなかった！,うん、次は気をつけてね。,"Whoa, that was close","Whoa,|that|was|close",39-4-10-a.mp3,39-4-10-b.mp3

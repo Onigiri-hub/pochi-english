@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u37_l6_p1,u37_l6,user,05.png,right,left,1,1,1,I finally got the job!,________!,やっと仕事決まった！,よかったね！すごいじゃん！,That's great! Good for you,That's|great!|Good|for|you,37-6-1-a.mp3,37-6-1-b.mp3
+u37_l6_p2,u37_l6,user,Kevin.png,right,left,1,1,1,I'm going to Hawaii next week.,________.,来週ハワイ行くんだ。,いいなあ！めっちゃうらやましい。,Nice! I'm so jealous,Nice!|I'm|so|jealous,37-6-2-a.mp3,37-6-2-b.mp3
+u37_l6_p3,u37_l6,user,Kevin.png,right,left,1,1,1,I love this band so much!,________.,このバンド、大好きなんだ！,私も！最高のバンドだよね。,Same here! Best band ever,Same|here!|Best|band|ever,37-6-3-a.mp3,37-6-3-b.mp3
+u37_l6_p4,u37_l6,user,Kevin.png,right,left,1,1,1,I failed my driving test again.,________.,また運転免許の試験落ちた。,えー…残念だったね。,Oh no… that's too bad,Oh|no…|that's|too|bad,37-6-4-a.mp3,37-6-4-b.mp3
+u37_l6_p5,u37_l6,user,Kevin.png,right,left,1,1,1,My laptop crashed and I lost everything.,________.,パソコンが壊れて全部消えた。,それは最悪だね。本当にかわいそうに。,That sucks. I'm so sorry,That|sucks.|I'm|so|sorry,37-6-5-a.mp3,37-6-5-b.mp3
+u37_l6_p6,u37_l6,user,Kevin.png,right,left,1,1,1,I've been so stressed lately.,________.,最近ずっとストレスたまってて。,わかるよ、その気持ち。がんばって。,I feel you. Hang in there,I|feel|you.|Hang|in|there,37-6-6-a.mp3,37-6-6-b.mp3
+u37_l6_p7,u37_l6,user,Kevin.png,right,left,1,1,1,That movie was absolutely amazing.,________.,あの映画、ほんとにすごかった。,ほんとに！ずっと最高だった。,Totally! I loved every minute,Totally!|I|loved|every|minute,37-6-7-a.mp3,37-6-7-b.mp3
+u37_l6_p8,u37_l6,user,Kevin.png,right,left,1,1,1,It's way too hot today.,________.,今日、暑すぎるよ。,ほんとそれ！溶けそう。,Exactly! I'm melting,Exactly!|I'm|melting,37-6-8-a.mp3,37-6-8-b.mp3
+u37_l6_p9,u37_l6,user,Kevin.png,right,left,1,1,1,I think we should leave early.,________.,早めに出たほうがいいと思う。,たしかに。いい考えだね。,True. Good point,True.|Good|point,37-6-9-a.mp3,37-6-9-b.mp3
+u37_l6_p10,u37_l6,user,05.png,right,left,1,1,1,My grandma is in the hospital.,________.,おばあちゃんが入院しててさ。,そんな…早く良くなるといいね。,Oh no. I hope she's okay,Oh|no.|I|hope|she's|okay,37-6-10-a.mp3,37-6-10-b.mp3

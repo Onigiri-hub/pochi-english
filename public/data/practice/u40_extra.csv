@@ -1,0 +1,29 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u40_l3_p1,u40_l3,user,Kevin.png,right,left,1,1,0,________.,That's healthy!,私はいつも歩いて学校に行くよ。,健康的だね！,I usually walk to school,I|usually|walk|to|school,40-3-1-a.mp3,40-3-1-b.mp3
+u40_l3_p2,u40_l3,user,Kevin.png,right,left,1,1,0,________.,It smells amazing!,彼女は今、夕飯を作ってる。,いいにおい！,She is cooking dinner right now,She|is|cooking|dinner|right|now,40-3-2-a.mp3,40-3-2-b.mp3
+u40_l3_p3,u40_l3,user,Kevin.png,right,left,1,1,0,________.,Say hi to her for me!,来週おばあちゃんに会いに行く予定なんだ。,よろしく伝えてね！,I am going to visit my grandma next week,I|am|going|to|visit|my|grandma|next|week,40-3-3-a.mp3,40-3-3-b.mp3
+u40_l3_p4,u40_l3,Kevin.png,user,left,right,1,1,0,________!,That's the spirit!,明日の試合、勝つぞ！,その意気だ！,We will win the game tomorrow,We|will|win|the|game|tomorrow,40-3-4-a.mp3,40-3-4-b.mp3
+u40_l3_p5,u40_l3,user,Kevin.png,right,left,1,1,0,________.,"Okay, I'll be there!",7時には駅で待ってるよ。,了解、行くね！,I will be waiting at the station at seven,I|will|be|waiting|at|the|station|at|seven,40-3-5-a.mp3,40-3-5-b.mp3
+u40_l3_p6,u40_l3,user,Kevin.png,right,left,1,1,0,________.,Let's not bother him.,彼は部屋で本を読んでる。,邪魔しないでおこう。,He is reading a book in his room,He|is|reading|a|book|in|his|room,40-3-6-a.mp3,40-3-6-b.mp3
+u40_l3_p7,u40_l3,user,,right,none,1,,0,________.,,来年、留学するつもりなんだ。,,I am going to study abroad next year,I|am|going|to|study|abroad|next|year,40-3-7-a.mp3,
+u40_l5_p1,u40_l5,user,Kevin.png,right,left,1,1,0,________.,Was it good?,昨夜、映画を観たよ。,おもしろかった？,I watched a movie last night,I|watched|a|movie|last|night,40-5-1-a.mp3,40-5-1-b.mp3
+u40_l5_p2,u40_l5,user,05.png,right,left,1,1,0,________.,"Oh, sorry to interrupt.",電話したとき、彼女は勉強してた。,あ、邪魔しちゃってごめん。,She was studying when I called her,She|was|studying|when|I|called|her,40-5-2-a.mp3,40-5-2-b.mp3
+u40_l5_p3,u40_l5,user,Kevin.png,right,left,1,1,0,________.,You must have been soaked!,雨の中サッカーしてたんだ。,びしょ濡れだったでしょ！,We were playing soccer in the rain,We|were|playing|soccer|in|the|rain,40-5-3-a.mp3,40-5-3-b.mp3
+u40_l5_p4,u40_l5,Kevin.png,user,left,right,1,1,0,________.,That's why he was late.,彼は今朝バスに乗り遅れたんだ。,だから遅刻したのか。,He missed the bus this morning,He|missed|the|bus|this|morning,40-5-4-a.mp3,40-5-4-b.mp3
+u40_l5_p5,u40_l5,user,Kevin.png,right,left,1,1,0,________.,Did you answer it?,電話が鳴ったとき、料理してた。,出たの？,I was cooking when the phone rang,I|was|cooking|when|the|phone|rang,40-5-5-a.mp3,40-5-5-b.mp3
+u40_l5_p6,u40_l5,user,Kevin.png,right,left,1,1,0,________.,"Good, no rush then.",彼らは早めに空港に着いた。,よかった、急がなくていいね。,They arrived at the airport early,They|arrived|at|the|airport|early,40-5-6-a.mp3,40-5-6-b.mp3
+u40_l5_p7,u40_l5,user,,right,none,1,,0,________.,,帰宅したとき、子どもたちは寝てた。,,The kids were sleeping when we got home,The|kids|were|sleeping|when|we|got|home,40-5-7-a.mp3,
+u40_l7_p1,u40_l7,user,Mattew.png,right,left,1,1,0,________.,"Great, let's go out!",宿題終わったよ。,よし、出かけよう！,I have finished my homework,I|have|finished|my|homework,40-7-1-a.mp3,40-7-1-b.mp3
+u40_l7_p2,u40_l7,user,Kevin.png,right,left,1,1,0,________.,"Wow, that's a long time.",彼女はここに10年住んでる。,わあ、長いね。,She has lived here for ten years,She|has|lived|here|for|ten|years,40-7-2-a.mp3,40-7-2-b.mp3
+u40_l7_p3,u40_l7,user,Kevin.png,right,left,1,1,0,________?,"Yeah, once. It was interesting.",納豆食べたことある？,うん、一回ね。おもしろい味だった。,Have you ever eaten natto,Have|you|ever|eaten|natto,40-7-3-a.mp3,40-7-3-b.mp3
+u40_l7_p4,u40_l7,user,05.png,right,left,1,1,0,________.,You should take a break.,2時間ずっとテニスをしてる。,休憩したほうがいいよ。,I have been playing tennis for two hours,I|have|been|playing|tennis|for|two|hours,40-7-4-a.mp3,40-7-4-b.mp3
+u40_l7_p5,u40_l7,user,Kevin.png,right,left,1,1,0,________.,That's so nice.,私たちは子どものころからの知り合いなんだ。,いいね。,We have known each other since childhood,We|have|known|each|other|since|childhood,40-7-5-a.mp3,40-7-5-b.mp3
+u40_l7_p6,u40_l7,user,Kevin.png,right,left,1,1,0,________.,I hope it stops soon.,一日中ずっと雨が降ってる。,早くやむといいね。,It has been raining all day,It|has|been|raining|all|day,40-7-6-a.mp3,40-7-6-b.mp3
+u40_l7_p7,u40_l7,user,,right,none,1,,0,________.,,彼はもう会社を出たよ。,,He has already left the office,He|has|already|left|the|office,40-7-7-a.mp3,
+u40_l9_p1,u40_l9,user,Kevin.png,right,left,1,1,0,________.,"Oh, so you weren't hungry?",彼女が帰ってきたとき、もう食べ終わってた。,じゃあお腹すいてなかったの？,I had already eaten when she came home,I|had|already|eaten|when|she|came|home,40-9-1-a.mp3,40-9-1-b.mp3
+u40_l9_p2,u40_l9,user,Kevin.png,right,left,1,1,0,________.,"Oh no, did you wait long?",着いたとき、電車はもう出ちゃってた。,ええっ、長く待った？,The train had left when I arrived,The|train|had|left|when|I|arrived,40-9-2-a.mp3,40-9-2-b.mp3
+u40_l9_p3,u40_l9,Kevin.png,user,left,right,1,1,0,________.,Really? How did he like it?,その日まで、彼は海を見たことがなかった。,ほんと？気に入った？,He had never seen the sea before that day,He|had|never|seen|the|sea|before|that|day,40-9-3-a.mp3,40-9-3-b.mp3
+u40_l9_p4,u40_l9,user,Mattew.png,right,left,1,1,0,________.,Sorry I'm so late!,1時間ずっと待ってたんだよ。,遅れて本当にごめん！,I had been waiting for an hour,I|had|been|waiting|for|an|hour,40-9-4-a.mp3,40-9-4-b.mp3
+u40_l9_p5,u40_l9,user,Kevin.png,right,left,1,1,0,________.,"Time flies, huh?",2030年には、学校を卒業してるだろうな。,時が経つのは早いね。,"By 2030, I will have finished school","By|2030,|I|will|have|finished|school",40-9-5-a.mp3,40-9-5-b.mp3
+u40_l9_p6,u40_l9,user,Kevin.png,right,left,1,1,0,________.,That calls for a celebration!,来月で、ここに5年住んだことになるよ。,お祝いしなきゃね！,"By next month, we will have lived here for five years","By|next|month,|we|will|have|lived|here|for|five|years",40-9-6-a.mp3,40-9-6-b.mp3
+u40_l9_p7,u40_l9,user,,right,none,1,,0,________.,,電話したとき、彼女はもう帰宅してた。,,She had already gone home when I called,She|had|already|gone|home|when|I|called,40-9-7-a.mp3,
