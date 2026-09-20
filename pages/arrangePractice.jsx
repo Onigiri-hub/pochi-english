@@ -35,9 +35,11 @@ export default function ArrangePractice() {
   const { tokenize, findEntry } = useDictionary()
   const [popupEntry, setPopupEntry] = useState(null)
   const longPressTimer = useRef(null)
+  const longPressFiredRef = useRef(false)
   const chipLockRef = useRef(false)
 
   function handleChipPressStart(word) {
+    longPressFiredRef.current = false
     longPressTimer.current = setTimeout(() => {
       const entry = findEntry(word)
       if (entry) {
@@ -46,6 +48,7 @@ export default function ArrangePractice() {
           new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
         }
       }
+      longPressFiredRef.current = true
       longPressTimer.current = null
     }, 400)
   }
@@ -55,13 +58,18 @@ export default function ArrangePractice() {
     if (chipLockRef.current) return
     chipLockRef.current = true
     setTimeout(() => { chipLockRef.current = false }, 100)
-    if (longPressTimer.current === null) {
+    // 長押しが実際に発火していたら（＝ポップアップ表示済み）タップ処理はしない。
+    // カーソルのわずかなズレで onMouseLeave がタイマーを消しても、
+    // 長押し未発火ならタップとして扱う（PCで音が鳴らない事象の対策）。
+    if (longPressTimer.current) {
+      clearTimeout(longPressTimer.current)
+      longPressTimer.current = null
+    }
+    if (longPressFiredRef.current) {
       setPopupEntry(null)
       return
     }
-    clearTimeout(longPressTimer.current)
-    longPressTimer.current = null
-    const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
+    const chipSoundOn = localStorage.getItem("chipSoundOn") !== "false"
     if (chipSoundOn && speak) {
       const entry = findEntry(word)
       if (entry?.audio) {

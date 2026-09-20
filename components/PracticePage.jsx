@@ -30,10 +30,12 @@ export default function PracticePage({ questions }) {
 
   //const [longPressEntry, setLongPressEntry] = useState(null)
   const longPressTimer = useRef(null)
+  const longPressFiredRef = useRef(false)
   const chipLockRef = useRef(false)
 
   function handleChipPressStart(word) {
     // 400ms長押しで意味表示＋音声再生
+    longPressFiredRef.current = false
     longPressTimer.current = setTimeout(() => {
       const entry = findEntry(word)
       if (entry) {
@@ -42,7 +44,8 @@ export default function PracticePage({ questions }) {
           new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
         }
       }
-      longPressTimer.current = null  // 長押し成立フラグ
+      longPressFiredRef.current = true  // 長押し成立フラグ
+      longPressTimer.current = null
     }, 400)
   }
 
@@ -55,17 +58,21 @@ export default function PracticePage({ questions }) {
     chipLockRef.current = true
     setTimeout(() => { chipLockRef.current = false }, 100)
 
+    // 保留中の長押しタイマーは解除する。
+    // カーソルのわずかなズレで onMouseLeave がタイマーを消しても、
+    // 長押しが実際に成立していなければタップ扱いにする（PCで音が鳴らない事象の対策）。
+    if (longPressTimer.current) {
+      clearTimeout(longPressTimer.current)
+      longPressTimer.current = null
+    }
     // 長押し成立済みなら何もしない（タップ動作キャンセル）
-    if (longPressTimer.current === null) {
+    if (longPressFiredRef.current) {
       setPopupEntry(null)
       return
     }
-    // 長押し前に離した = タップ扱い
-    clearTimeout(longPressTimer.current)
-    longPressTimer.current = null
 
     // チップの音声を再生
-    const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
+    const chipSoundOn = localStorage.getItem("chipSoundOn") !== "false"
     if (chipSoundOn && speak) {
       const entry = findEntry(word)
       if (entry?.audio) {
