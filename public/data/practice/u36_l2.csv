@@ -1,6 +1,6 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u36_l2_p1,u36_l2,user,Kevin.png,right,left,1,1,1,________!,Can't wait!,コンサート来週だよ！,楽しみ！,The concert is next week,The|concert|is|next|week,36-2-1-a.mp3,36-2-1-b.mp3
-u36_l2_p2,u36_l2,Mattew.png,user,left,right,1,1,1,________.,"Okay, okay, you were right.",だから雨降るって言ったのに。,はいはい、あなたが正しかったよ。,Told you it would rain,Told|you|it|would|rain,36-2-2-a.mp3,36-2-2-b.mp3
+u36_l2_p1,u36_l2,user,Kevin.png,right,left,1,1,1,The concert is next week!,________!,コンサート来週だよ！,楽しみ！,Can't wait,Can't|wait,36-2-1-a.mp3,36-2-1-b.mp3
+u36_l2_p2,u36_l2,Matthew.png,user,left,right,1,1,1,________.,"Okay, okay, you were right.",だから雨降るって言ったのに。,はいはい、あなたが正しかったよ。,Told you it would rain,Told|you|it|would|rain,36-2-2-a.mp3,36-2-2-b.mp3
 u36_l2_p3,u36_l2,05.png,user,left,right,1,1,1,You look tired today.,________.,今日、疲れてるね。,うん、あんまり寝てなくて。,"Yeah, didn't sleep much","Yeah,|didn't|sleep|much",36-2-3-a.mp3,36-2-3-b.mp3
 u36_l2_p4,u36_l2,user,05.png,right,left,1,1,1,I passed the test!,________.,テスト受かった！,やっぱりね！すごく勉強してたもん。,Knew it! You studied so hard,Knew|it!|You|studied|so|hard,36-2-4-a.mp3,36-2-4-b.mp3
 u36_l2_p5,u36_l2,user,Kevin.png,right,left,1,1,1,Should we take an umbrella?,________.,傘持ってく？,どっちでもいいよ、近いし。,"Doesn't matter, it's not far","Doesn't|matter,|it's|not|far",36-2-5-a.mp3,36-2-5-b.mp3

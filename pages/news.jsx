@@ -3,6 +3,11 @@ import Navigation from "../components/Navigation";
 
 const newsItems = [
   {
+    date: "2026-09-21",
+    title: "英文法をUnit39まで追加しました",
+    body: "",
+  },
+  {
     date: "2026-09-03",
     title: "並べて英単語の機能をスタートしました！",
     body: "",

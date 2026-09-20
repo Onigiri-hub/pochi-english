@@ -1,6 +1,6 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u36_l2_p1,u36_l2,user,Kevin.png,right,left,1,1,0,________!,Can't wait!,コンサート来週だよ！,楽しみ！,The concert is next week,The|concert|is|next|week,36-2-1-a.mp3,36-2-1-b.mp3
-u36_l2_p2,u36_l2,Mattew.png,user,left,right,1,1,0,________.,"Okay, okay, you were right.",だから雨降るって言ったのに。,はいはい、あなたが正しかったよ。,Told you it would rain,Told|you|it|would|rain,36-2-2-a.mp3,36-2-2-b.mp3
+u36_l2_p1,u36_l2,user,Kevin.png,right,left,1,1,0,The concert is next week!,________!,コンサート来週だよ！,楽しみ！,Can't wait,Can't|wait,36-2-1-a.mp3,36-2-1-b.mp3
+u36_l2_p2,u36_l2,Matthew.png,user,left,right,1,1,0,________.,"Okay, okay, you were right.",だから雨降るって言ったのに。,はいはい、あなたが正しかったよ。,Told you it would rain,Told|you|it|would|rain,36-2-2-a.mp3,36-2-2-b.mp3
 u36_l2_p3,u36_l2,05.png,user,left,right,1,1,0,You look tired today.,________.,今日、疲れてるね。,うん、あんまり寝てなくて。,"Yeah, didn't sleep much","Yeah,|didn't|sleep|much",36-2-3-a.mp3,36-2-3-b.mp3
 u36_l2_p4,u36_l2,user,05.png,right,left,1,1,0,I passed the test!,________.,テスト受かった！,やっぱりね！すごく勉強してたもん。,Knew it! You studied so hard,Knew|it!|You|studied|so|hard,36-2-4-a.mp3,36-2-4-b.mp3
 u36_l2_p5,u36_l2,user,Kevin.png,right,left,1,1,0,Should we take an umbrella?,________.,傘持ってく？,どっちでもいいよ、近いし。,"Doesn't matter, it's not far","Doesn't|matter,|it's|not|far",36-2-5-a.mp3,36-2-5-b.mp3
@@ -10,22 +10,22 @@ u36_l2_p8,u36_l2,user,05.png,right,left,1,1,0,Sorry I'm late again.,________.,�
 u36_l2_p9,u36_l2,user,Kevin.png,right,left,1,1,0,I think I left my keys at home.,________.,家に鍵忘れてきたかも。,やっぱり！いつもそれなんだから。,Knew it! You always do that,Knew|it!|You|always|do|that,36-2-9-a.mp3,36-2-9-b.mp3
 u36_l2_p10,u36_l2,user,Kevin.png,right,left,1,1,0,It's going to be a long day.,________.,今日は長い一日になりそう。,早く終わってほしいよ。,Can't wait for it to be over,Can't|wait|for|it|to|be|over,36-2-10-a.mp3,36-2-10-b.mp3
 u36_l4_p1,u36_l4,05.png,user,left,right,1,1,0,________?,"Ooh, yes please!",クッキー作ったんだ。いる？,わあ、ぜひ！,I made some cookies. Want some,I|made|some|cookies.|Want|some,36-4-1-a.mp3,36-4-1-b.mp3
-u36_l4_p2,u36_l4,Mattew.png,user,left,right,1,1,0,________?,"Yes, please! They're so heavy.",その荷物、手伝おうか？,お願い！すごく重くて。,Need help with those bags,Need|help|with|those|bags,36-4-2-a.mp3,36-4-2-b.mp3
-u36_l4_p3,u36_l4,Mattew.png,user,left,right,1,1,0,Coming? We're leaving in five minutes!,________.,来る？あと5分で出るよ！,もうすぐ！コート取ってくる。,Almost! Just grabbing my coat,Almost!|Just|grabbing|my|coat,36-4-3-a.mp3,36-4-3-b.mp3
+u36_l4_p2,u36_l4,Matthew.png,user,left,right,1,1,0,________?,"Yes, please! They're so heavy.",その荷物、手伝おうか？,お願い！すごく重くて。,Need help with those bags,Need|help|with|those|bags,36-4-2-a.mp3,36-4-2-b.mp3
+u36_l4_p3,u36_l4,Matthew.png,user,left,right,1,1,0,Coming? We're leaving in five minutes!,________.,来る？あと5分で出るよ！,もうすぐ！コート取ってくる。,Almost! Just grabbing my coat,Almost!|Just|grabbing|my|coat,36-4-3-a.mp3,36-4-3-b.mp3
 u36_l4_p4,u36_l4,05.png,user,left,right,1,1,0,________?,Yeah... just a lot on my mind.,今日ずっと静かだね。大丈夫？,うん…ちょっと考えごとが多くて。,You've been quiet all day. Feeling okay,You've|been|quiet|all|day.|Feeling|okay,36-4-4-a.mp3,36-4-4-b.mp3
-u36_l4_p5,u36_l4,Mattew.png,user,left,right,1,1,0,________?,"Oh, thanks! That's kind.",それ、持とうか？,あ、ありがとう！優しいね。,Want me to carry that for you,Want|me|to|carry|that|for|you,36-4-5-a.mp3,36-4-5-b.mp3
-u36_l4_p6,u36_l4,Mattew.png,user,left,right,1,1,0,________?,Almost! Just need my shoes.,行く準備できた？,もうすぐ！靴だけ履くね。,Ready to go,Ready|to|go,36-4-6-a.mp3,36-4-6-b.mp3
+u36_l4_p5,u36_l4,Matthew.png,user,left,right,1,1,0,________?,"Oh, thanks! That's kind.",それ、持とうか？,あ、ありがとう！優しいね。,Want me to carry that for you,Want|me|to|carry|that|for|you,36-4-5-a.mp3,36-4-5-b.mp3
+u36_l4_p6,u36_l4,Matthew.png,user,left,right,1,1,0,________?,Almost! Just need my shoes.,行く準備できた？,もうすぐ！靴だけ履くね。,Ready to go,Ready|to|go,36-4-6-a.mp3,36-4-6-b.mp3
 u36_l4_p7,u36_l4,05.png,user,left,right,1,1,0,________?,Not yet. Still have math.,宿題終わった？,まだ。算数が残ってる。,Finished your homework,Finished|your|homework,36-4-7-a.mp3,36-4-7-b.mp3
-u36_l4_p8,u36_l4,user,Mattew.png,right,left,1,1,0,This box is too heavy for me.,________.,この箱、私には重すぎる。,手伝おうか？片側持つよ。,Need help? I'll grab one side,Need|help?|I'll|grab|one|side,36-4-8-a.mp3,36-4-8-b.mp3
+u36_l4_p8,u36_l4,user,Matthew.png,right,left,1,1,0,This box is too heavy for me.,________.,この箱、私には重すぎる。,手伝おうか？片側持つよ。,Need help? I'll grab one side,Need|help?|I'll|grab|one|side,36-4-8-a.mp3,36-4-8-b.mp3
 u36_l4_p9,u36_l4,Kevin.png,user,left,right,1,1,0,________?,Sure! What time?,今夜うち来る？,いいね！何時？,Want to come over tonight,Want|to|come|over|tonight,36-4-9-a.mp3,36-4-9-b.mp3
 u36_l4_p10,u36_l4,05.png,user,left,right,1,1,0,________?,Yes! I'd love a slice.,パン、作りすぎちゃった。いる？,うん！一枚もらいたいな。,I baked way too much bread. Want some,I|baked|way|too|much|bread.|Want|some,36-4-10-a.mp3,36-4-10-b.mp3
 u36_l6_p1,u36_l6,user,Kevin.png,right,left,1,1,0,Let's meet at seven.,________.,7時に会おう。,いいね！じゃあその時に。,Sounds good! See you then,Sounds|good!|See|you|then,36-6-1-a.mp3,36-6-1-b.mp3
-u36_l6_p2,u36_l6,Mattew.png,user,left,right,1,1,0,Are you ready?,________.,準備いい？,オッケー！行こう。,Ready! Let's go,Ready!|Let's|go,36-6-2-a.mp3,36-6-2-b.mp3
+u36_l6_p2,u36_l6,Matthew.png,user,left,right,1,1,0,Are you ready?,________.,準備いい？,オッケー！行こう。,Ready! Let's go,Ready!|Let's|go,36-6-2-a.mp3,36-6-2-b.mp3
 u36_l6_p3,u36_l6,user,Kevin.png,right,left,1,1,0,Let's leave early to beat the crowd.,________.,混む前に早めに出よう。,なるほど、いいね。,Makes sense. Good idea,Makes|sense.|Good|idea,36-6-3-a.mp3,36-6-3-b.mp3
-u36_l6_p4,u36_l6,user,Mattew.png,right,left,1,1,0,Thanks so much for helping.,________.,手伝ってくれて本当にありがとう。,問題ないよ！いつでも。,No problem! Anytime,No|problem!|Anytime,36-6-4-a.mp3,36-6-4-b.mp3
+u36_l6_p4,u36_l6,user,Matthew.png,right,left,1,1,0,Thanks so much for helping.,________.,手伝ってくれて本当にありがとう。,問題ないよ！いつでも。,No problem! Anytime,No|problem!|Anytime,36-6-4-a.mp3,36-6-4-b.mp3
 u36_l6_p5,u36_l6,05.png,user,left,right,1,1,0,You're still awake?,________.,まだ起きてるの？,眠れなくて。考えごとが多すぎて。,Can't sleep. Too much on my mind,Can't|sleep.|Too|much|on|my|mind,36-6-5-a.mp3,36-6-5-b.mp3
 u36_l6_p6,u36_l6,Kevin.png,user,left,right,1,1,0,Do you know the answer?,________.,答え分かる？,わかんないな。考えさせて。,Not sure. Let me think,Not|sure.|Let|me|think,36-6-6-a.mp3,36-6-6-b.mp3
-u36_l6_p7,u36_l6,Mattew.png,user,left,right,1,1,0,Can you finish it by Friday?,________.,金曜までに終わる？,問題ないよ。もうほぼ終わってる。,No problem. I'm almost done,No|problem.|I'm|almost|done,36-6-7-a.mp3,36-6-7-b.mp3
+u36_l6_p7,u36_l6,Matthew.png,user,left,right,1,1,0,Can you finish it by Friday?,________.,金曜までに終わる？,問題ないよ。もうほぼ終わってる。,No problem. I'm almost done,No|problem.|I'm|almost|done,36-6-7-a.mp3,36-6-7-b.mp3
 u36_l6_p8,u36_l6,user,Kevin.png,right,left,1,1,0,________?,Sounds good! I'm starving.,お昼食べに行く？,いいね！お腹ぺこぺこ。,Want to grab lunch,Want|to|grab|lunch,36-6-8-a.mp3,36-6-8-b.mp3
-u36_l6_p9,u36_l6,Mattew.png,user,left,right,1,1,0,The meeting is at nine tomorrow.,________.,会議は明日の9時ね。,なるほど。朝のほうがいいもんね。,Makes sense. Morning is better,Makes|sense.|Morning|is|better,36-6-9-a.mp3,36-6-9-b.mp3
+u36_l6_p9,u36_l6,Matthew.png,user,left,right,1,1,0,The meeting is at nine tomorrow.,________.,会議は明日の9時ね。,なるほど。朝のほうがいいもんね。,Makes sense. Morning is better,Makes|sense.|Morning|is|better,36-6-9-a.mp3,36-6-9-b.mp3
 u36_l6_p10,u36_l6,05.png,user,left,right,1,1,0,You've been up all night?,________.,一晩中起きてたの？,眠れなくて。明日、大事な日だから。,Can't sleep. Big day tomorrow,Can't|sleep.|Big|day|tomorrow,36-6-10-a.mp3,36-6-10-b.mp3

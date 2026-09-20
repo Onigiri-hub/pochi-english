@@ -1,5 +1,5 @@
 question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
-u38_l3_p1,u38_l3,Mattew.png,user,left,right,1,1,1,________?,"Sure, here you go.",塩取ってもらえる？,うん、はいどうぞ。,Could you pass me the salt,Could|you|pass|me|the|salt,38-3-1-a.mp3,38-3-1-b.mp3
+u38_l3_p1,u38_l3,Matthew.png,user,left,right,1,1,1,________?,"Sure, here you go.",塩取ってもらえる？,うん、はいどうぞ。,Could you pass me the salt,Could|you|pass|me|the|salt,38-3-1-a.mp3,38-3-1-b.mp3
 u38_l3_p2,u38_l3,05.png,user,left,right,1,1,1,________?,"Oh, sorry! I didn't notice it was open.",ドア閉めてもらえる？,あ、ごめん！開いてるの気づかなかった。,Would you close the door,Would|you|close|the|door,38-3-2-a.mp3,38-3-2-b.mp3
 u38_l3_p3,u38_l3,05.png,user,left,right,1,1,1,________?,Of course. I said the meeting is at three.,もう一度言ってもらえますか？,もちろん。会議は3時だって言ったんです。,Could you say that again,Could|you|say|that|again,38-3-3-a.mp3,38-3-3-b.mp3
 u38_l3_p4,u38_l3,user,Kevin.png,right,left,1,1,1,________?,"No problem, it looks heavy!",この箱運ぶの手伝ってもらえる？,いいよ、重そうだね！,Would you help me carry this box,Would|you|help|me|carry|this|box,38-3-4-a.mp3,38-3-4-b.mp3
@@ -8,4 +8,4 @@ u38_l3_p6,u38_l3,user,Kevin.png,right,left,1,1,1,________?,"Sure, take your time
 u38_l3_p7,u38_l3,user,,right,none,1,,1,________?,,駅までの道を教えてもらえますか？,,Could you tell me the way to the station,Could|you|tell|me|the|way|to|the|station,38-3-7-a.mp3,
 u38_l3_p8,u38_l3,user,05.png,right,left,1,1,1,________?,"Not at all, go ahead.",ここ座ってもいいですか？,全然、どうぞ。,Would you mind if I sat here,Would|you|mind|if|I|sat|here,38-3-8-a.mp3,38-3-8-b.mp3
 u38_l3_p9,u38_l3,user,05.png,right,left,1,1,1,________?,"Sure, what is it?",ちょっと聞いてもいい？,うん、なに？,Could I ask you something,Could|I|ask|you|something,38-3-9-a.mp3,38-3-9-b.mp3
-u38_l3_p10,u38_l3,user,Mattew.png,right,left,1,1,1,________?,Of course! Say cheese!,私たちの写真撮ってもらえますか？,もちろん！はい、チーズ！,Would you take a picture of us,Would|you|take|a|picture|of|us,38-3-10-a.mp3,38-3-10-b.mp3
+u38_l3_p10,u38_l3,user,Matthew.png,right,left,1,1,1,________?,Of course! Say cheese!,私たちの写真撮ってもらえますか？,もちろん！はい、チーズ！,Would you take a picture of us,Would|you|take|a|picture|of|us,38-3-10-a.mp3,38-3-10-b.mp3
