@@ -46,7 +46,7 @@ export default function PracticePage({ questions }) {
     }, 400)
   }
 
-  function handleChipPressEnd(word, action, e) {
+  function handleChipPressEnd(word, action, e, speak = true) {
     // ★B案：マウスイベントの二重発火を防ぐ
     if (e) e.preventDefault()
 
@@ -66,7 +66,7 @@ export default function PracticePage({ questions }) {
 
     // チップの音声を再生
     const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
-    if (chipSoundOn) {
+    if (chipSoundOn && speak) {
       const entry = findEntry(word)
       if (entry?.audio) {
         const audio = new Audio(`/audio/words/${entry.audio}`)
@@ -318,8 +318,8 @@ export default function PracticePage({ questions }) {
           <button className="chip"
             key={i}
             onMouseDown={() => handleChipPressStart(w)}
-            onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
-            onTouchEnd={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
+            onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e, false)}
+            onTouchEnd={(e) => handleChipPressEnd(w, () => removeChip(w, i), e, false)}
             onMouseLeave={() => {
               if (longPressTimer.current) {
                 clearTimeout(longPressTimer.current)

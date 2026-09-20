@@ -50,7 +50,7 @@ export default function ArrangePractice() {
     }, 400)
   }
 
-  function handleChipPressEnd(word, action, e) {
+  function handleChipPressEnd(word, action, e, speak = true) {
     if (e) e.preventDefault()
     if (chipLockRef.current) return
     chipLockRef.current = true
@@ -62,7 +62,7 @@ export default function ArrangePractice() {
     clearTimeout(longPressTimer.current)
     longPressTimer.current = null
     const chipSoundOn = localStorage.getItem("chipSoundOn") === "true"
-    if (chipSoundOn) {
+    if (chipSoundOn && speak) {
       const entry = findEntry(word)
       if (entry?.audio) {
         new Audio(`/audio/words/${entry.audio}`).play().catch(() => {})
@@ -318,10 +318,10 @@ export default function ArrangePractice() {
             className="chip"
             style={highlightChips.has(w) ? { background: "#7f95b8" } : undefined}
             onMouseDown={() => handleChipPressStart(w)}
-            onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
+            onMouseUp={(e) => handleChipPressEnd(w, () => removeChip(w, i), e, false)}
             onMouseLeave={() => { if (longPressTimer.current) { clearTimeout(longPressTimer.current); longPressTimer.current = null } }}
             onTouchStart={() => handleChipPressStart(w)}
-            onTouchEnd={(e) => handleChipPressEnd(w, () => removeChip(w, i), e)}
+            onTouchEnd={(e) => handleChipPressEnd(w, () => removeChip(w, i), e, false)}
           >
             {w}
           </button>
