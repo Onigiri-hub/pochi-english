@@ -62,10 +62,12 @@ export default function Navigation() {
           margin: 0 auto;
           height: 60px;
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
         }
         .navItem {
+          flex: 1;
+          min-width: 0;
           background: none;
           border: none;
           display: flex;
