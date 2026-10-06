@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Script from "next/script"
+import { Analytics } from "@vercel/analytics/next"
 import { Noto_Sans_JP, M_PLUS_Rounded_1c } from "next/font/google"
 import "../styles/home.css";
 import "../styles/profile.css";
@@ -208,6 +209,7 @@ export default function MyApp({ Component, pageProps }) {
         <main className={`${noto.className} ${mplus.variable}`}>
           <Component {...pageProps} />
         </main>
+        <Analytics />
       </ProfileContext.Provider>
     </DictionaryContext.Provider>
   )
