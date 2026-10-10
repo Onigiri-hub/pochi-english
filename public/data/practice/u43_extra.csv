@@ -1,0 +1,29 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u43_l2_p1,u43_l2,user,Kevin.png,right,left,1,1,0,________.,Was he? He looked free to me.,彼は忙しいと思ってた。,そう？私にはひまそうに見えたけど。,I thought that he was busy,I|thought|that|he|was|busy,43-2-1-a.mp3,43-2-1-b.mp3
+u43_l2_p2,u43_l2,Matthew.png,user,left,right,1,1,0,________.,Then let's get her some.,彼女は紅茶が好きだと言ってた。,じゃあ買っていってあげよう。,She said that she liked tea,She|said|that|she|liked|tea,43-2-2-a.mp3,43-2-2-b.mp3
+u43_l2_p3,u43_l2,user,Kevin.png,right,left,1,1,0,________.,You did? I wasn't even sure myself!,君が来るってわかってたよ。,そうなの？自分でも自信なかったのに！,I knew that you would come,I|knew|that|you|would|come,43-2-3-a.mp3,43-2-3-b.mp3
+u43_l2_p4,u43_l2,Kevin.png,user,left,right,1,1,0,________.,"Oh no, we came all this way.",彼は店が閉まってるって教えてくれた。,えー、せっかく来たのに。,He told me that the store was closed,He|told|me|that|the|store|was|closed,43-2-4-a.mp3,43-2-4-b.mp3
+u43_l2_p5,u43_l2,Kevin.png,user,left,right,1,1,0,________.,"And she was, in the end.",私たちは彼女が正しいと信じてた。,実際、最後は正しかったね。,We believed that she was right,We|believed|that|she|was|right,43-2-5-a.mp3,43-2-5-b.mp3
+u43_l2_p6,u43_l2,user,Matthew.png,right,left,1,1,0,________.,Your instinct was correct.,何かおかしいと感じてた。,君の勘は当たってたね。,I felt that something was wrong,I|felt|that|something|was|wrong,43-2-6-a.mp3,43-2-6-b.mp3
+u43_l2_p7,u43_l2,user,,right,none,1,,0,________.,,彼女は雨が降らないといいなと思っていた。,,She hoped that it would not rain,She|hoped|that|it|would|not|rain,43-2-7-a.mp3,
+u43_l4_p1,u43_l4,user,05.png,right,left,1,1,0,________.,He should get some rest.,彼は疲れていると言った。,休んだほうがいいね。,He said that he was tired,He|said|that|he|was|tired,43-4-1-a.mp3,43-4-1-b.mp3
+u43_l4_p2,u43_l4,05.png,Matthew.png,left,left,1,1,0,________.,That's wonderful to hear.,彼女は幸せだと言った。,それはうれしい知らせだね。,She said that she was happy,She|said|that|she|was|happy,43-4-2-a.mp3,43-4-2-b.mp3
+u43_l4_p3,u43_l4,Kevin.png,user,left,right,1,1,0,________.,I liked it too!,トムはその映画が好きだと言った。,私も好きだった！,Tom said that he liked the movie,Tom|said|that|he|liked|the|movie,43-4-3-a.mp3,43-4-3-b.mp3
+u43_l4_p4,u43_l4,user,Kevin.png,right,left,1,1,0,________.,You deserve it!,母は私を誇りに思うと言った。,君にはその価値があるよ！,My mom said that she was proud of me,My|mom|said|that|she|was|proud|of|me,43-4-4-a.mp3,43-4-4-b.mp3
+u43_l4_p5,u43_l4,05.png,Matthew.png,left,left,1,1,0,________.,Let's give him a few days.,彼はもっと時間が必要だと言った。,数日あげようよ。,He said that he needed more time,He|said|that|he|needed|more|time,43-4-5-a.mp3,43-4-5-b.mp3
+u43_l4_p6,u43_l4,Kevin.png,user,left,right,1,1,0,________.,"Wait, leaving already?",彼女は行くところだと私に言った。,え、もう行っちゃうの？,She told me that she was leaving,She|told|me|that|she|was|leaving,43-4-6-a.mp3,43-4-6-b.mp3
+u43_l4_p7,u43_l4,05.png,,left,none,1,,0,________.,,彼らは準備ができていると言った。,,They said that they were ready,They|said|that|they|were|ready,43-4-7-a.mp3,
+u43_l6_p1,u43_l6,user,Kevin.png,right,left,1,1,0,________.,Maybe we can ask him later.,彼はそのとき忙しいと言った。,あとでまた聞いてみようか。,He said that he was busy then,He|said|that|he|was|busy|then,43-6-1-a.mp3,43-6-1-b.mp3
+u43_l6_p2,u43_l6,user,Kevin.png,right,left,1,1,0,________.,Did she?,彼女は翌日電話すると言った。,で、かかってきた？,She said that she would call me the next day,She|said|that|she|would|call|me|the|next|day,43-6-2-a.mp3,43-6-2-b.mp3
+u43_l6_p3,u43_l6,05.png,Matthew.png,left,left,1,1,0,________.,No wonder he looked nervous.,彼はその日テストがあると言った。,どうりで緊張してたわけだ。,He said that he had a test that day,He|said|that|he|had|a|test|that|day,43-6-3-a.mp3,43-6-3-b.mp3
+u43_l6_p4,u43_l6,Kevin.png,user,left,right,1,1,0,________.,Where did she see him?,彼女はその前日に彼を見たと言った。,どこで見たの？,She said that she had seen him the day before,She|said|that|she|had|seen|him|the|day|before,43-6-4-a.mp3,43-6-4-b.mp3
+u43_l6_p5,u43_l6,user,Kevin.png,right,left,1,1,0,________.,Where exactly?,彼はそこで会おうと言った。,そこってどこ？,He told me to meet him there,He|told|me|to|meet|him|there,43-6-5-a.mp3,43-6-5-b.mp3
+u43_l6_p6,u43_l6,Kevin.png,user,left,right,1,1,0,________.,So they already knew each other.,彼は2日前に彼女に会っていたと言った。,じゃあ二人はもう知り合いだったんだね。,He said that he had met her two days before,He|said|that|he|had|met|her|two|days|before,43-6-6-a.mp3,43-6-6-b.mp3
+u43_l6_p7,u43_l6,Matthew.png,,left,none,1,,0,________.,,彼は翌週それを終わらせると言った。,,He said that he would finish it the next week,He|said|that|he|would|finish|it|the|next|week,43-6-7-a.mp3,
+u43_l8_p1,u43_l8,user,05.png,right,left,1,1,0,________.,What did you tell him?,彼はどこへ行くのかと尋ねた。,何て答えたの？,He asked where I was going,He|asked|where|I|was|going,43-8-1-a.mp3,43-8-1-b.mp3
+u43_l8_p2,u43_l8,Kevin.png,user,left,right,1,1,0,________.,That was kind of her.,彼女は私が大丈夫かと尋ねた。,やさしいね。,She asked if I was okay,She|asked|if|I|was|okay,43-8-2-a.mp3,43-8-2-b.mp3
+u43_l8_p3,u43_l8,user,Kevin.png,right,left,1,1,0,________.,Did you know the answer?,彼はショーが何時に始まるのか尋ねた。,答えわかったの？,He asked what time the show started,He|asked|what|time|the|show|started,43-8-3-a.mp3,43-8-3-b.mp3
+u43_l8_p4,u43_l8,user,Matthew.png,right,left,1,1,0,________.,Of course you did!,彼女は私がプレゼントを気に入ったかどうか尋ねた。,気に入ったに決まってるよね！,She asked whether I liked the gift,She|asked|whether|I|liked|the|gift,43-8-4-a.mp3,43-8-4-b.mp3
+u43_l8_p5,u43_l8,Kevin.png,user,left,right,1,1,0,________.,What was your excuse?,友だちはなぜ遅れたのかと尋ねた。,言い訳は何て？,My friend asked why I was late,My|friend|asked|why|I|was|late,43-8-5-a.mp3,43-8-5-b.mp3
+u43_l8_p6,u43_l8,05.png,Matthew.png,left,left,1,1,0,________.,Did you share the recipe?,彼はどうやってケーキを作ったのか尋ねた。,レシピ教えた？,He asked how I had made the cake,He|asked|how|I|had|made|the|cake,43-8-6-a.mp3,43-8-6-b.mp3
+u43_l8_p7,u43_l8,user,,right,none,1,,0,________.,,彼女は手伝ってもらえるかと尋ねた。,,She asked if I could help her,She|asked|if|I|could|help|her,43-8-7-a.mp3,

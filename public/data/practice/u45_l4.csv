@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u45_l4_p1,u45_l4,Kevin.png,user,left,right,1,1,1,________.,"Yeah, his coat is gone.",彼はもう帰ったにちがいない。,うん、コートがないもんね。,He must have left already,He|must|have|left|already,45-4-1-a.mp3,45-4-1-b.mp3
+u45_l4_p2,u45_l4,user,Matthew.png,right,left,1,1,1,________.,There's always next time.,もっと勉強すべきだったなあ。,次があるさ。,I should have studied harder,I|should|have|studied|harder,45-4-2-a.mp3,45-4-2-b.mp3
+u45_l4_p3,u45_l4,user,Kevin.png,right,left,1,1,1,________!,"Sorry, I forgot.",言ってくれてもよかったのに！,ごめん、忘れてた。,You could have told me,You|could|have|told|me,45-4-3-a.mp3,45-4-3-b.mp3
+u45_l4_p4,u45_l4,user,05.png,right,left,1,1,1,________.,Let's wait a bit longer.,彼女は電車に乗り遅れたのかもしれない。,もう少し待とう。,She may have missed the train,She|may|have|missed|the|train,45-4-4-a.mp3,45-4-4-b.mp3
+u45_l4_p5,u45_l4,Kevin.png,user,left,right,1,1,1,________.,For sure.,旅行のあと、彼らは疲れていたにちがいない。,だろうね。,They must have been tired after the trip,They|must|have|been|tired|after|the|trip,45-4-5-a.mp3,45-4-5-b.mp3
+u45_l4_p6,u45_l4,Kevin.png,user,left,right,1,1,1,________.,We all do that sometimes.,あんなに食べるんじゃなかった。,誰でもたまにあるよ。,I shouldn't have eaten so much,I|shouldn't|have|eaten|so|much,45-4-6-a.mp3,45-4-6-b.mp3
+u45_l4_p7,u45_l4,user,,right,none,1,,1,________.,,彼は私たちの予定を忘れたのかもしれない。,,He might have forgotten our plan,He|might|have|forgotten|our|plan,45-4-7-a.mp3,

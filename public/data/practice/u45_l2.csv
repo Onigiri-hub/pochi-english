@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u45_l2_p1,u45_l2,Matthew.png,05.png,left,left,1,1,1,________.,"Good, it was dangerous before.",その橋は修理された。,よかった、前は危なかったからね。,The bridge has been repaired,The|bridge|has|been|repaired,45-2-1-a.mp3,45-2-1-b.mp3
+u45_l2_p2,u45_l2,user,Matthew.png,right,left,1,1,1,________!,Oh no! Did you call the police?,自転車が盗まれた！,ええっ！警察に電話した？,My bike has been stolen,My|bike|has|been|stolen,45-2-2-a.mp3,45-2-2-b.mp3
+u45_l2_p3,u45_l2,user,05.png,right,left,1,1,1,________.,That was thoughtful.,私たちが着く前に、部屋は掃除されていた。,気がきいてるね。,The room had been cleaned before we arrived,The|room|had|been|cleaned|before|we|arrived,45-2-3-a.mp3,45-2-3-b.mp3
+u45_l2_p4,u45_l2,Kevin.png,user,left,right,1,1,1,________.,That's why it's so worn.,この本は多くの人に読まれてきた。,だからこんなにボロボロなんだね。,This book has been read by many people,This|book|has|been|read|by|many|people,45-2-4-a.mp3,45-2-4-b.mp3
+u45_l2_p5,u45_l2,05.png,Matthew.png,left,left,1,1,1,________.,Then it should arrive soon.,その手紙は昼前に送られていた。,じゃあすぐ届くはずだね。,The letter had been sent before noon,The|letter|had|been|sent|before|noon,45-2-5-a.mp3,45-2-5-b.mp3
+u45_l2_p6,u45_l2,05.png,user,left,right,1,1,1,________.,It's a true classic.,その歌は長年愛されてきた。,まさに名曲だね。,The song has been loved for years,The|song|has|been|loved|for|years,45-2-6-a.mp3,45-2-6-b.mp3
+u45_l2_p7,u45_l2,Matthew.png,,left,none,1,,1,________.,,その窓は誰かに割られていた。,,The window had been broken by someone,The|window|had|been|broken|by|someone,45-2-7-a.mp3,

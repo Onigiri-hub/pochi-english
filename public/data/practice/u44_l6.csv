@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u44_l6_p1,u44_l6,Matthew.png,,left,none,1,,1,________.,,会議は明日開かれる予定だ。,,The meeting is to be held tomorrow,The|meeting|is|to|be|held|tomorrow,44-6-1-a.mp3,
+u44_l6_p2,u44_l6,Matthew.png,,left,none,1,,1,________.,,大統領は来週、日本を訪問する予定だ。,,The president is to visit Japan next week,The|president|is|to|visit|Japan|next|week,44-6-2-a.mp3,
+u44_l6_p3,u44_l6,05.png,,left,none,1,,1,________.,,これを5時までに終わらせなさい。,,You are to finish this by five,You|are|to|finish|this|by|five,44-6-3-a.mp3,
+u44_l6_p4,u44_l6,Matthew.png,,left,none,1,,1,________.,,新しい橋は来月開通する予定だ。,,The new bridge is to open next month,The|new|bridge|is|to|open|next|month,44-6-4-a.mp3,
+u44_l6_p5,u44_l6,user,,right,none,1,,1,________.,,生徒は学校で制服を着なければならない。,,Students are to wear uniforms at school,Students|are|to|wear|uniforms|at|school,44-6-5-a.mp3,
+u44_l6_p6,u44_l6,user,,right,none,1,,1,________.,,コンサートは7時に始まる予定だ。,,The concert is to start at seven,The|concert|is|to|start|at|seven,44-6-6-a.mp3,
+u44_l6_p7,u44_l6,05.png,,left,none,1,,1,________.,,9時に事務所に来なさい。,,You are to report to the office at nine,You|are|to|report|to|the|office|at|nine,44-6-7-a.mp3,

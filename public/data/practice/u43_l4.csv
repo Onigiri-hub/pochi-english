@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u43_l4_p1,u43_l4,user,05.png,right,left,1,1,1,________.,He should get some rest.,彼は疲れていると言った。,休んだほうがいいね。,He said that he was tired,He|said|that|he|was|tired,43-4-1-a.mp3,43-4-1-b.mp3
+u43_l4_p2,u43_l4,05.png,Matthew.png,left,left,1,1,1,________.,That's wonderful to hear.,彼女は幸せだと言った。,それはうれしい知らせだね。,She said that she was happy,She|said|that|she|was|happy,43-4-2-a.mp3,43-4-2-b.mp3
+u43_l4_p3,u43_l4,Kevin.png,user,left,right,1,1,1,________.,I liked it too!,トムはその映画が好きだと言った。,私も好きだった！,Tom said that he liked the movie,Tom|said|that|he|liked|the|movie,43-4-3-a.mp3,43-4-3-b.mp3
+u43_l4_p4,u43_l4,user,Kevin.png,right,left,1,1,1,________.,You deserve it!,母は私を誇りに思うと言った。,君にはその価値があるよ！,My mom said that she was proud of me,My|mom|said|that|she|was|proud|of|me,43-4-4-a.mp3,43-4-4-b.mp3
+u43_l4_p5,u43_l4,05.png,Matthew.png,left,left,1,1,1,________.,Let's give him a few days.,彼はもっと時間が必要だと言った。,数日あげようよ。,He said that he needed more time,He|said|that|he|needed|more|time,43-4-5-a.mp3,43-4-5-b.mp3
+u43_l4_p6,u43_l4,Kevin.png,user,left,right,1,1,1,________.,"Wait, leaving already?",彼女は行くところだと私に言った。,え、もう行っちゃうの？,She told me that she was leaving,She|told|me|that|she|was|leaving,43-4-6-a.mp3,43-4-6-b.mp3
+u43_l4_p7,u43_l4,05.png,,left,none,1,,1,________.,,彼らは準備ができていると言った。,,They said that they were ready,They|said|that|they|were|ready,43-4-7-a.mp3,

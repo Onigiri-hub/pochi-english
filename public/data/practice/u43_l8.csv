@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u43_l8_p1,u43_l8,user,05.png,right,left,1,1,1,________.,What did you tell him?,彼はどこへ行くのかと尋ねた。,何て答えたの？,He asked where I was going,He|asked|where|I|was|going,43-8-1-a.mp3,43-8-1-b.mp3
+u43_l8_p2,u43_l8,Kevin.png,user,left,right,1,1,1,________.,That was kind of her.,彼女は私が大丈夫かと尋ねた。,やさしいね。,She asked if I was okay,She|asked|if|I|was|okay,43-8-2-a.mp3,43-8-2-b.mp3
+u43_l8_p3,u43_l8,user,Kevin.png,right,left,1,1,1,________.,Did you know the answer?,彼はショーが何時に始まるのか尋ねた。,答えわかったの？,He asked what time the show started,He|asked|what|time|the|show|started,43-8-3-a.mp3,43-8-3-b.mp3
+u43_l8_p4,u43_l8,user,Matthew.png,right,left,1,1,1,________.,Of course you did!,彼女は私がプレゼントを気に入ったかどうか尋ねた。,気に入ったに決まってるよね！,She asked whether I liked the gift,She|asked|whether|I|liked|the|gift,43-8-4-a.mp3,43-8-4-b.mp3
+u43_l8_p5,u43_l8,Kevin.png,user,left,right,1,1,1,________.,What was your excuse?,友だちはなぜ遅れたのかと尋ねた。,言い訳は何て？,My friend asked why I was late,My|friend|asked|why|I|was|late,43-8-5-a.mp3,43-8-5-b.mp3
+u43_l8_p6,u43_l8,05.png,Matthew.png,left,left,1,1,1,________.,Did you share the recipe?,彼はどうやってケーキを作ったのか尋ねた。,レシピ教えた？,He asked how I had made the cake,He|asked|how|I|had|made|the|cake,43-8-6-a.mp3,43-8-6-b.mp3
+u43_l8_p7,u43_l8,user,,right,none,1,,1,________.,,彼女は手伝ってもらえるかと尋ねた。,,She asked if I could help her,She|asked|if|I|could|help|her,43-8-7-a.mp3,

@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u44_l4_p1,u44_l4,user,,right,none,1,,1,________.,,彼は駅まで走ったが、結局電車を逃した。,,"He ran to the station, only to miss the train","He|ran|to|the|station,|only|to|miss|the|train",44-4-1-a.mp3,
+u44_l4_p2,u44_l4,Kevin.png,,left,none,1,,1,________.,,彼女は一生懸命勉強したのに、試験に落ちた。,,"She studied hard, only to fail the test","She|studied|hard,|only|to|fail|the|test",44-4-2-a.mp3,
+u44_l4_p3,u44_l4,user,,right,none,1,,1,________.,,急いで店に行ったのに、閉まっていた。,,"We hurried to the shop, only to find it closed","We|hurried|to|the|shop,|only|to|find|it|closed",44-4-3-a.mp3,
+u44_l4_p4,u44_l4,05.png,,left,none,1,,1,________.,,彼は故郷を去り、二度と戻らなかった。,,"He left his hometown, never to return","He|left|his|hometown,|never|to|return",44-4-4-a.mp3,
+u44_l4_p5,u44_l4,user,,right,none,1,,1,________.,,何ヶ月も貯金したのに、財布をなくしてしまった。,,"I saved for months, only to lose my wallet","I|saved|for|months,|only|to|lose|my|wallet",44-4-5-a.mp3,
+u44_l4_p6,u44_l4,Kevin.png,,left,none,1,,1,________.,,彼女は別れを告げ、二度と彼に会わなかった。,,"She said goodbye, never to see him again","She|said|goodbye,|never|to|see|him|again",44-4-6-a.mp3,
+u44_l4_p7,u44_l4,user,,right,none,1,,1,________.,,彼らは早く着いたのに、何時間も待つはめになった。,,"They arrived early, only to wait for hours","They|arrived|early,|only|to|wait|for|hours",44-4-7-a.mp3,

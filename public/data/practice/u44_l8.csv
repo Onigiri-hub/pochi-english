@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u44_l8_p1,u44_l8,Kevin.png,,left,none,1,,1,________.,,暗闇では、何も見えなかった。,,Nothing was to be seen in the dark,Nothing|was|to|be|seen|in|the|dark,44-8-1-a.mp3,
+u44_l8_p2,u44_l8,user,,right,none,1,,1,________.,,ホールでは、物音ひとつ聞こえなかった。,,No sound was to be heard in the hall,No|sound|was|to|be|heard|in|the|hall,44-8-2-a.mp3,
+u44_l8_p3,u44_l8,05.png,,left,none,1,,1,________.,,彼は若くして死ぬ運命だった、悲しいことに。,,"He was to die young, sadly","He|was|to|die|young,|sadly",44-8-3-a.mp3,
+u44_l8_p4,u44_l8,Kevin.png,,left,none,1,,1,________.,,彼らは二度と会うことはない運命だった。,,They were never to meet again,They|were|never|to|meet|again,44-8-4-a.mp3,
+u44_l8_p5,u44_l8,Matthew.png,,left,none,1,,1,________.,,成功したいなら、努力しなさい。,,"If you are to succeed, work hard","If|you|are|to|succeed,|work|hard",44-8-5-a.mp3,
+u44_l8_p6,u44_l8,Kevin.png,,left,none,1,,1,________.,,勝つつもりなら、作戦が必要だ。,,"If we are to win, we need a plan","If|we|are|to|win,|we|need|a|plan",44-8-6-a.mp3,
+u44_l8_p7,u44_l8,05.png,,left,none,1,,1,________.,,彼女は偉大な芸術家になる運命だった。,,She was to become a great artist,She|was|to|become|a|great|artist,44-8-7-a.mp3,

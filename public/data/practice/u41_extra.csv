@@ -1,0 +1,29 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u41_l2_p1,u41_l2,user,,right,none,1,,0,________.,,テストは難しかった。しかし、私は合格した。,,"The test was hard. However, I passed it","The|test|was|hard.|However,|I|passed|it",41-2-1-a.mp3,
+u41_l2_p2,u41_l2,Kevin.png,,left,none,1,,0,________.,,高かった。おまけに、すぐ壊れた。,,"It was expensive. Moreover, it broke soon","It|was|expensive.|Moreover,|it|broke|soon",41-2-2-a.mp3,
+u41_l2_p3,u41_l2,user,,right,none,1,,0,________.,,彼はたくさん練習した。だから、勝った。,,"He practiced a lot. Therefore, he won","He|practiced|a|lot.|Therefore,|he|won",41-2-3-a.mp3,
+u41_l2_p4,u41_l2,user,Matthew.png,right,left,1,1,0,________.,That's healthy!,果物が好きなんだ。たとえば、毎日りんごを食べる。,健康的だね！,"I love fruit. For example, I eat apples every day","I|love|fruit.|For|example,|I|eat|apples|every|day",41-2-4-a.mp3,41-2-4-b.mp3
+u41_l2_p5,u41_l2,Matthew.png,,left,none,1,,0,________.,,道は封鎖されてた。さらに、雨まで降り出した。,,"The road was closed. Furthermore, it started to rain","The|road|was|closed.|Furthermore,|it|started|to|rain",41-2-5-a.mp3,
+u41_l2_p6,u41_l2,Kevin.png,,left,none,1,,0,________.,,彼女は疲れていた。それでも、レースを完走した。,,"She was tired. Nevertheless, she finished the race","She|was|tired.|Nevertheless,|she|finished|the|race",41-2-6-a.mp3,
+u41_l2_p7,u41_l2,user,,right,none,1,,0,________.,,傘を忘れた。だから、濡れちゃった。,,"I forgot my umbrella. Thus, I got wet","I|forgot|my|umbrella.|Thus,|I|got|wet",41-2-7-a.mp3,
+u41_l4_p1,u41_l4,Kevin.png,,left,none,1,,0,________.,,その計画は、しかし、失敗した。,,"The plan, however, failed","The|plan,|however,|failed",41-4-1-a.mp3,
+u41_l4_p2,u41_l4,05.png,,left,none,1,,0,________.,,その結果は、だから、驚くべきものだった。,,"The results, therefore, were surprising","The|results,|therefore,|were|surprising",41-4-2-a.mp3,
+u41_l4_p3,u41_l4,user,,right,none,1,,0,________.,,彼はもちろん、チームで最高の選手だ。,,"He is, of course, the best player on the team","He|is,|of|course,|the|best|player|on|the|team",41-4-3-a.mp3,
+u41_l4_p4,u41_l4,05.png,,left,none,1,,0,________.,,この本は、たとえば、読む価値があるよ。,,"This book, for example, is worth reading","This|book,|for|example,|is|worth|reading",41-4-4-a.mp3,
+u41_l4_p5,u41_l4,05.png,,left,none,1,,0,________.,,その町は、一方で、成長を続けていた。,,"The city, meanwhile, kept growing","The|city,|meanwhile,|kept|growing",41-4-5-a.mp3,
+u41_l4_p6,u41_l4,Kevin.png,,left,none,1,,0,________.,,彼女のアイデアが、実は、企画を救ったんだ。,,"Her idea, in fact, saved the project","Her|idea,|in|fact,|saved|the|project",41-4-6-a.mp3,
+u41_l4_p7,u41_l4,user,,right,none,1,,0,________.,,真実は、しかし、まったく違っていた。,,"The truth, however, was quite different","The|truth,|however,|was|quite|different",41-4-7-a.mp3,
+u41_l6_p1,u41_l6,user,Kevin.png,right,left,1,1,0,________.,They must love adventure.,雨だったけれど、彼らは出かけた。,冒険好きなんだね。,"Although it was raining, they went out","Although|it|was|raining,|they|went|out",41-6-1-a.mp3,41-6-1-b.mp3
+u41_l6_p2,u41_l6,05.png,,left,none,1,,0,________.,,私は紅茶が好きだが、彼はコーヒーが好きだ。,,"I like tea, whereas he likes coffee","I|like|tea,|whereas|he|likes|coffee",41-6-2-a.mp3,
+u41_l6_p3,u41_l6,05.png,Matthew.png,left,left,1,1,0,________.,He's so dedicated.,疲れていたけれど、彼は働き続けた。,本当に献身的だね。,"Though he was tired, he kept working","Though|he|was|tired,|he|kept|working",41-6-3-a.mp3,41-6-3-b.mp3
+u41_l6_p4,u41_l6,Kevin.png,user,left,right,1,1,0,________.,That's impressive.,みんなが慌てる一方で、彼女は冷静だった。,すごいね。,She stayed calm while everyone panicked,She|stayed|calm|while|everyone|panicked,41-6-4-a.mp3,41-6-4-b.mp3
+u41_l6_p5,u41_l6,Kevin.png,user,left,right,1,1,0,________.,I want to see it too.,その映画は長かったけれど、おもしろかった。,私も見たいな。,"Although the movie was long, it was fun","Although|the|movie|was|long,|it|was|fun",41-6-5-a.mp3,41-6-5-b.mp3
+u41_l6_p6,u41_l6,user,,right,none,1,,0,________.,,彼は物静かだが、弟はにぎやかだ。,,"He is quiet, whereas his brother is loud","He|is|quiet,|whereas|his|brother|is|loud",41-6-6-a.mp3,
+u41_l6_p7,u41_l6,user,,right,none,1,,0,________.,,寒かったけれど、旅行を楽しんだ。,,"Though it was cold, we enjoyed the trip","Though|it|was|cold,|we|enjoyed|the|trip",41-6-7-a.mp3,
+u41_l8_p1,u41_l8,Kevin.png,,left,none,1,,0,________.,,一方その頃、警察が現場に到着した。,,"Meanwhile, the police arrived at the scene","Meanwhile,|the|police|arrived|at|the|scene",41-8-1-a.mp3,
+u41_l8_p2,u41_l8,Matthew.png,05.png,left,left,1,1,0,________.,That's good news.,報告によると、先月は売上が伸びた。,いい知らせだね。,"According to the report, sales rose last month","According|to|the|report,|sales|rose|last|month",41-8-2-a.mp3,41-8-2-b.mp3
+u41_l8_p3,u41_l8,user,,right,none,1,,0,________.,,結論として、私たちは森を守るべきだ。,,"In conclusion, we should protect the forest","In|conclusion,|we|should|protect|the|forest",41-8-3-a.mp3,
+u41_l8_p4,u41_l8,Matthew.png,,left,none,1,,0,________.,,天気は良かった。一方、北部では嵐が来た。,,"The weather was fine. Meanwhile, a storm hit the north","The|weather|was|fine.|Meanwhile,|a|storm|hit|the|north",41-8-4-a.mp3,
+u41_l8_p5,u41_l8,Kevin.png,user,left,right,1,1,0,________.,That explains why he's late.,ニュースによると、電車が遅れたらしい。,だから彼は遅れてるのか。,"According to the news, the train was delayed","According|to|the|news,|the|train|was|delayed",41-8-5-a.mp3,41-8-5-b.mp3
+u41_l8_p6,u41_l8,Matthew.png,05.png,left,left,1,1,0,________.,Let's discuss it again.,要するに、その計画はもっと時間が必要だ。,また話し合おう。,"In summary, the plan needs more time","In|summary,|the|plan|needs|more|time",41-8-6-a.mp3,41-8-6-b.mp3
+u41_l8_p7,u41_l8,05.png,,left,none,1,,0,________.,,結論として、努力は成功につながる。,,"In conclusion, hard work leads to success","In|conclusion,|hard|work|leads|to|success",41-8-7-a.mp3,

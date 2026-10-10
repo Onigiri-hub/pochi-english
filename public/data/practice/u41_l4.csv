@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u41_l4_p1,u41_l4,Kevin.png,,left,none,1,,1,________.,,その計画は、しかし、失敗した。,,"The plan, however, failed","The|plan,|however,|failed",41-4-1-a.mp3,
+u41_l4_p2,u41_l4,05.png,,left,none,1,,1,________.,,その結果は、だから、驚くべきものだった。,,"The results, therefore, were surprising","The|results,|therefore,|were|surprising",41-4-2-a.mp3,
+u41_l4_p3,u41_l4,user,,right,none,1,,1,________.,,彼はもちろん、チームで最高の選手だ。,,"He is, of course, the best player on the team","He|is,|of|course,|the|best|player|on|the|team",41-4-3-a.mp3,
+u41_l4_p4,u41_l4,05.png,,left,none,1,,1,________.,,この本は、たとえば、読む価値があるよ。,,"This book, for example, is worth reading","This|book,|for|example,|is|worth|reading",41-4-4-a.mp3,
+u41_l4_p5,u41_l4,05.png,,left,none,1,,1,________.,,その町は、一方で、成長を続けていた。,,"The city, meanwhile, kept growing","The|city,|meanwhile,|kept|growing",41-4-5-a.mp3,
+u41_l4_p6,u41_l4,Kevin.png,,left,none,1,,1,________.,,彼女のアイデアが、実は、企画を救ったんだ。,,"Her idea, in fact, saved the project","Her|idea,|in|fact,|saved|the|project",41-4-6-a.mp3,
+u41_l4_p7,u41_l4,user,,right,none,1,,1,________.,,真実は、しかし、まったく違っていた。,,"The truth, however, was quite different","The|truth,|however,|was|quite|different",41-4-7-a.mp3,

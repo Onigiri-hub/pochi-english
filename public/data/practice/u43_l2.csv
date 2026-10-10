@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u43_l2_p1,u43_l2,user,Kevin.png,right,left,1,1,1,________.,Was he? He looked free to me.,彼は忙しいと思ってた。,そう？私にはひまそうに見えたけど。,I thought that he was busy,I|thought|that|he|was|busy,43-2-1-a.mp3,43-2-1-b.mp3
+u43_l2_p2,u43_l2,Matthew.png,user,left,right,1,1,1,________.,Then let's get her some.,彼女は紅茶が好きだと言ってた。,じゃあ買っていってあげよう。,She said that she liked tea,She|said|that|she|liked|tea,43-2-2-a.mp3,43-2-2-b.mp3
+u43_l2_p3,u43_l2,user,Kevin.png,right,left,1,1,1,________.,You did? I wasn't even sure myself!,君が来るってわかってたよ。,そうなの？自分でも自信なかったのに！,I knew that you would come,I|knew|that|you|would|come,43-2-3-a.mp3,43-2-3-b.mp3
+u43_l2_p4,u43_l2,Kevin.png,user,left,right,1,1,1,________.,"Oh no, we came all this way.",彼は店が閉まってるって教えてくれた。,えー、せっかく来たのに。,He told me that the store was closed,He|told|me|that|the|store|was|closed,43-2-4-a.mp3,43-2-4-b.mp3
+u43_l2_p5,u43_l2,Kevin.png,user,left,right,1,1,1,________.,"And she was, in the end.",私たちは彼女が正しいと信じてた。,実際、最後は正しかったね。,We believed that she was right,We|believed|that|she|was|right,43-2-5-a.mp3,43-2-5-b.mp3
+u43_l2_p6,u43_l2,user,Matthew.png,right,left,1,1,1,________.,Your instinct was correct.,何かおかしいと感じてた。,君の勘は当たってたね。,I felt that something was wrong,I|felt|that|something|was|wrong,43-2-6-a.mp3,43-2-6-b.mp3
+u43_l2_p7,u43_l2,user,,right,none,1,,1,________.,,彼女は雨が降らないといいなと思っていた。,,She hoped that it would not rain,She|hoped|that|it|would|not|rain,43-2-7-a.mp3,

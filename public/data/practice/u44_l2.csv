@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u44_l2_p1,u44_l2,05.png,Matthew.png,left,left,1,1,1,________.,"Wow, I knew him as a kid!",彼は成長して有名な歌手になった。,えっ、子どものころ知ってたよ！,He grew up to be a famous singer,He|grew|up|to|be|a|famous|singer,44-2-1-a.mp3,44-2-1-b.mp3
+u44_l2_p2,u44_l2,Kevin.png,,left,none,1,,1,________.,,彼女は目覚めて、ベッドのそばにプレゼントを見つけた。,,She woke up to find a gift by her bed,She|woke|up|to|find|a|gift|by|her|bed,44-2-2-a.mp3,
+u44_l2_p3,u44_l2,user,Kevin.png,right,left,1,1,1,________.,Lucky you!,外に走り出たら、きれいな虹が見えた。,いいなあ！,I ran outside to see a beautiful rainbow,I|ran|outside|to|see|a|beautiful|rainbow,44-2-3-a.mp3,44-2-3-b.mp3
+u44_l2_p4,u44_l2,user,05.png,right,left,1,1,1,________.,He really earned it.,彼は努力して、立派なリーダーになった。,彼は本当にそれに値するね。,He worked hard to become a great leader,He|worked|hard|to|become|a|great|leader,44-2-4-a.mp3,44-2-4-b.mp3
+u44_l2_p5,u44_l2,Kevin.png,,left,none,1,,1,________.,,彼女がドアを開けると、そこには誰もいなかった。,,She opened the door to find no one there,She|opened|the|door|to|find|no|one|there,44-2-5-a.mp3,
+u44_l2_p6,u44_l2,05.png,,left,none,1,,1,________.,,その少年は成長して、世界を変えた。,,The boy grew up to change the world,The|boy|grew|up|to|change|the|world,44-2-6-a.mp3,
+u44_l2_p7,u44_l2,Matthew.png,,left,none,1,,1,________.,,振り返ると、旧友がいた。,,I turned around to see my old friend,I|turned|around|to|see|my|old|friend,44-2-7-a.mp3,

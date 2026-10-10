@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u42_l2_p1,u42_l2,05.png,user,left,right,1,1,1,________.,Thanks! Can I have this one?,好きなもの、何でも取っていいよ。,ありがと！これもらってもいい？,Take whatever you like,Take|whatever|you|like,42-2-1-a.mp3,42-2-1-b.mp3
+u42_l2_p2,u42_l2,Kevin.png,user,left,right,1,1,1,________.,Then I'll sit by the window.,どこでも好きなところに座っていいよ。,じゃあ窓際に座るね。,You can sit wherever you like,You|can|sit|wherever|you|like,42-2-2-a.mp3,42-2-2-b.mp3
+u42_l2_p3,u42_l2,Matthew.png,user,left,right,1,1,1,________.,"Okay, that's really kind of you.",助けが必要なときはいつでも電話して。,うん、やさしいね、ありがとう。,Call me whenever you need help,Call|me|whenever|you|need|help,42-2-3-a.mp3,42-2-3-b.mp3
+u42_l2_p4,u42_l2,Kevin.png,user,left,right,1,1,1,________.,"Great, I'll bring my brother!",来たい人は誰でも参加していいよ。,やった、弟も連れてくるね！,Whoever wants to come can join us,Whoever|wants|to|come|can|join|us,42-2-4-a.mp3,42-2-4-b.mp3
+u42_l2_p5,u42_l2,Matthew.png,user,left,right,1,1,1,________.,"Hmm, they both look good.",どっちでも好きなほうを選んで。,うーん、どっちも良さそう。,Pick whichever you want,Pick|whichever|you|want,42-2-5-a.mp3,42-2-5-b.mp3
+u42_l2_p6,u42_l2,Kevin.png,user,left,right,1,1,1,________.,"Okay, give me a second.",準備ができたら、いつでも始めていいよ。,うん、ちょっと待ってね。,You can start whenever you're ready,You|can|start|whenever|you're|ready,42-2-6-a.mp3,42-2-6-b.mp3
+u42_l2_p7,u42_l2,Matthew.png,,left,none,1,,1,________.,,何でも好きなもの頼んで。おごるよ。,,Order whatever you want. It's on me,Order|whatever|you|want.|It's|on|me,42-2-7-a.mp3,

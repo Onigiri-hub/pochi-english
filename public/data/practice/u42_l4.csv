@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u42_l4_p1,u42_l4,user,Kevin.png,right,left,1,1,1,________.,That means a lot to me.,何が起きても、私はそばにいるよ。,その言葉、すごく心強いよ。,"Whatever happens, I'll be there for you","Whatever|happens,|I'll|be|there|for|you",42-4-1-a.mp3,42-4-1-b.mp3
+u42_l4_p2,u42_l4,05.png,user,left,right,1,1,1,________.,You're right. I'll keep trying.,どんなに大変でも、あきらめないで。,そうだね。がんばり続けるよ。,"However hard it is, don't give up","However|hard|it|is,|don't|give|up",42-4-2-a.mp3,42-4-2-b.mp3
+u42_l4_p3,u42_l4,Matthew.png,user,left,right,1,1,1,________.,Got it.,誰が電話してきても、留守だと伝えて。,了解。,"Whoever calls, tell them I'm out","Whoever|calls,|tell|them|I'm|out",42-4-3-a.mp3,42-4-3-b.mp3
+u42_l4_p4,u42_l4,Kevin.png,user,left,right,1,1,1,________.,"Aw, that's so sweet.",あなたが行くところ、どこへでもついていくよ。,わあ、うれしい。,"Wherever you go, I'll follow you","Wherever|you|go,|I'll|follow|you",42-4-4-a.mp3,42-4-4-b.mp3
+u42_l4_p5,u42_l4,05.png,user,left,right,1,1,1,________.,"Okay, Mom.",どんなに忙しくても、ちゃんと食べてね。,わかったよ、お母さん。,"However busy you are, please eat well","However|busy|you|are,|please|eat|well",42-4-5-a.mp3,42-4-5-b.mp3
+u42_l4_p6,u42_l4,Matthew.png,user,left,right,1,1,1,________.,Thank you for trusting me.,何を決めても、応援するよ。,信じてくれてありがとう。,"Whatever you decide, I'll support you","Whatever|you|decide,|I'll|support|you",42-4-6-a.mp3,42-4-6-b.mp3
+u42_l4_p7,u42_l4,05.png,,left,none,1,,1,________.,,どんなに寒くなっても、この植物は生き延びる。,,"However cold it gets, this plant survives","However|cold|it|gets,|this|plant|survives",42-4-7-a.mp3,

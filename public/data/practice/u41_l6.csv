@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u41_l6_p1,u41_l6,user,Kevin.png,right,left,1,1,1,________.,They must love adventure.,雨だったけれど、彼らは出かけた。,冒険好きなんだね。,"Although it was raining, they went out","Although|it|was|raining,|they|went|out",41-6-1-a.mp3,41-6-1-b.mp3
+u41_l6_p2,u41_l6,05.png,,left,none,1,,1,________.,,私は紅茶が好きだが、彼はコーヒーが好きだ。,,"I like tea, whereas he likes coffee","I|like|tea,|whereas|he|likes|coffee",41-6-2-a.mp3,
+u41_l6_p3,u41_l6,05.png,Matthew.png,left,left,1,1,1,________.,He's so dedicated.,疲れていたけれど、彼は働き続けた。,本当に献身的だね。,"Though he was tired, he kept working","Though|he|was|tired,|he|kept|working",41-6-3-a.mp3,41-6-3-b.mp3
+u41_l6_p4,u41_l6,Kevin.png,user,left,right,1,1,1,________.,That's impressive.,みんなが慌てる一方で、彼女は冷静だった。,すごいね。,She stayed calm while everyone panicked,She|stayed|calm|while|everyone|panicked,41-6-4-a.mp3,41-6-4-b.mp3
+u41_l6_p5,u41_l6,Kevin.png,user,left,right,1,1,1,________.,I want to see it too.,その映画は長かったけれど、おもしろかった。,私も見たいな。,"Although the movie was long, it was fun","Although|the|movie|was|long,|it|was|fun",41-6-5-a.mp3,41-6-5-b.mp3
+u41_l6_p6,u41_l6,user,,right,none,1,,1,________.,,彼は物静かだが、弟はにぎやかだ。,,"He is quiet, whereas his brother is loud","He|is|quiet,|whereas|his|brother|is|loud",41-6-6-a.mp3,
+u41_l6_p7,u41_l6,user,,right,none,1,,1,________.,,寒かったけれど、旅行を楽しんだ。,,"Though it was cold, we enjoyed the trip","Though|it|was|cold,|we|enjoyed|the|trip",41-6-7-a.mp3,

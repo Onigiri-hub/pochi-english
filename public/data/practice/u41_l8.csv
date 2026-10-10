@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u41_l8_p1,u41_l8,Kevin.png,,left,none,1,,1,________.,,一方その頃、警察が現場に到着した。,,"Meanwhile, the police arrived at the scene","Meanwhile,|the|police|arrived|at|the|scene",41-8-1-a.mp3,
+u41_l8_p2,u41_l8,Matthew.png,05.png,left,left,1,1,1,________.,That's good news.,報告によると、先月は売上が伸びた。,いい知らせだね。,"According to the report, sales rose last month","According|to|the|report,|sales|rose|last|month",41-8-2-a.mp3,41-8-2-b.mp3
+u41_l8_p3,u41_l8,user,,right,none,1,,1,________.,,結論として、私たちは森を守るべきだ。,,"In conclusion, we should protect the forest","In|conclusion,|we|should|protect|the|forest",41-8-3-a.mp3,
+u41_l8_p4,u41_l8,Matthew.png,,left,none,1,,1,________.,,天気は良かった。一方、北部では嵐が来た。,,"The weather was fine. Meanwhile, a storm hit the north","The|weather|was|fine.|Meanwhile,|a|storm|hit|the|north",41-8-4-a.mp3,
+u41_l8_p5,u41_l8,Kevin.png,user,left,right,1,1,1,________.,That explains why he's late.,ニュースによると、電車が遅れたらしい。,だから彼は遅れてるのか。,"According to the news, the train was delayed","According|to|the|news,|the|train|was|delayed",41-8-5-a.mp3,41-8-5-b.mp3
+u41_l8_p6,u41_l8,Matthew.png,05.png,left,left,1,1,1,________.,Let's discuss it again.,要するに、その計画はもっと時間が必要だ。,また話し合おう。,"In summary, the plan needs more time","In|summary,|the|plan|needs|more|time",41-8-6-a.mp3,41-8-6-b.mp3
+u41_l8_p7,u41_l8,05.png,,left,none,1,,1,________.,,結論として、努力は成功につながる。,,"In conclusion, hard work leads to success","In|conclusion,|hard|work|leads|to|success",41-8-7-a.mp3,

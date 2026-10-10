@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u41_l2_p1,u41_l2,user,,right,none,1,,1,________.,,テストは難しかった。しかし、私は合格した。,,"The test was hard. However, I passed it","The|test|was|hard.|However,|I|passed|it",41-2-1-a.mp3,
+u41_l2_p2,u41_l2,Kevin.png,,left,none,1,,1,________.,,高かった。おまけに、すぐ壊れた。,,"It was expensive. Moreover, it broke soon","It|was|expensive.|Moreover,|it|broke|soon",41-2-2-a.mp3,
+u41_l2_p3,u41_l2,user,,right,none,1,,1,________.,,彼はたくさん練習した。だから、勝った。,,"He practiced a lot. Therefore, he won","He|practiced|a|lot.|Therefore,|he|won",41-2-3-a.mp3,
+u41_l2_p4,u41_l2,user,Matthew.png,right,left,1,1,1,________.,That's healthy!,果物が好きなんだ。たとえば、毎日りんごを食べる。,健康的だね！,"I love fruit. For example, I eat apples every day","I|love|fruit.|For|example,|I|eat|apples|every|day",41-2-4-a.mp3,41-2-4-b.mp3
+u41_l2_p5,u41_l2,Matthew.png,,left,none,1,,1,________.,,道は封鎖されてた。さらに、雨まで降り出した。,,"The road was closed. Furthermore, it started to rain","The|road|was|closed.|Furthermore,|it|started|to|rain",41-2-5-a.mp3,
+u41_l2_p6,u41_l2,Kevin.png,,left,none,1,,1,________.,,彼女は疲れていた。それでも、レースを完走した。,,"She was tired. Nevertheless, she finished the race","She|was|tired.|Nevertheless,|she|finished|the|race",41-2-6-a.mp3,
+u41_l2_p7,u41_l2,user,,right,none,1,,1,________.,,傘を忘れた。だから、濡れちゃった。,,"I forgot my umbrella. Thus, I got wet","I|forgot|my|umbrella.|Thus,|I|got|wet",41-2-7-a.mp3,

@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u42_l8_p1,u42_l8,user,Kevin.png,right,left,1,1,1,________.,Really? What a coincidence!,あなたが持ってるのと同じかばんを持ってるよ。,ほんと？偶然だね！,I have the same bag as you have,I|have|the|same|bag|as|you|have,42-8-1-a.mp3,42-8-1-b.mp3
+u42_l8_p2,u42_l8,Kevin.png,user,left,right,1,1,1,________.,We should share playlists!,彼女は私と同じ音楽が好きなんだ。,プレイリスト交換しようよ！,She likes the same music as I do,She|likes|the|same|music|as|I|do,42-8-2-a.mp3,42-8-2-b.mp3
+u42_l8_p3,u42_l8,Matthew.png,user,left,right,1,1,1,________.,"You're right, I'll be careful.",必要以上のお金を使わないで。,そうだね、気をつけるよ。,Don't spend more money than is necessary,Don't|spend|more|money|than|is|necessary,42-8-3-a.mp3,42-8-3-b.mp3
+u42_l8_p4,u42_l8,05.png,,left,none,1,,1,________.,,彼は手に入る限りの本を読んだ。,,He read as many books as were available,He|read|as|many|books|as|were|available,42-8-4-a.mp3,
+u42_l8_p5,u42_l8,05.png,Kevin.png,left,left,1,1,1,________.,"Thanks, just a little then.",必要なだけ取っていいよ。,ありがと、じゃあ少しだけ。,Take as much as you need,Take|as|much|as|you|need,42-8-5-a.mp3,42-8-5-b.mp3
+u42_l8_p6,u42_l8,Matthew.png,user,left,right,1,1,1,________.,"Oh, I remember this place!",ここ、去年行ったのと同じレストランだよ。,あ、この店覚えてる！,This is the same restaurant as we visited last year,This|is|the|same|restaurant|as|we|visited|last|year,42-8-6-a.mp3,42-8-6-b.mp3
+u42_l8_p7,u42_l8,05.png,,left,none,1,,1,________.,,必要以上の荷物を持たないで。,,Don't carry more bags than are needed,Don't|carry|more|bags|than|are|needed,42-8-7-a.mp3,

@@ -1,0 +1,29 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u45_l2_p1,u45_l2,Matthew.png,05.png,left,left,1,1,0,________.,"Good, it was dangerous before.",その橋は修理された。,よかった、前は危なかったからね。,The bridge has been repaired,The|bridge|has|been|repaired,45-2-1-a.mp3,45-2-1-b.mp3
+u45_l2_p2,u45_l2,user,Matthew.png,right,left,1,1,0,________!,Oh no! Did you call the police?,自転車が盗まれた！,ええっ！警察に電話した？,My bike has been stolen,My|bike|has|been|stolen,45-2-2-a.mp3,45-2-2-b.mp3
+u45_l2_p3,u45_l2,user,05.png,right,left,1,1,0,________.,That was thoughtful.,私たちが着く前に、部屋は掃除されていた。,気がきいてるね。,The room had been cleaned before we arrived,The|room|had|been|cleaned|before|we|arrived,45-2-3-a.mp3,45-2-3-b.mp3
+u45_l2_p4,u45_l2,Kevin.png,user,left,right,1,1,0,________.,That's why it's so worn.,この本は多くの人に読まれてきた。,だからこんなにボロボロなんだね。,This book has been read by many people,This|book|has|been|read|by|many|people,45-2-4-a.mp3,45-2-4-b.mp3
+u45_l2_p5,u45_l2,05.png,Matthew.png,left,left,1,1,0,________.,Then it should arrive soon.,その手紙は昼前に送られていた。,じゃあすぐ届くはずだね。,The letter had been sent before noon,The|letter|had|been|sent|before|noon,45-2-5-a.mp3,45-2-5-b.mp3
+u45_l2_p6,u45_l2,05.png,user,left,right,1,1,0,________.,It's a true classic.,その歌は長年愛されてきた。,まさに名曲だね。,The song has been loved for years,The|song|has|been|loved|for|years,45-2-6-a.mp3,45-2-6-b.mp3
+u45_l2_p7,u45_l2,Matthew.png,,left,none,1,,0,________.,,その窓は誰かに割られていた。,,The window had been broken by someone,The|window|had|been|broken|by|someone,45-2-7-a.mp3,
+u45_l4_p1,u45_l4,Kevin.png,user,left,right,1,1,0,________.,"Yeah, his coat is gone.",彼はもう帰ったにちがいない。,うん、コートがないもんね。,He must have left already,He|must|have|left|already,45-4-1-a.mp3,45-4-1-b.mp3
+u45_l4_p2,u45_l4,user,Matthew.png,right,left,1,1,0,________.,There's always next time.,もっと勉強すべきだったなあ。,次があるさ。,I should have studied harder,I|should|have|studied|harder,45-4-2-a.mp3,45-4-2-b.mp3
+u45_l4_p3,u45_l4,user,Kevin.png,right,left,1,1,0,________!,"Sorry, I forgot.",言ってくれてもよかったのに！,ごめん、忘れてた。,You could have told me,You|could|have|told|me,45-4-3-a.mp3,45-4-3-b.mp3
+u45_l4_p4,u45_l4,user,05.png,right,left,1,1,0,________.,Let's wait a bit longer.,彼女は電車に乗り遅れたのかもしれない。,もう少し待とう。,She may have missed the train,She|may|have|missed|the|train,45-4-4-a.mp3,45-4-4-b.mp3
+u45_l4_p5,u45_l4,Kevin.png,user,left,right,1,1,0,________.,For sure.,旅行のあと、彼らは疲れていたにちがいない。,だろうね。,They must have been tired after the trip,They|must|have|been|tired|after|the|trip,45-4-5-a.mp3,45-4-5-b.mp3
+u45_l4_p6,u45_l4,Kevin.png,user,left,right,1,1,0,________.,We all do that sometimes.,あんなに食べるんじゃなかった。,誰でもたまにあるよ。,I shouldn't have eaten so much,I|shouldn't|have|eaten|so|much,45-4-6-a.mp3,45-4-6-b.mp3
+u45_l4_p7,u45_l4,user,,right,none,1,,0,________.,,彼は私たちの予定を忘れたのかもしれない。,,He might have forgotten our plan,He|might|have|forgotten|our|plan,45-4-7-a.mp3,
+u45_l6_p1,u45_l6,05.png,Matthew.png,left,left,1,1,0,________.,"Okay, let's start now.",これは今日やらなきゃいけない。,了解、今すぐ始めよう。,This must be done today,This|must|be|done|today,45-6-1-a.mp3,45-6-1-b.mp3
+u45_l6_p2,u45_l6,Matthew.png,user,left,right,1,1,0,________.,Let's go stargazing!,今夜は星が見える。,星を見に行こう！,The stars can be seen tonight,The|stars|can|be|seen|tonight,45-6-2-a.mp3,45-6-2-b.mp3
+u45_l6_p3,u45_l6,05.png,user,left,right,1,1,0,________.,"Got it, thanks.",その用紙は黒インクで記入されるべきだ。,了解、ありがとう。,The form should be filled in black ink,The|form|should|be|filled|in|black|ink,45-6-3-a.mp3,45-6-3-b.mp3
+u45_l6_p4,u45_l6,Matthew.png,Kevin.png,left,left,1,1,0,________.,I'll be careful.,この機械は丁寧に扱われなければならない。,気をつけるよ。,This machine must be handled with care,This|machine|must|be|handled|with|care,45-6-4-a.mp3,45-6-4-b.mp3
+u45_l6_p5,u45_l6,05.png,Kevin.png,left,left,1,1,0,________.,"Oops, I'll speak quietly.",ここから君の声が聞こえるよ。,おっと、静かに話すね。,Your voice can be heard from here,Your|voice|can|be|heard|from|here,45-6-5-a.mp3,45-6-5-b.mp3
+u45_l6_p6,u45_l6,user,Kevin.png,right,left,1,1,0,________.,Of course.,ルールはみんなに守られなければならない。,もちろんだよ。,The rules must be followed by everyone,The|rules|must|be|followed|by|everyone,45-6-6-a.mp3,45-6-6-b.mp3
+u45_l6_p7,u45_l6,05.png,,left,none,1,,0,________.,,この箱は乾いた場所に保管されるべきだ。,,This box should be kept in a dry place,This|box|should|be|kept|in|a|dry|place,45-6-7-a.mp3,
+u45_l8_p1,u45_l8,Kevin.png,user,left,right,1,1,0,________.,Let's report it right away.,それは盗まれたにちがいない。,すぐ届け出よう。,It must have been stolen,It|must|have|been|stolen,45-8-1-a.mp3,45-8-1-b.mp3
+u45_l8_p2,u45_l8,05.png,Matthew.png,left,left,1,1,0,________.,I'll send it now.,その手紙は昨日送られるべきだった。,今すぐ送るよ。,The letter should have been sent yesterday,The|letter|should|have|been|sent|yesterday,45-8-2-a.mp3,45-8-2-b.mp3
+u45_l8_p3,u45_l8,Matthew.png,05.png,left,left,1,1,0,________.,"Next time, maybe.",その仕事はもっと早く終えられたはずだ。,次はね。,The work could have been done faster,The|work|could|have|been|done|faster,45-8-3-a.mp3,45-8-3-b.mp3
+u45_l8_p4,u45_l8,user,Kevin.png,right,left,1,1,0,________.,Let me check again.,そのメッセージは消されたのかもしれない。,もう一度確認するね。,The message may have been deleted,The|message|may|have|been|deleted,45-8-4-a.mp3,45-8-4-b.mp3
+u45_l8_p5,u45_l8,Kevin.png,user,left,right,1,1,0,________.,It looks really old.,この橋はずっと昔に建てられたにちがいない。,本当に古そうだね。,This bridge must have been built long ago,This|bridge|must|have|been|built|long|ago,45-8-5-a.mp3,45-8-5-b.mp3
+u45_l8_p6,u45_l8,user,Kevin.png,right,left,1,1,0,________.,I agree.,そのイベントはもっと早く知らされるべきだった。,同感だよ。,The event should have been announced earlier,The|event|should|have|been|announced|earlier,45-8-6-a.mp3,45-8-6-b.mp3
+u45_l8_p7,u45_l8,user,,right,none,1,,0,________.,,ドアは開けっ放しにされていたのかもしれない。,,The door might have been left open,The|door|might|have|been|left|open,45-8-7-a.mp3,

@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u45_l8_p1,u45_l8,Kevin.png,user,left,right,1,1,1,________.,Let's report it right away.,それは盗まれたにちがいない。,すぐ届け出よう。,It must have been stolen,It|must|have|been|stolen,45-8-1-a.mp3,45-8-1-b.mp3
+u45_l8_p2,u45_l8,05.png,Matthew.png,left,left,1,1,1,________.,I'll send it now.,その手紙は昨日送られるべきだった。,今すぐ送るよ。,The letter should have been sent yesterday,The|letter|should|have|been|sent|yesterday,45-8-2-a.mp3,45-8-2-b.mp3
+u45_l8_p3,u45_l8,Matthew.png,05.png,left,left,1,1,1,________.,"Next time, maybe.",その仕事はもっと早く終えられたはずだ。,次はね。,The work could have been done faster,The|work|could|have|been|done|faster,45-8-3-a.mp3,45-8-3-b.mp3
+u45_l8_p4,u45_l8,user,Kevin.png,right,left,1,1,1,________.,Let me check again.,そのメッセージは消されたのかもしれない。,もう一度確認するね。,The message may have been deleted,The|message|may|have|been|deleted,45-8-4-a.mp3,45-8-4-b.mp3
+u45_l8_p5,u45_l8,Kevin.png,user,left,right,1,1,1,________.,It looks really old.,この橋はずっと昔に建てられたにちがいない。,本当に古そうだね。,This bridge must have been built long ago,This|bridge|must|have|been|built|long|ago,45-8-5-a.mp3,45-8-5-b.mp3
+u45_l8_p6,u45_l8,user,Kevin.png,right,left,1,1,1,________.,I agree.,そのイベントはもっと早く知らされるべきだった。,同感だよ。,The event should have been announced earlier,The|event|should|have|been|announced|earlier,45-8-6-a.mp3,45-8-6-b.mp3
+u45_l8_p7,u45_l8,user,,right,none,1,,1,________.,,ドアは開けっ放しにされていたのかもしれない。,,The door might have been left open,The|door|might|have|been|left|open,45-8-7-a.mp3,
