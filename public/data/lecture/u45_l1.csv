@@ -1,0 +1,16 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u45_l1_p1,u45_l1,1,"このUnitでは、これまで習った部品を
+組み合わせた形を紹介するよ。",45-1-1,image_top
+u45_l1_p2,u45_l1,2,まずは受動態と完了形の組み合わせ,45-1-1,image_top
+u45_l1_p3,u45_l1,3,"I have been told the news.
+私はその知らせを聞かされた（もう聞いたよ）。",45-1-2-1,image_top
+u45_l1_p4,u45_l1,4,"「完了」と「受動態」が合わさって、
+「聞かされた、その状態が今ある」。",45-1-2-2,image_top
+u45_l1_p5,u45_l1,5,"I had been told the news before he called.
+彼が電話してくる前に、私はその知らせを聞かされていた。",45-1-2-3,image_top
+u45_l1_p6,u45_l1,6,"have been → had been にしただけ。
+「過去のあの時点で、すでに聞かされていた」。過去完了×受動態だね。",45-1-2-4,image_top
+u45_l1_p7,u45_l1,7,"I will have been told the news before he calls.
+彼が電話してくる前には、私はその知らせを聞かされているだろう。",45-1-3-1,image_top
+u45_l1_p8,u45_l1,8,未来完了×受動態の組み合わせ。でもこのパターンはほとんどお目にかからないかな。,45-1-3-2,image_top
+u45_l1_p9,u45_l1,9,複雑だけど、ゆっくり解読できればOK。,45-1-3-2,image_top

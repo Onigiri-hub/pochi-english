@@ -1,0 +1,38 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u41_l1_p1,u41_l1,1,"このUnitでは、書き言葉でよく見る
+接続語を紹介するよ。",41-1-1,image_top
+u41_l1_p2,u41_l1,2,"However, the plan failed.
+しかし、その計画は失敗した。",41-1-2-1,image_top
+u41_l1_p3,u41_l1,3,"However（しかし）みたいに、
+文の先頭にポンと置いて、カンマで区切る。",41-1-2-1,image_top
+u41_l1_p4,u41_l1,4,"ニュースや論文を読んでると、
+文の頭にこういう単語、よく出てくる。",41-1-2-2,image_top
+u41_l1_p5,u41_l1,5,こういう接続語をいくつか紹介するよ～,41-1-2-2,image_top
+u41_l1_p6,u41_l1,6,"「さらに」「加えて」
+Moreover, / Furthermore, / In addition,",41-1-3-1,image_top
+u41_l1_p7,u41_l1,7,"The price is high. Moreover, the quality is poor.
+値段が高い。おまけに、質も悪い。",41-1-3-2,image_top
+u41_l1_p8,u41_l1,8,"The plan is too expensive. Furthermore, it will take too long.
+その計画は高すぎる。さらに、時間もかかりすぎる。",41-1-4-2,image_top
+u41_l1_p9,u41_l1,9,"Solar power is clean. In addition, it can reduce long-term energy bills.
+太陽光発電はクリーンなエネルギーです。さらに、長期的に見て光熱費を削減することができます。",41-1-5-2,image_top
+u41_l1_p10,u41_l1,10,"どれも「そのうえ」って足していく感じ。
+論文っぽさが出るのはこのへん。",41-1-5-2,image_top
+u41_l1_p11,u41_l1,11,"次、逆接。「しかし」系。
+最初に出てきたHowever, とか Nevertheless,",41-1-6-1,image_top
+u41_l1_p12,u41_l1,12,"The test was difficult. However, I did my best.
+テストは難しかった。しかし私はベストを尽くした。",41-1-6-2,image_top
+u41_l1_p13,u41_l1,13,"It was raining. Nevertheless, they went out.
+雨だった。それでも、彼らは出かけた。",41-1-6-3,image_top
+u41_l1_p14,u41_l1,14,"それから結果。「だから」系。
+Therefore, / Thus, / Hence,",41-1-7-1,image_top
+u41_l1_p15,u41_l1,15,"He didn't study. Therefore, he failed.
+彼は勉強しなかった。だから、落ちた。",41-1-7-2,image_top
+u41_l1_p16,u41_l1,16,"Sales dropped sharply. Hence, the store closed.
+売上が急激に落ちた。したがって、その店は閉店した。",41-1-7-3,image_top
+u41_l1_p17,u41_l1,17,"最後、具体例。「たとえば」系。
+For example, / For instance,",41-1-8-1,image_top
+u41_l1_p18,u41_l1,18,"Many animals are endangered. For instance, pandas are at risk.
+多くの動物が絶滅の危機にある。たとえば、パンダは危険な状態だ。",41-1-8-2,image_top
+u41_l1_p19,u41_l1,19,"Some animals, for example, dolphins, are very smart.
+一部の動物、たとえばイルカは、とても賢い。",41-1-8-3,image_top

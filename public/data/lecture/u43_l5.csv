@@ -1,0 +1,37 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u43_l5_p1,u43_l5,1,"間接話法にすると、
+人称と時制のほかに、もう一つズレるものがある。",43-5-1,image_top
+u43_l5_p2,u43_l5,2,"それが「時」や「場所」を表す言葉。
+now とか today とか here とか。",43-5-1,image_top
+u43_l5_p3,u43_l5,3,"直接：He said, ""I am busy now.""",43-5-2-1,image_top
+u43_l5_p4,u43_l5,4,彼は「今、忙しい」と言った。,43-5-2-1,image_top
+u43_l5_p5,u43_l5,5,"間接：He said that he was busy then.
+彼はそのとき忙しいと言った。",43-5-2-2,image_top
+u43_l5_p6,u43_l5,6,now（今）が then（そのとき）に変わった。,43-5-2-3,image_top
+u43_l5_p7,u43_l5,7,ほかにも、,43-5-2-3,image_top
+u43_l5_p8,u43_l5,8,"today → that day（今日 → その日）
+tomorrow → the next day（明日 → その翌日）",43-5-3-1,image_top
+u43_l5_p9,u43_l5,9,yesterday → the day before（昨日 → その前日）,43-5-3-2,image_top
+u43_l5_p10,u43_l5,10,「〜前」を表す ago も、before に変わる。,43-5-3-3,image_top
+u43_l5_p11,u43_l5,11,"直接：He said, ""I saw her two days ago.""
+彼は「2日前に彼女に会った」と言った。",43-5-4-1,image_top
+u43_l5_p12,u43_l5,12,"間接：He said that he had seen her two days before.
+彼は2日前に彼女に会っていたと言った。",43-5-4-2,image_top
+u43_l5_p13,u43_l5,13,"ago と before、実は基点がちがうんだ。
+ago は「今」から数えて「〜前」。",43-5-4-3,image_top
+u43_l5_p14,u43_l5,14,"before は「そのとき」から数えて「〜前」。
+だから話法で時点がズレると、ago→before になる。",43-5-4-4,image_top
+u43_l5_p15,u43_l5,15,"this → that / these → those。
+「近く」を指す言葉が、「遠く」にズレる。",43-5-5-1,image_top
+u43_l5_p16,u43_l5,16,"She said, ""I want these cookies.""
+彼女は「この（これらの）クッキーほしい」といった。",43-5-5-2,image_top
+u43_l5_p17,u43_l5,17,"She said that she wanted those cookies.
+彼女はあのクッキーが欲しいと言った。",43-5-5-3,image_top
+u43_l5_p18,u43_l5,18,"場所もずれるよ。
+here→thereになる。",43-5-6-1,image_top
+u43_l5_p19,u43_l5,19,"He said, ""I will wait here.""
+彼は「ここで待つ」と言った。",43-5-6-2,image_top
+u43_l5_p20,u43_l5,20,"He said that he would wait there.
+彼はそこで待つと言った。",43-5-6-3,image_top
+u43_l5_p21,u43_l5,21,"ぜんぶ暗記しなくていい。
+「近く→遠くにズレる」ってイメージだけ持っておこう",43-5-6-3,image_top

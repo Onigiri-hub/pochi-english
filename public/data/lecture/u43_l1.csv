@@ -1,0 +1,23 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u43_l1_p1,u43_l1,1,"大事なルールをひとつ。
+「時制の一致」って呼ばれるやつを紹介するよ",43-1-1,image_top
+u43_l1_p2,u43_l1,2,"まずは例文から。
+I think that he is busy.（彼は忙しいと思う）",43-1-2-1,image_top
+u43_l1_p3,u43_l1,3,"これを過去にすると…
+I thought that he was busy.",43-1-2-2,image_top
+u43_l1_p4,u43_l1,4,"think が thought（過去）になったら、
+うしろの is も was につられて過去になる。",43-1-2-3,image_top
+u43_l1_p5,u43_l1,5,"「思った」時点で彼は忙しかったんだから、
+うしろも過去にそろえる。これが時制の一致。",43-1-2-4,image_top
+u43_l1_p6,u43_l1,6,"主節（前）が過去になると、
+従属節（うしろ）も過去にひきずられる、って感じ。",43-1-2-4,image_top
+u43_l1_p7,u43_l1,7,"She says that she likes tea.
+彼女は紅茶が好きだと言っている。",43-1-3-1,image_top
+u43_l1_p8,u43_l1,8,"She said that she liked tea.
+彼女は紅茶が好きだと言った。",43-1-3-2,image_top
+u43_l1_p9,u43_l1,9,"says → said になったら、
+likes も liked に。セットで過去へ。",43-1-3-3,image_top
+u43_l1_p10,u43_l1,10,"日本語だと「好きだ」のままだから、
+つい英語もそのままにしがち。ここが注意点。",43-1-3-3,image_top
+u43_l1_p11,u43_l1,11,"英語は、前が過去なら
+うしろも過去にそろえる。まずこれを覚えておいて。",43-1-3-3,image_top

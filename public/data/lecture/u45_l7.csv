@@ -1,0 +1,23 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u45_l7_p1,u45_l7,1,"最後は、ぜんぶ盛り。
+助動詞×完了×受動態。",45-7-1,image_top
+u45_l7_p2,u45_l7,2,"うわ、ややこしいって思うよね。
+でも大丈夫、部品に分ければいい。",45-7-1,image_top
+u45_l7_p3,u45_l7,3,"It must have been stolen.
+それは盗まれたにちがいない。",45-7-2-1,image_top
+u45_l7_p4,u45_l7,4,"分けてみよう。
+must（にちがいない）",45-7-2-2,image_top
+u45_l7_p5,u45_l7,5,have（完了）（～してしまった）,45-7-2-3,image_top
+u45_l7_p6,u45_l7,6,been stolen（受動態）（ぬすまれた）,45-7-2-4,image_top
+u45_l7_p7,u45_l7,7,"The letter should have been sent yesterday.
+その手紙は昨日送られるべきだった。",45-7-2-5,image_top
+u45_l7_p8,u45_l7,8,"should（すべき）＋ have（完了）＋ been sent（受動態）。
+「送られるべきだったのに（されなかった）」。",45-7-2-6,image_top
+u45_l7_p9,u45_l7,9,あれ、現在完了なのにyesterdayなの？現在完了って今の自分のことを言ってるんじゃないの？,45-7-3-1,image_top
+u45_l7_p10,u45_l7,10,そうなんだ。現在完了形だったら、「今の自分」を言っているから、yesterdayが来るのはおかしい。,45-7-3-2,image_top
+u45_l7_p11,u45_l7,11,でも、shouldの文を過去形にしようとしたとき、shouldの後ろは原形が来ないといけないから、過去形を置けない。,45-7-3-3,image_top
+u45_l7_p12,u45_l7,12,"だから時制を一個ずらして、have beenにしてるんだね。
+だから、これは現在完了の形だけど、",45-7-3-3,image_top
+u45_l7_p13,u45_l7,13,"意味は過去形になる。
+だからyesterdayと共存できるんだ。",45-7-3-4,image_top
+u45_l7_p14,u45_l7,14,複雑になるけど、落ち着いて解読していこう。慣れたらなんとかなる！,45-7-3-4,image_top
