@@ -1,0 +1,11 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u50_l2_p1,u50_l2,Kevin.png,user,left,right,1,1,1,How was the math test?,________.,数学のテスト、どうだった？,あんなの楽勝だったよ。,It was a piece of cake,It|was|a|piece|of|cake,50-2-1-a.mp3,50-2-1-b.mp3
+u50_l2_p2,u50_l2,user,Kevin.png,right,left,1,1,1,Sorry I broke your pencil.,________.,鉛筆折っちゃってごめん。,気にしないで、大したことないよ。,"Don't worry, it's no big deal","Don't|worry,|it's|no|big|deal",50-2-2-a.mp3,50-2-2-b.mp3
+u50_l2_p3,u50_l2,Matthew.png,user,left,right,1,1,1,Just get up earlier every morning.,________.,毎朝もっと早く起きればいいんだよ。,言うのは簡単だけどね。,That's easier said than done,That's|easier|said|than|done,50-2-3-a.mp3,50-2-3-b.mp3
+u50_l2_p4,u50_l2,Kevin.png,user,left,right,1,1,1,I can't set up this game.,________.,このゲームの設定ができないよ。,そんな難しいことじゃないって。,"Come on, it's not rocket science","Come|on,|it's|not|rocket|science",50-2-4-a.mp3,50-2-4-b.mp3
+u50_l2_p5,u50_l2,05.png,Matthew.png,left,left,1,1,1,________.,I'll help you fill it out.,この書類、面倒くさいなあ。,記入するの、手伝うよ。,This form is a pain in the neck,This|form|is|a|pain|in|the|neck,50-2-5-a.mp3,50-2-5-b.mp3
+u50_l2_p6,u50_l2,Kevin.png,user,left,right,1,1,1,Who were you texting just now?,________.,今だれとメッセージしてたの？,あなたには関係ないでしょ。,That's none of your business,That's|none|of|your|business,50-2-6-a.mp3,50-2-6-b.mp3
+u50_l2_p7,u50_l2,user,Matthew.png,right,left,1,1,1,Should we get pizza or burgers?,________.,ピザとハンバーガー、どっちにする？,君が決めていいよ。,It's up to you,It's|up|to|you,50-2-7-a.mp3,50-2-7-b.mp3
+u50_l2_p8,u50_l2,Kevin.png,user,left,right,1,1,1,I'm not coming to the party.,________.,パーティーには行かないから。,はいはい、好きにして。,"Fine, suit yourself","Fine,|suit|yourself",50-2-8-a.mp3,50-2-8-b.mp3
+u50_l2_p9,u50_l2,Kevin.png,user,left,right,1,1,1,Let's jump into the cold lake!,________.,冷たい湖に飛び込もうぜ！,絶対やだ、やらないよ。,"No way, I'm not doing that","No|way,|I'm|not|doing|that",50-2-9-a.mp3,50-2-9-b.mp3
+u50_l2_p10,u50_l2,Matthew.png,05.png,left,left,1,1,1,________.,"Okay, I'll take them.",2つで10ドル。嫌ならいいよ。,わかりました、買います。,Ten dollars for both. Take it or leave it,Ten|dollars|for|both.|Take|it|or|leave|it,50-2-10-a.mp3,50-2-10-b.mp3

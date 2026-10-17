@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u49_l4_p1,u49_l4,05.png,,left,none,1,,1,________.,,こんな美しい景色は、一度も見たことがない。,,Never have I seen such a beautiful view,Never|have|I|seen|such|a|beautiful|view,49-4-1-a.mp3,
+u49_l4_p2,u49_l4,Matthew.png,,left,none,1,,1,________.,,何が起こるか、私は少しも知らなかった。,,Little did I know what was coming,Little|did|I|know|what|was|coming,49-4-2-a.mp3,
+u49_l4_p3,u49_l4,user,,right,none,1,,1,________.,,この日を、決して忘れないよ。,,Never will I forget this day,Never|will|I|forget|this|day,49-4-3-a.mp3,
+u49_l4_p4,u49_l4,05.png,,left,none,1,,1,________.,,座ったとたんに、電話が鳴った。,,Hardly had I sat down when the phone rang,Hardly|had|I|sat|down|when|the|phone|rang,49-4-4-a.mp3,
+u49_l4_p5,u49_l4,user,,right,none,1,,1,________.,,こんなに幸せを感じたことはない。,,Never have I felt so happy,Never|have|I|felt|so|happy,49-4-5-a.mp3,
+u49_l4_p6,u49_l4,Kevin.png,,left,none,1,,1,________.,,彼女はそんなサプライズを少しも予想してなかった。,,Little did she expect such a surprise,Little|did|she|expect|such|a|surprise,49-4-6-a.mp3,
+u49_l4_p7,u49_l4,Matthew.png,,left,none,1,,1,________.,,こんなことが起こるとは想像もしなかった。,,Never had I imagined this would happen,Never|had|I|imagined|this|would|happen,49-4-7-a.mp3,

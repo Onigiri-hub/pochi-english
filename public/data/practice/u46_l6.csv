@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u46_l6_p1,u46_l6,user,05.png,right,left,1,1,1,________.,I'm glad I could help.,君の助けがなかったら、失敗していた。,力になれてよかった。,"Without your help, I would have failed","Without|your|help,|I|would|have|failed",46-6-1-a.mp3,46-6-1-b.mp3
+u46_l6_p2,u46_l6,05.png,user,left,right,1,1,1,________.,It's that important.,水がなかったら、生きられない。,それくらい大事なんだね。,"Without water, we could not live","Without|water,|we|could|not|live",46-6-2-a.mp3,46-6-2-b.mp3
+u46_l6_p3,u46_l6,Matthew.png,user,left,right,1,1,1,________.,Good thing we had it.,地図がなかったら、道に迷っていた。,持っててよかったね。,"Without the map, we would have gotten lost","Without|the|map,|we|would|have|gotten|lost",46-6-3-a.mp3,46-6-3-b.mp3
+u46_l6_p4,u46_l6,user,,right,none,1,,1,________.,,君の助言がなかったら、やめていた。,,"But for your advice, I would have quit","But|for|your|advice,|I|would|have|quit",46-6-4-a.mp3,
+u46_l6_p5,u46_l6,Kevin.png,user,left,right,1,1,1,________.,I totally agree.,音楽がなかったら、人生は退屈だろうな。,まったく同感だよ。,"Without music, life would be boring","Without|music,|life|would|be|boring",46-6-5-a.mp3,46-6-5-b.mp3
+u46_l6_p6,u46_l6,user,Kevin.png,right,left,1,1,1,________.,She's his biggest fan.,彼女の支えがなかったら、彼は勝てなかった。,彼女は一番のファンだね。,"Without her support, he couldn't have won","Without|her|support,|he|couldn't|have|won",46-6-6-a.mp3,46-6-6-b.mp3
+u46_l6_p7,u46_l6,05.png,,left,none,1,,1,________.,,あの嵐がなかったら、旅行は完璧だったのに。,,"But for the storm, the trip would have been perfect","But|for|the|storm,|the|trip|would|have|been|perfect",46-6-7-a.mp3,

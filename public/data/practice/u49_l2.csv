@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u49_l2_p1,u49_l2,Kevin.png,user,left,right,1,1,1,________.,Really? I thought it was Mike.,窓を割ったのは、ジョンだ。,ほんと？マイクだと思ってた。,It was John that broke the window,It|was|John|that|broke|the|window,49-2-1-a.mp3,49-2-1-b.mp3
+u49_l2_p2,u49_l2,user,Kevin.png,right,left,1,1,1,________.,"Oh right, at the cafe.",私たちが出会ったのは、去年だ。,そうだ、あのカフェでね。,It was last year that we met,It|was|last|year|that|we|met,49-2-2-a.mp3,49-2-2-b.mp3
+u49_l2_p3,u49_l2,Matthew.png,05.png,left,left,1,1,1,________.,"Aw, I love you too.",私が愛してるのは、君なんだ。,うれしい、私もだよ。,It is you that I love,It|is|you|that|I|love,49-2-3-a.mp3,49-2-3-b.mp3
+u49_l2_p4,u49_l2,05.png,user,left,right,1,1,1,________.,How romantic!,彼らが結婚したのは、パリでだった。,ロマンチックだね！,It was in Paris that they got married,It|was|in|Paris|that|they|got|married,49-2-4-a.mp3,49-2-4-b.mp3
+u49_l2_p5,u49_l2,Kevin.png,user,left,right,1,1,1,________.,That's beautiful.,私を救ったのは、音楽だった。,すてきだね。,It was music that saved me,It|was|music|that|saved|me,49-2-5-a.mp3,49-2-5-b.mp3
+u49_l2_p6,u49_l2,Matthew.png,05.png,left,left,1,1,1,________.,That's so sweet.,私がいちばん覚えてるのは、君の笑顔だ。,うれしいこと言うね。,It is your smile that I remember most,It|is|your|smile|that|I|remember|most,49-2-6-a.mp3,49-2-6-b.mp3
+u49_l2_p7,u49_l2,05.png,,left,none,1,,1,________.,,私の人生を変えたのは、この本だった。,,It was this book that changed my life,It|was|this|book|that|changed|my|life,49-2-7-a.mp3,

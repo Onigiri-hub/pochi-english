@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u48_l2_p1,u48_l2,05.png,Matthew.png,left,left,1,1,1,________.,Did you answer it?,出かけようとしたとき、電話が鳴った。,出たの？,"As I was leaving, the phone rang","As|I|was|leaving,|the|phone|rang",48-2-1-a.mp3,48-2-1-b.mp3
+u48_l2_p2,u48_l2,user,Kevin.png,right,left,1,1,1,________.,"A cozy day inside, then.",雨だったので、家にいた。,じゃあ、おうちでのんびりだね。,"As it was raining, we stayed home","As|it|was|raining,|we|stayed|home",48-2-2-a.mp3,48-2-2-b.mp3
+u48_l2_p3,u48_l2,05.png,Matthew.png,left,left,1,1,1,________.,That happens to us all.,年をとるにつれて、彼は賢くなった。,誰にでもあることだね。,"As he grew older, he got wiser","As|he|grew|older,|he|got|wiser",48-2-3-a.mp3,48-2-3-b.mp3
+u48_l2_p4,u48_l2,Matthew.png,user,left,right,1,1,1,________.,"Ha, that's a funny rule.",私がするようにじゃなく、言うようにやって。,はは、面白いルールだね。,"Do as I say, not as I do","Do|as|I|say,|not|as|I|do",48-2-4-a.mp3,48-2-4-b.mp3
+u48_l2_p5,u48_l2,05.png,user,left,right,1,1,1,________.,"Oh right, it's a holiday.",知っての通り、今日は店が休みだよ。,そうだ、祝日だね。,"As you know, the shop is closed today","As|you|know,|the|shop|is|closed|today",48-2-5-a.mp3,48-2-5-b.mp3
+u48_l2_p6,u48_l2,user,,right,none,1,,1,________.,,日が沈むにつれて、空が赤くなった。,,"As the sun set, the sky turned red","As|the|sun|set,|the|sky|turned|red",48-2-6-a.mp3,
+u48_l2_p7,u48_l2,user,,right,none,1,,1,________.,,疲れていたので、早く寝た。,,"As I was tired, I went to bed early","As|I|was|tired,|I|went|to|bed|early",48-2-7-a.mp3,

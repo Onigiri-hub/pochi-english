@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u47_l4_p1,u47_l4,05.png,,left,none,1,,1,________.,,やさしい英語で書かれているので、この本は人気だ。,,"Written in easy English, this book is popular","Written|in|easy|English,|this|book|is|popular",47-4-1-a.mp3,
+u47_l4_p2,u47_l4,user,,right,none,1,,1,________.,,空から見ると、その島はハートの形に見える。,,"Seen from the sky, the island looks like a heart","Seen|from|the|sky,|the|island|looks|like|a|heart",47-4-2-a.mp3,
+u47_l4_p3,u47_l4,05.png,,left,none,1,,1,________.,,山に囲まれているので、その町はとても静かだ。,,"Surrounded by mountains, the town is very quiet","Surrounded|by|mountains,|the|town|is|very|quiet",47-4-3-a.mp3,
+u47_l4_p4,u47_l4,Matthew.png,,left,none,1,,1,________.,,日本製なので、この時計はとても信頼できる。,,"Made in Japan, this watch is very reliable","Made|in|Japan,|this|watch|is|very|reliable",47-4-4-a.mp3,
+u47_l4_p5,u47_l4,user,,right,none,1,,1,________.,,旅で疲れていたので、彼女はすぐ眠りについた。,,"Tired from the trip, she fell asleep quickly","Tired|from|the|trip,|she|fell|asleep|quickly",47-4-5-a.mp3,
+u47_l4_p6,u47_l4,05.png,,left,none,1,,1,________.,,ずっと昔に建てられたのに、その城はまだ立っている。,,"Built long ago, the castle still stands","Built|long|ago,|the|castle|still|stands",47-4-6-a.mp3,
+u47_l4_p7,u47_l4,Kevin.png,,left,none,1,,1,________.,,試合に興奮して、ファンは大声で叫んだ。,,"Excited by the game, the fans shouted loudly","Excited|by|the|game,|the|fans|shouted|loudly",47-4-7-a.mp3,

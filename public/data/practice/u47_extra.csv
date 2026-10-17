@@ -1,0 +1,29 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u47_l2_p1,u47_l2,Matthew.png,,left,none,1,,0,________.,,通りを歩いていると、旧友を見かけた。,,"Walking down the street, I saw an old friend","Walking|down|the|street,|I|saw|an|old|friend",47-2-1-a.mp3,
+u47_l2_p2,u47_l2,user,,right,none,1,,0,________.,,疲れていたので、早く寝た。,,"Feeling tired, I went to bed early","Feeling|tired,|I|went|to|bed|early",47-2-2-a.mp3,
+u47_l2_p3,u47_l2,Kevin.png,,left,none,1,,0,________.,,にっこり笑いながら、彼女は手を振った。,,"Smiling brightly, she waved at me","Smiling|brightly,|she|waved|at|me",47-2-3-a.mp3,
+u47_l2_p4,u47_l2,05.png,,left,none,1,,0,________.,,箱を開けると、彼は手紙を見つけた。,,"Opening the box, he found a letter","Opening|the|box,|he|found|a|letter",47-2-4-a.mp3,
+u47_l2_p5,u47_l2,Kevin.png,,left,none,1,,0,________.,,駅まで走って、電車に間に合った。,,"Running to the station, I caught the train","Running|to|the|station,|I|caught|the|train",47-2-5-a.mp3,
+u47_l2_p6,u47_l2,user,,right,none,1,,0,________.,,答えがわからなかったので、彼女は黙っていた。,,"Not knowing the answer, she stayed quiet","Not|knowing|the|answer,|she|stayed|quiet",47-2-6-a.mp3,
+u47_l2_p7,u47_l2,Matthew.png,,left,none,1,,0,________.,,その知らせを聞いて、彼らは歓声をあげた。,,"Hearing the news, they cheered","Hearing|the|news,|they|cheered",47-2-7-a.mp3,
+u47_l4_p1,u47_l4,05.png,,left,none,1,,0,________.,,やさしい英語で書かれているので、この本は人気だ。,,"Written in easy English, this book is popular","Written|in|easy|English,|this|book|is|popular",47-4-1-a.mp3,
+u47_l4_p2,u47_l4,user,,right,none,1,,0,________.,,空から見ると、その島はハートの形に見える。,,"Seen from the sky, the island looks like a heart","Seen|from|the|sky,|the|island|looks|like|a|heart",47-4-2-a.mp3,
+u47_l4_p3,u47_l4,05.png,,left,none,1,,0,________.,,山に囲まれているので、その町はとても静かだ。,,"Surrounded by mountains, the town is very quiet","Surrounded|by|mountains,|the|town|is|very|quiet",47-4-3-a.mp3,
+u47_l4_p4,u47_l4,Matthew.png,,left,none,1,,0,________.,,日本製なので、この時計はとても信頼できる。,,"Made in Japan, this watch is very reliable","Made|in|Japan,|this|watch|is|very|reliable",47-4-4-a.mp3,
+u47_l4_p5,u47_l4,user,,right,none,1,,0,________.,,旅で疲れていたので、彼女はすぐ眠りについた。,,"Tired from the trip, she fell asleep quickly","Tired|from|the|trip,|she|fell|asleep|quickly",47-4-5-a.mp3,
+u47_l4_p6,u47_l4,05.png,,left,none,1,,0,________.,,ずっと昔に建てられたのに、その城はまだ立っている。,,"Built long ago, the castle still stands","Built|long|ago,|the|castle|still|stands",47-4-6-a.mp3,
+u47_l4_p7,u47_l4,Kevin.png,,left,none,1,,0,________.,,試合に興奮して、ファンは大声で叫んだ。,,"Excited by the game, the fans shouted loudly","Excited|by|the|game,|the|fans|shouted|loudly",47-4-7-a.mp3,
+u47_l6_p1,u47_l6,Kevin.png,,left,none,1,,0,________.,,宿題を終えてから、私は出かけた。,,"Having finished my homework, I went out","Having|finished|my|homework,|I|went|out",47-6-1-a.mp3,
+u47_l6_p2,u47_l6,user,,right,none,1,,0,________.,,日本に住んでいたので、彼は日本語がうまい。,,"Having lived in Japan, he speaks Japanese well","Having|lived|in|Japan,|he|speaks|Japanese|well",47-6-2-a.mp3,
+u47_l6_p3,u47_l6,user,,right,none,1,,0,________.,,その本を読んでから、彼女は映画を見た。,,"Having read the book, she watched the movie","Having|read|the|book,|she|watched|the|movie",47-6-3-a.mp3,
+u47_l6_p4,u47_l6,Kevin.png,,left,none,1,,0,________.,,バスに乗り遅れたので、私は歩いて帰った。,,"Having missed the bus, I walked home","Having|missed|the|bus,|I|walked|home",47-6-4-a.mp3,
+u47_l6_p5,u47_l6,user,,right,none,1,,0,________.,,前に見たことがあったので、結末を知っていた。,,"Having seen it before, I knew the ending","Having|seen|it|before,|I|knew|the|ending",47-6-5-a.mp3,
+u47_l6_p6,u47_l6,05.png,,left,none,1,,0,________.,,十分に貯金したので、彼らは家を買った。,,"Having saved enough, they bought a house","Having|saved|enough,|they|bought|a|house",47-6-6-a.mp3,
+u47_l6_p7,u47_l6,Matthew.png,,left,none,1,,0,________.,,食べすぎたので、彼は眠くなった。,,"Having eaten too much, he felt sleepy","Having|eaten|too|much,|he|felt|sleepy",47-6-7-a.mp3,
+u47_l8_p1,u47_l8,user,Kevin.png,right,left,1,1,0,________.,Mine sure is!,一般的に言って、犬は人なつっこい。,うちのはまさにそうだよ！,"Generally speaking, dogs are friendly","Generally|speaking,|dogs|are|friendly",47-8-1-a.mp3,47-8-1-b.mp3
+u47_l8_p2,u47_l8,Kevin.png,user,left,right,1,1,0,________.,Let's give him space.,彼の顔から判断すると、怒っている。,そっとしておこう。,"Judging from his face, he's angry","Judging|from|his|face,|he's|angry",47-8-2-a.mp3,47-8-2-b.mp3
+u47_l8_p3,u47_l8,user,Kevin.png,right,left,1,1,0,________?,"Not yet, is it good?",映画といえば、あの新作見た？,まだ、おもしろい？,"Speaking of movies, did you see that new one","Speaking|of|movies,|did|you|see|that|new|one",47-8-3-a.mp3,47-8-3-b.mp3
+u47_l8_p4,u47_l8,05.png,Matthew.png,left,left,1,1,0,________.,He's amazing.,年齢を考えると、彼はとても活発だ。,すごいよね。,"Considering his age, he's very active","Considering|his|age,|he's|very|active",47-8-4-a.mp3,47-8-4-b.mp3
+u47_l8_p5,u47_l8,Matthew.png,05.png,left,left,1,1,0,________.,"Okay, tell me why.",率直に言って、この計画は好きじゃない。,わかった、理由を教えて。,"Frankly speaking, I don't like this plan","Frankly|speaking,|I|don't|like|this|plan",47-8-5-a.mp3,47-8-5-b.mp3
+u47_l8_p6,u47_l8,user,Matthew.png,right,left,1,1,0,________.,Let's bring umbrellas.,空模様から判断すると、もうすぐ雨だ。,傘を持っていこう。,"Judging from the sky, it will rain soon","Judging|from|the|sky,|it|will|rain|soon",47-8-6-a.mp3,47-8-6-b.mp3
+u47_l8_p7,u47_l8,Kevin.png,,left,none,1,,0,________.,,食べ物といえば、お腹がすいてきた。,,"Speaking of food, I'm getting hungry","Speaking|of|food,|I'm|getting|hungry",47-8-7-a.mp3,

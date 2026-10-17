@@ -1,0 +1,44 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u50_l2_p1,u50_l2,Kevin.png,user,left,right,1,1,0,How was the math test?,________.,数学のテスト、どうだった？,あんなの楽勝だったよ。,It was a piece of cake,It|was|a|piece|of|cake,50-2-1-a.mp3,50-2-1-b.mp3
+u50_l2_p2,u50_l2,user,Kevin.png,right,left,1,1,0,Sorry I broke your pencil.,________.,鉛筆折っちゃってごめん。,気にしないで、大したことないよ。,"Don't worry, it's no big deal","Don't|worry,|it's|no|big|deal",50-2-2-a.mp3,50-2-2-b.mp3
+u50_l2_p3,u50_l2,Matthew.png,user,left,right,1,1,0,Just get up earlier every morning.,________.,毎朝もっと早く起きればいいんだよ。,言うのは簡単だけどね。,That's easier said than done,That's|easier|said|than|done,50-2-3-a.mp3,50-2-3-b.mp3
+u50_l2_p4,u50_l2,Kevin.png,user,left,right,1,1,0,I can't set up this game.,________.,このゲームの設定ができないよ。,そんな難しいことじゃないって。,"Come on, it's not rocket science","Come|on,|it's|not|rocket|science",50-2-4-a.mp3,50-2-4-b.mp3
+u50_l2_p5,u50_l2,05.png,Matthew.png,left,left,1,1,0,________.,I'll help you fill it out.,この書類、面倒くさいなあ。,記入するの、手伝うよ。,This form is a pain in the neck,This|form|is|a|pain|in|the|neck,50-2-5-a.mp3,50-2-5-b.mp3
+u50_l2_p6,u50_l2,Kevin.png,user,left,right,1,1,0,Who were you texting just now?,________.,今だれとメッセージしてたの？,あなたには関係ないでしょ。,That's none of your business,That's|none|of|your|business,50-2-6-a.mp3,50-2-6-b.mp3
+u50_l2_p7,u50_l2,user,Matthew.png,right,left,1,1,0,Should we get pizza or burgers?,________.,ピザとハンバーガー、どっちにする？,君が決めていいよ。,It's up to you,It's|up|to|you,50-2-7-a.mp3,50-2-7-b.mp3
+u50_l2_p8,u50_l2,Kevin.png,user,left,right,1,1,0,I'm not coming to the party.,________.,パーティーには行かないから。,はいはい、好きにして。,"Fine, suit yourself","Fine,|suit|yourself",50-2-8-a.mp3,50-2-8-b.mp3
+u50_l2_p9,u50_l2,Kevin.png,user,left,right,1,1,0,Let's jump into the cold lake!,________.,冷たい湖に飛び込もうぜ！,絶対やだ、やらないよ。,"No way, I'm not doing that","No|way,|I'm|not|doing|that",50-2-9-a.mp3,50-2-9-b.mp3
+u50_l2_p10,u50_l2,Matthew.png,05.png,left,left,1,1,0,________.,"Okay, I'll take them.",2つで10ドル。嫌ならいいよ。,わかりました、買います。,Ten dollars for both. Take it or leave it,Ten|dollars|for|both.|Take|it|or|leave|it,50-2-10-a.mp3,50-2-10-b.mp3
+u50_l3_p1,u50_l3,user,05.png,right,left,1,1,0,I'm so nervous about the interview.,________.,面接、すごく緊張する。,落ち着いて、大丈夫よ。,"Take it easy, you'll be fine","Take|it|easy,|you'll|be|fine",50-3-1-a.mp3,50-3-1-b.mp3
+u50_l3_p2,u50_l3,Kevin.png,Matthew.png,left,left,1,1,0,This run is killing me.,________.,このランニング、もう死にそう。,もうちょっとだ、踏ん張れ。,"Hang in there, it's almost over","Hang|in|there,|it's|almost|over",50-3-2-a.mp3,50-3-2-b.mp3
+u50_l3_p3,u50_l3,Kevin.png,user,left,right,1,1,0,"Oops, I spilled some juice.",________.,うわ、ジュースこぼしちゃった。,気にしないで、タオル持ってくるね。,"No worries, I'll get a towel","No|worries,|I'll|get|a|towel",50-3-3-a.mp3,50-3-3-b.mp3
+u50_l3_p4,u50_l3,user,05.png,right,left,1,1,0,I forgot my lines on stage.,________.,舞台でセリフ忘れちゃった。,落ち込まないで、よくあることよ。,"Don't feel bad, it happens","Don't|feel|bad,|it|happens",50-3-4-a.mp3,50-3-4-b.mp3
+u50_l3_p5,u50_l3,Kevin.png,user,left,right,1,1,0,We lost the game again.,________.,また試合に負けちゃった。,元気出して、明日があるよ。,"Cheer up, tomorrow's a new day","Cheer|up,|tomorrow's|a|new|day",50-3-5-a.mp3,50-3-5-b.mp3
+u50_l3_p6,u50_l3,user,Matthew.png,right,left,1,1,0,My piano recital starts soon.,________!,もうすぐピアノの発表会が始まる。,本番、頑張れよ！,Break a leg out there,Break|a|leg|out|there,50-3-6-a.mp3,50-3-6-b.mp3
+u50_l3_p7,u50_l3,05.png,Kevin.png,left,left,1,1,0,Can you bring two more chairs?,________!,椅子をあと2つ持ってきてくれる？,了解です！,You got it,You|got|it,50-3-7-a.mp3,50-3-7-b.mp3
+u50_l3_p8,u50_l3,user,Kevin.png,right,left,1,1,0,I can't go. I have too much homework.,________.,行けないや。宿題が多すぎて。,まあ仕方ないね、また今度。,"Fair enough, maybe next time","Fair|enough,|maybe|next|time",50-3-8-a.mp3,50-3-8-b.mp3
+u50_l3_p9,u50_l3,05.png,user,left,right,1,1,0,The bottle broke because water expands when it freezes.,________.,水は凍ると膨らむから、ボトルが割れたのよ。,ああ、なるほど。,"Oh, that makes sense","Oh,|that|makes|sense",50-3-9-a.mp3,50-3-9-b.mp3
+u50_l3_p10,u50_l3,Kevin.png,user,left,right,1,1,0,I studied all night and still failed.,________.,徹夜で勉強したのに落ちた。,わかるよ、それはつらいね。,"I feel you, that's rough","I|feel|you,|that's|rough",50-3-10-a.mp3,50-3-10-b.mp3
+u50_l3_p11,u50_l3,user,Kevin.png,right,left,1,1,0,"We should bring umbrellas, just in case.",________.,念のため傘を持っていったほうがいいよ。,たしかに、それは考えてなかった。,"Good point, I didn't think of that","Good|point,|I|didn't|think|of|that",50-3-11-a.mp3,50-3-11-b.mp3
+u50_l3_p12,u50_l3,Matthew.png,05.png,left,left,1,1,0,It's so hot today.,________!,今日はほんとに暑いな。,ほんとそれ！,You can say that again,You|can|say|that|again,50-3-12-a.mp3,50-3-12-b.mp3
+u50_l4_p1,u50_l4,05.png,Matthew.png,left,left,1,1,0,________.,What a nice surprise!,昔の友達から突然電話がきたの。,うれしい驚きだね！,My old friend called me out of the blue,My|old|friend|called|me|out|of|the|blue,50-4-1-a.mp3,50-4-1-b.mp3
+u50_l4_p2,u50_l4,Kevin.png,user,left,right,1,1,0,Our plan didn't work.,________.,作戦、うまくいかなかったね。,やれやれ、振り出しに戻ったね。,"Well, back to square one","Well,|back|to|square|one",50-4-2-a.mp3,50-4-2-b.mp3
+u50_l4_p3,u50_l4,user,Kevin.png,right,left,1,1,0,Do you still see your cousins?,________.,今もいとこたちと会ってる？,うん、たまに会うよ。,"Yeah, we meet once in a while","Yeah,|we|meet|once|in|a|while",50-4-3-a.mp3,50-4-3-b.mp3
+u50_l4_p4,u50_l4,Matthew.png,user,left,right,1,1,0,It's raining hard now.,________.,雨が強くなってきたな。,やっぱり、家にいようか。,"On second thought, let's stay home","On|second|thought,|let's|stay|home",50-4-4-a.mp3,50-4-4-b.mp3
+u50_l4_p5,u50_l4,user,Matthew.png,right,left,1,1,0,Should I tell Mom about the broken vase?,________.,割れた花瓶のこと、お母さんに言うべき？,ああ。遅かれ早かれわかるからな。,Yes. She'll find out sooner or later,Yes.|She'll|find|out|sooner|or|later,50-4-5-a.mp3,50-4-5-b.mp3
+u50_l4_p6,u50_l4,05.png,Matthew.png,left,left,1,1,0,Is the old laptop still okay?,________.,古いノートパソコン、まだ大丈夫？,当分はこれで大丈夫だよ。,It'll do for the time being,It'll|do|for|the|time|being,50-4-6-a.mp3,50-4-6-b.mp3
+u50_l4_p7,u50_l4,05.png,user,left,right,1,1,0,You look so tired.,________.,すごく疲れてるみたいね。,へとへと。もう寝るよ。,I'm beat. Time to hit the sack,I'm|beat.|Time|to|hit|the|sack,50-4-7-a.mp3,50-4-7-b.mp3
+u50_l4_p8,u50_l4,user,05.png,right,left,1,1,0,I can't think anymore.,________.,もう頭が働かないです。,じゃあ、今日はここまでにしましょう。,"Okay, let's call it a day","Okay,|let's|call|it|a|day",50-4-8-a.mp3,50-4-8-b.mp3
+u50_l4_p9,u50_l4,Kevin.png,user,left,right,1,1,0,________?,"Sure, I'm starving!",放課後、軽く何か食べない？,いいね、お腹ぺこぺこ！,Wanna grab a bite after school,Wanna|grab|a|bite|after|school,50-4-9-a.mp3,50-4-9-b.mp3
+u50_l4_p10,u50_l4,Matthew.png,user,left,right,1,1,0,________?,"Sure, no problem.",この箱、ちょっと手伝ってくれる？,うん、いいよ。,Can you give me a hand with these boxes,Can|you|give|me|a|hand|with|these|boxes,50-4-10-a.mp3,50-4-10-b.mp3
+u50_l4_p11,u50_l4,user,Kevin.png,right,left,1,1,0,________.,Sounds good! Where should we go?,今週末、遊ぼうよ。,いいね！どこ行く？,Let's hang out this weekend,Let's|hang|out|this|weekend,50-4-11-a.mp3,50-4-11-b.mp3
+u50_l4_p12,u50_l4,user,Kevin.png,right,left,1,1,0,"Hmm, the red one or the blue one?",________.,うーん、赤いのか青いのか…。,もう、決めてよ。,"Come on, make up your mind","Come|on,|make|up|your|mind",50-4-12-a.mp3,50-4-12-b.mp3
+u50_l5_p1,u50_l5,user,Kevin.png,right,left,1,1,0,Why did Tom leave the stage?,________.,トム、なんでステージから降りちゃったの？,スピーチの前に怖気づいたんだ。,He got cold feet before the speech,He|got|cold|feet|before|the|speech,50-5-1-a.mp3,50-5-1-b.mp3
+u50_l5_p2,u50_l5,Matthew.png,05.png,left,left,1,1,0,It's raining again today.,________.,今日もまた雨だな。,この天気にはうんざりよ。,I'm fed up with this weather,I'm|fed|up|with|this|weather,50-5-2-a.mp3,50-5-2-b.mp3
+u50_l5_p3,u50_l5,Kevin.png,user,left,right,1,1,0,What happened when the lights went out?,________.,停電したとき、どうなったの？,めっちゃパニクったよ。,I totally freaked out,I|totally|freaked|out,50-5-3-a.mp3,50-5-3-b.mp3
+u50_l5_p4,u50_l5,user,Kevin.png,right,left,1,1,0,Stop laughing at me!,________.,笑わないでよ！,ごめん、つい、なんだ。,"Sorry, I can't help it","Sorry,|I|can't|help|it",50-5-4-a.mp3,50-5-4-b.mp3
+u50_l5_p5,u50_l5,Kevin.png,user,left,right,1,1,0,Ms. Green didn't give us any homework!,________.,グリーン先生、宿題出さなかった！,今日は機嫌がいいんだね。,She's in a good mood today,She's|in|a|good|mood|today,50-5-5-a.mp3,50-5-5-b.mp3
+u50_l5_p6,u50_l5,user,05.png,right,left,1,1,0,________.,That's normal before a big test.,緊張でそわそわする。,大事なテストの前はみんなそうよ。,I have butterflies in my stomach,I|have|butterflies|in|my|stomach,50-5-6-a.mp3,50-5-6-b.mp3
+u50_l5_p7,u50_l5,Kevin.png,user,left,right,1,1,0,This bottle of water costs ten dollars.,________!,この水、1本10ドルだって。,ぼったくりだ！,What a rip-off,What|a|rip-off,50-5-7-a.mp3,50-5-7-b.mp3
+u50_l5_p8,u50_l5,05.png,Matthew.png,left,left,1,1,0,Nice car! Was it expensive?,________.,いい車ね！高かった？,めちゃくちゃ高かったよ。,It cost an arm and a leg,It|cost|an|arm|and|a|leg,50-5-8-a.mp3,50-5-8-b.mp3
+u50_l5_p9,u50_l5,user,Kevin.png,right,left,1,1,0,How was the concert?,________.,コンサート、どうだった？,高かったけど、行く価値はあったよ。,"It was expensive, but worth it","It|was|expensive,|but|worth|it",50-5-9-a.mp3,50-5-9-b.mp3

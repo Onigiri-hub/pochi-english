@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u48_l4_p1,u48_l4,05.png,Matthew.png,left,left,1,1,1,________.,That's a great job.,私は教師として働いている。,すてきな仕事だね。,I work as a teacher,I|work|as|a|teacher,48-4-1-a.mp3,48-4-1-b.mp3
+u48_l4_p2,u48_l4,05.png,user,left,right,1,1,1,________.,I've heard of him!,彼は偉大な芸術家として知られている。,聞いたことある！,He is known as a great artist,He|is|known|as|a|great|artist,48-4-2-a.mp3,48-4-2-b.mp3
+u48_l4_p3,u48_l4,Kevin.png,user,left,right,1,1,1,________.,Really? You look the same.,彼女は私と同じくらい背が高い。,ほんと？同じに見えるよ。,She is as tall as me,She|is|as|tall|as|me,48-4-3-a.mp3,48-4-3-b.mp3
+u48_l4_p4,u48_l4,user,05.png,right,left,1,1,1,________.,See? You can do it.,これは思ったほど難しくない。,でしょ？君ならできるよ。,This isn't as hard as I thought,This|isn't|as|hard|as|I|thought,48-4-4-a.mp3,48-4-4-b.mp3
+u48_l4_p5,u48_l4,Matthew.png,Kevin.png,left,left,1,1,1,________.,"Oh, clever idea.",この箱をいすとして使って。,お、いいアイデアだね。,Please use this box as a chair,Please|use|this|box|as|a|chair,48-4-5-a.mp3,48-4-5-b.mp3
+u48_l4_p6,u48_l4,Kevin.png,user,left,right,1,1,1,________.,That's amazing!,彼はプロと同じくらい速く走る。,すごいね！,He runs as fast as a professional,He|runs|as|fast|as|a|professional,48-4-6-a.mp3,48-4-6-b.mp3
+u48_l4_p7,u48_l4,Kevin.png,,left,none,1,,1,________.,,妹は母と同じくらい優しい。,,My sister is as kind as my mother,My|sister|is|as|kind|as|my|mother,48-4-7-a.mp3,
+u48_l4_p8,u48_l4,Kevin.png,user,left,right,1,1,1,________.,"Nice, we're twins!",君と同じ電話を持ってるよ。,いいね、おそろいだ！,I have the same phone as you,I|have|the|same|phone|as|you,48-4-8-a.mp3,48-4-8-b.mp3
+u48_l4_p9,u48_l4,user,Kevin.png,right,left,1,1,1,________.,Let's share songs!,彼女は私と同じ音楽が好きなんだ。,曲を教え合おうよ！,She likes the same music as I do,She|likes|the|same|music|as|I|do,48-4-9-a.mp3,48-4-9-b.mp3

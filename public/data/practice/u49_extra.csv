@@ -1,0 +1,22 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u49_l2_p1,u49_l2,Kevin.png,user,left,right,1,1,0,________.,Really? I thought it was Mike.,窓を割ったのは、ジョンだ。,ほんと？マイクだと思ってた。,It was John that broke the window,It|was|John|that|broke|the|window,49-2-1-a.mp3,49-2-1-b.mp3
+u49_l2_p2,u49_l2,user,Kevin.png,right,left,1,1,0,________.,"Oh right, at the cafe.",私たちが出会ったのは、去年だ。,そうだ、あのカフェでね。,It was last year that we met,It|was|last|year|that|we|met,49-2-2-a.mp3,49-2-2-b.mp3
+u49_l2_p3,u49_l2,Matthew.png,05.png,left,left,1,1,0,________.,"Aw, I love you too.",私が愛してるのは、君なんだ。,うれしい、私もだよ。,It is you that I love,It|is|you|that|I|love,49-2-3-a.mp3,49-2-3-b.mp3
+u49_l2_p4,u49_l2,05.png,user,left,right,1,1,0,________.,How romantic!,彼らが結婚したのは、パリでだった。,ロマンチックだね！,It was in Paris that they got married,It|was|in|Paris|that|they|got|married,49-2-4-a.mp3,49-2-4-b.mp3
+u49_l2_p5,u49_l2,Kevin.png,user,left,right,1,1,0,________.,That's beautiful.,私を救ったのは、音楽だった。,すてきだね。,It was music that saved me,It|was|music|that|saved|me,49-2-5-a.mp3,49-2-5-b.mp3
+u49_l2_p6,u49_l2,Matthew.png,05.png,left,left,1,1,0,________.,That's so sweet.,私がいちばん覚えてるのは、君の笑顔だ。,うれしいこと言うね。,It is your smile that I remember most,It|is|your|smile|that|I|remember|most,49-2-6-a.mp3,49-2-6-b.mp3
+u49_l2_p7,u49_l2,05.png,,left,none,1,,0,________.,,私の人生を変えたのは、この本だった。,,It was this book that changed my life,It|was|this|book|that|changed|my|life,49-2-7-a.mp3,
+u49_l4_p1,u49_l4,05.png,,left,none,1,,0,________.,,こんな美しい景色は、一度も見たことがない。,,Never have I seen such a beautiful view,Never|have|I|seen|such|a|beautiful|view,49-4-1-a.mp3,
+u49_l4_p2,u49_l4,Matthew.png,,left,none,1,,0,________.,,何が起こるか、私は少しも知らなかった。,,Little did I know what was coming,Little|did|I|know|what|was|coming,49-4-2-a.mp3,
+u49_l4_p3,u49_l4,user,,right,none,1,,0,________.,,この日を、決して忘れないよ。,,Never will I forget this day,Never|will|I|forget|this|day,49-4-3-a.mp3,
+u49_l4_p4,u49_l4,05.png,,left,none,1,,0,________.,,座ったとたんに、電話が鳴った。,,Hardly had I sat down when the phone rang,Hardly|had|I|sat|down|when|the|phone|rang,49-4-4-a.mp3,
+u49_l4_p5,u49_l4,user,,right,none,1,,0,________.,,こんなに幸せを感じたことはない。,,Never have I felt so happy,Never|have|I|felt|so|happy,49-4-5-a.mp3,
+u49_l4_p6,u49_l4,Kevin.png,,left,none,1,,0,________.,,彼女はそんなサプライズを少しも予想してなかった。,,Little did she expect such a surprise,Little|did|she|expect|such|a|surprise,49-4-6-a.mp3,
+u49_l4_p7,u49_l4,Matthew.png,,left,none,1,,0,________.,,こんなことが起こるとは想像もしなかった。,,Never had I imagined this would happen,Never|had|I|imagined|this|would|happen,49-4-7-a.mp3,
+u49_l6_p1,u49_l6,Kevin.png,,left,none,1,,0,________.,,そのときやっと、自分の間違いに気づいた。,,Only then did I realize my mistake,Only|then|did|I|realize|my|mistake,49-6-1-a.mp3,
+u49_l6_p2,u49_l6,05.png,,left,none,1,,0,________.,,彼女は歌うだけでなく、踊りもする。,,"Not only does she sing, but she also dances","Not|only|does|she|sing,|but|she|also|dances",49-6-2-a.mp3,
+u49_l6_p3,u49_l6,Matthew.png,,left,none,1,,0,________.,,旅のあとで、やっとリラックスできた。,,Only after the trip did I feel relaxed,Only|after|the|trip|did|I|feel|relaxed,49-6-3-a.mp3,
+u49_l6_p4,u49_l6,user,,right,none,1,,0,________.,,彼は優しいだけでなく、頭もいい。,,"Not only is he kind, but he's also smart","Not|only|is|he|kind,|but|he's|also|smart",49-6-4-a.mp3,
+u49_l6_p5,u49_l6,05.png,,left,none,1,,0,________.,,努力してこそ、成功できる。,,Only by working hard can you succeed,Only|by|working|hard|can|you|succeed,49-6-5-a.mp3,
+u49_l6_p6,u49_l6,Kevin.png,,left,none,1,,0,________.,,二度とあの間違いはしないよ。,,Never again will I make that mistake,Never|again|will|I|make|that|mistake,49-6-6-a.mp3,
+u49_l6_p7,u49_l6,Matthew.png,,left,none,1,,0,________.,,ここでしか、こんな星は見られない。,,Only here can you see such stars,Only|here|can|you|see|such|stars,49-6-7-a.mp3,

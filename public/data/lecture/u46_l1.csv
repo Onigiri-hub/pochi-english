@@ -1,0 +1,31 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u46_l1_p1,u46_l1,1,"このUnitでは、
+「あのとき〜だったらなあ」っていう、",46-1-1,image_top
+u46_l1_p2,u46_l1,2,"過去のことへの仮定を
+言えるようにするよ。",46-1-1,image_top
+u46_l1_p3,u46_l1,3,"でも、新しく覚えることはほぼない。
+既に知ってる仮定法を、ずらすだけ。",46-1-1,image_top
+u46_l1_p4,u46_l1,4,"まずは仮定法のおさらい。
+今の事実に反することは、こう言ったね。",46-1-1,image_top
+u46_l1_p5,u46_l1,5,"If I had time, I would help you.
+時間があれば、手伝うのに。（＝今、時間がない）",46-1-2-1,image_top
+u46_l1_p6,u46_l1,6,"if ＋ 過去形、would ＋ 原形。
+これが「今」こうだったらな、の仮定。",46-1-2-2,image_top
+u46_l1_p7,u46_l1,7,"じゃあ、これを「過去のこと」にしたい。
+やることは、時制を完了形にずらすだけ。",46-1-2-2,image_top
+u46_l1_p8,u46_l1,8,"If I had had time, I would have helped you.
+時間があったら、手伝ったのに。（＝あのとき、なかった）",46-1-2-3,image_top
+u46_l1_p9,u46_l1,9,"見比べてみよう。
+had → had had にずらす。",46-1-2-4,image_top
+u46_l1_p10,u46_l1,10,"would help → would have helped にずらす。
+それぞれ、一個ずつ過去のほうへスライド。",46-1-2-5,image_top
+u46_l1_p11,u46_l1,11,"形はごついけどね。
+had had ってアリなん？ってはじめは思うけど、
+普通にあり得る。",46-1-2-6,image_top
+u46_l1_p12,u46_l1,12,"これで「あのとき〜だったらなあ」が言える。
+過去の後悔や、〇〇したら、が表せるんだ。",46-1-2-6,image_top
+u46_l1_p13,u46_l1,13,"If I had known, I would have come.
+（あの時）知っていたら、行ったのに。",46-1-3-1,image_top
+u46_l1_p14,u46_l1,14,"If she had studied, she would have passed.
+（あの時）勉強していたら、彼女は受かっていたのに。",46-1-3-2,image_top
+u46_l1_p15,u46_l1,15,ぜんぶ、「現在の仮定」を完了形にずらしてるよ。,46-1-3-2,image_top

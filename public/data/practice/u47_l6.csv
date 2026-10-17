@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u47_l6_p1,u47_l6,Kevin.png,,left,none,1,,1,________.,,宿題を終えてから、私は出かけた。,,"Having finished my homework, I went out","Having|finished|my|homework,|I|went|out",47-6-1-a.mp3,
+u47_l6_p2,u47_l6,user,,right,none,1,,1,________.,,日本に住んでいたので、彼は日本語がうまい。,,"Having lived in Japan, he speaks Japanese well","Having|lived|in|Japan,|he|speaks|Japanese|well",47-6-2-a.mp3,
+u47_l6_p3,u47_l6,user,,right,none,1,,1,________.,,その本を読んでから、彼女は映画を見た。,,"Having read the book, she watched the movie","Having|read|the|book,|she|watched|the|movie",47-6-3-a.mp3,
+u47_l6_p4,u47_l6,Kevin.png,,left,none,1,,1,________.,,バスに乗り遅れたので、私は歩いて帰った。,,"Having missed the bus, I walked home","Having|missed|the|bus,|I|walked|home",47-6-4-a.mp3,
+u47_l6_p5,u47_l6,user,,right,none,1,,1,________.,,前に見たことがあったので、結末を知っていた。,,"Having seen it before, I knew the ending","Having|seen|it|before,|I|knew|the|ending",47-6-5-a.mp3,
+u47_l6_p6,u47_l6,05.png,,left,none,1,,1,________.,,十分に貯金したので、彼らは家を買った。,,"Having saved enough, they bought a house","Having|saved|enough,|they|bought|a|house",47-6-6-a.mp3,
+u47_l6_p7,u47_l6,Matthew.png,,left,none,1,,1,________.,,食べすぎたので、彼は眠くなった。,,"Having eaten too much, he felt sleepy","Having|eaten|too|much,|he|felt|sleepy",47-6-7-a.mp3,

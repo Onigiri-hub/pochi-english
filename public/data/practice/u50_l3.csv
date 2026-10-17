@@ -1,0 +1,13 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u50_l3_p1,u50_l3,user,05.png,right,left,1,1,1,I'm so nervous about the interview.,________.,面接、すごく緊張する。,落ち着いて、大丈夫よ。,"Take it easy, you'll be fine","Take|it|easy,|you'll|be|fine",50-3-1-a.mp3,50-3-1-b.mp3
+u50_l3_p2,u50_l3,Kevin.png,Matthew.png,left,left,1,1,1,This run is killing me.,________.,このランニング、もう死にそう。,もうちょっとだ、踏ん張れ。,"Hang in there, it's almost over","Hang|in|there,|it's|almost|over",50-3-2-a.mp3,50-3-2-b.mp3
+u50_l3_p3,u50_l3,Kevin.png,user,left,right,1,1,1,"Oops, I spilled some juice.",________.,うわ、ジュースこぼしちゃった。,気にしないで、タオル持ってくるね。,"No worries, I'll get a towel","No|worries,|I'll|get|a|towel",50-3-3-a.mp3,50-3-3-b.mp3
+u50_l3_p4,u50_l3,user,05.png,right,left,1,1,1,I forgot my lines on stage.,________.,舞台でセリフ忘れちゃった。,落ち込まないで、よくあることよ。,"Don't feel bad, it happens","Don't|feel|bad,|it|happens",50-3-4-a.mp3,50-3-4-b.mp3
+u50_l3_p5,u50_l3,Kevin.png,user,left,right,1,1,1,We lost the game again.,________.,また試合に負けちゃった。,元気出して、明日があるよ。,"Cheer up, tomorrow's a new day","Cheer|up,|tomorrow's|a|new|day",50-3-5-a.mp3,50-3-5-b.mp3
+u50_l3_p6,u50_l3,user,Matthew.png,right,left,1,1,1,My piano recital starts soon.,________!,もうすぐピアノの発表会が始まる。,本番、頑張れよ！,Break a leg out there,Break|a|leg|out|there,50-3-6-a.mp3,50-3-6-b.mp3
+u50_l3_p7,u50_l3,05.png,Kevin.png,left,left,1,1,1,Can you bring two more chairs?,________!,椅子をあと2つ持ってきてくれる？,了解です！,You got it,You|got|it,50-3-7-a.mp3,50-3-7-b.mp3
+u50_l3_p8,u50_l3,user,Kevin.png,right,left,1,1,1,I can't go. I have too much homework.,________.,行けないや。宿題が多すぎて。,まあ仕方ないね、また今度。,"Fair enough, maybe next time","Fair|enough,|maybe|next|time",50-3-8-a.mp3,50-3-8-b.mp3
+u50_l3_p9,u50_l3,05.png,user,left,right,1,1,1,The bottle broke because water expands when it freezes.,________.,水は凍ると膨らむから、ボトルが割れたのよ。,ああ、なるほど。,"Oh, that makes sense","Oh,|that|makes|sense",50-3-9-a.mp3,50-3-9-b.mp3
+u50_l3_p10,u50_l3,Kevin.png,user,left,right,1,1,1,I studied all night and still failed.,________.,徹夜で勉強したのに落ちた。,わかるよ、それはつらいね。,"I feel you, that's rough","I|feel|you,|that's|rough",50-3-10-a.mp3,50-3-10-b.mp3
+u50_l3_p11,u50_l3,user,Kevin.png,right,left,1,1,1,"We should bring umbrellas, just in case.",________.,念のため傘を持っていったほうがいいよ。,たしかに、それは考えてなかった。,"Good point, I didn't think of that","Good|point,|I|didn't|think|of|that",50-3-11-a.mp3,50-3-11-b.mp3
+u50_l3_p12,u50_l3,Matthew.png,05.png,left,left,1,1,1,It's so hot today.,________!,今日はほんとに暑いな。,ほんとそれ！,You can say that again,You|can|say|that|again,50-3-12-a.mp3,50-3-12-b.mp3

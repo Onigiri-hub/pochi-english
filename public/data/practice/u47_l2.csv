@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u47_l2_p1,u47_l2,Matthew.png,,left,none,1,,1,________.,,通りを歩いていると、旧友を見かけた。,,"Walking down the street, I saw an old friend","Walking|down|the|street,|I|saw|an|old|friend",47-2-1-a.mp3,
+u47_l2_p2,u47_l2,user,,right,none,1,,1,________.,,疲れていたので、早く寝た。,,"Feeling tired, I went to bed early","Feeling|tired,|I|went|to|bed|early",47-2-2-a.mp3,
+u47_l2_p3,u47_l2,Kevin.png,,left,none,1,,1,________.,,にっこり笑いながら、彼女は手を振った。,,"Smiling brightly, she waved at me","Smiling|brightly,|she|waved|at|me",47-2-3-a.mp3,
+u47_l2_p4,u47_l2,05.png,,left,none,1,,1,________.,,箱を開けると、彼は手紙を見つけた。,,"Opening the box, he found a letter","Opening|the|box,|he|found|a|letter",47-2-4-a.mp3,
+u47_l2_p5,u47_l2,Kevin.png,,left,none,1,,1,________.,,駅まで走って、電車に間に合った。,,"Running to the station, I caught the train","Running|to|the|station,|I|caught|the|train",47-2-5-a.mp3,
+u47_l2_p6,u47_l2,user,,right,none,1,,1,________.,,答えがわからなかったので、彼女は黙っていた。,,"Not knowing the answer, she stayed quiet","Not|knowing|the|answer,|she|stayed|quiet",47-2-6-a.mp3,
+u47_l2_p7,u47_l2,Matthew.png,,left,none,1,,1,________.,,その知らせを聞いて、彼らは歓声をあげた。,,"Hearing the news, they cheered","Hearing|the|news,|they|cheered",47-2-7-a.mp3,

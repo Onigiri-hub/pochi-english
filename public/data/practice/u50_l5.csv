@@ -1,0 +1,10 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u50_l5_p1,u50_l5,user,Kevin.png,right,left,1,1,1,Why did Tom leave the stage?,________.,トム、なんでステージから降りちゃったの？,スピーチの前に怖気づいたんだ。,He got cold feet before the speech,He|got|cold|feet|before|the|speech,50-5-1-a.mp3,50-5-1-b.mp3
+u50_l5_p2,u50_l5,Matthew.png,05.png,left,left,1,1,1,It's raining again today.,________.,今日もまた雨だな。,この天気にはうんざりよ。,I'm fed up with this weather,I'm|fed|up|with|this|weather,50-5-2-a.mp3,50-5-2-b.mp3
+u50_l5_p3,u50_l5,Kevin.png,user,left,right,1,1,1,What happened when the lights went out?,________.,停電したとき、どうなったの？,めっちゃパニクったよ。,I totally freaked out,I|totally|freaked|out,50-5-3-a.mp3,50-5-3-b.mp3
+u50_l5_p4,u50_l5,user,Kevin.png,right,left,1,1,1,Stop laughing at me!,________.,笑わないでよ！,ごめん、つい、なんだ。,"Sorry, I can't help it","Sorry,|I|can't|help|it",50-5-4-a.mp3,50-5-4-b.mp3
+u50_l5_p5,u50_l5,Kevin.png,user,left,right,1,1,1,Ms. Green didn't give us any homework!,________.,グリーン先生、宿題出さなかった！,今日は機嫌がいいんだね。,She's in a good mood today,She's|in|a|good|mood|today,50-5-5-a.mp3,50-5-5-b.mp3
+u50_l5_p6,u50_l5,user,05.png,right,left,1,1,1,________.,That's normal before a big test.,緊張でそわそわする。,大事なテストの前はみんなそうよ。,I have butterflies in my stomach,I|have|butterflies|in|my|stomach,50-5-6-a.mp3,50-5-6-b.mp3
+u50_l5_p7,u50_l5,Kevin.png,user,left,right,1,1,1,This bottle of water costs ten dollars.,________!,この水、1本10ドルだって。,ぼったくりだ！,What a rip-off,What|a|rip-off,50-5-7-a.mp3,50-5-7-b.mp3
+u50_l5_p8,u50_l5,05.png,Matthew.png,left,left,1,1,1,Nice car! Was it expensive?,________.,いい車ね！高かった？,めちゃくちゃ高かったよ。,It cost an arm and a leg,It|cost|an|arm|and|a|leg,50-5-8-a.mp3,50-5-8-b.mp3
+u50_l5_p9,u50_l5,user,Kevin.png,right,left,1,1,1,How was the concert?,________.,コンサート、どうだった？,高かったけど、行く価値はあったよ。,"It was expensive, but worth it","It|was|expensive,|but|worth|it",50-5-9-a.mp3,50-5-9-b.mp3

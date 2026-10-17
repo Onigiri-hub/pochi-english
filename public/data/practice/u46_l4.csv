@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u46_l4_p1,u46_l4,user,Kevin.png,right,left,1,1,1,________.,That's a bit annoying.,彼はまるで何でも知ってるみたいに話す。,ちょっとうざいね。,He talks as if he knew everything,He|talks|as|if|he|knew|everything,46-4-1-a.mp3,46-4-1-b.mp3
+u46_l4_p2,u46_l4,Kevin.png,user,left,right,1,1,1,________.,But something clearly did.,彼女はまるで何もなかったみたいにふるまった。,でも明らかに何かあったよね。,She acted as if nothing had happened,She|acted|as|if|nothing|had|happened,46-4-2-a.mp3,46-4-2-b.mp3
+u46_l4_p3,u46_l4,user,Kevin.png,right,left,1,1,1,________.,What scared him?,彼はまるで幽霊を見たみたいな顔をしていた。,何におびえたんだろう？,He looked as if he had seen a ghost,He|looked|as|if|he|had|seen|a|ghost,46-4-3-a.mp3,46-4-3-b.mp3
+u46_l4_p4,u46_l4,user,05.png,right,left,1,1,1,________.,That must be frustrating.,彼らはまるで私を子ども扱いする。,それはいらいらするね。,They treat me as if I were a child,They|treat|me|as|if|I|were|a|child,46-4-4-a.mp3,46-4-4-b.mp3
+u46_l4_p5,u46_l4,Kevin.png,user,left,right,1,1,1,________.,Maybe she already knew.,彼女はまるで勝ったみたいに微笑んだ。,もう分かってたのかもね。,She smiled as if she had won,She|smiled|as|if|she|had|won,46-4-5-a.mp3,46-4-5-b.mp3
+u46_l4_p6,u46_l4,user,Kevin.png,right,left,1,1,1,________.,"But he wasn't, right?",彼はまるでそこにいたみたいに話した。,でもいなかったよね？,He spoke as if he had been there,He|spoke|as|if|he|had|been|there,46-4-6-a.mp3,46-4-6-b.mp3
+u46_l4_p7,u46_l4,05.png,,left,none,1,,1,________.,,君はまるで前にこれを見たことがあるみたいだね。,,You look as if you had seen this before,You|look|as|if|you|had|seen|this|before,46-4-7-a.mp3,

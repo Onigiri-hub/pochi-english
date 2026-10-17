@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u47_l8_p1,u47_l8,user,Kevin.png,right,left,1,1,1,________.,Mine sure is!,一般的に言って、犬は人なつっこい。,うちのはまさにそうだよ！,"Generally speaking, dogs are friendly","Generally|speaking,|dogs|are|friendly",47-8-1-a.mp3,47-8-1-b.mp3
+u47_l8_p2,u47_l8,Kevin.png,user,left,right,1,1,1,________.,Let's give him space.,彼の顔から判断すると、怒っている。,そっとしておこう。,"Judging from his face, he's angry","Judging|from|his|face,|he's|angry",47-8-2-a.mp3,47-8-2-b.mp3
+u47_l8_p3,u47_l8,user,Kevin.png,right,left,1,1,1,________?,"Not yet, is it good?",映画といえば、あの新作見た？,まだ、おもしろい？,"Speaking of movies, did you see that new one","Speaking|of|movies,|did|you|see|that|new|one",47-8-3-a.mp3,47-8-3-b.mp3
+u47_l8_p4,u47_l8,05.png,Matthew.png,left,left,1,1,1,________.,He's amazing.,年齢を考えると、彼はとても活発だ。,すごいよね。,"Considering his age, he's very active","Considering|his|age,|he's|very|active",47-8-4-a.mp3,47-8-4-b.mp3
+u47_l8_p5,u47_l8,Matthew.png,05.png,left,left,1,1,1,________.,"Okay, tell me why.",率直に言って、この計画は好きじゃない。,わかった、理由を教えて。,"Frankly speaking, I don't like this plan","Frankly|speaking,|I|don't|like|this|plan",47-8-5-a.mp3,47-8-5-b.mp3
+u47_l8_p6,u47_l8,user,Matthew.png,right,left,1,1,1,________.,Let's bring umbrellas.,空模様から判断すると、もうすぐ雨だ。,傘を持っていこう。,"Judging from the sky, it will rain soon","Judging|from|the|sky,|it|will|rain|soon",47-8-6-a.mp3,47-8-6-b.mp3
+u47_l8_p7,u47_l8,Kevin.png,,left,none,1,,1,________.,,食べ物といえば、お腹がすいてきた。,,"Speaking of food, I'm getting hungry","Speaking|of|food,|I'm|getting|hungry",47-8-7-a.mp3,

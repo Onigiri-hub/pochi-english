@@ -1,0 +1,8 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u46_l8_p1,u46_l8,user,05.png,right,left,1,1,1,________!,Don't blame yourself.,知ってさえいたらなあ！,自分を責めないで。,If only I had known,If|only|I|had|known,46-8-1-a.mp3,46-8-1-b.mp3
+u46_l8_p2,u46_l8,Kevin.png,Matthew.png,left,left,1,1,1,________.,You can start today.,もっと勉強してさえいたらなあ。,今日から始められるよ。,If only I had studied harder,If|only|I|had|studied|harder,46-8-2-a.mp3,46-8-2-b.mp3
+u46_l8_p3,u46_l8,05.png,Matthew.png,left,left,1,1,1,________.,We all wish that.,もっと時間がありさえすればなあ。,みんなそう思ってるよ。,If only I had more time,If|only|I|had|more|time,46-8-3-a.mp3,46-8-3-b.mp3
+u46_l8_p4,u46_l8,user,Kevin.png,right,left,1,1,1,________.,Maybe she was scared.,彼女が本当のことを言ってさえくれたらなあ。,怖かったのかもね。,If only she had told me the truth,If|only|she|had|told|me|the|truth,46-8-4-a.mp3,46-8-4-b.mp3
+u46_l8_p5,u46_l8,Matthew.png,05.png,left,left,1,1,1,________!,The traffic was awful.,もっと早く出発してさえいたら！,渋滞ひどかったもんね。,If only we had left earlier,If|only|we|had|left|earlier,46-8-5-a.mp3,46-8-5-b.mp3
+u46_l8_p6,u46_l8,Kevin.png,user,left,right,1,1,1,________.,That would be amazing.,空を飛べさえすればなあ。,それはすごいだろうね。,If only I could fly,If|only|I|could|fly,46-8-6-a.mp3,46-8-6-b.mp3
+u46_l8_p7,u46_l8,user,,right,none,1,,1,________.,,あの写真を保存してさえいたらなあ。,,If only I had saved that photo,If|only|I|had|saved|that|photo,46-8-7-a.mp3,

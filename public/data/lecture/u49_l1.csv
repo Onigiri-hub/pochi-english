@@ -1,0 +1,22 @@
+page_id,lesson_id,page_NO,text,image_NO,layout
+u49_l1_p1,u49_l1,1,"このUnitでは、
+「目立たせる」ためのテクニックを見ていくよ。",49-1-1,image_top
+u49_l1_p2,u49_l1,2,英語は、強調したい部分を「前に出す」で目立たせるんだ。,49-1-1,image_top
+u49_l1_p3,u49_l1,3,まずはIt is … that で強調。,49-1-1,image_top
+u49_l1_p4,u49_l1,4,"ふつうの文：
+John broke the window yesterday.
+ジョンが、昨日、窓を割った",49-1-2-1,image_top
+u49_l1_p5,u49_l1,5,これの「ジョンが」を強調したいとき。,49-1-2-1,image_top
+u49_l1_p6,u49_l1,6,"It was John that broke the window yesterday.
+窓を割ったのは、ほかでもないジョンだ。",49-1-2-2,image_top
+u49_l1_p7,u49_l1,7,「ジョンだよ！」って先に言うことで、強調できる。,49-1-2-2,image_top
+u49_l1_p8,u49_l1,8,"It was yesterday that John broke the window.
+昨日なんだよ！ジョンが窓を割ったの。",49-1-3-1,image_top
+u49_l1_p9,u49_l1,9,…あ、ちなみにだけど,49-1-3-1,image_top
+u49_l1_p10,u49_l1,10,"It is important that we help each other.
+私たちが互いに助け合うことは重要です。",49-1-3-2,image_top
+u49_l1_p11,u49_l1,11,これもIt is 〇〇 thatのかたちだけど、,49-1-3-2,image_top
+u49_l1_p12,u49_l1,12,強調構文じゃなくて、ここのItは形式主語。意味はないけど無いと骨組みが成り立たないやつ。,49-1-3-3,image_top
+u49_l1_p13,u49_l1,13,「We help each other」を主語に持ってくるとなんか重くなるから、,49-1-3-3,image_top
+u49_l1_p14,u49_l1,14,It is important を先に行って、あとにどういうことかを説明してる。,49-1-3-4,image_top
+u49_l1_p15,u49_l1,15,どちらにせよ、先に来たほうが目立つよねって発想。,49-1-3-4,image_top

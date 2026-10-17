@@ -1,0 +1,13 @@
+question_id,lesson_id,icon_first,icon_second,position_first,position_second,ja_show_first,ja_show_second,audio_auto,sentence_first_en,sentence_second_en,sentence_first_ja,sentence_second_ja,answer,chips,audio_first,audio_second
+u50_l4_p1,u50_l4,05.png,Matthew.png,left,left,1,1,1,________.,What a nice surprise!,昔の友達から突然電話がきたの。,うれしい驚きだね！,My old friend called me out of the blue,My|old|friend|called|me|out|of|the|blue,50-4-1-a.mp3,50-4-1-b.mp3
+u50_l4_p2,u50_l4,Kevin.png,user,left,right,1,1,1,Our plan didn't work.,________.,作戦、うまくいかなかったね。,やれやれ、振り出しに戻ったね。,"Well, back to square one","Well,|back|to|square|one",50-4-2-a.mp3,50-4-2-b.mp3
+u50_l4_p3,u50_l4,user,Kevin.png,right,left,1,1,1,Do you still see your cousins?,________.,今もいとこたちと会ってる？,うん、たまに会うよ。,"Yeah, we meet once in a while","Yeah,|we|meet|once|in|a|while",50-4-3-a.mp3,50-4-3-b.mp3
+u50_l4_p4,u50_l4,Matthew.png,user,left,right,1,1,1,It's raining hard now.,________.,雨が強くなってきたな。,やっぱり、家にいようか。,"On second thought, let's stay home","On|second|thought,|let's|stay|home",50-4-4-a.mp3,50-4-4-b.mp3
+u50_l4_p5,u50_l4,user,Matthew.png,right,left,1,1,1,Should I tell Mom about the broken vase?,________.,割れた花瓶のこと、お母さんに言うべき？,ああ。遅かれ早かれわかるからな。,Yes. She'll find out sooner or later,Yes.|She'll|find|out|sooner|or|later,50-4-5-a.mp3,50-4-5-b.mp3
+u50_l4_p6,u50_l4,05.png,Matthew.png,left,left,1,1,1,Is the old laptop still okay?,________.,古いノートパソコン、まだ大丈夫？,当分はこれで大丈夫だよ。,It'll do for the time being,It'll|do|for|the|time|being,50-4-6-a.mp3,50-4-6-b.mp3
+u50_l4_p7,u50_l4,05.png,user,left,right,1,1,1,You look so tired.,________.,すごく疲れてるみたいね。,へとへと。もう寝るよ。,I'm beat. Time to hit the sack,I'm|beat.|Time|to|hit|the|sack,50-4-7-a.mp3,50-4-7-b.mp3
+u50_l4_p8,u50_l4,user,05.png,right,left,1,1,1,I can't think anymore.,________.,もう頭が働かないです。,じゃあ、今日はここまでにしましょう。,"Okay, let's call it a day","Okay,|let's|call|it|a|day",50-4-8-a.mp3,50-4-8-b.mp3
+u50_l4_p9,u50_l4,Kevin.png,user,left,right,1,1,1,________?,"Sure, I'm starving!",放課後、軽く何か食べない？,いいね、お腹ぺこぺこ！,Wanna grab a bite after school,Wanna|grab|a|bite|after|school,50-4-9-a.mp3,50-4-9-b.mp3
+u50_l4_p10,u50_l4,Matthew.png,user,left,right,1,1,1,________?,"Sure, no problem.",この箱、ちょっと手伝ってくれる？,うん、いいよ。,Can you give me a hand with these boxes,Can|you|give|me|a|hand|with|these|boxes,50-4-10-a.mp3,50-4-10-b.mp3
+u50_l4_p11,u50_l4,user,Kevin.png,right,left,1,1,1,________.,Sounds good! Where should we go?,今週末、遊ぼうよ。,いいね！どこ行く？,Let's hang out this weekend,Let's|hang|out|this|weekend,50-4-11-a.mp3,50-4-11-b.mp3
+u50_l4_p12,u50_l4,user,Kevin.png,right,left,1,1,1,"Hmm, the red one or the blue one?",________.,うーん、赤いのか青いのか…。,もう、決めてよ。,"Come on, make up your mind","Come|on,|make|up|your|mind",50-4-12-a.mp3,50-4-12-b.mp3
